@@ -337,16 +337,17 @@ export default {
                     new_html += `<span class="f4 i">${ann_html}</span>`;
                 }
 
-                let disabled = ''
-                if (this.config.disable && Object.values(this.config.disable).includes('annotation')) {
-                    disabled = 'disabled'
-                }
+                const annotation_disabled = this.config.disable
+                    && Object.values(this.config.disable).includes('annotation')
+                const annotation_icon = annotation_disabled
+                    ? ''
+                    : `<i @click="annotate_edit" class="annotation-icon fa-solid fa-pencil mr3 pointer dim" data-id="${key}-${i}" data-category="${key}"></i>`
 
                 new_html += `
                         </span>
                     </div>
                     <div class="fl w-20 mb4 operation tr">
-                        <i @click="annotate_edit" class="annotation-icon fa-solid fa-pencil mr3 pointer dim ${disabled}" data-id="${key}-${i}" data-category="${key}"></i>
+                        ${annotation_icon}
                         <i @click="trash_edit" class="fa-solid fa-trash-can ml4 pointer dim" data-id="${key}-${i}" data-category="${key}"></i>
                     </div>
                 </div>`;

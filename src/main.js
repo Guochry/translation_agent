@@ -33,6 +33,8 @@ const demo_templates = [
     { name: "Custom Instructions", path: "demo_instructions", task: "Examples" },
     { name: "Paragraph-level Annoation", path: "demo_paragraph", task: "Examples" },
     { name: "Adjudication", path: "demo_adjudication", task: "Examples" },
+    { name: "Multi-candidate Translation", path: "demo_translation_strength", task: "Examples" },
+    { name: "Multi-candidate ESA", path: "demo_translation_esa", task: "Examples" },
     { name: "Limited Functionality", path: "demo_disable", task: "Examples" },
     { name: "Word-level Selection", path: "demo_tokenization", task: "Examples" },
     { name: "Multi-language Deployment", path: "demo_multilingual", task: "Examples" },

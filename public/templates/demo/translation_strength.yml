@@ -1,0 +1,69 @@
+template_name: demo_translation_strength
+template_label: Translation Strength Annotation
+template_description: Annotate strengths independently across multiple candidate translations.
+
+tokenization: char
+multi_candidate: true
+enable_translation_synthesis: true
+
+display:
+  - text-side-by-side
+  - disable-lines
+
+disable:
+  - annotation
+
+font_size:
+  source: 14
+  target: 14
+
+interface_text:
+  typology:
+    source_label: "Source Text"
+    target_label: "Translation"
+  buttons:
+    add_edit_label: "Add Strength"
+  annotation_viewer:
+    header: "Strength Spans"
+
+prepend_instructions: true
+
+instructions: |
+  ## Strength Span Annotation
+
+  - Mark **especially effective wording** that preserves subtle meaning, conveys tone or imagery, handles an idiom naturally, or expresses the source with exceptional clarity and fluency. A strength must remain faithful to the source; ordinary correct wording alone is not enough.
+  - Select a precise **translation span**; the corresponding source span is optional.
+  - **Overall score (0–100):** Judge meaning preservation and naturalness across the whole translation, not the number of strengths. Use any score between these anchors:
+    **0 — Broken:** Meaning is lost or the text is incoherent;
+    **33 — Flawed:** Only part of the meaning is conveyed; major rewriting is needed;
+    **66 — Good:** Most meaning is preserved; minor inaccuracies or awkwardness need correction;
+    **100 — Perfect:** Full meaning and tone are preserved in natural language; no correction is needed.
+  - **Optional:** Start from the best provided translation and incorporate complementary strength spans you annotated in other candidates. Write a revision in the field at the bottom only if it improves that translation while preserving the source meaning; otherwise, leave it blank.
+
+overall_score:
+  name: overall_score
+  label: "Overall Translation Score"
+  question: "Considering meaning preservation and quality, how would you rate this translation?"
+  min: 0
+  max: 100
+  step: 1
+  anchors:
+    - value: 0
+      label: "Broken"
+    - value: 33
+      label: "Flawed"
+    - value: 66
+      label: "Good"
+    - value: 100
+      label: "Perfect"
+
+edits:
+  - name: strength
+    label: "Strength"
+    color: green
+    icon: fa-star
+
+    enable_input: true
+    optional_input: true
+    enable_output: true
+    type: single_span

@@ -1,0 +1,76 @@
+template_name: demo_translation_esa
+template_label: Translation ESA Annotation
+template_description: Annotate ESA-style errors independently across multiple candidate translations.
+
+default_data_link: data/demo/translation_strength.json
+
+tokenization: char
+multi_candidate: true
+
+display:
+  - text-side-by-side
+  - disable-lines
+
+font_size:
+  source: 14
+  target: 14
+
+interface_text:
+  typology:
+    source_label: "Source Text"
+    target_label: "Translation"
+  annotation_editor:
+    select_edit_header: "Select Error."
+  annotation_viewer:
+    header: "Span Annotations"
+
+prepend_instructions: true
+
+instructions: |
+  ## Error Span Annotation (ESA)
+
+  - Read the source and candidate translations, then **mark each error separately** with a precise translation span and its corresponding source span.
+  - Assign **severity only**, without an error category: **Minor** for awkward wording or other imperfections that leave the core message intact; **Major** for errors that distort the source meaning or make the message confusing.
+  - Treat **unsupported added content as Major**. For a translation entirely in the wrong language, mark the whole text as Major and score it **0**.
+  - **Overall score (0–100):** Judge meaning preservation and naturalness across the whole translation, not just error count. Use any score between these anchors:
+    **0 — Broken:** Meaning is lost or the text is incoherent;
+    **33 — Flawed:** Only part of the meaning is conveyed; major rewriting is needed;
+    **66 — Good:** Most meaning is preserved; minor inaccuracies or awkwardness need correction;
+    **100 — Perfect:** Full meaning and tone are preserved in natural language; no correction is needed.
+
+overall_score:
+  name: overall_score
+  label: "Overall Translation Score"
+  question: "Considering meaning preservation and quality, how would you rate this translation?"
+  min: 0
+  max: 100
+  step: 1
+  anchors:
+    - value: 0
+      label: "Broken"
+    - value: 33
+      label: "Flawed"
+    - value: 66
+      label: "Good"
+    - value: 100
+      label: "Perfect"
+
+edits:
+  - name: error
+    label: "Error"
+    color: red
+    icon: fa-triangle-exclamation
+
+    enable_input: true
+    enable_output: true
+    type: single_span
+
+    annotation:
+      - name: severity
+        label: "Severity"
+        question: "How severe is this error?"
+        options:
+          - name: minor
+            label: "Minor"
+          - name: major
+            label: "Major"

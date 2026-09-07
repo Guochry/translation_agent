@@ -3,6 +3,7 @@
   import AnnotationViewer from "../viewer/AnnotationViewer.vue";
   import CommentBox from "../common/CommentBox.vue";
   import Instructions from "../common/Instructions.vue";
+  import OverallScore from "../common/OverallScore.vue";
   import HitBox from "../hitbox/HitBox.vue";
 
   import tinycolor from 'tinycolor2';
@@ -55,7 +56,15 @@
     props: [
       'input_data',
       'consumed_config',
-      'highlight'
+      'highlight',
+      'candidate_label',
+      'show_instructions',
+      'show_hit_header',
+      'synchronized_hit',
+      'set_synchronized_hit',
+      'on_hits_data_change',
+      'get_export_data',
+      'handle_uploaded_data'
     ],
     watch: {
       input_data() {
@@ -63,6 +72,11 @@
       },
       consumed_config() {
         this.consume_config()
+      },
+      synchronized_hit(hit_num) {
+        if (hit_num != null && hit_num !== this.current_hit) {
+          this.current_hit = hit_num
+        }
       }
     },
     methods: {
@@ -70,7 +84,7 @@
           if (!this.input_data || !this.input_data.data) { return }
           let data = _.cloneDeep(this.input_data.data);
           this.set_hits_data(data)
-          this.set_hit(1)
+          this.set_hit(this.synchronized_hit || 1)
         },
         consume_config() {
           let new_config;
@@ -88,7 +102,9 @@
           }
         },
         set_hit(hit_num) {
-          if (hit_num != this.current_hit && this.config.adjudication) {
+          if (this.set_synchronized_hit) {
+            this.set_synchronized_hit(hit_num)
+          } else if (hit_num != this.current_hit && this.config.adjudication) {
             $(`.circle-${hit_num}`).click()
           }
           this.current_hit = hit_num;
@@ -98,6 +114,9 @@
             hit_data.forEach((o, idx) => { o._thresh_id = idx + 1; });
             this.hits_data = hit_data;
             this.total_hits = hit_data.length;
+            if (this.on_hits_data_change) {
+              this.on_hits_data_change(hit_data)
+            }
         },
         set_edits_dict(edits_dict) {
             this.edits_dict = edits_dict;
@@ -257,9 +276,20 @@
     </div>
     <main v-bind:class="{ 'adjacent': isAdjacent() }">
       <div v-bind:class="{ 'selection-adjacent': isAdjacent() }">
-        <Instructions v-bind="$data" :config="config" />
+        <Instructions v-if="show_instructions !== false" v-bind="$data" :config="config" />
         <!-- <CommentBox v-bind="$data" :config="config" /> -->
-        <HitBox v-bind="$data" :config="config" />
+        <HitBox
+          v-bind="$data"
+          :config="config"
+          :candidate_label="candidate_label"
+          :show_header="show_hit_header"
+          :get_export_data="get_export_data"
+          :handle_uploaded_data="handle_uploaded_data"
+        >
+          <template #score>
+            <OverallScore v-if="config.overall_score" v-bind="$data" :config="config" />
+          </template>
+        </HitBox>
       </div>
       <div v-bind:class="{ 'annotation-adjacent': isAdjacent() }">
         <AnnotationEditor v-bind="$data" :config="config" />

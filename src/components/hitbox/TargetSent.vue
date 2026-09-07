@@ -1,5 +1,6 @@
 <script setup>
 import _ from 'lodash';
+import { get_selection_offsets } from '../../assets/js/selection-util.js';
 </script>
 
 <script>
@@ -90,14 +91,19 @@ export default {
             let selected_category = this.$p(`input[name=edit_cotegory_${this.panelId}]:checked`).val();
             let selection = window.getSelection();
             let txt = this.hits_data[this.current_hit - 1].target
+            if (!selection || selection.rangeCount === 0) {
+                this.process_target_html_with_selected_span(selected_category)
+                return
+            }
             let range = selection.getRangeAt(0);
-            let [start, end] = [range.startOffset, range.endOffset];
+            const offsets = get_selection_offsets(e.currentTarget, range)
+            if (!offsets) {
+                this.process_target_html_with_selected_span(selected_category)
+                return
+            }
+            let [start, end] = offsets
             if (start == end || !txt.substring(start, end).trim()) {
                 this.process_target_html(null); // rerender if blocking 
-                return;
-            }
-            if (selection.anchorNode != selection.focusNode || selection.anchorNode == null) {
-                this.process_target_html_with_selected_span(selected_category)
                 return;
             }
 
@@ -166,7 +172,7 @@ export default {
     computed: {
         get_target_html() {
             return {
-                template: `<pre @mousedown='deselect_target_html' @mouseup='select_target_html' id="target-sentence" class="f4 lh-paras sans-serif selection-area"> ${ this.target_html } </pre> `,
+                template: `<pre @mousedown='deselect_target_html' @mouseup='select_target_html' id="target-sentence" class="f4 lh-paras sans-serif selection-area">${this.target_html}</pre>`,
                 methods: {
                         select_target_html: this.select_target_html,
                         deselect_target_html: this.deselect_target_html,

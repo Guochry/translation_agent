@@ -1,11 +1,13 @@
 <script setup>
     import Interface from "./Interface.vue";
+    import MultiCandidateInterface from "./MultiCandidateInterface.vue";
     import Deploy from "../builder/Deploy.vue";
     import Cite from "../builder/Cite.vue";
 
     import { download_data, download_config, get_file_path, joinPaths } from "../../assets/js/file-util.js";
 
     import jsyaml from 'js-yaml';
+    import _ from 'lodash';
     import * as monaco from 'monaco-editor'
     import loader from "@monaco-editor/loader";
 
@@ -83,7 +85,7 @@ export default {
             let language_template = await download_config(lang_template).then((language_config) => {
                 return jsyaml.load(language_config)
             })
-            config.interface_text = Object.assign({}, language_template, config.interface_text);
+            config.interface_text = _.merge({}, language_template, config.interface_text);
             this.config = config
         },
         async compile() {
@@ -341,6 +343,12 @@ export default {
                             :highlight="config.highlight_first_interface && idx == 1"
                             :input_data={data}
                             :consumed_config={config}
+                        />
+                    </div>
+                    <div v-else-if="config.multi_candidate" class="mt4">
+                        <MultiCandidateInterface
+                            :input_data="{ data }"
+                            :consumed_config="{ config }"
                         />
                     </div>
                     <div v-else class="mt4">

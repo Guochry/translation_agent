@@ -1,9 +1,11 @@
 <script setup>
     import Interface from "./Interface.vue";
+    import MultiCandidateInterface from "./MultiCandidateInterface.vue";
     import Landing from "./Landing.vue";
 
     import { download_data, download_config, get_file_path } from "../../assets/js/file-util.js";
     import jsyaml from 'js-yaml';
+    import _ from 'lodash';
 </script>
 
 <script>
@@ -44,7 +46,7 @@ export default {
             let language_template = await download_config(lang_template).then((language_config) => {
                 return jsyaml.load(language_config)
             })
-            config.interface_text = Object.assign({}, language_template, config.interface_text);
+            config.interface_text = _.merge({}, language_template, config.interface_text);
             return config
         },
         async load_config(config_raw) {
@@ -182,6 +184,12 @@ export default {
                 :highlight="consumed_config.highlight_first_interface && idx == 1"
                 :input_data="data[idx-1]"
                 :consumed_config={consumed_config}
+            />
+        </div>
+        <div v-else-if="consumed_config.multi_candidate" class="mh4">
+            <MultiCandidateInterface
+                :input_data="{ data }"
+                :consumed_config="{ consumed_config }"
             />
         </div>
         <div v-else class="mh4">

@@ -1,5 +1,6 @@
 <script setup>
 import _ from 'lodash';
+import { get_selection_offsets } from '../../assets/js/selection-util.js';
 </script>
 
 <script>
@@ -77,7 +78,7 @@ export default {
                 console.warn(e)
             }
         },
-        select_source_html() {
+        select_source_html(e) {
             if (!this.hit_box_config.enable_select_source_sentence) {
                 return
             }
@@ -85,14 +86,19 @@ export default {
             let selected_category = this.$p(`input[name=edit_cotegory_${this.panelId}]:checked`).val();
             let selection = window.getSelection();
             let txt = this.hits_data[this.current_hit - 1].source
+            if (!selection || selection.rangeCount === 0) {
+                this.process_source_html_with_selected_span(selected_category)
+                return
+            }
             let range = selection.getRangeAt(0)
-            let [start, end] = [range.startOffset, range.endOffset]
+            const offsets = get_selection_offsets(e.currentTarget, range)
+            if (!offsets) {
+                this.process_source_html_with_selected_span(selected_category)
+                return
+            }
+            let [start, end] = offsets
             if (start == end || !txt.substring(start, end).trim()) {
                 this.process_source_html(null); // rerender if blocking 
-                return;
-            }
-            if (selection.anchorNode != selection.focusNode || selection.anchorNode == null) {
-                this.process_source_html_with_selected_span(selected_category)
                 return;
             }
 

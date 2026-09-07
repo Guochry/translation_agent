@@ -319,7 +319,8 @@ export default {
                 sentence_html += sent.substring(prev_idx, edit[sent_type][0]);
                 
                 let light = !this.hasAnnotations(edit) ? "-light" : "";
-                let outside = i < edits.length - 1 && next_edit[sent_type][0] <= edit[sent_type][1] ? "outside" : ""
+                // Span end indices are exclusive, so equal boundaries are adjacent rather than overlapping.
+                let outside = i < edits.length - 1 && next_edit[sent_type][0] < edit[sent_type][1] ? "outside" : ""
                 let composite_info = edit.hasOwnProperty('child_category') ? `data-childcategory=${edit['child_category']} data-childid=${edit['child_id']}` : ""
 
                 if (includes_selection && this.is_selected(edit, sent_type, selected_category)) {
@@ -332,7 +333,7 @@ export default {
 
                 // TODO: This current code allows up to two overlapping edits, but we want to render arbitrarily
                 let whether_more_overlap = false
-                while (i < edits.length - 1 && next_edit[sent_type][0] <= edits[start_i][sent_type][1]) {
+                while (i < edits.length - 1 && next_edit[sent_type][0] < edits[start_i][sent_type][1]) {
                     if (i == start_i) {
                         sentence_html += sent.substring(edit[sent_type][0], next_edit[sent_type][0]);
                     } else {
@@ -344,7 +345,7 @@ export default {
                     }
                     whether_more_overlap = false             
                     
-                    let outside = i < edits.length - 2 && edits[i + 2][sent_type][0] <= next_edit[sent_type][1] ? "middleside" : ""
+                    let outside = i < edits.length - 2 && edits[i + 2][sent_type][0] < next_edit[sent_type][1] ? "middleside" : ""
                     
                     let light = !this.hasAnnotations(edit) ? "-light" : "";
                     // TODO: Add case for all split chars, in all three contexts
@@ -366,7 +367,7 @@ export default {
                     edit = edits[i]
                     next_edit = edits[i + 1]
 
-                    if (i < edits.length - 1 && next_edit[sent_type][0] <= edit[sent_type][1]) {
+                    if (i < edits.length - 1 && next_edit[sent_type][0] < edit[sent_type][1]) {
                         whether_more_overlap = true
                         let next_next_edit = edits[i + 1]
                         sentence_html += sent.substring(edit[sent_type][0], next_next_edit[sent_type][0]);  

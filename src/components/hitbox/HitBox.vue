@@ -33,7 +33,11 @@ export default {
         'set_lines',
         'config',
         'hit_box_config',
-        'toggle_instructions'
+        'toggle_instructions',
+        'candidate_label',
+        'show_header',
+        'get_export_data',
+        'handle_uploaded_data'
     ],
     data() {
         return {
@@ -128,6 +132,13 @@ export default {
         restart_hit() {
             let new_hits_data = _.cloneDeep(this.hits_data);
             new_hits_data[this.current_hit - 1].edits = []
+            if (this.config.overall_score) {
+                const score_config = typeof this.config.overall_score === 'object'
+                    ? this.config.overall_score
+                    : {}
+                const score_field = score_config.name || score_config.field || 'overall_score'
+                delete new_hits_data[this.current_hit - 1][score_field]
+            }
 
             // TODO: Adds a selectable edit for split sentences
             // let target_text = new_hits_data[this.current_hit - 1].target;
@@ -220,10 +231,15 @@ export default {
           return this.config.hasOwnProperty('display') && Object.values(this.config.display).includes('hide-context') && this.context_exists()
         },
         file_download() {
-            handle_file_download(this.hits_data)
+            const data = this.get_export_data ? this.get_export_data() : this.hits_data
+            handle_file_download(data)
         },
         async file_upload(e) {
             let new_hits_data = await handle_file_upload(e);
+            if (this.handle_uploaded_data) {
+                this.handle_uploaded_data(new_hits_data)
+                return
+            }
             this.set_hits_data(new_hits_data);
             this.set_hit(1);
             this.setup_hit_box();
@@ -257,7 +273,7 @@ export default {
 
                 await updateDoc(docRef, {
                     [field_id]: arrayUnion({
-                        "annotations": JSON.stringify(this.hits_data, null, 2),
+                        "annotations": JSON.stringify(this.get_export_data ? this.get_export_data() : this.hits_data, null, 2),
                         "time_submitted": new Date().toLocaleString(),
                         "prolific_metadata": JSON.stringify(prolific, null, 2),
                     })
@@ -277,7 +293,7 @@ export default {
 
 <template>
     <section id="hit">
-        <div class="cf mt1 hit-header">
+        <div v-if="show_header !== false" class="cf mt1 hit-header">
             <div class="tc f3 mt1 hit-selector">
                 <button @click="go_to_hit(current_hit - 1)" class="mid-gray br-100 pa1 bw0 bg-near-white pointer prev-next-btns">&nbsp;&lt;&nbsp;</button>
                 {{ config.interface_text.hit_box.hit_label }} <span>{{ current_hit }}</span> / <span>{{ total_hits }}&nbsp;</span>
@@ -309,8 +325,9 @@ export default {
                 </div>
             </div>            
         </div>
-        <div>
-            <div class="ba b--black-80 br2 pa2">
+        <h2 v-if="candidate_label" class="candidate-heading f3 mt3 mb2">{{ candidate_label }}</h2>
+        <div class="hit-text-score-row">
+            <div class="hit-text-box ba b--black-80 br2 pa2">
                 <div class="fr">
                     <i @click="restart_hit" class="fa-solid fa-arrows-rotate fa-lg pointer mr2"></i>
                     <i @click="bookmark_hit" class="bookmark fa-regular fa-bookmark fa-lg pointer ml1" :class="get_bookmark_class()"></i>
@@ -359,6 +376,7 @@ export default {
                     </div>
                 </div>
             </div>
+            <slot name="score"></slot>
         </div>
     </section>
 </template>

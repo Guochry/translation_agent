@@ -1,0 +1,95 @@
+[
+  {
+    "id": "example_1",
+    "candidates": [
+      {
+        "id": "candidate_1",
+        "source": "他这人就是嘴硬心软。",
+        "target": "He has a sharp tongue but a soft heart."
+      },
+      {
+        "id": "candidate_2",
+        "label": "Literal-idiomatic blend",
+        "source": "他这人就是嘴硬心软。",
+        "target": "His words are harsh, but his heart is kind."
+      },
+      {
+        "id": "candidate_3",
+        "source": "他这人就是嘴硬心软。",
+        "target": "He talks tough, but he's soft-hearted."
+      }
+    ]
+  },
+  {
+    "id": "example_2",
+    "candidates": [
+      {
+        "id": "candidate_1",
+        "source": "这个方案看起来简单，实际执行起来很困难。",
+        "target": "The plan looks simple, but it is difficult to carry out in practice."
+      },
+      {
+        "id": "candidate_2",
+        "label": "Concise version",
+        "source": "这个方案看起来简单，实际执行起来很困难。",
+        "target": "This plan seems easy, yet putting it into practice is hard."
+      },
+      {
+        "id": "candidate_3",
+        "source": "这个方案看起来简单，实际执行起来很困难。",
+        "target": "It may look straightforward, but the plan is challenging to implement."
+      }
+    ]
+  },
+  {
+    "id": "example_3",
+    "candidates": [
+      {
+        "id": "candidate_1",
+        "source": "雨停后，空气里带着泥土的清香。",
+        "target": "After the rain stopped, the air carried the fresh scent of earth."
+      },
+      {
+        "id": "candidate_2",
+        "label": "Literary version",
+        "source": "雨停后，空气里带着泥土的清香。",
+        "target": "When the rain passed, the clean fragrance of soil lingered in the air."
+      },
+      {
+        "id": "candidate_3",
+        "source": "雨停后，空气里带着泥土的清香。",
+        "target": "The rain let up, leaving the air sweet with the smell of damp earth."
+      }
+    ]
+  },
+  {
+    "id": "example_4",
+    "candidates": [
+      {
+        "id": "candidate_1",
+        "source": "我们大王早就飞出十万八千里了。",
+        "target": "Our great King has already flown 54,000 km."
+      },
+      {
+        "id": "candidate_2",
+        "source": "我们大王早就飞出十万八千里了。",
+        "target": "Our Great King has already flown ten thousand li away."
+      },
+      {
+        "id": "candidate_3",
+        "source": "我们大王早就飞出十万八千里了。",
+        "target": "Our great king has already flown eighty-eight thousand li (a very long distance)!"
+      },
+      {
+        "id": "candidate_4",
+        "source": "我们大王早就飞出十万八千里了。",
+        "target": "Our Great King flew off a hundred and eight thousand li ages ago."
+      },
+      {
+        "id": "candidate_5",
+        "source": "我们大王早就飞出十万八千里了。",
+        "target": "Out king is already a hundred thousand miles away."
+      }
+    ]
+  }
+]

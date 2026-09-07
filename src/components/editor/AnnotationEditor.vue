@@ -120,14 +120,14 @@ export default {
             }
 
             if (config_category.type == undefined || config_category.type == 'single_span' || config_category.type == 'multi_span') {
-                if (config_category['enable_input']) {
+                if (config_category['enable_input'] && this.selected_state.source_idx && this.selected_state.source_idx.length) {
                     let new_idx = this.selected_state.source_idx
                     if (!(config_category['type'] == 'multi_span')) {
                         new_idx = [new_idx]
                     }
                     new_span['input_idx'] = new_idx
                 }
-                if (config_category['enable_output']) {
+                if (config_category['enable_output'] && this.selected_state.target_idx && this.selected_state.target_idx.length) {
                     let new_idx = this.selected_state.target_idx
                     if (!(config_category['type'] == 'multi_span')) {
                         new_idx = [new_idx]
@@ -346,21 +346,19 @@ export default {
             let filled_out = false
             if (config_category.type == undefined || config_category.type == 'single_span'  || config_category.type == 'multi_span') {
                 const src = this.selected_state.source_span, tg = this.selected_state.target_span
-                if (config_category['enable_input'] && config_category['enable_output']) {
-                    if (src != null && src != '' && tg != null && tg != '') {
-                        filled_out = true
-                    }
-                } else if (config_category['enable_input']) {
-                    if (src != null && src != '') {
-                        filled_out = true
-                    }
-                } else if (config_category['enable_output']) {
-                    if (tg != null && tg != '') {
-                        filled_out = true
-                    }
-                } else {
-                    filled_out = true
-                }
+                const source_selected = src != null && src != ''
+                const target_selected = tg != null && tg != ''
+                const input_ready = !config_category['enable_input']
+                    || config_category['optional_input']
+                    || source_selected
+                const output_ready = !config_category['enable_output']
+                    || config_category['optional_output']
+                    || target_selected
+                const has_selection = (!config_category['enable_input'] && !config_category['enable_output'])
+                    || (config_category['enable_input'] && source_selected)
+                    || (config_category['enable_output'] && target_selected)
+
+                filled_out = input_ready && output_ready && has_selection
             }
             if (config_category['type'] == 'composite') {
                 if (this.selected_edits.length > 0) {
@@ -395,12 +393,12 @@ export default {
 
                         <div v-for="item in config.edits" :key="item.id" class="span-selection-div" :data-category="item.name">
                             <div v-if="item.enable_input">
-                                <p class="mt0 mb2 b tracked-light">{{ config.interface_text.annotation_editor.select_instructions }} <i>{{ config.interface_text.typology.source_label }}</i>.</p>
+                                <p class="mt0 mb2 b tracked-light">{{ config.interface_text.annotation_editor.select_instructions }} <i>{{ config.interface_text.typology.source_label }}</i><span v-if="item.optional_input"> (optional)</span>.</p>
                                 <p class="tracked-light lh-paras-2">{{ config.interface_text.annotation_editor.selected_label }} {{ config.interface_text.typology.span_unit_name }}: <span v-html="selected_state.source_span"></span></p>
                             </div>
                             <div v-if="item.enable_output">
                                 <div class="span-selection-div" :data-category="item.name">
-                                    <p class="mt0 mb2 b tracked-light">{{ config.interface_text.annotation_editor.select_instructions }} <i>{{ config.interface_text.typology.target_label }}</i>.</p>
+                                    <p class="mt0 mb2 b tracked-light">{{ config.interface_text.annotation_editor.select_instructions }} <i>{{ config.interface_text.typology.target_label }}</i><span v-if="item.optional_output"> (optional)</span>.</p>
                                     <p class="tracked-light lh-paras-2">{{ config.interface_text.annotation_editor.selected_label }} {{ config.interface_text.typology.span_unit_name }}: <span v-html="selected_state.target_span"></span></p>
                                 </div>
                             </div>
