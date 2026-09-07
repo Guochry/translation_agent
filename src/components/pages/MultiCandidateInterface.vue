@@ -16,6 +16,11 @@ export default {
             current_hit: 1,
             data_version: 0,
             data_error: null,
+            timer_last: null,
+            timer_interval: null,
+            timer_mounted: false,
+            timer_visible: true,
+            timer_paused: false,
         }
     },
     computed: {
@@ -27,6 +32,9 @@ export default {
         },
         current_example() {
             return this.grouped_data[this.current_hit - 1]
+        },
+        total_time_ms() {
+            return this.grouped_data.reduce((sum, example) => sum + this.elapsed_ms(example), 0)
         }
     },
     watch: {
@@ -35,6 +43,33 @@ export default {
         }
     },
     methods: {
+        elapsed_ms(example) {
+            const value = example?.annotation_time_ms
+            return typeof value === 'number' && Number.isFinite(value) && value > 0 ? value : 0
+        },
+        format_time(ms) {
+            const seconds = Math.floor(ms / 1000)
+            const hours = Math.floor(seconds / 3600)
+            return `${hours ? `${hours}:` : ''}${String(Math.floor(seconds / 60) % 60).padStart(2, '0')}:${String(seconds % 60).padStart(2, '0')}`
+        },
+        tick_timer() {
+            const now = performance.now()
+            const example = this.grouped_data[this.current_hit - 1]
+            if (this.timer_last !== null && example) {
+                example.annotation_time_ms = this.elapsed_ms(example) + Math.max(0, Math.round(now - this.timer_last))
+            }
+            this.timer_last = this.timer_mounted && this.timer_visible && !this.timer_paused && example ? now : null
+        },
+        handle_visibility() {
+            this.tick_timer()
+            this.timer_visible = !document.hidden
+            this.tick_timer()
+        },
+        toggle_timer() {
+            this.tick_timer()
+            this.timer_paused = !this.timer_paused
+            this.tick_timer()
+        },
         clone_data(data) {
             return JSON.parse(JSON.stringify(data))
         },
@@ -42,6 +77,8 @@ export default {
             const input = data_override || (this.input_data && this.input_data.data)
             if (!Array.isArray(input)) { return }
 
+            this.tick_timer()
+            this.timer_last = null
             const data = this.clone_data(input)
             if (!data.length || data.some(example => !Array.isArray(example.candidates) || !example.candidates.length)) {
                 this.data_error = 'Multi-candidate data must provide a non-empty candidates array for every example.'
@@ -71,10 +108,14 @@ export default {
             this.candidate_results = this.candidate_datasets.map(dataset => this.clone_data(dataset.data))
             this.current_hit = 1
             this.data_version += 1
+            this.tick_timer()
         },
         set_synchronized_hit(hit_num) {
             const bounded_hit = Math.min(Math.max(hit_num, 1), this.grouped_data.length)
+            this.tick_timer()
             this.current_hit = bounded_hit
+            this.timer_last = null
+            this.tick_timer()
         },
         update_candidate_data(candidate_idx, hits_data) {
             this.candidate_results[candidate_idx] = this.clone_data(hits_data)
@@ -87,8 +128,10 @@ export default {
             return Boolean(example && example.candidates[candidate_idx])
         },
         get_export_data() {
+            this.tick_timer()
             return this.grouped_data.map((example, example_idx) => {
                 const exported_example = this.clone_data(example)
+                exported_example.annotation_time_ms = this.elapsed_ms(example)
                 exported_example.candidates = example.candidates.map((candidate, candidate_idx) => {
                     const result = this.candidate_results[candidate_idx]
                         && this.candidate_results[candidate_idx][example_idx]
@@ -106,6 +149,20 @@ export default {
     },
     created() {
         this.consume_data()
+    },
+    mounted() {
+        this.timer_mounted = true
+        this.timer_visible = !document.hidden
+        this.tick_timer()
+        this.timer_interval = window.setInterval(this.tick_timer, 1000)
+        document.addEventListener('visibilitychange', this.handle_visibility)
+    },
+    beforeUnmount() {
+        this.tick_timer()
+        window.clearInterval(this.timer_interval)
+        document.removeEventListener('visibilitychange', this.handle_visibility)
+        this.timer_mounted = false
+        this.timer_last = null
     }
 }
 </script>
@@ -115,6 +172,12 @@ export default {
         {{ data_error }}
     </div>
     <div v-else class="multi-candidate-container">
+        <div v-if="current_example" class="annotation-timer card-body w-65" aria-label="Annotation time">
+            <span>This example: <strong>{{ format_time(elapsed_ms(current_example)) }}</strong></span>
+            <span>Total: <strong>{{ format_time(total_time_ms) }}</strong></span>
+            <span v-if="timer_paused || !timer_visible">Paused</span>
+            <button type="button" @click="toggle_timer" :aria-pressed="timer_paused">{{ timer_paused ? 'Resume timer' : 'Pause timer' }}</button>
+        </div>
         <Interface
             v-for="(candidate_dataset, candidate_idx) in candidate_datasets"
             v-show="candidate_exists(candidate_idx)"

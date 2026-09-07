@@ -394,6 +394,33 @@ span.middleside {
     color: #333;
 }
 
+.annotation-timer {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5rem 1rem;
+    padding: 0.4rem 0.6rem;
+    box-sizing: border-box;
+    background: #f7f7f7;
+    border-bottom: 1px solid #ddd;
+    font-size: 0.8rem;
+    font-variant-numeric: tabular-nums;
+}
+
+.annotation-timer button {
+    cursor: pointer;
+    padding: 0.2rem 0.4rem;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    background: white;
+    color: #333;
+    font: inherit;
+}
+
 .translation-synthesis {
     margin-top: 0.75rem;
     margin-bottom: 1rem;
