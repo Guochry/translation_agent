@@ -38,15 +38,6 @@
         }
       },
       {
-        "id": "gemma-3-4b-it",
-        "source": "金星老儿老是一套招安招安 天庭威严被他丢尽",
-        "target": "Jin Xing Lao Er is a set of “Zha’an, Zha’an” – Heaven’s majesty was completely discarded by him.",
-        "metadata": {
-          "kind": "model",
-          "model": "gemma-3-4b-it"
-        }
-      },
-      {
         "id": "qwen3.5-27b",
         "source": "金星老儿老是一套招安招安 天庭威严被他丢尽",
         "target": "Old Venus always resorts to the same tactic of co-optation; he has utterly squandered the majesty of the Heavenly Court.",
@@ -120,15 +111,6 @@
         "metadata": {
           "kind": "model",
           "model": "gemma-3-27b-it"
-        }
-      },
-      {
-        "id": "gemma-3-4b-it",
-        "source": "启奏万岁 今有妖猴孙悟空 蛮横无理 大闹龙宫 拔去我镇海之宝",
-        "target": "I prostrate myself before the Emperor for eternity. Today, there is a mischievous monkey, Sun Wukong, acting wildly and causing chaos in the Dragon Palace, and he has stolen my treasure, the Jewel of the Seas.",
-        "metadata": {
-          "kind": "model",
-          "model": "gemma-3-4b-it"
         }
       },
       {
@@ -208,15 +190,6 @@
         }
       },
       {
-        "id": "gemma-3-4b-it",
-        "source": "万岁 贫道为万岁所炼的九转金丹 被那个孙悟空偷吃得一干二净",
-        "target": "Long live! The poor Daoist was refining a nine-turn golden elixir for the Great Emperor, and that Sun Wukong stole and devoured it completely.",
-        "metadata": {
-          "kind": "model",
-          "model": "gemma-3-4b-it"
-        }
-      },
-      {
         "id": "qwen3.5-27b",
         "source": "万岁 贫道为万岁所炼的九转金丹 被那个孙悟空偷吃得一干二净",
         "target": "Long live the Emperor! The Nine-Revolution Golden Elixir that this humble Daoist prepared for Your Majesty has been entirely stolen and consumed by that Sun Wukong.",
@@ -290,15 +263,6 @@
         "metadata": {
           "kind": "model",
           "model": "gemma-3-27b-it"
-        }
-      },
-      {
-        "id": "gemma-3-4b-it",
-        "source": "那弼马温在花果山挂起旗号 自称齐天大圣 还要与万岁平起平坐",
-        "target": "Then, Bi Ma Wen hung up his banner, proclaiming himself the Great Sage of Heaven, and insisted on sitting at the same level as the Emperor.",
-        "metadata": {
-          "kind": "model",
-          "model": "gemma-3-4b-it"
         }
       },
       {
@@ -378,15 +342,6 @@
         }
       },
       {
-        "id": "gemma-3-4b-it",
-        "source": "玉帝老儿 你眼里没有俺齐天大圣 如今俺老孙倒坐了个首席",
-        "target": "Old Emperor Jade, you don't see me, Sun Wukong, the Great Sage of the West. Now, I, your old grandson, have been seated as First in Command.",
-        "metadata": {
-          "kind": "model",
-          "model": "gemma-3-4b-it"
-        }
-      },
-      {
         "id": "qwen3.5-27b",
         "source": "玉帝老儿 你眼里没有俺齐天大圣 如今俺老孙倒坐了个首席",
         "target": "Old Jade Emperor, you never held the Great Sage Equal to Heaven in your eyes. Now, I, Old Sun, have taken the seat of honor.",
@@ -460,15 +415,6 @@
         "metadata": {
           "kind": "model",
           "model": "gemma-3-27b-it"
-        }
-      },
-      {
-        "id": "gemma-3-4b-it",
-        "source": "自从弼马温来此以后 天马 匹匹精壮驯服",
-        "target": "Since Bi Ma Wen came here, the Pegasus has grown strong and docile.",
-        "metadata": {
-          "kind": "model",
-          "model": "gemma-3-4b-it"
         }
       },
       {
@@ -548,15 +494,6 @@
         }
       },
       {
-        "id": "gemma-3-4b-it",
-        "source": "说什么在蟠桃会上吃 俺现在就吃 有何不可",
-        "target": "What’s wrong with me eating at the peach blossom festival? I’m eating now.",
-        "metadata": {
-          "kind": "model",
-          "model": "gemma-3-4b-it"
-        }
-      },
-      {
         "id": "qwen3.5-27b",
         "source": "说什么在蟠桃会上吃 俺现在就吃 有何不可",
         "target": "They say one eats at the Peach Banquet, but why not eat right now? What's wrong with that?",
@@ -630,15 +567,6 @@
         "metadata": {
           "kind": "model",
           "model": "gemma-3-27b-it"
-        }
-      },
-      {
-        "id": "gemma-3-4b-it",
-        "source": "原来是乌龟 虾米二将 俺老孙要见老龙王 快快通报",
-        "target": "It turns out it’s the turtle, Shrimp Two, and Old Sun wants to see the Old Dragon King. Report quickly!",
-        "metadata": {
-          "kind": "model",
-          "model": "gemma-3-4b-it"
         }
       },
       {
@@ -718,15 +646,6 @@
         }
       },
       {
-        "id": "gemma-3-4b-it",
-        "source": "俺老孙上天入地无所不能 哪儿有去不得的地方",
-        "target": "Old Sun can do anything, anywhere he goes.",
-        "metadata": {
-          "kind": "model",
-          "model": "gemma-3-4b-it"
-        }
-      },
-      {
         "id": "qwen3.5-27b",
         "source": "俺老孙上天入地无所不能 哪儿有去不得的地方",
         "target": "I, Old Sun, can traverse heaven and earth with boundless power; is there any place I cannot go?",
@@ -800,15 +719,6 @@
         "metadata": {
           "kind": "model",
           "model": "gemma-3-27b-it"
-        }
-      },
-      {
-        "id": "gemma-3-4b-it",
-        "source": "哼 你有多 大本领 敢自称齐天大圣 先吃我一枪",
-        "target": "Pah! How much power do you have to call yourself the Great Sage of Heaven? Shoot me first!",
-        "metadata": {
-          "kind": "model",
-          "model": "gemma-3-4b-it"
         }
       },
       {
@@ -888,15 +798,6 @@
         }
       },
       {
-        "id": "gemma-3-4b-it",
-        "source": "力能降龙伏虎 移山倒海 万岁切不可轻视啊",
-        "target": "Strength can subdue dragons and tigers, move mountains and overturn seas. A thousand years should not be disregarded!",
-        "metadata": {
-          "kind": "model",
-          "model": "gemma-3-4b-it"
-        }
-      },
-      {
         "id": "qwen3.5-27b",
         "source": "力能降龙伏虎 移山倒海 万岁切不可轻视啊",
         "target": "His power can subdue dragons and tigers, move mountains, and overturn seas. Your Majesty must never underestimate him.",
@@ -970,15 +871,6 @@
         "metadata": {
           "kind": "model",
           "model": "gemma-3-27b-it"
-        }
-      },
-      {
-        "id": "gemma-3-4b-it",
-        "source": "哼哼 别忙叫热 这热嘛还在后头呢",
-        "target": "Hmph. Don't shout about the heat yet. That heat is still to come.",
-        "metadata": {
-          "kind": "model",
-          "model": "gemma-3-4b-it"
         }
       },
       {
@@ -1058,15 +950,6 @@
         }
       },
       {
-        "id": "gemma-3-4b-it",
-        "source": "封孙悟空为弼马温掌管御马监 下殿去吧",
-        "target": "Appoint Sun Wukong as Keeper of the Horses, and go to the lower hall.",
-        "metadata": {
-          "kind": "model",
-          "model": "gemma-3-4b-it"
-        }
-      },
-      {
         "id": "qwen3.5-27b",
         "source": "封孙悟空为弼马温掌管御马监 下殿去吧",
         "target": "Seal Sun Wukong as the Bimawen, placing him in charge of the Imperial Stable. Descend from the hall.",
@@ -1140,15 +1023,6 @@
         "metadata": {
           "kind": "model",
           "model": "gemma-3-27b-it"
-        }
-      },
-      {
-        "id": "gemma-3-4b-it",
-        "source": "不费一兵一卒 把他哄上天来严加管束 如不服管 也好就地擒拿",
-        "target": "Without spending a single soldier or a single drop of effort, he was tricked into believing he was in heaven and tightly controlled; if he didn't submit to being controlled, he would be captured alive.",
-        "metadata": {
-          "kind": "model",
-          "model": "gemma-3-4b-it"
         }
       },
       {
@@ -1228,15 +1102,6 @@
         }
       },
       {
-        "id": "gemma-3-4b-it",
-        "source": "那弼马温打伤了马天君 捣毁了御马监 闯出了南天门 逃回花果山去了",
-        "target": "That Bi Ma Wen injured Ma Tian Jun, destroyed the Imperial Horse Guard, broke through the Southern Heavenly Gate, and fled back to Hua Guo Shan.",
-        "metadata": {
-          "kind": "model",
-          "model": "gemma-3-4b-it"
-        }
-      },
-      {
         "id": "qwen3.5-27b",
         "source": "那弼马温打伤了马天君 捣毁了御马监 闯出了南天门 逃回花果山去了",
         "target": "That Bimawen injured the Heavenly Lord of Horses, destroyed the Imperial Stable, broke through the Southern Heavenly Gate, and fled back to Flower-Fruit Mountain.",
@@ -1310,15 +1175,6 @@
         "metadata": {
           "kind": "model",
           "model": "gemma-3-27b-it"
-        }
-      },
-      {
-        "id": "gemma-3-4b-it",
-        "source": "- 住口 难道没有俺齐天大圣的座位",
-        "target": "Sit down. Don't you have a seat as the Heavenly King?",
-        "metadata": {
-          "kind": "model",
-          "model": "gemma-3-4b-it"
         }
       },
       {
@@ -1398,15 +1254,6 @@
         }
       },
       {
-        "id": "gemma-3-4b-it",
-        "source": "哪吒 巨灵神均不能取胜 望万岁再加兵将",
-        "target": "Nezha, the Great Spirit God, couldn't prevail. Pray for more troops and generals to be added to the army.",
-        "metadata": {
-          "kind": "model",
-          "model": "gemma-3-4b-it"
-        }
-      },
-      {
         "id": "qwen3.5-27b",
         "source": "哪吒 巨灵神均不能取胜 望万岁再加兵将",
         "target": "Neither Nezha nor the Giant Spirit God could secure victory; we beseech Your Majesty to dispatch additional troops and generals.",
@@ -1480,15 +1327,6 @@
         "metadata": {
           "kind": "model",
           "model": "gemma-3-27b-it"
-        }
-      },
-      {
-        "id": "gemma-3-4b-it",
-        "source": "众位仙姑驾到 小神未曾远迎 有罪有罪",
-        "target": "Ladies and ladies of the divine, please enter. The little deity has not greeted you from afar. Guilty, guilty.",
-        "metadata": {
-          "kind": "model",
-          "model": "gemma-3-4b-it"
         }
       },
       {
@@ -1568,15 +1406,6 @@
         }
       },
       {
-        "id": "gemma-3-4b-it",
-        "source": "你这猴头 胆子可不小 竟敢在天上偷桃偷酒 又偷吃老君的金丹",
-        "target": "You monkey-headed fool, your guts are awfully big—you dare to steal peaches and wine in the sky, and even steal the elixir of immortality from Laozi!",
-        "metadata": {
-          "kind": "model",
-          "model": "gemma-3-4b-it"
-        }
-      },
-      {
         "id": "qwen3.5-27b",
         "source": "你这猴头 胆子可不小 竟敢在天上偷桃偷酒 又偷吃老君的金丹",
         "target": "You mischievous monkey, your audacity knows no bounds! You dare to steal peaches and wine from the heavens, and even devour the Golden Elixir of the Old Lord Laozi!",
@@ -1650,15 +1479,6 @@
         "metadata": {
           "kind": "model",
           "model": "gemma-3-27b-it"
-        }
-      },
-      {
-        "id": "gemma-3-4b-it",
-        "source": "万岁真是圣明 待老臣再去哄他上天",
-        "target": "Long live the Emperor! Truly wise and enlightened. I, an old minister, will go again to coax him to ascend to heaven.",
-        "metadata": {
-          "kind": "model",
-          "model": "gemma-3-4b-it"
         }
       },
       {
@@ -1738,15 +1558,6 @@
         }
       },
       {
-        "id": "gemma-3-4b-it",
-        "source": "大胆猴头 玉帝派你管马 你竟敢把天马放了",
-        "target": "Bold monkey head! Yu Di sent you to oversee the horses, and you dared to release the Celestial Horse!",
-        "metadata": {
-          "kind": "model",
-          "model": "gemma-3-4b-it"
-        }
-      },
-      {
         "id": "qwen3.5-27b",
         "source": "大胆猴头 玉帝派你管马 你竟敢把天马放了",
         "target": "Bold Monkey, the Jade Emperor sent you to guard the horses, yet you dared to release the Heavenly Steed!",
@@ -1820,15 +1631,6 @@
         "metadata": {
           "kind": "model",
           "model": "gemma-3-27b-it"
-        }
-      },
-      {
-        "id": "gemma-3-4b-it",
-        "source": "大胆弼马温 你眼睛里还有没有玉帝呀",
-        "target": "Dare to be bold, you brazen fool! Still have Emperor Jade in your eyes?",
-        "metadata": {
-          "kind": "model",
-          "model": "gemma-3-4b-it"
         }
       },
       {
@@ -1908,15 +1710,6 @@
         }
       },
       {
-        "id": "gemma-3-4b-it",
-        "source": "这天上乃是神仙境界 与你们这花果山可是大不相 同啊",
-        "target": "This realm up there is a divine level, completely different from your Flower and Fruit Mountain!",
-        "metadata": {
-          "kind": "model",
-          "model": "gemma-3-4b-it"
-        }
-      },
-      {
         "id": "qwen3.5-27b",
         "source": "这天上乃是神仙境界 与你们这花果山可是大不相 同啊",
         "target": "The heavens above are a realm of immortals, vastly different from your Flower-Fruit Mountain.",
@@ -1990,15 +1783,6 @@
         "metadata": {
           "kind": "model",
           "model": "gemma-3-27b-it"
-        }
-      },
-      {
-        "id": "gemma-3-4b-it",
-        "source": "告诉你那玉帝老儿 答应俺老孙这个称号便罢",
-        "target": "Tell him that the Jade Emperor has agreed to bestow this title upon me, and that’s that.",
-        "metadata": {
-          "kind": "model",
-          "model": "gemma-3-4b-it"
         }
       },
       {
@@ -2078,15 +1862,6 @@
         }
       },
       {
-        "id": "gemma-3-4b-it",
-        "source": "万岁 他还口出狂言 自称齐天大圣",
-        "target": "Long live him! He still speaks gibberish and claims to be the Great Sage of Mount Tian.",
-        "metadata": {
-          "kind": "model",
-          "model": "gemma-3-4b-it"
-        }
-      },
-      {
         "id": "qwen3.5-27b",
         "source": "万岁 他还口出狂言 自称齐天大圣",
         "target": "Long live the Emperor! He still speaks arrogantly, calling himself the Great Sage Equal to Heaven.",
@@ -2160,15 +1935,6 @@
         "metadata": {
           "kind": "model",
           "model": "gemma-3-27b-it"
-        }
-      },
-      {
-        "id": "gemma-3-4b-it",
-        "source": "一个管桃园 的猴头 妄想去瑶池赴会 真是做梦",
-        "target": "A monkey-headed official, who managed a peach orchard, foolishly dreamed of going to the Jade Pond to attend a meeting.",
-        "metadata": {
-          "kind": "model",
-          "model": "gemma-3-4b-it"
         }
       },
       {
@@ -2248,15 +2014,6 @@
         }
       },
       {
-        "id": "gemma-3-4b-it",
-        "source": "玉帝老儿 俺齐天大圣的面前 可没有你的座位",
-        "target": "The Jade Emperor’s son, my West King, has no seat before me.",
-        "metadata": {
-          "kind": "model",
-          "model": "gemma-3-4b-it"
-        }
-      },
-      {
         "id": "qwen3.5-27b",
         "source": "玉帝老儿 俺齐天大圣的面前 可没有你的座位",
         "target": "Old Jade Emperor, there is no seat for you before me, the Great Sage Equal to Heaven!",
@@ -2330,15 +2087,6 @@
         "metadata": {
           "kind": "model",
           "model": "gemma-3-27b-it"
-        }
-      },
-      {
-        "id": "gemma-3-4b-it",
-        "source": "哎呀 管他什么齐天大圣 我们来此摘桃 何用他知道",
-        "target": "Oh, who cares about the Great Sage of Heaven? We're here to pick peaches, it doesn't matter what he knows.",
-        "metadata": {
-          "kind": "model",
-          "model": "gemma-3-4b-it"
         }
       },
       {
@@ -2418,15 +2166,6 @@
         }
       },
       {
-        "id": "gemma-3-4b-it",
-        "source": "启奏万岁 御马监缺少个管马官",
-        "target": "A petition to the Emperor: The Imperial Stud lacks a Keeper of Horses.",
-        "metadata": {
-          "kind": "model",
-          "model": "gemma-3-4b-it"
-        }
-      },
-      {
         "id": "qwen3.5-27b",
         "source": "启奏万岁 御马监缺少个管马官",
         "target": "Your Majesty, the Imperial Stable Office is in need of a horse superintendent.",
@@ -2500,15 +2239,6 @@
         "metadata": {
           "kind": "model",
           "model": "gemma-3-27b-it"
-        }
-      },
-      {
-        "id": "gemma-3-4b-it",
-        "source": "命你带领十万天兵天将 定要捉拿妖猴见我",
-        "target": "I command you to lead ten thousand heavenly soldiers and generals to capture the demon monkey and bring him to me.",
-        "metadata": {
-          "kind": "model",
-          "model": "gemma-3-4b-it"
         }
       },
       {
@@ -2588,15 +2318,6 @@
         }
       },
       {
-        "id": "gemma-3-4b-it",
-        "source": "好是好啊 只是比起天上的蟠桃园来 那可就差得远咯",
-        "target": "That’s good, it’s good, but it’s far off compared to the peach garden in the sky.",
-        "metadata": {
-          "kind": "model",
-          "model": "gemma-3-4b-it"
-        }
-      },
-      {
         "id": "qwen3.5-27b",
         "source": "好是好啊 只是比起天上的蟠桃园来 那可就差得远咯",
         "target": "It's good, certainly, but compared to the Peach Garden in the heavens, it falls far short.",
@@ -2670,15 +2391,6 @@
         "metadata": {
           "kind": "model",
           "model": "gemma-3-27b-it"
-        }
-      },
-      {
-        "id": "gemma-3-4b-it",
-        "source": "万岁 待贫道相助二郎真君一臂之力",
-        "target": "Long live! I humbly request your assistance, Second Young Master, with a helping hand.",
-        "metadata": {
-          "kind": "model",
-          "model": "gemma-3-4b-it"
         }
       },
       {
@@ -2758,15 +2470,6 @@
         }
       },
       {
-        "id": "gemma-3-4b-it",
-        "source": "俺在这花果山上就是齐天大圣 谁用他封",
-        "target": "Up here on the fruit mountain, I am the Great Sage of Heaven. Who needs his seal?",
-        "metadata": {
-          "kind": "model",
-          "model": "gemma-3-4b-it"
-        }
-      },
-      {
         "id": "qwen3.5-27b",
         "source": "俺在这花果山上就是齐天大圣 谁用他封",
         "target": "On this Flower-Fruit Mountain, I am the Great Sage Equal to Heaven. Who needs their titles to define me?",
@@ -2840,15 +2543,6 @@
         "metadata": {
           "kind": "model",
           "model": "gemma-3-27b-it"
-        }
-      },
-      {
-        "id": "gemma-3-4b-it",
-        "source": "望万岁降旨 再发兵将",
-        "target": "Pray for the Emperor’s grace and dispatch more troops and generals.",
-        "metadata": {
-          "kind": "model",
-          "model": "gemma-3-4b-it"
         }
       },
       {
@@ -2928,15 +2622,6 @@
         }
       },
       {
-        "id": "gemma-3-4b-it",
-        "source": "冒犯天威 定要捉拿问 罪",
-        "target": "Offend the Heavens, surely arrest the culprit and bring him to justice.",
-        "metadata": {
-          "kind": "model",
-          "model": "gemma-3-4b-it"
-        }
-      },
-      {
         "id": "qwen3.5-27b",
         "source": "冒犯天威 定要捉拿问 罪",
         "target": "To offend the heavenly majesty is to invite certain arrest and punishment.",
@@ -3010,15 +2695,6 @@
         "metadata": {
           "kind": "model",
           "model": "gemma-3-27b-it"
-        }
-      },
-      {
-        "id": "gemma-3-4b-it",
-        "source": "听说蟠桃会上没请他 还大骂玉帝和王母",
-        "target": "I heard he wasn't invited to the Peaches Banquet and was still scolding the Jade Emperor and the Queen Mother.",
-        "metadata": {
-          "kind": "model",
-          "model": "gemma-3-4b-it"
         }
       },
       {
@@ -3098,15 +2774,6 @@
         }
       },
       {
-        "id": "gemma-3-4b-it",
-        "source": "那王母的蟠桃园 乃是天上第一仙景啊",
-        "target": "That Peach Garden of the Queen Mother is truly the first celestial wonder in heaven!",
-        "metadata": {
-          "kind": "model",
-          "model": "gemma-3-4b-it"
-        }
-      },
-      {
         "id": "qwen3.5-27b",
         "source": "那王母的蟠桃园 乃是天上第一仙景啊",
         "target": "The Peach Garden of the Queen Mother of the West is the foremost celestial paradise in the heavens.",
@@ -3180,15 +2847,6 @@
         "metadata": {
           "kind": "model",
           "model": "gemma-3-27b-it"
-        }
-      },
-      {
-        "id": "gemma-3-4b-it",
-        "source": "你们背地里下手 暗箭伤人 算不得什么好汉",
-        "target": "You strike from the shadows, behind the scenes, with secret arrows that injure people. You’re not a hero.",
-        "metadata": {
-          "kind": "model",
-          "model": "gemma-3-4b-it"
         }
       },
       {
@@ -3268,15 +2926,6 @@
         }
       },
       {
-        "id": "gemma-3-4b-it",
-        "source": "不如将计就计 就给他个齐天大圣的空名",
-        "target": "Let's play a trick on him and give him the empty title of the Great Sage of Heaven.",
-        "metadata": {
-          "kind": "model",
-          "model": "gemma-3-4b-it"
-        }
-      },
-      {
         "id": "qwen3.5-27b",
         "source": "不如将计就计 就给他个齐天大圣的空名",
         "target": "Better to play along with his scheme and grant him the empty title of the Great Sage Equal to Heaven.",
@@ -3350,15 +2999,6 @@
         "metadata": {
           "kind": "model",
           "model": "gemma-3-27b-it"
-        }
-      },
-      {
-        "id": "gemma-3-4b-it",
-        "source": "什么蟠桃园 能比的上俺这花果山",
-        "target": "What peach orchard can compare to my flower and fruit mountain?",
-        "metadata": {
-          "kind": "model",
-          "model": "gemma-3-4b-it"
         }
       },
       {
@@ -3438,15 +3078,6 @@
         }
       },
       {
-        "id": "gemma-3-4b-it",
-        "source": "若不依他 就要打上凌霄宝殿",
-        "target": "If not by him, then mark it with the Jade Emperor’s Palace.",
-        "metadata": {
-          "kind": "model",
-          "model": "gemma-3-4b-it"
-        }
-      },
-      {
         "id": "qwen3.5-27b",
         "source": "若不依他 就要打上凌霄宝殿",
         "target": "If we do not rely on him, we shall storm the Hall of the Highest Void.",
@@ -3520,15 +3151,6 @@
         "metadata": {
           "kind": "model",
           "model": "gemma-3-27b-it"
-        }
-      },
-      {
-        "id": "gemma-3-4b-it",
-        "source": "如不抓来严加惩办 定会有人学他 天上岂不大乱",
-        "target": "If he isn't caught and severely punished, someone will surely learn from his example, and wouldn't that cause chaos in heaven?",
-        "metadata": {
-          "kind": "model",
-          "model": "gemma-3-4b-it"
         }
       },
       {
@@ -3608,15 +3230,6 @@
         }
       },
       {
-        "id": "gemma-3-4b-it",
-        "source": "知道了 九千年开花 九千年结果",
-        "target": "Known for nine thousand years, blooming, known for nine thousand years, bearing fruit.",
-        "metadata": {
-          "kind": "model",
-          "model": "gemma-3-4b-it"
-        }
-      },
-      {
         "id": "qwen3.5-27b",
         "source": "知道了 九千年开花 九千年结果",
         "target": "Understood. It blooms after nine thousand years and bears fruit after nine thousand years.",
@@ -3690,15 +3303,6 @@
         "metadata": {
           "kind": "model",
           "model": "gemma-3-27b-it"
-        }
-      },
-      {
-        "id": "gemma-3-4b-it",
-        "source": "大圣 这片桃林是 三千年一开花 三千年一结果",
-        "target": "Great Sage, this peach grove blooms and bears fruit only once every three thousand years.",
-        "metadata": {
-          "kind": "model",
-          "model": "gemma-3-4b-it"
         }
       },
       {
@@ -3778,15 +3382,6 @@
         }
       },
       {
-        "id": "gemma-3-4b-it",
-        "source": "等到开蟠桃盛会 到那时候 还有九千年的仙桃呢",
-        "target": "By the time the Peach Blossom Gathering is held, there will be nine thousand years of peaches.",
-        "metadata": {
-          "kind": "model",
-          "model": "gemma-3-4b-it"
-        }
-      },
-      {
         "id": "qwen3.5-27b",
         "source": "等到开蟠桃盛会 到那时候 还有九千年的仙桃呢",
         "target": "Wait until the Peach Banquet is held; by that time, there will still be nine thousand years' worth of immortal peaches.",
@@ -3860,15 +3455,6 @@
         "metadata": {
           "kind": "model",
           "model": "gemma-3-27b-it"
-        }
-      },
-      {
-        "id": "gemma-3-4b-it",
-        "source": "你们在家好好操练 要是真好 就带你们前去",
-        "target": "Do a good workout at home. If you do well, I’ll take you there.",
-        "metadata": {
-          "kind": "model",
-          "model": "gemma-3-4b-it"
         }
       },
       {
@@ -3948,15 +3534,6 @@
         }
       },
       {
-        "id": "gemma-3-4b-it",
-        "source": "- 待老臣再去招安哄他上天 严加管束",
-        "target": "Wait for the old minister to go and beseech him to seek imperial favor and pacify him by raising him to heaven; closely supervise him.",
-        "metadata": {
-          "kind": "model",
-          "model": "gemma-3-4b-it"
-        }
-      },
-      {
         "id": "qwen3.5-27b",
         "source": "- 待老臣再去招安哄他上天 严加管束",
         "target": "- Let this old minister go once more to pacify and coax him into ascending to heaven, where he will be placed under strict supervision.",
@@ -4030,15 +3607,6 @@
         "metadata": {
           "kind": "model",
           "model": "gemma-3-27b-it"
-        }
-      },
-      {
-        "id": "gemma-3-4b-it",
-        "source": "是啊 太扫兴了 大王要件称手合用的兵器嘛 倒也不难",
-        "target": "Yeah, I'm so disappointed. It’s a weapon for the Great King to use, right? It’s not that difficult.",
-        "metadata": {
-          "kind": "model",
-          "model": "gemma-3-4b-it"
         }
       },
       {
@@ -4118,15 +3686,6 @@
         }
       },
       {
-        "id": "gemma-3-4b-it",
-        "source": "来人啊 快把那七千二百斤的 方天戟 抬来给他试试",
-        "target": "Come on, bring that Seven Thousand Two Hundred Jin Fang Tian戟 here to test it for him.",
-        "metadata": {
-          "kind": "model",
-          "model": "gemma-3-4b-it"
-        }
-      },
-      {
         "id": "qwen3.5-27b",
         "source": "来人啊 快把那七千二百斤的 方天戟 抬来给他试试",
         "target": "Bring the Fangtian Halberd, weighing seven thousand two hundred jin, and let him try it!",
@@ -4200,15 +3759,6 @@
         "metadata": {
           "kind": "model",
           "model": "gemma-3-27b-it"
-        }
-      },
-      {
-        "id": "gemma-3-4b-it",
-        "source": "他看不起俺老孙 倒要叫他看看 俺老孙可不是好欺负 的",
-        "target": "He looks down on my old Sun, but he wants to see what my old Sun is like. My old Sun isn't someone easy to bully.",
-        "metadata": {
-          "kind": "model",
-          "model": "gemma-3-4b-it"
         }
       },
       {
@@ -4288,15 +3838,6 @@
         }
       },
       {
-        "id": "gemma-3-4b-it",
-        "source": "此猴妖法甚大 若不除去 龙宫永远不得安宁",
-        "target": "This monkey spirit’s power is immense. If it’s not removed, the Dragon Palace will never know peace.",
-        "metadata": {
-          "kind": "model",
-          "model": "gemma-3-4b-it"
-        }
-      },
-      {
         "id": "qwen3.5-27b",
         "source": "此猴妖法甚大 若不除去 龙宫永远不得安宁",
         "target": "This monkey demon possesses immense magical power; if he is not eliminated, the Dragon Palace shall never know peace.",
@@ -4370,15 +3911,6 @@
         "metadata": {
           "kind": "model",
           "model": "gemma-3-27b-it"
-        }
-      },
-      {
-        "id": "gemma-3-4b-it",
-        "source": "- 速请二郎真君同去捉拿妖猴 不得有误",
-        "target": "Hurry and bring Young Prince Lian to apprehend the demon monkey, and do not make any mistakes.",
-        "metadata": {
-          "kind": "model",
-          "model": "gemma-3-4b-it"
         }
       },
       {
@@ -4458,15 +3990,6 @@
         }
       },
       {
-        "id": "gemma-3-4b-it",
-        "source": "玉帝老儿你三番两次欺压俺老孙 俺与你势不两立",
-        "target": "Old Emperor Jade, you have repeatedly oppressed me, and we are not on opposite sides.",
-        "metadata": {
-          "kind": "model",
-          "model": "gemma-3-4b-it"
-        }
-      },
-      {
         "id": "qwen3.5-27b",
         "source": "玉帝老儿你三番两次欺压俺老孙 俺与你势不两立",
         "target": "Old Jade Emperor, you have repeatedly oppressed me, the Great Sage! We are now irreconcilable enemies!",
@@ -4540,15 +4063,6 @@
         "metadata": {
           "kind": "model",
           "model": "gemma-3-27b-it"
-        }
-      },
-      {
-        "id": "gemma-3-4b-it",
-        "source": "妖猴如此猖狂岂能容忍 待微臣前去擒拿问罪",
-        "target": "How could such a brazen monkey be allowed to behave so outrageously, especially when a humble servant comes to apprehend and question him?",
-        "metadata": {
-          "kind": "model",
-          "model": "gemma-3-4b-it"
         }
       },
       {
@@ -4628,15 +4142,6 @@
         }
       },
       {
-        "id": "gemma-3-4b-it",
-        "source": "噢 那妖猴好生了得 他是五百年前得道的猴精",
-        "target": "Oh, that monkey is really thriving! He’s a monkey spirit who attained enlightenment five hundred years ago.",
-        "metadata": {
-          "kind": "model",
-          "model": "gemma-3-4b-it"
-        }
-      },
-      {
         "id": "qwen3.5-27b",
         "source": "噢 那妖猴好生了得 他是五百年前得道的猴精",
         "target": "Oh, that demon monkey is truly formidable; he is a monkey spirit who attained the Dao five hundred years ago.",
@@ -4710,15 +4215,6 @@
         "metadata": {
           "kind": "model",
           "model": "gemma-3-27b-it"
-        }
-      },
-      {
-        "id": "gemma-3-4b-it",
-        "source": "什么玉帝之命 俺老孙不听这一套",
-        "target": "As for the decree of the Jade Emperor, old Sun doesn't play along with this nonsense.",
-        "metadata": {
-          "kind": "model",
-          "model": "gemma-3-4b-it"
         }
       },
       {
@@ -4798,15 +4294,6 @@
         }
       },
       {
-        "id": "gemma-3-4b-it",
-        "source": "住口 玉帝老儿请我上天还派个人来管我",
-        "target": "Shut up! Jade Emperor’s son, please send someone else to handle me.",
-        "metadata": {
-          "kind": "model",
-          "model": "gemma-3-4b-it"
-        }
-      },
-      {
         "id": "qwen3.5-27b",
         "source": "住口 玉帝老儿请我上天还派个人来管我",
         "target": "Hush! The Jade Emperor invited me to heaven, yet he sends someone to control me?",
@@ -4880,15 +4367,6 @@
         "metadata": {
           "kind": "model",
           "model": "gemma-3-27b-it"
-        }
-      },
-      {
-        "id": "gemma-3-4b-it",
-        "source": "量你这小小毛神有何法力 胆敢出此狂言",
-        "target": "What powers do you possess, little demon, to dare utter such wild claims?",
-        "metadata": {
-          "kind": "model",
-          "model": "gemma-3-4b-it"
         }
       },
       {
@@ -4968,15 +4446,6 @@
         }
       },
       {
-        "id": "gemma-3-4b-it",
-        "source": "既然玉帝请俺老孙上天 为什么还要动刀动枪的",
-        "target": "Since the Jade Emperor has summoned Old Sun to go to Heaven, why do you still need to use knives and guns?",
-        "metadata": {
-          "kind": "model",
-          "model": "gemma-3-4b-it"
-        }
-      },
-      {
         "id": "qwen3.5-27b",
         "source": "既然玉帝请俺老孙上天 为什么还要动刀动枪的",
         "target": "Since the Jade Emperor has invited me, the Great Sage, to ascend to heaven, why must weapons be drawn?",
@@ -5050,15 +4519,6 @@
         "metadata": {
           "kind": "model",
           "model": "gemma-3-27b-it"
-        }
-      },
-      {
-        "id": "gemma-3-4b-it",
-        "source": "你胎毛未干说什么大话 俺齐天大圣舍不得打你",
-        "target": "You haven't even dried your cradle hair, and you're spouting big words. I, the Great Sage of Heaven, can't bring myself to beat you.",
-        "metadata": {
-          "kind": "model",
-          "model": "gemma-3-4b-it"
         }
       },
       {
@@ -5138,15 +4598,6 @@
         }
       },
       {
-        "id": "gemma-3-4b-it",
-        "source": "启奏万岁 孙悟空现已宣到",
-        "target": "Salutations to the Emperor! Sun Wukong has been officially appointed.",
-        "metadata": {
-          "kind": "model",
-          "model": "gemma-3-4b-it"
-        }
-      },
-      {
         "id": "qwen3.5-27b",
         "source": "启奏万岁 孙悟空现已宣到",
         "target": "Your Majesty, Sun Wukong has been summoned and is now present.",
@@ -5220,15 +4671,6 @@
         "metadata": {
           "kind": "model",
           "model": "gemma-3-27b-it"
-        }
-      },
-      {
-        "id": "gemma-3-4b-it",
-        "source": "只要我拿得动就送给我 难道你说了不算吗",
-        "target": "As long as I can get my hands on it, give it to me. Isn't what you say supposed to count?",
-        "metadata": {
-          "kind": "model",
-          "model": "gemma-3-4b-it"
         }
       },
       {
@@ -5308,15 +4750,6 @@
         }
       },
       {
-        "id": "gemma-3-4b-it",
-        "source": "万岁 把妖猴交于贫道 我自有办法",
-        "target": "Long live! Surrender the demon monkeys to this poor fellow; I have a way.",
-        "metadata": {
-          "kind": "model",
-          "model": "gemma-3-4b-it"
-        }
-      },
-      {
         "id": "qwen3.5-27b",
         "source": "万岁 把妖猴交于贫道 我自有办法",
         "target": "Your Majesty, hand the demon monkey over to this humble Daoist; I have a way to deal with him.",
@@ -5390,15 +4823,6 @@
         "metadata": {
           "kind": "model",
           "model": "gemma-3-27b-it"
-        }
-      },
-      {
-        "id": "gemma-3-4b-it",
-        "source": "赶快闪开 这是下界仙人 我奉玉帝旨 意请他上天的",
-        "target": "Quickly, move aside! He is a Celestial Immortal from the Lower Realm. I am here by order of the Jade Emperor to summon him to Heaven.",
-        "metadata": {
-          "kind": "model",
-          "model": "gemma-3-4b-it"
         }
       },
       {
@@ -5478,15 +4902,6 @@
         }
       },
       {
-        "id": "gemma-3-4b-it",
-        "source": "老臣早已说过那妖猴有七十二般变化 本领确实不小啊",
-        "target": "The old minister had already said that the mischievous monkey could change into seventy-two forms; his abilities are indeed quite impressive.",
-        "metadata": {
-          "kind": "model",
-          "model": "gemma-3-4b-it"
-        }
-      },
-      {
         "id": "qwen3.5-27b",
         "source": "老臣早已说过那妖猴有七十二般变化 本领确实不小啊",
         "target": "This old minister has long stated that the demon monkey possesses seventy-two transformations; his abilities are indeed formidable.",
@@ -5560,15 +4975,6 @@
         "metadata": {
           "kind": "model",
           "model": "gemma-3-27b-it"
-        }
-      },
-      {
-        "id": "gemma-3-4b-it",
-        "source": "- 得令 不得放走妖猴",
-        "target": "Do not allow the demon monkey to escape.",
-        "metadata": {
-          "kind": "model",
-          "model": "gemma-3-4b-it"
         }
       },
       {
@@ -5648,15 +5054,6 @@
         }
       },
       {
-        "id": "gemma-3-4b-it",
-        "source": "来 来来 这是王母的蟠桃 吃了可以长生不老",
-        "target": "Come come come, this is the peach of Mother Wang! Eating it can make you live forever.",
-        "metadata": {
-          "kind": "model",
-          "model": "gemma-3-4b-it"
-        }
-      },
-      {
         "id": "qwen3.5-27b",
         "source": "来 来来 这是王母的蟠桃 吃了可以长生不老",
         "target": "Come, come, come! This is the Queen Mother's peaches of immortality; eat them and you shall live forever.",
@@ -5730,15 +5127,6 @@
         "metadata": {
           "kind": "model",
           "model": "gemma-3-27b-it"
-        }
-      },
-      {
-        "id": "gemma-3-4b-it",
-        "source": "玉帝老儿 你真了不起 对付俺一个 还只好用暗算",
-        "target": "Old Emperor Jade, you’re truly remarkable. Dealing with just me, and you only had to resort to trickery.",
-        "metadata": {
-          "kind": "model",
-          "model": "gemma-3-4b-it"
         }
       },
       {
@@ -5818,15 +5206,6 @@
         }
       },
       {
-        "id": "gemma-3-4b-it",
-        "source": "- 猴头 炉子里滋味如何呀",
-        "target": "How does it taste in the pot?",
-        "metadata": {
-          "kind": "model",
-          "model": "gemma-3-4b-it"
-        }
-      },
-      {
         "id": "qwen3.5-27b",
         "source": "- 猴头 炉子里滋味如何呀",
         "target": "- Monkey Head, how's the taste in the furnace?",
@@ -5900,15 +5279,6 @@
         "metadata": {
           "kind": "model",
           "model": "gemma-3-27b-it"
-        }
-      },
-      {
-        "id": "gemma-3-4b-it",
-        "source": "玉帝已封你为齐天大圣 请你上天",
-        "target": "The Jade Emperor has appointed you as the Great Sage of Heaven. Please ascend to Heaven.",
-        "metadata": {
-          "kind": "model",
-          "model": "gemma-3-4b-it"
         }
       },
       {
@@ -5988,15 +5358,6 @@
         }
       },
       {
-        "id": "gemma-3-4b-it",
-        "source": "那孙悟空是下界仙人 不懂天庭礼节 万岁恕罪",
-        "target": "That Sun Wukong is a celestial being from the lower realm, unfamiliar with the etiquette of the Heavenly Court, long live and forgive my transgression.",
-        "metadata": {
-          "kind": "model",
-          "model": "gemma-3-4b-it"
-        }
-      },
-      {
         "id": "qwen3.5-27b",
         "source": "那孙悟空是下界仙人 不懂天庭礼节 万岁恕罪",
         "target": "That Sun Wukong is a celestial being from the mortal realm who is unfamiliar with the courtly etiquette of Heaven. May Your Majesty forgive his transgression.",
@@ -6070,15 +5431,6 @@
         "metadata": {
           "kind": "model",
           "model": "gemma-3-27b-it"
-        }
-      },
-      {
-        "id": "gemma-3-4b-it",
-        "source": "那弼马温乃是你的手下",
-        "target": "That's under your command.",
-        "metadata": {
-          "kind": "model",
-          "model": "gemma-3-4b-it"
         }
       },
       {
@@ -6158,15 +5510,6 @@
         }
       },
       {
-        "id": "gemma-3-4b-it",
-        "source": "哼 好啊 我叫你好好凉快 好好地舒服",
-        "target": "Alright, fine. I’m telling you to cool down properly and be comfortable.",
-        "metadata": {
-          "kind": "model",
-          "model": "gemma-3-4b-it"
-        }
-      },
-      {
         "id": "qwen3.5-27b",
         "source": "哼 好啊 我叫你好好凉快 好好地舒服",
         "target": "Hmph, fine. I'll make sure you get thoroughly chilled and wonderfully comfortable.",
@@ -6240,15 +5583,6 @@
         "metadata": {
           "kind": "model",
           "model": "gemma-3-27b-it"
-        }
-      },
-      {
-        "id": "gemma-3-4b-it",
-        "source": "启奏万岁 大事不好啦",
-        "target": "Long live the Emperor! Something’s wrong!",
-        "metadata": {
-          "kind": "model",
-          "model": "gemma-3-4b-it"
         }
       },
       {
@@ -6328,15 +5662,6 @@
         }
       },
       {
-        "id": "gemma-3-4b-it",
-        "source": "如若不然定要打上凌霄宝殿",
-        "target": "If not, I’ll write your name on Heaven’s Palace.",
-        "metadata": {
-          "kind": "model",
-          "model": "gemma-3-4b-it"
-        }
-      },
-      {
         "id": "qwen3.5-27b",
         "source": "如若不然定要打上凌霄宝殿",
         "target": "Otherwise, we shall surely ascend to the Hall of the Highest Heaven and challenge it.",
@@ -6410,15 +5735,6 @@
         "metadata": {
           "kind": "model",
           "model": "gemma-3-27b-it"
-        }
-      },
-      {
-        "id": "gemma-3-4b-it",
-        "source": "怎么到了太上老君的洞府了",
-        "target": "We've arrived at Lao Jun's (Taishang Laojun's) abode.",
-        "metadata": {
-          "kind": "model",
-          "model": "gemma-3-4b-it"
         }
       },
       {
@@ -6498,15 +5814,6 @@
         }
       },
       {
-        "id": "gemma-3-4b-it",
-        "source": "徒儿们 妖猴已经化为灰烬 赶快熄火开炉",
-        "target": "The disciples’ demon monkeys have turned to ashes, quickly extinguish the fire and start the stove.",
-        "metadata": {
-          "kind": "model",
-          "model": "gemma-3-4b-it"
-        }
-      },
-      {
         "id": "qwen3.5-27b",
         "source": "徒儿们 妖猴已经化为灰烬 赶快熄火开炉",
         "target": "Disciples, the demon monkey has turned to ash. Extinguish the fire and open the furnace immediately.",
@@ -6580,15 +5887,6 @@
         "metadata": {
           "kind": "model",
           "model": "gemma-3-27b-it"
-        }
-      },
-      {
-        "id": "gemma-3-4b-it",
-        "source": "玉帝老儿 来给俺老孙斟酒",
-        "target": "Old Emperor Jade is here to pour me a drink.",
-        "metadata": {
-          "kind": "model",
-          "model": "gemma-3-4b-it"
         }
       },
       {
@@ -6668,15 +5966,6 @@
         }
       },
       {
-        "id": "gemma-3-4b-it",
-        "source": "在你这么大的东洋大海 连件称手的兵器也找不到吗",
-        "target": "Don't you, with such a vast Eastern sea, fail to find even a decent weapon?",
-        "metadata": {
-          "kind": "model",
-          "model": "gemma-3-4b-it"
-        }
-      },
-      {
         "id": "qwen3.5-27b",
         "source": "在你这么大的东洋大海 连件称手的兵器也找不到吗",
         "target": "In such a vast Eastern sea, can you not find a single weapon that suits you?",
@@ -6750,15 +6039,6 @@
         "metadata": {
           "kind": "model",
           "model": "gemma-3-27b-it"
-        }
-      },
-      {
-        "id": "gemma-3-4b-it",
-        "source": "好啊 请我上天原来是这么回事 哼",
-        "target": "Sounds good, let me ascend to heaven – that’s how it was all supposed to be, heh.",
-        "metadata": {
-          "kind": "model",
-          "model": "gemma-3-4b-it"
         }
       },
       {
@@ -6838,15 +6118,6 @@
         }
       },
       {
-        "id": "gemma-3-4b-it",
-        "source": "妖猴什么来历 胆敢如此放肆",
-        "target": "What is the origin of this mischievous monkey? How dare it behave so brazenly?",
-        "metadata": {
-          "kind": "model",
-          "model": "gemma-3-4b-it"
-        }
-      },
-      {
         "id": "qwen3.5-27b",
         "source": "妖猴什么来历 胆敢如此放肆",
         "target": "What is your origin, you demon monkey, to dare act so outrageously?",
@@ -6920,15 +6191,6 @@
         "metadata": {
           "kind": "model",
           "model": "gemma-3-27b-it"
-        }
-      },
-      {
-        "id": "gemma-3-4b-it",
-        "source": "玉帝老儿 这次你可吃不成金丹了",
-        "target": "Old Emperor Jade – this time you won’t be able to cultivate a golden pill.",
-        "metadata": {
-          "kind": "model",
-          "model": "gemma-3-4b-it"
         }
       },
       {
@@ -7008,15 +6270,6 @@
         }
       },
       {
-        "id": "gemma-3-4b-it",
-        "source": "- 谁敢 除非是你摘的",
-        "target": "Who dares, unless you plucked it?",
-        "metadata": {
-          "kind": "model",
-          "model": "gemma-3-4b-it"
-        }
-      },
-      {
         "id": "qwen3.5-27b",
         "source": "- 谁敢 除非是你摘的",
         "target": "- Who dares? Unless you picked it.",
@@ -7090,15 +6343,6 @@
         "metadata": {
           "kind": "model",
           "model": "gemma-3-27b-it"
-        }
-      },
-      {
-        "id": "gemma-3-4b-it",
-        "source": "这是给玉帝炼的金丹 俺先尝尝什么滋味",
-        "target": "This is the golden elixir I’m making for the Jade Emperor. Let me taste it first to see what it’s like.",
-        "metadata": {
-          "kind": "model",
-          "model": "gemma-3-4b-it"
         }
       },
       {
@@ -7178,15 +6422,6 @@
         }
       },
       {
-        "id": "gemma-3-4b-it",
-        "source": "- 快快带俺前去 不然就吃俺老孙这一拳",
-        "target": "Hurry, take me there quickly, or I’ll beat you!",
-        "metadata": {
-          "kind": "model",
-          "model": "gemma-3-4b-it"
-        }
-      },
-      {
         "id": "qwen3.5-27b",
         "source": "- 快快带俺前去 不然就吃俺老孙这一拳",
         "target": "Hurry and take me there, or I, the Great Sage, will strike you with this fist!",
@@ -7260,15 +6495,6 @@
         "metadata": {
           "kind": "model",
           "model": "gemma-3-27b-it"
-        }
-      },
-      {
-        "id": "gemma-3-4b-it",
-        "source": "王母 叫你的蟠桃会开得再热闹些",
-        "target": "The Queen Mother wants your peach gathering to be even more lively.",
-        "metadata": {
-          "kind": "model",
-          "model": "gemma-3-4b-it"
         }
       },
       {
@@ -7348,15 +6574,6 @@
         }
       },
       {
-        "id": "gemma-3-4b-it",
-        "source": "俺是玉帝请来的 快快让俺老孙进去",
-        "target": "I am here at the invitation of the Jade Emperor. Quickly, let me, Old Sun, enter.",
-        "metadata": {
-          "kind": "model",
-          "model": "gemma-3-4b-it"
-        }
-      },
-      {
         "id": "qwen3.5-27b",
         "source": "俺是玉帝请来的 快快让俺老孙进去",
         "target": "I was summoned by the Jade Emperor! Let me, Old Sun, in at once!",
@@ -7430,15 +6647,6 @@
         "metadata": {
           "kind": "model",
           "model": "gemma-3-27b-it"
-        }
-      },
-      {
-        "id": "gemma-3-4b-it",
-        "source": "这是禹王治水时 留下来的一根定海神针",
-        "target": "This is a nail left over from Yu Wang’s (Yu the Great’s) work of diverting the floods.",
-        "metadata": {
-          "kind": "model",
-          "model": "gemma-3-4b-it"
         }
       },
       {
@@ -7518,15 +6726,6 @@
         }
       },
       {
-        "id": "gemma-3-4b-it",
-        "source": "以老臣看来 不如携带诏书召他上天",
-        "target": "In my old minister’s opinion, it’s better to carry the edict and summon him to heaven.",
-        "metadata": {
-          "kind": "model",
-          "model": "gemma-3-4b-it"
-        }
-      },
-      {
         "id": "qwen3.5-27b",
         "source": "以老臣看来 不如携带诏书召他上天",
         "target": "In the view of this old minister, it would be better to summon him to the heavens with an imperial edict.",
@@ -7600,15 +6799,6 @@
         "metadata": {
           "kind": "model",
           "model": "gemma-3-27b-it"
-        }
-      },
-      {
-        "id": "gemma-3-4b-it",
-        "source": "今天俺老孙倒要看看这太上老君炼丹的地方",
-        "target": "Today, Old Sun himself is going to take a look at where the Great Sovereign Elder is refining pills.",
-        "metadata": {
-          "kind": "model",
-          "model": "gemma-3-4b-it"
         }
       },
       {
@@ -7688,15 +6878,6 @@
         }
       },
       {
-        "id": "gemma-3-4b-it",
-        "source": "是专管你这猴头的 你还不乖乖地服管",
-        "target": "I’m only responsible for you, you still aren’t obedient.",
-        "metadata": {
-          "kind": "model",
-          "model": "gemma-3-4b-it"
-        }
-      },
-      {
         "id": "qwen3.5-27b",
         "source": "是专管你这猴头的 你还不乖乖地服管",
         "target": "I am the one specifically in charge of you, you monkey. Why don't you just obediently submit to my authority?",
@@ -7770,15 +6951,6 @@
         "metadata": {
           "kind": "model",
           "model": "gemma-3-27b-it"
-        }
-      },
-      {
-        "id": "gemma-3-4b-it",
-        "source": "大胆妖猴 无法无天",
-        "target": "Bold and mischievous monkeys, unrestrained and lawless.",
-        "metadata": {
-          "kind": "model",
-          "model": "gemma-3-4b-it"
         }
       },
       {
@@ -7858,15 +7030,6 @@
         }
       },
       {
-        "id": "gemma-3-4b-it",
-        "source": "上天去做官呐",
-        "target": "To go and serve as an official!",
-        "metadata": {
-          "kind": "model",
-          "model": "gemma-3-4b-it"
-        }
-      },
-      {
         "id": "qwen3.5-27b",
         "source": "上天去做官呐",
         "target": "To go to heaven and hold office.",
@@ -7940,15 +7103,6 @@
         "metadata": {
           "kind": "model",
           "model": "gemma-3-27b-it"
-        }
-      },
-      {
-        "id": "gemma-3-4b-it",
-        "source": "这些仙桃是王母专为开蟠桃盛会用的 现在可不能吃啊",
-        "target": "These Xian tao (immortal peaches) are specially made by the Queen Mother for the蟠桃盛会 (Peach Blossom Festival). Now you can’t eat them.",
-        "metadata": {
-          "kind": "model",
-          "model": "gemma-3-4b-it"
         }
       },
       {
@@ -8028,15 +7182,6 @@
         }
       },
       {
-        "id": "gemma-3-4b-it",
-        "source": "奉玉帝圣旨请你上天",
-        "target": "An imperial edict from the Jade Emperor requests you ascend to Heaven.",
-        "metadata": {
-          "kind": "model",
-          "model": "gemma-3-4b-it"
-        }
-      },
-      {
         "id": "qwen3.5-27b",
         "source": "奉玉帝圣旨请你上天",
         "target": "By the sacred decree of the Jade Emperor, you are summoned to ascend to heaven.",
@@ -8110,15 +7255,6 @@
         "metadata": {
           "kind": "model",
           "model": "gemma-3-27b-it"
-        }
-      },
-      {
-        "id": "gemma-3-4b-it",
-        "source": "这桃可非同小可 九千年开花",
-        "target": "This peach is no ordinary peach; it blooms after nine thousand years.",
-        "metadata": {
-          "kind": "model",
-          "model": "gemma-3-4b-it"
         }
       },
       {
@@ -8198,15 +7334,6 @@
         }
       },
       {
-        "id": "gemma-3-4b-it",
-        "source": "但不知这蟠桃会上请的是哪路神仙",
-        "target": "But I don't know which immortals were invited to this peach gathering.",
-        "metadata": {
-          "kind": "model",
-          "model": "gemma-3-4b-it"
-        }
-      },
-      {
         "id": "qwen3.5-27b",
         "source": "但不知这蟠桃会上请的是哪路神仙",
         "target": "But I wonder which deities were invited to the Peach Banquet.",
@@ -8280,15 +7407,6 @@
         "metadata": {
           "kind": "model",
           "model": "gemma-3-27b-it"
-        }
-      },
-      {
-        "id": "gemma-3-4b-it",
-        "source": "叫你知道我的厉害",
-        "target": "Let you know how powerful I am.",
-        "metadata": {
-          "kind": "model",
-          "model": "gemma-3-4b-it"
         }
       },
       {
@@ -8368,15 +7486,6 @@
         }
       },
       {
-        "id": "gemma-3-4b-it",
-        "source": "哪路天将前去收服妖猴",
-        "target": "Which celestial general is heading to subdue the demon monkey?",
-        "metadata": {
-          "kind": "model",
-          "model": "gemma-3-4b-it"
-        }
-      },
-      {
         "id": "qwen3.5-27b",
         "source": "哪路天将前去收服妖猴",
         "target": "Which celestial general was sent to subdue the demon monkey?",
@@ -8450,15 +7559,6 @@
         "metadata": {
           "kind": "model",
           "model": "gemma-3-27b-it"
-        }
-      },
-      {
-        "id": "gemma-3-4b-it",
-        "source": "大王 大王 外边有一妖猴闯进宫来",
-        "target": "Great King, Great King, a demon monkey has entered the palace.",
-        "metadata": {
-          "kind": "model",
-          "model": "gemma-3-4b-it"
         }
       },
       {
@@ -8538,15 +7638,6 @@
         }
       },
       {
-        "id": "gemma-3-4b-it",
-        "source": "上回是马天君冲撞了大圣 玉帝处分他了",
-        "target": "Last time, Ma Tianjun clashed with the Jade Emperor, and he was punished by him.",
-        "metadata": {
-          "kind": "model",
-          "model": "gemma-3-4b-it"
-        }
-      },
-      {
         "id": "qwen3.5-27b",
         "source": "上回是马天君冲撞了大圣 玉帝处分他了",
         "target": "Last time, the Heavenly Marshal Ma offended the Great Sage, and the Jade Emperor punished him.",
@@ -8620,15 +7711,6 @@
         "metadata": {
           "kind": "model",
           "model": "gemma-3-27b-it"
-        }
-      },
-      {
-        "id": "gemma-3-4b-it",
-        "source": "你抢走我镇海之宝 我要到玉帝面前告你一状",
-        "target": "You stole my treasure of the Sea, I’m going to report you to the Jade Emperor.",
-        "metadata": {
-          "kind": "model",
-          "model": "gemma-3-4b-it"
         }
       },
       {
@@ -8708,15 +7790,6 @@
         }
       },
       {
-        "id": "gemma-3-4b-it",
-        "source": "请稍等片刻 待我前去启奏",
-        "target": "Please wait a moment while I go to report.",
-        "metadata": {
-          "kind": "model",
-          "model": "gemma-3-4b-it"
-        }
-      },
-      {
         "id": "qwen3.5-27b",
         "source": "请稍等片刻 待我前去启奏",
         "target": "Please wait a moment while I go to make the report.",
@@ -8790,15 +7863,6 @@
         "metadata": {
           "kind": "model",
           "model": "gemma-3-27b-it"
-        }
-      },
-      {
-        "id": "gemma-3-4b-it",
-        "source": "那就好办了 这瀑布下面直通东海龙宫",
-        "target": "That’s easily handled. There’s a direct route to the East Sea Dragon Palace beneath this waterfall.",
-        "metadata": {
-          "kind": "model",
-          "model": "gemma-3-4b-it"
         }
       },
       {
@@ -8878,15 +7942,6 @@
         }
       },
       {
-        "id": "gemma-3-4b-it",
-        "source": "俺老孙偏要跟你较量较量",
-        "target": "Old Sun stubbornly wants to go head-to-head with you.",
-        "metadata": {
-          "kind": "model",
-          "model": "gemma-3-4b-it"
-        }
-      },
-      {
         "id": "qwen3.5-27b",
         "source": "俺老孙偏要跟你较量较量",
         "target": "I, Old Sun, shall indeed measure my strength against you!",
@@ -8960,15 +8015,6 @@
         "metadata": {
           "kind": "model",
           "model": "gemma-3-27b-it"
-        }
-      },
-      {
-        "id": "gemma-3-4b-it",
-        "source": "那 那妖猴可有神通",
-        "target": "That mischievous monkey certainly has some tricks up its sleeve.",
-        "metadata": {
-          "kind": "model",
-          "model": "gemma-3-4b-it"
         }
       },
       {
@@ -9048,15 +8094,6 @@
         }
       },
       {
-        "id": "gemma-3-4b-it",
-        "source": "望万岁为老臣做主",
-        "target": "I hope you will plead my case before the Emperor in my old age.",
-        "metadata": {
-          "kind": "model",
-          "model": "gemma-3-4b-it"
-        }
-      },
-      {
         "id": "qwen3.5-27b",
         "source": "望万岁为老臣做主",
         "target": "I implore Your Majesty to do justice for this old minister.",
@@ -9130,15 +8167,6 @@
         "metadata": {
           "kind": "model",
           "model": "gemma-3-27b-it"
-        }
-      },
-      {
-        "id": "gemma-3-4b-it",
-        "source": "这是马天君做事鲁莽 坏了计谋",
-        "target": "Ma Tianjun acted rashly and ruined the plan.",
-        "metadata": {
-          "kind": "model",
-          "model": "gemma-3-4b-it"
         }
       },
       {
@@ -9218,15 +8246,6 @@
         }
       },
       {
-        "id": "gemma-3-4b-it",
-        "source": "怎么能教你们好好操练呢 真是扫兴得很呐",
-        "target": "How can I teach you how to train properly? It’s so disappointing.",
-        "metadata": {
-          "kind": "model",
-          "model": "gemma-3-4b-it"
-        }
-      },
-      {
         "id": "qwen3.5-27b",
         "source": "怎么能教你们好好操练呢 真是扫兴得很呐",
         "target": "How can I teach you to train properly? It's truly so disappointing.",
@@ -9300,15 +8319,6 @@
         "metadata": {
           "kind": "model",
           "model": "gemma-3-27b-it"
-        }
-      },
-      {
-        "id": "gemma-3-4b-it",
-        "source": "老头怎么哄俺老孙 他们为什么不放俺老孙进去",
-        "target": "How can I be comforted by these old men? Why don't they let me, your old grandson, in?",
-        "metadata": {
-          "kind": "model",
-          "model": "gemma-3-4b-it"
         }
       },
       {
@@ -9388,15 +8398,6 @@
         }
       },
       {
-        "id": "gemma-3-4b-it",
-        "source": "老头 那蟠桃园在什么地方",
-        "target": "Old man, where is that peach orchard?",
-        "metadata": {
-          "kind": "model",
-          "model": "gemma-3-4b-it"
-        }
-      },
-      {
         "id": "qwen3.5-27b",
         "source": "老头 那蟠桃园在什么地方",
         "target": "Old man, where is the Garden of Peaches?",
@@ -9470,15 +8471,6 @@
         "metadata": {
           "kind": "model",
           "model": "gemma-3-27b-it"
-        }
-      },
-      {
-        "id": "gemma-3-4b-it",
-        "source": "将妖猴打入丹炉",
-        "target": "Cast the demon monkey into the alchemy furnace.",
-        "metadata": {
-          "kind": "model",
-          "model": "gemma-3-4b-it"
         }
       },
       {
@@ -9558,15 +8550,6 @@
         }
       },
       {
-        "id": "gemma-3-4b-it",
-        "source": "日子久了 他又要生事",
-        "target": "After a long time, he’s going to cause trouble again.",
-        "metadata": {
-          "kind": "model",
-          "model": "gemma-3-4b-it"
-        }
-      },
-      {
         "id": "qwen3.5-27b",
         "source": "日子久了 他又要生事",
         "target": "After some time, he will cause trouble again.",
@@ -9640,15 +8623,6 @@
         "metadata": {
           "kind": "model",
           "model": "gemma-3-27b-it"
-        }
-      },
-      {
-        "id": "gemma-3-4b-it",
-        "source": "处分得好 早该这样",
-        "target": "Properly handled. It’s about time like this.",
-        "metadata": {
-          "kind": "model",
-          "model": "gemma-3-4b-it"
         }
       },
       {
@@ -9728,15 +8702,6 @@
         }
       },
       {
-        "id": "gemma-3-4b-it",
-        "source": "玉帝现命齐天大圣掌管桃园",
-        "target": "The Jade Emperor now assigns the Great Sage of Heaven to manage the peach grove.",
-        "metadata": {
-          "kind": "model",
-          "model": "gemma-3-4b-it"
-        }
-      },
-      {
         "id": "qwen3.5-27b",
         "source": "玉帝现命齐天大圣掌管桃园",
         "target": "The Jade Emperor has now appointed the Great Sage Equal to Heaven as the guardian of the Peach Garden.",
@@ -9810,15 +8775,6 @@
         "metadata": {
           "kind": "model",
           "model": "gemma-3-27b-it"
-        }
-      },
-      {
-        "id": "gemma-3-4b-it",
-        "source": "难道还让那妖猴爬到我们头上不成",
-        "target": "Should we really let that mischievous monkey climb onto our heads?",
-        "metadata": {
-          "kind": "model",
-          "model": "gemma-3-4b-it"
         }
       },
       {
@@ -9898,15 +8854,6 @@
         }
       },
       {
-        "id": "gemma-3-4b-it",
-        "source": "孩儿们 这仙酒仙菜都是玉帝和王母送来的",
-        "target": "Children, this divine wine and delicacies were sent by the Jade Emperor and the Queen Mother.",
-        "metadata": {
-          "kind": "model",
-          "model": "gemma-3-4b-it"
-        }
-      },
-      {
         "id": "qwen3.5-27b",
         "source": "孩儿们 这仙酒仙菜都是玉帝和王母送来的",
         "target": "My children, this celestial wine and divine cuisine were sent by the Jade Emperor and the Queen Mother of the West.",
@@ -9980,15 +8927,6 @@
         "metadata": {
           "kind": "model",
           "model": "gemma-3-27b-it"
-        }
-      },
-      {
-        "id": "gemma-3-4b-it",
-        "source": "要是缺少一匹马 小心你的脑袋",
-        "target": "If you're missing a horse, watch your head.",
-        "metadata": {
-          "kind": "model",
-          "model": "gemma-3-4b-it"
         }
       },
       {
@@ -10068,15 +9006,6 @@
         }
       },
       {
-        "id": "gemma-3-4b-it",
-        "source": "那孙悟空好生无理 他不但偷吃仙桃",
-        "target": "That Sun Wukong was incredibly unreasonable. He not only stole celestial peaches…",
-        "metadata": {
-          "kind": "model",
-          "model": "gemma-3-4b-it"
-        }
-      },
-      {
         "id": "qwen3.5-27b",
         "source": "那孙悟空好生无理 他不但偷吃仙桃",
         "target": "That Monkey King is utterly unreasonable; he not only stole and ate the celestial peaches.",
@@ -10150,15 +9079,6 @@
         "metadata": {
           "kind": "model",
           "model": "gemma-3-27b-it"
-        }
-      },
-      {
-        "id": "gemma-3-4b-it",
-        "source": "臣奉旨前去捉拿妖猴 不料那妖猴法术高强",
-        "target": "I was ordered to go and capture the demonic monkey, but to my surprise, the monkey’s magic was incredibly powerful.",
-        "metadata": {
-          "kind": "model",
-          "model": "gemma-3-4b-it"
         }
       },
       {
@@ -10238,15 +9158,6 @@
         }
       },
       {
-        "id": "gemma-3-4b-it",
-        "source": "我看就把王母的蟠桃园给他看管",
-        "target": "I’ll just let him take care of the Queen Mother’s peach orchard.",
-        "metadata": {
-          "kind": "model",
-          "model": "gemma-3-4b-it"
-        }
-      },
-      {
         "id": "qwen3.5-27b",
         "source": "我看就把王母的蟠桃园给他看管",
         "target": "I think we should let him take charge of the Queen Mother's Peach Garden.",
@@ -10320,15 +9231,6 @@
         "metadata": {
           "kind": "model",
           "model": "gemma-3-27b-it"
-        }
-      },
-      {
-        "id": "gemma-3-4b-it",
-        "source": "待俺老孙尝尝",
-        "target": "Let Old Sun try it.",
-        "metadata": {
-          "kind": "model",
-          "model": "gemma-3-4b-it"
         }
       },
       {
@@ -10408,15 +9310,6 @@
         }
       },
       {
-        "id": "gemma-3-4b-it",
-        "source": "不要高兴的太早 我要扫平你的花果山",
-        "target": "Don't be happy too soon. I'm going to level your Flower Fruit Mountain.",
-        "metadata": {
-          "kind": "model",
-          "model": "gemma-3-4b-it"
-        }
-      },
-      {
         "id": "qwen3.5-27b",
         "source": "不要高兴的太早 我要扫平你的花果山",
         "target": "Don't get too excited too soon; I will level your Flower-Fruit Mountain.",
@@ -10490,15 +9383,6 @@
         "metadata": {
           "kind": "model",
           "model": "gemma-3-27b-it"
-        }
-      },
-      {
-        "id": "gemma-3-4b-it",
-        "source": "拿俺老孙的大环刀来",
-        "target": "Bring me Grandpa Sun’s big cleaver.",
-        "metadata": {
-          "kind": "model",
-          "model": "gemma-3-4b-it"
         }
       },
       {
@@ -10578,15 +9462,6 @@
         }
       },
       {
-        "id": "gemma-3-4b-it",
-        "source": "- 启奏万岁",
-        "target": "Long live the Emperor!",
-        "metadata": {
-          "kind": "model",
-          "model": "gemma-3-4b-it"
-        }
-      },
-      {
         "id": "qwen3.5-27b",
         "source": "- 启奏万岁",
         "target": "- I humbly report to Your Majesty.",
@@ -10660,15 +9535,6 @@
         "metadata": {
           "kind": "model",
           "model": "gemma-3-27b-it"
-        }
-      },
-      {
-        "id": "gemma-3-4b-it",
-        "source": "星星铺成银河 彩虹架做飞桥",
-        "target": "The stars spread into a Milky Way, a rainbow arch serves as a bridge.",
-        "metadata": {
-          "kind": "model",
-          "model": "gemma-3-4b-it"
         }
       },
       {
@@ -10748,15 +9614,6 @@
         }
       },
       {
-        "id": "gemma-3-4b-it",
-        "source": "万岁 可千万不能轻饶这妖猴",
-        "target": "Long live him, but don’t ever let him go easy! / Long live him, but don’t ever show mercy to that mischievous monkey!",
-        "metadata": {
-          "kind": "model",
-          "model": "gemma-3-4b-it"
-        }
-      },
-      {
         "id": "qwen3.5-27b",
         "source": "万岁 可千万不能轻饶这妖猴",
         "target": "Your Majesty, by all means, do not show leniency to this demonic monkey.",
@@ -10830,15 +9687,6 @@
         "metadata": {
           "kind": "model",
           "model": "gemma-3-27b-it"
-        }
-      },
-      {
-        "id": "gemma-3-4b-it",
-        "source": "什么齐天大圣 没听说过",
-        "target": "Haven't heard of the Great Sage of Tianlong?",
-        "metadata": {
-          "kind": "model",
-          "model": "gemma-3-4b-it"
         }
       },
       {
@@ -10918,15 +9766,6 @@
         }
       },
       {
-        "id": "gemma-3-4b-it",
-        "source": "宣上殿来",
-        "target": "Proclaimed to the upper hall.",
-        "metadata": {
-          "kind": "model",
-          "model": "gemma-3-4b-it"
-        }
-      },
-      {
         "id": "qwen3.5-27b",
         "source": "宣上殿来",
         "target": "Summon Xuan to the throne hall.",
@@ -11000,15 +9839,6 @@
         "metadata": {
           "kind": "model",
           "model": "gemma-3-27b-it"
-        }
-      },
-      {
-        "id": "gemma-3-4b-it",
-        "source": "这么多 的兵将 竟然打不过一只妖猴",
-        "target": "So many soldiers and generals couldn't even defeat a single demon monkey.",
-        "metadata": {
-          "kind": "model",
-          "model": "gemma-3-4b-it"
         }
       },
       {
@@ -11088,15 +9918,6 @@
         }
       },
       {
-        "id": "gemma-3-4b-it",
-        "source": "我们奉王母之命来此采摘仙桃 你是何人",
-        "target": "We have been dispatched by the Queen Mother of the West to harvest immortal peaches. Who are you?",
-        "metadata": {
-          "kind": "model",
-          "model": "gemma-3-4b-it"
-        }
-      },
-      {
         "id": "qwen3.5-27b",
         "source": "我们奉王母之命来此采摘仙桃 你是何人",
         "target": "We have come here by the Queen Mother's command to harvest the celestial peaches. Who are you?",
@@ -11170,15 +9991,6 @@
         "metadata": {
           "kind": "model",
           "model": "gemma-3-27b-it"
-        }
-      },
-      {
-        "id": "gemma-3-4b-it",
-        "source": "这是我镇海之宝 你不能拿走",
-        "target": "This is my treasure of Zhenhai, you can't take it.",
-        "metadata": {
-          "kind": "model",
-          "model": "gemma-3-4b-it"
         }
       },
       {
@@ -11258,15 +10070,6 @@
         }
       },
       {
-        "id": "gemma-3-4b-it",
-        "source": "哎 听着 大王有命令",
-        "target": "Listen, the Great King has an order.",
-        "metadata": {
-          "kind": "model",
-          "model": "gemma-3-4b-it"
-        }
-      },
-      {
         "id": "qwen3.5-27b",
         "source": "哎 听着 大王有命令",
         "target": "Hey, listen! The King has issued an order.",
@@ -11340,15 +10143,6 @@
         "metadata": {
           "kind": "model",
           "model": "gemma-3-27b-it"
-        }
-      },
-      {
-        "id": "gemma-3-4b-it",
-        "source": "人若吃了可以立刻成仙",
-        "target": "If a person eats something that can instantly make them a god.",
-        "metadata": {
-          "kind": "model",
-          "model": "gemma-3-4b-it"
         }
       },
       {
@@ -11428,15 +10222,6 @@
         }
       },
       {
-        "id": "gemma-3-4b-it",
-        "source": "我们大王早就飞出十万八千里了 你还不快走",
-        "target": "Our Great King has already flown ten ten thousand eight thousand li! You should hurry up and leave.",
-        "metadata": {
-          "kind": "model",
-          "model": "gemma-3-4b-it"
-        }
-      },
-      {
         "id": "qwen3.5-27b",
         "source": "我们大王早就飞出十万八千里了 你还不快走",
         "target": "Our Great King has already flown ten thousand eight thousand li away. Why haven't you fled yet?",
@@ -11510,15 +10295,6 @@
         "metadata": {
           "kind": "model",
           "model": "gemma-3-27b-it"
-        }
-      },
-      {
-        "id": "gemma-3-4b-it",
-        "source": "你是什么东西 敢来管你孙爷爷",
-        "target": "What do you, some piece of trash, dare to interfere with Grandpa Sun?",
-        "metadata": {
-          "kind": "model",
-          "model": "gemma-3-4b-it"
         }
       },
       {
@@ -11598,15 +10374,6 @@
         }
       },
       {
-        "id": "gemma-3-4b-it",
-        "source": "大王 我们抓到奸细了",
-        "target": "Big Boss, we’ve caught the traitor!",
-        "metadata": {
-          "kind": "model",
-          "model": "gemma-3-4b-it"
-        }
-      },
-      {
         "id": "qwen3.5-27b",
         "source": "大王 我们抓到奸细了",
         "target": "Your Majesty, we have captured a spy.",
@@ -11680,15 +10447,6 @@
         "metadata": {
           "kind": "model",
           "model": "gemma-3-27b-it"
-        }
-      },
-      {
-        "id": "gemma-3-4b-it",
-        "source": "你是什么人 敢来这里放肆",
-        "target": "Who are you to come here and speak so boldly?",
-        "metadata": {
-          "kind": "model",
-          "model": "gemma-3-4b-it"
         }
       },
       {
@@ -11768,15 +10526,6 @@
         }
       },
       {
-        "id": "gemma-3-4b-it",
-        "source": "把那三千六百斤的大环刀拿来",
-        "target": "Bring that three thousand six hundred jin (approximately 1800 lbs) sickle.",
-        "metadata": {
-          "kind": "model",
-          "model": "gemma-3-4b-it"
-        }
-      },
-      {
         "id": "qwen3.5-27b",
         "source": "把那三千六百斤的大环刀拿来",
         "target": "Bring me the great ring-bladed sword weighing 3,600 jin.",
@@ -11850,15 +10599,6 @@
         "metadata": {
           "kind": "model",
           "model": "gemma-3-27b-it"
-        }
-      },
-      {
-        "id": "gemma-3-4b-it",
-        "source": "妖猴胆敢反出天庭",
-        "target": "A cunning monkey dares to rebel against Heaven.",
-        "metadata": {
-          "kind": "model",
-          "model": "gemma-3-4b-it"
         }
       },
       {
@@ -11938,15 +10678,6 @@
         }
       },
       {
-        "id": "gemma-3-4b-it",
-        "source": "人若吃了可以长生不老",
-        "target": "If a person eats something that can make them live forever.",
-        "metadata": {
-          "kind": "model",
-          "model": "gemma-3-4b-it"
-        }
-      },
-      {
         "id": "qwen3.5-27b",
         "source": "人若吃了可以长生不老",
         "target": "If a person eats it, they can achieve immortality.",
@@ -12020,15 +10751,6 @@
         "metadata": {
           "kind": "model",
           "model": "gemma-3-27b-it"
-        }
-      },
-      {
-        "id": "gemma-3-4b-it",
-        "source": "你这个该死的猴头 死到临头了还口出狂言",
-        "target": "You dead-headed monkey, you're about to go crazy with babbling!",
-        "metadata": {
-          "kind": "model",
-          "model": "gemma-3-4b-it"
         }
       },
       {
@@ -12108,15 +10830,6 @@
         }
       },
       {
-        "id": "gemma-3-4b-it",
-        "source": "孩儿们 操练起来",
-        "target": "Let the children practice! / Let the children get to work!",
-        "metadata": {
-          "kind": "model",
-          "model": "gemma-3-4b-it"
-        }
-      },
-      {
         "id": "qwen3.5-27b",
         "source": "孩儿们 操练起来",
         "target": "Children, begin your training!",
@@ -12190,15 +10903,6 @@
         "metadata": {
           "kind": "model",
           "model": "gemma-3-27b-it"
-        }
-      },
-      {
-        "id": "gemma-3-4b-it",
-        "source": "看你能把俺怎么样",
-        "target": "What can you do to me?",
-        "metadata": {
-          "kind": "model",
-          "model": "gemma-3-4b-it"
         }
       },
       {
@@ -12278,15 +10982,6 @@
         }
       },
       {
-        "id": "gemma-3-4b-it",
-        "source": "姐妹们快来 这里有大桃",
-        "target": "Sisters, come here! We have big peaches!",
-        "metadata": {
-          "kind": "model",
-          "model": "gemma-3-4b-it"
-        }
-      },
-      {
         "id": "qwen3.5-27b",
         "source": "姐妹们快来 这里有大桃",
         "target": "Sisters, come quick! There are big peaches here!",
@@ -12360,15 +11055,6 @@
         "metadata": {
           "kind": "model",
           "model": "gemma-3-27b-it"
-        }
-      },
-      {
-        "id": "gemma-3-4b-it",
-        "source": "这样未免得不偿失还是把他软禁的好啊",
-        "target": "It’s probably not worth it to house arrest him, isn’t it?",
-        "metadata": {
-          "kind": "model",
-          "model": "gemma-3-4b-it"
         }
       },
       {
@@ -12448,15 +11134,6 @@
         }
       },
       {
-        "id": "gemma-3-4b-it",
-        "source": "大圣 我是奉了玉帝之命特来请你",
-        "target": "Great Sage, I have been specially commissioned by the Jade Emperor to request your presence.",
-        "metadata": {
-          "kind": "model",
-          "model": "gemma-3-4b-it"
-        }
-      },
-      {
         "id": "qwen3.5-27b",
         "source": "大圣 我是奉了玉帝之命特来请你",
         "target": "Great Sage, I have been sent by the Jade Emperor to invite you.",
@@ -12530,15 +11207,6 @@
         "metadata": {
           "kind": "model",
           "model": "gemma-3-27b-it"
-        }
-      },
-      {
-        "id": "gemma-3-4b-it",
-        "source": "- 免礼",
-        "target": "Regards",
-        "metadata": {
-          "kind": "model",
-          "model": "gemma-3-4b-it"
         }
       },
       {
@@ -12618,15 +11286,6 @@
         }
       },
       {
-        "id": "gemma-3-4b-it",
-        "source": "啊妖猴如此大胆",
-        "target": "Oh, you mischievous monkey!",
-        "metadata": {
-          "kind": "model",
-          "model": "gemma-3-4b-it"
-        }
-      },
-      {
         "id": "qwen3.5-27b",
         "source": "啊妖猴如此大胆",
         "target": "Ah, you audacious monkey!",
@@ -12700,15 +11359,6 @@
         "metadata": {
           "kind": "model",
           "model": "gemma-3-27b-it"
-        }
-      },
-      {
-        "id": "gemma-3-4b-it",
-        "source": "哦 原来是王母派来的",
-        "target": "Oh, it turns out it was sent by the Queen Mother.",
-        "metadata": {
-          "kind": "model",
-          "model": "gemma-3-4b-it"
         }
       },
       {
@@ -12788,15 +11438,6 @@
         }
       },
       {
-        "id": "gemma-3-4b-it",
-        "source": "你这小小的毛猴 哪里经得起我这一锤呀",
-        "target": "You little monkey, where do you think you can withstand a single hammer from me?",
-        "metadata": {
-          "kind": "model",
-          "model": "gemma-3-4b-it"
-        }
-      },
-      {
         "id": "qwen3.5-27b",
         "source": "你这小小的毛猴 哪里经得起我这一锤呀",
         "target": "You little hairy monkey, how could you possibly withstand a single blow from my hammer?",
@@ -12870,15 +11511,6 @@
         "metadata": {
           "kind": "model",
           "model": "gemma-3-27b-it"
-        }
-      },
-      {
-        "id": "gemma-3-4b-it",
-        "source": "好吧 等大圣回来我再禀报",
-        "target": "Okay, I’ll report back when the Great Sage returns.",
-        "metadata": {
-          "kind": "model",
-          "model": "gemma-3-4b-it"
         }
       },
       {
@@ -12958,15 +11590,6 @@
         }
       },
       {
-        "id": "gemma-3-4b-it",
-        "source": "你是第一次来 他们不认得你",
-        "target": "This is your first time here. They don't recognize you.",
-        "metadata": {
-          "kind": "model",
-          "model": "gemma-3-4b-it"
-        }
-      },
-      {
         "id": "qwen3.5-27b",
         "source": "你是第一次来 他们不认得你",
         "target": "This is your first time here; they don't recognize you.",
@@ -13040,15 +11663,6 @@
         "metadata": {
           "kind": "model",
           "model": "gemma-3-27b-it"
-        }
-      },
-      {
-        "id": "gemma-3-4b-it",
-        "source": "玉帝封你为齐天大圣",
-        "target": "The Jade Emperor appointed you as the Great Sage of the East.",
-        "metadata": {
-          "kind": "model",
-          "model": "gemma-3-4b-it"
         }
       },
       {
@@ -13128,15 +11742,6 @@
         }
       },
       {
-        "id": "gemma-3-4b-it",
-        "source": "赶快谢恩吧",
-        "target": "Thank you quickly. / Please thank me quickly.",
-        "metadata": {
-          "kind": "model",
-          "model": "gemma-3-4b-it"
-        }
-      },
-      {
         "id": "qwen3.5-27b",
         "source": "赶快谢恩吧",
         "target": "Hurry up and give thanks for the grace bestowed upon you.",
@@ -13210,15 +11815,6 @@
         "metadata": {
           "kind": "model",
           "model": "gemma-3-27b-it"
-        }
-      },
-      {
-        "id": "gemma-3-4b-it",
-        "source": "如意金箍棒 重三万六千斤",
-        "target": "Golden Ruyi Scepter, weighs three hundred sixty thousand sixi jin.",
-        "metadata": {
-          "kind": "model",
-          "model": "gemma-3-4b-it"
         }
       },
       {
@@ -13298,15 +11894,6 @@
         }
       },
       {
-        "id": "gemma-3-4b-it",
-        "source": "那妖猴已经逃回花果山去了",
-        "target": "That mischievous monkey has already fled back to Flower Fruit Mountain.",
-        "metadata": {
-          "kind": "model",
-          "model": "gemma-3-4b-it"
-        }
-      },
-      {
         "id": "qwen3.5-27b",
         "source": "那妖猴已经逃回花果山去了",
         "target": "The mischievous monkey has already fled back to Flower-Fruit Mountain.",
@@ -13380,15 +11967,6 @@
         "metadata": {
           "kind": "model",
           "model": "gemma-3-27b-it"
-        }
-      },
-      {
-        "id": "gemma-3-4b-it",
-        "source": "你犯下十恶大罪 还不速速和我前去领罪",
-        "target": "You have committed ten grave sins and must quickly come with me to receive punishment.",
-        "metadata": {
-          "kind": "model",
-          "model": "gemma-3-4b-it"
         }
       },
       {
@@ -13468,15 +12046,6 @@
         }
       },
       {
-        "id": "gemma-3-4b-it",
-        "source": "咦 这妖猴已经炼成了两粒金丹了",
-        "target": "Hey, this demon monkey has already refined two golden pills.",
-        "metadata": {
-          "kind": "model",
-          "model": "gemma-3-4b-it"
-        }
-      },
-      {
         "id": "qwen3.5-27b",
         "source": "咦 这妖猴已经炼成了两粒金丹了",
         "target": "Hmm, this demonic monkey has already refined two Golden Elixirs.",
@@ -13550,15 +12119,6 @@
         "metadata": {
           "kind": "model",
           "model": "gemma-3-27b-it"
-        }
-      },
-      {
-        "id": "gemma-3-4b-it",
-        "source": "大王驾到",
-        "target": "The King is coming!",
-        "metadata": {
-          "kind": "model",
-          "model": "gemma-3-4b-it"
         }
       },
       {
@@ -13638,15 +12198,6 @@
         }
       },
       {
-        "id": "gemma-3-4b-it",
-        "source": "大圣 这使不得 万万使不得",
-        "target": "Great Sage, absolutely not! / Great Sage, under no circumstances!",
-        "metadata": {
-          "kind": "model",
-          "model": "gemma-3-4b-it"
-        }
-      },
-      {
         "id": "qwen3.5-27b",
         "source": "大圣 这使不得 万万使不得",
         "target": "Great Sage, this cannot be done; it must absolutely not be done.",
@@ -13720,15 +12271,6 @@
         "metadata": {
           "kind": "model",
           "model": "gemma-3-27b-it"
-        }
-      },
-      {
-        "id": "gemma-3-4b-it",
-        "source": "你那玉帝老儿只好服输了",
-        "target": "You only yielded to defeat, old Emperor Yu.",
-        "metadata": {
-          "kind": "model",
-          "model": "gemma-3-4b-it"
         }
       },
       {
@@ -13808,15 +12350,6 @@
         }
       },
       {
-        "id": "gemma-3-4b-it",
-        "source": "这宝贝 大有来历",
-        "target": "This treasure is of great origin.",
-        "metadata": {
-          "kind": "model",
-          "model": "gemma-3-4b-it"
-        }
-      },
-      {
         "id": "qwen3.5-27b",
         "source": "这宝贝 大有来历",
         "target": "This treasure has a remarkable origin.",
@@ -13890,15 +12423,6 @@
         "metadata": {
           "kind": "model",
           "model": "gemma-3-27b-it"
-        }
-      },
-      {
-        "id": "gemma-3-4b-it",
-        "source": "新来的弼马温为什么不来接我",
-        "target": "Why didn't the new arrival, Bi Ma Wen, come to pick me up?",
-        "metadata": {
-          "kind": "model",
-          "model": "gemma-3-4b-it"
         }
       },
       {
@@ -13978,15 +12502,6 @@
         }
       },
       {
-        "id": "gemma-3-4b-it",
-        "source": "谁敢绑我",
-        "target": "Who dares to tie me up?",
-        "metadata": {
-          "kind": "model",
-          "model": "gemma-3-4b-it"
-        }
-      },
-      {
         "id": "qwen3.5-27b",
         "source": "谁敢绑我",
         "target": "Who dares to kidnap me?",
@@ -14063,15 +12578,6 @@
         }
       },
       {
-        "id": "gemma-3-4b-it",
-        "source": "俺老孙就住在花果山上",
-        "target": "Old Sun lives on Flower and Fruit Mountain.",
-        "metadata": {
-          "kind": "model",
-          "model": "gemma-3-4b-it"
-        }
-      },
-      {
         "id": "qwen3.5-27b",
         "source": "俺老孙就住在花果山上",
         "target": "I, Old Sun, reside on Flower-Fruit Mountain.",
@@ -14145,15 +12651,6 @@
         "metadata": {
           "kind": "model",
           "model": "gemma-3-27b-it"
-        }
-      },
-      {
-        "id": "gemma-3-4b-it",
-        "source": "这算什么兵器",
-        "target": "What is this supposed to be a weapon?",
-        "metadata": {
-          "kind": "model",
-          "model": "gemma-3-4b-it"
         }
       },
       {
