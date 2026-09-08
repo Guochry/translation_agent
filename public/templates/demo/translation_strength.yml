@@ -33,7 +33,7 @@ instructions: |
 
   - Mark **especially effective wording** that preserves subtle meaning, conveys tone or imagery, handles an idiom naturally, or expresses the source with exceptional clarity and fluency. A strength must remain faithful to the source; ordinary correct wording alone is not enough.
   - Select a precise span in the **source, translation, or both**. Either side is optional, but each annotation needs at least one span.
-  - **Overall score (0–100):** Judge meaning preservation and naturalness across the whole translation, not the number of strengths. Use any score between these anchors:
+  - **Overall score (0–100, in steps of 5):** Judge meaning preservation and naturalness across the whole translation, not the number of strengths. Choose 0, 5, 10, …, 100 using these anchors as guidance:
     **0 — Broken:** Meaning is lost or the text is incoherent;
     **33 — Flawed:** Only part of the meaning is conveyed; major rewriting is needed;
     **66 — Good:** Most meaning is preserved; minor inaccuracies or awkwardness need correction;
@@ -46,7 +46,7 @@ overall_score:
   question: "Considering meaning preservation and quality, how would you rate this translation?"
   min: 0
   max: 100
-  step: 1
+  step: 5
   anchors:
     - value: 0
       label: "Broken"
