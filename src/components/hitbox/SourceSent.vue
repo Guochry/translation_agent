@@ -162,8 +162,8 @@ export default {
             if (!this.hit_box_config.enable_select_source_sentence) {
                 return
             }
-            this.$p("#source-sentence").html(this.hits_data[this.current_hit - 1].source)
-            this.source_html = this.hits_data[this.current_hit - 1].source
+            // Keep text nodes stable while the browser starts a selection.
+            // Offset extraction already supports existing highlight wrappers.
         }
     },
     computed: {

@@ -127,6 +127,9 @@
           } else if (type == "target") {
             this.selected_state.target_span = text;
           }
+          if (this.editor_open && this.annotating_edit_span_category_id != null) {
+            this.set_annotating_edit_span(text, type)
+          }
         },
         set_span_indices(indices, type) {
           if (type == "source") {
@@ -222,6 +225,7 @@
           this.selected_state = DEFAULT_SELECTED_STATE
           this.hit_box_config = DEFAULT_HIT_BOX_CONFIG
           this.annotating_edit_span = DEFAULT_ANNOTATING_EDIT_SPAN
+          this.annotating_edit_span_category_id = null
         },
         set_hit_box_config(config) {
           this.hit_box_config = config;

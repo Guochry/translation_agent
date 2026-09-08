@@ -94,6 +94,10 @@ export default {
             this.$p(".icon-default").removeClass("open")
             this.refresh_edit();
         },
+        clear_draft_side(type) {
+            this.set_span_text('', type)
+            this.set_span_indices([], type)
+        },
         save_click() {
             let new_hits_data = _.cloneDeep(this.hits_data);
 
@@ -206,6 +210,21 @@ export default {
             });
 
             annotating_span.annotation = removeNullElements(new_annotation)
+
+            // Selections made while the severity editor is open belong to
+            // this annotation, including a newly selected opposite side.
+            const edit_config = this.getEditConfig(category)
+            if (!edit_config.type || edit_config.type === 'single_span' || edit_config.type === 'multi_span') {
+                for (const [side, enabled, field] of [
+                    ['source', edit_config.enable_input, 'input_idx'],
+                    ['target', edit_config.enable_output, 'output_idx']
+                ]) {
+                    const indices = this.selected_state[`${side}_idx`]
+                    if (enabled && indices?.length) {
+                        annotating_span[field] = _.cloneDeep(edit_config.type === 'multi_span' ? indices : [indices])
+                    }
+                }
+            }
 
             this.reset_annotation_colors(category, edit_id)
 
@@ -395,11 +414,13 @@ export default {
                             <div v-if="item.enable_input">
                                 <p class="mt0 mb2 b tracked-light">{{ config.interface_text.annotation_editor.select_instructions }} <i>{{ config.interface_text.typology.source_label }}</i><span v-if="item.optional_input"> (optional)</span>.</p>
                                 <p class="tracked-light lh-paras-2">{{ config.interface_text.annotation_editor.selected_label }} {{ config.interface_text.typology.span_unit_name }}: <span v-html="selected_state.source_span"></span></p>
+                                <button v-if="config.confirm_span_before_save && selected_state.source_idx?.length" type="button" @click="clear_draft_side('source')">Clear source span</button>
                             </div>
                             <div v-if="item.enable_output">
                                 <div class="span-selection-div" :data-category="item.name">
                                     <p class="mt0 mb2 b tracked-light">{{ config.interface_text.annotation_editor.select_instructions }} <i>{{ config.interface_text.typology.target_label }}</i><span v-if="item.optional_output"> (optional)</span>.</p>
                                     <p class="tracked-light lh-paras-2">{{ config.interface_text.annotation_editor.selected_label }} {{ config.interface_text.typology.span_unit_name }}: <span v-html="selected_state.target_span"></span></p>
+                                    <button v-if="config.confirm_span_before_save && selected_state.target_idx?.length" type="button" @click="clear_draft_side('target')">Clear translation span</button>
                                 </div>
                             </div>
                             <div v-if="item.type == 'composite'">
