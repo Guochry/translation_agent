@@ -5,6 +5,7 @@ template_description: Annotate strengths independently across multiple candidate
 tokenization: char
 multi_candidate: true
 auto_add_spans: true
+confirm_span_before_save: true
 enable_translation_synthesis: true
 
 display:
@@ -34,7 +35,7 @@ instructions: |
 
   - Mark **especially effective wording** that preserves subtle meaning, conveys tone or imagery, handles an idiom naturally, or expresses the source with exceptional clarity and fluency. A strength must remain faithful to the source; ordinary correct wording alone is not enough.
   - Select a precise span in the **source, translation, or both**. Either side is optional, but each annotation needs at least one span.
-  - **Highlight to add:** Each selection automatically creates a strength. To link spans on both sides in one annotation, use **Add Strength**.
+  - **Highlight to start:** Selecting text opens a draft strength. Adjust the span by selecting again, optionally add a span on the other side, then click **Save**. Use **Clear** to remove a side or **Cancel** to discard the draft.
   - **Overall score (0–100, in steps of 5):** Judge meaning preservation and naturalness across the whole translation, not the number of strengths. Choose 0, 5, 10, …, 100 using these anchors as guidance:
     **0 — Broken:** Meaning is lost or the text is incoherent;
     **33 — Flawed:** Only part of the meaning is conveyed; major rewriting is needed;

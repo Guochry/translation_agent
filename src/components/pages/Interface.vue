@@ -156,6 +156,20 @@
           const hit = this.hits_data[this.current_hit - 1]
           if (indices.length !== 2 || !Number.isInteger(start) || !Number.isInteger(end)
               || start < 0 || end <= start || end > (hit[type] || '').length) return
+          if (this.config.confirm_span_before_save) {
+            // Keep the selected text/offsets as a draft; selecting either side
+            // again replaces that side until the annotator explicitly saves.
+            this.set_editor_state(true)
+            const panel = $(this.$el)
+            panel.find('.quality-selection').hide()
+            panel.find('#add_an_edit').show()
+            panel.find(`input[name=edit_cotegory_${this.panelId}]`).prop('checked', false)
+            panel.find(`input[name=edit_cotegory_${this.panelId}][value="${category.name}"]`).prop('checked', true)
+            panel.find('.span-selection-div').hide()
+            panel.find(`.span-selection-div[data-category="${category.name}"]`).show()
+            window.getSelection()?.removeAllRanges()
+            return
+          }
           const field = type === 'source' ? 'input_idx' : 'output_idx'
           const edits = hit.edits || []
           if (edits.some(edit => edit.category === category.name && edit[field]?.some(span => span[0] === start && span[1] === end))) {
