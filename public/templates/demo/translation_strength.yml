@@ -32,7 +32,7 @@ instructions: |
   ## Strength Span Annotation
 
   - Mark **especially effective wording** that preserves subtle meaning, conveys tone or imagery, handles an idiom naturally, or expresses the source with exceptional clarity and fluency. A strength must remain faithful to the source; ordinary correct wording alone is not enough.
-  - Select a precise **translation span**; the corresponding source span is optional.
+  - Select a precise span in the **source, translation, or both**. Either side is optional, but each annotation needs at least one span.
   - **Overall score (0–100):** Judge meaning preservation and naturalness across the whole translation, not the number of strengths. Use any score between these anchors:
     **0 — Broken:** Meaning is lost or the text is incoherent;
     **33 — Flawed:** Only part of the meaning is conveyed; major rewriting is needed;
@@ -66,4 +66,5 @@ edits:
     enable_input: true
     optional_input: true
     enable_output: true
+    optional_output: true
     type: single_span

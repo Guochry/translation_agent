@@ -29,7 +29,7 @@ prepend_instructions: true
 instructions: |
   ## Error Span Annotation (ESA)
 
-  - Read the source and candidate translations, then **mark each error separately** with a precise translation span and its corresponding source span.
+  - **Mark each error separately** with a precise span in the **source, translation, or both**. Either side is optional, but each annotation needs at least one span. For omissions, select the missing content in the source; for additions, select the unsupported text in the translation.
   - Assign **severity only**, without an error category: **Minor** for awkward wording or other imperfections that leave the core message intact; **Major** for errors that distort the source meaning or make the message confusing.
   - Treat **unsupported added content as Major**. For a translation entirely in the wrong language, mark the whole text as Major and score it **0**.
   - **Overall score (0–100):** Judge meaning preservation and naturalness across the whole translation, not just error count. Use any score between these anchors:
@@ -62,7 +62,9 @@ edits:
     icon: fa-triangle-exclamation
 
     enable_input: true
+    optional_input: true
     enable_output: true
+    optional_output: true
     type: single_span
 
     annotation:
