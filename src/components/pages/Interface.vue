@@ -141,6 +141,38 @@
           } else if (type == "target") {
             this.selected_state.target_category = category;
           }
+          if (this.config.auto_add_spans && !this.editor_open) {
+            const hit = this.current_hit
+            const indices = [...this.selected_state[`${type}_idx`]]
+            this.$nextTick(() => {
+              if (this.current_hit === hit && !this.editor_open) this.auto_add_span(indices, type)
+            })
+          }
+        },
+        auto_add_span(indices, type) {
+          const category = this.config.edits[0]
+          if (!this.config.auto_add_spans || !category || !['source', 'target'].includes(type)) return
+          const [start, end] = indices
+          const hit = this.hits_data[this.current_hit - 1]
+          if (indices.length !== 2 || !Number.isInteger(start) || !Number.isInteger(end)
+              || start < 0 || end <= start || end > (hit[type] || '').length) return
+          const field = type === 'source' ? 'input_idx' : 'output_idx'
+          const edits = hit.edits || []
+          if (edits.some(edit => edit.category === category.name && edit[field]?.some(span => span[0] === start && span[1] === end))) {
+            this.refresh_interface_edit()
+            return
+          }
+          const id = Math.max(0, ...edits.filter(edit => edit.category === category.name).map(edit => Number(edit.id))) + 1
+          const data = _.cloneDeep(this.hits_data)
+          data[this.current_hit - 1].edits.push({ category: category.name, id, annotation: null, [field]: [[start, end]] })
+          this.set_hits_data(data)
+          this.refresh_interface_edit()
+          window.getSelection()?.removeAllRanges()
+          if (category.annotation?.length) {
+            this.$nextTick(() => {
+              $(this.$el).find(`.annotation-icon[data-category="${category.name}"][data-id="${category.name}-${id}"]`).click()
+            })
+          }
         },
         set_edit_html(html) {
           this.selected_edits_html = html;
@@ -150,8 +182,8 @@
         },
         refresh_interface_edit() {
           const DEFAULT_HIT_BOX_CONFIG = {
-            enable_select_source_sentence: false,
-            enable_select_target_sentence: false,
+            enable_select_source_sentence: Boolean(this.config?.auto_add_spans),
+            enable_select_target_sentence: Boolean(this.config?.auto_add_spans),
             enable_multi_select_source_sentence: false,
             enable_multi_select_target_sentence: false,
           }

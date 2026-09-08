@@ -88,7 +88,8 @@ export default {
             if (!this.hit_box_config.enable_select_target_sentence) {
                 return
             }
-            let selected_category = this.$p(`input[name=edit_cotegory_${this.panelId}]:checked`).val();
+            let selected_category = this.$p(`input[name=edit_cotegory_${this.panelId}]:checked`).val()
+                || (this.config.auto_add_spans ? this.config.edits[0].name : undefined);
             let selection = window.getSelection();
             let txt = this.hits_data[this.current_hit - 1].target
             if (!selection || selection.rangeCount === 0) {
