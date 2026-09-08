@@ -1675,20 +1675,20 @@
     ]
   },
   {
-    "id": "translation_5fbba7fde2a314a7",
+    "id": "translation_1c2b737ab3f828ac",
     "metadata": {
       "title": "Dungeon Crawl Stone Soup",
       "source_language": "en",
       "target_language": "zh_CN",
-      "original_index": 178,
-      "difficulty_score": -0.5498685241,
+      "original_index": 520,
+      "difficulty_score": -0.235801205,
       "human_reference_available": true
     },
     "candidates": [
       {
         "id": "aya-expanse-32b",
-        "source": "“I met a traveller from an antique land\n Who said: Two vast and trunkless legs of stone\n Stand in the desert. Near them on the sand,\n Half sunk, a shatter'd visage lies, whose frown\n And wrinkled lip and sneer of cold command\n Tell that its sculptor well those passions read\n Which yet survive, stamp'd on these lifeless things,\n The hand that mock'd them and the heart that fed.\n And on the pedestal these words appear:\n ‘My name is Ozymandias, king of kings:\n Look on my works, ye Mighty, and despair!’\n Nothing beside remains: round the decay\n Of that colossal wreck, boundless and bare,\n The lone and level sands stretch far away.”\n    -Percy Bysshe Shelley, “Ozymandias”. 1818.",
-        "target": "我遇见了一个来自古老国度的旅行者，\n他说：在沙漠中矗立着两块巨大的、没有身躯的石腿，\n在它们附近，沙地上半埋着一张破碎的面容，\n那皱眉、那卷曲的嘴唇和冷酷的命令的冷笑，\n表明了它的雕塑家很了解那些仍然存活的情感，\n这些情感被印在这些没有生命的东西上，\n那双嘲讽它们的双手和滋养它们的内心。\n在基座上刻着这些文字：\n“我的名字是奥西曼迪亚斯，国王中的国王，\n看看我的作品，你们这些强者，绝望吧！”\n除了这些，什么也没剩下：在那巨大的废墟周围，\n无边无际、空旷而平静的沙丘延伸到远方。",
+        "source": "You scratch my back, I'll scratch yours... and I'm one HELL of a backscratcher.",
+        "target": "你帮我挠痒痒，我就帮你挠，我可是挠痒痒的高手。",
         "metadata": {
           "kind": "model",
           "model": "aya-expanse-32b"
@@ -1696,8 +1696,8 @@
       },
       {
         "id": "gemma-3-12b-it",
-        "source": "“I met a traveller from an antique land\n Who said: Two vast and trunkless legs of stone\n Stand in the desert. Near them on the sand,\n Half sunk, a shatter'd visage lies, whose frown\n And wrinkled lip and sneer of cold command\n Tell that its sculptor well those passions read\n Which yet survive, stamp'd on these lifeless things,\n The hand that mock'd them and the heart that fed.\n And on the pedestal these words appear:\n ‘My name is Ozymandias, king of kings:\n Look on my works, ye Mighty, and despair!’\n Nothing beside remains: round the decay\n Of that colossal wreck, boundless and bare,\n The lone and level sands stretch far away.”\n    -Percy Bysshe Shelley, “Ozymandias”. 1818.",
-        "target": "我遇见一位来自古老国家的旅行者，\n他说：沙漠中矗立着两根巨大而无躯干的石腿。\n在它们附近，沙地上躺着一个破碎的面容，\n那皱眉、紧闭的嘴唇和冷酷的嘲讽，\n诉说着雕刻家对这些情感的深刻理解，\n而这些情感依然存在，铭刻在这无生命的物体上，\n既有嘲弄它们的双手，也有滋养它们的内心。\n而在底座上，这些字迹赫然可见：\n“我是奥兹曼迪亚斯，万王之王：\n看看我的丰功伟业，你们强大的存在，并绝望吧！”\n除此之外，一无所有：\n在那个巨大的残骸衰败的周围，\n一片广阔而荒凉的沙海延伸向远方。\n- 珀西·比希·雪莱，《奥兹曼迪亚斯》，1818",
+        "source": "You scratch my back, I'll scratch yours... and I'm one HELL of a backscratcher.",
+        "target": "你帮我，我帮你…而且我可是个顶级的挠背高手！",
         "metadata": {
           "kind": "model",
           "model": "gemma-3-12b-it"
@@ -1705,8 +1705,8 @@
       },
       {
         "id": "gemma-3-27b-it",
-        "source": "“I met a traveller from an antique land\n Who said: Two vast and trunkless legs of stone\n Stand in the desert. Near them on the sand,\n Half sunk, a shatter'd visage lies, whose frown\n And wrinkled lip and sneer of cold command\n Tell that its sculptor well those passions read\n Which yet survive, stamp'd on these lifeless things,\n The hand that mock'd them and the heart that fed.\n And on the pedestal these words appear:\n ‘My name is Ozymandias, king of kings:\n Look on my works, ye Mighty, and despair!’\n Nothing beside remains: round the decay\n Of that colossal wreck, boundless and bare,\n The lone and level sands stretch far away.”\n    -Percy Bysshe Shelley, “Ozymandias”. 1818.",
-        "target": "我遇见一位来自古老土地的旅人，\n他说：两根巨大而无躯干的石腿\n矗立在沙漠中。近旁沙地上，\n半埋着一张破碎的面容，其皱眉\n和紧抿的嘴唇，以及冷酷的轻蔑\n表明它的雕刻家深刻地理解了那些情感，\n而这些情感至今仍然存留，铭刻在这些无生命的物体上，\n既是嘲弄它们的双手，也是滋养它们的内心。\n在底座上刻着这样的话：\n“我的名字是奥西曼迪亚斯，万王之王：\n看看我的功业吧，强大的人们，然后绝望！”\n除了这些，什么也没有剩下：围绕着这\n巨大的残骸的衰败，无边而荒凉，\n孤独而平坦的沙地一直延伸到远方。\n\n- 珀西·比希·雪莱，《奥西曼迪亚斯》。1818年。",
+        "source": "You scratch my back, I'll scratch yours... and I'm one HELL of a backscratcher.",
+        "target": "你帮我挠痒痒，我帮你挠。而且，我挠痒痒的技术一流！",
         "metadata": {
           "kind": "model",
           "model": "gemma-3-27b-it"
@@ -1714,8 +1714,8 @@
       },
       {
         "id": "qwen3.5-27b",
-        "source": "“I met a traveller from an antique land\n Who said: Two vast and trunkless legs of stone\n Stand in the desert. Near them on the sand,\n Half sunk, a shatter'd visage lies, whose frown\n And wrinkled lip and sneer of cold command\n Tell that its sculptor well those passions read\n Which yet survive, stamp'd on these lifeless things,\n The hand that mock'd them and the heart that fed.\n And on the pedestal these words appear:\n ‘My name is Ozymandias, king of kings:\n Look on my works, ye Mighty, and despair!’\n Nothing beside remains: round the decay\n Of that colossal wreck, boundless and bare,\n The lone and level sands stretch far away.”\n    -Percy Bysshe Shelley, “Ozymandias”. 1818.",
-        "target": "“我遇见一位来自古国的旅人，\n他说：两尊巨大而无躯的石腿，\n矗立在沙漠之中。在它们附近的沙地上，\n半掩着一张破碎的面容，那紧锁的眉头、\n皱起的嘴唇和冷峻威严的讥笑，\n昭示着那位雕塑家曾深刻洞察那些情感，\n它们至今犹存，镌刻在这些无生命的物体上，\n那嘲弄它们的手，与滋养它们的心。\n而在基座上，刻着这样的文字：\n‘吾名奥兹曼迪亚斯，万王之王：\n看吾功业，众强者，当绝望！’\n除此之外，一无所有：在那巨大残骸的衰败四周，\n无边无际、空旷荒凉，\n孤寂而平坦的沙地，向远方无限延展。”\n——珀西·比希·雪莱，《奥兹曼迪亚斯》，1818 年。",
+        "source": "You scratch my back, I'll scratch yours... and I'm one HELL of a backscratcher.",
+        "target": "你帮我挠背，我帮你挠背……而且我挠背的技术简直一流。",
         "metadata": {
           "kind": "model",
           "model": "qwen3.5-27b"
@@ -1723,8 +1723,8 @@
       },
       {
         "id": "qwen3.5-9b",
-        "source": "“I met a traveller from an antique land\n Who said: Two vast and trunkless legs of stone\n Stand in the desert. Near them on the sand,\n Half sunk, a shatter'd visage lies, whose frown\n And wrinkled lip and sneer of cold command\n Tell that its sculptor well those passions read\n Which yet survive, stamp'd on these lifeless things,\n The hand that mock'd them and the heart that fed.\n And on the pedestal these words appear:\n ‘My name is Ozymandias, king of kings:\n Look on my works, ye Mighty, and despair!’\n Nothing beside remains: round the decay\n Of that colossal wreck, boundless and bare,\n The lone and level sands stretch far away.”\n    -Percy Bysshe Shelley, “Ozymandias”. 1818.",
-        "target": "“我遇见一位来自古老土地的旅人，\n他说道：两尊巨大而无腿的石柱，\n矗立在沙漠之中。在它们身旁的沙地上，\n半掩埋着一张破碎的面容，那紧锁的眉头、\n那皱纹深重的嘴唇、那冷漠命令般的冷笑，\n昭示着它的雕刻者曾深刻领悟那些情感——\n如今它们依然留存，烙印在这无生命的躯壳之上，\n嘲弄过它们的手，与滋养过它们的心。\n而在基座上刻着这样的文字：\n‘我是奥兹曼迪亚斯，众王之王：\n看看我的功绩吧，你们这些强者，然后绝望吧！’\n除此之外，别无他物：在那庞然巨物的衰败周围，\n无边而荒凉，\n唯有孤寂而平坦的沙丘，向远方延伸。”\n——珀西·比希·雪莱，《奥兹曼迪亚斯》，1818 年。",
+        "source": "You scratch my back, I'll scratch yours... and I'm one HELL of a backscratcher.",
+        "target": "你帮我挠背，我也帮你挠……而且我可是个超级厉害的“挠背高手”。",
         "metadata": {
           "kind": "model",
           "model": "qwen3.5-9b"
@@ -1732,8 +1732,8 @@
       },
       {
         "id": "human_reference",
-        "source": "“I met a traveller from an antique land\n Who said: Two vast and trunkless legs of stone\n Stand in the desert. Near them on the sand,\n Half sunk, a shatter'd visage lies, whose frown\n And wrinkled lip and sneer of cold command\n Tell that its sculptor well those passions read\n Which yet survive, stamp'd on these lifeless things,\n The hand that mock'd them and the heart that fed.\n And on the pedestal these words appear:\n ‘My name is Ozymandias, king of kings:\n Look on my works, ye Mighty, and despair!’\n Nothing beside remains: round the decay\n Of that colossal wreck, boundless and bare,\n The lone and level sands stretch far away.”\n    -Percy Bysshe Shelley, “Ozymandias”. 1818.",
-        "target": "“客自海外归，曾见沙漠王国\n 有石像半毁，唯余巨腿\n 蹲立沙砾间。像头旁落，\n 半遭沙埋，但人面依然可畏，\n 那冷笑，那发号施令的高傲，\n 足见雕匠看透了主人的心，\n 才把那石头刻得神情唯肖，\n 而刻像的手和像主的心\n 早成灰烬。像座上大字在目：\n ’吾乃万王之王是也，\n 盖世功业，敢叫天公折服！’\n 此外无一物，但见废墟周围，\n 寂寞平沙空莽莽，\n 伸向荒凉的四方。”\n    -珀西·比希·雪莱，”奥西曼提斯“。1818。",
+        "source": "You scratch my back, I'll scratch yours... and I'm one HELL of a backscratcher.",
+        "target": "你扶持我，我也扶持你……我可是地狱级的搔背扒子。",
         "metadata": {
           "kind": "human",
           "reference_field": "zh_CN"
@@ -1943,207 +1943,6 @@
     ]
   },
   {
-    "id": "translation_c581683ab086e226",
-    "metadata": {
-      "title": "0 A.D.",
-      "source_language": "en",
-      "target_language": "zh_CN",
-      "original_index": 429,
-      "difficulty_score": -0.2843586802,
-      "human_reference_available": true
-    },
-    "candidates": [
-      {
-        "id": "aya-expanse-32b",
-        "source": "“My men have turned into women, and my women into men!” \\n— Xerxes, watching Artemisia ram a ship while most of his fleet suffered the reverse, not knowing that the sunk vessel was his own (Herodotus, “The Histories”, VIII. 88)",
-        "target": "“我的士兵变成了女人，我的女兵变成了男人！”\n——薛西斯，目击阿尔特米西亚撞沉一艘船，而他的大部分舰队则遭遇了相反的命运，他却不知道被击沉的船是自己的（希罗多德，《历史》第八卷，88章）",
-        "metadata": {
-          "kind": "model",
-          "model": "aya-expanse-32b"
-        }
-      },
-      {
-        "id": "gemma-3-12b-it",
-        "source": "“My men have turned into women, and my women into men!” \\n— Xerxes, watching Artemisia ram a ship while most of his fleet suffered the reverse, not knowing that the sunk vessel was his own (Herodotus, “The Histories”, VIII. 88)",
-        "target": "“我的男兵变成了女人，我的女兵变成了男人！”\n——薛西斯看着阿尔忒米西娅驾驶战船冲撞，而他的大部分舰队却遭受了相反的命运，却不知被击沉的船只正是他的战船。（希罗多德，《历史》，第八卷，第88段）",
-        "metadata": {
-          "kind": "model",
-          "model": "gemma-3-12b-it"
-        }
-      },
-      {
-        "id": "gemma-3-27b-it",
-        "source": "“My men have turned into women, and my women into men!” \\n— Xerxes, watching Artemisia ram a ship while most of his fleet suffered the reverse, not knowing that the sunk vessel was his own (Herodotus, “The Histories”, VIII. 88)",
-        "target": "“我的士兵都变成了女人，我的女人都变成了士兵！”\\n——薛西斯，看着阿尔忒弥西亚撞沉一艘船，而他的大部分舰队却遭受了同样的命运，却不知道沉没的船只正是他自己的（希罗多德，《历史》，第八卷，88段）",
-        "metadata": {
-          "kind": "model",
-          "model": "gemma-3-27b-it"
-        }
-      },
-      {
-        "id": "qwen3.5-27b",
-        "source": "“My men have turned into women, and my women into men!” \\n— Xerxes, watching Artemisia ram a ship while most of his fleet suffered the reverse, not knowing that the sunk vessel was his own (Herodotus, “The Histories”, VIII. 88)",
-        "target": "“我的男人变成了女人，我的女人变成了男人！”——薛西斯目睹阿尔忒弥西亚撞击敌舰，而他的大多数舰队却遭反噬，却不知被击沉的正是己方船只（希罗多德，《历史》，卷八，第 88 节）",
-        "metadata": {
-          "kind": "model",
-          "model": "qwen3.5-27b"
-        }
-      },
-      {
-        "id": "qwen3.5-9b",
-        "source": "“My men have turned into women, and my women into men!” \\n— Xerxes, watching Artemisia ram a ship while most of his fleet suffered the reverse, not knowing that the sunk vessel was his own (Herodotus, “The Histories”, VIII. 88)",
-        "target": "“我的男子变成了女人，我的女人变成了男子！”——薛西斯目睹阿尔忒米西亚撞沉一艘战舰，而己方舰队大多遭遇相反命运，却不知那艘沉没的正是自己的船（希罗多德，《历史》，第八卷 88 节）",
-        "metadata": {
-          "kind": "model",
-          "model": "qwen3.5-9b"
-        }
-      },
-      {
-        "id": "human_reference",
-        "source": "“My men have turned into women, and my women into men!” \\n— Xerxes, watching Artemisia ram a ship while most of his fleet suffered the reverse, not knowing that the sunk vessel was his own (Herodotus, “The Histories”, VIII. 88)",
-        "target": "我的男人变成了女人，女人变成了男人！——薛西斯一世，看着阿特米西娅·拉姆的战舰撞向一艘船，这时大部分战舰已经沉没，他仿佛不知道沉的船是他自己的（希罗多德，《历史》，第八卷 88 节）",
-        "metadata": {
-          "kind": "human",
-          "reference_field": "zh_CN"
-        }
-      }
-    ]
-  },
-  {
-    "id": "translation_9d18465f6a6d72f9",
-    "metadata": {
-      "title": "0 A.D.",
-      "source_language": "en",
-      "target_language": "zh_CN",
-      "original_index": 996,
-      "difficulty_score": -0.0976105407,
-      "human_reference_available": true
-    },
-    "candidates": [
-      {
-        "id": "aya-expanse-32b",
-        "source": "“This was the greatest action that happened in all this war, and all others that we have heard of amongst the Greeks, being to the victors most glorious and most calamitous to the vanquished. For they were utterly and at all points defeated, and their sufferings were many. Army and fleet and all they ever had perished, nothing was saved and few of so many ever returned home. Thus ended the Sicilian expedition.” \\n— Thucydides (“History of the Peloponnesian War”, VII. 87.6–7)",
-        "target": "这是整个战争中最伟大的行动，也是我们从希腊人那里听说过的最辉煌的胜利，对失败者来说是最悲惨的。因为他们完全被击败，在各个方面都失败了，并且遭受了巨大的痛苦。他们的军队、舰队和他们曾经拥有的一切都毁灭了，没有什么东西被拯救，很少有这么多人能回家。西西里远征就此结束。\n\n——修昔底德《伯罗奔尼撒战争史》，第七卷，87.6-7",
-        "metadata": {
-          "kind": "model",
-          "model": "aya-expanse-32b"
-        }
-      },
-      {
-        "id": "gemma-3-12b-it",
-        "source": "“This was the greatest action that happened in all this war, and all others that we have heard of amongst the Greeks, being to the victors most glorious and most calamitous to the vanquished. For they were utterly and at all points defeated, and their sufferings were many. Army and fleet and all they ever had perished, nothing was saved and few of so many ever returned home. Thus ended the Sicilian expedition.” \\n— Thucydides (“History of the Peloponnesian War”, VII. 87.6–7)",
-        "target": "这是这场战争中，以及所有我们听说的希腊战争中最伟大的行动，对胜利者来说是光荣的，对失败者来说是灾难性的。因为他们彻底、在各个方面都战败了，遭受了许多苦难。军队、舰队以及他们曾经拥有的一切都覆灭了，一无幸免，许多人中只有少数几个能够回家。就这样，西西里远征宣告结束。",
-        "metadata": {
-          "kind": "model",
-          "model": "gemma-3-12b-it"
-        }
-      },
-      {
-        "id": "gemma-3-27b-it",
-        "source": "“This was the greatest action that happened in all this war, and all others that we have heard of amongst the Greeks, being to the victors most glorious and most calamitous to the vanquished. For they were utterly and at all points defeated, and their sufferings were many. Army and fleet and all they ever had perished, nothing was saved and few of so many ever returned home. Thus ended the Sicilian expedition.” \\n— Thucydides (“History of the Peloponnesian War”, VII. 87.6–7)",
-        "target": "这是这场战争中发生的最伟大的行动，也是我们所听闻的希腊人所有战争中最伟大的行动，对胜利者来说最为辉煌，对失败者来说最为灾难。因为他们彻底地、在各个方面都被击败了，遭受了许多苦难。他们的陆军和舰队以及他们所拥有的一切都已覆灭，没有留下任何东西，极少数人能够回家。西西里远征就此结束。\n\n— 修昔底德《伯罗奔尼撒战争史》，第七卷，87.6–7段",
-        "metadata": {
-          "kind": "model",
-          "model": "gemma-3-27b-it"
-        }
-      },
-      {
-        "id": "qwen3.5-27b",
-        "source": "“This was the greatest action that happened in all this war, and all others that we have heard of amongst the Greeks, being to the victors most glorious and most calamitous to the vanquished. For they were utterly and at all points defeated, and their sufferings were many. Army and fleet and all they ever had perished, nothing was saved and few of so many ever returned home. Thus ended the Sicilian expedition.” \\n— Thucydides (“History of the Peloponnesian War”, VII. 87.6–7)",
-        "target": "“这是整个战争中最伟大的行动，也是我们在希腊人所知的所有行动中，对胜利者最为光荣、对失败者最为灾难性的。因为他们被彻底且全面地击败，遭受了无数苦难。其陆军、海军以及他们拥有的一切皆告覆灭，无一幸免；如此众多的人中，仅有少数得以生还归乡。西西里远征遂以此告终。”——修昔底德《伯罗奔尼撒战争史》第七卷 87 章第 6–7 节",
-        "metadata": {
-          "kind": "model",
-          "model": "qwen3.5-27b"
-        }
-      },
-      {
-        "id": "qwen3.5-9b",
-        "source": "“This was the greatest action that happened in all this war, and all others that we have heard of amongst the Greeks, being to the victors most glorious and most calamitous to the vanquished. For they were utterly and at all points defeated, and their sufferings were many. Army and fleet and all they ever had perished, nothing was saved and few of so many ever returned home. Thus ended the Sicilian expedition.” \\n— Thucydides (“History of the Peloponnesian War”, VII. 87.6–7)",
-        "target": "“这是这场战争以及我们听闻过的所有希腊战争中最伟大的事件，对胜利者而言最为荣耀，对失败者而言最为惨烈。因为他们被彻底且全方位地击败，所受的苦难众多。军队、舰队以及他们曾经拥有的一切皆已覆灭，无一幸存，如此众多的人中仅有少数得以返乡。西西里远征至此终结。”  \n——修昔底德（《伯罗奔尼撒战争史》，卷七，87.6–7）",
-        "metadata": {
-          "kind": "model",
-          "model": "qwen3.5-9b"
-        }
-      },
-      {
-        "id": "human_reference",
-        "source": "“This was the greatest action that happened in all this war, and all others that we have heard of amongst the Greeks, being to the victors most glorious and most calamitous to the vanquished. For they were utterly and at all points defeated, and their sufferings were many. Army and fleet and all they ever had perished, nothing was saved and few of so many ever returned home. Thus ended the Sicilian expedition.” \\n— Thucydides (“History of the Peloponnesian War”, VII. 87.6–7)",
-        "target": "这是这场战争中希腊人最大的一次军事行动，照我看来，也是希腊历史上最大的军事行动—对于胜利者来说，是最大的光荣，对于失败者来说，是最大的灾难。雅典人被彻底打败，全军覆灭，他们遭受了巨大的痛苦；他们被毁灭了，正像谚语所说，一切都灰飞烟灭了，他们的舰队，他们的陆军，全部都被毁灭了，庞大的远征军中只有极少数人重返故乡。这就是在西西里发生的事件。——修昔底德（《伯罗奔尼撒战争史》第七卷87段）",
-        "metadata": {
-          "kind": "human",
-          "reference_field": "zh_CN"
-        }
-      }
-    ]
-  },
-  {
-    "id": "translation_428c7b85586f47c7",
-    "metadata": {
-      "title": "0 A.D.",
-      "source_language": "en",
-      "target_language": "zh_CN",
-      "original_index": 1175,
-      "difficulty_score": -0.0525330119,
-      "human_reference_available": true
-    },
-    "candidates": [
-      {
-        "id": "aya-expanse-32b",
-        "source": "“He \\[King Darius] asked who the Athenians were, and, being informed, called for his bow, and placing an arrow on the string, shot upward into the sky, saying, as he let fly the shaft: Grant me, Zeus, to revenge myself on the Athenians!” \\n— Herodotus, narrating how the Athenian support for the Ionian revolt caught the wrath of Darius I, the Persian king (“The Histories”, V. 105)",
-        "target": "“他（达里乌斯王）问雅典人是谁，得知后，要来他的弓，拉满弓箭，射向天空，放箭时说：‘宙斯啊，求你让我能向雅典人复仇！’”\n— 赫罗多德，讲述雅典人支持爱奥尼亚起义惹怒了波斯王大流士一世（《历史》第五卷，105）",
-        "metadata": {
-          "kind": "model",
-          "model": "aya-expanse-32b"
-        }
-      },
-      {
-        "id": "gemma-3-12b-it",
-        "source": "“He \\[King Darius] asked who the Athenians were, and, being informed, called for his bow, and placing an arrow on the string, shot upward into the sky, saying, as he let fly the shaft: Grant me, Zeus, to revenge myself on the Athenians!” \\n— Herodotus, narrating how the Athenian support for the Ionian revolt caught the wrath of Darius I, the Persian king (“The Histories”, V. 105)",
-        "target": "他（大流士王）询问雅典人是谁，得知后，便叫来弓箭，拉开弓弦，射向天空，放箭时说道：“宙斯啊，赐我为雅典人复仇的力量！”\n—— 希罗多德，《历史》第五卷105段，讲述了雅典人支持爱奥尼亚起义，激怒了波斯国王大流士一世。",
-        "metadata": {
-          "kind": "model",
-          "model": "gemma-3-12b-it"
-        }
-      },
-      {
-        "id": "gemma-3-27b-it",
-        "source": "“He \\[King Darius] asked who the Athenians were, and, being informed, called for his bow, and placing an arrow on the string, shot upward into the sky, saying, as he let fly the shaft: Grant me, Zeus, to revenge myself on the Athenians!” \\n— Herodotus, narrating how the Athenian support for the Ionian revolt caught the wrath of Darius I, the Persian king (“The Histories”, V. 105)",
-        "target": "他（大流士王）询问雅典人是谁，得知后，便要人取弓，搭箭上弦，向天空射去，射箭时说道：“宙斯啊，请允许我向雅典人复仇！”\n\n— 希罗多德，叙述雅典人对爱奥尼亚起义的支持招致了波斯国王大流士一世的愤怒（《历史》，第五卷，105）",
-        "metadata": {
-          "kind": "model",
-          "model": "gemma-3-27b-it"
-        }
-      },
-      {
-        "id": "qwen3.5-27b",
-        "source": "“He \\[King Darius] asked who the Athenians were, and, being informed, called for his bow, and placing an arrow on the string, shot upward into the sky, saying, as he let fly the shaft: Grant me, Zeus, to revenge myself on the Athenians!” \\n— Herodotus, narrating how the Athenian support for the Ionian revolt caught the wrath of Darius I, the Persian king (“The Histories”, V. 105)",
-        "target": "“他（大流士王）询问雅典人是谁，得知后便取来弓，将箭搭上弦，向天射去，并在松手放箭时说道：‘宙斯啊，请赐予我向雅典人复仇的机会！’\"——希罗多德在《历史》（卷五，第 105 节）中记述，雅典人支持伊奥尼亚起义，从而激怒了波斯国王大流士一世。",
-        "metadata": {
-          "kind": "model",
-          "model": "qwen3.5-27b"
-        }
-      },
-      {
-        "id": "qwen3.5-9b",
-        "source": "“He \\[King Darius] asked who the Athenians were, and, being informed, called for his bow, and placing an arrow on the string, shot upward into the sky, saying, as he let fly the shaft: Grant me, Zeus, to revenge myself on the Athenians!” \\n— Herodotus, narrating how the Athenian support for the Ionian revolt caught the wrath of Darius I, the Persian king (“The Histories”, V. 105)",
-        "target": "“他（大流士王）问道：‘雅典人是谁？’得知后，便取来弓箭，搭箭上弦，向上射去，并在放箭时说道：‘宙斯啊，请让我向雅典人复仇吧！’\"——希罗多德记述雅典人对爱奥尼亚起义的支持激怒了波斯国王大流士一世（《历史》，卷五，105 节）",
-        "metadata": {
-          "kind": "model",
-          "model": "qwen3.5-9b"
-        }
-      },
-      {
-        "id": "human_reference",
-        "source": "“He \\[King Darius] asked who the Athenians were, and, being informed, called for his bow, and placing an arrow on the string, shot upward into the sky, saying, as he let fly the shaft: Grant me, Zeus, to revenge myself on the Athenians!” \\n— Herodotus, narrating how the Athenian support for the Ionian revolt caught the wrath of Darius I, the Persian king (“The Histories”, V. 105)",
-        "target": "他（大流士一世）问雅典人是什么样的人，当人们告诉他之后，他便要求人们把弓箭给他拿来，他放一支箭在弓上并把它射到天上去，他把这支箭射到天上去的时候他祈求说：“哦，宙斯，容许我向雅典人复仇吧！” ——希罗多德，叙述雅典支持爱奥尼亚人的起义，引发波斯国王大流士一世的愤怒（《历史》，第五卷 105 节）",
-        "metadata": {
-          "kind": "human",
-          "reference_field": "zh_CN"
-        }
-      }
-    ]
-  },
-  {
     "id": "translation_3de2789581616b0e",
     "metadata": {
       "title": "0 A.D.",
@@ -2211,20 +2010,20 @@
     ]
   },
   {
-    "id": "translation_c0a43ccb7e3b422d",
+    "id": "translation_382b42ecc7faccd8",
     "metadata": {
-      "title": "0 A.D.",
+      "title": "Cataclysm: Dark Days Ahead",
       "source_language": "en",
       "target_language": "zh_CN",
-      "original_index": 1308,
-      "difficulty_score": -0.0299290791,
+      "original_index": 972,
+      "difficulty_score": -0.1038060784,
       "human_reference_available": true
     },
     "candidates": [
       {
         "id": "aya-expanse-32b",
-        "source": "“Plato had defined man as an animal, biped and featherless, and was applauded. Diogenes \\[of Sinope] plucked a fowl and brought it into the lecture-room with the words: Here is Plato's man. In consequence of which there was added to the definition: having broad nails.” \\n— Diogenes Laertius (“The Lives and Opinions of Eminent Philosophers”, “Diogenes”, sec. 40)",
-        "target": "柏拉图将人定义为没有羽毛的两足动物，并得到了赞誉。但狄奥根尼（西诺普的）将一只鸡的羽毛拔掉，带进了讲座室，说：“这是柏拉图的人。” 因此，定义中又增加了“指甲宽”这一条。\n— 狄奥根尼·拉埃尔提乌斯（《著名哲学家生平、观点与语录》，《狄奥根尼》，第40节）",
+        "source": "I just like, wanna back up a second.  We're trying to score drugs for a cyborg so it can do surgery on you?  That's really where life's taking us, now?",
+        "target": "我只是想回溯一下。我们正在为机器人寻找毒品，以便它能对你进行手术？这就是生活现在要带我们去的地方吗？",
         "metadata": {
           "kind": "model",
           "model": "aya-expanse-32b"
@@ -2232,8 +2031,8 @@
       },
       {
         "id": "gemma-3-12b-it",
-        "source": "“Plato had defined man as an animal, biped and featherless, and was applauded. Diogenes \\[of Sinope] plucked a fowl and brought it into the lecture-room with the words: Here is Plato's man. In consequence of which there was added to the definition: having broad nails.” \\n— Diogenes Laertius (“The Lives and Opinions of Eminent Philosophers”, “Diogenes”, sec. 40)",
-        "target": "柏拉图将人定义为一种两足、没有羽毛的动物，并因此受到赞扬。底格里斯（辛诺珀人）拔了一只鸟的羽毛，带着它走进讲堂，说：“这就是柏拉图定义的人。” 因此，在定义中又加上了“有宽大的指甲”这一条。\n—— 狄奥金尼·拉耳提乌斯，《著名哲学家列传》，“底格里斯”，第40段",
+        "source": "I just like, wanna back up a second.  We're trying to score drugs for a cyborg so it can do surgery on you?  That's really where life's taking us, now?",
+        "target": "我只是，想倒退回一下。 我们现在是为了给一个赛博格弄药，让它给你做手术？ 这就是我们人生最终的走向吗？",
         "metadata": {
           "kind": "model",
           "model": "gemma-3-12b-it"
@@ -2241,8 +2040,8 @@
       },
       {
         "id": "gemma-3-27b-it",
-        "source": "“Plato had defined man as an animal, biped and featherless, and was applauded. Diogenes \\[of Sinope] plucked a fowl and brought it into the lecture-room with the words: Here is Plato's man. In consequence of which there was added to the definition: having broad nails.” \\n— Diogenes Laertius (“The Lives and Opinions of Eminent Philosophers”, “Diogenes”, sec. 40)",
-        "target": "柏拉图曾将人定义为一种两足无羽的动物，并因此受到赞扬。狄俄根尼[西诺普的]拔下一只禽类的羽毛，把它带到讲堂上，说道：“这就是柏拉图的人。” 结果，人们在定义中增加了“有宽大的指甲”这一条。\n\n— 狄俄根尼·拉尔修（《名哲传》，“狄俄根尼”，第40节）",
+        "source": "I just like, wanna back up a second.  We're trying to score drugs for a cyborg so it can do surgery on you?  That's really where life's taking us, now?",
+        "target": "我就是想先退一步想想。我们现在是为了给一个生化人弄点毒品，好让它给你做手术？这就是我们现在的人生目标吗？",
         "metadata": {
           "kind": "model",
           "model": "gemma-3-27b-it"
@@ -2250,8 +2049,8 @@
       },
       {
         "id": "qwen3.5-27b",
-        "source": "“Plato had defined man as an animal, biped and featherless, and was applauded. Diogenes \\[of Sinope] plucked a fowl and brought it into the lecture-room with the words: Here is Plato's man. In consequence of which there was added to the definition: having broad nails.” \\n— Diogenes Laertius (“The Lives and Opinions of Eminent Philosophers”, “Diogenes”, sec. 40)",
-        "target": "“柏拉图曾将人定义为‘两足无毛的动物’，并因此受到赞誉。第欧根尼（来自锡诺普）拔光一只鸡的羽毛，将其带入讲堂，说道：‘这就是柏拉图所说的人。’于是，该定义被补充为：‘具有宽大的指甲。’\"——第欧根尼·拉尔修（《名哲言行录》，《第欧根尼》第 40 节）",
+        "source": "I just like, wanna back up a second.  We're trying to score drugs for a cyborg so it can do surgery on you?  That's really where life's taking us, now?",
+        "target": "等等，我想先退一步。我们正试图为一个半机械人搞到药物，好让它给你做手术？这就是我们现在的人生走向吗？",
         "metadata": {
           "kind": "model",
           "model": "qwen3.5-27b"
@@ -2259,8 +2058,8 @@
       },
       {
         "id": "qwen3.5-9b",
-        "source": "“Plato had defined man as an animal, biped and featherless, and was applauded. Diogenes \\[of Sinope] plucked a fowl and brought it into the lecture-room with the words: Here is Plato's man. In consequence of which there was added to the definition: having broad nails.” \\n— Diogenes Laertius (“The Lives and Opinions of Eminent Philosophers”, “Diogenes”, sec. 40)",
-        "target": "“柏拉图曾将人定义为‘两足而无羽毛的动物’，并因此受到赞誉。第欧根尼（来自锡诺普）拔下一只鸡，将其带入讲堂，说道：‘看，这就是柏拉图所说的人。’于是，这一定义被补充为：‘长着宽指甲的。’\"  \n——第欧根尼·拉尔修（《名哲言行录》，第欧根尼篇，第 40 节）",
+        "source": "I just like, wanna back up a second.  We're trying to score drugs for a cyborg so it can do surgery on you?  That's really where life's taking us, now?",
+        "target": "我只是想先退一步。我们是为了给一个改造人获取药物，以便让他给你做手术？这就是生活现在带我们去的方向吗？",
         "metadata": {
           "kind": "model",
           "model": "qwen3.5-9b"
@@ -2268,8 +2067,8 @@
       },
       {
         "id": "human_reference",
-        "source": "“Plato had defined man as an animal, biped and featherless, and was applauded. Diogenes \\[of Sinope] plucked a fowl and brought it into the lecture-room with the words: Here is Plato's man. In consequence of which there was added to the definition: having broad nails.” \\n— Diogenes Laertius (“The Lives and Opinions of Eminent Philosophers”, “Diogenes”, sec. 40)",
-        "target": "柏拉图将人定义为一种两足无毛的动物，并受到赞扬。锡诺普的第欧根尼把一只拔光毛的鸡带进了讲堂，鸡身写着：“这是柏拉图定义的人”。结果，定义又增加了：拥有宽的指甲。 ——第欧根尼 拉尔修(《哲人言行录·第欧根尼》sec. 40)",
+        "source": "I just like, wanna back up a second.  We're trying to score drugs for a cyborg so it can do surgery on you?  That's really where life's taking us, now?",
+        "target": "我就是，想先缓缓。我们现在是在为一个生化人搞药，好让它给你做手术？生活真的把我们带到了这一步吗？",
         "metadata": {
           "kind": "human",
           "reference_field": "zh_CN"
@@ -3082,6 +2881,140 @@
     ]
   },
   {
+    "id": "translation_3e367b8efcc43d5a",
+    "metadata": {
+      "title": "Cataclysm: Dark Days Ahead",
+      "source_language": "en",
+      "target_language": "zh_CN",
+      "original_index": 769,
+      "difficulty_score": -0.1524331719,
+      "human_reference_available": true
+    },
+    "candidates": [
+      {
+        "id": "aya-expanse-32b",
+        "source": "Yeah, that's a big question.  Otherworlds are how you got those ugly bug-creatures around here, you know?  Walking plants, talking mushroom, stuff like that.  Otherlands are closer related.  I'm from Earth, just a different Earth.  You shouldn't be asking what the Exodii are doing in Earth, because some of us are feeling pretty at home here, I think.  You should be asking what we're doing hanging out in your part of town.",
+        "target": "是啊，这是一个大问题。其他世界是你们这里怎么会有那些丑陋的虫子生物的原因，你知道吗？会走路的植物、会说话的蘑菇之类的。其他土地更接近。我来自地球，只是另一个不同的地球。你不应该问为什么异世界的人在地球上，因为我们中的一些人觉得这里很舒适，我想。你应该问我们为什么会在你这片区域闲逛。",
+        "metadata": {
+          "kind": "model",
+          "model": "aya-expanse-32b"
+        }
+      },
+      {
+        "id": "gemma-3-12b-it",
+        "source": "Yeah, that's a big question.  Otherworlds are how you got those ugly bug-creatures around here, you know?  Walking plants, talking mushroom, stuff like that.  Otherlands are closer related.  I'm from Earth, just a different Earth.  You shouldn't be asking what the Exodii are doing in Earth, because some of us are feeling pretty at home here, I think.  You should be asking what we're doing hanging out in your part of town.",
+        "target": "是的，这是一个大问题。其他位面就是那些丑陋的虫类生物出现在这里的原因，你知道吗？会走路的植物，会说话的蘑菇，之类的。其他世界更相关联。我来自地球，只是一个不同的地球。你不应该问外逸族（Exodii）为什么在地球上，因为我们中的一些人觉得这里很像家，我想。你应该问我们为什么会出现在你的地盘上。",
+        "metadata": {
+          "kind": "model",
+          "model": "gemma-3-12b-it"
+        }
+      },
+      {
+        "id": "gemma-3-27b-it",
+        "source": "Yeah, that's a big question.  Otherworlds are how you got those ugly bug-creatures around here, you know?  Walking plants, talking mushroom, stuff like that.  Otherlands are closer related.  I'm from Earth, just a different Earth.  You shouldn't be asking what the Exodii are doing in Earth, because some of us are feeling pretty at home here, I think.  You should be asking what we're doing hanging out in your part of town.",
+        "target": "是的，那是个很大的问题。异世界就是导致那些丑陋的虫形生物出现在这里的原因，你知道吗？会走路的植物，会说话的蘑菇，之类的东西。异域更相关一些。我来自地球，只是不同的地球。你不应该问Exodii在地球做什么，因为我们中的一些人觉得在这里很自在。你应该问我们为什么会出现在你这片地方。",
+        "metadata": {
+          "kind": "model",
+          "model": "gemma-3-27b-it"
+        }
+      },
+      {
+        "id": "qwen3.5-27b",
+        "source": "Yeah, that's a big question.  Otherworlds are how you got those ugly bug-creatures around here, you know?  Walking plants, talking mushroom, stuff like that.  Otherlands are closer related.  I'm from Earth, just a different Earth.  You shouldn't be asking what the Exodii are doing in Earth, because some of us are feeling pretty at home here, I think.  You should be asking what we're doing hanging out in your part of town.",
+        "target": "是啊，这是个大问题。异世界就是你们这儿那些丑陋虫形怪物的来源，你知道的？会走路的植物、会说话的蘑菇之类的。而“他界”则关系更近。我来自地球，只是另一个地球。你不该问“出离者”在地球上做什么，因为我想，我们中有些人在这儿感觉相当自在。你该问的是，我们为什么偏偏在你们这一带晃悠。",
+        "metadata": {
+          "kind": "model",
+          "model": "qwen3.5-27b"
+        }
+      },
+      {
+        "id": "qwen3.5-9b",
+        "source": "Yeah, that's a big question.  Otherworlds are how you got those ugly bug-creatures around here, you know?  Walking plants, talking mushroom, stuff like that.  Otherlands are closer related.  I'm from Earth, just a different Earth.  You shouldn't be asking what the Exodii are doing in Earth, because some of us are feeling pretty at home here, I think.  You should be asking what we're doing hanging out in your part of town.",
+        "target": "是啊，这是个很大的问题。异世界是那些丑陋的虫类生物出现在这里的来源，你懂的——比如会走路的植物、会说话的蘑菇之类的。而“异境”则与之关系更近。我来自地球，只是另一个地球。你不该问“流亡者”为何出现在地球上，因为我们中的一些人觉得这里相当自在，我想。你该问的是，我们为何聚集在你所在的街区。",
+        "metadata": {
+          "kind": "model",
+          "model": "qwen3.5-9b"
+        }
+      },
+      {
+        "id": "human_reference",
+        "source": "Yeah, that's a big question.  Otherworlds are how you got those ugly bug-creatures around here, you know?  Walking plants, talking mushroom, stuff like that.  Otherlands are closer related.  I'm from Earth, just a different Earth.  You shouldn't be asking what the Exodii are doing in Earth, because some of us are feeling pretty at home here, I think.  You should be asking what we're doing hanging out in your part of town.",
+        "target": "是啊，这是个大问题。你们这儿那些丑陋的虫形生物，就是从异世界来的，懂吗？还有会走路的植物、会说话的蘑菇之类的东西。而异域则和这里关系更近。我就来自地球，只是一个不同的地球。所以，你不该问我们流亡族在地球上干什么，因为我们中的一些人在这里感觉就像在家一样。你该问的是，我们在你这地盘上晃悠是为了什么。",
+        "metadata": {
+          "kind": "human",
+          "reference_field": "zh_CN"
+        }
+      }
+    ]
+  },
+  {
+    "id": "translation_a1b50a50a7e7cf45",
+    "metadata": {
+      "title": "Cataclysm: Dark Days Ahead",
+      "source_language": "en",
+      "target_language": "zh_CN",
+      "original_index": 978,
+      "difficulty_score": -0.1016311347,
+      "human_reference_available": true
+    },
+    "candidates": [
+      {
+        "id": "aya-expanse-32b",
+        "source": "I see.  You could get some from trading with the merchants around here.  The librarian is crazy for beech nuts, for example.  I saw her trade away all her money and books for a literal truckload of the things in another reality earlier.  Not sure what she does with them.  You see, she's lined her private rooms with lead which just so happens to block my scrying.  Almost like she doesn't trust me.  Not sure why.",
+        "target": "我明白了。你可以从这里的商人们那里交易得到一些。比如说，图书馆管理员对榛子非常痴迷。我之前在另一个现实中看到她用所有的钱和书换了一卡车榛子。不确定她用它们做什么。你看，她的私人房间里都用铅板衬里，恰好阻挡了我的探视。几乎像是她不信任我。不太清楚为什么。",
+        "metadata": {
+          "kind": "model",
+          "model": "aya-expanse-32b"
+        }
+      },
+      {
+        "id": "gemma-3-12b-it",
+        "source": "I see.  You could get some from trading with the merchants around here.  The librarian is crazy for beech nuts, for example.  I saw her trade away all her money and books for a literal truckload of the things in another reality earlier.  Not sure what she does with them.  You see, she's lined her private rooms with lead which just so happens to block my scrying.  Almost like she doesn't trust me.  Not sure why.",
+        "target": "我明白了。你可以在附近的商人那里弄到一些。比如，图书管理员对山核桃简直痴迷。我之前看到她在另一个现实中用她所有的钱和书换了满满一卡车的山核桃。不知道她用它们做什么。你知道吗，她用铅把她的私人房间都铺满了，这恰好阻挡了我的占卜。好像她不信任我似的。不知道为什么。",
+        "metadata": {
+          "kind": "model",
+          "model": "gemma-3-12b-it"
+        }
+      },
+      {
+        "id": "gemma-3-27b-it",
+        "source": "I see.  You could get some from trading with the merchants around here.  The librarian is crazy for beech nuts, for example.  I saw her trade away all her money and books for a literal truckload of the things in another reality earlier.  Not sure what she does with them.  You see, she's lined her private rooms with lead which just so happens to block my scrying.  Almost like she doesn't trust me.  Not sure why.",
+        "target": "我明白了。你可以在附近的商人那里交易得到一些。比如，图书管理员非常喜欢山毛榉坚果，我曾在另一个现实中看到她用所有的钱和书籍换了一整卡车的坚果。不知道她拿那些坚果做什么。你看，她用铅衬里了自己的私人房间，而铅恰好能阻挡我的预言术。几乎就像她不信任我一样。不明白为什么。",
+        "metadata": {
+          "kind": "model",
+          "model": "gemma-3-27b-it"
+        }
+      },
+      {
+        "id": "qwen3.5-27b",
+        "source": "I see.  You could get some from trading with the merchants around here.  The librarian is crazy for beech nuts, for example.  I saw her trade away all her money and books for a literal truckload of the things in another reality earlier.  Not sure what she does with them.  You see, she's lined her private rooms with lead which just so happens to block my scrying.  Almost like she doesn't trust me.  Not sure why.",
+        "target": "明白了。你可以和这里的商人交易来获取一些。比如，图书管理员对山毛榉坚果简直着了迷。早些时候，在另一个现实中，我就亲眼见她把所有钱和书都换成了整整一卡车这样的东西。至于她拿这些坚果做什么，我也不清楚。你看，她用铅衬满了自己的私人房间，而这恰好能阻挡我的占卜术。简直就像她根本不信任我。至于为什么，我也不明白。",
+        "metadata": {
+          "kind": "model",
+          "model": "qwen3.5-27b"
+        }
+      },
+      {
+        "id": "qwen3.5-9b",
+        "source": "I see.  You could get some from trading with the merchants around here.  The librarian is crazy for beech nuts, for example.  I saw her trade away all her money and books for a literal truckload of the things in another reality earlier.  Not sure what she does with them.  You see, she's lined her private rooms with lead which just so happens to block my scrying.  Almost like she doesn't trust me.  Not sure why.",
+        "target": "明白了。你可以和这里的商人们交易来获取。比如，图书管理员就特别痴迷山核桃。我之前在另一个现实里见过她为了整整一卡车山核桃，把全部的钱和书都换了出去。我不清楚她拿它们做什么。你看，她把私人房间用铅板衬了起来，这恰好能阻挡我的窥视。简直就像她不信任我一样。我不明白为什么。",
+        "metadata": {
+          "kind": "model",
+          "model": "qwen3.5-9b"
+        }
+      },
+      {
+        "id": "human_reference",
+        "source": "I see.  You could get some from trading with the merchants around here.  The librarian is crazy for beech nuts, for example.  I saw her trade away all her money and books for a literal truckload of the things in another reality earlier.  Not sure what she does with them.  You see, she's lined her private rooms with lead which just so happens to block my scrying.  Almost like she doesn't trust me.  Not sure why.",
+        "target": "我明白了。你可以跟这附近的商人交易，弄一些来。举个例子，那个图书管理员就对山毛榉坚果爱得发狂。早些时候，我在另一个现实位面里看到她用自己所有的钱和书，换了整整一卡车的山毛榉坚果。不知道她拿那些玩意儿干嘛。你瞧，她用铅把自己的私人房间全给衬了一遍，而那玩意儿恰好能阻挡我的占卜。简直就像她不信任我似的。真搞不懂是为什么。",
+        "metadata": {
+          "kind": "human",
+          "reference_field": "zh_CN"
+        }
+      }
+    ]
+  },
+  {
     "id": "translation_fc7ccdbe6d26ea6f",
     "metadata": {
       "title": "Cataclysm: Dark Days Ahead",
@@ -3342,6 +3275,73 @@
         "id": "human_reference",
         "source": "Something, something, wood pun, something something.  This is starting to feel like Settlers of Catan, think they'll give us some sheep in return?",
         "target": "“木”有问题，一定“办”到，诸如此类的。这开始有点像《卡坦岛》了，你觉得他们会给我们一些羊作为回报吗？",
+        "metadata": {
+          "kind": "human",
+          "reference_field": "zh_CN"
+        }
+      }
+    ]
+  },
+  {
+    "id": "translation_3b1a4d3497e65f58",
+    "metadata": {
+      "title": "Cataclysm: Dark Days Ahead",
+      "source_language": "en",
+      "target_language": "zh_CN",
+      "original_index": 1224,
+      "difficulty_score": -0.0424198844,
+      "human_reference_available": true
+    },
+    "candidates": [
+      {
+        "id": "aya-expanse-32b",
+        "source": "Oh, yeah.  Lots of places have different words for those.  A fusilly is a weapon that fires a bullet at high speeds using propellant.  A mobbing is a big metal box that's moved around by an internal explosion.  Do you get it?",
+        "target": "哦，对了。很多地方对这些都有不同的称呼。火枪是一种利用推进剂以高速发射子弹的武器。炮弹是一种由内部爆炸推动的大型金属盒子。你明白了吗？",
+        "metadata": {
+          "kind": "model",
+          "model": "aya-expanse-32b"
+        }
+      },
+      {
+        "id": "gemma-3-12b-it",
+        "source": "Oh, yeah.  Lots of places have different words for those.  A fusilly is a weapon that fires a bullet at high speeds using propellant.  A mobbing is a big metal box that's moved around by an internal explosion.  Do you get it?",
+        "target": "哦，是的。很多地方对这些东西有不同的叫法。一种“fusilly”是一种使用推进剂以高速发射子弹的武器。一种“mobbing”是一个通过内部爆炸移动的大型金属箱。你明白了吗？",
+        "metadata": {
+          "kind": "model",
+          "model": "gemma-3-12b-it"
+        }
+      },
+      {
+        "id": "gemma-3-27b-it",
+        "source": "Oh, yeah.  Lots of places have different words for those.  A fusilly is a weapon that fires a bullet at high speeds using propellant.  A mobbing is a big metal box that's moved around by an internal explosion.  Do you get it?",
+        "target": "哦，是的。很多地方对那些东西有不同的叫法。Fusilly 是一种利用推进剂高速发射子弹的武器。Mobbing 就像一个巨大的金属盒子，通过内部爆炸来移动。你明白了吗？",
+        "metadata": {
+          "kind": "model",
+          "model": "gemma-3-27b-it"
+        }
+      },
+      {
+        "id": "qwen3.5-27b",
+        "source": "Oh, yeah.  Lots of places have different words for those.  A fusilly is a weapon that fires a bullet at high speeds using propellant.  A mobbing is a big metal box that's moved around by an internal explosion.  Do you get it?",
+        "target": "哦，没错。很多地方对这些东西有不同的叫法。fusilly 是一种利用推进剂以高速发射子弹的武器；mobbing 则是一个靠内部爆炸驱动移动的大型金属箱。你明白了吗？",
+        "metadata": {
+          "kind": "model",
+          "model": "qwen3.5-27b"
+        }
+      },
+      {
+        "id": "qwen3.5-9b",
+        "source": "Oh, yeah.  Lots of places have different words for those.  A fusilly is a weapon that fires a bullet at high speeds using propellant.  A mobbing is a big metal box that's moved around by an internal explosion.  Do you get it?",
+        "target": "哦，没错。很多地方对这些武器有不同的叫法。火枪是一种利用火药将子弹高速发射的武器；而“莫宾”则是一种依靠内部爆炸推动的大型金属箱。明白了吗？",
+        "metadata": {
+          "kind": "model",
+          "model": "qwen3.5-9b"
+        }
+      },
+      {
+        "id": "human_reference",
+        "source": "Oh, yeah.  Lots of places have different words for those.  A fusilly is a weapon that fires a bullet at high speeds using propellant.  A mobbing is a big metal box that's moved around by an internal explosion.  Do you get it?",
+        "target": "哦，是的。很多地方对这些东西有不同的叫法。“火铳”(fusilly)是一种用推进剂高速发射弹头的武器。“铁马”(mobbing)则是一个靠内部爆炸来移动的大金属盒子。你明白了吗？",
         "metadata": {
           "kind": "human",
           "reference_field": "zh_CN"
