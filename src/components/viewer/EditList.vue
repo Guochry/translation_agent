@@ -256,16 +256,16 @@ export default {
                     }
                 }
             } else {
-                new_html += `
-                <span class="pa1 edit-text br-pill-ns txt-${key}${light} border-${key}${light}-all ${key}_below" data-id="${key}-${i}" data-category="${key}">`;
-                if (edit.hasOwnProperty('input_idx')) {
-                    let in_span = edit['input_idx'][0]
+                const sides = [
+                    ['input_idx', 'source', 'Source'],
+                    ['output_idx', 'target', 'Translation']
+                ].filter(([field]) => edit[field]?.length);
+                for (const [index, [field, side, label]] of sides.entries()) {
+                    if (index > 0) new_html += '<span aria-hidden="true"> → </span>';
+                    const span = edit[field][0];
                     new_html += `
-                        &nbsp${this.hits_data[this.current_hit - 1].source.substring(in_span[0], in_span[1])}&nbsp</span>`;
-                } else if (edit.hasOwnProperty('output_idx')) {
-                    let out_span = edit['output_idx'][0]
-                    new_html += `
-                        &nbsp${this.hits_data[this.current_hit - 1].target.substring(out_span[0], out_span[1])}&nbsp</span>`;
+                        <span class="pa1 edit-text br-pill-ns txt-${key}${light} border-${key}${light}-all ${key}_below" data-id="${key}-${i}" data-category="${key}" title="${label}">
+                            &nbsp${_.escape(this.hits_data[this.current_hit - 1][side].substring(span[0], span[1]))}&nbsp</span>`;
                 }
             }
 
