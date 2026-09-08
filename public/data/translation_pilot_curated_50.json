@@ -1,0 +1,3352 @@
+[
+  {
+    "id": "translation_7ed18e9cb7a11d3f",
+    "metadata": {
+      "title": "Havoc in Heaven",
+      "source_language": "zh_CN",
+      "target_language": "en",
+      "original_index": 1464,
+      "difficulty_score": -0.5442368984,
+      "human_reference_available": true
+    },
+    "candidates": [
+      {
+        "id": "aya-expanse-32b",
+        "source": "原来是乌龟 虾米二将 俺老孙要见老龙王 快快通报",
+        "target": "It's me, Sun Wukong. I want to see the Old Dragon King. Please announce me quickly.",
+        "metadata": {
+          "kind": "model",
+          "model": "aya-expanse-32b"
+        }
+      },
+      {
+        "id": "gemma-3-12b-it",
+        "source": "原来是乌龟 虾米二将 俺老孙要见老龙王 快快通报",
+        "target": "So it was the Turtle and the Shrimp! Old Sun Wukong is going to see the Dragon King. Quickly report this!",
+        "metadata": {
+          "kind": "model",
+          "model": "gemma-3-12b-it"
+        }
+      },
+      {
+        "id": "gemma-3-27b-it",
+        "source": "原来是乌龟 虾米二将 俺老孙要见老龙王 快快通报",
+        "target": "Turns out it's the Tortoise and Shrimp Generals. Old Sun wants to see the Dragon King! Quickly report it!",
+        "metadata": {
+          "kind": "model",
+          "model": "gemma-3-27b-it"
+        }
+      },
+      {
+        "id": "qwen3.5-27b",
+        "source": "原来是乌龟 虾米二将 俺老孙要见老龙王 快快通报",
+        "target": "So it's the Turtle and the Shrimp Generals! I, the Great Sage, wish to see the Old Dragon King. Announce my presence at once!",
+        "metadata": {
+          "kind": "model",
+          "model": "qwen3.5-27b"
+        }
+      },
+      {
+        "id": "qwen3.5-9b",
+        "source": "原来是乌龟 虾米二将 俺老孙要见老龙王 快快通报",
+        "target": "It's the turtle and shrimp generals! I, the Old Monkey, wish to see the Dragon King. Announce my arrival quickly!",
+        "metadata": {
+          "kind": "model",
+          "model": "qwen3.5-9b"
+        }
+      },
+      {
+        "id": "human_reference",
+        "source": "原来是乌龟 虾米二将 俺老孙要见老龙王 快快通报",
+        "target": "So it's General Turtle and General Shrimp. I need to see the Dragon King. Please tell him quickly.",
+        "metadata": {
+          "kind": "human",
+          "reference_field": "en"
+        }
+      }
+    ]
+  },
+  {
+    "id": "translation_fc8311ed161d85c7",
+    "metadata": {
+      "title": "Havoc in Heaven",
+      "source_language": "zh_CN",
+      "target_language": "en",
+      "original_index": 1465,
+      "difficulty_score": -0.5355641246,
+      "human_reference_available": true
+    },
+    "candidates": [
+      {
+        "id": "aya-expanse-32b",
+        "source": "俺老孙上天入地无所不能 哪儿有去不得的地方",
+        "target": "I, Sun Wukong, can go anywhere, whether in the heavens or underground. Where can't I go?",
+        "metadata": {
+          "kind": "model",
+          "model": "aya-expanse-32b"
+        }
+      },
+      {
+        "id": "gemma-3-12b-it",
+        "source": "俺老孙上天入地无所不能 哪儿有去不得的地方",
+        "target": "Old Sun, I, can do anything under and above the heavens; there's nowhere I can't go.",
+        "metadata": {
+          "kind": "model",
+          "model": "gemma-3-12b-it"
+        }
+      },
+      {
+        "id": "gemma-3-27b-it",
+        "source": "俺老孙上天入地无所不能 哪儿有去不得的地方",
+        "target": "I, Sun Wukong, can go anywhere, both heaven and earth – there's no place I can't reach.",
+        "metadata": {
+          "kind": "model",
+          "model": "gemma-3-27b-it"
+        }
+      },
+      {
+        "id": "qwen3.5-27b",
+        "source": "俺老孙上天入地无所不能 哪儿有去不得的地方",
+        "target": "I, Old Sun, can traverse heaven and earth with boundless power; is there any place I cannot go?",
+        "metadata": {
+          "kind": "model",
+          "model": "qwen3.5-27b"
+        }
+      },
+      {
+        "id": "qwen3.5-9b",
+        "source": "俺老孙上天入地无所不能 哪儿有去不得的地方",
+        "target": "I, the Great Sage, can ascend to heaven and descend to earth; there is no place I cannot reach.",
+        "metadata": {
+          "kind": "model",
+          "model": "qwen3.5-9b"
+        }
+      },
+      {
+        "id": "human_reference",
+        "source": "俺老孙上天入地无所不能 哪儿有去不得的地方",
+        "target": "I can fly up to Heaven and burrow into the deepest ground. There's no place I can't go.",
+        "metadata": {
+          "kind": "human",
+          "reference_field": "en"
+        }
+      }
+    ]
+  },
+  {
+    "id": "translation_494c812fe0062f8d",
+    "metadata": {
+      "title": "Havoc in Heaven",
+      "source_language": "zh_CN",
+      "target_language": "en",
+      "original_index": 1467,
+      "difficulty_score": -0.5313093066,
+      "human_reference_available": true
+    },
+    "candidates": [
+      {
+        "id": "aya-expanse-32b",
+        "source": "力能降龙伏虎 移山倒海 万岁切不可轻视啊",
+        "target": "The power to subdue dragons and tigers, to move mountains and overturn seas, must never be underestimated.",
+        "metadata": {
+          "kind": "model",
+          "model": "aya-expanse-32b"
+        }
+      },
+      {
+        "id": "gemma-3-12b-it",
+        "source": "力能降龙伏虎 移山倒海 万岁切不可轻视啊",
+        "target": "With strength enough to subdue dragons and tigers, and move mountains and seas, long may you live, but never underestimate [this/it]!",
+        "metadata": {
+          "kind": "model",
+          "model": "gemma-3-12b-it"
+        }
+      },
+      {
+        "id": "gemma-3-27b-it",
+        "source": "力能降龙伏虎 移山倒海 万岁切不可轻视啊",
+        "target": "Strength can subdue dragons and tigers, move mountains and overturn the seas. Long live [the emperor/a powerful figure], but must never be taken lightly!",
+        "metadata": {
+          "kind": "model",
+          "model": "gemma-3-27b-it"
+        }
+      },
+      {
+        "id": "qwen3.5-27b",
+        "source": "力能降龙伏虎 移山倒海 万岁切不可轻视啊",
+        "target": "His power can subdue dragons and tigers, move mountains, and overturn seas. Your Majesty must never underestimate him.",
+        "metadata": {
+          "kind": "model",
+          "model": "qwen3.5-27b"
+        }
+      },
+      {
+        "id": "qwen3.5-9b",
+        "source": "力能降龙伏虎 移山倒海 万岁切不可轻视啊",
+        "target": "With power to subdue dragons and tigers, move mountains and overturn seas, the Ten-Thousand-Year Emperor must never be underestimated.",
+        "metadata": {
+          "kind": "model",
+          "model": "qwen3.5-9b"
+        }
+      },
+      {
+        "id": "human_reference",
+        "source": "力能降龙伏虎 移山倒海 万岁切不可轻视啊",
+        "target": "He can subdue tigers and dragons, move mountains, and empty seas. Your majesty, you can't take it lightly.",
+        "metadata": {
+          "kind": "human",
+          "reference_field": "en"
+        }
+      }
+    ]
+  },
+  {
+    "id": "translation_de9d4ac12c6fb9b1",
+    "metadata": {
+      "title": "Havoc in Heaven",
+      "source_language": "zh_CN",
+      "target_language": "en",
+      "original_index": 1470,
+      "difficulty_score": -0.4785837531,
+      "human_reference_available": true
+    },
+    "candidates": [
+      {
+        "id": "aya-expanse-32b",
+        "source": "不费一兵一卒 把他哄上天来严加管束 如不服管 也好就地擒拿",
+        "target": "Without sending a single soldier or moving a single weapon, we can bring him to heel through deception and strict control. If he refuses to submit, we can capture him on the spot.",
+        "metadata": {
+          "kind": "model",
+          "model": "aya-expanse-32b"
+        }
+      },
+      {
+        "id": "gemma-3-12b-it",
+        "source": "不费一兵一卒 把他哄上天来严加管束 如不服管 也好就地擒拿",
+        "target": "Without expending a single soldier or troop, lure him up here and strictly control him. If he resists control, then simply capture him on the spot.",
+        "metadata": {
+          "kind": "model",
+          "model": "gemma-3-12b-it"
+        }
+      },
+      {
+        "id": "gemma-3-27b-it",
+        "source": "不费一兵一卒 把他哄上天来严加管束 如不服管 也好就地擒拿",
+        "target": "Without deploying a single soldier, lure him here and strictly control him. If he refuses to be controlled, simply arrest him on the spot.",
+        "metadata": {
+          "kind": "model",
+          "model": "gemma-3-27b-it"
+        }
+      },
+      {
+        "id": "qwen3.5-27b",
+        "source": "不费一兵一卒 把他哄上天来严加管束 如不服管 也好就地擒拿",
+        "target": "Without deploying a single soldier, we shall coax him to ascend to the heavens and place him under strict supervision; should he refuse to comply, we can apprehend him on the spot.",
+        "metadata": {
+          "kind": "model",
+          "model": "qwen3.5-27b"
+        }
+      },
+      {
+        "id": "qwen3.5-9b",
+        "source": "不费一兵一卒 把他哄上天来严加管束 如不服管 也好就地擒拿",
+        "target": "Without losing a single soldier, coax him up to the heavens for strict supervision; should he refuse to obey, arrest him on the spot.",
+        "metadata": {
+          "kind": "model",
+          "model": "qwen3.5-9b"
+        }
+      },
+      {
+        "id": "human_reference",
+        "source": "不费一兵一卒 把他哄上天来严加管束 如不服管 也好就地擒拿",
+        "target": "We'll restrain the monkey here in Heaven, and it will be easy for us to capture him, if he commits crimes.",
+        "metadata": {
+          "kind": "human",
+          "reference_field": "en"
+        }
+      }
+    ]
+  },
+  {
+    "id": "translation_bed4221b6026ea22",
+    "metadata": {
+      "title": "Havoc in Heaven",
+      "source_language": "zh_CN",
+      "target_language": "en",
+      "original_index": 1474,
+      "difficulty_score": -0.4024590254,
+      "human_reference_available": true
+    },
+    "candidates": [
+      {
+        "id": "aya-expanse-32b",
+        "source": "众位仙姑驾到 小神未曾远迎 有罪有罪",
+        "target": "The immortal ladies have arrived. This lowly spirit did not go far enough to greet them. I am guilty, I am guilty.",
+        "metadata": {
+          "kind": "model",
+          "model": "aya-expanse-32b"
+        }
+      },
+      {
+        "id": "gemma-3-12b-it",
+        "source": "众位仙姑驾到 小神未曾远迎 有罪有罪",
+        "target": "Respected Immortal Matrons have arrived. This humble one failed to greet you properly. I am at fault, at fault.",
+        "metadata": {
+          "kind": "model",
+          "model": "gemma-3-12b-it"
+        }
+      },
+      {
+        "id": "gemma-3-27b-it",
+        "source": "众位仙姑驾到 小神未曾远迎 有罪有罪",
+        "target": "Honorable immortals, your arrival is graced upon us. This humble spirit did not greet you from afar, a great offense, a great offense.",
+        "metadata": {
+          "kind": "model",
+          "model": "gemma-3-27b-it"
+        }
+      },
+      {
+        "id": "qwen3.5-27b",
+        "source": "众位仙姑驾到 小神未曾远迎 有罪有罪",
+        "target": "The fair immortals have arrived; this humble deity failed to welcome you from afar. I am at fault, truly at fault.",
+        "metadata": {
+          "kind": "model",
+          "model": "qwen3.5-27b"
+        }
+      },
+      {
+        "id": "qwen3.5-9b",
+        "source": "众位仙姑驾到 小神未曾远迎 有罪有罪",
+        "target": "May the fairies arrive! This humble deity failed to welcome you from afar; I am guilty, I am guilty.",
+        "metadata": {
+          "kind": "model",
+          "model": "qwen3.5-9b"
+        }
+      },
+      {
+        "id": "human_reference",
+        "source": "众位仙姑驾到 小神未曾远迎 有罪有罪",
+        "target": "The goddesses are here. I didn't come to greet you, please forgive me.",
+        "metadata": {
+          "kind": "human",
+          "reference_field": "en"
+        }
+      }
+    ]
+  },
+  {
+    "id": "translation_862d1c04aa5b963f",
+    "metadata": {
+      "title": "Havoc in Heaven",
+      "source_language": "zh_CN",
+      "target_language": "en",
+      "original_index": 1479,
+      "difficulty_score": -0.3263968825,
+      "human_reference_available": true
+    },
+    "candidates": [
+      {
+        "id": "aya-expanse-32b",
+        "source": "大胆弼马温 你眼睛里还有没有玉帝呀",
+        "target": "Bold and fearless, is the Jade Emperor still in your eyes?",
+        "metadata": {
+          "kind": "model",
+          "model": "aya-expanse-32b"
+        }
+      },
+      {
+        "id": "gemma-3-12b-it",
+        "source": "大胆弼马温 你眼睛里还有没有玉帝呀",
+        "target": "Bold official, do you still see the Jade Emperor in your eyes?",
+        "metadata": {
+          "kind": "model",
+          "model": "gemma-3-12b-it"
+        }
+      },
+      {
+        "id": "gemma-3-27b-it",
+        "source": "大胆弼马温 你眼睛里还有没有玉帝呀",
+        "target": "Bold Sun Wukong, do you still have any respect for the Jade Emperor in your eyes? \n\n(Or, a more colloquial translation: Bold Monkey King, have you lost all respect for the Jade Emperor?)",
+        "metadata": {
+          "kind": "model",
+          "model": "gemma-3-27b-it"
+        }
+      },
+      {
+        "id": "qwen3.5-27b",
+        "source": "大胆弼马温 你眼睛里还有没有玉帝呀",
+        "target": "Bold Bimawen, do you still have the Jade Emperor in your eyes?",
+        "metadata": {
+          "kind": "model",
+          "model": "qwen3.5-27b"
+        }
+      },
+      {
+        "id": "qwen3.5-9b",
+        "source": "大胆弼马温 你眼睛里还有没有玉帝呀",
+        "target": "Bold Monkey King, do you still have any respect for the Jade Emperor in your eyes?",
+        "metadata": {
+          "kind": "model",
+          "model": "qwen3.5-9b"
+        }
+      },
+      {
+        "id": "human_reference",
+        "source": "大胆弼马温 你眼睛里还有没有玉帝呀",
+        "target": "How dare you? Do you have any respect for the Jade Emperor?",
+        "metadata": {
+          "kind": "human",
+          "reference_field": "en"
+        }
+      }
+    ]
+  },
+  {
+    "id": "translation_f806a2fd4641a9e9",
+    "metadata": {
+      "title": "Havoc in Heaven",
+      "source_language": "zh_CN",
+      "target_language": "en",
+      "original_index": 1489,
+      "difficulty_score": -0.2015116215,
+      "human_reference_available": true
+    },
+    "candidates": [
+      {
+        "id": "aya-expanse-32b",
+        "source": "万岁 待贫道相助二郎真君一臂之力",
+        "target": "Long live! Allow me to lend a hand to the Second Lord of the Earth.",
+        "metadata": {
+          "kind": "model",
+          "model": "aya-expanse-32b"
+        }
+      },
+      {
+        "id": "gemma-3-12b-it",
+        "source": "万岁 待贫道相助二郎真君一臂之力",
+        "target": "Long live! Allow this humble one to assist with the true power of the Second Young Master.",
+        "metadata": {
+          "kind": "model",
+          "model": "gemma-3-12b-it"
+        }
+      },
+      {
+        "id": "gemma-3-27b-it",
+        "source": "万岁 待贫道相助二郎真君一臂之力",
+        "target": "Long live the Emperor! Wait for this humble Daoist to assist, and receive the strength of Erlang Shen!",
+        "metadata": {
+          "kind": "model",
+          "model": "gemma-3-27b-it"
+        }
+      },
+      {
+        "id": "qwen3.5-27b",
+        "source": "万岁 待贫道相助二郎真君一臂之力",
+        "target": "Long live the Emperor! Allow this humble Daoist to lend a hand to the True Lord Erlang.",
+        "metadata": {
+          "kind": "model",
+          "model": "qwen3.5-27b"
+        }
+      },
+      {
+        "id": "qwen3.5-9b",
+        "source": "万岁 待贫道相助二郎真君一臂之力",
+        "target": "Long live! Let me lend my aid to the Second Lord Erlang.",
+        "metadata": {
+          "kind": "model",
+          "model": "qwen3.5-9b"
+        }
+      },
+      {
+        "id": "human_reference",
+        "source": "万岁 待贫道相助二郎真君一臂之力",
+        "target": "Your Majesty, let me, a poor monk, aid Erlang.",
+        "metadata": {
+          "kind": "human",
+          "reference_field": "en"
+        }
+      }
+    ]
+  },
+  {
+    "id": "translation_6ddb7815371eb60e",
+    "metadata": {
+      "title": "Havoc in Heaven",
+      "source_language": "zh_CN",
+      "target_language": "en",
+      "original_index": 1490,
+      "difficulty_score": -0.2008765191,
+      "human_reference_available": true
+    },
+    "candidates": [
+      {
+        "id": "aya-expanse-32b",
+        "source": "俺在这花果山上就是齐天大圣 谁用他封",
+        "target": "I am the Great Sage Equaling Heaven on this Flower-Fruit Mountain. Who dares to seal me?",
+        "metadata": {
+          "kind": "model",
+          "model": "aya-expanse-32b"
+        }
+      },
+      {
+        "id": "gemma-3-12b-it",
+        "source": "俺在这花果山上就是齐天大圣 谁用他封",
+        "target": "I am the Great Sage Equal to Heaven on Flower Fruit Mountain. Who used him to seal me?",
+        "metadata": {
+          "kind": "model",
+          "model": "gemma-3-12b-it"
+        }
+      },
+      {
+        "id": "gemma-3-27b-it",
+        "source": "俺在这花果山上就是齐天大圣 谁用他封",
+        "target": "I am the Great Sage Equal to Heaven on this Huaguo Mountain. Who dares to seal me?",
+        "metadata": {
+          "kind": "model",
+          "model": "gemma-3-27b-it"
+        }
+      },
+      {
+        "id": "qwen3.5-27b",
+        "source": "俺在这花果山上就是齐天大圣 谁用他封",
+        "target": "On this Flower-Fruit Mountain, I am the Great Sage Equal to Heaven. Who needs their titles to define me?",
+        "metadata": {
+          "kind": "model",
+          "model": "qwen3.5-27b"
+        }
+      },
+      {
+        "id": "qwen3.5-9b",
+        "source": "俺在这花果山上就是齐天大圣 谁用他封",
+        "target": "I am the Great Sage Equal to Heaven on this Flower-Fruit Mountain; who needs his title?",
+        "metadata": {
+          "kind": "model",
+          "model": "qwen3.5-9b"
+        }
+      },
+      {
+        "id": "human_reference",
+        "source": "俺在这花果山上就是齐天大圣 谁用他封",
+        "target": "I'm already The Great Sage here at the Mountain of Flowers and Fruits. I don't need him to appoint me.",
+        "metadata": {
+          "kind": "human",
+          "reference_field": "en"
+        }
+      }
+    ]
+  },
+  {
+    "id": "translation_f04eb9de089568d0",
+    "metadata": {
+      "title": "Havoc in Heaven",
+      "source_language": "zh_CN",
+      "target_language": "en",
+      "original_index": 1495,
+      "difficulty_score": -0.1687914431,
+      "human_reference_available": true
+    },
+    "candidates": [
+      {
+        "id": "aya-expanse-32b",
+        "source": "你们背地里下手 暗箭伤人 算不得什么好汉",
+        "target": "You're nothing but a coward, striking from behind and shooting arrows in the dark.",
+        "metadata": {
+          "kind": "model",
+          "model": "aya-expanse-32b"
+        }
+      },
+      {
+        "id": "gemma-3-12b-it",
+        "source": "你们背地里下手 暗箭伤人 算不得什么好汉",
+        "target": "Those who strike from behind and injure others with hidden arrows are not honorable men.",
+        "metadata": {
+          "kind": "model",
+          "model": "gemma-3-12b-it"
+        }
+      },
+      {
+        "id": "gemma-3-27b-it",
+        "source": "你们背地里下手 暗箭伤人 算不得什么好汉",
+        "target": "You strike from the shadows and harm people with hidden arrows – you are no heroes. \n\n(Or, more colloquially: You stab people in the back – you're no honorable men.)",
+        "metadata": {
+          "kind": "model",
+          "model": "gemma-3-27b-it"
+        }
+      },
+      {
+        "id": "qwen3.5-27b",
+        "source": "你们背地里下手 暗箭伤人 算不得什么好汉",
+        "target": "You strike from the shadows and wound with hidden arrows; that does not make you a true hero.",
+        "metadata": {
+          "kind": "model",
+          "model": "qwen3.5-27b"
+        }
+      },
+      {
+        "id": "qwen3.5-9b",
+        "source": "你们背地里下手 暗箭伤人 算不得什么好汉",
+        "target": "You act treacherously behind our backs and strike with hidden arrows; you cannot be called a true hero.",
+        "metadata": {
+          "kind": "model",
+          "model": "qwen3.5-9b"
+        }
+      },
+      {
+        "id": "human_reference",
+        "source": "你们背地里下手 暗箭伤人 算不得什么好汉",
+        "target": "How despicable to stab me in the back. It's not very heroic. Humpf!",
+        "metadata": {
+          "kind": "human",
+          "reference_field": "en"
+        }
+      }
+    ]
+  },
+  {
+    "id": "translation_4d08c5c11bedbcb7",
+    "metadata": {
+      "title": "Havoc in Heaven",
+      "source_language": "zh_CN",
+      "target_language": "en",
+      "original_index": 1496,
+      "difficulty_score": -0.1675274372,
+      "human_reference_available": true
+    },
+    "candidates": [
+      {
+        "id": "aya-expanse-32b",
+        "source": "不如将计就计 就给他个齐天大圣的空名",
+        "target": "Why don't we turn his trick against him and give him the empty title of \"Great Sage, Equal of Heaven\"?",
+        "metadata": {
+          "kind": "model",
+          "model": "aya-expanse-32b"
+        }
+      },
+      {
+        "id": "gemma-3-12b-it",
+        "source": "不如将计就计 就给他个齐天大圣的空名",
+        "target": "Why not play his game and just give him the empty title of Great Sage Equal to Heaven?",
+        "metadata": {
+          "kind": "model",
+          "model": "gemma-3-12b-it"
+        }
+      },
+      {
+        "id": "gemma-3-27b-it",
+        "source": "不如将计就计 就给他个齐天大圣的空名",
+        "target": "Why not turn his scheme against him and just give him the empty title of \"Great Sage Equal to Heaven\"?",
+        "metadata": {
+          "kind": "model",
+          "model": "gemma-3-27b-it"
+        }
+      },
+      {
+        "id": "qwen3.5-27b",
+        "source": "不如将计就计 就给他个齐天大圣的空名",
+        "target": "Better to play along with his scheme and grant him the empty title of the Great Sage Equal to Heaven.",
+        "metadata": {
+          "kind": "model",
+          "model": "qwen3.5-27b"
+        }
+      },
+      {
+        "id": "qwen3.5-9b",
+        "source": "不如将计就计 就给他个齐天大圣的空名",
+        "target": "Might as well play along and give him the empty title of the Great Sage Equal to Heaven.",
+        "metadata": {
+          "kind": "model",
+          "model": "qwen3.5-9b"
+        }
+      },
+      {
+        "id": "human_reference",
+        "source": "不如将计就计 就给他个齐天大圣的空名",
+        "target": "Let's beat him at his own game.",
+        "metadata": {
+          "kind": "human",
+          "reference_field": "en"
+        }
+      }
+    ]
+  },
+  {
+    "id": "translation_9cecef01b60cc253",
+    "metadata": {
+      "title": "Havoc in Heaven",
+      "source_language": "zh_CN",
+      "target_language": "en",
+      "original_index": 1498,
+      "difficulty_score": -0.1634789705,
+      "human_reference_available": true
+    },
+    "candidates": [
+      {
+        "id": "aya-expanse-32b",
+        "source": "若不依他 就要打上凌霄宝殿",
+        "target": "If you don't follow his orders, you'll be sent to the Celestial Palace for punishment.",
+        "metadata": {
+          "kind": "model",
+          "model": "aya-expanse-32b"
+        }
+      },
+      {
+        "id": "gemma-3-12b-it",
+        "source": "若不依他 就要打上凌霄宝殿",
+        "target": "If you don't listen to him, he'll have you climb the Azure Ladder to Heaven.",
+        "metadata": {
+          "kind": "model",
+          "model": "gemma-3-12b-it"
+        }
+      },
+      {
+        "id": "gemma-3-27b-it",
+        "source": "若不依他 就要打上凌霄宝殿",
+        "target": "If he doesn't listen, I will fight my way to the Imperial Palace. \n\n(Or, more figuratively: If he doesn't comply, I will take this all the way to the top/highest authority.)",
+        "metadata": {
+          "kind": "model",
+          "model": "gemma-3-27b-it"
+        }
+      },
+      {
+        "id": "qwen3.5-27b",
+        "source": "若不依他 就要打上凌霄宝殿",
+        "target": "If we do not rely on him, we shall storm the Hall of the Highest Void.",
+        "metadata": {
+          "kind": "model",
+          "model": "qwen3.5-27b"
+        }
+      },
+      {
+        "id": "qwen3.5-9b",
+        "source": "若不依他 就要打上凌霄宝殿",
+        "target": "If you do not submit to him, I will strike you down before the Hall of Supreme Purity.",
+        "metadata": {
+          "kind": "model",
+          "model": "qwen3.5-9b"
+        }
+      },
+      {
+        "id": "human_reference",
+        "source": "若不依他 就要打上凌霄宝殿",
+        "target": "If we don't accommodate him, he plans to attack the Heavenly Palace!",
+        "metadata": {
+          "kind": "human",
+          "reference_field": "en"
+        }
+      }
+    ]
+  },
+  {
+    "id": "translation_a1aaca711e2ed965",
+    "metadata": {
+      "title": "Havoc in Heaven",
+      "source_language": "zh_CN",
+      "target_language": "en",
+      "original_index": 1499,
+      "difficulty_score": -0.1612917781,
+      "human_reference_available": true
+    },
+    "candidates": [
+      {
+        "id": "aya-expanse-32b",
+        "source": "如不抓来严加惩办 定会有人学他 天上岂不大乱",
+        "target": "If we don't severely punish him, others will follow his example, and the heavens will be in chaos.",
+        "metadata": {
+          "kind": "model",
+          "model": "aya-expanse-32b"
+        }
+      },
+      {
+        "id": "gemma-3-12b-it",
+        "source": "如不抓来严加惩办 定会有人学他 天上岂不大乱",
+        "target": "If he isn't severely punished, others will surely follow suit, and chaos will reign in the heavens.",
+        "metadata": {
+          "kind": "model",
+          "model": "gemma-3-12b-it"
+        }
+      },
+      {
+        "id": "gemma-3-27b-it",
+        "source": "如不抓来严加惩办 定会有人学他 天上岂不大乱",
+        "target": "If he isn't arrested and severely punished, others will follow his example, and wouldn't that throw Heaven into chaos?",
+        "metadata": {
+          "kind": "model",
+          "model": "gemma-3-27b-it"
+        }
+      },
+      {
+        "id": "qwen3.5-27b",
+        "source": "如不抓来严加惩办 定会有人学他 天上岂不大乱",
+        "target": "If he is not apprehended and severely punished, others will surely emulate him, and chaos will surely ensue in the heavens.",
+        "metadata": {
+          "kind": "model",
+          "model": "qwen3.5-27b"
+        }
+      },
+      {
+        "id": "qwen3.5-9b",
+        "source": "如不抓来严加惩办 定会有人学他 天上岂不大乱",
+        "target": "If we do not arrest him and punish him severely, others will surely follow his example, and chaos will ensue in heaven.",
+        "metadata": {
+          "kind": "model",
+          "model": "qwen3.5-9b"
+        }
+      },
+      {
+        "id": "human_reference",
+        "source": "如不抓来严加惩办 定会有人学他 天上岂不大乱",
+        "target": "If we don't punish him severely, others may follow his example. The world will be in havoc!",
+        "metadata": {
+          "kind": "human",
+          "reference_field": "en"
+        }
+      }
+    ]
+  },
+  {
+    "id": "translation_d0b37d4dcc502b7b",
+    "metadata": {
+      "title": "Havoc in Heaven",
+      "source_language": "zh_CN",
+      "target_language": "en",
+      "original_index": 1505,
+      "difficulty_score": -0.1261403561,
+      "human_reference_available": true
+    },
+    "candidates": [
+      {
+        "id": "aya-expanse-32b",
+        "source": "是啊 太扫兴了 大王要件称手合用的兵器嘛 倒也不难",
+        "target": "Yes, it's quite a shame. It's not hard to find a weapon that suits the king's needs.",
+        "metadata": {
+          "kind": "model",
+          "model": "aya-expanse-32b"
+        }
+      },
+      {
+        "id": "gemma-3-12b-it",
+        "source": "是啊 太扫兴了 大王要件称手合用的兵器嘛 倒也不难",
+        "target": "Yes, that's disappointing. A great king needs a weapon that fits his hand, doesn't he? Not difficult at all.",
+        "metadata": {
+          "kind": "model",
+          "model": "gemma-3-12b-it"
+        }
+      },
+      {
+        "id": "gemma-3-27b-it",
+        "source": "是啊 太扫兴了 大王要件称手合用的兵器嘛 倒也不难",
+        "target": "Yeah, it's really a letdown. If the Great King wants a weapon that fits his hand and is useful, that's not difficult at all.",
+        "metadata": {
+          "kind": "model",
+          "model": "gemma-3-27b-it"
+        }
+      },
+      {
+        "id": "qwen3.5-27b",
+        "source": "是啊 太扫兴了 大王要件称手合用的兵器嘛 倒也不难",
+        "target": "Indeed, it's quite disappointing. Yet, if the Great King seeks a weapon that is well-suited and easy to wield, that is not difficult to arrange.",
+        "metadata": {
+          "kind": "model",
+          "model": "qwen3.5-27b"
+        }
+      },
+      {
+        "id": "qwen3.5-9b",
+        "source": "是啊 太扫兴了 大王要件称手合用的兵器嘛 倒也不难",
+        "target": "Yes, it is indeed disappointing. However, it is not difficult for the Great King to obtain a weapon that is both practical and suitable.",
+        "metadata": {
+          "kind": "model",
+          "model": "qwen3.5-9b"
+        }
+      },
+      {
+        "id": "human_reference",
+        "source": "是啊 太扫兴了 大王要件称手合用的兵器嘛 倒也不难",
+        "target": "If the King wants to find a good weapon, it isn't very difficult.",
+        "metadata": {
+          "kind": "human",
+          "reference_field": "en"
+        }
+      }
+    ]
+  },
+  {
+    "id": "translation_c7c327ca8be00098",
+    "metadata": {
+      "title": "Havoc in Heaven",
+      "source_language": "zh_CN",
+      "target_language": "en",
+      "original_index": 1512,
+      "difficulty_score": -0.0637600794,
+      "human_reference_available": true
+    },
+    "candidates": [
+      {
+        "id": "aya-expanse-32b",
+        "source": "噢 那妖猴好生了得 他是五百年前得道的猴精",
+        "target": "Oh, that monkey is extraordinary. He is a monkey spirit who attained enlightenment 500 years ago.",
+        "metadata": {
+          "kind": "model",
+          "model": "aya-expanse-32b"
+        }
+      },
+      {
+        "id": "gemma-3-12b-it",
+        "source": "噢 那妖猴好生了得 他是五百年前得道的猴精",
+        "target": "Oh, that demon monkey is quite capable. He's a monkey spirit who attained enlightenment five hundred years ago.",
+        "metadata": {
+          "kind": "model",
+          "model": "gemma-3-12b-it"
+        }
+      },
+      {
+        "id": "gemma-3-27b-it",
+        "source": "噢 那妖猴好生了得 他是五百年前得道的猴精",
+        "target": "Oh, that demon monkey is truly remarkable! He is a monkey spirit who achieved enlightenment five hundred years ago.",
+        "metadata": {
+          "kind": "model",
+          "model": "gemma-3-27b-it"
+        }
+      },
+      {
+        "id": "qwen3.5-27b",
+        "source": "噢 那妖猴好生了得 他是五百年前得道的猴精",
+        "target": "Oh, that demon monkey is truly formidable; he is a monkey spirit who attained the Dao five hundred years ago.",
+        "metadata": {
+          "kind": "model",
+          "model": "qwen3.5-27b"
+        }
+      },
+      {
+        "id": "qwen3.5-9b",
+        "source": "噢 那妖猴好生了得 他是五百年前得道的猴精",
+        "target": "Oh, that demon monkey is truly formidable! He is a monkey spirit who attained enlightenment five hundred years ago.",
+        "metadata": {
+          "kind": "model",
+          "model": "qwen3.5-9b"
+        }
+      },
+      {
+        "id": "human_reference",
+        "source": "噢 那妖猴好生了得 他是五百年前得道的猴精",
+        "target": "That's a long story. He's a Taoist monkey born 500 years ago.",
+        "metadata": {
+          "kind": "human",
+          "reference_field": "en"
+        }
+      }
+    ]
+  },
+  {
+    "id": "translation_256521d35d48ed8a",
+    "metadata": {
+      "title": "Havoc in Heaven",
+      "source_language": "zh_CN",
+      "target_language": "en",
+      "original_index": 1516,
+      "difficulty_score": -0.0242545232,
+      "human_reference_available": true
+    },
+    "candidates": [
+      {
+        "id": "aya-expanse-32b",
+        "source": "量你这小小毛神有何法力 胆敢出此狂言",
+        "target": "How dare you, a mere hair spirit, utter such audacious words?",
+        "metadata": {
+          "kind": "model",
+          "model": "aya-expanse-32b"
+        }
+      },
+      {
+        "id": "gemma-3-12b-it",
+        "source": "量你这小小毛神有何法力 胆敢出此狂言",
+        "target": "What power could you, a mere fledgling, possibly possess to utter such audacious words?",
+        "metadata": {
+          "kind": "model",
+          "model": "gemma-3-12b-it"
+        }
+      },
+      {
+        "id": "gemma-3-27b-it",
+        "source": "量你这小小毛神有何法力 胆敢出此狂言",
+        "target": "How much power could a minor spirit like you possibly possess, to dare utter such arrogant words? \n\n(Or, a more dramatic/literary translation:)\n\nWhat power do you, a small, insignificant spirit, wield, to dare speak such wild boasts?",
+        "metadata": {
+          "kind": "model",
+          "model": "gemma-3-27b-it"
+        }
+      },
+      {
+        "id": "qwen3.5-27b",
+        "source": "量你这小小毛神有何法力 胆敢出此狂言",
+        "target": "What power could a mere fledgling spirit like you possibly possess to dare utter such arrogant words?",
+        "metadata": {
+          "kind": "model",
+          "model": "qwen3.5-27b"
+        }
+      },
+      {
+        "id": "qwen3.5-9b",
+        "source": "量你这小小毛神有何法力 胆敢出此狂言",
+        "target": "How dare you, mere hair god, speak such arrogant words? What powers do you possess?",
+        "metadata": {
+          "kind": "model",
+          "model": "qwen3.5-9b"
+        }
+      },
+      {
+        "id": "human_reference",
+        "source": "量你这小小毛神有何法力 胆敢出此狂言",
+        "target": "What can a small god like you do? How dare you talk so much rubbish?",
+        "metadata": {
+          "kind": "human",
+          "reference_field": "en"
+        }
+      }
+    ]
+  },
+  {
+    "id": "translation_2431ee66bd16e594",
+    "metadata": {
+      "title": "Havoc in Heaven",
+      "source_language": "zh_CN",
+      "target_language": "en",
+      "original_index": 1517,
+      "difficulty_score": -0.0155749023,
+      "human_reference_available": true
+    },
+    "candidates": [
+      {
+        "id": "aya-expanse-32b",
+        "source": "既然玉帝请俺老孙上天 为什么还要动刀动枪的",
+        "target": "Since the Jade Emperor invited me, Sun Wukong, to the heavens, why is there a need for swords and guns?",
+        "metadata": {
+          "kind": "model",
+          "model": "aya-expanse-32b"
+        }
+      },
+      {
+        "id": "gemma-3-12b-it",
+        "source": "既然玉帝请俺老孙上天 为什么还要动刀动枪的",
+        "target": "Since the Jade Emperor invited me, Lao Sun, to the heavens, why are you still wielding swords and spears?",
+        "metadata": {
+          "kind": "model",
+          "model": "gemma-3-12b-it"
+        }
+      },
+      {
+        "id": "gemma-3-27b-it",
+        "source": "既然玉帝请俺老孙上天 为什么还要动刀动枪的",
+        "target": "Since the Jade Emperor invited me, Sun Wukong, to Heaven, why are you still resorting to weapons and violence?",
+        "metadata": {
+          "kind": "model",
+          "model": "gemma-3-27b-it"
+        }
+      },
+      {
+        "id": "qwen3.5-27b",
+        "source": "既然玉帝请俺老孙上天 为什么还要动刀动枪的",
+        "target": "Since the Jade Emperor has invited me, the Great Sage, to ascend to heaven, why must weapons be drawn?",
+        "metadata": {
+          "kind": "model",
+          "model": "qwen3.5-27b"
+        }
+      },
+      {
+        "id": "qwen3.5-9b",
+        "source": "既然玉帝请俺老孙上天 为什么还要动刀动枪的",
+        "target": "Since the Jade Emperor invited me, Old Sun, to ascend to heaven, why must we resort to weapons and violence?",
+        "metadata": {
+          "kind": "model",
+          "model": "qwen3.5-9b"
+        }
+      },
+      {
+        "id": "human_reference",
+        "source": "既然玉帝请俺老孙上天 为什么还要动刀动枪的",
+        "target": "The Jade Emperor invited me to Heaven. Why are you so aggressive?",
+        "metadata": {
+          "kind": "human",
+          "reference_field": "en"
+        }
+      }
+    ]
+  },
+  {
+    "id": "translation_a82f1223df000183",
+    "metadata": {
+      "title": "Havoc in Heaven",
+      "source_language": "zh_CN",
+      "target_language": "en",
+      "original_index": 1529,
+      "difficulty_score": 0.0567471236,
+      "human_reference_available": true
+    },
+    "candidates": [
+      {
+        "id": "aya-expanse-32b",
+        "source": "- 猴头 炉子里滋味如何呀",
+        "target": "- How does the monkey's head taste in the stove?",
+        "metadata": {
+          "kind": "model",
+          "model": "aya-expanse-32b"
+        }
+      },
+      {
+        "id": "gemma-3-12b-it",
+        "source": "- 猴头 炉子里滋味如何呀",
+        "target": "How's the flavor coming along in the monkey head stove?",
+        "metadata": {
+          "kind": "model",
+          "model": "gemma-3-12b-it"
+        }
+      },
+      {
+        "id": "gemma-3-27b-it",
+        "source": "- 猴头 炉子里滋味如何呀",
+        "target": "How does monkey head mushroom taste cooked in the stove?",
+        "metadata": {
+          "kind": "model",
+          "model": "gemma-3-27b-it"
+        }
+      },
+      {
+        "id": "qwen3.5-27b",
+        "source": "- 猴头 炉子里滋味如何呀",
+        "target": "- Monkey Head, how's the taste in the furnace?",
+        "metadata": {
+          "kind": "model",
+          "model": "qwen3.5-27b"
+        }
+      },
+      {
+        "id": "qwen3.5-9b",
+        "source": "- 猴头 炉子里滋味如何呀",
+        "target": "- Monkey Head, how does the flavor taste in the furnace?",
+        "metadata": {
+          "kind": "model",
+          "model": "qwen3.5-9b"
+        }
+      },
+      {
+        "id": "human_reference",
+        "source": "- 猴头 炉子里滋味如何呀",
+        "target": "Monkey, how do you like it in the furnace?",
+        "metadata": {
+          "kind": "human",
+          "reference_field": "en"
+        }
+      }
+    ]
+  },
+  {
+    "id": "translation_d252adb25474fa71",
+    "metadata": {
+      "title": "Havoc in Heaven",
+      "source_language": "zh_CN",
+      "target_language": "en",
+      "original_index": 1533,
+      "difficulty_score": 0.067808494,
+      "human_reference_available": true
+    },
+    "candidates": [
+      {
+        "id": "aya-expanse-32b",
+        "source": "哼 好啊 我叫你好好凉快 好好地舒服",
+        "target": "Hmph, fine. I'll make sure you cool off and relax properly.",
+        "metadata": {
+          "kind": "model",
+          "model": "aya-expanse-32b"
+        }
+      },
+      {
+        "id": "gemma-3-12b-it",
+        "source": "哼 好啊 我叫你好好凉快 好好地舒服",
+        "target": "Hmph, fine. I'll make you cool and comfortable.",
+        "metadata": {
+          "kind": "model",
+          "model": "gemma-3-12b-it"
+        }
+      },
+      {
+        "id": "gemma-3-27b-it",
+        "source": "哼 好啊 我叫你好好凉快 好好地舒服",
+        "target": "Hmph, fine. I'll make you suffer. Enjoy being comfortable (sarcastically). \n\nOr, a more colloquial translation:\n\nHmph, alright then. You'll regret this. Enjoy! (said with heavy sarcasm)",
+        "metadata": {
+          "kind": "model",
+          "model": "gemma-3-27b-it"
+        }
+      },
+      {
+        "id": "qwen3.5-27b",
+        "source": "哼 好啊 我叫你好好凉快 好好地舒服",
+        "target": "Hmph, fine. I'll make sure you get thoroughly chilled and wonderfully comfortable.",
+        "metadata": {
+          "kind": "model",
+          "model": "qwen3.5-27b"
+        }
+      },
+      {
+        "id": "qwen3.5-9b",
+        "source": "哼 好啊 我叫你好好凉快 好好地舒服",
+        "target": "Hmph, very well. I'll make sure you stay cool and feel comfortable.",
+        "metadata": {
+          "kind": "model",
+          "model": "qwen3.5-9b"
+        }
+      },
+      {
+        "id": "human_reference",
+        "source": "哼 好啊 我叫你好好凉快 好好地舒服",
+        "target": "Heh! Okay, I made it too cool and too comfortable...",
+        "metadata": {
+          "kind": "human",
+          "reference_field": "en"
+        }
+      }
+    ]
+  },
+  {
+    "id": "translation_a7b4ed95523f5551",
+    "metadata": {
+      "title": "Havoc in Heaven",
+      "source_language": "zh_CN",
+      "target_language": "en",
+      "original_index": 1541,
+      "difficulty_score": 0.0978950709,
+      "human_reference_available": true
+    },
+    "candidates": [
+      {
+        "id": "aya-expanse-32b",
+        "source": "在你这么大的东洋大海 连件称手的兵器也找不到吗",
+        "target": "In this vast ocean of the East, can't you find even a single weapon that suits your hand?",
+        "metadata": {
+          "kind": "model",
+          "model": "aya-expanse-32b"
+        }
+      },
+      {
+        "id": "gemma-3-12b-it",
+        "source": "在你这么大的东洋大海 连件称手的兵器也找不到吗",
+        "target": "In such a vast Eastern ocean as yours, can't you even find a single usable weapon?",
+        "metadata": {
+          "kind": "model",
+          "model": "gemma-3-12b-it"
+        }
+      },
+      {
+        "id": "gemma-3-27b-it",
+        "source": "在你这么大的东洋大海 连件称手的兵器也找不到吗",
+        "target": "In such a vast eastern sea, can't you even find a decent weapon?",
+        "metadata": {
+          "kind": "model",
+          "model": "gemma-3-27b-it"
+        }
+      },
+      {
+        "id": "qwen3.5-27b",
+        "source": "在你这么大的东洋大海 连件称手的兵器也找不到吗",
+        "target": "In such a vast Eastern sea, can you not find a single weapon that suits you?",
+        "metadata": {
+          "kind": "model",
+          "model": "qwen3.5-27b"
+        }
+      },
+      {
+        "id": "qwen3.5-9b",
+        "source": "在你这么大的东洋大海 连件称手的兵器也找不到吗",
+        "target": "In such a vast ocean of the Eastern Barbarians, can you not find a weapon that suits your hand?",
+        "metadata": {
+          "kind": "model",
+          "model": "qwen3.5-9b"
+        }
+      },
+      {
+        "id": "human_reference",
+        "source": "在你这么大的东洋大海 连件称手的兵器也找不到吗",
+        "target": "Your Eastern Sea is so huge... and yet you can't find me a perfect weapon?",
+        "metadata": {
+          "kind": "human",
+          "reference_field": "en"
+        }
+      }
+    ]
+  },
+  {
+    "id": "translation_7ea7e3030497ad42",
+    "metadata": {
+      "title": "Havoc in Heaven",
+      "source_language": "zh_CN",
+      "target_language": "en",
+      "original_index": 1548,
+      "difficulty_score": 0.129929781,
+      "human_reference_available": true
+    },
+    "candidates": [
+      {
+        "id": "aya-expanse-32b",
+        "source": "这是给玉帝炼的金丹 俺先尝尝什么滋味",
+        "target": "This is the golden pill forged for the Jade Emperor. I'll taste it first to see what it's like.",
+        "metadata": {
+          "kind": "model",
+          "model": "aya-expanse-32b"
+        }
+      },
+      {
+        "id": "gemma-3-12b-it",
+        "source": "这是给玉帝炼的金丹 俺先尝尝什么滋味",
+        "target": "This is an elixir refined for the Jade Emperor. Let me taste what it's like first.",
+        "metadata": {
+          "kind": "model",
+          "model": "gemma-3-12b-it"
+        }
+      },
+      {
+        "id": "gemma-3-27b-it",
+        "source": "这是给玉帝炼的金丹 俺先尝尝什么滋味",
+        "target": "This is the golden pill refined for the Jade Emperor. Let me taste what it's like first.",
+        "metadata": {
+          "kind": "model",
+          "model": "gemma-3-27b-it"
+        }
+      },
+      {
+        "id": "qwen3.5-27b",
+        "source": "这是给玉帝炼的金丹 俺先尝尝什么滋味",
+        "target": "This is the Golden Elixir I've refined for the Jade Emperor. Let me taste it first to see how it is.",
+        "metadata": {
+          "kind": "model",
+          "model": "qwen3.5-27b"
+        }
+      },
+      {
+        "id": "qwen3.5-9b",
+        "source": "这是给玉帝炼的金丹 俺先尝尝什么滋味",
+        "target": "This is the golden pill refined for the Jade Emperor. Let me taste it first to see what it's like.",
+        "metadata": {
+          "kind": "model",
+          "model": "qwen3.5-9b"
+        }
+      },
+      {
+        "id": "human_reference",
+        "source": "这是给玉帝炼的金丹 俺先尝尝什么滋味",
+        "target": "It's the Golden Elixir Pill for the Jade Emperor. Let me have a taste.",
+        "metadata": {
+          "kind": "human",
+          "reference_field": "en"
+        }
+      }
+    ]
+  },
+  {
+    "id": "translation_b4877fc38c7845a7",
+    "metadata": {
+      "title": "Havoc in Heaven",
+      "source_language": "zh_CN",
+      "target_language": "en",
+      "original_index": 1554,
+      "difficulty_score": 0.1472192556,
+      "human_reference_available": true
+    },
+    "candidates": [
+      {
+        "id": "aya-expanse-32b",
+        "source": "这是禹王治水时 留下来的一根定海神针",
+        "target": "This is a legendary needle left by Yu the Great during his flood control project.",
+        "metadata": {
+          "kind": "model",
+          "model": "aya-expanse-32b"
+        }
+      },
+      {
+        "id": "gemma-3-12b-it",
+        "source": "这是禹王治水时 留下来的一根定海神针",
+        "target": "This is a stabilizing needle left behind from the time King Yu controlled the floods.",
+        "metadata": {
+          "kind": "model",
+          "model": "gemma-3-12b-it"
+        }
+      },
+      {
+        "id": "gemma-3-27b-it",
+        "source": "这是禹王治水时 留下来的一根定海神针",
+        "target": "This is a stabilizing pillar left over from the time of Yu the Great's flood control efforts. \n\n(Or, more literally: This is a divine needle for calming the sea left over from the time of King Yu controlling the waters.)",
+        "metadata": {
+          "kind": "model",
+          "model": "gemma-3-27b-it"
+        }
+      },
+      {
+        "id": "qwen3.5-27b",
+        "source": "这是禹王治水时 留下来的一根定海神针",
+        "target": "This is the divine needle that calms the seas, left behind by Yu the Great during his taming of the floods.",
+        "metadata": {
+          "kind": "model",
+          "model": "qwen3.5-27b"
+        }
+      },
+      {
+        "id": "qwen3.5-9b",
+        "source": "这是禹王治水时 留下来的一根定海神针",
+        "target": "This is a Sea-Stabilizing Needle left behind by Yu the Great when he tamed the floods.",
+        "metadata": {
+          "kind": "model",
+          "model": "qwen3.5-9b"
+        }
+      },
+      {
+        "id": "human_reference",
+        "source": "这是禹王治水时 留下来的一根定海神针",
+        "target": "It was left behind by a god to calm the sea.",
+        "metadata": {
+          "kind": "human",
+          "reference_field": "en"
+        }
+      }
+    ]
+  },
+  {
+    "id": "translation_198b362180ee21f3",
+    "metadata": {
+      "title": "Havoc in Heaven",
+      "source_language": "zh_CN",
+      "target_language": "en",
+      "original_index": 1588,
+      "difficulty_score": 0.3127869964,
+      "human_reference_available": true
+    },
+    "candidates": [
+      {
+        "id": "aya-expanse-32b",
+        "source": "难道还让那妖猴爬到我们头上不成",
+        "target": "Are we going to let that demon monkey climb on our heads?",
+        "metadata": {
+          "kind": "model",
+          "model": "aya-expanse-32b"
+        }
+      },
+      {
+        "id": "gemma-3-12b-it",
+        "source": "难道还让那妖猴爬到我们头上不成",
+        "target": "Should we just let that demon monkey climb onto our heads?",
+        "metadata": {
+          "kind": "model",
+          "model": "gemma-3-12b-it"
+        }
+      },
+      {
+        "id": "gemma-3-27b-it",
+        "source": "难道还让那妖猴爬到我们头上不成",
+        "target": "Are we really going to let that demon monkey walk all over us? \n\n(Or, more figuratively: Are we going to let that troublemaker/pest get the upper hand?)",
+        "metadata": {
+          "kind": "model",
+          "model": "gemma-3-27b-it"
+        }
+      },
+      {
+        "id": "qwen3.5-27b",
+        "source": "难道还让那妖猴爬到我们头上不成",
+        "target": "Are we to let that demon monkey climb over our heads?",
+        "metadata": {
+          "kind": "model",
+          "model": "qwen3.5-27b"
+        }
+      },
+      {
+        "id": "qwen3.5-9b",
+        "source": "难道还让那妖猴爬到我们头上不成",
+        "target": "Would we let that demon monkey climb over our heads?",
+        "metadata": {
+          "kind": "model",
+          "model": "qwen3.5-9b"
+        }
+      },
+      {
+        "id": "human_reference",
+        "source": "难道还让那妖猴爬到我们头上不成",
+        "target": "Then should we allow the monkey to climb all over us?",
+        "metadata": {
+          "kind": "human",
+          "reference_field": "en"
+        }
+      }
+    ]
+  },
+  {
+    "id": "translation_675d30b63a2f6d3c",
+    "metadata": {
+      "title": "Havoc in Heaven",
+      "source_language": "zh_CN",
+      "target_language": "en",
+      "original_index": 1600,
+      "difficulty_score": 0.3395810127,
+      "human_reference_available": true
+    },
+    "candidates": [
+      {
+        "id": "aya-expanse-32b",
+        "source": "星星铺成银河 彩虹架做飞桥",
+        "target": "Stars pave the Milky Way, and the rainbow forms a flying bridge.",
+        "metadata": {
+          "kind": "model",
+          "model": "aya-expanse-32b"
+        }
+      },
+      {
+        "id": "gemma-3-12b-it",
+        "source": "星星铺成银河 彩虹架做飞桥",
+        "target": "Stars form a galaxy, rainbows build a flying bridge.",
+        "metadata": {
+          "kind": "model",
+          "model": "gemma-3-12b-it"
+        }
+      },
+      {
+        "id": "gemma-3-27b-it",
+        "source": "星星铺成银河 彩虹架做飞桥",
+        "target": "Stars pave the Milky Way, rainbows build flying bridges.",
+        "metadata": {
+          "kind": "model",
+          "model": "gemma-3-27b-it"
+        }
+      },
+      {
+        "id": "qwen3.5-27b",
+        "source": "星星铺成银河 彩虹架做飞桥",
+        "target": "Stars pave the Milky Way, and rainbows form flying bridges.",
+        "metadata": {
+          "kind": "model",
+          "model": "qwen3.5-27b"
+        }
+      },
+      {
+        "id": "qwen3.5-9b",
+        "source": "星星铺成银河 彩虹架做飞桥",
+        "target": "Stars pave the Milky Way, while rainbows build bridges to fly across.",
+        "metadata": {
+          "kind": "model",
+          "model": "qwen3.5-9b"
+        }
+      },
+      {
+        "id": "human_reference",
+        "source": "星星铺成银河 彩虹架做飞桥",
+        "target": "There is the Milky Way made up of stars, and there are bridges of rainbows.",
+        "metadata": {
+          "kind": "human",
+          "reference_field": "en"
+        }
+      }
+    ]
+  },
+  {
+    "id": "translation_f94aede10d0b21bc",
+    "metadata": {
+      "title": "Havoc in Heaven",
+      "source_language": "zh_CN",
+      "target_language": "en",
+      "original_index": 1635,
+      "difficulty_score": 0.4578697085,
+      "human_reference_available": true
+    },
+    "candidates": [
+      {
+        "id": "aya-expanse-32b",
+        "source": "如意金箍棒 重三万六千斤",
+        "target": "The Ruyi Jingu Bang weighs 36,000 jin.",
+        "metadata": {
+          "kind": "model",
+          "model": "aya-expanse-32b"
+        }
+      },
+      {
+        "id": "gemma-3-12b-it",
+        "source": "如意金箍棒 重三万六千斤",
+        "target": "The Ruyi Jingu Bang weighs 36,000 jin.",
+        "metadata": {
+          "kind": "model",
+          "model": "gemma-3-12b-it"
+        }
+      },
+      {
+        "id": "gemma-3-27b-it",
+        "source": "如意金箍棒 重三万六千斤",
+        "target": "The Ruyi Jingu Bang weighs 13,500 kilograms (approximately 30,000 catties). \n\n(Note: \"三万六千斤\" literally translates to 36,000 *jin*, a traditional Chinese unit of weight. 1 *jin* is approximately 0.5 kilograms, hence the conversion to kilograms.)",
+        "metadata": {
+          "kind": "model",
+          "model": "gemma-3-27b-it"
+        }
+      },
+      {
+        "id": "qwen3.5-27b",
+        "source": "如意金箍棒 重三万六千斤",
+        "target": "The Ruyi Jingu Bang, weighing 36,000 jin.",
+        "metadata": {
+          "kind": "model",
+          "model": "qwen3.5-27b"
+        }
+      },
+      {
+        "id": "qwen3.5-9b",
+        "source": "如意金箍棒 重三万六千斤",
+        "target": "The Ruyi Jingu Bang weighs 36,000 jin.",
+        "metadata": {
+          "kind": "model",
+          "model": "qwen3.5-9b"
+        }
+      },
+      {
+        "id": "human_reference",
+        "source": "如意金箍棒 重三万六千斤",
+        "target": "Golden-ringed Wishing Staff. Weighs 18,000 lbs",
+        "metadata": {
+          "kind": "human",
+          "reference_field": "en"
+        }
+      }
+    ]
+  },
+  {
+    "id": "translation_92d4a4cc6bab8328",
+    "metadata": {
+      "title": "Havoc in Heaven",
+      "source_language": "zh_CN",
+      "target_language": "en",
+      "original_index": 1637,
+      "difficulty_score": 0.4913226366,
+      "human_reference_available": true
+    },
+    "candidates": [
+      {
+        "id": "aya-expanse-32b",
+        "source": "你犯下十恶大罪 还不速速和我前去领罪",
+        "target": "You have committed the ten evil acts; repent quickly and come with me to confess.",
+        "metadata": {
+          "kind": "model",
+          "model": "aya-expanse-32b"
+        }
+      },
+      {
+        "id": "gemma-3-12b-it",
+        "source": "你犯下十恶大罪 还不速速和我前去领罪",
+        "target": "You've committed ten great evils. Hurry up and come with me to atone for your sins.",
+        "metadata": {
+          "kind": "model",
+          "model": "gemma-3-12b-it"
+        }
+      },
+      {
+        "id": "gemma-3-27b-it",
+        "source": "你犯下十恶大罪 还不速速和我前去领罪",
+        "target": "You have committed ten heinous crimes, quickly come with me to receive your punishment. \n\n(Or, a more dramatic/literary translation: You have committed ten great sins, hasten with me to meet your judgment.)",
+        "metadata": {
+          "kind": "model",
+          "model": "gemma-3-27b-it"
+        }
+      },
+      {
+        "id": "qwen3.5-27b",
+        "source": "你犯下十恶大罪 还不速速和我前去领罪",
+        "target": "You have committed ten heinous crimes; why do you not hasten to accompany me to face your punishment?",
+        "metadata": {
+          "kind": "model",
+          "model": "qwen3.5-27b"
+        }
+      },
+      {
+        "id": "qwen3.5-9b",
+        "source": "你犯下十恶大罪 还不速速和我前去领罪",
+        "target": "You have committed ten heinous crimes; why not hasten to accompany me to face your punishment?",
+        "metadata": {
+          "kind": "model",
+          "model": "qwen3.5-9b"
+        }
+      },
+      {
+        "id": "human_reference",
+        "source": "你犯下十恶大罪 还不速速和我前去领罪",
+        "target": "You committed 10 crimes and yet you're not begging for forgiveness!",
+        "metadata": {
+          "kind": "human",
+          "reference_field": "en"
+        }
+      }
+    ]
+  },
+  {
+    "id": "translation_5fbba7fde2a314a7",
+    "metadata": {
+      "title": "Dungeon Crawl Stone Soup",
+      "source_language": "en",
+      "target_language": "zh_CN",
+      "original_index": 178,
+      "difficulty_score": -0.5498685241,
+      "human_reference_available": true
+    },
+    "candidates": [
+      {
+        "id": "aya-expanse-32b",
+        "source": "“I met a traveller from an antique land\n Who said: Two vast and trunkless legs of stone\n Stand in the desert. Near them on the sand,\n Half sunk, a shatter'd visage lies, whose frown\n And wrinkled lip and sneer of cold command\n Tell that its sculptor well those passions read\n Which yet survive, stamp'd on these lifeless things,\n The hand that mock'd them and the heart that fed.\n And on the pedestal these words appear:\n ‘My name is Ozymandias, king of kings:\n Look on my works, ye Mighty, and despair!’\n Nothing beside remains: round the decay\n Of that colossal wreck, boundless and bare,\n The lone and level sands stretch far away.”\n    -Percy Bysshe Shelley, “Ozymandias”. 1818.",
+        "target": "我遇见了一个来自古老国度的旅行者，\n他说：在沙漠中矗立着两块巨大的、没有身躯的石腿，\n在它们附近，沙地上半埋着一张破碎的面容，\n那皱眉、那卷曲的嘴唇和冷酷的命令的冷笑，\n表明了它的雕塑家很了解那些仍然存活的情感，\n这些情感被印在这些没有生命的东西上，\n那双嘲讽它们的双手和滋养它们的内心。\n在基座上刻着这些文字：\n“我的名字是奥西曼迪亚斯，国王中的国王，\n看看我的作品，你们这些强者，绝望吧！”\n除了这些，什么也没剩下：在那巨大的废墟周围，\n无边无际、空旷而平静的沙丘延伸到远方。",
+        "metadata": {
+          "kind": "model",
+          "model": "aya-expanse-32b"
+        }
+      },
+      {
+        "id": "gemma-3-12b-it",
+        "source": "“I met a traveller from an antique land\n Who said: Two vast and trunkless legs of stone\n Stand in the desert. Near them on the sand,\n Half sunk, a shatter'd visage lies, whose frown\n And wrinkled lip and sneer of cold command\n Tell that its sculptor well those passions read\n Which yet survive, stamp'd on these lifeless things,\n The hand that mock'd them and the heart that fed.\n And on the pedestal these words appear:\n ‘My name is Ozymandias, king of kings:\n Look on my works, ye Mighty, and despair!’\n Nothing beside remains: round the decay\n Of that colossal wreck, boundless and bare,\n The lone and level sands stretch far away.”\n    -Percy Bysshe Shelley, “Ozymandias”. 1818.",
+        "target": "我遇见一位来自古老国家的旅行者，\n他说：沙漠中矗立着两根巨大而无躯干的石腿。\n在它们附近，沙地上躺着一个破碎的面容，\n那皱眉、紧闭的嘴唇和冷酷的嘲讽，\n诉说着雕刻家对这些情感的深刻理解，\n而这些情感依然存在，铭刻在这无生命的物体上，\n既有嘲弄它们的双手，也有滋养它们的内心。\n而在底座上，这些字迹赫然可见：\n“我是奥兹曼迪亚斯，万王之王：\n看看我的丰功伟业，你们强大的存在，并绝望吧！”\n除此之外，一无所有：\n在那个巨大的残骸衰败的周围，\n一片广阔而荒凉的沙海延伸向远方。\n- 珀西·比希·雪莱，《奥兹曼迪亚斯》，1818",
+        "metadata": {
+          "kind": "model",
+          "model": "gemma-3-12b-it"
+        }
+      },
+      {
+        "id": "gemma-3-27b-it",
+        "source": "“I met a traveller from an antique land\n Who said: Two vast and trunkless legs of stone\n Stand in the desert. Near them on the sand,\n Half sunk, a shatter'd visage lies, whose frown\n And wrinkled lip and sneer of cold command\n Tell that its sculptor well those passions read\n Which yet survive, stamp'd on these lifeless things,\n The hand that mock'd them and the heart that fed.\n And on the pedestal these words appear:\n ‘My name is Ozymandias, king of kings:\n Look on my works, ye Mighty, and despair!’\n Nothing beside remains: round the decay\n Of that colossal wreck, boundless and bare,\n The lone and level sands stretch far away.”\n    -Percy Bysshe Shelley, “Ozymandias”. 1818.",
+        "target": "我遇见一位来自古老土地的旅人，\n他说：两根巨大而无躯干的石腿\n矗立在沙漠中。近旁沙地上，\n半埋着一张破碎的面容，其皱眉\n和紧抿的嘴唇，以及冷酷的轻蔑\n表明它的雕刻家深刻地理解了那些情感，\n而这些情感至今仍然存留，铭刻在这些无生命的物体上，\n既是嘲弄它们的双手，也是滋养它们的内心。\n在底座上刻着这样的话：\n“我的名字是奥西曼迪亚斯，万王之王：\n看看我的功业吧，强大的人们，然后绝望！”\n除了这些，什么也没有剩下：围绕着这\n巨大的残骸的衰败，无边而荒凉，\n孤独而平坦的沙地一直延伸到远方。\n\n- 珀西·比希·雪莱，《奥西曼迪亚斯》。1818年。",
+        "metadata": {
+          "kind": "model",
+          "model": "gemma-3-27b-it"
+        }
+      },
+      {
+        "id": "qwen3.5-27b",
+        "source": "“I met a traveller from an antique land\n Who said: Two vast and trunkless legs of stone\n Stand in the desert. Near them on the sand,\n Half sunk, a shatter'd visage lies, whose frown\n And wrinkled lip and sneer of cold command\n Tell that its sculptor well those passions read\n Which yet survive, stamp'd on these lifeless things,\n The hand that mock'd them and the heart that fed.\n And on the pedestal these words appear:\n ‘My name is Ozymandias, king of kings:\n Look on my works, ye Mighty, and despair!’\n Nothing beside remains: round the decay\n Of that colossal wreck, boundless and bare,\n The lone and level sands stretch far away.”\n    -Percy Bysshe Shelley, “Ozymandias”. 1818.",
+        "target": "“我遇见一位来自古国的旅人，\n他说：两尊巨大而无躯的石腿，\n矗立在沙漠之中。在它们附近的沙地上，\n半掩着一张破碎的面容，那紧锁的眉头、\n皱起的嘴唇和冷峻威严的讥笑，\n昭示着那位雕塑家曾深刻洞察那些情感，\n它们至今犹存，镌刻在这些无生命的物体上，\n那嘲弄它们的手，与滋养它们的心。\n而在基座上，刻着这样的文字：\n‘吾名奥兹曼迪亚斯，万王之王：\n看吾功业，众强者，当绝望！’\n除此之外，一无所有：在那巨大残骸的衰败四周，\n无边无际、空旷荒凉，\n孤寂而平坦的沙地，向远方无限延展。”\n——珀西·比希·雪莱，《奥兹曼迪亚斯》，1818 年。",
+        "metadata": {
+          "kind": "model",
+          "model": "qwen3.5-27b"
+        }
+      },
+      {
+        "id": "qwen3.5-9b",
+        "source": "“I met a traveller from an antique land\n Who said: Two vast and trunkless legs of stone\n Stand in the desert. Near them on the sand,\n Half sunk, a shatter'd visage lies, whose frown\n And wrinkled lip and sneer of cold command\n Tell that its sculptor well those passions read\n Which yet survive, stamp'd on these lifeless things,\n The hand that mock'd them and the heart that fed.\n And on the pedestal these words appear:\n ‘My name is Ozymandias, king of kings:\n Look on my works, ye Mighty, and despair!’\n Nothing beside remains: round the decay\n Of that colossal wreck, boundless and bare,\n The lone and level sands stretch far away.”\n    -Percy Bysshe Shelley, “Ozymandias”. 1818.",
+        "target": "“我遇见一位来自古老土地的旅人，\n他说道：两尊巨大而无腿的石柱，\n矗立在沙漠之中。在它们身旁的沙地上，\n半掩埋着一张破碎的面容，那紧锁的眉头、\n那皱纹深重的嘴唇、那冷漠命令般的冷笑，\n昭示着它的雕刻者曾深刻领悟那些情感——\n如今它们依然留存，烙印在这无生命的躯壳之上，\n嘲弄过它们的手，与滋养过它们的心。\n而在基座上刻着这样的文字：\n‘我是奥兹曼迪亚斯，众王之王：\n看看我的功绩吧，你们这些强者，然后绝望吧！’\n除此之外，别无他物：在那庞然巨物的衰败周围，\n无边而荒凉，\n唯有孤寂而平坦的沙丘，向远方延伸。”\n——珀西·比希·雪莱，《奥兹曼迪亚斯》，1818 年。",
+        "metadata": {
+          "kind": "model",
+          "model": "qwen3.5-9b"
+        }
+      },
+      {
+        "id": "human_reference",
+        "source": "“I met a traveller from an antique land\n Who said: Two vast and trunkless legs of stone\n Stand in the desert. Near them on the sand,\n Half sunk, a shatter'd visage lies, whose frown\n And wrinkled lip and sneer of cold command\n Tell that its sculptor well those passions read\n Which yet survive, stamp'd on these lifeless things,\n The hand that mock'd them and the heart that fed.\n And on the pedestal these words appear:\n ‘My name is Ozymandias, king of kings:\n Look on my works, ye Mighty, and despair!’\n Nothing beside remains: round the decay\n Of that colossal wreck, boundless and bare,\n The lone and level sands stretch far away.”\n    -Percy Bysshe Shelley, “Ozymandias”. 1818.",
+        "target": "“客自海外归，曾见沙漠王国\n 有石像半毁，唯余巨腿\n 蹲立沙砾间。像头旁落，\n 半遭沙埋，但人面依然可畏，\n 那冷笑，那发号施令的高傲，\n 足见雕匠看透了主人的心，\n 才把那石头刻得神情唯肖，\n 而刻像的手和像主的心\n 早成灰烬。像座上大字在目：\n ’吾乃万王之王是也，\n 盖世功业，敢叫天公折服！’\n 此外无一物，但见废墟周围，\n 寂寞平沙空莽莽，\n 伸向荒凉的四方。”\n    -珀西·比希·雪莱，”奥西曼提斯“。1818。",
+        "metadata": {
+          "kind": "human",
+          "reference_field": "zh_CN"
+        }
+      }
+    ]
+  },
+  {
+    "id": "translation_035c205303773fa2",
+    "metadata": {
+      "title": "Dungeon Crawl Stone Soup",
+      "source_language": "en",
+      "target_language": "zh_CN",
+      "original_index": 898,
+      "difficulty_score": -0.1234979182,
+      "human_reference_available": true
+    },
+    "candidates": [
+      {
+        "id": "aya-expanse-32b",
+        "source": "Zot snuffs you out like a light.",
+        "target": "它像熄灭灯光一样让你消失。",
+        "metadata": {
+          "kind": "model",
+          "model": "aya-expanse-32b"
+        }
+      },
+      {
+        "id": "gemma-3-12b-it",
+        "source": "Zot snuffs you out like a light.",
+        "target": "佐特像吹灭蜡烛一样，把你熄灭。",
+        "metadata": {
+          "kind": "model",
+          "model": "gemma-3-12b-it"
+        }
+      },
+      {
+        "id": "gemma-3-27b-it",
+        "source": "Zot snuffs you out like a light.",
+        "target": "佐特会像吹灭蜡烛一样轻易地消灭你。",
+        "metadata": {
+          "kind": "model",
+          "model": "gemma-3-27b-it"
+        }
+      },
+      {
+        "id": "qwen3.5-27b",
+        "source": "Zot snuffs you out like a light.",
+        "target": "佐特像吹灭灯火一样将你彻底抹杀。",
+        "metadata": {
+          "kind": "model",
+          "model": "qwen3.5-27b"
+        }
+      },
+      {
+        "id": "qwen3.5-9b",
+        "source": "Zot snuffs you out like a light.",
+        "target": "佐特像熄灭灯火般将你抹杀。",
+        "metadata": {
+          "kind": "model",
+          "model": "qwen3.5-9b"
+        }
+      },
+      {
+        "id": "human_reference",
+        "source": "Zot snuffs you out like a light.",
+        "target": "佐特像掐灭一盏灯一样，扼杀了你。",
+        "metadata": {
+          "kind": "human",
+          "reference_field": "zh_CN"
+        }
+      }
+    ]
+  },
+  {
+    "id": "translation_c786cca6eb2396ee",
+    "metadata": {
+      "title": "Dungeon Crawl Stone Soup",
+      "source_language": "en",
+      "target_language": "zh_CN",
+      "original_index": 945,
+      "difficulty_score": -0.111241512,
+      "human_reference_available": true
+    },
+    "candidates": [
+      {
+        "id": "aya-expanse-32b",
+        "source": "Pakellas says: No one tells a god not to play god!",
+        "target": "帕凯拉斯说：没有人能告诉神不要做神的事！",
+        "metadata": {
+          "kind": "model",
+          "model": "aya-expanse-32b"
+        }
+      },
+      {
+        "id": "gemma-3-12b-it",
+        "source": "Pakellas says: No one tells a god not to play god!",
+        "target": "帕凯拉斯说：没人会告诉神不要扮演神！",
+        "metadata": {
+          "kind": "model",
+          "model": "gemma-3-12b-it"
+        }
+      },
+      {
+        "id": "gemma-3-27b-it",
+        "source": "Pakellas says: No one tells a god not to play god!",
+        "target": "帕凯拉斯说：没有人敢告诉神不要扮演神！",
+        "metadata": {
+          "kind": "model",
+          "model": "gemma-3-27b-it"
+        }
+      },
+      {
+        "id": "qwen3.5-27b",
+        "source": "Pakellas says: No one tells a god not to play god!",
+        "target": "帕凯拉斯说：没人敢命令神明不要扮演神明！",
+        "metadata": {
+          "kind": "model",
+          "model": "qwen3.5-27b"
+        }
+      },
+      {
+        "id": "qwen3.5-9b",
+        "source": "Pakellas says: No one tells a god not to play god!",
+        "target": "帕凯拉斯说：没人能命令神明不去扮演神明！",
+        "metadata": {
+          "kind": "model",
+          "model": "qwen3.5-9b"
+        }
+      },
+      {
+        "id": "human_reference",
+        "source": "Pakellas says: No one tells a god not to play god!",
+        "target": "帕克拉斯说：没有人告诉神，不要扮演神！",
+        "metadata": {
+          "kind": "human",
+          "reference_field": "zh_CN"
+        }
+      }
+    ]
+  },
+  {
+    "id": "translation_99a52b4c9d61d1db",
+    "metadata": {
+      "title": "Dungeon Crawl Stone Soup",
+      "source_language": "en",
+      "target_language": "zh_CN",
+      "original_index": 1063,
+      "difficulty_score": -0.07999596,
+      "human_reference_available": true
+    },
+    "candidates": [
+      {
+        "id": "aya-expanse-32b",
+        "source": "You feel a sudden urge to swivel your nonexistent eyestalks around.",
+        "target": "你突然有种转动你不存在的眼柄的冲动。",
+        "metadata": {
+          "kind": "model",
+          "model": "aya-expanse-32b"
+        }
+      },
+      {
+        "id": "gemma-3-12b-it",
+        "source": "You feel a sudden urge to swivel your nonexistent eyestalks around.",
+        "target": "你突然感到一阵想要转动你不存在的眼柄的冲动。",
+        "metadata": {
+          "kind": "model",
+          "model": "gemma-3-12b-it"
+        }
+      },
+      {
+        "id": "gemma-3-27b-it",
+        "source": "You feel a sudden urge to swivel your nonexistent eyestalks around.",
+        "target": "你突然感到一股冲动，想要转动你不存在的眼柄。",
+        "metadata": {
+          "kind": "model",
+          "model": "gemma-3-27b-it"
+        }
+      },
+      {
+        "id": "qwen3.5-27b",
+        "source": "You feel a sudden urge to swivel your nonexistent eyestalks around.",
+        "target": "你突然感到一阵冲动，想要转动那并不存在的眼柄四处张望。",
+        "metadata": {
+          "kind": "model",
+          "model": "qwen3.5-27b"
+        }
+      },
+      {
+        "id": "qwen3.5-9b",
+        "source": "You feel a sudden urge to swivel your nonexistent eyestalks around.",
+        "target": "你突然感到一阵冲动，想要转动你并不存在的复眼。",
+        "metadata": {
+          "kind": "model",
+          "model": "qwen3.5-9b"
+        }
+      },
+      {
+        "id": "human_reference",
+        "source": "You feel a sudden urge to swivel your nonexistent eyestalks around.",
+        "target": "你突然有种冲动，想转动你那并不存在的眼柄。",
+        "metadata": {
+          "kind": "human",
+          "reference_field": "zh_CN"
+        }
+      }
+    ]
+  },
+  {
+    "id": "translation_c581683ab086e226",
+    "metadata": {
+      "title": "0 A.D.",
+      "source_language": "en",
+      "target_language": "zh_CN",
+      "original_index": 429,
+      "difficulty_score": -0.2843586802,
+      "human_reference_available": true
+    },
+    "candidates": [
+      {
+        "id": "aya-expanse-32b",
+        "source": "“My men have turned into women, and my women into men!” \\n— Xerxes, watching Artemisia ram a ship while most of his fleet suffered the reverse, not knowing that the sunk vessel was his own (Herodotus, “The Histories”, VIII. 88)",
+        "target": "“我的士兵变成了女人，我的女兵变成了男人！”\n——薛西斯，目击阿尔特米西亚撞沉一艘船，而他的大部分舰队则遭遇了相反的命运，他却不知道被击沉的船是自己的（希罗多德，《历史》第八卷，88章）",
+        "metadata": {
+          "kind": "model",
+          "model": "aya-expanse-32b"
+        }
+      },
+      {
+        "id": "gemma-3-12b-it",
+        "source": "“My men have turned into women, and my women into men!” \\n— Xerxes, watching Artemisia ram a ship while most of his fleet suffered the reverse, not knowing that the sunk vessel was his own (Herodotus, “The Histories”, VIII. 88)",
+        "target": "“我的男兵变成了女人，我的女兵变成了男人！”\n——薛西斯看着阿尔忒米西娅驾驶战船冲撞，而他的大部分舰队却遭受了相反的命运，却不知被击沉的船只正是他的战船。（希罗多德，《历史》，第八卷，第88段）",
+        "metadata": {
+          "kind": "model",
+          "model": "gemma-3-12b-it"
+        }
+      },
+      {
+        "id": "gemma-3-27b-it",
+        "source": "“My men have turned into women, and my women into men!” \\n— Xerxes, watching Artemisia ram a ship while most of his fleet suffered the reverse, not knowing that the sunk vessel was his own (Herodotus, “The Histories”, VIII. 88)",
+        "target": "“我的士兵都变成了女人，我的女人都变成了士兵！”\\n——薛西斯，看着阿尔忒弥西亚撞沉一艘船，而他的大部分舰队却遭受了同样的命运，却不知道沉没的船只正是他自己的（希罗多德，《历史》，第八卷，88段）",
+        "metadata": {
+          "kind": "model",
+          "model": "gemma-3-27b-it"
+        }
+      },
+      {
+        "id": "qwen3.5-27b",
+        "source": "“My men have turned into women, and my women into men!” \\n— Xerxes, watching Artemisia ram a ship while most of his fleet suffered the reverse, not knowing that the sunk vessel was his own (Herodotus, “The Histories”, VIII. 88)",
+        "target": "“我的男人变成了女人，我的女人变成了男人！”——薛西斯目睹阿尔忒弥西亚撞击敌舰，而他的大多数舰队却遭反噬，却不知被击沉的正是己方船只（希罗多德，《历史》，卷八，第 88 节）",
+        "metadata": {
+          "kind": "model",
+          "model": "qwen3.5-27b"
+        }
+      },
+      {
+        "id": "qwen3.5-9b",
+        "source": "“My men have turned into women, and my women into men!” \\n— Xerxes, watching Artemisia ram a ship while most of his fleet suffered the reverse, not knowing that the sunk vessel was his own (Herodotus, “The Histories”, VIII. 88)",
+        "target": "“我的男子变成了女人，我的女人变成了男子！”——薛西斯目睹阿尔忒米西亚撞沉一艘战舰，而己方舰队大多遭遇相反命运，却不知那艘沉没的正是自己的船（希罗多德，《历史》，第八卷 88 节）",
+        "metadata": {
+          "kind": "model",
+          "model": "qwen3.5-9b"
+        }
+      },
+      {
+        "id": "human_reference",
+        "source": "“My men have turned into women, and my women into men!” \\n— Xerxes, watching Artemisia ram a ship while most of his fleet suffered the reverse, not knowing that the sunk vessel was his own (Herodotus, “The Histories”, VIII. 88)",
+        "target": "我的男人变成了女人，女人变成了男人！——薛西斯一世，看着阿特米西娅·拉姆的战舰撞向一艘船，这时大部分战舰已经沉没，他仿佛不知道沉的船是他自己的（希罗多德，《历史》，第八卷 88 节）",
+        "metadata": {
+          "kind": "human",
+          "reference_field": "zh_CN"
+        }
+      }
+    ]
+  },
+  {
+    "id": "translation_9d18465f6a6d72f9",
+    "metadata": {
+      "title": "0 A.D.",
+      "source_language": "en",
+      "target_language": "zh_CN",
+      "original_index": 996,
+      "difficulty_score": -0.0976105407,
+      "human_reference_available": true
+    },
+    "candidates": [
+      {
+        "id": "aya-expanse-32b",
+        "source": "“This was the greatest action that happened in all this war, and all others that we have heard of amongst the Greeks, being to the victors most glorious and most calamitous to the vanquished. For they were utterly and at all points defeated, and their sufferings were many. Army and fleet and all they ever had perished, nothing was saved and few of so many ever returned home. Thus ended the Sicilian expedition.” \\n— Thucydides (“History of the Peloponnesian War”, VII. 87.6–7)",
+        "target": "这是整个战争中最伟大的行动，也是我们从希腊人那里听说过的最辉煌的胜利，对失败者来说是最悲惨的。因为他们完全被击败，在各个方面都失败了，并且遭受了巨大的痛苦。他们的军队、舰队和他们曾经拥有的一切都毁灭了，没有什么东西被拯救，很少有这么多人能回家。西西里远征就此结束。\n\n——修昔底德《伯罗奔尼撒战争史》，第七卷，87.6-7",
+        "metadata": {
+          "kind": "model",
+          "model": "aya-expanse-32b"
+        }
+      },
+      {
+        "id": "gemma-3-12b-it",
+        "source": "“This was the greatest action that happened in all this war, and all others that we have heard of amongst the Greeks, being to the victors most glorious and most calamitous to the vanquished. For they were utterly and at all points defeated, and their sufferings were many. Army and fleet and all they ever had perished, nothing was saved and few of so many ever returned home. Thus ended the Sicilian expedition.” \\n— Thucydides (“History of the Peloponnesian War”, VII. 87.6–7)",
+        "target": "这是这场战争中，以及所有我们听说的希腊战争中最伟大的行动，对胜利者来说是光荣的，对失败者来说是灾难性的。因为他们彻底、在各个方面都战败了，遭受了许多苦难。军队、舰队以及他们曾经拥有的一切都覆灭了，一无幸免，许多人中只有少数几个能够回家。就这样，西西里远征宣告结束。",
+        "metadata": {
+          "kind": "model",
+          "model": "gemma-3-12b-it"
+        }
+      },
+      {
+        "id": "gemma-3-27b-it",
+        "source": "“This was the greatest action that happened in all this war, and all others that we have heard of amongst the Greeks, being to the victors most glorious and most calamitous to the vanquished. For they were utterly and at all points defeated, and their sufferings were many. Army and fleet and all they ever had perished, nothing was saved and few of so many ever returned home. Thus ended the Sicilian expedition.” \\n— Thucydides (“History of the Peloponnesian War”, VII. 87.6–7)",
+        "target": "这是这场战争中发生的最伟大的行动，也是我们所听闻的希腊人所有战争中最伟大的行动，对胜利者来说最为辉煌，对失败者来说最为灾难。因为他们彻底地、在各个方面都被击败了，遭受了许多苦难。他们的陆军和舰队以及他们所拥有的一切都已覆灭，没有留下任何东西，极少数人能够回家。西西里远征就此结束。\n\n— 修昔底德《伯罗奔尼撒战争史》，第七卷，87.6–7段",
+        "metadata": {
+          "kind": "model",
+          "model": "gemma-3-27b-it"
+        }
+      },
+      {
+        "id": "qwen3.5-27b",
+        "source": "“This was the greatest action that happened in all this war, and all others that we have heard of amongst the Greeks, being to the victors most glorious and most calamitous to the vanquished. For they were utterly and at all points defeated, and their sufferings were many. Army and fleet and all they ever had perished, nothing was saved and few of so many ever returned home. Thus ended the Sicilian expedition.” \\n— Thucydides (“History of the Peloponnesian War”, VII. 87.6–7)",
+        "target": "“这是整个战争中最伟大的行动，也是我们在希腊人所知的所有行动中，对胜利者最为光荣、对失败者最为灾难性的。因为他们被彻底且全面地击败，遭受了无数苦难。其陆军、海军以及他们拥有的一切皆告覆灭，无一幸免；如此众多的人中，仅有少数得以生还归乡。西西里远征遂以此告终。”——修昔底德《伯罗奔尼撒战争史》第七卷 87 章第 6–7 节",
+        "metadata": {
+          "kind": "model",
+          "model": "qwen3.5-27b"
+        }
+      },
+      {
+        "id": "qwen3.5-9b",
+        "source": "“This was the greatest action that happened in all this war, and all others that we have heard of amongst the Greeks, being to the victors most glorious and most calamitous to the vanquished. For they were utterly and at all points defeated, and their sufferings were many. Army and fleet and all they ever had perished, nothing was saved and few of so many ever returned home. Thus ended the Sicilian expedition.” \\n— Thucydides (“History of the Peloponnesian War”, VII. 87.6–7)",
+        "target": "“这是这场战争以及我们听闻过的所有希腊战争中最伟大的事件，对胜利者而言最为荣耀，对失败者而言最为惨烈。因为他们被彻底且全方位地击败，所受的苦难众多。军队、舰队以及他们曾经拥有的一切皆已覆灭，无一幸存，如此众多的人中仅有少数得以返乡。西西里远征至此终结。”  \n——修昔底德（《伯罗奔尼撒战争史》，卷七，87.6–7）",
+        "metadata": {
+          "kind": "model",
+          "model": "qwen3.5-9b"
+        }
+      },
+      {
+        "id": "human_reference",
+        "source": "“This was the greatest action that happened in all this war, and all others that we have heard of amongst the Greeks, being to the victors most glorious and most calamitous to the vanquished. For they were utterly and at all points defeated, and their sufferings were many. Army and fleet and all they ever had perished, nothing was saved and few of so many ever returned home. Thus ended the Sicilian expedition.” \\n— Thucydides (“History of the Peloponnesian War”, VII. 87.6–7)",
+        "target": "这是这场战争中希腊人最大的一次军事行动，照我看来，也是希腊历史上最大的军事行动—对于胜利者来说，是最大的光荣，对于失败者来说，是最大的灾难。雅典人被彻底打败，全军覆灭，他们遭受了巨大的痛苦；他们被毁灭了，正像谚语所说，一切都灰飞烟灭了，他们的舰队，他们的陆军，全部都被毁灭了，庞大的远征军中只有极少数人重返故乡。这就是在西西里发生的事件。——修昔底德（《伯罗奔尼撒战争史》第七卷87段）",
+        "metadata": {
+          "kind": "human",
+          "reference_field": "zh_CN"
+        }
+      }
+    ]
+  },
+  {
+    "id": "translation_428c7b85586f47c7",
+    "metadata": {
+      "title": "0 A.D.",
+      "source_language": "en",
+      "target_language": "zh_CN",
+      "original_index": 1175,
+      "difficulty_score": -0.0525330119,
+      "human_reference_available": true
+    },
+    "candidates": [
+      {
+        "id": "aya-expanse-32b",
+        "source": "“He \\[King Darius] asked who the Athenians were, and, being informed, called for his bow, and placing an arrow on the string, shot upward into the sky, saying, as he let fly the shaft: Grant me, Zeus, to revenge myself on the Athenians!” \\n— Herodotus, narrating how the Athenian support for the Ionian revolt caught the wrath of Darius I, the Persian king (“The Histories”, V. 105)",
+        "target": "“他（达里乌斯王）问雅典人是谁，得知后，要来他的弓，拉满弓箭，射向天空，放箭时说：‘宙斯啊，求你让我能向雅典人复仇！’”\n— 赫罗多德，讲述雅典人支持爱奥尼亚起义惹怒了波斯王大流士一世（《历史》第五卷，105）",
+        "metadata": {
+          "kind": "model",
+          "model": "aya-expanse-32b"
+        }
+      },
+      {
+        "id": "gemma-3-12b-it",
+        "source": "“He \\[King Darius] asked who the Athenians were, and, being informed, called for his bow, and placing an arrow on the string, shot upward into the sky, saying, as he let fly the shaft: Grant me, Zeus, to revenge myself on the Athenians!” \\n— Herodotus, narrating how the Athenian support for the Ionian revolt caught the wrath of Darius I, the Persian king (“The Histories”, V. 105)",
+        "target": "他（大流士王）询问雅典人是谁，得知后，便叫来弓箭，拉开弓弦，射向天空，放箭时说道：“宙斯啊，赐我为雅典人复仇的力量！”\n—— 希罗多德，《历史》第五卷105段，讲述了雅典人支持爱奥尼亚起义，激怒了波斯国王大流士一世。",
+        "metadata": {
+          "kind": "model",
+          "model": "gemma-3-12b-it"
+        }
+      },
+      {
+        "id": "gemma-3-27b-it",
+        "source": "“He \\[King Darius] asked who the Athenians were, and, being informed, called for his bow, and placing an arrow on the string, shot upward into the sky, saying, as he let fly the shaft: Grant me, Zeus, to revenge myself on the Athenians!” \\n— Herodotus, narrating how the Athenian support for the Ionian revolt caught the wrath of Darius I, the Persian king (“The Histories”, V. 105)",
+        "target": "他（大流士王）询问雅典人是谁，得知后，便要人取弓，搭箭上弦，向天空射去，射箭时说道：“宙斯啊，请允许我向雅典人复仇！”\n\n— 希罗多德，叙述雅典人对爱奥尼亚起义的支持招致了波斯国王大流士一世的愤怒（《历史》，第五卷，105）",
+        "metadata": {
+          "kind": "model",
+          "model": "gemma-3-27b-it"
+        }
+      },
+      {
+        "id": "qwen3.5-27b",
+        "source": "“He \\[King Darius] asked who the Athenians were, and, being informed, called for his bow, and placing an arrow on the string, shot upward into the sky, saying, as he let fly the shaft: Grant me, Zeus, to revenge myself on the Athenians!” \\n— Herodotus, narrating how the Athenian support for the Ionian revolt caught the wrath of Darius I, the Persian king (“The Histories”, V. 105)",
+        "target": "“他（大流士王）询问雅典人是谁，得知后便取来弓，将箭搭上弦，向天射去，并在松手放箭时说道：‘宙斯啊，请赐予我向雅典人复仇的机会！’\"——希罗多德在《历史》（卷五，第 105 节）中记述，雅典人支持伊奥尼亚起义，从而激怒了波斯国王大流士一世。",
+        "metadata": {
+          "kind": "model",
+          "model": "qwen3.5-27b"
+        }
+      },
+      {
+        "id": "qwen3.5-9b",
+        "source": "“He \\[King Darius] asked who the Athenians were, and, being informed, called for his bow, and placing an arrow on the string, shot upward into the sky, saying, as he let fly the shaft: Grant me, Zeus, to revenge myself on the Athenians!” \\n— Herodotus, narrating how the Athenian support for the Ionian revolt caught the wrath of Darius I, the Persian king (“The Histories”, V. 105)",
+        "target": "“他（大流士王）问道：‘雅典人是谁？’得知后，便取来弓箭，搭箭上弦，向上射去，并在放箭时说道：‘宙斯啊，请让我向雅典人复仇吧！’\"——希罗多德记述雅典人对爱奥尼亚起义的支持激怒了波斯国王大流士一世（《历史》，卷五，105 节）",
+        "metadata": {
+          "kind": "model",
+          "model": "qwen3.5-9b"
+        }
+      },
+      {
+        "id": "human_reference",
+        "source": "“He \\[King Darius] asked who the Athenians were, and, being informed, called for his bow, and placing an arrow on the string, shot upward into the sky, saying, as he let fly the shaft: Grant me, Zeus, to revenge myself on the Athenians!” \\n— Herodotus, narrating how the Athenian support for the Ionian revolt caught the wrath of Darius I, the Persian king (“The Histories”, V. 105)",
+        "target": "他（大流士一世）问雅典人是什么样的人，当人们告诉他之后，他便要求人们把弓箭给他拿来，他放一支箭在弓上并把它射到天上去，他把这支箭射到天上去的时候他祈求说：“哦，宙斯，容许我向雅典人复仇吧！” ——希罗多德，叙述雅典支持爱奥尼亚人的起义，引发波斯国王大流士一世的愤怒（《历史》，第五卷 105 节）",
+        "metadata": {
+          "kind": "human",
+          "reference_field": "zh_CN"
+        }
+      }
+    ]
+  },
+  {
+    "id": "translation_3de2789581616b0e",
+    "metadata": {
+      "title": "0 A.D.",
+      "source_language": "en",
+      "target_language": "zh_CN",
+      "original_index": 1264,
+      "difficulty_score": -0.0368941687,
+      "human_reference_available": true
+    },
+    "candidates": [
+      {
+        "id": "aya-expanse-32b",
+        "source": "“Yes, stand a little out of my sunshine.” \\n— Diogenes of Sinope to Alexander the Great, who asked if he could help in in any way (Plutarch, “Parallel Lives”, “Alexander”, sec. 14)",
+        "target": "“是的，请稍微避开一点，别挡着我的阳光。”\n\n—— 苏格拉底向亚历山大大帝说，当时亚历山大问他是否需要任何帮助。（普鲁塔克，《希腊罗马名人传》，《亚历山大传》，第14节）",
+        "metadata": {
+          "kind": "model",
+          "model": "aya-expanse-32b"
+        }
+      },
+      {
+        "id": "gemma-3-12b-it",
+        "source": "“Yes, stand a little out of my sunshine.” \\n— Diogenes of Sinope to Alexander the Great, who asked if he could help in in any way (Plutarch, “Parallel Lives”, “Alexander”, sec. 14)",
+        "target": "“是的，稍微离开我的阳光吧。”\n—— 对亚历山大大帝说的话，当时亚历山大大帝问他是否需要帮助。（布鲁塔克，《并列传》，《亚历山大》，第14段）",
+        "metadata": {
+          "kind": "model",
+          "model": "gemma-3-12b-it"
+        }
+      },
+      {
+        "id": "gemma-3-27b-it",
+        "source": "“Yes, stand a little out of my sunshine.” \\n— Diogenes of Sinope to Alexander the Great, who asked if he could help in in any way (Plutarch, “Parallel Lives”, “Alexander”, sec. 14)",
+        "target": "“是的，请让一下你的阳光。”\\n— 西诺佩的狄俄根尼对亚历山大大帝说，当时亚历山大大帝问他是否可以帮他什么忙（普鲁塔克，《平行传》，《亚历山大》，第14节）",
+        "metadata": {
+          "kind": "model",
+          "model": "gemma-3-27b-it"
+        }
+      },
+      {
+        "id": "qwen3.5-27b",
+        "source": "“Yes, stand a little out of my sunshine.” \\n— Diogenes of Sinope to Alexander the Great, who asked if he could help in in any way (Plutarch, “Parallel Lives”, “Alexander”, sec. 14)",
+        "target": "“是的，请稍微挪开一点，别挡着我的阳光。”——辛尼加的狄奥根尼对亚历山大大帝所言，当时亚历山大问他是否需要任何帮助（普鲁塔克，《希腊罗马名人传·亚历山大传》，第 14 节）",
+        "metadata": {
+          "kind": "model",
+          "model": "qwen3.5-27b"
+        }
+      },
+      {
+        "id": "qwen3.5-9b",
+        "source": "“Yes, stand a little out of my sunshine.” \\n— Diogenes of Sinope to Alexander the Great, who asked if he could help in in any way (Plutarch, “Parallel Lives”, “Alexander”, sec. 14)",
+        "target": "“是的，请站到我的阳光之外一点。”——第欧根尼对亚历山大大帝所说，亚历山大曾问他能否以某种方式提供帮助（普鲁塔克，《希腊罗马名人传·亚历山大篇》，第 14 节）",
+        "metadata": {
+          "kind": "model",
+          "model": "qwen3.5-9b"
+        }
+      },
+      {
+        "id": "human_reference",
+        "source": "“Yes, stand a little out of my sunshine.” \\n— Diogenes of Sinope to Alexander the Great, who asked if he could help in in any way (Plutarch, “Parallel Lives”, “Alexander”, sec. 14)",
+        "target": "我希望你闪到一边去，不要遮住我的阳光。——第欧根尼这样回答道。此时第欧根尼正在晒太阳，亚历山大大帝前来拜访他，问他需要什么，并保证会兑现他的愿望。（普鲁塔克，《希腊罗马名人传 · 亚历山大》14 节）",
+        "metadata": {
+          "kind": "human",
+          "reference_field": "zh_CN"
+        }
+      }
+    ]
+  },
+  {
+    "id": "translation_c0a43ccb7e3b422d",
+    "metadata": {
+      "title": "0 A.D.",
+      "source_language": "en",
+      "target_language": "zh_CN",
+      "original_index": 1308,
+      "difficulty_score": -0.0299290791,
+      "human_reference_available": true
+    },
+    "candidates": [
+      {
+        "id": "aya-expanse-32b",
+        "source": "“Plato had defined man as an animal, biped and featherless, and was applauded. Diogenes \\[of Sinope] plucked a fowl and brought it into the lecture-room with the words: Here is Plato's man. In consequence of which there was added to the definition: having broad nails.” \\n— Diogenes Laertius (“The Lives and Opinions of Eminent Philosophers”, “Diogenes”, sec. 40)",
+        "target": "柏拉图将人定义为没有羽毛的两足动物，并得到了赞誉。但狄奥根尼（西诺普的）将一只鸡的羽毛拔掉，带进了讲座室，说：“这是柏拉图的人。” 因此，定义中又增加了“指甲宽”这一条。\n— 狄奥根尼·拉埃尔提乌斯（《著名哲学家生平、观点与语录》，《狄奥根尼》，第40节）",
+        "metadata": {
+          "kind": "model",
+          "model": "aya-expanse-32b"
+        }
+      },
+      {
+        "id": "gemma-3-12b-it",
+        "source": "“Plato had defined man as an animal, biped and featherless, and was applauded. Diogenes \\[of Sinope] plucked a fowl and brought it into the lecture-room with the words: Here is Plato's man. In consequence of which there was added to the definition: having broad nails.” \\n— Diogenes Laertius (“The Lives and Opinions of Eminent Philosophers”, “Diogenes”, sec. 40)",
+        "target": "柏拉图将人定义为一种两足、没有羽毛的动物，并因此受到赞扬。底格里斯（辛诺珀人）拔了一只鸟的羽毛，带着它走进讲堂，说：“这就是柏拉图定义的人。” 因此，在定义中又加上了“有宽大的指甲”这一条。\n—— 狄奥金尼·拉耳提乌斯，《著名哲学家列传》，“底格里斯”，第40段",
+        "metadata": {
+          "kind": "model",
+          "model": "gemma-3-12b-it"
+        }
+      },
+      {
+        "id": "gemma-3-27b-it",
+        "source": "“Plato had defined man as an animal, biped and featherless, and was applauded. Diogenes \\[of Sinope] plucked a fowl and brought it into the lecture-room with the words: Here is Plato's man. In consequence of which there was added to the definition: having broad nails.” \\n— Diogenes Laertius (“The Lives and Opinions of Eminent Philosophers”, “Diogenes”, sec. 40)",
+        "target": "柏拉图曾将人定义为一种两足无羽的动物，并因此受到赞扬。狄俄根尼[西诺普的]拔下一只禽类的羽毛，把它带到讲堂上，说道：“这就是柏拉图的人。” 结果，人们在定义中增加了“有宽大的指甲”这一条。\n\n— 狄俄根尼·拉尔修（《名哲传》，“狄俄根尼”，第40节）",
+        "metadata": {
+          "kind": "model",
+          "model": "gemma-3-27b-it"
+        }
+      },
+      {
+        "id": "qwen3.5-27b",
+        "source": "“Plato had defined man as an animal, biped and featherless, and was applauded. Diogenes \\[of Sinope] plucked a fowl and brought it into the lecture-room with the words: Here is Plato's man. In consequence of which there was added to the definition: having broad nails.” \\n— Diogenes Laertius (“The Lives and Opinions of Eminent Philosophers”, “Diogenes”, sec. 40)",
+        "target": "“柏拉图曾将人定义为‘两足无毛的动物’，并因此受到赞誉。第欧根尼（来自锡诺普）拔光一只鸡的羽毛，将其带入讲堂，说道：‘这就是柏拉图所说的人。’于是，该定义被补充为：‘具有宽大的指甲。’\"——第欧根尼·拉尔修（《名哲言行录》，《第欧根尼》第 40 节）",
+        "metadata": {
+          "kind": "model",
+          "model": "qwen3.5-27b"
+        }
+      },
+      {
+        "id": "qwen3.5-9b",
+        "source": "“Plato had defined man as an animal, biped and featherless, and was applauded. Diogenes \\[of Sinope] plucked a fowl and brought it into the lecture-room with the words: Here is Plato's man. In consequence of which there was added to the definition: having broad nails.” \\n— Diogenes Laertius (“The Lives and Opinions of Eminent Philosophers”, “Diogenes”, sec. 40)",
+        "target": "“柏拉图曾将人定义为‘两足而无羽毛的动物’，并因此受到赞誉。第欧根尼（来自锡诺普）拔下一只鸡，将其带入讲堂，说道：‘看，这就是柏拉图所说的人。’于是，这一定义被补充为：‘长着宽指甲的。’\"  \n——第欧根尼·拉尔修（《名哲言行录》，第欧根尼篇，第 40 节）",
+        "metadata": {
+          "kind": "model",
+          "model": "qwen3.5-9b"
+        }
+      },
+      {
+        "id": "human_reference",
+        "source": "“Plato had defined man as an animal, biped and featherless, and was applauded. Diogenes \\[of Sinope] plucked a fowl and brought it into the lecture-room with the words: Here is Plato's man. In consequence of which there was added to the definition: having broad nails.” \\n— Diogenes Laertius (“The Lives and Opinions of Eminent Philosophers”, “Diogenes”, sec. 40)",
+        "target": "柏拉图将人定义为一种两足无毛的动物，并受到赞扬。锡诺普的第欧根尼把一只拔光毛的鸡带进了讲堂，鸡身写着：“这是柏拉图定义的人”。结果，定义又增加了：拥有宽的指甲。 ——第欧根尼 拉尔修(《哲人言行录·第欧根尼》sec. 40)",
+        "metadata": {
+          "kind": "human",
+          "reference_field": "zh_CN"
+        }
+      }
+    ]
+  },
+  {
+    "id": "translation_971893ebe8f25a8b",
+    "metadata": {
+      "title": "Cataclysm: Dark Days Ahead",
+      "source_language": "en",
+      "target_language": "zh_CN",
+      "original_index": 564,
+      "difficulty_score": -0.2211085558,
+      "human_reference_available": true
+    },
+    "candidates": [
+      {
+        "id": "aya-expanse-32b",
+        "source": "&You hear a chirp in your comm and Pat's voice comes over the line, broken up by static: \"Pat heah.  I'm not gettin' a good--cshhh--signal.  Yo--cshhh--eep underground.  Somethin' bad--cshhh--\"…  the line is then filled with dead static.",
+        "target": "你听到通讯器里传来一声嘟嘟声，然后是帕特的声音，被静电干扰得断断续续：“帕特这里。我信号不太好——嘶嘶声——在地下。有什么不对——嘶嘶声……”然后，通讯器里只剩下死寂的静电声。",
+        "metadata": {
+          "kind": "model",
+          "model": "aya-expanse-32b"
+        }
+      },
+      {
+        "id": "gemma-3-12b-it",
+        "source": "&You hear a chirp in your comm and Pat's voice comes over the line, broken up by static: \"Pat heah.  I'm not gettin' a good--cshhh--signal.  Yo--cshhh--eep underground.  Somethin' bad--cshhh--\"…  the line is then filled with dead static.",
+        "target": "你听到通讯设备传来一声啾啾声，然后是帕特的语音，被杂音打断：“帕特，我这里…嘶嘶…信号不太好…嘶嘶…我正在地下…嘶嘶…有些不好的…”… 之后线路就充满了死寂的杂音。",
+        "metadata": {
+          "kind": "model",
+          "model": "gemma-3-12b-it"
+        }
+      },
+      {
+        "id": "gemma-3-27b-it",
+        "source": "&You hear a chirp in your comm and Pat's voice comes over the line, broken up by static: \"Pat heah.  I'm not gettin' a good--cshhh--signal.  Yo--cshhh--eep underground.  Somethin' bad--cshhh--\"…  the line is then filled with dead static.",
+        "target": "你听到通讯器里传来一声清脆的鸣叫，帕特的声音断断续续地穿过静电：“帕特，我在这里。信号不太好——嘶嘶——。你们——嘶嘶——躲到地下。有些不好的事——嘶嘶——”…… 随后，线路被彻底的静电声淹没。",
+        "metadata": {
+          "kind": "model",
+          "model": "gemma-3-27b-it"
+        }
+      },
+      {
+        "id": "qwen3.5-27b",
+        "source": "&You hear a chirp in your comm and Pat's voice comes over the line, broken up by static: \"Pat heah.  I'm not gettin' a good--cshhh--signal.  Yo--cshhh--eep underground.  Somethin' bad--cshhh--\"…  the line is then filled with dead static.",
+        "target": "你的通讯器里传来一阵啾啾声，随后是帕特断断续续、夹杂着静电杂音的声音：“帕特在此。我收不到清晰的——滋啦——信号。你——滋啦——快躲到地下。有糟糕的——滋啦——\"……随后线路里只剩下死寂的静电噪音。",
+        "metadata": {
+          "kind": "model",
+          "model": "qwen3.5-27b"
+        }
+      },
+      {
+        "id": "qwen3.5-9b",
+        "source": "&You hear a chirp in your comm and Pat's voice comes over the line, broken up by static: \"Pat heah.  I'm not gettin' a good--cshhh--signal.  Yo--cshhh--eep underground.  Somethin' bad--cshhh--\"…  the line is then filled with dead static.",
+        "target": "你听到通讯器里传来一阵啾鸣，帕特的声音透过杂音传来：“帕特在这。我收不到好……滋滋……信号。你……滋滋……待在地下。有什么糟糕的……滋滋……\"……随后，通讯线里只剩下死一般的杂音。",
+        "metadata": {
+          "kind": "model",
+          "model": "qwen3.5-9b"
+        }
+      },
+      {
+        "id": "human_reference",
+        "source": "&You hear a chirp in your comm and Pat's voice comes over the line, broken up by static: \"Pat heah.  I'm not gettin' a good--cshhh--signal.  Yo--cshhh--eep underground.  Somethin' bad--cshhh--\"…  the line is then filled with dead static.",
+        "target": "你听到耳机里传来一声啁啾声，帕特的声音传了过来，但被静电音弄得支离破碎：“我是帕特。我这边信--滋滋--号不好。你--滋滋--在地下待着。有坏事发生--滋滋--”……线路接着被死一样的静电音充满。",
+        "metadata": {
+          "kind": "human",
+          "reference_field": "zh_CN"
+        }
+      }
+    ]
+  },
+  {
+    "id": "translation_824f650472a3e797",
+    "metadata": {
+      "title": "Cataclysm: Dark Days Ahead",
+      "source_language": "en",
+      "target_language": "zh_CN",
+      "original_index": 62,
+      "difficulty_score": -0.8727889061,
+      "human_reference_available": true
+    },
+    "candidates": [
+      {
+        "id": "aya-expanse-32b",
+        "source": "Right so, a fine notice.  Rubik's mother-twice, she were a woman o'th'old kind.  And were her mate, and Rubik's father-twice.  Rubik's father-mother, she were a gran, a fitty bit of ol' London-Town, right so, but Rubik had a jaryi and a taita and a tamoi.\" Rubik's voice goes distant for a moment.  \"An' they was all there, right to the end.  Standin' by, we were, one and all.\" They pause, then seem to snap back.  \"No time for stories, kennit?  Back to the here an' now.",
+        "target": "好的，一个好消息。魔方母亲两次，她是老一辈的妇女。她的伴侣，也是魔方父亲两次。魔方父亲的母亲，她是一个老伦敦城的老奶奶，就是这样，但魔方有一个姐姐，一个哥哥，和一个妹妹。”魔方的声音暂时变远了。“他们都在，直到最后。我们都站在那里，全体。”他们停顿了一下，然后似乎又回过神来。“没有时间讲故事吗？回到现在吧。",
+        "metadata": {
+          "kind": "model",
+          "model": "aya-expanse-32b"
+        }
+      },
+      {
+        "id": "gemma-3-12b-it",
+        "source": "Right so, a fine notice.  Rubik's mother-twice, she were a woman o'th'old kind.  And were her mate, and Rubik's father-twice.  Rubik's father-mother, she were a gran, a fitty bit of ol' London-Town, right so, but Rubik had a jaryi and a taita and a tamoi.\" Rubik's voice goes distant for a moment.  \"An' they was all there, right to the end.  Standin' by, we were, one and all.\" They pause, then seem to snap back.  \"No time for stories, kennit?  Back to the here an' now.",
+        "target": "好吧，一个通知。鲁比克的母亲——两次，她是个老派的女人。他的配偶，以及鲁比克的父亲——两次。鲁比克的父亲，他的母亲，她是个老伦敦人，相当地，但鲁比克却有了一个贾里伊，一个泰塔，和一个塔莫伊。” 鲁比克的嗓音一瞬间变得遥远。“而且他们都在那里，直到最后。我们都在旁边支持着，个个如此。” 他们停顿了一下，然后似乎又回到了现实。“没时间讲故事，知道吗？回到当下。”",
+        "metadata": {
+          "kind": "model",
+          "model": "gemma-3-12b-it"
+        }
+      },
+      {
+        "id": "gemma-3-27b-it",
+        "source": "Right so, a fine notice.  Rubik's mother-twice, she were a woman o'th'old kind.  And were her mate, and Rubik's father-twice.  Rubik's father-mother, she were a gran, a fitty bit of ol' London-Town, right so, but Rubik had a jaryi and a taita and a tamoi.\" Rubik's voice goes distant for a moment.  \"An' they was all there, right to the end.  Standin' by, we were, one and all.\" They pause, then seem to snap back.  \"No time for stories, kennit?  Back to the here an' now.",
+        "target": "好吧，一张罚单。鲁比克的母亲——两次，她是个老派的女人。还有她的伴侣，也是鲁比克的父亲——两次。鲁比克的父亲的母亲，她是个祖母，一个来自老伦敦城的小老太太，没错，但鲁比克有雅丽伊、泰塔和塔莫伊。” 鲁比克的声音突然变得遥远。“他们都在那里，一直到最后。我们都在旁边，我们所有人。” 他们停顿了一下，然后似乎又回过神来。“没时间讲故事，明白吗？回到现在。”",
+        "metadata": {
+          "kind": "model",
+          "model": "gemma-3-27b-it"
+        }
+      },
+      {
+        "id": "qwen3.5-27b",
+        "source": "Right so, a fine notice.  Rubik's mother-twice, she were a woman o'th'old kind.  And were her mate, and Rubik's father-twice.  Rubik's father-mother, she were a gran, a fitty bit of ol' London-Town, right so, but Rubik had a jaryi and a taita and a tamoi.\" Rubik's voice goes distant for a moment.  \"An' they was all there, right to the end.  Standin' by, we were, one and all.\" They pause, then seem to snap back.  \"No time for stories, kennit?  Back to the here an' now.",
+        "target": "没错，一张罚单。鲁比克的母亲——两次，她可是那种老派的女人。还有她的伴侣，也就是鲁比克的父亲——两次。鲁比克的父兼母，她是个老祖母，地道的老伦敦人，没错；但鲁比克却有一位贾里、一位塔伊塔和一位塔莫伊。\"鲁比克的声音有一瞬间变得飘远。\"他们都一直在那儿，直到最后。我们全都守在一旁，一个都没少。\"他们停顿了一下，随即仿佛猛然回神。\"没空讲故事了，懂吗？回到当下吧。\"",
+        "metadata": {
+          "kind": "model",
+          "model": "qwen3.5-27b"
+        }
+      },
+      {
+        "id": "qwen3.5-9b",
+        "source": "Right so, a fine notice.  Rubik's mother-twice, she were a woman o'th'old kind.  And were her mate, and Rubik's father-twice.  Rubik's father-mother, she were a gran, a fitty bit of ol' London-Town, right so, but Rubik had a jaryi and a taita and a tamoi.\" Rubik's voice goes distant for a moment.  \"An' they was all there, right to the end.  Standin' by, we were, one and all.\" They pause, then seem to snap back.  \"No time for stories, kennit?  Back to the here an' now.",
+        "target": "好吧，这是个正式通知。鲁比克的母亲——她可是位老派的女人；她的伴侣，也就是鲁比克的父亲——同样如此。鲁比克的父亲兼母亲，她来自伦敦老城的一角，是个地道的老伦敦人，没错，可鲁比克还有个继母、一个继父和一个继兄。“鲁比克的声音忽然变得遥远了些。”“他们全都陪到了最后，”他接着说，“我们所有人，都一直站在身旁。”两人沉默片刻，仿佛瞬间回过神来。“没空讲故事了，懂吗？回到当下。”",
+        "metadata": {
+          "kind": "model",
+          "model": "qwen3.5-9b"
+        }
+      },
+      {
+        "id": "human_reference",
+        "source": "Right so, a fine notice.  Rubik's mother-twice, she were a woman o'th'old kind.  And were her mate, and Rubik's father-twice.  Rubik's father-mother, she were a gran, a fitty bit of ol' London-Town, right so, but Rubik had a jaryi and a taita and a tamoi.\" Rubik's voice goes distant for a moment.  \"An' they was all there, right to the end.  Standin' by, we were, one and all.\" They pause, then seem to snap back.  \"No time for stories, kennit?  Back to the here an' now.",
+        "target": "是的，很好的通知。鲁比克的母亲——两倍的，她的是位非常古老的女人。是她的伴侣，也是鲁比克的父亲——两倍的。鲁比克的父亲的母亲，她是一位祖母，是一位伦敦镇的人，没错，但鲁比克的一个贾伊、一个泰塔和一个塔莫。”鲁比克的声音暂时变得遥远：“他们都是在那里的，一直到最后。我们都站在一旁。”他停顿了一下，然后似乎又回过神来：“没时间讲故事，懂了没的？现在回到这里的。",
+        "metadata": {
+          "kind": "human",
+          "reference_field": "zh_CN"
+        }
+      }
+    ]
+  },
+  {
+    "id": "translation_b53c8d25c8dfc26a",
+    "metadata": {
+      "title": "Cataclysm: Dark Days Ahead",
+      "source_language": "en",
+      "target_language": "zh_CN",
+      "original_index": 1199,
+      "difficulty_score": -0.0475281104,
+      "human_reference_available": true
+    },
+    "candidates": [
+      {
+        "id": "aya-expanse-32b",
+        "source": "Well, I have this weird hope.  It's probably stupid, but I saw my fiancé peel out of there with his sister - my maid of honor - in her pickup truck as things went bad.  So, until I run into them again one way or another, I'm just gonna keep on believing they're out there, doing well.  That's more than most of us have.",
+        "target": "好吧，我有一个很奇怪的希望。这可能很愚蠢，但我看到我的未婚夫在事情变得糟糕时，和我的伴娘——他的妹妹——一起开着她的皮卡车离开了。所以，在我以某种方式再次遇到他们之前，我只是会继续相信他们在那里，过得很好。这已经比我们大多数人拥有的多了。",
+        "metadata": {
+          "kind": "model",
+          "model": "aya-expanse-32b"
+        }
+      },
+      {
+        "id": "gemma-3-12b-it",
+        "source": "Well, I have this weird hope.  It's probably stupid, but I saw my fiancé peel out of there with his sister - my maid of honor - in her pickup truck as things went bad.  So, until I run into them again one way or another, I'm just gonna keep on believing they're out there, doing well.  That's more than most of us have.",
+        "target": "好吧，我有一个很奇怪的希望。可能很蠢，但我看到我的未婚夫带着我的伴娘——他的妹妹——开着皮卡车逃离了现场，当时情况变得很糟糕。所以，直到我再次遇到他们，无论好坏，我都会一直相信他们还在外面，过得很好。这比我们大多数人拥有的更多了。",
+        "metadata": {
+          "kind": "model",
+          "model": "gemma-3-12b-it"
+        }
+      },
+      {
+        "id": "gemma-3-27b-it",
+        "source": "Well, I have this weird hope.  It's probably stupid, but I saw my fiancé peel out of there with his sister - my maid of honor - in her pickup truck as things went bad.  So, until I run into them again one way or another, I'm just gonna keep on believing they're out there, doing well.  That's more than most of us have.",
+        "target": "好吧，我有一个奇怪的希望。可能很傻，但我看到我的未婚夫和我的伴娘——他的妹妹——开着她的皮卡车逃离现场，当时情况正在恶化。所以，在再次以某种方式遇到他们之前，我只想继续相信他们还在外面，一切都好。这已经比我们大多数人拥有的要多了。",
+        "metadata": {
+          "kind": "model",
+          "model": "gemma-3-27b-it"
+        }
+      },
+      {
+        "id": "qwen3.5-27b",
+        "source": "Well, I have this weird hope.  It's probably stupid, but I saw my fiancé peel out of there with his sister - my maid of honor - in her pickup truck as things went bad.  So, until I run into them again one way or another, I'm just gonna keep on believing they're out there, doing well.  That's more than most of us have.",
+        "target": "好吧，我怀抱着一种奇怪的希望。这或许很愚蠢，但当时局势恶化时，我看到未婚夫带着他的妹妹——也就是我的伴娘——开着她的皮卡车迅速离开了。所以，在以任何方式再次遇到他们之前，我将继续相信他们就在外面，一切安好。这已经是我们大多数人无法拥有的了。",
+        "metadata": {
+          "kind": "model",
+          "model": "qwen3.5-27b"
+        }
+      },
+      {
+        "id": "qwen3.5-9b",
+        "source": "Well, I have this weird hope.  It's probably stupid, but I saw my fiancé peel out of there with his sister - my maid of honor - in her pickup truck as things went bad.  So, until I run into them again one way or another, I'm just gonna keep on believing they're out there, doing well.  That's more than most of us have.",
+        "target": "好吧，我怀有一种奇怪的希望。这或许很愚蠢，但我曾亲眼看到我的未婚夫和他妹妹——也就是我的伴娘——在局势恶化时，开着她的皮卡仓皇离去。所以，直到我们以任何方式再次相遇之前，我将继续相信他们还在，一切安好。这比大多数人拥有的都要多。",
+        "metadata": {
+          "kind": "model",
+          "model": "qwen3.5-9b"
+        }
+      },
+      {
+        "id": "human_reference",
+        "source": "Well, I have this weird hope.  It's probably stupid, but I saw my fiancé peel out of there with his sister - my maid of honor - in her pickup truck as things went bad.  So, until I run into them again one way or another, I'm just gonna keep on believing they're out there, doing well.  That's more than most of us have.",
+        "target": "好吧，我有个不切实际的奢望。这可能听起来很蠢，但我看我的未婚夫和他的姐姐，我的伴娘，在一切失控前成功钻进了她的皮卡里离开了。所以，在我再次遇到他们之前，我会继续相信他们依旧在外面某处，活得很好。比我们大多数人都要好。",
+        "metadata": {
+          "kind": "human",
+          "reference_field": "zh_CN"
+        }
+      }
+    ]
+  },
+  {
+    "id": "translation_9e4ba3c113d57ab2",
+    "metadata": {
+      "title": "Cataclysm: Dark Days Ahead",
+      "source_language": "en",
+      "target_language": "zh_CN",
+      "original_index": 290,
+      "difficulty_score": -0.3975419998,
+      "human_reference_available": true
+    },
+    "candidates": [
+      {
+        "id": "aya-expanse-32b",
+        "source": "The guard took off on his own.  Didn't trust us, and I don't blame him.  The other two wanted to set up a bandit gig.  Didn't sit right with me, so I split on pretty good terms.  I ran into the guard a couple more times.  Thought of seeing if he'd travel with me, but I dunno.  I don't think he'd take the offer, I'll always be a con to him.  If you want to try, I can tell you where I saw him last.  Wasn't long before I met you, and he had a good thing going, might still be there.",
+        "target": "那名守卫独自离开了。他不信任我们，我也不怪他。另外两个人想干抢劫的勾当。我觉得不对劲，所以我挺友善地离开了。我之后遇到了那名守卫好几次。我想过让他和我一起旅行，但我不知道。我不认为他会接受这个提议，我对他来说永远是个骗子。如果你想试试，我可以告诉你我最后见到他的地方。那是在我遇见你之前不久，他那时有个不错的差事，可能现在还在那里。",
+        "metadata": {
+          "kind": "model",
+          "model": "aya-expanse-32b"
+        }
+      },
+      {
+        "id": "gemma-3-12b-it",
+        "source": "The guard took off on his own.  Didn't trust us, and I don't blame him.  The other two wanted to set up a bandit gig.  Didn't sit right with me, so I split on pretty good terms.  I ran into the guard a couple more times.  Thought of seeing if he'd travel with me, but I dunno.  I don't think he'd take the offer, I'll always be a con to him.  If you want to try, I can tell you where I saw him last.  Wasn't long before I met you, and he had a good thing going, might still be there.",
+        "target": "警卫自己走了。他不信任我们，我也不怪他。另外两个想搞起一个土匪团伙。这事儿我感觉不对劲，所以和平地分开了。后来我再遇到过警卫几次。我考虑过问问他愿不愿意和我一起走，但不知道。我觉得他不会答应，在他眼里我永远都是个骗子。如果你想试试，我可以告诉你我最后一次见到他的地方。没过多久我就遇到了你，他当时过得挺好，可能还在那里。",
+        "metadata": {
+          "kind": "model",
+          "model": "gemma-3-12b-it"
+        }
+      },
+      {
+        "id": "gemma-3-27b-it",
+        "source": "The guard took off on his own.  Didn't trust us, and I don't blame him.  The other two wanted to set up a bandit gig.  Didn't sit right with me, so I split on pretty good terms.  I ran into the guard a couple more times.  Thought of seeing if he'd travel with me, but I dunno.  I don't think he'd take the offer, I'll always be a con to him.  If you want to try, I can tell you where I saw him last.  Wasn't long before I met you, and he had a good thing going, might still be there.",
+        "target": "那个守卫自己离开了。他不信任我们，我不能怪他。另外两个想搞起土匪的勾当。我感觉不对劲，所以就友好地分开了。后来我又碰到了他几次。想过问问他愿不愿意和我一起走，但我不确定。我觉得他不会接受，他永远会把我当成骗子。如果你想试试，我可以告诉你我最后一次见到他的地方。没过多久我就遇到了你，他当时手头有个不错的活儿，可能现在还在那里。",
+        "metadata": {
+          "kind": "model",
+          "model": "gemma-3-27b-it"
+        }
+      },
+      {
+        "id": "qwen3.5-27b",
+        "source": "The guard took off on his own.  Didn't trust us, and I don't blame him.  The other two wanted to set up a bandit gig.  Didn't sit right with me, so I split on pretty good terms.  I ran into the guard a couple more times.  Thought of seeing if he'd travel with me, but I dunno.  I don't think he'd take the offer, I'll always be a con to him.  If you want to try, I can tell you where I saw him last.  Wasn't long before I met you, and he had a good thing going, might still be there.",
+        "target": "那个守卫独自离开了。他不信任我们，我一点也不怪他。另外两个家伙想搞个拦路抢劫的勾当，这让我心里很不舒服，所以我体面地退出了。之后我又碰见过那守卫几次。曾想过问问他愿不愿意跟我一起上路，但我不确定。我觉得他不会答应，在他眼里我永远是个骗子。如果你想试试，我可以告诉你上次见到他的地方。那是在遇见你之前不久，他当时混得不错，说不定还在那儿。",
+        "metadata": {
+          "kind": "model",
+          "model": "qwen3.5-27b"
+        }
+      },
+      {
+        "id": "qwen3.5-9b",
+        "source": "The guard took off on his own.  Didn't trust us, and I don't blame him.  The other two wanted to set up a bandit gig.  Didn't sit right with me, so I split on pretty good terms.  I ran into the guard a couple more times.  Thought of seeing if he'd travel with me, but I dunno.  I don't think he'd take the offer, I'll always be a con to him.  If you want to try, I can tell you where I saw him last.  Wasn't long before I met you, and he had a good thing going, might still be there.",
+        "target": "守卫独自离开了。他不信任我们，我也不能怪他。另外两人想搞起劫匪营生，这让我心里不安，于是我便好聚好散地分开了。之后我又碰见过那守卫几次。曾想过邀请他同行，但不知为何没开口。我想他不会答应，毕竟在他眼里，我始终是个骗子。如果你想试试，我可以告诉你最后在哪里见到他。那是在遇见你没多久的事，当时他正顺风顺水，说不定还在那儿。",
+        "metadata": {
+          "kind": "model",
+          "model": "qwen3.5-9b"
+        }
+      },
+      {
+        "id": "human_reference",
+        "source": "The guard took off on his own.  Didn't trust us, and I don't blame him.  The other two wanted to set up a bandit gig.  Didn't sit right with me, so I split on pretty good terms.  I ran into the guard a couple more times.  Thought of seeing if he'd travel with me, but I dunno.  I don't think he'd take the offer, I'll always be a con to him.  If you want to try, I can tell you where I saw him last.  Wasn't long before I met you, and he had a good thing going, might still be there.",
+        "target": "警卫独自一个人走了。他不相信我们，我也不怪他。另外两个人想当绿林好汉。我没法接受，所以我们分道扬镳了。我又有几次碰见了那个警卫。那时候我想他可能会我一起走，但我不太确定。我不认为他会接受这个提议，我在他眼里将永远是个坏家伙。如果你想试试，我可以告诉你我最后碰见他的地方。就在我遇见你之前不久，他发展得还行，也许还留在那里。",
+        "metadata": {
+          "kind": "human",
+          "reference_field": "zh_CN"
+        }
+      }
+    ]
+  },
+  {
+    "id": "translation_303cc0575deee1df",
+    "metadata": {
+      "title": "Cataclysm: Dark Days Ahead",
+      "source_language": "en",
+      "target_language": "zh_CN",
+      "original_index": 391,
+      "difficulty_score": -0.3105871975,
+      "human_reference_available": true
+    },
+    "candidates": [
+      {
+        "id": "aya-expanse-32b",
+        "source": "Net Breacher woke up the Ship's AI.  The bastard fried her brain from the inside out.  Rail from a Wraith turned another two to paste while everyone was still losing their shit.  Rest is a haze of bloody screams and a hail of bullets and plasma.  Few that got out died later of blood loss or froze from suits full o' holes.\"\nVeronica removes her glove revealing a metallic hand that glints brightly in the dim light of the structure.\n\"Woulda been dead myself but the plasma burst that took my arm cauterized the wound.  Patched the suit up with foamcrete on my way out.  The Doc had a lot of fun with that one.",
+        "target": "网破者唤醒了飞船的AI。那个该死的家伙从内部把她的脑子烤焦了。一根幽灵的轨道枪把另外两个人打成了肉酱，当时所有人都还惊慌失措。接下来的事情就是一片血腥的尖叫声和子弹与等离子体的狂轰滥炸。少数逃出去的人后来要么失血过多而死，要么是身上的装甲服被打满了洞而冻死。\n\n维罗妮卡摘下她的手套，露出一只金属手，在结构内暗淡的光线下闪闪发光。\n“要不是等离子体爆炸把我的手臂烧焦，我也活不下来了。我逃出去的时候用泡沫混凝土临时补了补装甲服。医生后来可花了不少时间来处理那个伤口。”",
+        "metadata": {
+          "kind": "model",
+          "model": "aya-expanse-32b"
+        }
+      },
+      {
+        "id": "gemma-3-12b-it",
+        "source": "Net Breacher woke up the Ship's AI.  The bastard fried her brain from the inside out.  Rail from a Wraith turned another two to paste while everyone was still losing their shit.  Rest is a haze of bloody screams and a hail of bullets and plasma.  Few that got out died later of blood loss or froze from suits full o' holes.\"\nVeronica removes her glove revealing a metallic hand that glints brightly in the dim light of the structure.\n\"Woulda been dead myself but the plasma burst that took my arm cauterized the wound.  Patched the suit up with foamcrete on my way out.  The Doc had a lot of fun with that one.",
+        "target": "网络入侵者唤醒了飞船的AI。那个混蛋从内部烧毁了她的大脑。幽灵的轨道炮又将两人变成了肉泥，而所有人还在一片混乱之中。剩下的只是一片血腥的尖叫和弹丸与等离子体的雨。少数逃出去的人后来死于失血或因套装上布满的洞而冻死。\n\n维罗妮卡摘下手套，露出一只金属色的手，在建筑昏暗的光线下熠熠生辉。\n\n“我本来也应该死了，但那道夺走我手臂的等离子体爆发烧灼了伤口。逃出去的路上我用泡沫混凝土修补了宇航服。医生对这件事玩得很开心。”",
+        "metadata": {
+          "kind": "model",
+          "model": "gemma-3-12b-it"
+        }
+      },
+      {
+        "id": "gemma-3-27b-it",
+        "source": "Net Breacher woke up the Ship's AI.  The bastard fried her brain from the inside out.  Rail from a Wraith turned another two to paste while everyone was still losing their shit.  Rest is a haze of bloody screams and a hail of bullets and plasma.  Few that got out died later of blood loss or froze from suits full o' holes.\"\nVeronica removes her glove revealing a metallic hand that glints brightly in the dim light of the structure.\n\"Woulda been dead myself but the plasma burst that took my arm cauterized the wound.  Patched the suit up with foamcrete on my way out.  The Doc had a lot of fun with that one.",
+        "target": "网络入侵者唤醒了飞船的人工智能。该混蛋从内部将其大脑烧毁。幽灵号的轨道炮又将另外两人化为齑粉，而所有人都还在惊慌失措。剩下的记忆一片模糊，充斥着血腥的尖叫和倾泻而下的子弹与等离子体。少数逃脱者后来因失血过多或因满是孔洞的宇航服冻死。\n\n维罗妮卡摘下她的手套，露出在昏暗的光线下闪闪发光的金属手。\n\n“我本也该死了，但夺走我手臂的等离子体爆发却为伤口止血。我逃离时用泡沫混凝土修补了宇航服。医生对这件事乐此不疲。”",
+        "metadata": {
+          "kind": "model",
+          "model": "gemma-3-27b-it"
+        }
+      },
+      {
+        "id": "qwen3.5-27b",
+        "source": "Net Breacher woke up the Ship's AI.  The bastard fried her brain from the inside out.  Rail from a Wraith turned another two to paste while everyone was still losing their shit.  Rest is a haze of bloody screams and a hail of bullets and plasma.  Few that got out died later of blood loss or froze from suits full o' holes.\"\nVeronica removes her glove revealing a metallic hand that glints brightly in the dim light of the structure.\n\"Woulda been dead myself but the plasma burst that took my arm cauterized the wound.  Patched the suit up with foamcrete on my way out.  The Doc had a lot of fun with that one.",
+        "target": "“网破者唤醒了飞船的人工智能。那混蛋从内部把她的大脑烧成了渣。当所有人还在崩溃之际，来自幽灵舰的轨道炮又把另外两人轰成了肉泥。剩下的记忆只是一片血色尖啸与弹雨、等离子束交织的混沌。少数逃出来的人，后来不是失血过多而死，就是因战衣千疮百孔而冻毙。”维罗妮卡摘下手套，露出一只金属义肢，在建筑昏暗的光线下熠熠生辉。“我本该也死了，但夺走我手臂的那道等离子爆发恰好烧灼封闭了伤口。撤离途中，我用泡沫混凝土修补了战衣。医生对此可真是乐在其中。”",
+        "metadata": {
+          "kind": "model",
+          "model": "qwen3.5-27b"
+        }
+      },
+      {
+        "id": "qwen3.5-9b",
+        "source": "Net Breacher woke up the Ship's AI.  The bastard fried her brain from the inside out.  Rail from a Wraith turned another two to paste while everyone was still losing their shit.  Rest is a haze of bloody screams and a hail of bullets and plasma.  Few that got out died later of blood loss or froze from suits full o' holes.\"\nVeronica removes her glove revealing a metallic hand that glints brightly in the dim light of the structure.\n\"Woulda been dead myself but the plasma burst that took my arm cauterized the wound.  Patched the suit up with foamcrete on my way out.  The Doc had a lot of fun with that one.",
+        "target": "网络破坏者唤醒了舰船的人工智能。那混蛋从内到外烧毁了她的思维。来自幽灵的雷尔在众人还惊魂未定之际，又让两名同伴化为肉泥。其余的一切不过是血腥的尖叫、密集的子弹与等离子火雨的混沌景象。侥幸逃出生天者，大多后来死于失血过多，或因战甲遍布弹孔而冻僵。\n维罗妮卡摘下手套，露出一只在昏暗结构的光线下熠熠生辉的金属义肢。\n“我也差点没命，但那次炸断我手臂的等离子爆发同时灼烧封住了伤口。撤离途中我用泡沫混凝土修补了战甲。那位医生在那件事上玩得挺开心。”",
+        "metadata": {
+          "kind": "model",
+          "model": "qwen3.5-9b"
+        }
+      },
+      {
+        "id": "human_reference",
+        "source": "Net Breacher woke up the Ship's AI.  The bastard fried her brain from the inside out.  Rail from a Wraith turned another two to paste while everyone was still losing their shit.  Rest is a haze of bloody screams and a hail of bullets and plasma.  Few that got out died later of blood loss or froze from suits full o' holes.\"\nVeronica removes her glove revealing a metallic hand that glints brightly in the dim light of the structure.\n\"Woulda been dead myself but the plasma burst that took my arm cauterized the wound.  Patched the suit up with foamcrete on my way out.  The Doc had a lot of fun with that one.",
+        "target": "我们的骇客唤醒了飞船的AI，那王八蛋直接从内部烤熟了她的脑子。大家还乱作一团的时候，一发来自幽灵的磁轨炮就把另外两个人轰成了肉酱。之后就是一片血肉模糊的惨叫，还有枪林弹雨和等离子流。少数几个逃出来的人，最后不是失血过多而死，就是因为防护服破了洞被活活冻死。\"\n维罗妮卡摘下手套，露出一只在昏暗光线下闪着寒光的金属手。\n\"要不是那道夺走我胳膊的等离子束顺便烧灼了伤口，我自己也死定了。我用泡沫混凝土把防护服的破口堵上，才勉强逃了出来。可把医生给乐坏了。",
+        "metadata": {
+          "kind": "human",
+          "reference_field": "zh_CN"
+        }
+      }
+    ]
+  },
+  {
+    "id": "translation_2a43348e50f76cd6",
+    "metadata": {
+      "title": "Cataclysm: Dark Days Ahead",
+      "source_language": "en",
+      "target_language": "zh_CN",
+      "original_index": 1223,
+      "difficulty_score": -0.0428709388,
+      "human_reference_available": true
+    },
+    "candidates": [
+      {
+        "id": "aya-expanse-32b",
+        "source": "We're all thinking the same thing, aren't we?  Not much this could be but some kind of secret magic bullshit.  At first, I thought it was our own people, but after all that went down, it's just too much.  It must've been some kind of dangerous foreigners.  I wonder if those sons of bitches are sitting back home, right as rain, watching us struggling down here and waiting for things to die down.",
+        "target": "我们都想着同样的事情，对吧？这很可能是一种秘密的、神奇的、胡说八道的东西。起初，我以为是我们自己人，但后来发生的一切都太离谱了。这肯定是一些危险的外国人。我想知道这些该死的家伙是否坐在家里，安然无恙地看着我们在这里挣扎，等待事情平息。",
+        "metadata": {
+          "kind": "model",
+          "model": "aya-expanse-32b"
+        }
+      },
+      {
+        "id": "gemma-3-12b-it",
+        "source": "We're all thinking the same thing, aren't we?  Not much this could be but some kind of secret magic bullshit.  At first, I thought it was our own people, but after all that went down, it's just too much.  It must've been some kind of dangerous foreigners.  I wonder if those sons of bitches are sitting back home, right as rain, watching us struggling down here and waiting for things to die down.",
+        "target": "我们都在想同一件事，对吧？ 肯定不是什么普通的事情，大概是某种神秘的魔法胡扯。一开始我以为是我们自己人，但经历了这么多之后，这太离谱了。 肯定是一些危险的外国人。 我想知道那些混蛋是不是回老家逍遥快活，看着我们在这里挣扎，等着事情平息。",
+        "metadata": {
+          "kind": "model",
+          "model": "gemma-3-12b-it"
+        }
+      },
+      {
+        "id": "gemma-3-27b-it",
+        "source": "We're all thinking the same thing, aren't we?  Not much this could be but some kind of secret magic bullshit.  At first, I thought it was our own people, but after all that went down, it's just too much.  It must've been some kind of dangerous foreigners.  I wonder if those sons of bitches are sitting back home, right as rain, watching us struggling down here and waiting for things to die down.",
+        "target": "我们都在想同样的事，对吧？除了某种秘密的魔法胡说八道，还能有什么？一开始，我以为是我们自己人，但经历了那些事之后，这实在太过了。一定是某种危险的外国人干的。我真想知道那些混蛋是不是现在正悠哉悠哉地待在家里，看着我们在这里挣扎，等着事情平息。",
+        "metadata": {
+          "kind": "model",
+          "model": "gemma-3-27b-it"
+        }
+      },
+      {
+        "id": "qwen3.5-27b",
+        "source": "We're all thinking the same thing, aren't we?  Not much this could be but some kind of secret magic bullshit.  At first, I thought it was our own people, but after all that went down, it's just too much.  It must've been some kind of dangerous foreigners.  I wonder if those sons of bitches are sitting back home, right as rain, watching us struggling down here and waiting for things to die down.",
+        "target": "我们都在想同一件事，对吧？这除了某种秘密的魔法胡扯，还能是什么？起初，我以为是我们自己人干的，但经历了这一切之后，事情显然太过分了。这一定是某些危险的外国人搞的鬼。我想知道，那些混蛋是不是正舒舒服服地待在家里，看着我们在这里苦苦挣扎，等着事态平息。",
+        "metadata": {
+          "kind": "model",
+          "model": "qwen3.5-27b"
+        }
+      },
+      {
+        "id": "qwen3.5-9b",
+        "source": "We're all thinking the same thing, aren't we?  Not much this could be but some kind of secret magic bullshit.  At first, I thought it was our own people, but after all that went down, it's just too much.  It must've been some kind of dangerous foreigners.  I wonder if those sons of bitches are sitting back home, right as rain, watching us struggling down here and waiting for things to die down.",
+        "target": "我们都在想同一件事，对吧？这不太可能是别的，只能是某种秘密魔法的胡扯。起初我以为是我们自己人干的，但经历了这一切后，实在太过分了。肯定是什么危险的外国人搞的鬼。我猜那些混蛋是不是正坐在家里的沙发上，安然无恙地看着我们在下面挣扎，等着事态平息。",
+        "metadata": {
+          "kind": "model",
+          "model": "qwen3.5-9b"
+        }
+      },
+      {
+        "id": "human_reference",
+        "source": "We're all thinking the same thing, aren't we?  Not much this could be but some kind of secret magic bullshit.  At first, I thought it was our own people, but after all that went down, it's just too much.  It must've been some kind of dangerous foreigners.  I wonder if those sons of bitches are sitting back home, right as rain, watching us struggling down here and waiting for things to die down.",
+        "target": "我们都在想同样的事情，不是吗？这不可能是什么秘密的魔法胡扯。起初，我以为是我们自己人，但经历了那么多事情之后，这实在太过分了。肯定是某些危险的外国人搞的鬼。我想知道那些混蛋是不是安坐在家里，看着我们在这里挣扎，等着事情平息下来。",
+        "metadata": {
+          "kind": "human",
+          "reference_field": "zh_CN"
+        }
+      }
+    ]
+  },
+  {
+    "id": "translation_c1a58838f8cfe45a",
+    "metadata": {
+      "title": "Cataclysm: Dark Days Ahead",
+      "source_language": "en",
+      "target_language": "zh_CN",
+      "original_index": 658,
+      "difficulty_score": -0.187465772,
+      "human_reference_available": true
+    },
+    "candidates": [
+      {
+        "id": "aya-expanse-32b",
+        "source": "Another new face.  So what'll it be this time?  Corpo Business?  Treasure Hunting?  Bounty Hunt?  Or maybe you heard about the lovely weather here and just had to experience it yourself?  Save yourself the trouble, there ain't nothing for you on Salus.  Want my advice?  Get off world 'fore some bot plasters your brains all over the snow.",
+        "target": "又一个新面孔。这次是什么任务呢？企业行动？寻宝？悬赏狩猎？还是你听说了这里的好天气，非要亲身体验一下？省省吧，萨勒斯星上没你什么事。我的建议是，在机器人把你脑袋拍扁之前赶紧离开。",
+        "metadata": {
+          "kind": "model",
+          "model": "aya-expanse-32b"
+        }
+      },
+      {
+        "id": "gemma-3-12b-it",
+        "source": "Another new face.  So what'll it be this time?  Corpo Business?  Treasure Hunting?  Bounty Hunt?  Or maybe you heard about the lovely weather here and just had to experience it yourself?  Save yourself the trouble, there ain't nothing for you on Salus.  Want my advice?  Get off world 'fore some bot plasters your brains all over the snow.",
+        "target": "又一张陌生的面孔。这次又是什么来着？企业任务？寻宝探险？赏金猎人？还是说你听说这里天气不错，非要亲身体验一下？省省吧，在萨鲁斯星上什么都没有。我的建议是，赶紧离开这里，别等机器人把你脑浆都糊在雪地上。",
+        "metadata": {
+          "kind": "model",
+          "model": "gemma-3-12b-it"
+        }
+      },
+      {
+        "id": "gemma-3-27b-it",
+        "source": "Another new face.  So what'll it be this time?  Corpo Business?  Treasure Hunting?  Bounty Hunt?  Or maybe you heard about the lovely weather here and just had to experience it yourself?  Save yourself the trouble, there ain't nothing for you on Salus.  Want my advice?  Get off world 'fore some bot plasters your brains all over the snow.",
+        "target": "又一张新面孔。这次想干什么？公司事务？寻宝？赏金猎人？还是听说这儿天气不错，非来体验一下？省省吧，萨勒斯对你没好处。要我说？赶紧离开这颗星球，免得被机器人把你的脑浆糊在雪地上。",
+        "metadata": {
+          "kind": "model",
+          "model": "gemma-3-27b-it"
+        }
+      },
+      {
+        "id": "qwen3.5-27b",
+        "source": "Another new face.  So what'll it be this time?  Corpo Business?  Treasure Hunting?  Bounty Hunt?  Or maybe you heard about the lovely weather here and just had to experience it yourself?  Save yourself the trouble, there ain't nothing for you on Salus.  Want my advice?  Get off world 'fore some bot plasters your brains all over the snow.",
+        "target": "又一张新面孔。这次又是为了什么？公司生意？寻宝？赏金猎杀？还是听说这儿天气宜人，非要亲自来体验一番？省省吧，萨鲁斯这儿没什么值得你留恋的。要我给点建议吗？趁某个机器人没把你的脑浆糊在雪地上之前，赶紧滚出这颗星球。",
+        "metadata": {
+          "kind": "model",
+          "model": "qwen3.5-27b"
+        }
+      },
+      {
+        "id": "qwen3.5-9b",
+        "source": "Another new face.  So what'll it be this time?  Corpo Business?  Treasure Hunting?  Bounty Hunt?  Or maybe you heard about the lovely weather here and just had to experience it yourself?  Save yourself the trouble, there ain't nothing for you on Salus.  Want my advice?  Get off world 'fore some bot plasters your brains all over the snow.",
+        "target": "又一个新面孔。这次会是什么？企业商务？寻宝？悬赏猎杀？还是听说这儿天气宜人，非要亲自体验一番？省省吧，在萨勒斯星你什么都找不到。听我一句劝：趁还没被某个机器人把脑子糊满雪花，赶紧离开这颗星球。",
+        "metadata": {
+          "kind": "model",
+          "model": "qwen3.5-9b"
+        }
+      },
+      {
+        "id": "human_reference",
+        "source": "Another new face.  So what'll it be this time?  Corpo Business?  Treasure Hunting?  Bounty Hunt?  Or maybe you heard about the lovely weather here and just had to experience it yourself?  Save yourself the trouble, there ain't nothing for you on Salus.  Want my advice?  Get off world 'fore some bot plasters your brains all over the snow.",
+        "target": "又来个新面孔。这次是图什么？公司业务？寻宝？还是为了赏金？或者你听说这儿天气宜人，非要亲身体验一下？省省吧，萨勒斯这破地方没什么值得你来的。听我一句劝：赶紧滚蛋，免得哪天你的脑浆就被机器人糊得满雪地都是。",
+        "metadata": {
+          "kind": "human",
+          "reference_field": "zh_CN"
+        }
+      }
+    ]
+  },
+  {
+    "id": "translation_0b3dd0fb70012927",
+    "metadata": {
+      "title": "Cataclysm: Dark Days Ahead",
+      "source_language": "en",
+      "target_language": "zh_CN",
+      "original_index": 143,
+      "difficulty_score": -0.6225440502,
+      "human_reference_available": true
+    },
+    "candidates": [
+      {
+        "id": "aya-expanse-32b",
+        "source": "Right and done, don't let whatever you are going after turn you into a pork loin well done.  I's expectin' you back.",
+        "target": "对了，别让你追求的东西把你变成烤得熟透的里脊肉。我等着你回来。",
+        "metadata": {
+          "kind": "model",
+          "model": "aya-expanse-32b"
+        }
+      },
+      {
+        "id": "gemma-3-12b-it",
+        "source": "Right and done, don't let whatever you are going after turn you into a pork loin well done.  I's expectin' you back.",
+        "target": "搞定了，别为了追求你想要的东西把自己变成一块烤得过头的猪里脊肉。我等你回来。",
+        "metadata": {
+          "kind": "model",
+          "model": "gemma-3-12b-it"
+        }
+      },
+      {
+        "id": "gemma-3-27b-it",
+        "source": "Right and done, don't let whatever you are going after turn you into a pork loin well done.  I's expectin' you back.",
+        "target": "没问题，搞定。别为了追求什么，把自己搞得像烤焦的猪里脊。我等着你回来。",
+        "metadata": {
+          "kind": "model",
+          "model": "gemma-3-27b-it"
+        }
+      },
+      {
+        "id": "qwen3.5-27b",
+        "source": "Right and done, don't let whatever you are going after turn you into a pork loin well done.  I's expectin' you back.",
+        "target": "没错，搞定。别让你追求的目标把你变成一块全熟的猪里脊。我等着你回来。",
+        "metadata": {
+          "kind": "model",
+          "model": "qwen3.5-27b"
+        }
+      },
+      {
+        "id": "qwen3.5-9b",
+        "source": "Right and done, don't let whatever you are going after turn you into a pork loin well done.  I's expectin' you back.",
+        "target": "行，办妥了。别为了追求目标，把自己做成了“全熟”的猪里脊。我等你回来。",
+        "metadata": {
+          "kind": "model",
+          "model": "qwen3.5-9b"
+        }
+      },
+      {
+        "id": "human_reference",
+        "source": "Right and done, don't let whatever you are going after turn you into a pork loin well done.  I's expectin' you back.",
+        "target": "就这么定了，别让你要去对付的那些家伙把你烤成一块全熟的猪里脊。俺可等着你回来。",
+        "metadata": {
+          "kind": "human",
+          "reference_field": "zh_CN"
+        }
+      }
+    ]
+  },
+  {
+    "id": "translation_d36daccc9b26fc68",
+    "metadata": {
+      "title": "Cataclysm: Dark Days Ahead",
+      "source_language": "en",
+      "target_language": "zh_CN",
+      "original_index": 1029,
+      "difficulty_score": -0.0883038715,
+      "human_reference_available": true
+    },
+    "candidates": [
+      {
+        "id": "aya-expanse-32b",
+        "source": "\"No, you can't get high off air freshener, you dumbass.  I just miss the smell of living things.  Cheap fake pine in close enough.\"",
+        "target": "“不，你不会因为空气清新剂而兴奋，你这个傻瓜。我只是想念生物的气味。便宜的假松木味也行。”",
+        "metadata": {
+          "kind": "model",
+          "model": "aya-expanse-32b"
+        }
+      },
+      {
+        "id": "gemma-3-12b-it",
+        "source": "\"No, you can't get high off air freshener, you dumbass.  I just miss the smell of living things.  Cheap fake pine in close enough.\"",
+        "target": "不行，你闻空气清新剂是得不到幻觉的，你个笨蛋。我只是想闻到有生命气息的味道。这种廉价的假松味凑合凑合吧。",
+        "metadata": {
+          "kind": "model",
+          "model": "gemma-3-12b-it"
+        }
+      },
+      {
+        "id": "gemma-3-27b-it",
+        "source": "\"No, you can't get high off air freshener, you dumbass.  I just miss the smell of living things.  Cheap fake pine in close enough.\"",
+        "target": "不，你不能靠空气清新剂来产生幻觉，你个傻瓜。我只是想念生物的味道。便宜的假松树味也差不多了。",
+        "metadata": {
+          "kind": "model",
+          "model": "gemma-3-27b-it"
+        }
+      },
+      {
+        "id": "qwen3.5-27b",
+        "source": "\"No, you can't get high off air freshener, you dumbass.  I just miss the smell of living things.  Cheap fake pine in close enough.\"",
+        "target": "“不，你不可能靠空气清新剂嗨起来，蠢货。我只是怀念活物的气息。廉价的假松味也差不多。”",
+        "metadata": {
+          "kind": "model",
+          "model": "qwen3.5-27b"
+        }
+      },
+      {
+        "id": "qwen3.5-9b",
+        "source": "\"No, you can't get high off air freshener, you dumbass.  I just miss the smell of living things.  Cheap fake pine in close enough.\"",
+        "target": "“不，你不可能靠空气清新剂嗨起来，你这蠢货。我只是怀念活物的气息。廉价的假松香也凑合。”",
+        "metadata": {
+          "kind": "model",
+          "model": "qwen3.5-9b"
+        }
+      },
+      {
+        "id": "human_reference",
+        "source": "\"No, you can't get high off air freshener, you dumbass.  I just miss the smell of living things.  Cheap fake pine in close enough.\"",
+        "target": "“不，你吸空气清新剂是嗨不起来的，你个蠢货。我只是想念活物的气味，廉价的假松木味也算聊胜于无了。”",
+        "metadata": {
+          "kind": "human",
+          "reference_field": "zh_CN"
+        }
+      }
+    ]
+  },
+  {
+    "id": "translation_93cb4fafce81f00c",
+    "metadata": {
+      "title": "Cataclysm: Dark Days Ahead",
+      "source_language": "en",
+      "target_language": "zh_CN",
+      "original_index": 1374,
+      "difficulty_score": -0.0194706842,
+      "human_reference_available": true
+    },
+    "candidates": [
+      {
+        "id": "aya-expanse-32b",
+        "source": "\"Good news: My teachers aren't trying to tear my limbs off about my homework.  Bad news: My teachers are trying to tear my limbs off regardless.\"",
+        "target": "好消息：我的老师们不是在为我的作业而撕扯我的四肢。坏消息：我的老师们无论如何都在撕扯我的四肢。",
+        "metadata": {
+          "kind": "model",
+          "model": "aya-expanse-32b"
+        }
+      },
+      {
+        "id": "gemma-3-12b-it",
+        "source": "\"Good news: My teachers aren't trying to tear my limbs off about my homework.  Bad news: My teachers are trying to tear my limbs off regardless.\"",
+        "target": "好消息：我的老师们对我的作业不是要撕我的胳膊腿。坏消息：我的老师们无论如何都要撕我的胳膊腿。",
+        "metadata": {
+          "kind": "model",
+          "model": "gemma-3-12b-it"
+        }
+      },
+      {
+        "id": "gemma-3-27b-it",
+        "source": "\"Good news: My teachers aren't trying to tear my limbs off about my homework.  Bad news: My teachers are trying to tear my limbs off regardless.\"",
+        "target": "好消息：我的老师们好像不会因为我的作业而把我撕成碎片。坏消息：我的老师们无论如何都要把我撕成碎片。",
+        "metadata": {
+          "kind": "model",
+          "model": "gemma-3-27b-it"
+        }
+      },
+      {
+        "id": "qwen3.5-27b",
+        "source": "\"Good news: My teachers aren't trying to tear my limbs off about my homework.  Bad news: My teachers are trying to tear my limbs off regardless.\"",
+        "target": "好消息：老师们不再因为我的作业而对我大动干戈。坏消息：他们无论如何都要对我大动干戈。",
+        "metadata": {
+          "kind": "model",
+          "model": "qwen3.5-27b"
+        }
+      },
+      {
+        "id": "qwen3.5-9b",
+        "source": "\"Good news: My teachers aren't trying to tear my limbs off about my homework.  Bad news: My teachers are trying to tear my limbs off regardless.\"",
+        "target": "好消息：我的老师并没有因为我的作业而试图把我拆了。坏消息：我的老师无论如何都要把我拆了。",
+        "metadata": {
+          "kind": "model",
+          "model": "qwen3.5-9b"
+        }
+      },
+      {
+        "id": "human_reference",
+        "source": "\"Good news: My teachers aren't trying to tear my limbs off about my homework.  Bad news: My teachers are trying to tear my limbs off regardless.\"",
+        "target": "“好消息：我的老师们并没有因为我的家庭作业而把我的四肢撕下来。坏消息：我的老师们正在不顾一切地把我的四肢撕下来。”",
+        "metadata": {
+          "kind": "human",
+          "reference_field": "zh_CN"
+        }
+      }
+    ]
+  },
+  {
+    "id": "translation_082e2aff8b4d1091",
+    "metadata": {
+      "title": "Cataclysm: Dark Days Ahead",
+      "source_language": "en",
+      "target_language": "zh_CN",
+      "original_index": 1356,
+      "difficulty_score": -0.022080496,
+      "human_reference_available": true
+    },
+    "candidates": [
+      {
+        "id": "aya-expanse-32b",
+        "source": "That's a lot of meat to break down.  You're going to want to get together a real butcher setup, hooks and all, rig up a way to keep the meat cold or even better frozen, and figure out some way to make it last longer.  Could do jerky, maybe get a canning operation going.  The main thing is to work fast before it goes bad.  Hey, I know a pretty good cook who could help with that.  No, she's dead.  I'm here though.",
+        "target": "这有好多肉要处理。你得准备好一个真正的屠夫设备，包括钩子等等，想办法保持肉的冷藏或者更好的是冷冻，并找到让它保质更久的办法。可以做成肉干，或者尝试进行罐装。最重要的是要快，不然肉会坏的。对了，我知道一个不错的厨师可以帮忙。不，她死了。不过我在这里。",
+        "metadata": {
+          "kind": "model",
+          "model": "aya-expanse-32b"
+        }
+      },
+      {
+        "id": "gemma-3-12b-it",
+        "source": "That's a lot of meat to break down.  You're going to want to get together a real butcher setup, hooks and all, rig up a way to keep the meat cold or even better frozen, and figure out some way to make it last longer.  Could do jerky, maybe get a canning operation going.  The main thing is to work fast before it goes bad.  Hey, I know a pretty good cook who could help with that.  No, she's dead.  I'm here though.",
+        "target": "处理这么多肉可不是一件容易的事。你需要准备一套正儿八经的屠宰设备，包括挂肉的钩子，以及保持肉类冷藏甚至冷冻的办法，还得想个办法延长它的保质期。可以做牛肉干，或者搞个罐头加工厂。最重要的是要尽快处理，防止腐烂。对了，我认识一个厨艺不错的，可以帮忙。哦，她已经去世了。不过我还在呢。",
+        "metadata": {
+          "kind": "model",
+          "model": "gemma-3-12b-it"
+        }
+      },
+      {
+        "id": "gemma-3-27b-it",
+        "source": "That's a lot of meat to break down.  You're going to want to get together a real butcher setup, hooks and all, rig up a way to keep the meat cold or even better frozen, and figure out some way to make it last longer.  Could do jerky, maybe get a canning operation going.  The main thing is to work fast before it goes bad.  Hey, I know a pretty good cook who could help with that.  No, she's dead.  I'm here though.",
+        "target": "这肉太多了，处理起来可不容易。你需要弄一套像样的屠宰工具，包括钩子之类的，再想办法把肉保持低温，最好是冷冻起来，还得想想怎么让它保存更久。可以做肉干，或者搞个罐头加工。最重要的是要快，别让它坏掉。嘿，我认识一个厨艺很棒的人，可以帮忙。不，她死了。不过我在这里。",
+        "metadata": {
+          "kind": "model",
+          "model": "gemma-3-27b-it"
+        }
+      },
+      {
+        "id": "qwen3.5-27b",
+        "source": "That's a lot of meat to break down.  You're going to want to get together a real butcher setup, hooks and all, rig up a way to keep the meat cold or even better frozen, and figure out some way to make it last longer.  Could do jerky, maybe get a canning operation going.  The main thing is to work fast before it goes bad.  Hey, I know a pretty good cook who could help with that.  No, she's dead.  I'm here though.",
+        "target": "要处理这么多肉，你得准备一套像样的屠宰设备，包括挂钩等，还要想办法让肉保持低温，最好能冷冻，并找到延长保质期的方法。可以做成肉干，或者搞个罐头加工。关键是要在肉变质前快速处理。嘿，我认识一位很不错的厨师，本可以帮忙的。不，她已经去世了。不过，我现在在这儿。",
+        "metadata": {
+          "kind": "model",
+          "model": "qwen3.5-27b"
+        }
+      },
+      {
+        "id": "qwen3.5-9b",
+        "source": "That's a lot of meat to break down.  You're going to want to get together a real butcher setup, hooks and all, rig up a way to keep the meat cold or even better frozen, and figure out some way to make it last longer.  Could do jerky, maybe get a canning operation going.  The main thing is to work fast before it goes bad.  Hey, I know a pretty good cook who could help with that.  No, she's dead.  I'm here though.",
+        "target": "这可真是一大块肉要处理。你得弄一套正经的屠宰设备，包括挂钩之类的，搭个能保持肉类冷藏甚至更好的冷冻装置，再想办法延长保存时间。可以做成肉干，或许还能搞起罐头加工。最重要的是趁肉还没坏赶紧动手。嘿，我认识一位很会做饭的人能帮忙，可惜她已去世。不过，我在这儿。",
+        "metadata": {
+          "kind": "model",
+          "model": "qwen3.5-9b"
+        }
+      },
+      {
+        "id": "human_reference",
+        "source": "That's a lot of meat to break down.  You're going to want to get together a real butcher setup, hooks and all, rig up a way to keep the meat cold or even better frozen, and figure out some way to make it last longer.  Could do jerky, maybe get a canning operation going.  The main thing is to work fast before it goes bad.  Hey, I know a pretty good cook who could help with that.  No, she's dead.  I'm here though.",
+        "target": "要分解的肉太多了。你得需要正规的屠宰环境，挂肉钩等等成套装备，还得有冷藏的方法，当然能冷冻更好，还需要找到能够长期储存的方法，像是做些肉干，或者做成罐头。最主要的是在肉开始腐烂之前尽快把事做完。嘿，我曾经认识个很好的厨子，能帮上忙。不过，她死了。但这里还有我。",
+        "metadata": {
+          "kind": "human",
+          "reference_field": "zh_CN"
+        }
+      }
+    ]
+  },
+  {
+    "id": "translation_d6c98d727e296067",
+    "metadata": {
+      "title": "Cataclysm: Dark Days Ahead",
+      "source_language": "en",
+      "target_language": "zh_CN",
+      "original_index": 188,
+      "difficulty_score": -0.5363970995,
+      "human_reference_available": true
+    },
+    "candidates": [
+      {
+        "id": "aya-expanse-32b",
+        "source": "*pauses for a moment, and lets out a slow sigh, speaking hesitantly as they catch themselves in idioms.  \"Make no contact.  We ken… we think the abroad o'… the outside o' the bunker be safe an'… be safe to explore, for one such as ye, who harks as from this'n land.  A wander in and escolt… a look around we ken as no… no risk.  If ye think ye been spotted, wave along and make no mention of ol' Rubik and the Exodii.  Not afore we be razzed some more o' this rattlin'… this bunker.\"",
+        "target": "停顿了一会儿，慢慢地叹了口气，语气中带着犹豫，仿佛在小心翼翼地挑选词语。“不要有任何接触。我们认为……我们觉得 bunker 外面……外面的环境是安全的，对像你这样的异乡人来说，是可以安全探索的。我们可以进去看看，带你转一转，应该没有风险。如果你觉得被发现了，就挥挥手，别提 Rubik 和 Exodii 的事。先别让我们再经历这种震动……这种 bunker 了。”",
+        "metadata": {
+          "kind": "model",
+          "model": "aya-expanse-32b"
+        }
+      },
+      {
+        "id": "gemma-3-12b-it",
+        "source": "*pauses for a moment, and lets out a slow sigh, speaking hesitantly as they catch themselves in idioms.  \"Make no contact.  We ken… we think the abroad o'… the outside o' the bunker be safe an'… be safe to explore, for one such as ye, who harks as from this'n land.  A wander in and escolt… a look around we ken as no… no risk.  If ye think ye been spotted, wave along and make no mention of ol' Rubik and the Exodii.  Not afore we be razzed some more o' this rattlin'… this bunker.\"",
+        "target": "停顿了一下，叹了口气，犹豫着说，时不时地用习语来表达。“不要接触。我们…我们认为…这个…外部区域…对像你这样，似乎来自这片土地的人来说，是安全的…安全的可以探索的。稍微走进去看看…看看情况，我们认为没有…没有风险。如果你觉得被发现了，挥挥手，不要提老鲁比克和外迁计划。在我们再调查一下这个…这个摇摇晃晃的…这个掩体之前。”",
+        "metadata": {
+          "kind": "model",
+          "model": "gemma-3-12b-it"
+        }
+      },
+      {
+        "id": "gemma-3-27b-it",
+        "source": "*pauses for a moment, and lets out a slow sigh, speaking hesitantly as they catch themselves in idioms.  \"Make no contact.  We ken… we think the abroad o'… the outside o' the bunker be safe an'… be safe to explore, for one such as ye, who harks as from this'n land.  A wander in and escolt… a look around we ken as no… no risk.  If ye think ye been spotted, wave along and make no mention of ol' Rubik and the Exodii.  Not afore we be razzed some more o' this rattlin'… this bunker.\"",
+        "target": "停顿了一下，缓缓叹了口气，说话犹豫，似乎总是不自觉地使用一些古老的说法。“不要联系任何人。我们…我们认为地堡外面…外部世界对你来说是安全的，可以探索，尤其是像你这样来自这片土地的人。一次简单的巡逻…四处看看，我们认为没有…没有风险。如果你觉得被人发现了，挥挥手，不要提到老鲁比克和埃克索迪。在我们进一步了解…这个地堡的情况之前，不要这样做。”",
+        "metadata": {
+          "kind": "model",
+          "model": "gemma-3-27b-it"
+        }
+      },
+      {
+        "id": "qwen3.5-27b",
+        "source": "*pauses for a moment, and lets out a slow sigh, speaking hesitantly as they catch themselves in idioms.  \"Make no contact.  We ken… we think the abroad o'… the outside o' the bunker be safe an'… be safe to explore, for one such as ye, who harks as from this'n land.  A wander in and escolt… a look around we ken as no… no risk.  If ye think ye been spotted, wave along and make no mention of ol' Rubik and the Exodii.  Not afore we be razzed some more o' this rattlin'… this bunker.\"",
+        "target": "*停顿片刻，缓缓叹息，说话时因不擅成语而略显迟疑*：“切勿接触。我们……我们认为，对于像你这样来自此地的人而言，避难所的外围……外部是安全的，可以探索。随意进出、四处张望，我们……我们认为并无……并无风险。若你察觉已被发现，便挥手示意，切勿提及老鲁比克与‘出离者’。在我们对这……这避难所的嘈杂声再行探究之前，切莫多言。”",
+        "metadata": {
+          "kind": "model",
+          "model": "qwen3.5-27b"
+        }
+      },
+      {
+        "id": "qwen3.5-9b",
+        "source": "*pauses for a moment, and lets out a slow sigh, speaking hesitantly as they catch themselves in idioms.  \"Make no contact.  We ken… we think the abroad o'… the outside o' the bunker be safe an'… be safe to explore, for one such as ye, who harks as from this'n land.  A wander in and escolt… a look around we ken as no… no risk.  If ye think ye been spotted, wave along and make no mention of ol' Rubik and the Exodii.  Not afore we be razzed some more o' this rattlin'… this bunker.\"",
+        "target": "*停顿片刻，缓缓叹息，说话时略显犹豫，因不自觉地使用了惯用语。*“切勿接触。我们……我们认为，掩体外的区域是安全的，适合像你这样来自这片土地的人探索。进去看看，我们会护送……四处瞧瞧，我们认为并无……并无风险。若你觉得已被发现，就挥手示意，切勿提及老鲁比克和‘出逃者’。在我们再次被这该死的掩体折腾一番之前，先别声张。”",
+        "metadata": {
+          "kind": "model",
+          "model": "qwen3.5-9b"
+        }
+      },
+      {
+        "id": "human_reference",
+        "source": "*pauses for a moment, and lets out a slow sigh, speaking hesitantly as they catch themselves in idioms.  \"Make no contact.  We ken… we think the abroad o'… the outside o' the bunker be safe an'… be safe to explore, for one such as ye, who harks as from this'n land.  A wander in and escolt… a look around we ken as no… no risk.  If ye think ye been spotted, wave along and make no mention of ol' Rubik and the Exodii.  Not afore we be razzed some more o' this rattlin'… this bunker.\"",
+        "target": "*他顿了顿，长叹一声，说话也磕磕巴巴的，似乎在努力纠正自己的土话。“别接触。俺们晓得……俺们觉得，这外边……这地堡外头是安全的……对你这种本地人来说，去探索是安全的。进去转转，瞧瞧……四处看看，俺们觉得没……没啥风险。要是你觉得自己被盯上了，就挥挥手走开，别提老鲁比克和‘远迁’一族的事。在俺们把这嘎吱作响的……这地堡，再给拾掇利索之前，都别提。”",
+        "metadata": {
+          "kind": "human",
+          "reference_field": "zh_CN"
+        }
+      }
+    ]
+  },
+  {
+    "id": "translation_fc7ccdbe6d26ea6f",
+    "metadata": {
+      "title": "Cataclysm: Dark Days Ahead",
+      "source_language": "en",
+      "target_language": "zh_CN",
+      "original_index": 993,
+      "difficulty_score": -0.0988131016,
+      "human_reference_available": true
+    },
+    "candidates": [
+      {
+        "id": "aya-expanse-32b",
+        "source": "You dream you are standing on a beach under a sun, swollen and red and filling a quarter of the sky.  The air is hot, and as you watch the sun expands to fill a third of the sky, then half, then more.  As you close your eyes against the blinding light, you wake up.",
+        "target": "你梦见自己站在海滩上，头顶是一轮肿胀的、红色的太阳，占据了天空的四分之一。空气炽热难耐，你看着太阳逐渐扩大，占据了天空的三分之一，然后是二分之一，越来越大。当你因刺眼的光芒而闭上眼睛时，你醒了过来。",
+        "metadata": {
+          "kind": "model",
+          "model": "aya-expanse-32b"
+        }
+      },
+      {
+        "id": "gemma-3-12b-it",
+        "source": "You dream you are standing on a beach under a sun, swollen and red and filling a quarter of the sky.  The air is hot, and as you watch the sun expands to fill a third of the sky, then half, then more.  As you close your eyes against the blinding light, you wake up.",
+        "target": "你梦见自己站在海滩上，阳光巨大而通红，占据了天空的四分之一。空气闷热，你眼睁睁地看着太阳不断膨胀，先是占据了天空的三分之一，然后一半，再然后更多。当你闭上眼睛抵挡刺眼的光芒时，你惊醒了。",
+        "metadata": {
+          "kind": "model",
+          "model": "gemma-3-12b-it"
+        }
+      },
+      {
+        "id": "gemma-3-27b-it",
+        "source": "You dream you are standing on a beach under a sun, swollen and red and filling a quarter of the sky.  The air is hot, and as you watch the sun expands to fill a third of the sky, then half, then more.  As you close your eyes against the blinding light, you wake up.",
+        "target": "你梦见自己站在海滩上，太阳肿胀、通红，占据了天空的四分之一。空气很热，你看着太阳不断膨胀，占据了天空的三分之一，然后一半，接着更多。当你闭上眼睛抵挡刺眼的光芒时，你醒了。",
+        "metadata": {
+          "kind": "model",
+          "model": "gemma-3-27b-it"
+        }
+      },
+      {
+        "id": "qwen3.5-27b",
+        "source": "You dream you are standing on a beach under a sun, swollen and red and filling a quarter of the sky.  The air is hot, and as you watch the sun expands to fill a third of the sky, then half, then more.  As you close your eyes against the blinding light, you wake up.",
+        "target": "你梦见自己站在海滩上，头顶是一轮肿胀而赤红的太阳，占据了四分之一的天空。空气灼热，你眼睁睁看着太阳不断膨胀，先是占满三分之一的天空，继而一半，随后更多。当你闭上双眼以抵御那刺目的强光时，你醒了。",
+        "metadata": {
+          "kind": "model",
+          "model": "qwen3.5-27b"
+        }
+      },
+      {
+        "id": "qwen3.5-9b",
+        "source": "You dream you are standing on a beach under a sun, swollen and red and filling a quarter of the sky.  The air is hot, and as you watch the sun expands to fill a third of the sky, then half, then more.  As you close your eyes against the blinding light, you wake up.",
+        "target": "你梦见自己站在海滩上，头顶是一轮肿胀而通红的太阳，占据了天空的四分之一。空气灼热，你眼睁睁看着太阳逐渐扩大，填满三分之一的天空，继而一半，再更多。当你被刺眼的光芒逼得闭上双眼时，你醒了。",
+        "metadata": {
+          "kind": "model",
+          "model": "qwen3.5-9b"
+        }
+      },
+      {
+        "id": "human_reference",
+        "source": "You dream you are standing on a beach under a sun, swollen and red and filling a quarter of the sky.  The air is hot, and as you watch the sun expands to fill a third of the sky, then half, then more.  As you close your eyes against the blinding light, you wake up.",
+        "target": "你梦见自己站在阳光下的海滩上，太阳又红又肿，占据了四分之一的天空。空气很热，然后你看到太阳膨胀到三分之一的天空，然后是一半，然后是更多。当你在耀眼的光芒下闭上眼睛时，你醒了。",
+        "metadata": {
+          "kind": "human",
+          "reference_field": "zh_CN"
+        }
+      }
+    ]
+  },
+  {
+    "id": "translation_85e4f5694d67ad27",
+    "metadata": {
+      "title": "Cataclysm: Dark Days Ahead",
+      "source_language": "en",
+      "target_language": "zh_CN",
+      "original_index": 222,
+      "difficulty_score": -0.4893384576,
+      "human_reference_available": true
+    },
+    "candidates": [
+      {
+        "id": "aya-expanse-32b",
+        "source": "kssht.  Dark Horse, this is Blue Jay, what's your status, over.  kssht.  Blue Jay, this is Dark Horse, still holding, but not for long.  kssht.  Dark Horse, you've got to hold position for 3 hours.  We're almost black on ammo, but resupply is on the way, over.  kssht.  Not possible Blue Jay, too many dead.  30 minutes max, and if you don't order us to retreat we're gone, over.  kssht.",
+        "target": "暗马，这是蓝鹟，你的情况如何？ 暗马，这是蓝鹟，还在坚持，但不会太久了。 暗马，你必须坚持3个小时。我们弹药快用完了，但补给正在路上。 蓝鹟，不行，太多人伤亡了。最多30分钟，如果你不命令我们撤退，我们就没了。",
+        "metadata": {
+          "kind": "model",
+          "model": "aya-expanse-32b"
+        }
+      },
+      {
+        "id": "gemma-3-12b-it",
+        "source": "kssht.  Dark Horse, this is Blue Jay, what's your status, over.  kssht.  Blue Jay, this is Dark Horse, still holding, but not for long.  kssht.  Dark Horse, you've got to hold position for 3 hours.  We're almost black on ammo, but resupply is on the way, over.  kssht.  Not possible Blue Jay, too many dead.  30 minutes max, and if you don't order us to retreat we're gone, over.  kssht.",
+        "target": "kssht. 黑马，这里是蓝鸟，你怎么样，完毕。 kssht. 蓝鸟，这里是黑马，还在坚守，但撑不了多久了。 kssht. 黑马，你必须坚守阵地3小时。我们弹药快耗尽了，但补给正在路上，完毕。 kssht. 不可能，蓝鸟，伤亡太惨重了。最多30分钟，如果你们不命令我们撤退，我们就撤走了，完毕。 kssht.",
+        "metadata": {
+          "kind": "model",
+          "model": "gemma-3-12b-it"
+        }
+      },
+      {
+        "id": "gemma-3-27b-it",
+        "source": "kssht.  Dark Horse, this is Blue Jay, what's your status, over.  kssht.  Blue Jay, this is Dark Horse, still holding, but not for long.  kssht.  Dark Horse, you've got to hold position for 3 hours.  We're almost black on ammo, but resupply is on the way, over.  kssht.  Not possible Blue Jay, too many dead.  30 minutes max, and if you don't order us to retreat we're gone, over.  kssht.",
+        "target": "咔嚓。黑马，这里是蓝鸟，报告你的情况，完毕。咔嚓。蓝鸟，这里是黑马，还在坚守，但撑不了多久了。咔嚓。黑马，你们必须坚守阵地3个小时。我们的弹药几乎耗尽，但补给正在路上，完毕。咔嚓。不可能，蓝鸟，牺牲太多了。最多30分钟，如果你们不命令我们撤退，我们就要完了，完毕。咔嚓。",
+        "metadata": {
+          "kind": "model",
+          "model": "gemma-3-27b-it"
+        }
+      },
+      {
+        "id": "qwen3.5-27b",
+        "source": "kssht.  Dark Horse, this is Blue Jay, what's your status, over.  kssht.  Blue Jay, this is Dark Horse, still holding, but not for long.  kssht.  Dark Horse, you've got to hold position for 3 hours.  We're almost black on ammo, but resupply is on the way, over.  kssht.  Not possible Blue Jay, too many dead.  30 minutes max, and if you don't order us to retreat we're gone, over.  kssht.",
+        "target": "喀嘶。黑马，这是蓝鸦，报告你的状态，完毕。喀嘶。蓝鸦，这是黑马，仍在坚守，但撑不了多久。喀嘶。黑马，你们必须坚守阵地 3 小时。我们弹药几乎耗尽，但补给正在途中，完毕。喀嘶。不可能，蓝鸦，伤亡太大。最多 30 分钟，若不下令撤退，我们就撤了，完毕。喀嘶。",
+        "metadata": {
+          "kind": "model",
+          "model": "qwen3.5-27b"
+        }
+      },
+      {
+        "id": "qwen3.5-9b",
+        "source": "kssht.  Dark Horse, this is Blue Jay, what's your status, over.  kssht.  Blue Jay, this is Dark Horse, still holding, but not for long.  kssht.  Dark Horse, you've got to hold position for 3 hours.  We're almost black on ammo, but resupply is on the way, over.  kssht.  Not possible Blue Jay, too many dead.  30 minutes max, and if you don't order us to retreat we're gone, over.  kssht.",
+        "target": "沙沙。黑马，这里是蓝鸟，你们情况如何？收到。沙沙。蓝鸟，这里是黑马，我们仍在坚守，但撑不了多久。沙沙。黑马，你们必须坚守阵地三小时。我们的弹药几乎耗尽，但补给正在路上，收到。沙沙。不可能，蓝鸟，伤亡太大。最多三十分钟，如果你们不下令撤退，我们就完了，收到。沙沙。",
+        "metadata": {
+          "kind": "model",
+          "model": "qwen3.5-9b"
+        }
+      },
+      {
+        "id": "human_reference",
+        "source": "kssht.  Dark Horse, this is Blue Jay, what's your status, over.  kssht.  Blue Jay, this is Dark Horse, still holding, but not for long.  kssht.  Dark Horse, you've got to hold position for 3 hours.  We're almost black on ammo, but resupply is on the way, over.  kssht.  Not possible Blue Jay, too many dead.  30 minutes max, and if you don't order us to retreat we're gone, over.  kssht.",
+        "target": "-*滋滋*-黑马，这里是蓝鸦，你的状态怎么样，完毕。-*滋滋*-蓝鸦，这里是黑马，我们还在坚持，不过坚持不了多久了。-*滋滋*-黑马，你得坚守3个小时。我们的弹药快耗尽了，但补给正在路上，完毕。-*滋滋*-不可能蓝鸦，伤亡过多。最多30分钟，如果你不下命令，我们就自行撤退，完毕。-*滋滋*-",
+        "metadata": {
+          "kind": "human",
+          "reference_field": "zh_CN"
+        }
+      }
+    ]
+  },
+  {
+    "id": "translation_4e00225912f607ff",
+    "metadata": {
+      "title": "Cataclysm: Dark Days Ahead",
+      "source_language": "en",
+      "target_language": "zh_CN",
+      "original_index": 1105,
+      "difficulty_score": -0.0682928339,
+      "human_reference_available": true
+    },
+    "candidates": [
+      {
+        "id": "aya-expanse-32b",
+        "source": "Kinda don't think she needs our help on this one, but she's in a bind I guess.\"  He pauses.  \"No pun intended this time,\" he chuckles.  \"Anyway, let's just find some spare fabric, choppy-choppy, and Bob's your uncle.\"  He thinks for a moment.  \"Actually she'll probably want them disinfected, and we should find her some tape too just to be on the safe side.",
+        "target": "“我觉得她可能不需要我们帮忙，但她现在有点为难。” 他停顿了一下，“这次不是开玩笑。” 他笑了笑，“不管怎样，我们快点找到一些多余的布料，就行了。” 他想了想，“对了，她可能还需要消毒，我们也给她找一些胶带，以防万一。”",
+        "metadata": {
+          "kind": "model",
+          "model": "aya-expanse-32b"
+        }
+      },
+      {
+        "id": "gemma-3-12b-it",
+        "source": "Kinda don't think she needs our help on this one, but she's in a bind I guess.\"  He pauses.  \"No pun intended this time,\" he chuckles.  \"Anyway, let's just find some spare fabric, choppy-choppy, and Bob's your uncle.\"  He thinks for a moment.  \"Actually she'll probably want them disinfected, and we should find her some tape too just to be on the safe side.",
+        "target": "“感觉她可能不需要我们的帮忙，但她好像遇到麻烦了。” 他停顿了一下。“这次没有双关语，真的。” 他笑着说。“总之，我们找点备用布料，咔嚓咔嚓剪一下，就搞定了。” 他想了想。“不过她可能想要消毒，我们最好也给她找点胶带，以防万一。”",
+        "metadata": {
+          "kind": "model",
+          "model": "gemma-3-12b-it"
+        }
+      },
+      {
+        "id": "gemma-3-27b-it",
+        "source": "Kinda don't think she needs our help on this one, but she's in a bind I guess.\"  He pauses.  \"No pun intended this time,\" he chuckles.  \"Anyway, let's just find some spare fabric, choppy-choppy, and Bob's your uncle.\"  He thinks for a moment.  \"Actually she'll probably want them disinfected, and we should find her some tape too just to be on the safe side.",
+        "target": "感觉她这事儿可能不需要我们帮忙，但好像是真的有点棘手吧。” 他停顿了一下。“这次可不是故意玩梗，”他笑着说。“总之，找点备用布料，剪一剪，就搞定了。” 他想了一会儿。“不过她可能要消毒一下，还得给她找点胶带，以防万一。”",
+        "metadata": {
+          "kind": "model",
+          "model": "gemma-3-27b-it"
+        }
+      },
+      {
+        "id": "qwen3.5-27b",
+        "source": "Kinda don't think she needs our help on this one, but she's in a bind I guess.\"  He pauses.  \"No pun intended this time,\" he chuckles.  \"Anyway, let's just find some spare fabric, choppy-choppy, and Bob's your uncle.\"  He thinks for a moment.  \"Actually she'll probably want them disinfected, and we should find her some tape too just to be on the safe side.",
+        "target": "“我有点觉得她这次不需要我们的帮忙，不过她确实有点进退两难吧。”他停顿了一下。“这次可没双关语的意思，”他笑着补充道。“总之，我们找点备用布料，咔嚓咔嚓剪几下，搞定。”他思索片刻，“不过她可能更希望布料先消毒，我们最好也给她找点胶带，以防万一。”",
+        "metadata": {
+          "kind": "model",
+          "model": "qwen3.5-27b"
+        }
+      },
+      {
+        "id": "qwen3.5-9b",
+        "source": "Kinda don't think she needs our help on this one, but she's in a bind I guess.\"  He pauses.  \"No pun intended this time,\" he chuckles.  \"Anyway, let's just find some spare fabric, choppy-choppy, and Bob's your uncle.\"  He thinks for a moment.  \"Actually she'll probably want them disinfected, and we should find her some tape too just to be on the safe side.",
+        "target": "我觉得她这次可能并不需要我们的帮助，但她确实有些棘手。他顿了顿，笑道：“这次可没有双关语的意思。”接着他说：“总之，我们先找些备用布料，剪剪剪，问题就解决了。”他思索片刻后补充道：“不过她大概会要求对布料进行消毒，我们最好再给她找些胶带，以防万一。”",
+        "metadata": {
+          "kind": "model",
+          "model": "qwen3.5-9b"
+        }
+      },
+      {
+        "id": "human_reference",
+        "source": "Kinda don't think she needs our help on this one, but she's in a bind I guess.\"  He pauses.  \"No pun intended this time,\" he chuckles.  \"Anyway, let's just find some spare fabric, choppy-choppy, and Bob's your uncle.\"  He thinks for a moment.  \"Actually she'll probably want them disinfected, and we should find her some tape too just to be on the safe side.",
+        "target": "我觉得这回她不需要我们帮忙，但她现在大概还有点困难，”他顿了顿，笑着说，“没别的意思。不管怎么说，我们还是找些多的布料吧，切吧切吧，完事。”他又想了想，说：“说不定她其实是想给他们消毒。保险起见，我们还应该帮她找些胶带。”",
+        "metadata": {
+          "kind": "human",
+          "reference_field": "zh_CN"
+        }
+      }
+    ]
+  },
+  {
+    "id": "translation_d18bb304cb651445",
+    "metadata": {
+      "title": "Cataclysm: Dark Days Ahead",
+      "source_language": "en",
+      "target_language": "zh_CN",
+      "original_index": 383,
+      "difficulty_score": -0.3174898028,
+      "human_reference_available": true
+    },
+    "candidates": [
+      {
+        "id": "aya-expanse-32b",
+        "source": "Something, something, wood pun, something something.  This is starting to feel like Settlers of Catan, think they'll give us some sheep in return?",
+        "target": "某物，某物，木头字谜，某物，某物。这开始感觉像《卡坦岛》，他们会给我们一些羊作为回报吗？",
+        "metadata": {
+          "kind": "model",
+          "model": "aya-expanse-32b"
+        }
+      },
+      {
+        "id": "gemma-3-12b-it",
+        "source": "Something, something, wood pun, something something.  This is starting to feel like Settlers of Catan, think they'll give us some sheep in return?",
+        "target": "一些什么，一些什么，木头相关的笑话，一些什么。这开始感觉像《卡坦岛》，他们会用羊群来交换吗？",
+        "metadata": {
+          "kind": "model",
+          "model": "gemma-3-12b-it"
+        }
+      },
+      {
+        "id": "gemma-3-27b-it",
+        "source": "Something, something, wood pun, something something.  This is starting to feel like Settlers of Catan, think they'll give us some sheep in return?",
+        "target": "一些，一些，一个关于木头的双关语，一些一些。这开始感觉像卡坦岛了，他们会给我们一些羊吗？",
+        "metadata": {
+          "kind": "model",
+          "model": "gemma-3-27b-it"
+        }
+      },
+      {
+        "id": "qwen3.5-27b",
+        "source": "Something, something, wood pun, something something.  This is starting to feel like Settlers of Catan, think they'll give us some sheep in return?",
+        "target": "某样东西，某样东西，木材双关，某样东西，某样东西。这感觉越来越像《卡坦岛》了，他们会不会反过来给我们一些羊呢？",
+        "metadata": {
+          "kind": "model",
+          "model": "qwen3.5-27b"
+        }
+      },
+      {
+        "id": "qwen3.5-9b",
+        "source": "Something, something, wood pun, something something.  This is starting to feel like Settlers of Catan, think they'll give us some sheep in return?",
+        "target": "什么，什么，木头双关语，什么什么。这开始像《卡坦岛》了，他们会不会用一些羊来回报我们？",
+        "metadata": {
+          "kind": "model",
+          "model": "qwen3.5-9b"
+        }
+      },
+      {
+        "id": "human_reference",
+        "source": "Something, something, wood pun, something something.  This is starting to feel like Settlers of Catan, think they'll give us some sheep in return?",
+        "target": "“木”有问题，一定“办”到，诸如此类的。这开始有点像《卡坦岛》了，你觉得他们会给我们一些羊作为回报吗？",
+        "metadata": {
+          "kind": "human",
+          "reference_field": "zh_CN"
+        }
+      }
+    ]
+  }
+]
