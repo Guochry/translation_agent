@@ -49,7 +49,7 @@ export function get_file_path() {
 }
 
 export function download_data(file_path) {
-    return fetch(file_path)
+    return fetch(file_path, { cache: 'no-cache' })
         .then(r => r.json())
         .then(json => { return json; });
 }

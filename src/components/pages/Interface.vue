@@ -117,7 +117,23 @@
         },
         set_hits_data(hit_data) {
             if (this.config?.manga_evaluation) {
+              const references = new Map()
+              for (const reference of this.input_data?.data || []) {
+                if (typeof reference.id !== 'string' || !reference.id) continue
+                // Duplicate IDs cannot safely identify a canonical page.
+                references.set(reference.id, references.has(reference.id) ? null : reference)
+              }
               for (const hit of hit_data) {
+                const reference = references.get(hit.id)
+                if (!Array.isArray(hit.reference_texts_ja) && reference
+                    && Array.isArray(hit.reference_texts) && Array.isArray(reference.reference_texts)
+                    && hit.reference_texts.length === reference.reference_texts.length
+                    && reference.reference_texts.every((text, index) => typeof text === 'string' && text === hit.reference_texts[index])
+                    && Array.isArray(reference.reference_texts_ja)
+                    && reference.reference_texts_ja.length === reference.reference_texts.length
+                    && reference.reference_texts_ja.every(text => typeof text === 'string')) {
+                  hit.reference_texts_ja = [...reference.reference_texts_ja]
+                }
                 for (const score of this.score_definitions) {
                   const field = scoreField(score)
                   if (!Number.isInteger(hit[field]) || !isValidScore(hit[field], score)) hit[field] = null
