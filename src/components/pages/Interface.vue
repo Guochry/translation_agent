@@ -9,6 +9,7 @@
   import tinycolor from 'tinycolor2';
   import _ from 'lodash';
   import { COLORS } from '../../assets/js/constants.js';
+  import { isValidScore, scoreConfigs, scoreField } from '../../assets/js/score-util.js';
 </script>
 
 <script>
@@ -66,6 +67,11 @@
       'get_export_data',
       'handle_uploaded_data'
     ],
+    computed: {
+      score_definitions() {
+        return scoreConfigs(this.config || {})
+      }
+    },
     watch: {
       input_data() {
         this.consume_data()
@@ -110,6 +116,14 @@
           this.current_hit = hit_num;
         },
         set_hits_data(hit_data) {
+            if (this.config?.manga_evaluation) {
+              for (const hit of hit_data) {
+                for (const score of this.score_definitions) {
+                  const field = scoreField(score)
+                  if (!Number.isInteger(hit[field]) || !isValidScore(hit[field], score)) hit[field] = null
+                }
+              }
+            }
             hit_data.forEach(o => o.edits = o.edits || []);
             hit_data.forEach((o, idx) => { o._thresh_id = idx + 1; });
             this.hits_data = hit_data;
@@ -299,7 +313,7 @@
           return css
         },
         isAdjacent() {
-          return this.config.hasOwnProperty('display') && Object.values(this.config.display).includes('side-by-side')
+          return !this.config.manga_evaluation && this.config.hasOwnProperty('display') && Object.values(this.config.display).includes('side-by-side')
         }
     },
     updated() {
@@ -319,7 +333,7 @@
 </script>
 
 <template>
-  <div v-if="config != null" class="container mb0 card-body" :data-panel="panelId" v-bind:class="{ 'w-100 w-adjacent': isAdjacent(), 'w-65': !isAdjacent() }">
+  <div v-if="config != null" class="container mb0 card-body" :data-panel="panelId" v-bind:class="{ 'w-100 w-adjacent': isAdjacent(), 'w-65': !isAdjacent(), 'manga-interface': config.manga_evaluation }">
     <div class='custom_style' id='custom_style'>Custom style has not loaded!</div>
     <div v-if="highlight" class="tc f3 b mb3 mt3 adjudication-highlight">
       {{ config.interface_text.adjudication.highlight_label }}
@@ -337,11 +351,21 @@
           :handle_uploaded_data="handle_uploaded_data"
         >
           <template #score>
-            <OverallScore v-if="config.overall_score" v-bind="$data" :config="config" />
+            <div v-if="Array.isArray(config.scores) && score_definitions.length" class="manga-scores" aria-label="Page ratings">
+              <OverallScore
+                v-for="score in score_definitions"
+                :key="scoreField(score)"
+                v-bind="$data"
+                :config="config"
+                :score_definition="score"
+                :caption="score.label || score.name || 'Score'"
+              />
+            </div>
+            <OverallScore v-else-if="!Array.isArray(config.scores) && config.overall_score" v-bind="$data" :config="config" />
           </template>
         </HitBox>
       </div>
-      <div v-bind:class="{ 'annotation-adjacent': isAdjacent() }">
+      <div v-if="!config.manga_evaluation" v-bind:class="{ 'annotation-adjacent': isAdjacent() }">
         <AnnotationEditor v-bind="$data" :config="config" />
         <AnnotationViewer v-bind="$data" :config="config" />
       </div>

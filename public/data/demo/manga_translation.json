@@ -1,0 +1,4746 @@
+[
+  {
+    "id": "openmantra:fst_try:tojime_no_siora:000",
+    "original_image": "data/manga/fst_try/original/tojime_no_siora/000.jpg",
+    "translated_image": "data/manga/fst_try/translated/tojime_no_siora/000.png",
+    "reference_texts": [
+      "bound eye siora",
+      "Mitsuki Kuchitaka"
+    ],
+    "metadata": {
+      "book_title": "tojime_no_siora",
+      "page_index": 1,
+      "run_id": "fst_try",
+      "filename_stem": "000"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:tojime_no_siora:001",
+    "original_image": "data/manga/fst_try/original/tojime_no_siora/001.jpg",
+    "translated_image": "data/manga/fst_try/translated/tojime_no_siora/001.png",
+    "reference_texts": [
+      "I'm telling you!!",
+      "I don't know what you're talking about!",
+      "i don't owe you!",
+      "well, I'm sorry...",
+      "lene..."
+    ],
+    "metadata": {
+      "book_title": "tojime_no_siora",
+      "page_index": 2,
+      "run_id": "fst_try",
+      "filename_stem": "001"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:tojime_no_siora:002",
+    "original_image": "data/manga/fst_try/original/tojime_no_siora/002.jpg",
+    "translated_image": "data/manga/fst_try/translated/tojime_no_siora/002.png",
+    "reference_texts": [
+      "we've got proof here...",
+      "You know we need you to pay us back...",
+      "how should I know!?",
+      "how should I know about my father's debt in casinos...",
+      "excuse me...",
+      "are you a member of the Tortillano family?",
+      "huh?",
+      "we're having a conversation here! Get lost!",
+      "uh, um...",
+      "Please...! Wait...",
+      "ah!",
+      "guh!"
+    ],
+    "metadata": {
+      "book_title": "tojime_no_siora",
+      "page_index": 3,
+      "run_id": "fst_try",
+      "filename_stem": "002"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:tojime_no_siora:003",
+    "original_image": "data/manga/fst_try/original/tojime_no_siora/003.jpg",
+    "translated_image": "data/manga/fst_try/translated/tojime_no_siora/003.png",
+    "reference_texts": [
+      "hey, you...",
+      "i'm sorry, i can't see, I am a \"closed-eyes\"...",
+      "so what does a closed-eyes want from the likes of us!",
+      "uh...",
+      "I'm siora, a gunman",
+      "I heard that you Tortillanos are in charge around here",
+      "so i was wondering if you could hire me as a bodyguard...",
+      "so a closed-eyes is...",
+      "a gunman...?",
+      "well..."
+    ],
+    "metadata": {
+      "book_title": "tojime_no_siora",
+      "page_index": 4,
+      "run_id": "fst_try",
+      "filename_stem": "003"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:tojime_no_siora:004",
+    "original_image": "data/manga/fst_try/original/tojime_no_siora/004.jpg",
+    "translated_image": "data/manga/fst_try/translated/tojime_no_siora/004.png",
+    "reference_texts": [
+      "Don't mess with us.",
+      "ah..",
+      "closed-eyes for a bodyguard?",
+      "do you want me to shoot your brains out?!",
+      "huh?",
+      "er...",
+      "hey, just please stop!",
+      "...",
+      "huh?",
+      "are you...",
+      "a girl?",
+      "yes, but so...?",
+      "oh well...",
+      "let's take a look at your face.",
+      "hey!",
+      "If you have good qualities, your eyes wouldn't be a concern",
+      "hey, wait!"
+    ],
+    "metadata": {
+      "book_title": "tojime_no_siora",
+      "page_index": 5,
+      "run_id": "fst_try",
+      "filename_stem": "004"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:tojime_no_siora:005",
+    "original_image": "data/manga/fst_try/original/tojime_no_siora/005.jpg",
+    "translated_image": "data/manga/fst_try/translated/tojime_no_siora/005.png",
+    "reference_texts": [
+      "?!",
+      "what the...",
+      "you...",
+      "?",
+      "what is this!!",
+      "how dare you!",
+      "are you all right?!",
+      "i'll leave for today."
+    ],
+    "metadata": {
+      "book_title": "tojime_no_siora",
+      "page_index": 6,
+      "run_id": "fst_try",
+      "filename_stem": "005"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:tojime_no_siora:006",
+    "original_image": "data/manga/fst_try/original/tojime_no_siora/006.jpg",
+    "translated_image": "data/manga/fst_try/translated/tojime_no_siora/006.png",
+    "reference_texts": [
+      "but don't think you can stay like this forever.",
+      "lene",
+      "are you nuts?",
+      "you...",
+      "The Tortillanos are notorious for their gun fights! did you really think that they would hire you? ",
+      "and  picking a fight with \"the\" bill tortillano?",
+      "he's one half of the Tortillano brothers, and the most violent in town.",
+      "i see.",
+      "so that 7-feet-tall guy is the younger one of the mafia brothers.",
+      "that's right!",
+      "so you'd better get out of this town as soon as possible.",
+      "...wait a second. Bill's height is actually around 7, but",
+      "How do you know when you can't see anything...?"
+    ],
+    "metadata": {
+      "book_title": "tojime_no_siora",
+      "page_index": 7,
+      "run_id": "fst_try",
+      "filename_stem": "006"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:tojime_no_siora:007",
+    "original_image": "data/manga/fst_try/original/tojime_no_siora/007.jpg",
+    "translated_image": "data/manga/fst_try/translated/tojime_no_siora/007.png",
+    "reference_texts": [
+      "I can tell from whereabouts of the voice and how heavy the footsteps sounded.",
+      "you're 5 feet 7, you're slightly heavier than your height's average",
+      "what?!",
+      "how do you know that much!",
+      "I'm just kidding.",
+      "Don't say that again.",
+      "ha, ha.",
+      "well, i should get going.",
+      "I need to find a place to stay tonight.",
+      "ouch.",
+      "...",
+      "ugh, fine!",
+      "I guess I have a lot to thank for.",
+      "first, we need to do something about your dirty clothes.",
+      "your eyes.",
+      "if you don't want me to see them, cover them with a towel."
+    ],
+    "metadata": {
+      "book_title": "tojime_no_siora",
+      "page_index": 8,
+      "run_id": "fst_try",
+      "filename_stem": "007"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:tojime_no_siora:008",
+    "original_image": "data/manga/fst_try/original/tojime_no_siora/008.jpg",
+    "translated_image": "data/manga/fst_try/translated/tojime_no_siora/008.png",
+    "reference_texts": [
+      "well... thank you.",
+      "just leave everything to me.",
+      "you don't know how to shower in someone else's house, do you?",
+      "um...",
+      "you seem really used to treating closed-eyes people like me ",
+      "ah...",
+      "my father's sights weren't good, either.",
+      "no...",
+      "It gradually got worse, to be exact",
+      "he wasn't a good father. he was just a plain old painter.",
+      "he kept drawing naked woman to sell them to the tortillanos."
+    ],
+    "metadata": {
+      "book_title": "tojime_no_siora",
+      "page_index": 9,
+      "run_id": "fst_try",
+      "filename_stem": "008"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:tojime_no_siora:009",
+    "original_image": "data/manga/fst_try/original/tojime_no_siora/009.jpg",
+    "translated_image": "data/manga/fst_try/translated/tojime_no_siora/009.png",
+    "reference_texts": [
+      "but his eyes got worse and worse.",
+      "he must have been in so much pain.",
+      "He had less job, less money and ",
+      " he even tried to use me as the model for his paintings",
+      "in the end he made debt from gambling, and he dove into the river.",
+      "worst father ever, huh?",
+      "so...",
+      "did you model for him?",
+      "yeah...",
+      "he was so persistent.",
+      "I don't think I made him much money, though.",
+      "well...",
+      "I'm glad..."
+    ],
+    "metadata": {
+      "book_title": "tojime_no_siora",
+      "page_index": 10,
+      "run_id": "fst_try",
+      "filename_stem": "009"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:tojime_no_siora:010",
+    "original_image": "data/manga/fst_try/original/tojime_no_siora/010.jpg",
+    "translated_image": "data/manga/fst_try/translated/tojime_no_siora/010.png",
+    "reference_texts": [
+      "he must have been really happy",
+      "to be able to draw his daughter before he lost his sights completely."
+    ],
+    "metadata": {
+      "book_title": "tojime_no_siora",
+      "page_index": 11,
+      "run_id": "fst_try",
+      "filename_stem": "010"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:tojime_no_siora:011",
+    "original_image": "data/manga/fst_try/original/tojime_no_siora/011.jpg",
+    "translated_image": "data/manga/fst_try/translated/tojime_no_siora/011.png",
+    "reference_texts": [
+      "lene?",
+      "no, it's nothing.",
+      "I'm done with you're back.",
+      "come on, turn around.",
+      "by the way, what about you?",
+      "why did you take your gun with you?",
+      "and those eyes...",
+      "it's no big deal.",
+      "I killed a mafia who killed my parents.",
+      "and that's how I was kicked out of my hometown.",
+      "and these eyes...",
+      "are proof of sin."
+    ],
+    "metadata": {
+      "book_title": "tojime_no_siora",
+      "page_index": 12,
+      "run_id": "fst_try",
+      "filename_stem": "011"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:tojime_no_siora:012",
+    "original_image": "data/manga/fst_try/original/tojime_no_siora/012.jpg",
+    "translated_image": "data/manga/fst_try/translated/tojime_no_siora/012.png",
+    "reference_texts": [
+      "... ",
+      "and that's how you were made blind...?",
+      "how terrible...",
+      "all you did was avenge your family!",
+      "There's nothing terrible about this.",
+      "it's not half as tragic as your father's story.",
+      "I wanted blood.",
+      "People like me don't have a say in how we are treated.",
+      "why don't you put the gun down!",
+      "look what happened to you!",
+      "but...",
+      "then...",
+      "put down...?"
+    ],
+    "metadata": {
+      "book_title": "tojime_no_siora",
+      "page_index": 13,
+      "run_id": "fst_try",
+      "filename_stem": "012"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:tojime_no_siora:013",
+    "original_image": "data/manga/fst_try/original/tojime_no_siora/013.jpg",
+    "translated_image": "data/manga/fst_try/translated/tojime_no_siora/013.png",
+    "reference_texts": [
+      "what else would I have left?",
+      "if I put down my guns...?",
+      "I'll go prepare dinner.",
+      "tell me if you have inconvenience."
+    ],
+    "metadata": {
+      "book_title": "tojime_no_siora",
+      "page_index": 14,
+      "run_id": "fst_try",
+      "filename_stem": "013"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:tojime_no_siora:014",
+    "original_image": "data/manga/fst_try/original/tojime_no_siora/014.jpg",
+    "translated_image": "data/manga/fst_try/translated/tojime_no_siora/014.png",
+    "reference_texts": [
+      "she must be lying.",
+      "just like a beggar calling for attention",
+      "yes, it's got to be...",
+      "!",
+      "you're done already?",
+      "I'm just in time.",
+      "i'll guide you to your seat..."
+    ],
+    "metadata": {
+      "book_title": "tojime_no_siora",
+      "page_index": 15,
+      "run_id": "fst_try",
+      "filename_stem": "014"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:tojime_no_siora:015",
+    "original_image": "data/manga/fst_try/original/tojime_no_siora/015.jpg",
+    "translated_image": "data/manga/fst_try/translated/tojime_no_siora/015.png",
+    "reference_texts": [
+      "!!",
+      "I'm done!",
+      "oh, it smells good.",
+      "I can smell hamburg steaks.",
+      "huh?",
+      "lene?"
+    ],
+    "metadata": {
+      "book_title": "tojime_no_siora",
+      "page_index": 16,
+      "run_id": "fst_try",
+      "filename_stem": "015"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:tojime_no_siora:016",
+    "original_image": "data/manga/fst_try/original/tojime_no_siora/016.jpg",
+    "translated_image": "data/manga/fst_try/translated/tojime_no_siora/016.png",
+    "reference_texts": [
+      "shit!",
+      "let go of me!",
+      "what do you want!",
+      "hey, calm down.",
+      "I think my brother told you what I want.",
+      "that doesn't give you the reason to go this far",
+      "don tortillano !!"
+    ],
+    "metadata": {
+      "book_title": "tojime_no_siora",
+      "page_index": 17,
+      "run_id": "fst_try",
+      "filename_stem": "016"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:tojime_no_siora:017",
+    "original_image": "data/manga/fst_try/original/tojime_no_siora/017.jpg",
+    "translated_image": "data/manga/fst_try/translated/tojime_no_siora/017.png",
+    "reference_texts": [
+      "well, well...",
+      "what's with your manly personality?",
+      "anyway.",
+      "you've got a buyer.",
+      "buyer...?",
+      "a customer who bought your father's picture really likes you.",
+      "he told me that he wanted you, because you were the model.",
+      "you'd better be happy.",
+      "the buyer arrives in a few hours, by which time you'll be debt-free",
+      "of course"
+    ],
+    "metadata": {
+      "book_title": "tojime_no_siora",
+      "page_index": 18,
+      "run_id": "fst_try",
+      "filename_stem": "017"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:tojime_no_siora:018",
+    "original_image": "data/manga/fst_try/original/tojime_no_siora/018.jpg",
+    "translated_image": "data/manga/fst_try/translated/tojime_no_siora/018.png",
+    "reference_texts": [
+      "i don't know for sure how the buyer will treat you.",
+      "wha...",
+      "stop joking with me...!",
+      "s-someone...!",
+      "ha",
+      "it's no use, lene.",
+      "no one would hear you  in this off-town storage."
+    ],
+    "metadata": {
+      "book_title": "tojime_no_siora",
+      "page_index": 19,
+      "run_id": "fst_try",
+      "filename_stem": "018"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:tojime_no_siora:019",
+    "original_image": "data/manga/fst_try/original/tojime_no_siora/019.jpg",
+    "translated_image": "data/manga/fst_try/translated/tojime_no_siora/019.png",
+    "reference_texts": [
+      "oh well,",
+      "look how pathetic you are.",
+      "and your father. if his eyes weren't so bad I would have let him survive...",
+      "what the...",
+      "what's that supposed to mean?",
+      "might as well tell you before we won't see each other again for good",
+      "because your father was suffering from his blindness,",
+      "I offered to buy his picture at a higher price than usual.",
+      "for his convenience, I prepared him a contract",
+      "but, oops, my bad.",
+      "i got the wrong kind of paper.",
+      "with his eyes, it was impossible for him to notice"
+    ],
+    "metadata": {
+      "book_title": "tojime_no_siora",
+      "page_index": 20,
+      "run_id": "fst_try",
+      "filename_stem": "019"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:tojime_no_siora:020",
+    "original_image": "data/manga/fst_try/original/tojime_no_siora/020.jpg",
+    "translated_image": "data/manga/fst_try/translated/tojime_no_siora/020.png",
+    "reference_texts": [
+      "the contract paper he signed,",
+      "was an IOU for billions.",
+      "wait, then was my father...",
+      "do you think a painter without sight is valuable enough?",
+      "i couldn't help but take his non-valuable life!",
+      "he'd probably be drawing pictures of angel nude now!"
+    ],
+    "metadata": {
+      "book_title": "tojime_no_siora",
+      "page_index": 21,
+      "run_id": "fst_try",
+      "filename_stem": "020"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:tojime_no_siora:021",
+    "original_image": "data/manga/fst_try/original/tojime_no_siora/021.jpg",
+    "translated_image": "data/manga/fst_try/translated/tojime_no_siora/021.png",
+    "reference_texts": [
+      "huh?",
+      "ouch!",
+      "the window was higher than i thought.",
+      "hey...",
+      "who's this...?",
+      "siora?!",
+      "hey",
+      "sorry to visit you this late at night."
+    ],
+    "metadata": {
+      "book_title": "tojime_no_siora",
+      "page_index": 22,
+      "run_id": "fst_try",
+      "filename_stem": "021"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:tojime_no_siora:022",
+    "original_image": "data/manga/fst_try/original/tojime_no_siora/022.jpg",
+    "translated_image": "data/manga/fst_try/translated/tojime_no_siora/022.png",
+    "reference_texts": [
+      "I just wanted to...",
+      "pick her up...",
+      "don!",
+      "this kid is the closed eyes I told you about!",
+      "bill...",
+      "were you followed by him?",
+      "but it can't be possible...",
+      "his eyes are...",
+      "it's the smell.",
+      "the smell of Hamburg steak she made.",
+      "I followed the scent and came here..."
+    ],
+    "metadata": {
+      "book_title": "tojime_no_siora",
+      "page_index": 23,
+      "run_id": "fst_try",
+      "filename_stem": "022"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:tojime_no_siora:023",
+    "original_image": "data/manga/fst_try/original/tojime_no_siora/023.jpg",
+    "translated_image": "data/manga/fst_try/translated/tojime_no_siora/023.png",
+    "reference_texts": [
+      "but this place is filled with a filthy odor.",
+      "gosh, i might not feel very well.",
+      "and the dinner will get cold if we don't hurry.",
+      "please let us go in peace.",
+      "it's for the both of us.",
+      "......",
+      "bill...",
+      "yeah.",
+      "I guess this kid can't \"see\" the situation she's in.",
+      "we have to let her know.",
+      "this is for making fun of us.",
+      "siora!!"
+    ],
+    "metadata": {
+      "book_title": "tojime_no_siora",
+      "page_index": 24,
+      "run_id": "fst_try",
+      "filename_stem": "023"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:tojime_no_siora:024",
+    "original_image": "data/manga/fst_try/original/tojime_no_siora/024.jpg",
+    "translated_image": "data/manga/fst_try/translated/tojime_no_siora/024.png",
+    "reference_texts": [
+      "die."
+    ],
+    "metadata": {
+      "book_title": "tojime_no_siora",
+      "page_index": 25,
+      "run_id": "fst_try",
+      "filename_stem": "024"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:tojime_no_siora:025",
+    "original_image": "data/manga/fst_try/original/tojime_no_siora/025.jpg",
+    "translated_image": "data/manga/fst_try/translated/tojime_no_siora/025.png",
+    "reference_texts": [
+      "you",
+      "started the shooting."
+    ],
+    "metadata": {
+      "book_title": "tojime_no_siora",
+      "page_index": 26,
+      "run_id": "fst_try",
+      "filename_stem": "025"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:tojime_no_siora:027",
+    "original_image": "data/manga/fst_try/original/tojime_no_siora/027.jpg",
+    "translated_image": "data/manga/fst_try/translated/tojime_no_siora/027.png",
+    "reference_texts": [
+      "she...",
+      "is not a closed eyes!",
+      "she's a \"bound eyes\"!",
+      "\"bound eyes\"...?",
+      "oh, my god.",
+      "i've heard of her..."
+    ],
+    "metadata": {
+      "book_title": "tojime_no_siora",
+      "page_index": 28,
+      "run_id": "fst_try",
+      "filename_stem": "027"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:tojime_no_siora:028",
+    "original_image": "data/manga/fst_try/original/tojime_no_siora/028.jpg",
+    "translated_image": "data/manga/fst_try/translated/tojime_no_siora/028.png",
+    "reference_texts": [
+      "there was a gunman that killed all the mafias in the city for avenge.",
+      "people in the city feared his power.",
+      "so they burnt the eyes, patched the eyelid, and kicked her out of the city.",
+      "and that poor gunman,",
+      "is still shooting bad guys like ghosts even today.",
+      "and that's her...?"
+    ],
+    "metadata": {
+      "book_title": "tojime_no_siora",
+      "page_index": 29,
+      "run_id": "fst_try",
+      "filename_stem": "028"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:tojime_no_siora:029",
+    "original_image": "data/manga/fst_try/original/tojime_no_siora/029.jpg",
+    "translated_image": "data/manga/fst_try/translated/tojime_no_siora/029.png",
+    "reference_texts": [
+      "a bound eye gunner.",
+      "i didn't expect a kid...",
+      "oh well.",
+      "Who's the blind one here?"
+    ],
+    "metadata": {
+      "book_title": "tojime_no_siora",
+      "page_index": 30,
+      "run_id": "fst_try",
+      "filename_stem": "029"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:tojime_no_siora:030",
+    "original_image": "data/manga/fst_try/original/tojime_no_siora/030.jpg",
+    "translated_image": "data/manga/fst_try/translated/tojime_no_siora/030.png",
+    "reference_texts": [
+      "don't despise me",
+      "as a closed eyes.",
+      "he's got the lights!",
+      "lene,",
+      "hold still."
+    ],
+    "metadata": {
+      "book_title": "tojime_no_siora",
+      "page_index": 31,
+      "run_id": "fst_try",
+      "filename_stem": "030"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:tojime_no_siora:031",
+    "original_image": "data/manga/fst_try/original/tojime_no_siora/031.jpg",
+    "translated_image": "data/manga/fst_try/translated/tojime_no_siora/031.png",
+    "reference_texts": [
+      "because now",
+      "i'm the only one who \"sees\" the situation here"
+    ],
+    "metadata": {
+      "book_title": "tojime_no_siora",
+      "page_index": 32,
+      "run_id": "fst_try",
+      "filename_stem": "031"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:tojime_no_siora:032",
+    "original_image": "data/manga/fst_try/original/tojime_no_siora/032.jpg",
+    "translated_image": "data/manga/fst_try/translated/tojime_no_siora/032.png",
+    "reference_texts": [],
+    "metadata": {
+      "book_title": "tojime_no_siora",
+      "page_index": 33,
+      "run_id": "fst_try",
+      "filename_stem": "032"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:tojime_no_siora:033",
+    "original_image": "data/manga/fst_try/original/tojime_no_siora/033.jpg",
+    "translated_image": "data/manga/fst_try/translated/tojime_no_siora/033.png",
+    "reference_texts": [
+      "\"pant\"",
+      "\"pant\"",
+      "\"pant\"",
+      "\"pant\"",
+      "I'm still alive...",
+      "but..."
+    ],
+    "metadata": {
+      "book_title": "tojime_no_siora",
+      "page_index": 34,
+      "run_id": "fst_try",
+      "filename_stem": "033"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:tojime_no_siora:034",
+    "original_image": "data/manga/fst_try/original/tojime_no_siora/034.jpg",
+    "translated_image": "data/manga/fst_try/translated/tojime_no_siora/034.png",
+    "reference_texts": [
+      "am i the only one?"
+    ],
+    "metadata": {
+      "book_title": "tojime_no_siora",
+      "page_index": 35,
+      "run_id": "fst_try",
+      "filename_stem": "034"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:tojime_no_siora:035",
+    "original_image": "data/manga/fst_try/original/tojime_no_siora/035.jpg",
+    "translated_image": "data/manga/fst_try/translated/tojime_no_siora/035.png",
+    "reference_texts": [
+      "are you all right?",
+      "lene?",
+      "yeah.",
+      "damn!",
+      "my...",
+      "my family....",
+      "why did this have to happen?",
+      "why, you say?",
+      "don't be silly."
+    ],
+    "metadata": {
+      "book_title": "tojime_no_siora",
+      "page_index": 36,
+      "run_id": "fst_try",
+      "filename_stem": "035"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:tojime_no_siora:036",
+    "original_image": "data/manga/fst_try/original/tojime_no_siora/036.jpg",
+    "translated_image": "data/manga/fst_try/translated/tojime_no_siora/036.png",
+    "reference_texts": [
+      "then why?!",
+      "why did my father have to die!!",
+      "wait, wait.",
+      "don't shoot me.",
+      "die!",
+      "die!!!!"
+    ],
+    "metadata": {
+      "book_title": "tojime_no_siora",
+      "page_index": 37,
+      "run_id": "fst_try",
+      "filename_stem": "036"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:tojime_no_siora:037",
+    "original_image": "data/manga/fst_try/original/tojime_no_siora/037.jpg",
+    "translated_image": "data/manga/fst_try/translated/tojime_no_siora/037.png",
+    "reference_texts": [
+      "why...?",
+      "why!!!",
+      "siora!!!",
+      "he killed my father...",
+      "lene."
+    ],
+    "metadata": {
+      "book_title": "tojime_no_siora",
+      "page_index": 38,
+      "run_id": "fst_try",
+      "filename_stem": "037"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:tojime_no_siora:038",
+    "original_image": "data/manga/fst_try/original/tojime_no_siora/038.jpg",
+    "translated_image": "data/manga/fst_try/translated/tojime_no_siora/038.png",
+    "reference_texts": [
+      "if you're gonna pull the trigger,",
+      "you have to be prepared.",
+      "damn it..."
+    ],
+    "metadata": {
+      "book_title": "tojime_no_siora",
+      "page_index": 39,
+      "run_id": "fst_try",
+      "filename_stem": "038"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:tojime_no_siora:039",
+    "original_image": "data/manga/fst_try/original/tojime_no_siora/039.jpg",
+    "translated_image": "data/manga/fst_try/translated/tojime_no_siora/039.png",
+    "reference_texts": [
+      "oh, thank god.",
+      "siora, was it?",
+      "i heard you wanted us to hire you?",
+      "I'll hire you at any price, so...",
+      "you said, \"why?\"",
+      "with this filthy mouth",
+      "pathetic"
+    ],
+    "metadata": {
+      "book_title": "tojime_no_siora",
+      "page_index": 40,
+      "run_id": "fst_try",
+      "filename_stem": "039"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:tojime_no_siora:040",
+    "original_image": "data/manga/fst_try/original/tojime_no_siora/040.jpg",
+    "translated_image": "data/manga/fst_try/translated/tojime_no_siora/040.png",
+    "reference_texts": [
+      "you're no t prepared at all",
+      "you're worthless.",
+      "!!",
+      "you're nothing."
+    ],
+    "metadata": {
+      "book_title": "tojime_no_siora",
+      "page_index": 41,
+      "run_id": "fst_try",
+      "filename_stem": "040"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:tojime_no_siora:041",
+    "original_image": "data/manga/fst_try/original/tojime_no_siora/041.jpg",
+    "translated_image": "data/manga/fst_try/translated/tojime_no_siora/041.png",
+    "reference_texts": [
+      "humph",
+      "you can repent on yourself",
+      "in the blinding darkness."
+    ],
+    "metadata": {
+      "book_title": "tojime_no_siora",
+      "page_index": 42,
+      "run_id": "fst_try",
+      "filename_stem": "041"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:tojime_no_siora:042",
+    "original_image": "data/manga/fst_try/original/tojime_no_siora/042.jpg",
+    "translated_image": "data/manga/fst_try/translated/tojime_no_siora/042.png",
+    "reference_texts": [
+      "I told you I'm okay!",
+      "you didn't have to see me off.",
+      "well, it's the least i can do.",
+      "oh, no. i did it for my own good.",
+      "so you won't stop shooting people?",
+      "I guess not...",
+      "i swear on my eyes."
+    ],
+    "metadata": {
+      "book_title": "tojime_no_siora",
+      "page_index": 43,
+      "run_id": "fst_try",
+      "filename_stem": "042"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:tojime_no_siora:043",
+    "original_image": "data/manga/fst_try/original/tojime_no_siora/043.jpg",
+    "translated_image": "data/manga/fst_try/translated/tojime_no_siora/043.png",
+    "reference_texts": [
+      "...",
+      "that's a lot of baggage for just seeing me off.",
+      "yeah.",
+      "i'm leaving this town too.",
+      "I don't feel good staying here.",
+      "and...",
+      "where are you gonna go...?",
+      "wherever you're going",
+      "like the idea?",
+      "no you can't!"
+    ],
+    "metadata": {
+      "book_title": "tojime_no_siora",
+      "page_index": 44,
+      "run_id": "fst_try",
+      "filename_stem": "043"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:tojime_no_siora:044",
+    "original_image": "data/manga/fst_try/original/tojime_no_siora/044.jpg",
+    "translated_image": "data/manga/fst_try/translated/tojime_no_siora/044.png",
+    "reference_texts": [
+      "you can't stay with someone like me.",
+      "like the one who lives along with guns.",
+      "I don't need sympathy...",
+      "It's not like that.",
+      "i don't know what happened to you before.",
+      "neither do i think i'll be of much help.",
+      "i'm allowed to cook food for my saviour, right?",
+      "but...",
+      "and after all,"
+    ],
+    "metadata": {
+      "book_title": "tojime_no_siora",
+      "page_index": 45,
+      "run_id": "fst_try",
+      "filename_stem": "044"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:tojime_no_siora:045",
+    "original_image": "data/manga/fst_try/original/tojime_no_siora/045.jpg",
+    "translated_image": "data/manga/fst_try/translated/tojime_no_siora/045.png",
+    "reference_texts": [
+      "you know it's a bit sad",
+      "to keep walking solo.",
+      "come on..",
+      "the train's leaving."
+    ],
+    "metadata": {
+      "book_title": "tojime_no_siora",
+      "page_index": 46,
+      "run_id": "fst_try",
+      "filename_stem": "045"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:balloon_dream:000",
+    "original_image": "data/manga/fst_try/original/balloon_dream/000.jpg",
+    "translated_image": "data/manga/fst_try/translated/balloon_dream/000.png",
+    "reference_texts": [
+      "the wings of dreams,",
+      "were coated with wax.",
+      "as it flys higher,",
+      "it'll melt by the sun.",
+      "...if so",
+      "why fly in the first place."
+    ],
+    "metadata": {
+      "book_title": "balloon_dream",
+      "page_index": 1,
+      "run_id": "fst_try",
+      "filename_stem": "000"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:balloon_dream:001",
+    "original_image": "data/manga/fst_try/original/balloon_dream/001.jpg",
+    "translated_image": "data/manga/fst_try/translated/balloon_dream/001.png",
+    "reference_texts": [
+      "because someday",
+      "It failed!!",
+      "Manned rocket \"Asagao\" has exploded!",
+      "everything falls back ground",
+      "Japan's first manned space flight has failed!"
+    ],
+    "metadata": {
+      "book_title": "balloon_dream",
+      "page_index": 2,
+      "run_id": "fst_try",
+      "filename_stem": "001"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:balloon_dream:003",
+    "original_image": "data/manga/fst_try/original/balloon_dream/003.jpg",
+    "translated_image": "data/manga/fst_try/translated/balloon_dream/003.png",
+    "reference_texts": [
+      "10 years later \nsummer",
+      "Jin Aikawa,",
+      "\nyou have the academic ability to enter those top universities.",
+      "why get recommendation letters for a third tiered college?",
+      "don't you have aspirations?",
+      "aspirations? nonsense.",
+      "It's better to choose an easier and safer path",
+      "am i wrong?",
+      "great, Aikawa.",
+      "saucy students like you",
+      "are more easy to ask a favor of.",
+      "?"
+    ],
+    "metadata": {
+      "book_title": "balloon_dream",
+      "page_index": 4,
+      "run_id": "fst_try",
+      "filename_stem": "003"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:balloon_dream:004",
+    "original_image": "data/manga/fst_try/original/balloon_dream/004.jpg",
+    "translated_image": "data/manga/fst_try/translated/balloon_dream/004.png",
+    "reference_texts": [
+      "During this summer vacation,",
+      "you are going to help us with the astronomy club.",
+      "!?",
+      "hey, wait!",
+      "why should I help a club that i have no connections to--",
+      "listen.",
+      "I understand that you prefer being excessively cautious,",
+      "but like the saying goes, \"nothing ventured, nothing gained.\"",
+      "I want you to learn from this experience",
+      "that's why i'm leaving you with astronomy club while I'm going to the hot springs",
+      "you just want some time off, don't you!?"
+    ],
+    "metadata": {
+      "book_title": "balloon_dream",
+      "page_index": 5,
+      "run_id": "fst_try",
+      "filename_stem": "004"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:balloon_dream:005",
+    "original_image": "data/manga/fst_try/original/balloon_dream/005.jpg",
+    "translated_image": "data/manga/fst_try/translated/balloon_dream/005.png",
+    "reference_texts": [
+      "damn it...",
+      "why me...",
+      "if you don't help me, I won't write the recommendation letter.",
+      "isn't it a threat? talk about abuse of authority!",
+      "...the astronomy club",
+      "Here?",
+      "excuse me.",
+      "huh?",
+      "whoa aaaa aah !!"
+    ],
+    "metadata": {
+      "book_title": "balloon_dream",
+      "page_index": 6,
+      "run_id": "fst_try",
+      "filename_stem": "005"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:balloon_dream:006",
+    "original_image": "data/manga/fst_try/original/balloon_dream/006.jpg",
+    "translated_image": "data/manga/fst_try/translated/balloon_dream/006.png",
+    "reference_texts": [
+      "what the hell is this?",
+      "balloons?",
+      "oh, I'm sorry.  it's messy here.",
+      "ah, so you're the temporary member, right?",
+      "Welcome!",
+      "To the astronomical club full of balloons, full of dreams!"
+    ],
+    "metadata": {
+      "book_title": "balloon_dream",
+      "page_index": 7,
+      "run_id": "fst_try",
+      "filename_stem": "006"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:balloon_dream:007",
+    "original_image": "data/manga/fst_try/original/balloon_dream/007.jpg",
+    "translated_image": "data/manga/fst_try/translated/balloon_dream/007.png",
+    "reference_texts": [
+      "again,",
+      "I'm Mizuki Sonoyama, the principal of this club!",
+      "you're aikawa-san, right? I've heard of you from our teacher.",
+      "i'm counting on you.",
+      "e, er",
+      "same here.",
+      "she's kinda...",
+      "where are the others?!",
+      "let's get into the main topic ...",
+      "i wanna go home.",
+      "ta-dah!!",
+      "with these balloons",
+      "we are sending up a camera into space",
+      "and a camera?",
+      "balloons"
+    ],
+    "metadata": {
+      "book_title": "balloon_dream",
+      "page_index": 8,
+      "run_id": "fst_try",
+      "filename_stem": "007"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:balloon_dream:008",
+    "original_image": "data/manga/fst_try/original/balloon_dream/008.jpg",
+    "translated_image": "data/manga/fst_try/translated/balloon_dream/008.png",
+    "reference_texts": [
+      "i've seen it on tv before!",
+      "camera floating into space with balloons,",
+      "then the balloon pops and the camera falls with a parachute ...",
+      "when we retrieve the camera, we'll have a picture of earth!",
+      "isn't it exciting?",
+      "what?!",
+      "a little help? that bastard teacher!",
+      "leaving me with all the burden...!!",
+      "?",
+      "and...",
+      "that's why we need so many balloons!",
+      "aikawa-san, please help me blow them up!",
+      "you know what?"
+    ],
+    "metadata": {
+      "book_title": "balloon_dream",
+      "page_index": 9,
+      "run_id": "fst_try",
+      "filename_stem": "008"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:balloon_dream:009",
+    "original_image": "data/manga/fst_try/original/balloon_dream/009.jpg",
+    "translated_image": "data/manga/fst_try/translated/balloon_dream/009.png",
+    "reference_texts": [
+      "even millions of balloons won't float if they're inflated with air!!",
+      "mm hmm",
+      "she's definitely stupid",
+      "...... ?",
+      "how can you look so surprised?",
+      "If you don't add helium gas, the balloons won't float!",
+      "besides, why are you using a disposable camera?",
+      "ah!",
+      "since it's cheap ...",
+      "who's gonna wind up the film and press the shutter in space?!",
+      "come on...",
+      "maybe it's possible in theory, but ...",
+      "there are plenty of pictures of earth on the Internet.",
+      "there's no need to take on e yourself.",
+      "Oh",
+      "well, that ..."
+    ],
+    "metadata": {
+      "book_title": "balloon_dream",
+      "page_index": 10,
+      "run_id": "fst_try",
+      "filename_stem": "009"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:balloon_dream:010",
+    "original_image": "data/manga/fst_try/original/balloon_dream/010.jpg",
+    "translated_image": "data/manga/fst_try/translated/balloon_dream/010.png",
+    "reference_texts": [
+      "is because my dream",
+      "is to become an astronaut and see the round earth",
+      "this is my first step towards my dream.",
+      "that's why i have to take the photo myself.",
+      "those who can speak of dreams like that",
+      "are only those  who have never seen how dreams end"
+    ],
+    "metadata": {
+      "book_title": "balloon_dream",
+      "page_index": 11,
+      "run_id": "fst_try",
+      "filename_stem": "010"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:balloon_dream:011",
+    "original_image": "data/manga/fst_try/original/balloon_dream/011.jpg",
+    "translated_image": "data/manga/fst_try/translated/balloon_dream/011.png",
+    "reference_texts": [
+      "if you're aspiring to be an astronaut, then you must know...",
+      "10 years ago,",
+      "japan's first manned rocket \"Asagao\" failed to launch.",
+      "even if there's little merit, getting a human on board",
+      "increases both cost and risk dramatically.",
+      "a lot of people suffered from failure.",
+      "Manned space flight",
+      "is something stupid people who never think twice do."
+    ],
+    "metadata": {
+      "book_title": "balloon_dream",
+      "page_index": 12,
+      "run_id": "fst_try",
+      "filename_stem": "011"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:balloon_dream:012",
+    "original_image": "data/manga/fst_try/original/balloon_dream/012.jpg",
+    "translated_image": "data/manga/fst_try/translated/balloon_dream/012.png",
+    "reference_texts": [
+      "I ... \ni'm sorry",
+      "i didn't mean to say that...",
+      "it's okay.",
+      "even so, it's still",
+      "my precious dream",
+      "well,",
+      "i'll help you anyway.",
+      "a recommendation",
+      "i still need to get it"
+    ],
+    "metadata": {
+      "book_title": "balloon_dream",
+      "page_index": 13,
+      "run_id": "fst_try",
+      "filename_stem": "012"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:balloon_dream:013",
+    "original_image": "data/manga/fst_try/original/balloon_dream/013.jpg",
+    "translated_image": "data/manga/fst_try/translated/balloon_dream/013.png",
+    "reference_texts": [
+      "Wow !!!!!!",
+      "the camera is really flying !!",
+      "i can't believe we can take pictures of the earth with this...!!",
+      "no, no, \nit's not enough",
+      "I've told you it's just a test shooting today.",
+      "is that so?",
+      "hey!\nyou need to start listening!",
+      "it's not easy to fly it at a high altitude on the first go",
+      "first, we need to get the feel of it",
+      "in the real take, we'll use a big balloon that can can withstand atmospheric pressure.\nIt'll reach the 30km high stratosphere",
+      "since it will be swept away by the airflow,",
+      "we should put a GPS transmitter and search the fall point."
+    ],
+    "metadata": {
+      "book_title": "balloon_dream",
+      "page_index": 14,
+      "run_id": "fst_try",
+      "filename_stem": "013"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:balloon_dream:014",
+    "original_image": "data/manga/fst_try/original/balloon_dream/014.jpg",
+    "translated_image": "data/manga/fst_try/translated/balloon_dream/014.png",
+    "reference_texts": [
+      "this time we'll keep it simple.\npull the string and retrieve, got it?",
+      "ok, i see.",
+      "...",
+      "aikawa-\nsan,",
+      "yes?",
+      "thank you",
+      "very much",
+      "for helping me.",
+      "...... !!",
+      "i just wanted to get my recommendation letter...!!",
+      "huh?",
+      "there is",
+      "a weird feel...?"
+    ],
+    "metadata": {
+      "book_title": "balloon_dream",
+      "page_index": 15,
+      "run_id": "fst_try",
+      "filename_stem": "014"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:balloon_dream:015",
+    "original_image": "data/manga/fst_try/original/balloon_dream/015.jpg",
+    "translated_image": "data/manga/fst_try/translated/balloon_dream/015.png",
+    "reference_texts": [
+      "oh, no...",
+      "well,",
+      "the thread is broken.",
+      "there's no helping it",
+      "oh, goodness...",
+      "I have to follow it.",
+      "no, we don't have to.",
+      "it's only a 2,000 yen toy camera inside.",
+      "besides, it'll just fall into the mountains or the fields.",
+      "It costs more to look for it."
+    ],
+    "metadata": {
+      "book_title": "balloon_dream",
+      "page_index": 16,
+      "run_id": "fst_try",
+      "filename_stem": "015"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:balloon_dream:016",
+    "original_image": "data/manga/fst_try/original/balloon_dream/016.jpg",
+    "translated_image": "data/manga/fst_try/translated/balloon_dream/016.png",
+    "reference_texts": [
+      "No, no!",
+      "because I put ...",
+      "something really important in there ...",
+      "...you",
+      "you put something in there and didn't tell me?",
+      "I'm sorry! but  I really want to send it to space.",
+      "it's very light, but...",
+      "I knew you'd oppose. ",
+      "of course!",
+      "i've calculated the precise weight!!",
+      "and you've ruin it without asking ...!!",
+      "aikawa-\nsan..."
+    ],
+    "metadata": {
+      "book_title": "balloon_dream",
+      "page_index": 17,
+      "run_id": "fst_try",
+      "filename_stem": "016"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:balloon_dream:017",
+    "original_image": "data/manga/fst_try/original/balloon_dream/017.jpg",
+    "translated_image": "data/manga/fst_try/translated/balloon_dream/017.png",
+    "reference_texts": [
+      "i,",
+      "I'm going to go look for it.",
+      "from the very beginning",
+      "you've been blabbing on without any content",
+      "I can't stand it anymore !!",
+      "you balloon girl!"
+    ],
+    "metadata": {
+      "book_title": "balloon_dream",
+      "page_index": 18,
+      "run_id": "fst_try",
+      "filename_stem": "017"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:balloon_dream:018",
+    "original_image": "data/manga/fst_try/original/balloon_dream/018.jpg",
+    "translated_image": "data/manga/fst_try/translated/balloon_dream/018.png",
+    "reference_texts": [
+      "she's been looking for it everyday after our regular process",
+      "truly...",
+      "what an idiot."
+    ],
+    "metadata": {
+      "book_title": "balloon_dream",
+      "page_index": 19,
+      "run_id": "fst_try",
+      "filename_stem": "018"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:balloon_dream:019",
+    "original_image": "data/manga/fst_try/original/balloon_dream/019.jpg",
+    "translated_image": "data/manga/fst_try/translated/balloon_dream/019.png",
+    "reference_texts": [
+      "......",
+      "a dream? bullshit.",
+      "i'm home.",
+      "Dad! your back!",
+      "Jin",
+      "you should be in bed by now",
+      "it's cause you didn't come home...",
+      "you're working too hard.",
+      "really? well, i can't help it.",
+      "\"Asagao\",",
+      "is my dream."
+    ],
+    "metadata": {
+      "book_title": "balloon_dream",
+      "page_index": 20,
+      "run_id": "fst_try",
+      "filename_stem": "019"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:balloon_dream:020",
+    "original_image": "data/manga/fst_try/original/balloon_dream/020.jpg",
+    "translated_image": "data/manga/fst_try/translated/balloon_dream/020.png",
+    "reference_texts": [
+      "he fell ill from stress and passed away.",
+      "he was the development manager of the rocket, but did he deserve to be on the brunt of blame ...",
+      "failing to launch Japan's first manned rocket,",
+      "the worst ending, no doubt",
+      "pretty sure that he's in heaven,",
+      "wishing he never contributed"
+    ],
+    "metadata": {
+      "book_title": "balloon_dream",
+      "page_index": 21,
+      "run_id": "fst_try",
+      "filename_stem": "020"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:balloon_dream:021",
+    "original_image": "data/manga/fst_try/original/balloon_dream/021.jpg",
+    "translated_image": "data/manga/fst_try/translated/balloon_dream/021.png",
+    "reference_texts": [
+      "huh?",
+      "Aikawa-\nsan?",
+      "you're still here?",
+      "Sonoyama\n...?",
+      "you're soaking wet!",
+      "heh heh...",
+      "today",
+      "I couldn't find it again",
+      "!?",
+      "hey!"
+    ],
+    "metadata": {
+      "book_title": "balloon_dream",
+      "page_index": 22,
+      "run_id": "fst_try",
+      "filename_stem": "021"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:balloon_dream:022",
+    "original_image": "data/manga/fst_try/original/balloon_dream/022.jpg",
+    "translated_image": "data/manga/fst_try/translated/balloon_dream/022.png",
+    "reference_texts": [
+      "you,",
+      "you have a really bad fever!!",
+      "why did you continue looking till you ended up like this?!",
+      "why are you sacrificing yourself for this waste..?!!",
+      "let's go to the nurse's office right away.",
+      "......",
+      "you're wrong.",
+      "it's not wasteful.",
+      "hey!",
+      "because...",
+      "it's---"
+    ],
+    "metadata": {
+      "book_title": "balloon_dream",
+      "page_index": 23,
+      "run_id": "fst_try",
+      "filename_stem": "022"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:balloon_dream:023",
+    "original_image": "data/manga/fst_try/original/balloon_dream/023.jpg",
+    "translated_image": "data/manga/fst_try/translated/balloon_dream/023.png",
+    "reference_texts": [
+      "my...",
+      "dream.",
+      "Sonoyama ...",
+      "......",
+      "i'm sorry...",
+      "aikawa-\nsan.",
+      "i feel like throwing up",
+      "\"retching\"",
+      "wait, wait, Sono- yama!!"
+    ],
+    "metadata": {
+      "book_title": "balloon_dream",
+      "page_index": 24,
+      "run_id": "fst_try",
+      "filename_stem": "023"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:balloon_dream:024",
+    "original_image": "data/manga/fst_try/original/balloon_dream/024.jpg",
+    "translated_image": "data/manga/fst_try/translated/balloon_dream/024.png",
+    "reference_texts": [
+      "What!?",
+      "you need a rest coming back from your time off!? ",
+      "you're the advisor. at least give us a ride!!",
+      "Geez...",
+      "at least, we can get to the fall point."
+    ],
+    "metadata": {
+      "book_title": "balloon_dream",
+      "page_index": 25,
+      "run_id": "fst_try",
+      "filename_stem": "024"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:balloon_dream:025",
+    "original_image": "data/manga/fst_try/original/balloon_dream/025.jpg",
+    "translated_image": "data/manga/fst_try/translated/balloon_dream/025.png",
+    "reference_texts": [
+      "we should start preparing for the launch soon.",
+      "hey! \nstop with the negativity!!",
+      "uh... it's already the day of launching while I was sick in bed...",
+      "in the end, I couldn't find out the prototype model...",
+      "There was something",
+      "I really wanted to send up into space...",
+      "hey,",
+      "look up."
+    ],
+    "metadata": {
+      "book_title": "balloon_dream",
+      "page_index": 26,
+      "run_id": "fst_try",
+      "filename_stem": "025"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:balloon_dream:026",
+    "original_image": "data/manga/fst_try/original/balloon_dream/026.jpg",
+    "translated_image": "data/manga/fst_try/translated/balloon_dream/026.png",
+    "reference_texts": [
+      "this is it, right?",
+      "the thing that's so important to you.",
+      "it was sold ten years ago,",
+      "key chain of \"Asagao\". limited edition",
+      "i was wondering",
+      "why you were so passionate",
+      "So I looked for it while you were in bed.",
+      "it never occurred to me that aside from taking pictures of the earth,",
+      "you were planning memorialize and pray for the rocket"
+    ],
+    "metadata": {
+      "book_title": "balloon_dream",
+      "page_index": 27,
+      "run_id": "fst_try",
+      "filename_stem": "026"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:balloon_dream:027",
+    "original_image": "data/manga/fst_try/original/balloon_dream/027.jpg",
+    "translated_image": "data/manga/fst_try/translated/balloon_dream/027.png",
+    "reference_texts": [
+      "AAA Aikawa- shan...",
+      "come on!",
+      "i'll include the key chain in the measurement, so hurry up and get ready!",
+      "It's something very important ",
+      "for me, too...",
+      "let me know",
+      "one thing",
+      "the fact that you have that key chain",
+      "you must have saw it too...",
+      "when the \"asagao\" fell",
+      "how, without hesitation",
+      "can you say you want to be an astronaut?"
+    ],
+    "metadata": {
+      "book_title": "balloon_dream",
+      "page_index": 28,
+      "run_id": "fst_try",
+      "filename_stem": "027"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:balloon_dream:028",
+    "original_image": "data/manga/fst_try/original/balloon_dream/028.jpg",
+    "translated_image": "data/manga/fst_try/translated/balloon_dream/028.png",
+    "reference_texts": [
+      "\"Asagao\" was a dream for many people",
+      "but it couldn't fly. It's wings were made of wax.",
+      "didn't you feel afraid",
+      "that you may lose everything you ever worked for",
+      "don't people feel scared..?",
+      "of the discouragements,",
+      "the regrets",
+      "of the possibility",
+      "that your own wings might be fake?"
+    ],
+    "metadata": {
+      "book_title": "balloon_dream",
+      "page_index": 29,
+      "run_id": "fst_try",
+      "filename_stem": "028"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:balloon_dream:029",
+    "original_image": "data/manga/fst_try/original/balloon_dream/029.jpg",
+    "translated_image": "data/manga/fst_try/translated/balloon_dream/029.png",
+    "reference_texts": [
+      "no.",
+      "there's no such thing as fake wings",
+      "you may not be able to fly,",
+      "it may be painful when your wings break",
+      "but that's because ",
+      "those wings are genuine.",
+      "the pain itself is proof that you've tried to fly.",
+      "so,"
+    ],
+    "metadata": {
+      "book_title": "balloon_dream",
+      "page_index": 30,
+      "run_id": "fst_try",
+      "filename_stem": "029"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:balloon_dream:030",
+    "original_image": "data/manga/fst_try/original/balloon_dream/030.jpg",
+    "translated_image": "data/manga/fst_try/translated/balloon_dream/030.png",
+    "reference_texts": [
+      "I'll have no regrets",
+      "not even in death"
+    ],
+    "metadata": {
+      "book_title": "balloon_dream",
+      "page_index": 31,
+      "run_id": "fst_try",
+      "filename_stem": "030"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:balloon_dream:031",
+    "original_image": "data/manga/fst_try/original/balloon_dream/031.jpg",
+    "translated_image": "data/manga/fst_try/translated/balloon_dream/031.png",
+    "reference_texts": [
+      "there it is ...",
+      "there\nit is!!!"
+    ],
+    "metadata": {
+      "book_title": "balloon_dream",
+      "page_index": 32,
+      "run_id": "fst_try",
+      "filename_stem": "031"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:balloon_dream:032",
+    "original_image": "data/manga/fst_try/original/balloon_dream/032.jpg",
+    "translated_image": "data/manga/fst_try/translated/balloon_dream/032.png",
+    "reference_texts": [
+      "I wonder if it really went up into space?",
+      "hey, come on!",
+      "are you in doubt?",
+      "no, no, that's not what I meant!",
+      "well,",
+      "we'll find out as we check the data."
+    ],
+    "metadata": {
+      "book_title": "balloon_dream",
+      "page_index": 33,
+      "run_id": "fst_try",
+      "filename_stem": "032"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:balloon_dream:033",
+    "original_image": "data/manga/fst_try/original/balloon_dream/033.jpg",
+    "translated_image": "data/manga/fst_try/translated/balloon_dream/033.png",
+    "reference_texts": [],
+    "metadata": {
+      "book_title": "balloon_dream",
+      "page_index": 34,
+      "run_id": "fst_try",
+      "filename_stem": "033"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:balloon_dream:034",
+    "original_image": "data/manga/fst_try/original/balloon_dream/034.jpg",
+    "translated_image": "data/manga/fst_try/translated/balloon_dream/034.png",
+    "reference_texts": [],
+    "metadata": {
+      "book_title": "balloon_dream",
+      "page_index": 35,
+      "run_id": "fst_try",
+      "filename_stem": "034"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:balloon_dream:035",
+    "original_image": "data/manga/fst_try/original/balloon_dream/035.jpg",
+    "translated_image": "data/manga/fst_try/translated/balloon_dream/035.png",
+    "reference_texts": [
+      "\"the earth was bluish!\"",
+      "that's how it feels like.",
+      "Ha",
+      "haha...",
+      "ha ha ha ha ha ha ha ha ha!",
+      "what?",
+      "did i say something funny?",
+      "no, i'm sorry.",
+      "no, really.",
+      "I didn't expect we'd be able to take pictures by balloons!",
+      "hey",
+      "aikawa-\nsan.",
+      "yes?"
+    ],
+    "metadata": {
+      "book_title": "balloon_dream",
+      "page_index": 36,
+      "run_id": "fst_try",
+      "filename_stem": "035"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:balloon_dream:036",
+    "original_image": "data/manga/fst_try/original/balloon_dream/036.jpg",
+    "translated_image": "data/manga/fst_try/translated/balloon_dream/036.png",
+    "reference_texts": [
+      "Thank you so much!",
+      "i was too stupid to do anything useful",
+      "i've also been selfish, but...",
+      "you even let me put my treasure on ...!!!",
+      "really ...",
+      "it's\nokay.",
+      "in fact,",
+      "it's not a big deal,",
+      "compared to this view...",
+      "i'm sure it's nothing.",
+      "I won't get a recommendation."
+    ],
+    "metadata": {
+      "book_title": "balloon_dream",
+      "page_index": 37,
+      "run_id": "fst_try",
+      "filename_stem": "036"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:balloon_dream:037",
+    "original_image": "data/manga/fst_try/original/balloon_dream/037.jpg",
+    "translated_image": "data/manga/fst_try/translated/balloon_dream/037.png",
+    "reference_texts": [
+      "I'll study harder,",
+      "and create a rocket that even someone who's stupid like you can go to space!",
+      "someday,",
+      "I promise!",
+      "who is stupid!!",
+      "who is stupid!!",
+      "you..!",
+      "you said so yourself, didn't you!?"
+    ],
+    "metadata": {
+      "book_title": "balloon_dream",
+      "page_index": 38,
+      "run_id": "fst_try",
+      "filename_stem": "037"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:tencho_isoro:000",
+    "original_image": "data/manga/fst_try/original/tencho_isoro/000.jpg",
+    "translated_image": "data/manga/fst_try/translated/tencho_isoro/000.png",
+    "reference_texts": [
+      "wow...",
+      "i'm glad it wasn't in my neighborhood.",
+      "excuse me...",
+      "come in.",
+      "can i have some medicine...",
+      "oh, god he looks so desperate!?"
+    ],
+    "metadata": {
+      "book_title": "tencho_isoro",
+      "page_index": 1,
+      "run_id": "fst_try",
+      "filename_stem": "000"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:tencho_isoro:001",
+    "original_image": "data/manga/fst_try/original/tencho_isoro/001.jpg",
+    "translated_image": "data/manga/fst_try/translated/tencho_isoro/001.png",
+    "reference_texts": [
+      "what's wrong?\nis it your stomach?!",
+      "uh...",
+      "i picked up a rice ball and i ate it.",
+      "then my stomach...",
+      "food poisoning...",
+      "take some rest here. you can use the bathroom, if you want.",
+      "thank you...",
+      "let's\nsee\n..."
+    ],
+    "metadata": {
+      "book_title": "tencho_isoro",
+      "page_index": 2,
+      "run_id": "fst_try",
+      "filename_stem": "001"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:tencho_isoro:002",
+    "original_image": "data/manga/fst_try/original/tencho_isoro/002.jpg",
+    "translated_image": "data/manga/fst_try/translated/tencho_isoro/002.png",
+    "reference_texts": [
+      "you were working for a shop and it went on fire...",
+      "but you had to eat something and you picked up a rice ball...",
+      "i'm sorry for all the trouble",
+      "no, no. it's okay.",
+      "you feel better now?",
+      "Yup!",
+      "oh, yeah, i'll pay for this.",
+      "oh, don't worry about it.",
+      "hmm...",
+      "no way!",
+      "my wallet's gone.",
+      "oh..."
+    ],
+    "metadata": {
+      "book_title": "tencho_isoro",
+      "page_index": 3,
+      "run_id": "fst_try",
+      "filename_stem": "002"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:tencho_isoro:003",
+    "original_image": "data/manga/fst_try/original/tencho_isoro/003.jpg",
+    "translated_image": "data/manga/fst_try/translated/tencho_isoro/003.png",
+    "reference_texts": [
+      "...",
+      "why don't you work here if you don’t have any plan?",
+      "really?",
+      "i think i can afford you a shelter and some food. is that ok?",
+      "that's more than enough!",
+      "you've saved my life, manager!",
+      "oh no, don’t exaggerate.",
+      "by the way, what’s your name?",
+      "I’m mel!",
+      "so what should i help you with... AH?!",
+      " AH?!",
+      "you don’t have to work today..."
+    ],
+    "metadata": {
+      "book_title": "tencho_isoro",
+      "page_index": 4,
+      "run_id": "fst_try",
+      "filename_stem": "003"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:tencho_isoro:004",
+    "original_image": "data/manga/fst_try/original/tencho_isoro/004.jpg",
+    "translated_image": "data/manga/fst_try/translated/tencho_isoro/004.png",
+    "reference_texts": [
+      "here you go",
+      "be careful, it’s very hot.",
+      "oh my god... it's delicious...",
+      "i was lucky that i had a stomachache...",
+      "w-was it??",
+      "after all, i guess it was...",
+      "thank you so much."
+    ],
+    "metadata": {
+      "book_title": "tencho_isoro",
+      "page_index": 5,
+      "run_id": "fst_try",
+      "filename_stem": "004"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:tencho_isoro:005",
+    "original_image": "data/manga/fst_try/original/tencho_isoro/005.jpg",
+    "translated_image": "data/manga/fst_try/translated/tencho_isoro/005.png",
+    "reference_texts": [
+      "i'll do my best to help you tomorrow.",
+      "where's my alarm clock...",
+      "you like frogs?",
+      "yeah.",
+      "good night."
+    ],
+    "metadata": {
+      "book_title": "tencho_isoro",
+      "page_index": 6,
+      "run_id": "fst_try",
+      "filename_stem": "005"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:tencho_isoro:006",
+    "original_image": "data/manga/fst_try/original/tencho_isoro/006.jpg",
+    "translated_image": "data/manga/fst_try/translated/tencho_isoro/006.png",
+    "reference_texts": [
+      "what ?!",
+      "i see, the alarm clock...",
+      "why is this so loud..."
+    ],
+    "metadata": {
+      "book_title": "tencho_isoro",
+      "page_index": 7,
+      "run_id": "fst_try",
+      "filename_stem": "006"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:tencho_isoro:007",
+    "original_image": "data/manga/fst_try/original/tencho_isoro/007.jpg",
+    "translated_image": "data/manga/fst_try/translated/tencho_isoro/007.png",
+    "reference_texts": [
+      "how can you be still sleeping with this sound?",
+      "hey, it's morning.",
+      "wake up...",
+      "...",
+      "maybe he was tired.",
+      "i'll wake him later."
+    ],
+    "metadata": {
+      "book_title": "tencho_isoro",
+      "page_index": 8,
+      "run_id": "fst_try",
+      "filename_stem": "007"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:tencho_isoro:008",
+    "original_image": "data/manga/fst_try/original/tencho_isoro/008.jpg",
+    "translated_image": "data/manga/fst_try/translated/tencho_isoro/008.png",
+    "reference_texts": [
+      "hey.",
+      "good morning.",
+      "what ?!",
+      "I'm late!!",
+      "but wait...",
+      "i thought i set this up yesterday.",
+      "is it broken?",
+      "no way. it went off so loud.",
+      "so he really didn't hear it..."
+    ],
+    "metadata": {
+      "book_title": "tencho_isoro",
+      "page_index": 9,
+      "run_id": "fst_try",
+      "filename_stem": "008"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:tencho_isoro:009",
+    "original_image": "data/manga/fst_try/original/tencho_isoro/009.jpg",
+    "translated_image": "data/manga/fst_try/translated/tencho_isoro/009.png",
+    "reference_texts": [
+      "okay then",
+      "i want you to rake the leaves first.",
+      "i got it!",
+      "good morning.",
+      "hello, are you helping here?",
+      "yes!\nhow about you? shopping?"
+    ],
+    "metadata": {
+      "book_title": "tencho_isoro",
+      "page_index": 10,
+      "run_id": "fst_try",
+      "filename_stem": "009"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:tencho_isoro:010",
+    "original_image": "data/manga/fst_try/original/tencho_isoro/010.jpg",
+    "translated_image": "data/manga/fst_try/translated/tencho_isoro/010.png",
+    "reference_texts": [
+      "it looks like he's doing well...",
+      "stop by, if you don't mind!",
+      "hello.",
+      "hello.",
+      "hello.",
+      "maybe...",
+      "he's calling in more customers...",
+      "i'm making her rake when there's a lot of people on the street",
+      "come again soon!"
+    ],
+    "metadata": {
+      "book_title": "tencho_isoro",
+      "page_index": 11,
+      "run_id": "fst_try",
+      "filename_stem": "010"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:tencho_isoro:011",
+    "original_image": "data/manga/fst_try/original/tencho_isoro/011.jpg",
+    "translated_image": "data/manga/fst_try/translated/tencho_isoro/011.png",
+    "reference_texts": [
+      "a few days later",
+      "Manager!",
+      "here you go!",
+      "i know you love sweets.",
+      "the old lady told me to give some to you!",
+      "wow, thanks.",
+      "by the way, we're having more customers since you came here.",
+      "really?",
+      "I'm being helpful?!",
+      "of course.",
+      "thank god...",
+      "thank god!",
+      "i'll work harder from now on!"
+    ],
+    "metadata": {
+      "book_title": "tencho_isoro",
+      "page_index": 12,
+      "run_id": "fst_try",
+      "filename_stem": "011"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:tencho_isoro:012",
+    "original_image": "data/manga/fst_try/original/tencho_isoro/012.jpg",
+    "translated_image": "data/manga/fst_try/translated/tencho_isoro/012.png",
+    "reference_texts": [
+      "is this apron mine?!",
+      "yeah, i made it last night.\n",
+      "great!\nthere's a frog, too!",
+      "now you look much more like a staff.",
+      "today, i want you to go shopping.",
+      "here's some money and a shopping list",
+      "I put a bit of extra money here,",
+      "so MEL, buy something for yourself."
+    ],
+    "metadata": {
+      "book_title": "tencho_isoro",
+      "page_index": 13,
+      "run_id": "fst_try",
+      "filename_stem": "012"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:tencho_isoro:013",
+    "original_image": "data/manga/fst_try/original/tencho_isoro/013.jpg",
+    "translated_image": "data/manga/fst_try/translated/tencho_isoro/013.png",
+    "reference_texts": [
+      "manager...",
+      "ha ha. \ni'm counting on you!",
+      "Leave it to me!"
+    ],
+    "metadata": {
+      "book_title": "tencho_isoro",
+      "page_index": 14,
+      "run_id": "fst_try",
+      "filename_stem": "013"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:tencho_isoro:016",
+    "original_image": "data/manga/fst_try/original/tencho_isoro/016.jpg",
+    "translated_image": "data/manga/fst_try/translated/tencho_isoro/016.png",
+    "reference_texts": [
+      "..."
+    ],
+    "metadata": {
+      "book_title": "tencho_isoro",
+      "page_index": 17,
+      "run_id": "fst_try",
+      "filename_stem": "016"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:tencho_isoro:017",
+    "original_image": "data/manga/fst_try/original/tencho_isoro/017.jpg",
+    "translated_image": "data/manga/fst_try/translated/tencho_isoro/017.png",
+    "reference_texts": [
+      "aren't your hands getting cold?",
+      "i'm fine!",
+      "i'm really looking forward to shopping with you!",
+      "yeah.",
+      "but first, we have to buy your clothes.",
+      "yeah...",
+      "by the way,",
+      "I think larger clothes will be better."
+    ],
+    "metadata": {
+      "book_title": "tencho_isoro",
+      "page_index": 18,
+      "run_id": "fst_try",
+      "filename_stem": "017"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:tencho_isoro:018",
+    "original_image": "data/manga/fst_try/original/tencho_isoro/018.jpg",
+    "translated_image": "data/manga/fst_try/translated/tencho_isoro/018.png",
+    "reference_texts": [
+      "then I can wear it even I grow bigger, right?",
+      "oh... I see.",
+      "will you really grow...?",
+      "is there anything else you want?",
+      "um...",
+      "the tool to take off the vegetable skin...",
+      "a peeler?",
+      "that's it!"
+    ],
+    "metadata": {
+      "book_title": "tencho_isoro",
+      "page_index": 19,
+      "run_id": "fst_try",
+      "filename_stem": "018"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:tencho_isoro:019",
+    "original_image": "data/manga/fst_try/original/tencho_isoro/019.jpg",
+    "translated_image": "data/manga/fst_try/translated/tencho_isoro/019.png",
+    "reference_texts": [
+      "i'm not so good with knives, but...",
+      "with peelers, I can peel better.",
+      "then I can help you cook more!",
+      "you know, I always want to be your help!",
+      "tencho?",
+      "is the onion making your eye burn?",
+      "oh...\nyeah, it's just onions...."
+    ],
+    "metadata": {
+      "book_title": "tencho_isoro",
+      "page_index": 20,
+      "run_id": "fst_try",
+      "filename_stem": "019"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:tencho_isoro:020",
+    "original_image": "data/manga/fst_try/original/tencho_isoro/020.jpg",
+    "translated_image": "data/manga/fst_try/translated/tencho_isoro/020.png",
+    "reference_texts": [
+      "this boy ran into my store with a stomachache.",
+      "thank you.",
+      "looks good on you.",
+      "but choose your own first.",
+      "one thing led to another and I ended up hiring him.",
+      "he said he lost his house and job by fire,",
+      "and the only thing he had in his backpack was...",
+      "that's all?",
+      "yeah.",
+      "just some clothes and a small wake-up clock.",
+      "but still, he works with smiles every day.",
+      "and today he is enjoying shopping.",
+      "tencho!"
+    ],
+    "metadata": {
+      "book_title": "tencho_isoro",
+      "page_index": 21,
+      "run_id": "fst_try",
+      "filename_stem": "020"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:tencho_isoro:021",
+    "original_image": "data/manga/fst_try/original/tencho_isoro/021.jpg",
+    "translated_image": "data/manga/fst_try/translated/tencho_isoro/021.png",
+    "reference_texts": [
+      "look, look!",
+      "it's a frog beanie!",
+      "it looks warm, doesn't it?",
+      "why don't you try it on?",
+      "hehehe.",
+      "yeah.\n it looks good on you.",
+      "you're so cu...",
+      "cool?!",
+      "eh?",
+      "oh, yeah, you're right.",
+      "what do you mean \"cool\"?"
+    ],
+    "metadata": {
+      "book_title": "tencho_isoro",
+      "page_index": 22,
+      "run_id": "fst_try",
+      "filename_stem": "021"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:tencho_isoro:022",
+    "original_image": "data/manga/fst_try/original/tencho_isoro/022.jpg",
+    "translated_image": "data/manga/fst_try/translated/tencho_isoro/022.png",
+    "reference_texts": [
+      "oh, and...",
+      "how about this?",
+      "it's gonna get cold, so you'll need a coat, right?",
+      "...",
+      "are you sure I deserve such a nice clothes...?",
+      "what are you talking about?",
+      "how can you keep out the cold without a coat?",
+      "it's quilt inside, it must be warm.",
+      "and..."
+    ],
+    "metadata": {
+      "book_title": "tencho_isoro",
+      "page_index": 23,
+      "run_id": "fst_try",
+      "filename_stem": "022"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:tencho_isoro:023",
+    "original_image": "data/manga/fst_try/original/tencho_isoro/023.jpg",
+    "translated_image": "data/manga/fst_try/translated/tencho_isoro/023.png",
+    "reference_texts": [
+      "and... how's this?",
+      "um...\nIsn’t it too girly?",
+      "is it?\nI thought it's easy to wear,",
+      "and it'll fit you even if you grow bigger.",
+      "wow! that's awesome!",
+      "also get yourself sweaters so that you’ll stay warm..."
+    ],
+    "metadata": {
+      "book_title": "tencho_isoro",
+      "page_index": 24,
+      "run_id": "fst_try",
+      "filename_stem": "023"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:tencho_isoro:025",
+    "original_image": "data/manga/fst_try/original/tencho_isoro/025.jpg",
+    "translated_image": "data/manga/fst_try/translated/tencho_isoro/025.png",
+    "reference_texts": [
+      "!!",
+      "Disposal ...?"
+    ],
+    "metadata": {
+      "book_title": "tencho_isoro",
+      "page_index": 26,
+      "run_id": "fst_try",
+      "filename_stem": "025"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:tencho_isoro:026",
+    "original_image": "data/manga/fst_try/original/tencho_isoro/026.jpg",
+    "translated_image": "data/manga/fst_try/translated/tencho_isoro/026.png",
+    "reference_texts": [
+      "oh!\nit's a frog ornament!",
+      "you want it?",
+      "...",
+      "but...",
+      "buying it won't do you any good, will it?",
+      "that's why it's here...",
+      "is that so?",
+      " i'd love to keep it.",
+      "you know, frog's ornaments bring good luck.",
+      "maybe good things will happen if we put it in our shop."
+    ],
+    "metadata": {
+      "book_title": "tencho_isoro",
+      "page_index": 27,
+      "run_id": "fst_try",
+      "filename_stem": "026"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:tencho_isoro:027",
+    "original_image": "data/manga/fst_try/original/tencho_isoro/027.jpg",
+    "translated_image": "data/manga/fst_try/translated/tencho_isoro/027.png",
+    "reference_texts": [
+      "hey, tencho.",
+      "this frog looked sad back in the store.",
+      "but he looks happy right now.",
+      "yeah.",
+      "maybe he's happy to know where he belongs to.",
+      "yeah.",
+      "he's just like me.",
+      "the same?",
+      "yeah, the same."
+    ],
+    "metadata": {
+      "book_title": "tencho_isoro",
+      "page_index": 28,
+      "run_id": "fst_try",
+      "filename_stem": "027"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:tencho_isoro:028",
+    "original_image": "data/manga/fst_try/original/tencho_isoro/028.jpg",
+    "translated_image": "data/manga/fst_try/translated/tencho_isoro/028.png",
+    "reference_texts": [
+      "wow...",
+      "he looks so happy...",
+      " leave the peeling to me, tencho!",
+      "yeah, i'll leave it to you",
+      "and I'll get vegetables easy to be peeled with peeler...",
+      "do you want to try cutting them with a knife?",
+      "do you think i can do it?",
+      "i'll teach you.\n just try it.",
+      "well..."
+    ],
+    "metadata": {
+      "book_title": "tencho_isoro",
+      "page_index": 29,
+      "run_id": "fst_try",
+      "filename_stem": "028"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:tencho_isoro:030",
+    "original_image": "data/manga/fst_try/original/tencho_isoro/030.jpg",
+    "translated_image": "data/manga/fst_try/translated/tencho_isoro/030.png",
+    "reference_texts": [
+      "...i'm starting to feel like i can do it...",
+      "yes, that's it. ",
+      "let's eat!",
+      "....",
+      "big vegetables.",
+      "The bigger the better.\nThey're more filling"
+    ],
+    "metadata": {
+      "book_title": "tencho_isoro",
+      "page_index": 31,
+      "run_id": "fst_try",
+      "filename_stem": "030"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:tencho_isoro:031",
+    "original_image": "data/manga/fst_try/original/tencho_isoro/031.jpg",
+    "translated_image": "data/manga/fst_try/translated/tencho_isoro/031.png",
+    "reference_texts": [
+      "really?!",
+      "yes, it's really good...",
+      "much better than when I cook...",
+      "i...",
+      "think the meals you make...",
+      "I think it's delicious! every day!",
+      "oh...",
+      "thank you.",
+      "the best in the world!!",
+      "huh, that delicious?!",
+      "ha ha ha",
+      "hehehe.",
+      "I'm feeling warm now.",
+      "me too."
+    ],
+    "metadata": {
+      "book_title": "tencho_isoro",
+      "page_index": 32,
+      "run_id": "fst_try",
+      "filename_stem": "031"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:tencho_isoro:032",
+    "original_image": "data/manga/fst_try/original/tencho_isoro/032.jpg",
+    "translated_image": "data/manga/fst_try/translated/tencho_isoro/032.png",
+    "reference_texts": [
+      "ah!",
+      "...what?",
+      "tencho",
+      "are you okay?",
+      "i'm relieved you didn't get hurt.",
+      "be careful, okay?",
+      "i'm sorry..."
+    ],
+    "metadata": {
+      "book_title": "tencho_isoro",
+      "page_index": 33,
+      "run_id": "fst_try",
+      "filename_stem": "032"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:tencho_isoro:033",
+    "original_image": "data/manga/fst_try/original/tencho_isoro/033.jpg",
+    "translated_image": "data/manga/fst_try/translated/tencho_isoro/033.png",
+    "reference_texts": [
+      "i can reach higher places by standing on a chair!",
+      "i'll do my best!",
+      "yeah, but make sure you don't fall.",
+      "i want to get much taller..."
+    ],
+    "metadata": {
+      "book_title": "tencho_isoro",
+      "page_index": 34,
+      "run_id": "fst_try",
+      "filename_stem": "033"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:tencho_isoro:034",
+    "original_image": "data/manga/fst_try/original/tencho_isoro/034.jpg",
+    "translated_image": "data/manga/fst_try/translated/tencho_isoro/034.png",
+    "reference_texts": [
+      "well, make sure you lock the door.",
+      "yeah, leave it to me!",
+      "...are you going to the pharmacist training?\nwill you be late tonight?",
+      "well, i'll be home after 9:00, maybe.",
+      "don't wait for me.\nhave dinner and go to bed, okay?",
+      "okay. ",
+      "i'm going.",
+      "good luck!"
+    ],
+    "metadata": {
+      "book_title": "tencho_isoro",
+      "page_index": 35,
+      "run_id": "fst_try",
+      "filename_stem": "034"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:tencho_isoro:035",
+    "original_image": "data/manga/fst_try/original/tencho_isoro/035.jpg",
+    "translated_image": "data/manga/fst_try/translated/tencho_isoro/035.png",
+    "reference_texts": [
+      "....",
+      "it's somehow cold...",
+      "snow...?"
+    ],
+    "metadata": {
+      "book_title": "tencho_isoro",
+      "page_index": 36,
+      "run_id": "fst_try",
+      "filename_stem": "035"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:tencho_isoro:036",
+    "original_image": "data/manga/fst_try/original/tencho_isoro/036.jpg",
+    "translated_image": "data/manga/fst_try/translated/tencho_isoro/036.png",
+    "reference_texts": [
+      "it's already pretty late...",
+      "i'm later than I expected.",
+      "Mel...\nwonder if she ate dinner as usual...",
+      "mel...!?"
+    ],
+    "metadata": {
+      "book_title": "tencho_isoro",
+      "page_index": 37,
+      "run_id": "fst_try",
+      "filename_stem": "036"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:tencho_isoro:037",
+    "original_image": "data/manga/fst_try/original/tencho_isoro/037.jpg",
+    "translated_image": "data/manga/fst_try/translated/tencho_isoro/037.png",
+    "reference_texts": [
+      "you came here to pick me up?",
+      "i brought your umbrella ",
+      "atishoo!",
+      "thank you.",
+      " but you get me worried. wait at home next time.",
+      "yeah.."
+    ],
+    "metadata": {
+      "book_title": "tencho_isoro",
+      "page_index": 38,
+      "run_id": "fst_try",
+      "filename_stem": "037"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:tencho_isoro:038",
+    "original_image": "data/manga/fst_try/original/tencho_isoro/038.jpg",
+    "translated_image": "data/manga/fst_try/translated/tencho_isoro/038.png",
+    "reference_texts": [
+      "where's your umbrella?",
+      "ah",
+      "i have my hat, so...",
+      "you forgot your umbrella...",
+      "then",
+      "try to stay underneath this umbrella",
+      "yeah!"
+    ],
+    "metadata": {
+      "book_title": "tencho_isoro",
+      "page_index": 39,
+      "run_id": "fst_try",
+      "filename_stem": "038"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:tencho_isoro:039",
+    "original_image": "data/manga/fst_try/original/tencho_isoro/039.jpg",
+    "translated_image": "data/manga/fst_try/translated/tencho_isoro/039.png",
+    "reference_texts": [
+      "it's small, isn't it?",
+      "not at all.",
+      "...",
+      "i didn't know small can sometimes be good.",
+      "i've always thought that being small is not good.",
+      "then why did you come to think so?",
+      "well, ",
+      "because i can share an umbrella with you!",
+      "oh...",
+      "...that's good to know.",
+      "aren't you cold?",
+      "no.",
+      "because you're with me!"
+    ],
+    "metadata": {
+      "book_title": "tencho_isoro",
+      "page_index": 40,
+      "run_id": "fst_try",
+      "filename_stem": "039"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:boureisougi:000",
+    "original_image": "data/manga/fst_try/original/boureisougi/000.jpg",
+    "translated_image": "data/manga/fst_try/translated/boureisougi/000.png",
+    "reference_texts": [
+      "welcome,\nghost undertaker"
+    ],
+    "metadata": {
+      "book_title": "boureisougi",
+      "page_index": 1,
+      "run_id": "fst_try",
+      "filename_stem": "000"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:boureisougi:001",
+    "original_image": "data/manga/fst_try/original/boureisougi/001.jpg",
+    "translated_image": "data/manga/fst_try/translated/boureisougi/001.png",
+    "reference_texts": [
+      "people are not created equal",
+      "but",
+      "\"death\" is equal to anyone.",
+      "Well then",
+      "The last farewell to the deceased",
+      "well",
+      "I didn't imagine",
+      "so many people would come to miss me"
+    ],
+    "metadata": {
+      "book_title": "boureisougi",
+      "page_index": 2,
+      "run_id": "fst_try",
+      "filename_stem": "001"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:boureisougi:002",
+    "original_image": "data/manga/fst_try/original/boureisougi/002.jpg",
+    "translated_image": "data/manga/fst_try/translated/boureisougi/002.png",
+    "reference_texts": [
+      "oh!",
+      "That woman is the hostess in the bar at Block-1",
+      "That is the owner of my favorite restaurant!",
+      "I'm still so popular!",
+      "i feel so alive!",
+      "The job of an undertaker",
+      "is to set up the last place for the living and the dead",
+      "well, I'm afraid",
+      "particularly, I ..."
+    ],
+    "metadata": {
+      "book_title": "boureisougi",
+      "page_index": 3,
+      "run_id": "fst_try",
+      "filename_stem": "002"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:boureisougi:003",
+    "original_image": "data/manga/fst_try/original/boureisougi/003.jpg",
+    "translated_image": "data/manga/fst_try/translated/boureisougi/003.png",
+    "reference_texts": [
+      "you're already dead ...",
+      "Welcome, \nghost undertaker\n@Kilightit",
+      "... am one of those who can \"see\"",
+      "Hmm",
+      "you want to put on your late sister's make up?",
+      "karasuma undertaking ceo\nkururu karasuma (25)",
+      "yes...",
+      "Client:\nSuzume Sakurano (19)"
+    ],
+    "metadata": {
+      "book_title": "boureisougi",
+      "page_index": 4,
+      "run_id": "fst_try",
+      "filename_stem": "003"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:boureisougi:004",
+    "original_image": "data/manga/fst_try/original/boureisougi/004.jpg",
+    "translated_image": "data/manga/fst_try/translated/boureisougi/004.png",
+    "reference_texts": [
+      "\"Postmortem care,\"",
+      "we call it",
+      "i know this might appear to be impossible",
+      "But i really and truly",
+      "want to put makeup on my sister by myself",
+      "hmm",
+      "i'm not a professional makeup artist yet,",
+      "but i'm studying it at technical college!",
+      "i can\ndo it without fail, karasuma- san!",
+      "No, you shouldn't do it.",
+      "!"
+    ],
+    "metadata": {
+      "book_title": "boureisougi",
+      "page_index": 5,
+      "run_id": "fst_try",
+      "filename_stem": "004"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:boureisougi:005",
+    "original_image": "data/manga/fst_try/original/boureisougi/005.jpg",
+    "translated_image": "data/manga/fst_try/translated/boureisougi/005.png",
+    "reference_texts": [
+      "i've never met her when she was alive,",
+      "but still, i'm sure that she was so beautiful",
+      "Why is that?",
+      "suzume- san",
+      "I hear that your sister was a famous beautiful actress",
+      "It's featured in the news every day",
+      "Do you mean ...",
+      "I'm not skilled enough to put her makeup on?",
+      "No, that's not what i mean..."
+    ],
+    "metadata": {
+      "book_title": "boureisougi",
+      "page_index": 6,
+      "run_id": "fst_try",
+      "filename_stem": "005"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:boureisougi:006",
+    "original_image": "data/manga/fst_try/original/boureisougi/006.jpg",
+    "translated_image": "data/manga/fst_try/translated/boureisougi/006.png",
+    "reference_texts": [
+      "Did you see ...",
+      "her face after the accident?",
+      "of course not.",
+      "no ...",
+      "The doctors told me",
+      "it would be better not to ...",
+      "Now,\nyour sister Tsubame Sakurano ...",
+      "does not look like she used to be\nat all ..."
+    ],
+    "metadata": {
+      "book_title": "boureisougi",
+      "page_index": 7,
+      "run_id": "fst_try",
+      "filename_stem": "006"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:boureisougi:007",
+    "original_image": "data/manga/fst_try/original/boureisougi/007.jpg",
+    "translated_image": "data/manga/fst_try/translated/boureisougi/007.png",
+    "reference_texts": [
+      "the car accident",
+      "a head-on crash into guardrails from overspeed",
+      "her face was seriously injured by the broken windscreen...",
+      "...and the broken bone pierced her skin",
+      "The doctor did some treatment in the hospital,",
+      "but nobody will find that it's your sister",
+      "you can't refuse putting on makeup",
+      "after seeing her face.",
+      "I"
+    ],
+    "metadata": {
+      "book_title": "boureisougi",
+      "page_index": 8,
+      "run_id": "fst_try",
+      "filename_stem": "007"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:boureisougi:009",
+    "original_image": "data/manga/fst_try/original/boureisougi/009.jpg",
+    "translated_image": "data/manga/fst_try/translated/boureisougi/009.png",
+    "reference_texts": [
+      "Tsubame-\nsan...",
+      "you are the one who asked me",
+      "Yes,\nof course!",
+      "I can't let Suzume see my ugly face!",
+      "I'm used to being hated by others",
+      "but i can't stand being hated by my sister!",
+      "Hmm...",
+      "to stop your sister from putting on your makeup",
+      "aren't you?",
+      "but how\nabout taking suzume-\nsan's feelings\ninto account?",
+      "You are her only family"
+    ],
+    "metadata": {
+      "book_title": "boureisougi",
+      "page_index": 10,
+      "run_id": "fst_try",
+      "filename_stem": "009"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:boureisougi:010",
+    "original_image": "data/manga/fst_try/original/boureisougi/010.jpg",
+    "translated_image": "data/manga/fst_try/translated/boureisougi/010.png",
+    "reference_texts": [
+      "what",
+      "do you know ?!",
+      "anyway!",
+      "I'm not allowing her to make me up!",
+      "get someone else!",
+      "And ...",
+      "and what ?",
+      "...no, nothing.",
+      "well"
+    ],
+    "metadata": {
+      "book_title": "boureisougi",
+      "page_index": 11,
+      "run_id": "fst_try",
+      "filename_stem": "010"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:boureisougi:011",
+    "original_image": "data/manga/fst_try/original/boureisougi/011.jpg",
+    "translated_image": "data/manga/fst_try/translated/boureisougi/011.png",
+    "reference_texts": [
+      "A farewell full of regrets",
+      "that's sad for everybody",
+      "welcome!",
+      "actress tsubame sakurano's death in a traffic accident",
+      "there are many rumors about it...",
+      "what do you think?",
+      "Some people say that she was murdered...",
+      "she was kind of eccentric in the entertainment industry",
+      "What do you mean?",
+      "sleeping around for business and bullying young actresses ...",
+      "but they're only rumors.",
+      "actually, many people didn't like her",
+      "though she had the looks and good acting",
+      "but her personality ... ",
+      "Stay tuned.",
+      "...the program continues after the commercial break"
+    ],
+    "metadata": {
+      "book_title": "boureisougi",
+      "page_index": 12,
+      "run_id": "fst_try",
+      "filename_stem": "011"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:boureisougi:012",
+    "original_image": "data/manga/fst_try/original/boureisougi/012.jpg",
+    "translated_image": "data/manga/fst_try/translated/boureisougi/012.png",
+    "reference_texts": [
+      "Ah!",
+      "i was watching it!",
+      "Suzume-\nchan!",
+      "take this to table-4!",
+      "thanks for waiting!",
+      "Okay!",
+      "....",
+      "huh?"
+    ],
+    "metadata": {
+      "book_title": "boureisougi",
+      "page_index": 13,
+      "run_id": "fst_try",
+      "filename_stem": "012"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:boureisougi:013",
+    "original_image": "data/manga/fst_try/original/boureisougi/013.jpg",
+    "translated_image": "data/manga/fst_try/translated/boureisougi/013.png",
+    "reference_texts": [
+      "Mr. Undertaker?",
+      "Hi.",
+      "the ramen was delicious!",
+      "right?",
+      "It's our signature taste!",
+      "Are you working to earn your own tuition?",
+      "yeah. the school costs a lot, so I need to work hard!",
+      "I don't want to put a burden on my sister",
+      "....",
+      "oh"
+    ],
+    "metadata": {
+      "book_title": "boureisougi",
+      "page_index": 14,
+      "run_id": "fst_try",
+      "filename_stem": "013"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:boureisougi:014",
+    "original_image": "data/manga/fst_try/original/boureisougi/014.jpg",
+    "translated_image": "data/manga/fst_try/translated/boureisougi/014.png",
+    "reference_texts": [
+      "!",
+      "let's go",
+      "huh ?",
+      "where ?",
+      "to your sister.",
+      "This is..."
+    ],
+    "metadata": {
+      "book_title": "boureisougi",
+      "page_index": 15,
+      "run_id": "fst_try",
+      "filename_stem": "014"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:boureisougi:015",
+    "original_image": "data/manga/fst_try/original/boureisougi/015.jpg",
+    "translated_image": "data/manga/fst_try/translated/boureisougi/015.png",
+    "reference_texts": [
+      "ghosts ...",
+      "... stay in three places",
+      "First, the place where they died",
+      "second, the place of their graves",
+      "and third...",
+      "close to someone they loved.",
+      "...apparently",
+      "actually, your sister",
+      "she's here now.",
+      "ha ha",
+      "mr. undertaker. you are kidding me.",
+      "please call me Kururu."
+    ],
+    "metadata": {
+      "book_title": "boureisougi",
+      "page_index": 16,
+      "run_id": "fst_try",
+      "filename_stem": "015"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:boureisougi:016",
+    "original_image": "data/manga/fst_try/original/boureisougi/016.jpg",
+    "translated_image": "data/manga/fst_try/translated/boureisougi/016.png",
+    "reference_texts": [
+      "Kururu-\nsan",
+      "you",
+      "don't you think ill of my sister?",
+      "There are lots of gosships about her...",
+      "gossips are gossips",
+      "I can always ask her the truth.",
+      "Kururusan,\nyou are　funny.",
+      "I...",
+      "...was in my sister's car",
+      "right before the accident."
+    ],
+    "metadata": {
+      "book_title": "boureisougi",
+      "page_index": 17,
+      "run_id": "fst_try",
+      "filename_stem": "016"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:boureisougi:017",
+    "original_image": "data/manga/fst_try/original/boureisougi/017.jpg",
+    "translated_image": "data/manga/fst_try/translated/boureisougi/017.png",
+    "reference_texts": [
+      "I was on my way home",
+      "it was forecasted to rain heavily",
+      "I knew she was so busy,",
+      "yet she came to give me a ride to celebrate my birthday",
+      "right to my workplace",
+      "but we had a quarrel",
+      "about my tuition fee",
+      "i wanted to pay it by myself",
+      "but",
+      "she insisted that she would pay all.",
+      "my sister\n...",
+      "...raised me up after our parents had died",
+      "i didn't want to trouble her anymore"
+    ],
+    "metadata": {
+      "book_title": "boureisougi",
+      "page_index": 18,
+      "run_id": "fst_try",
+      "filename_stem": "017"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:boureisougi:018",
+    "original_image": "data/manga/fst_try/original/boureisougi/018.jpg",
+    "translated_image": "data/manga/fst_try/translated/boureisougi/018.png",
+    "reference_texts": [
+      "\"You're still a little child.\"",
+      "she said",
+      "and I was  so irritated...",
+      "Wait! Suzume!",
+      "and jumped out of the car.",
+      "!!!",
+      "I hate you!",
+      "and that",
+      "was the last conversation we had before she died.",
+      "The reason of the accident...",
+      "was overspeeding, right?"
+    ],
+    "metadata": {
+      "book_title": "boureisougi",
+      "page_index": 19,
+      "run_id": "fst_try",
+      "filename_stem": "018"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:boureisougi:019",
+    "original_image": "data/manga/fst_try/original/boureisougi/019.jpg",
+    "translated_image": "data/manga/fst_try/translated/boureisougi/019.png",
+    "reference_texts": [
+      "she was probably trying to catch up with me",
+      "since after i left the car",
+      "it started raining heavily.",
+      "my dream",
+      "...was to help my sister wear makeup when she acts on the stage.",
+      "but now",
+      "the dream would never come true."
+    ],
+    "metadata": {
+      "book_title": "boureisougi",
+      "page_index": 20,
+      "run_id": "fst_try",
+      "filename_stem": "019"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:boureisougi:021",
+    "original_image": "data/manga/fst_try/original/boureisougi/021.jpg",
+    "translated_image": "data/manga/fst_try/translated/boureisougi/021.png",
+    "reference_texts": [
+      "how was it actually",
+      "Tsubame-\nsan?",
+      "were you troubled by her\n?",
+      "....?",
+      "\"If I thought i was troubled.\"",
+      "\"I wouldn't have been on your side\"",
+      "\"you know how I feel, right? You are my sister.\"",
+      "that's what she says"
+    ],
+    "metadata": {
+      "book_title": "boureisougi",
+      "page_index": 22,
+      "run_id": "fst_try",
+      "filename_stem": "021"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:boureisougi:022",
+    "original_image": "data/manga/fst_try/original/boureisougi/022.jpg",
+    "translated_image": "data/manga/fst_try/translated/boureisougi/022.png",
+    "reference_texts": [],
+    "metadata": {
+      "book_title": "boureisougi",
+      "page_index": 23,
+      "run_id": "fst_try",
+      "filename_stem": "022"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:boureisougi:023",
+    "original_image": "data/manga/fst_try/original/boureisougi/023.jpg",
+    "translated_image": "data/manga/fst_try/translated/boureisougi/023.png",
+    "reference_texts": [
+      "...It's strange.",
+      "i just saw my sister",
+      "Kururu-\nsan",
+      "can i ask a favor of you again?"
+    ],
+    "metadata": {
+      "book_title": "boureisougi",
+      "page_index": 24,
+      "run_id": "fst_try",
+      "filename_stem": "023"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:boureisougi:024",
+    "original_image": "data/manga/fst_try/original/boureisougi/024.jpg",
+    "translated_image": "data/manga/fst_try/translated/boureisougi/024.png",
+    "reference_texts": [
+      "I'm ready to accept everything about my sister",
+      "i'm ready for\nit"
+    ],
+    "metadata": {
+      "book_title": "boureisougi",
+      "page_index": 25,
+      "run_id": "fst_try",
+      "filename_stem": "024"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:boureisougi:025",
+    "original_image": "data/manga/fst_try/original/boureisougi/025.jpg",
+    "translated_image": "data/manga/fst_try/translated/boureisougi/025.png",
+    "reference_texts": [
+      "hey"
+    ],
+    "metadata": {
+      "book_title": "boureisougi",
+      "page_index": 26,
+      "run_id": "fst_try",
+      "filename_stem": "025"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:boureisougi:026",
+    "original_image": "data/manga/fst_try/original/boureisougi/026.jpg",
+    "translated_image": "data/manga/fst_try/translated/boureisougi/026.png",
+    "reference_texts": [
+      "Can I open my eyes now?",
+      "yeah!",
+      "today's make up...",
+      "I\nthink i did a pretty good job!",
+      "ha",
+      "ahaha!",
+      "This is terrible!",
+      "I\ntried my best...",
+      "you need more practice ...",
+      "Do\nyou think",
+      "I can be your beautician?"
+    ],
+    "metadata": {
+      "book_title": "boureisougi",
+      "page_index": 27,
+      "run_id": "fst_try",
+      "filename_stem": "026"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:boureisougi:027",
+    "original_image": "data/manga/fst_try/original/boureisougi/027.jpg",
+    "translated_image": "data/manga/fst_try/translated/boureisougi/027.png",
+    "reference_texts": [
+      "hey",
+      "life is not that easy",
+      "When you become skilled enough...",
+      "i'll think about it.",
+      "when the time comes, i'll reward you!",
+      "Really?",
+      "Yes!",
+      "So keep on practicing!"
+    ],
+    "metadata": {
+      "book_title": "boureisougi",
+      "page_index": 28,
+      "run_id": "fst_try",
+      "filename_stem": "027"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:boureisougi:028",
+    "original_image": "data/manga/fst_try/original/boureisougi/028.jpg",
+    "translated_image": "data/manga/fst_try/translated/boureisougi/028.png",
+    "reference_texts": [
+      "Tsubame-\nsan"
+    ],
+    "metadata": {
+      "book_title": "boureisougi",
+      "page_index": 29,
+      "run_id": "fst_try",
+      "filename_stem": "028"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:boureisougi:029",
+    "original_image": "data/manga/fst_try/original/boureisougi/029.jpg",
+    "translated_image": "data/manga/fst_try/translated/boureisougi/029.png",
+    "reference_texts": [
+      "You were so beautiful",
+      "I am always beautiful!",
+      "Why\nare you being sulky?",
+      "You weren't with Suzume-san during funeral.",
+      "of course not!",
+      "i didn't want Suzume to see my face like that!"
+    ],
+    "metadata": {
+      "book_title": "boureisougi",
+      "page_index": 30,
+      "run_id": "fst_try",
+      "filename_stem": "029"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:boureisougi:030",
+    "original_image": "data/manga/fst_try/original/boureisougi/030.jpg",
+    "translated_image": "data/manga/fst_try/translated/boureisougi/030.png",
+    "reference_texts": [
+      "you were not going to stop her...",
+      "...from the beginning.",
+      "Please don't worry.",
+      "I complied with your wish.",
+      "my wish?",
+      "Kururu-san!",
+      "thank you very much!",
+      "The makeup brushes you\nlent me.",
+      "i can say farewell to my sister without regret",
+      "and ...",
+      "I...",
+      "I'll give these back to you.",
+      "The makeup brushes you\nlent me."
+    ],
+    "metadata": {
+      "book_title": "boureisougi",
+      "page_index": 31,
+      "run_id": "fst_try",
+      "filename_stem": "030"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:boureisougi:031",
+    "original_image": "data/manga/fst_try/original/boureisougi/031.jpg",
+    "translated_image": "data/manga/fst_try/translated/boureisougi/031.png",
+    "reference_texts": [
+      "!",
+      "oh",
+      "These brushes belong to you, Suzume-\nsan.",
+      "?",
+      "a present",
+      "from my sister ...?",
+      "Tsubame-san was going to give these to you as birthday present.",
+      "Your sister ...",
+      "she was probably going to hand these to you during the dinner"
+    ],
+    "metadata": {
+      "book_title": "boureisougi",
+      "page_index": 32,
+      "run_id": "fst_try",
+      "filename_stem": "031"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:boureisougi:032",
+    "original_image": "data/manga/fst_try/original/boureisougi/032.jpg",
+    "translated_image": "data/manga/fst_try/translated/boureisougi/032.png",
+    "reference_texts": [
+      "the police found them,",
+      "and we were keeping them.",
+      "This box was the only thing",
+      "that was undamaged in that terrible accident",
+      "Maybe",
+      "it was protected by your sister."
+    ],
+    "metadata": {
+      "book_title": "boureisougi",
+      "page_index": 33,
+      "run_id": "fst_try",
+      "filename_stem": "032"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:boureisougi:033",
+    "original_image": "data/manga/fst_try/original/boureisougi/033.jpg",
+    "translated_image": "data/manga/fst_try/translated/boureisougi/033.png",
+    "reference_texts": [],
+    "metadata": {
+      "book_title": "boureisougi",
+      "page_index": 34,
+      "run_id": "fst_try",
+      "filename_stem": "033"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:boureisougi:034",
+    "original_image": "data/manga/fst_try/original/boureisougi/034.jpg",
+    "translated_image": "data/manga/fst_try/translated/boureisougi/034.png",
+    "reference_texts": [
+      "i won't thank you...",
+      "you are so stubborn",
+      "None of your business!",
+      "Okay\nOkay",
+      "why ...",
+      "don't you feel tired?",
+      "why do you do this kind of work?",
+      "everyday, you see others crying...",
+      "...And express sympathy to people they don't know...",
+      "not really"
+    ],
+    "metadata": {
+      "book_title": "boureisougi",
+      "page_index": 35,
+      "run_id": "fst_try",
+      "filename_stem": "034"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:boureisougi:035",
+    "original_image": "data/manga/fst_try/original/boureisougi/035.jpg",
+    "translated_image": "data/manga/fst_try/translated/boureisougi/035.png",
+    "reference_texts": [
+      "at least",
+      "I can help you smile, right?",
+      "that's",
+      "none of your business",
+      "but thanks"
+    ],
+    "metadata": {
+      "book_title": "boureisougi",
+      "page_index": 36,
+      "run_id": "fst_try",
+      "filename_stem": "035"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:rasetugari:000",
+    "original_image": "data/manga/fst_try/original/rasetugari/000.jpg",
+    "translated_image": "data/manga/fst_try/translated/rasetugari/000.png",
+    "reference_texts": [
+      "The sound of the opening of civilization howls",
+      "The veil of night is swept away",
+      "But no end to the evil spirits",
+      "no.",
+      "the more \"hope\" covers the world ...",
+      "the demons deeprooted obsessions spreads across this world."
+    ],
+    "metadata": {
+      "book_title": "rasetugari",
+      "page_index": 1,
+      "run_id": "fst_try",
+      "filename_stem": "000"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:rasetugari:002",
+    "original_image": "data/manga/fst_try/original/rasetugari/002.jpg",
+    "translated_image": "data/manga/fst_try/translated/rasetugari/002.png",
+    "reference_texts": [
+      "Demon hunting",
+      "mitsuki kuchitaka"
+    ],
+    "metadata": {
+      "book_title": "rasetugari",
+      "page_index": 3,
+      "run_id": "fst_try",
+      "filename_stem": "002"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:rasetugari:003",
+    "original_image": "data/manga/fst_try/original/rasetugari/003.jpg",
+    "translated_image": "data/manga/fst_try/translated/rasetugari/003.png",
+    "reference_texts": [
+      "i heard that arifuji guy did it alone again.",
+      "The spirit of demons drifting around...",
+      "i can feel the grudge!",
+      "must have been a pretty powerful one",
+      "but...",
+      "as expected from the demon hunter of the great onmyoji family"
+    ],
+    "metadata": {
+      "book_title": "rasetugari",
+      "page_index": 4,
+      "run_id": "fst_try",
+      "filename_stem": "003"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:rasetugari:004",
+    "original_image": "data/manga/fst_try/original/rasetugari/004.jpg",
+    "translated_image": "data/manga/fst_try/translated/rasetugari/004.png",
+    "reference_texts": [
+      "the giant demon's burned down to a crisp...",
+      "his strength is demon like",
+      "shut it. He'll kill you if he ever heard you say that.",
+      "ever since his family was devoured,",
+      "demons disgust him",
+      "but you're right",
+      "those eyes",
+      "his spirit is that of a demon."
+    ],
+    "metadata": {
+      "book_title": "rasetugari",
+      "page_index": 5,
+      "run_id": "fst_try",
+      "filename_stem": "004"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:rasetugari:005",
+    "original_image": "data/manga/fst_try/original/rasetugari/005.jpg",
+    "translated_image": "data/manga/fst_try/translated/rasetugari/005.png",
+    "reference_texts": [
+      "the origin of his \"demon\" spirits...",
+      "it ...",
+      "nooo! stop!",
+      "must have come from that day.",
+      "let go of kazune!!"
+    ],
+    "metadata": {
+      "book_title": "rasetugari",
+      "page_index": 6,
+      "run_id": "fst_try",
+      "filename_stem": "005"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:rasetugari:006",
+    "original_image": "data/manga/fst_try/original/rasetugari/006.jpg",
+    "translated_image": "data/manga/fst_try/translated/rasetugari/006.png",
+    "reference_texts": [
+      "bb...",
+      "brother..",
+      "Stop...",
+      "don't...",
+      "uh..."
+    ],
+    "metadata": {
+      "book_title": "rasetugari",
+      "page_index": 7,
+      "run_id": "fst_try",
+      "filename_stem": "006"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:rasetugari:007",
+    "original_image": "data/manga/fst_try/original/rasetugari/007.jpg",
+    "translated_image": "data/manga/fst_try/translated/rasetugari/007.png",
+    "reference_texts": [
+      "ahhh ...",
+      "aaaaaaaahhhhh",
+      "... dare you",
+      "how dare you...",
+      "father...",
+      "mother...",
+      "and kazune...!!"
+    ],
+    "metadata": {
+      "book_title": "rasetugari",
+      "page_index": 8,
+      "run_id": "fst_try",
+      "filename_stem": "007"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:rasetugari:008",
+    "original_image": "data/manga/fst_try/original/rasetugari/008.jpg",
+    "translated_image": "data/manga/fst_try/translated/rasetugari/008.png",
+    "reference_texts": [
+      "let's stop it.",
+      "visiting the dead like this",
+      "kureha",
+      "and such offerings ..."
+    ],
+    "metadata": {
+      "book_title": "rasetugari",
+      "page_index": 9,
+      "run_id": "fst_try",
+      "filename_stem": "008"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:rasetugari:009",
+    "original_image": "data/manga/fst_try/original/rasetugari/009.jpg",
+    "translated_image": "data/manga/fst_try/translated/rasetugari/009.png",
+    "reference_texts": [
+      "every demon you slay,",
+      "you bring their fingers as offerings..!!",
+      "...I...",
+      "..dedicate these fingers to my family",
+      "feel the oddness surrounding the tomb?!",
+      "is this the way you show your respects...?!"
+    ],
+    "metadata": {
+      "book_title": "rasetugari",
+      "page_index": 10,
+      "run_id": "fst_try",
+      "filename_stem": "009"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:rasetugari:010",
+    "original_image": "data/manga/fst_try/original/rasetugari/010.jpg",
+    "translated_image": "data/manga/fst_try/translated/rasetugari/010.png",
+    "reference_texts": [
+      "do you think your parents and your sister will be able to rest in peace?",
+      "kureha",
+      "I am truly grateful to you, serving and watching over my family for generations",
+      "but...",
+      "i swore to this scar on my hand and my deceased family. I will avenge.",
+      "you can't stop me.",
+      "you don't feel the throbbing of my wound",
+      "you will never",
+      "so be it..."
+    ],
+    "metadata": {
+      "book_title": "rasetugari",
+      "page_index": 11,
+      "run_id": "fst_try",
+      "filename_stem": "010"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:rasetugari:011",
+    "original_image": "data/manga/fst_try/original/rasetugari/011.jpg",
+    "translated_image": "data/manga/fst_try/translated/rasetugari/011.png",
+    "reference_texts": [
+      "I..",
+      "hate the demons as much as you do",
+      "the day we were attacked, i couldn't protect all of you.",
+      "even now, i'm overcome with the regret and pain.",
+      "but...",
+      "it's not my biggest concern",
+      "my biggest concern is you, Hiroya",
+      "your eyes are losing light by the day"
+    ],
+    "metadata": {
+      "book_title": "rasetugari",
+      "page_index": 12,
+      "run_id": "fst_try",
+      "filename_stem": "011"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:rasetugari:013",
+    "original_image": "data/manga/fst_try/original/rasetugari/013.jpg",
+    "translated_image": "data/manga/fst_try/translated/rasetugari/013.png",
+    "reference_texts": [
+      "Kakyomaru",
+      "kakyo\n,,,",
+      "maru",
+      "hiroya...",
+      "your eyes.",
+      "it's like...",
+      "big shot",
+      "let's go, kureha",
+      "tonight, i shall get my revenge",
+      "a demon."
+    ],
+    "metadata": {
+      "book_title": "rasetugari",
+      "page_index": 14,
+      "run_id": "fst_try",
+      "filename_stem": "013"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:rasetugari:014",
+    "original_image": "data/manga/fst_try/original/rasetugari/014.jpg",
+    "translated_image": "data/manga/fst_try/translated/rasetugari/014.png",
+    "reference_texts": [
+      "What",
+      "impossible ...",
+      "12 elite demon hunters were hunting him down",
+      "what do you mean they're all dead?",
+      "...you",
+      "you monster!"
+    ],
+    "metadata": {
+      "book_title": "rasetugari",
+      "page_index": 15,
+      "run_id": "fst_try",
+      "filename_stem": "014"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:rasetugari:015",
+    "original_image": "data/manga/fst_try/original/rasetugari/015.jpg",
+    "translated_image": "data/manga/fst_try/translated/rasetugari/015.png",
+    "reference_texts": [
+      "it's been a while since i've come to the capital",
+      "merely a child's play.",
+      "isn't it like a Buffet?",
+      "guh!",
+      "Oh?"
+    ],
+    "metadata": {
+      "book_title": "rasetugari",
+      "page_index": 16,
+      "run_id": "fst_try",
+      "filename_stem": "015"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:rasetugari:016",
+    "original_image": "data/manga/fst_try/original/rasetugari/016.jpg",
+    "translated_image": "data/manga/fst_try/translated/rasetugari/016.png",
+    "reference_texts": [
+      "must have slipped away from my plate",
+      "huh..!",
+      "the humans in this area ...",
+      "i devoured them all.",
+      "Your family is in my stomach, too",
+      "you hate me?",
+      "hate all you want",
+      "hatred is the best entertainment for me",
+      "ーhelp",
+      "help me..",
+      "hmph",
+      "oh, kill-joy"
+    ],
+    "metadata": {
+      "book_title": "rasetugari",
+      "page_index": 17,
+      "run_id": "fst_try",
+      "filename_stem": "016"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:rasetugari:017",
+    "original_image": "data/manga/fst_try/original/rasetugari/017.jpg",
+    "translated_image": "data/manga/fst_try/translated/rasetugari/017.png",
+    "reference_texts": [
+      "who are you?"
+    ],
+    "metadata": {
+      "book_title": "rasetugari",
+      "page_index": 18,
+      "run_id": "fst_try",
+      "filename_stem": "017"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:rasetugari:018",
+    "original_image": "data/manga/fst_try/original/rasetugari/018.jpg",
+    "translated_image": "data/manga/fst_try/translated/rasetugari/018.png",
+    "reference_texts": [
+      "demon hunter",
+      "hiroya arifuji",
+      "i have waited 10 years to wreak vengeance on you",
+      "I'll send you to hell",
+      "kakyomaru!!",
+      "arifuji..?"
+    ],
+    "metadata": {
+      "book_title": "rasetugari",
+      "page_index": 19,
+      "run_id": "fst_try",
+      "filename_stem": "018"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:rasetugari:019",
+    "original_image": "data/manga/fst_try/original/rasetugari/019.jpg",
+    "translated_image": "data/manga/fst_try/translated/rasetugari/019.png",
+    "reference_texts": [
+      "you're",
+      "\"the\" arifuji?!",
+      "The little kid I forgot to devour 10 years ago",
+      "you've become quite a tasty meal.",
+      "ohh\nmy mouth won't stop watering",
+      "arifujii",
+      "kureha\n",
+      "yes, my lord"
+    ],
+    "metadata": {
+      "book_title": "rasetugari",
+      "page_index": 20,
+      "run_id": "fst_try",
+      "filename_stem": "019"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:rasetugari:020",
+    "original_image": "data/manga/fst_try/original/rasetugari/020.jpg",
+    "translated_image": "data/manga/fst_try/translated/rasetugari/020.png",
+    "reference_texts": [
+      "guh!",
+      "aaaaahhhhhh!?",
+      "kureha acquired this skill \"Goku-en\" in order to  defeat you.",
+      "the pain won't be easy to get rid of",
+      "this wound was carved on to my hand 10 years ago",
+      "until the throbbing fades"
+    ],
+    "metadata": {
+      "book_title": "rasetugari",
+      "page_index": 21,
+      "run_id": "fst_try",
+      "filename_stem": "020"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:rasetugari:021",
+    "original_image": "data/manga/fst_try/original/rasetugari/021.jpg",
+    "translated_image": "data/manga/fst_try/translated/rasetugari/021.png",
+    "reference_texts": [
+      "take this!!",
+      "Hiroya, you're using too much energy.\ncalm down.",
+      "the thing in front of you took both your father and i by surprise.he's pure evil.",
+      "be careful...",
+      "?!?!?!"
+    ],
+    "metadata": {
+      "book_title": "rasetugari",
+      "page_index": 22,
+      "run_id": "fst_try",
+      "filename_stem": "021"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:rasetugari:022",
+    "original_image": "data/manga/fst_try/original/rasetugari/022.jpg",
+    "translated_image": "data/manga/fst_try/translated/rasetugari/022.png",
+    "reference_texts": [
+      "no worries.",
+      "ten years of hatred",
+      "it's not that easy to conquer",
+      "ka...",
+      "kah! kah!",
+      "ka\nka\nka!",
+      "well well"
+    ],
+    "metadata": {
+      "book_title": "rasetugari",
+      "page_index": 23,
+      "run_id": "fst_try",
+      "filename_stem": "022"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:rasetugari:023",
+    "original_image": "data/manga/fst_try/original/rasetugari/023.jpg",
+    "translated_image": "data/manga/fst_try/translated/rasetugari/023.png",
+    "reference_texts": [
+      "oh  my",
+      "you nurtured your hatred well!",
+      "At that time, it was worthwhile to hold back",
+      "this is the first time i've come across such matured hatred",
+      "the best treat.",
+      "arifuji",
+      "i want to devour you in the best way possible."
+    ],
+    "metadata": {
+      "book_title": "rasetugari",
+      "page_index": 24,
+      "run_id": "fst_try",
+      "filename_stem": "023"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:rasetugari:024",
+    "original_image": "data/manga/fst_try/original/rasetugari/024.jpg",
+    "translated_image": "data/manga/fst_try/translated/rasetugari/024.png",
+    "reference_texts": [
+      "hmph",
+      "that wish",
+      "will never come true!",
+      "in that case,",
+      "how's this to your liking?",
+      "brother...",
+      "giving an illusion of his sister...damn it!",
+      "hiroya!!"
+    ],
+    "metadata": {
+      "book_title": "rasetugari",
+      "page_index": 25,
+      "run_id": "fst_try",
+      "filename_stem": "024"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:rasetugari:025",
+    "original_image": "data/manga/fst_try/original/rasetugari/025.jpg",
+    "translated_image": "data/manga/fst_try/translated/rasetugari/025.png",
+    "reference_texts": [
+      "stupid",
+      "that sort of idiocity",
+      "not nearly enough to slow down my sword",
+      "fake, yes, but slicing his own sister's face..?",
+      "such will..!",
+      "but..."
+    ],
+    "metadata": {
+      "book_title": "rasetugari",
+      "page_index": 26,
+      "run_id": "fst_try",
+      "filename_stem": "025"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:rasetugari:026",
+    "original_image": "data/manga/fst_try/original/rasetugari/026.jpg",
+    "translated_image": "data/manga/fst_try/translated/rasetugari/026.png",
+    "reference_texts": [
+      "without a hint of hesitation?!",
+      "khee hee!",
+      "hee hee hee!",
+      "good, arifuji",
+      "this is great!",
+      "Your obsession",
+      "It's awfully appealing",
+      "this isn't about obsession!",
+      "this is about justice!",
+      "for my family!"
+    ],
+    "metadata": {
+      "book_title": "rasetugari",
+      "page_index": 27,
+      "run_id": "fst_try",
+      "filename_stem": "026"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:rasetugari:027",
+    "original_image": "data/manga/fst_try/original/rasetugari/027.jpg",
+    "translated_image": "data/manga/fst_try/translated/rasetugari/027.png",
+    "reference_texts": [
+      "who are you to speak of love?",
+      "you slashed your sister's body to this extent.",
+      "arifuji",
+      "look.",
+      "just look at me.",
+      "your blind obsession",
+      "expose everything to me."
+    ],
+    "metadata": {
+      "book_title": "rasetugari",
+      "page_index": 28,
+      "run_id": "fst_try",
+      "filename_stem": "027"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:rasetugari:028",
+    "original_image": "data/manga/fst_try/original/rasetugari/028.jpg",
+    "translated_image": "data/manga/fst_try/translated/rasetugari/028.png",
+    "reference_texts": [
+      "guh!",
+      "wha...",
+      "a a a a a a a h h h h h h h h h h h h h h h h h h h h !!",
+      "hiroya",
+      "what the hell is going on?",
+      "this is...",
+      "the  devilish air is being sucked in to his scar!?",
+      "i want to devour arifuji --",
+      "in the best way possible",
+      "son of a..."
+    ],
+    "metadata": {
+      "book_title": "rasetugari",
+      "page_index": 29,
+      "run_id": "fst_try",
+      "filename_stem": "028"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:rasetugari:029",
+    "original_image": "data/manga/fst_try/original/rasetugari/029.jpg",
+    "translated_image": "data/manga/fst_try/translated/rasetugari/029.png",
+    "reference_texts": [
+      "you're planning to turn hiroya into a demon!",
+      "kakyomaru--!!",
+      "people get so indulged in their obsession when they are taken over by it.",
+      "Hiroya Listen to my voice!",
+      "When the blade of hatred pierces me and the obsession for revenge dominates you--",
+      "you will become a demon... and become one with me...arifuji!!",
+      "hang in there, hiroya!"
+    ],
+    "metadata": {
+      "book_title": "rasetugari",
+      "page_index": 30,
+      "run_id": "fst_try",
+      "filename_stem": "029"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:rasetugari:030",
+    "original_image": "data/manga/fst_try/original/rasetugari/030.jpg",
+    "translated_image": "data/manga/fst_try/translated/rasetugari/030.png",
+    "reference_texts": [
+      "ooooo!",
+      "that's it. come on.",
+      "the next sword, the glory.",
+      "with the next sword...",
+      "obsession.",
+      "i'll eat you!",
+      "aaaaaahh!"
+    ],
+    "metadata": {
+      "book_title": "rasetugari",
+      "page_index": 31,
+      "run_id": "fst_try",
+      "filename_stem": "030"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:rasetugari:031",
+    "original_image": "data/manga/fst_try/original/rasetugari/031.jpg",
+    "translated_image": "data/manga/fst_try/translated/rasetugari/031.png",
+    "reference_texts": [
+      "unh..."
+    ],
+    "metadata": {
+      "book_title": "rasetugari",
+      "page_index": 32,
+      "run_id": "fst_try",
+      "filename_stem": "031"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:rasetugari:032",
+    "original_image": "data/manga/fst_try/original/rasetugari/032.jpg",
+    "translated_image": "data/manga/fst_try/translated/rasetugari/032.png",
+    "reference_texts": [
+      "ah!",
+      "kure...",
+      "hmg..",
+      "uh...",
+      "ahh!",
+      "aaaaa\naaa\naaaaaa\naaaah !!"
+    ],
+    "metadata": {
+      "book_title": "rasetugari",
+      "page_index": 33,
+      "run_id": "fst_try",
+      "filename_stem": "032"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:rasetugari:033",
+    "original_image": "data/manga/fst_try/original/rasetugari/033.jpg",
+    "translated_image": "data/manga/fst_try/translated/rasetugari/033.png",
+    "reference_texts": [
+      "killjoy",
+      "fighting for your master, but in vain...",
+      "sacrificing yourself for loyalty",
+      "well..",
+      "fall to the dark side",
+      "demon hunter",
+      "the curse i put on you ten years ago",
+      "it's not something that you can easily get rid of"
+    ],
+    "metadata": {
+      "book_title": "rasetugari",
+      "page_index": 34,
+      "run_id": "fst_try",
+      "filename_stem": "033"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:rasetugari:034",
+    "original_image": "data/manga/fst_try/original/rasetugari/034.jpg",
+    "translated_image": "data/manga/fst_try/translated/rasetugari/034.png",
+    "reference_texts": [
+      "father.",
+      "mother. ",
+      "kazune\n..",
+      "what's the matter?",
+      "wearing masks like that",
+      "take it off.",
+      "please show me your fac....."
+    ],
+    "metadata": {
+      "book_title": "rasetugari",
+      "page_index": 35,
+      "run_id": "fst_try",
+      "filename_stem": "034"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:rasetugari:035",
+    "original_image": "data/manga/fst_try/original/rasetugari/035.jpg",
+    "translated_image": "data/manga/fst_try/translated/rasetugari/035.png",
+    "reference_texts": [
+      "de..mon..",
+      "you're...",
+      "Demon ... kill!"
+    ],
+    "metadata": {
+      "book_title": "rasetugari",
+      "page_index": 36,
+      "run_id": "fst_try",
+      "filename_stem": "035"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:rasetugari:036",
+    "original_image": "data/manga/fst_try/original/rasetugari/036.jpg",
+    "translated_image": "data/manga/fst_try/translated/rasetugari/036.png",
+    "reference_texts": [
+      "---!?",
+      "no, no!",
+      "g..",
+      "get off ...",
+      "get off of...",
+      "I can't..."
+    ],
+    "metadata": {
+      "book_title": "rasetugari",
+      "page_index": 37,
+      "run_id": "fst_try",
+      "filename_stem": "036"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:rasetugari:037",
+    "original_image": "data/manga/fst_try/original/rasetugari/037.jpg",
+    "translated_image": "data/manga/fst_try/translated/rasetugari/037.png",
+    "reference_texts": [
+      "i'm falling...",
+      "y...",
+      "...you"
+    ],
+    "metadata": {
+      "book_title": "rasetugari",
+      "page_index": 38,
+      "run_id": "fst_try",
+      "filename_stem": "037"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:rasetugari:038",
+    "original_image": "data/manga/fst_try/original/rasetugari/038.jpg",
+    "translated_image": "data/manga/fst_try/translated/rasetugari/038.png",
+    "reference_texts": [
+      "bastard!!",
+      "ga!",
+      "falling for the curse like that..!",
+      "and you call yourself the rightful bloodline of house arifuji??",
+      "impossible",
+      "you got slashed!",
+      "...",
+      "ha, ha.",
+      "why, you say?\nsuch a funny question",
+      "--!?"
+    ],
+    "metadata": {
+      "book_title": "rasetugari",
+      "page_index": 39,
+      "run_id": "fst_try",
+      "filename_stem": "038"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:rasetugari:039",
+    "original_image": "data/manga/fst_try/original/rasetugari/039.jpg",
+    "translated_image": "data/manga/fst_try/translated/rasetugari/039.png",
+    "reference_texts": [
+      "how can i be absent",
+      "for my master's crisis",
+      "she's burning..",
+      "her wound--!?",
+      "healing hack",
+      "well...",
+      "it was a pretty big blow, though...",
+      "ku..kureha...",
+      "oh no ...\nhe's gaining back his sanity",
+      "you ",
+      "the likes of you...",
+      "i'm kakyomaru, a century's worth like You do no to interfere with me!!"
+    ],
+    "metadata": {
+      "book_title": "rasetugari",
+      "page_index": 40,
+      "run_id": "fst_try",
+      "filename_stem": "039"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:rasetugari:040",
+    "original_image": "data/manga/fst_try/original/rasetugari/040.jpg",
+    "translated_image": "data/manga/fst_try/translated/rasetugari/040.png",
+    "reference_texts": [
+      "so much  power coming from him solely",
+      "a century?",
+      "don't get too carried away for a hundred years.",
+      "i've been the house god for a millenium, since the heian era",
+      "you may be superior in power",
+      "this love...",
+      "will not lose to obsession"
+    ],
+    "metadata": {
+      "book_title": "rasetugari",
+      "page_index": 41,
+      "run_id": "fst_try",
+      "filename_stem": "040"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:rasetugari:041",
+    "original_image": "data/manga/fst_try/original/rasetugari/041.jpg",
+    "translated_image": "data/manga/fst_try/translated/rasetugari/041.png",
+    "reference_texts": [
+      "obsession can take over all kinds of thoughts",
+      "don't give in to such things",
+      "look at me.",
+      "feel me. ",
+      "breathe in this inscribed smell and remember your family",
+      "you can't have forgotten",
+      "the thoughts you had in your heart"
+    ],
+    "metadata": {
+      "book_title": "rasetugari",
+      "page_index": 42,
+      "run_id": "fst_try",
+      "filename_stem": "041"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:rasetugari:042",
+    "original_image": "data/manga/fst_try/original/rasetugari/042.jpg",
+    "translated_image": "data/manga/fst_try/translated/rasetugari/042.png",
+    "reference_texts": [
+      "remember...",
+      "i'll always be there for you.",
+      "bollocks..",
+      "this is ",
+      "unacceptable"
+    ],
+    "metadata": {
+      "book_title": "rasetugari",
+      "page_index": 43,
+      "run_id": "fst_try",
+      "filename_stem": "042"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:rasetugari:043",
+    "original_image": "data/manga/fst_try/original/rasetugari/043.jpg",
+    "translated_image": "data/manga/fst_try/translated/rasetugari/043.png",
+    "reference_texts": [
+      "what?",
+      "kakyomaru",
+      "don't feel bad",
+      "but from here on",
+      "you'll be battling against nothing but yourself"
+    ],
+    "metadata": {
+      "book_title": "rasetugari",
+      "page_index": 44,
+      "run_id": "fst_try",
+      "filename_stem": "043"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:rasetugari:044",
+    "original_image": "data/manga/fst_try/original/rasetugari/044.jpg",
+    "translated_image": "data/manga/fst_try/translated/rasetugari/044.png",
+    "reference_texts": [
+      "sorry, kureha",
+      "you must be in so much pain",
+      "don't underestimate me.",
+      "i wasn't that soft training on myself, you know",
+      "well... then...",
+      "now",
+      "wait",
+      "what are you doing",
+      "wait...",
+      "yes, sir",
+      "stop!",
+      "unh...",
+      "aaaahhhhhhhhhhhhhhhh!!!!"
+    ],
+    "metadata": {
+      "book_title": "rasetugari",
+      "page_index": 45,
+      "run_id": "fst_try",
+      "filename_stem": "044"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:rasetugari:045",
+    "original_image": "data/manga/fst_try/original/rasetugari/045.jpg",
+    "translated_image": "data/manga/fst_try/translated/rasetugari/045.png",
+    "reference_texts": [
+      "oh, god.",
+      "the curse...",
+      "the evil spirit",
+      "the obsession, it's burning away...",
+      "what a waste.",
+      "what a waste. what a waste.",
+      "what a waste, what a waste, what a waste...",
+      "damn you!",
+      "all the splendid hatred",
+      "the wonderful obsession\n...",
+      "you've wasted all my precious food"
+    ],
+    "metadata": {
+      "book_title": "rasetugari",
+      "page_index": 46,
+      "run_id": "fst_try",
+      "filename_stem": "045"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:rasetugari:046",
+    "original_image": "data/manga/fst_try/original/rasetugari/046.jpg",
+    "translated_image": "data/manga/fst_try/translated/rasetugari/046.png",
+    "reference_texts": [
+      "do ...",
+      "have a little taste!!!",
+      "i already know",
+      "that taste of obsession",
+      "getting drunk in hatred, and forgetting the pain",
+      "indeed it was sweet and easy, kakyomaru",
+      "but...",
+      "I won't fall for it"
+    ],
+    "metadata": {
+      "book_title": "rasetugari",
+      "page_index": 47,
+      "run_id": "fst_try",
+      "filename_stem": "046"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:rasetugari:047",
+    "original_image": "data/manga/fst_try/original/rasetugari/047.jpg",
+    "translated_image": "data/manga/fst_try/translated/rasetugari/047.png",
+    "reference_texts": [
+      "i will not"
+    ],
+    "metadata": {
+      "book_title": "rasetugari",
+      "page_index": 48,
+      "run_id": "fst_try",
+      "filename_stem": "047"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:rasetugari:048",
+    "original_image": "data/manga/fst_try/original/rasetugari/048.jpg",
+    "translated_image": "data/manga/fst_try/translated/rasetugari/048.png",
+    "reference_texts": [
+      "not any more."
+    ],
+    "metadata": {
+      "book_title": "rasetugari",
+      "page_index": 49,
+      "run_id": "fst_try",
+      "filename_stem": "048"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:rasetugari:049",
+    "original_image": "data/manga/fst_try/original/rasetugari/049.jpg",
+    "translated_image": "data/manga/fst_try/translated/rasetugari/049.png",
+    "reference_texts": [
+      "--kureha",
+      "...\nwhat?"
+    ],
+    "metadata": {
+      "book_title": "rasetugari",
+      "page_index": 50,
+      "run_id": "fst_try",
+      "filename_stem": "049"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:rasetugari:050",
+    "original_image": "data/manga/fst_try/original/rasetugari/050.jpg",
+    "translated_image": "data/manga/fst_try/translated/rasetugari/050.png",
+    "reference_texts": [
+      "you're heavy",
+      "is that all you've got to say?",
+      "i mean, the burns on my arm hurt, and i'm exhausted.",
+      "can't you turn into your spirit form?",
+      "hmm",
+      "this is a punishment.",
+      "you pointed your blade at me",
+      "your punishment is to take me home like this",
+      "you have to take my orders for a while",
+      "kureha..."
+    ],
+    "metadata": {
+      "book_title": "rasetugari",
+      "page_index": 51,
+      "run_id": "fst_try",
+      "filename_stem": "050"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:rasetugari:051",
+    "original_image": "data/manga/fst_try/original/rasetugari/051.jpg",
+    "translated_image": "data/manga/fst_try/translated/rasetugari/051.png",
+    "reference_texts": [
+      "i'm weak.",
+      "i was ostentatious today, facing kakyomaru,",
+      "but i could lose sanity anytime.\nI could even hurt you again.",
+      "i can't...",
+      "i have no right to be your master",
+      "idiot",
+      "i'm well aware of your weaknesses."
+    ],
+    "metadata": {
+      "book_title": "rasetugari",
+      "page_index": 52,
+      "run_id": "fst_try",
+      "filename_stem": "051"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  },
+  {
+    "id": "openmantra:fst_try:rasetugari:052",
+    "original_image": "data/manga/fst_try/original/rasetugari/052.jpg",
+    "translated_image": "data/manga/fst_try/translated/rasetugari/052.png",
+    "reference_texts": [
+      "at times, you may lose the track on a moonless night",
+      "but that is what i'm here for",
+      "I've served the house of arifuji since the heian period",
+      "for a thousand years.",
+      "the millennium's worth affection",
+      "will be your beacon of light!"
+    ],
+    "metadata": {
+      "book_title": "rasetugari",
+      "page_index": 53,
+      "run_id": "fst_try",
+      "filename_stem": "052"
+    },
+    "edits": [],
+    "fidelity_score": null,
+    "presentation_score": null
+  }
+]

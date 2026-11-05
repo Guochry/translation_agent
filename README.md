@@ -24,6 +24,52 @@ Visit [**thresh.tools/demo**](https://thresh.tools/?t=demo_start) for an explana
 
 https://github.com/davidheineman/thresh/assets/9833172/6138408a-1650-42ec-8588-0affb5c98eb5
 
+## Manga Translation Evaluation
+
+The [manga template](./public/templates/demo/manga_translation.yml) shows one matched original Japanese manga page and translated image per task, followed by the corresponding `text_en` reference entries from OpenMantra. It provides two independent integer scores from **1 to 100**:
+
+- **Fidelity:** Preservation of dialogue meaning and tone, story, characters, and original artwork. Intended replacement of Japanese lettering is allowed; unintended visual changes reduce fidelity.
+- **Presentation:** Readability and visual polish, including typography, text placement, speech-balloon fit, and rendering artifacts.
+
+Scores start blank. Navigation retains ratings during the session, and the rated-page count requires both scores. Use the download button to save a JSON file at any point, including unfinished work, and upload that file to resume. Reset clears both ratings for the current page.
+
+After deploying this checkout with the existing GitHub Pages workflow, open:
+
+[Manga Translation Evaluation](https://guochry.github.io/translation_agent/?i=templates/demo/manga_translation.yml&d=data/demo/manga_translation.json)
+
+For local use, run `npm run dev` and open [the local task](http://localhost:5173/?i=templates/demo/manga_translation.yml&d=data/demo/manga_translation.json). The template is also available in the interface builder as **Manga Translation**.
+
+### Prepare or refresh the manga data
+
+From this repository, run the converter with its defaults:
+
+```bash
+python data_tools/prepare_manga_evaluation.py
+```
+
+The equivalent explicit command is:
+
+```bash
+python data_tools/prepare_manga_evaluation.py \
+  --dataset-root ../data/manga/open-mantra-dataset \
+  --rendered-results-root ../agent/manga_tryout/manga_agent/runs/fst_try/rendered_results \
+  --run-id fst_try \
+  --output-json public/data/demo/manga_translation.json \
+  --assets-dir public/data/manga/fst_try
+```
+
+The converter matches pages by book and image filename stem using `annotation.json`; source filenames are zero-based while annotation page numbers are one-based. It preserves book order, ascending page numbers, and the exact English reference text in annotation order. Reference order is not guaranteed to be manga reading order.
+
+The current `fst_try` run produces **203 tasks across five manga**, with **1,501 English reference entries**. Eleven source pages have no rendered translation and are omitted; five matched pages have no text regions and display an empty-reference message. The conversion report is saved beside the task JSON as `manga_translation.report.json`.
+
+Matched originals and translated images are copied unchanged into `public/data/manga/fst_try/original/` and `translated/`, preserving their original image quality for evaluation. These public assets add approximately **204 MiB** and are bundled into the GitHub Pages build. Exported ratings retain page identity, image URLs, reference text, and metadata.
+
+Run the converter checks with `python -m unittest discover -s data_tools/tests -v`.
+
+The manga mode uses `manga_evaluation: true` and a `scores` list in the template. Task records contain `id`, `original_image`, `translated_image`, `reference_texts`, `metadata`, and the nullable `fidelity_score` and `presentation_score` fields. Existing text annotation templates continue to use their current format and `overall_score` setting.
+
+Original images and reference annotations come from [OpenMantra](https://github.com/mantra-inc/open-mantra-dataset), described in *Towards Fully Automated Manga Translation* by Ryota Hinami, Shonosuke Ishiwatari, Kazuhiko Yasuda, and Yusuke Matsui (AAAI 2021). The upstream **Creative Commons Attribution-NonCommercial 4.0 International** license is included with the copied assets as [LICENSE.md](./public/data/manga/fst_try/LICENSE.md). Translated pages are generated outputs from the `fst_try` manga-agent run.
+
 ## Getting Started with `thresh.tools`
 
 ### Overview

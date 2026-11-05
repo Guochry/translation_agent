@@ -1,6 +1,8 @@
 <script setup>
   import Sent from "./Sent.vue";
+  import MangaComparison from "./MangaComparison.vue";
   import _ from 'lodash';
+  import { isValidScore, scoreConfigs, scoreField } from '../../assets/js/score-util.js';
   import { handle_file_download, handle_file_upload } from "../../assets/js/file-util.js";
   import VueMarkdown from 'vue-markdown-render'
   import { initializeApp } from 'firebase/app'
@@ -45,6 +47,17 @@ export default {
             uid: this.$.uid
         }
     },
+    computed: {
+        current_example() {
+            return this.hits_data && this.hits_data[this.current_hit - 1]
+        },
+        score_definitions() {
+            return scoreConfigs(this.config)
+        },
+        rated_pages() {
+            return (this.hits_data || []).filter(hit => this.page_rated(hit)).length
+        }
+    },
     watch: {
         current_hit() {
             this.setup_hit_box();
@@ -62,6 +75,7 @@ export default {
             return panel ? $(panel).find(selector) : $(selector)
         },
         setup_hit_box() {
+            if (!this.current_example) return
             this.$p('.comment_area').val('');
             if ("comment" in this.hits_data[this.current_hit - 1]) {
                 this.$p('.comment_area').val(this.hits_data[this.current_hit - 1]["comment"]);
@@ -81,7 +95,16 @@ export default {
             if (this.hits_data && "bookmark" in this.hits_data[n - 1] && this.hits_data[n - 1]["bookmark"]) {
                 class_name += ' circle-bookmark'
             }
+            if (this.config.manga_evaluation && this.page_rated(this.hits_data && this.hits_data[n - 1])) {
+                class_name += ' circle-finished'
+            }
             return class_name
+        },
+        page_rated(hit) {
+            return Boolean(hit && this.score_definitions.length && this.score_definitions.every(score => {
+                const value = hit[scoreField(score)]
+                return (!this.config.manga_evaluation || Number.isInteger(value)) && isValidScore(value, score)
+            }))
         },
         get_bookmark_class() {
             if (this.hits_data && "bookmark" in this.hits_data[this.current_hit - 1] && this.hits_data[this.current_hit - 1]["bookmark"]) {
@@ -132,12 +155,10 @@ export default {
         restart_hit() {
             let new_hits_data = _.cloneDeep(this.hits_data);
             new_hits_data[this.current_hit - 1].edits = []
-            if (this.config.overall_score) {
-                const score_config = typeof this.config.overall_score === 'object'
-                    ? this.config.overall_score
-                    : {}
-                const score_field = score_config.name || score_config.field || 'overall_score'
-                delete new_hits_data[this.current_hit - 1][score_field]
+            for (const score of this.score_definitions) {
+                const field = scoreField(score)
+                if (this.config.manga_evaluation) new_hits_data[this.current_hit - 1][field] = null
+                else delete new_hits_data[this.current_hit - 1][field]
             }
 
             // TODO: Adds a selectable edit for split sentences
@@ -325,14 +346,21 @@ export default {
                 </div>
             </div>            
         </div>
+        <p v-if="config.manga_evaluation" class="manga-rating-progress" role="status" aria-label="Rating progress">{{ rated_pages }} / {{ total_hits }} pages fully rated</p>
         <h2 v-if="candidate_label" class="candidate-heading f3 mt3 mb2">{{ candidate_label }}</h2>
         <div class="hit-text-score-row">
             <div class="hit-text-box ba b--black-80 br2 pa2">
-                <div class="fr">
+                <div v-if="config.manga_evaluation && current_example" class="manga-page-actions">
+                    <button type="button" @click="restart_hit" aria-label="Reset page ratings">Reset ratings</button>
+                    <button type="button" @click="bookmark_hit" :aria-pressed="Boolean(current_example.bookmark)">{{ current_example.bookmark ? 'Remove bookmark' : 'Bookmark page' }}</button>
+                </div>
+                <div v-else class="fr">
                     <i @click="restart_hit" class="fa-solid fa-arrows-rotate fa-lg pointer mr2"></i>
                     <i @click="bookmark_hit" class="bookmark fa-regular fa-bookmark fa-lg pointer ml1" :class="get_bookmark_class()"></i>
                 </div>
 
+                <MangaComparison v-if="config.manga_evaluation && current_example" :key="current_hit" :hit="current_example" />
+                <template v-else-if="!config.manga_evaluation">
                 <p v-if="showConfigToggle()" @click="toggle_context" class="context_button pa2 br-pill-ns ba bw1 grow" :class="{'disabled': config.disable && Object.values(config.disable).includes('selection')}">
                     <div v-if="showContext">
                         <i class="fa-solid fa-arrow-up-short-wide fa-1-5x icon-default pointer mr2"></i>
@@ -355,7 +383,6 @@ export default {
                         <vue-markdown :source="hits_data[current_hit - 1].context" class="mt0 mb0" />
                     </div>
                 </div>
-
                 <div class="cf" v-if="showAdjacent() && source_exists()"></div>
 
                 <div :class="{'adjacent': showAdjacent() }">
@@ -375,6 +402,7 @@ export default {
                         <Sent sent_type="target" v-bind="$props" :remove_selected="remove_selected" />
                     </div>
                 </div>
+                </template>
             </div>
             <slot name="score"></slot>
         </div>

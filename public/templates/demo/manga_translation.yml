@@ -1,0 +1,40 @@
+template_name: demo_manga_translation
+template_label: Manga Translation Evaluation
+template_description: Compare original and translated manga pages, using English reference text, and rate fidelity and presentation.
+default_data_link: data/demo/manga_translation.json
+
+manga_evaluation: true
+edits: []
+
+interface_text:
+  typology:
+    source_label: "Original Japanese Manga"
+    target_label: "Translated Manga"
+  hit_box:
+    hit_label: "Manga Page"
+
+prepend_instructions: true
+instructions: |
+  ## Manga Translation Evaluation
+
+  Compare the original Japanese manga page with the translated page. Use the English reference text below the images to help assess the translation.
+
+  - **Fidelity (1–100):** How well does the translated page preserve the dialogue's meaning and tone, the story, characters, and original artwork? Penalize omissions, additions, mistranslations, and unintended visual changes. Replacing Japanese lettering with English is an intended change.
+  - **Presentation (1–100):** How readable and visually polished is the translated page? Consider legibility, typography, text placement, fit within speech balloons, and rendering artifacts.
+  - Enter a **whole number from 1 to 100** for each score. Higher is better: **1** means very poor and **100** means excellent. Judge the two dimensions independently.
+  - Reference entries follow the dataset's annotation order, which is not guaranteed to be reading order. Some pages have no reference text.
+  - Leave a score blank while it is unfinished. **Download** the JSON file to save your work, including partial ratings; **upload** that file to resume. Reset clears the current page's ratings.
+
+scores:
+  - name: fidelity_score
+    label: Fidelity
+    question: "How well are meaning, tone, story, characters, and original artwork preserved?"
+    min: 1
+    max: 100
+    step: 1
+  - name: presentation_score
+    label: Presentation
+    question: "How readable and visually polished are the lettering, placement, and rendered image?"
+    min: 1
+    max: 100
+    step: 1

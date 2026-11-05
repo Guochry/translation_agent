@@ -1,0 +1,106 @@
+{
+  "run_id": "fst_try",
+  "source_pages": 214,
+  "matched_pages": 203,
+  "reference_text_count": 1501,
+  "pages_without_reference_text": 5,
+  "missing_render_count": 11,
+  "missing_rendered_pages": [
+    {
+      "book_title": "tojime_no_siora",
+      "page_index": 27,
+      "run_id": "fst_try",
+      "filename_stem": "026"
+    },
+    {
+      "book_title": "balloon_dream",
+      "page_index": 3,
+      "run_id": "fst_try",
+      "filename_stem": "002"
+    },
+    {
+      "book_title": "tencho_isoro",
+      "page_index": 15,
+      "run_id": "fst_try",
+      "filename_stem": "014"
+    },
+    {
+      "book_title": "tencho_isoro",
+      "page_index": 16,
+      "run_id": "fst_try",
+      "filename_stem": "015"
+    },
+    {
+      "book_title": "tencho_isoro",
+      "page_index": 25,
+      "run_id": "fst_try",
+      "filename_stem": "024"
+    },
+    {
+      "book_title": "tencho_isoro",
+      "page_index": 30,
+      "run_id": "fst_try",
+      "filename_stem": "029"
+    },
+    {
+      "book_title": "boureisougi",
+      "page_index": 9,
+      "run_id": "fst_try",
+      "filename_stem": "008"
+    },
+    {
+      "book_title": "boureisougi",
+      "page_index": 21,
+      "run_id": "fst_try",
+      "filename_stem": "020"
+    },
+    {
+      "book_title": "rasetugari",
+      "page_index": 2,
+      "run_id": "fst_try",
+      "filename_stem": "001"
+    },
+    {
+      "book_title": "rasetugari",
+      "page_index": 13,
+      "run_id": "fst_try",
+      "filename_stem": "012"
+    },
+    {
+      "book_title": "rasetugari",
+      "page_index": 54,
+      "run_id": "fst_try",
+      "filename_stem": "053"
+    }
+  ],
+  "books": {
+    "tojime_no_siora": {
+      "source_pages": 46,
+      "matched_pages": 45
+    },
+    "balloon_dream": {
+      "source_pages": 38,
+      "matched_pages": 37
+    },
+    "tencho_isoro": {
+      "source_pages": 40,
+      "matched_pages": 36
+    },
+    "boureisougi": {
+      "source_pages": 36,
+      "matched_pages": 34
+    },
+    "rasetugari": {
+      "source_pages": 54,
+      "matched_pages": 51
+    }
+  },
+  "assets_base_url": "data/manga/fst_try",
+  "attribution": {
+    "dataset": "OpenMantra",
+    "source": "https://github.com/mantra-inc/open-mantra-dataset",
+    "license": "CC BY-NC 4.0",
+    "license_file": "data/manga/fst_try/LICENSE.md",
+    "citation": "Ryota Hinami, Shonosuke Ishiwatari, Kazuhiko Yasuda, and Yusuke Matsui. Towards Fully Automated Manga Translation. AAAI 2021."
+  }
+}

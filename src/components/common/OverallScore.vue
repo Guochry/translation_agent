@@ -4,10 +4,13 @@ export default {
         'hits_data',
         'current_hit',
         'set_hits_data',
-        'config'
+        'config',
+        'score_definition',
+        'caption'
     ],
     computed: {
         score_config() {
+            if (this.score_definition) return this.score_definition
             return typeof this.config.overall_score === 'object'
                 ? this.config.overall_score
                 : {}
@@ -27,7 +30,7 @@ export default {
         current_score() {
             const hit = this.hits_data && this.hits_data[this.current_hit - 1]
             const value = hit && hit[this.field_name]
-            return value == null ? null : Number(value)
+            return value == null || value === '' || !Number.isFinite(Number(value)) ? null : Number(value)
         },
         score_background() {
             if (this.current_score == null) return '#f2f2f2'
@@ -59,9 +62,10 @@ export default {
 
 <template>
     <label class="candidate-score-box">
-                <span class="candidate-score-caption">Score</span>
+                <span class="candidate-score-caption">{{ caption || 'Score' }}</span>
+                <span v-if="score_definition && score_config.question" class="score-question">{{ score_config.question }}</span>
                 <input
-                    :key="current_hit"
+                    :key="`${current_hit}-${field_name}`"
                     class="candidate-score-input"
                     :style="{ backgroundColor: score_background }"
                     type="number"
@@ -75,5 +79,6 @@ export default {
                     @input="update_score"
                     @change="update_score"
                 />
+                <span v-if="score_definition" class="score-range">{{ minimum }}–{{ maximum }}</span>
     </label>
 </template>
