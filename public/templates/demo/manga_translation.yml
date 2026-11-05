@@ -1,6 +1,6 @@
 template_name: demo_manga_translation
 template_label: Manga Translation Evaluation
-template_description: Compare original and translated manga pages, using English reference text, and rate fidelity and presentation.
+template_description: Compare original and translated manga pages, using paired Japanese and English reference text, and rate fidelity and presentation.
 default_data_link: data/demo/manga_translation.json
 
 manga_evaluation: true
@@ -17,7 +17,7 @@ prepend_instructions: true
 instructions: |
   ## Manga Translation Evaluation
 
-  Compare the original Japanese manga page with the translated page. Use the English reference text below the images to help assess the translation.
+  Compare the original Japanese manga page with the translated page. Each numbered reference below the images pairs the original Japanese text with its English reference translation to help assess the translation.
 
   - **Fidelity (1–100):** How well does the translated page preserve the dialogue's meaning and tone, the story, characters, and original artwork? Penalize omissions, additions, mistranslations, and unintended visual changes. Replacing Japanese lettering with English is an intended change.
   - **Presentation (1–100):** How readable and visually polished is the translated page? Consider legibility, typography, text placement, fit within speech balloons, and rendering artifacts.

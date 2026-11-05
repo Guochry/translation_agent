@@ -5,6 +5,7 @@ import json
 from pathlib import Path
 import tempfile
 import unittest
+from unittest.mock import patch
 
 
 SCRIPT = Path(__file__).resolve().parents[1] / "prepare_manga_evaluation.py"
@@ -28,14 +29,21 @@ class PrepareMangaEvaluationTests(unittest.TestCase):
         (self.dataset / "LICENSE.md").write_text("Dataset license\n", encoding="utf-8")
         self.books = [{"book_title": "example_book", "pages": []}]
 
-    def page(self, stem="009", page_index=10, references=None, rendered=True):
+    def page(self, stem="009", page_index=10, references=None, rendered=True, japanese_references=None):
         path = self.dataset / "images/example_book/ja" / f"{stem}.jpg"
         path.parent.mkdir(parents=True, exist_ok=True)
         path.write_bytes(b"original JPEG bytes\x00\xff" + stem.encode())
+        references = references if references is not None else ["Hello!"]
+        if japanese_references is None:
+            japanese_references = ["こんにちは！"] * len(references)
+        self.assertEqual(len(references), len(japanese_references))
         self.books[0]["pages"].append({
             "page_index": page_index,
             "image_paths": {"ja": f"images/example_book/ja/{stem}.jpg"},
-            "text": [{"text_en": reference} for reference in (references if references is not None else ["Hello!"])],
+            "text": [
+                {"text_en": reference, "text_ja": japanese}
+                for reference, japanese in zip(references, japanese_references)
+            ],
         })
         if rendered:
             self.render(stem)
@@ -81,14 +89,32 @@ class PrepareMangaEvaluationTests(unittest.TestCase):
         self.assertEqual(json.loads(self.output.with_suffix(".report.json").read_text()), report)
 
     def test_preserves_reference_order_newlines_unicode_and_empty_page(self):
-        self.page("001", 2, ["second\nline", "  日本語 & <reference>  ", ""])
+        self.page(
+            "001", 2, ["second\nline", "  日本語 & <reference>  ", ""],
+            japanese_references=["二番目\nの行", "", "  原文 & <参照>  "],
+        )
         self.page("000", 1, [])
         tasks, report = self.prepare()
         self.assertEqual([task["metadata"]["page_index"] for task in tasks], [1, 2])
         self.assertEqual(tasks[0]["reference_texts"], [])
+        self.assertEqual(tasks[0]["reference_texts_ja"], [])
         self.assertEqual(tasks[1]["reference_texts"], ["second\nline", "  日本語 & <reference>  ", ""])
+        self.assertEqual(tasks[1]["reference_texts_ja"], ["二番目\nの行", "", "  原文 & <参照>  "])
+        self.assertEqual(list(zip(tasks[1]["reference_texts_ja"], tasks[1]["reference_texts"])), [
+            ("二番目\nの行", "second\nline"),
+            ("", "  日本語 & <reference>  "),
+            ("  原文 & <参照>  ", ""),
+        ])
         self.assertEqual(report["reference_text_count"], 3)
+        self.assertEqual(report["japanese_reference_text_count"], 3)
+        self.assertEqual(report["empty_japanese_reference_text_count"], 1)
         self.assertEqual(report["pages_without_reference_text"], 1)
+
+    def test_reuses_unchanged_image_and_license_assets(self):
+        self.page()
+        self.prepare()
+        with patch.object(manga.shutil, "copyfile", side_effect=AssertionError("Unchanged asset was copied")):
+            self.prepare()
 
     def test_reports_missing_render_without_creating_task(self):
         self.page("000", 1)
@@ -131,6 +157,16 @@ class PrepareMangaEvaluationTests(unittest.TestCase):
     def test_rejects_invalid_reference(self):
         self.page(references=[None])
         with self.assertRaisesRegex(ValueError, "string text_en"):
+            self.prepare()
+        self.assertFalse(self.public.exists())
+
+    def test_rejects_invalid_or_missing_japanese_reference(self):
+        self.page(japanese_references=[None])
+        with self.assertRaisesRegex(ValueError, "string text_ja"):
+            self.prepare()
+        self.assertFalse(self.public.exists())
+        del self.books[0]["pages"][0]["text"][0]["text_ja"]
+        with self.assertRaisesRegex(ValueError, "string text_ja"):
             self.prepare()
         self.assertFalse(self.public.exists())
 

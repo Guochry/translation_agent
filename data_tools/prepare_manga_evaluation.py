@@ -5,6 +5,7 @@ Only the output JSON, conversion report, and copied public assets are written.
 """
 
 import argparse
+import filecmp
 import json
 import re
 import shutil
@@ -72,15 +73,19 @@ def _read_sources(dataset_root):
             regions = page.get("text")
             if not isinstance(regions, list):
                 raise ValueError(f"{title}/{stem}: text must be a list")
-            references = []
+            references, references_ja = [], []
             for region in regions:
                 if not isinstance(region, dict) or not isinstance(region.get("text_en"), str):
                     raise ValueError(f"{title}/{stem}: every text region needs a string text_en")
+                if not isinstance(region.get("text_ja"), str):
+                    raise ValueError(f"{title}/{stem}: every text region needs a string text_ja")
                 references.append(region["text_en"])
+                references_ja.append(region["text_ja"])
             sources[key] = {
                 "path": original,
                 "page_index": page_index,
                 "references": references,
+                "references_ja": references_ja,
             }
     return sources, book_order
 
@@ -159,6 +164,7 @@ def prepare(dataset_root, rendered_root, run_id, output_json, assets_dir, *, pub
             "original_image": f"{base_url}/{original_asset.as_posix()}",
             "translated_image": f"{base_url}/{translated_asset.as_posix()}",
             "reference_texts": source["references"],
+            "reference_texts_ja": source["references_ja"],
             "metadata": metadata,
             "edits": [],
             "fidelity_score": None,
@@ -171,6 +177,10 @@ def prepare(dataset_root, rendered_root, run_id, output_json, assets_dir, *, pub
         "source_pages": len(sources),
         "matched_pages": len(tasks),
         "reference_text_count": sum(len(task["reference_texts"]) for task in tasks),
+        "japanese_reference_text_count": sum(len(task["reference_texts_ja"]) for task in tasks),
+        "empty_japanese_reference_text_count": sum(
+            text == "" for task in tasks for text in task["reference_texts_ja"]
+        ),
         "pages_without_reference_text": sum(not task["reference_texts"] for task in tasks),
         "missing_render_count": len(missing),
         "missing_rendered_pages": missing,
@@ -192,8 +202,11 @@ def prepare(dataset_root, rendered_root, run_id, output_json, assets_dir, *, pub
     for source, relative in copies:
         destination = assets_dir / relative
         destination.parent.mkdir(parents=True, exist_ok=True)
-        shutil.copyfile(source, destination)
-    shutil.copyfile(license_path, assets_dir / "LICENSE.md")
+        if not destination.is_file() or not filecmp.cmp(source, destination, shallow=False):
+            shutil.copyfile(source, destination)
+    license_destination = assets_dir / "LICENSE.md"
+    if not license_destination.is_file() or not filecmp.cmp(license_path, license_destination, shallow=False):
+        shutil.copyfile(license_path, license_destination)
     output_json.parent.mkdir(parents=True, exist_ok=True)
     output_json.write_text(json.dumps(tasks, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     report_path = output_json.with_name(f"{output_json.stem}.report.json")

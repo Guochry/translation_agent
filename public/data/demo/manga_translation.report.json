@@ -3,6 +3,8 @@
   "source_pages": 214,
   "matched_pages": 203,
   "reference_text_count": 1501,
+  "japanese_reference_text_count": 1501,
+  "empty_japanese_reference_text_count": 4,
   "pages_without_reference_text": 5,
   "missing_render_count": 11,
   "missing_rendered_pages": [

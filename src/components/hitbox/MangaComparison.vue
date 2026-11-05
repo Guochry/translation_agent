@@ -25,6 +25,9 @@ export default {
         },
         reference_texts() {
             return Array.isArray(this.hit.reference_texts) ? this.hit.reference_texts : []
+        },
+        reference_texts_ja() {
+            return Array.isArray(this.hit.reference_texts_ja) ? this.hit.reference_texts_ja : null
         }
     },
     watch: {
@@ -68,9 +71,21 @@ export default {
             </figure>
         </div>
         <section class="manga-references" :aria-labelledby="reference_heading_id">
-            <h3 :id="reference_heading_id">English reference translation</h3>
+            <h3 :id="reference_heading_id">{{ reference_texts_ja ? 'Japanese source and English reference' : 'English reference translation' }}</h3>
             <ol v-if="reference_texts.length">
-                <li v-for="(text, index) in reference_texts" :key="index">{{ text }}</li>
+                <li v-for="(text, index) in reference_texts" :key="index">
+                    <div class="manga-reference-pair" :class="{ 'has-source': reference_texts_ja !== null }">
+                        <div v-if="reference_texts_ja !== null" class="manga-reference-source">
+                            <span class="manga-reference-label">Japanese source</span>
+                            <p v-if="typeof reference_texts_ja[index] === 'string' && reference_texts_ja[index].trim()" class="manga-reference-text" lang="ja">{{ reference_texts_ja[index] }}</p>
+                            <p v-else class="manga-reference-unavailable" aria-label="Japanese source text unavailable">Japanese source text unavailable</p>
+                        </div>
+                        <div class="manga-reference-english">
+                            <span class="manga-reference-label">English reference</span>
+                            <p class="manga-reference-text" lang="en">{{ text }}</p>
+                        </div>
+                    </div>
+                </li>
             </ol>
             <p v-else class="manga-empty-reference">No reference text for this page</p>
         </section>
@@ -98,9 +113,15 @@ export default {
 .manga-references { margin-top: 1.5rem; border-top: 1px solid #ddd; padding-top: 1rem; }
 .manga-references h3 { margin: 0 0 0.75rem; font-size: 1.1rem; }
 .manga-references ol { margin: 0; padding-left: 1.75rem; }
-.manga-references li { white-space: pre-wrap; overflow-wrap: anywhere; line-height: 1.5; margin-bottom: 0.6rem; padding-left: 0.25rem; }
+.manga-references li { overflow-wrap: anywhere; line-height: 1.5; margin-bottom: 0.8rem; padding-left: 0.25rem; }
+.manga-reference-pair { display: grid; grid-template-columns: minmax(0, 1fr); gap: 0.75rem 1rem; padding-bottom: 0.8rem; border-bottom: 1px solid #eee; }
+.manga-reference-pair.has-source { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.manga-reference-label { font-size: 0.8rem; font-weight: 600; color: #555; }
+.manga-reference-text { white-space: pre-wrap; margin: 0.25rem 0 0; }
+.manga-reference-unavailable { margin: 0.25rem 0 0; color: #666; font-style: italic; }
 .manga-empty-reference { margin-bottom: 0; color: #555; }
 @media (max-width: 700px) {
     .manga-image-grid { grid-template-columns: minmax(0, 1fr); gap: 1.5rem; }
+    .manga-reference-pair.has-source { grid-template-columns: minmax(0, 1fr); }
 }
 </style>
