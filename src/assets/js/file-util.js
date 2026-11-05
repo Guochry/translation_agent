@@ -55,7 +55,7 @@ export function download_data(file_path) {
 }
 
 export function download_config(file_path) {
-    return fetch(file_path)
+    return fetch(file_path, { cache: 'no-cache' })
         .then(response => response.text())
         .then(r => {return r});
 }

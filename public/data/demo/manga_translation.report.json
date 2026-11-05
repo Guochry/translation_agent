@@ -6,6 +6,8 @@
   "japanese_reference_text_count": 1501,
   "empty_japanese_reference_text_count": 4,
   "pages_without_reference_text": 5,
+  "translated_region_count": 2361,
+  "pages_without_generated_text": 4,
   "missing_render_count": 11,
   "missing_rendered_pages": [
     {

@@ -1,6 +1,10 @@
+<script setup>
+import MangaTextRegion from './MangaTextRegion.vue';
+</script>
+
 <script>
 export default {
-    props: ['hit'],
+    props: ['hit', 'text_evaluation', 'update_region'],
     data() {
         return {
             image_errors: { original: false, translated: false },
@@ -28,6 +32,9 @@ export default {
         },
         reference_texts_ja() {
             return Array.isArray(this.hit.reference_texts_ja) ? this.hit.reference_texts_ja : null
+        },
+        translation_regions() {
+            return Array.isArray(this.hit.translation_regions) ? this.hit.translation_regions : null
         }
     },
     watch: {
@@ -51,6 +58,7 @@ export default {
             <h2>{{ metadata.book_title || 'Manga translation' }}</h2>
             <span v-if="metadata.page_index != null">Page {{ metadata.page_index }}</span>
         </header>
+        <div class="manga-layout" :class="{ 'has-text-evaluation': text_evaluation }">
         <div class="manga-image-grid">
             <figure v-for="panel in image_panels" :key="panel.name" class="manga-image-panel">
                 <figcaption>
@@ -70,6 +78,9 @@ export default {
                 </p>
             </figure>
         </div>
+        <aside class="manga-text-panel" :aria-label="text_evaluation ? 'Text translation evaluation' : 'Reference text'">
+        <component :is="text_evaluation ? 'details' : 'div'" class="manga-reference-disclosure" :open="text_evaluation ? true : undefined">
+        <summary v-if="text_evaluation">Human reference text</summary>
         <section class="manga-references" :aria-labelledby="reference_heading_id">
             <h3 :id="reference_heading_id">{{ reference_texts_ja ? 'Japanese source and English reference' : 'English reference translation' }}</h3>
             <ol v-if="reference_texts.length">
@@ -89,6 +100,21 @@ export default {
             </ol>
             <p v-else class="manga-empty-reference">No reference text for this page</p>
         </section>
+        </component>
+        <section v-if="text_evaluation" class="manga-generated-regions" aria-label="Generated translations">
+            <h3>Generated translations</h3>
+            <p v-if="translation_regions === null" class="manga-empty-reference">Generated text is unavailable for this page.</p>
+            <p v-else-if="!translation_regions.length" class="manga-empty-reference">No generated text for this page.</p>
+            <MangaTextRegion
+                v-for="(region, index) in translation_regions || []"
+                :key="`${index}-${region.id}`"
+                :region="region"
+                :region_index="index"
+                :update_region="update_region"
+            />
+        </section>
+        </aside>
+        </div>
     </section>
 </template>
 
@@ -103,6 +129,13 @@ export default {
 }
 .manga-page-heading h2 { margin: 0; font-size: 1.3rem; }
 .manga-page-heading span { color: #555; }
+.manga-layout.has-text-evaluation { display: grid; grid-template-columns: minmax(0, 2fr) minmax(340px, 1fr); gap: 1rem; align-items: start; }
+.has-text-evaluation .manga-text-panel { min-width: 0; max-height: 80vh; overflow: auto; padding: 1rem; border: 1px solid #ddd; border-radius: 4px; background: #fafafa; }
+.has-text-evaluation .manga-references { margin-top: 0; padding-top: 0; border-top: 0; }
+.has-text-evaluation .manga-reference-pair.has-source { grid-template-columns: minmax(0, 1fr); }
+.manga-generated-regions { margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid #ddd; }
+.manga-generated-regions h3 { margin: 0 0 0.75rem; font-size: 1.1rem; }
+.manga-reference-disclosure summary { cursor: pointer; font-size: 0.9rem; font-weight: 600; margin-bottom: 0.85rem; }
 .manga-image-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
 .manga-image-panel { margin: 0; min-width: 0; }
 .manga-image-panel figcaption { margin-bottom: 0.75rem; }
@@ -120,6 +153,10 @@ export default {
 .manga-reference-text { white-space: pre-wrap; margin: 0.25rem 0 0; }
 .manga-reference-unavailable { margin: 0.25rem 0 0; color: #666; font-style: italic; }
 .manga-empty-reference { margin-bottom: 0; color: #555; }
+@media (max-width: 1100px) {
+    .manga-layout.has-text-evaluation { grid-template-columns: minmax(0, 1fr); }
+    .has-text-evaluation .manga-text-panel { max-height: none; overflow: visible; }
+}
 @media (max-width: 700px) {
     .manga-image-grid { grid-template-columns: minmax(0, 1fr); gap: 1.5rem; }
     .manga-reference-pair.has-source { grid-template-columns: minmax(0, 1fr); }

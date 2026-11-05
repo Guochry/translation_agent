@@ -6,7 +6,9 @@ Only the output JSON, conversion report, and copied public assets are written.
 
 import argparse
 import filecmp
+import hashlib
 import json
+import math
 import re
 import shutil
 from pathlib import Path
@@ -115,7 +117,94 @@ def _read_renders(rendered_root, sources):
     return renders
 
 
-def prepare(dataset_root, rendered_root, run_id, output_json, assets_dir, *, public_root=PUBLIC_ROOT):
+def _translation_regions(page, label):
+    regions = page.get("regions")
+    if not isinstance(regions, list):
+        raise ValueError(f"{label}: result regions must be a list")
+    by_id = {}
+    for region in regions:
+        if not isinstance(region, dict):
+            raise ValueError(f"{label}: every generated region must be an object")
+        region_id = region.get("id")
+        if not isinstance(region_id, str) or not region_id.strip():
+            raise ValueError(f"{label}: every generated region needs a nonempty string id")
+        if region_id in by_id:
+            raise ValueError(f"{label}: duplicate generated region id: {region_id}")
+        for field in ("source_text", "translation", "class_name"):
+            if not isinstance(region.get(field), str):
+                raise ValueError(f"{label}: generated region {region_id} needs a string {field}")
+        bbox = region.get("bbox")
+        if (
+            not isinstance(bbox, list) or len(bbox) != 4
+            or not all(type(value) in (int, float) and math.isfinite(value) for value in bbox)
+            or not (0 <= bbox[0] < bbox[2] and 0 <= bbox[1] < bbox[3])
+        ):
+            raise ValueError(f"{label}: generated region {region_id} needs a valid bbox [x1,y1,x2,y2]")
+        by_id[region_id] = {
+            "id": region_id,
+            "source": region["source_text"],
+            "target": region["translation"],
+            "bbox": bbox,
+            "kind": region["class_name"],
+            "quality_score": None,
+            "edits": [],
+        }
+    reading_order = page.get("reading_order")
+    if reading_order is not None:
+        if (
+            not isinstance(reading_order, list)
+            or not all(isinstance(region_id, str) for region_id in reading_order)
+            or len(reading_order) != len(by_id)
+            or set(reading_order) != set(by_id)
+        ):
+            raise ValueError(f"{label}: reading_order must contain each generated region id exactly once")
+        return [by_id[region_id] for region_id in reading_order], "reading_order"
+    return list(by_id.values()), "region_order"
+
+
+def _read_results(results_root, sources, renders):
+    if not results_root.is_dir():
+        raise ValueError(f"Agent-results directory does not exist: {results_root}")
+    results = {}
+    for path in sorted(results_root.glob("*/pages/*/*/result.json")):
+        result = json.loads(path.read_text(encoding="utf-8"))
+        page = result.get("page") if isinstance(result, dict) else None
+        if not isinstance(page, dict):
+            raise ValueError(f"{path}: result must contain a page object")
+        image_path, title = page.get("image_path"), page.get("series")
+        if not isinstance(image_path, str) or not isinstance(title, str):
+            raise ValueError(f"{path}: result page needs image_path and series strings")
+        original = Path(image_path)
+        key = (title, original.stem)
+        # Unpublished/unfinished pages do not become annotation tasks.
+        if key not in renders or result.get("status") != "completed":
+            continue
+        label = f"{title}/{original.stem}"
+        if key in results:
+            raise ValueError(f"Duplicate completed result identity: {label}")
+        if original.parent.parent.name != title:
+            raise ValueError(f"{label}: result source image does not match its series")
+        if type(page.get("index")) is not int or page["index"] != sources[key]["page_index"]:
+            raise ValueError(f"{label}: result page index does not match annotation page_index")
+        rendered_image = page.get("rendered_image")
+        if not isinstance(rendered_image, str) or not Path(rendered_image).is_file():
+            raise ValueError(f"{label}: completed result needs an existing rendered_image")
+        if hashlib.sha256(Path(rendered_image).read_bytes()).digest() != hashlib.sha256(renders[key].read_bytes()).digest():
+            raise ValueError(f"{label}: rendered image mismatch between result and published image")
+        regions, translation_order = _translation_regions(page, label)
+        results[key] = {
+            "regions": regions,
+            "path": path.relative_to(results_root).as_posix(),
+            "translation_order": translation_order,
+        }
+    missing = sorted(set(renders) - set(results))
+    if missing:
+        labels = ", ".join(f"{title}/{stem}" for title, stem in missing)
+        raise ValueError(f"Missing completed result for published pages: {labels}")
+    return results
+
+
+def prepare(dataset_root, rendered_root, run_id, output_json, assets_dir, *, results_root=None, public_root=PUBLIC_ROOT):
     """Validate all inputs, then copy unchanged images and write tasks/report.
 
     Assets must be beneath public_root so every image URL works with Vite's
@@ -123,6 +212,7 @@ def prepare(dataset_root, rendered_root, run_id, output_json, assets_dir, *, pub
     """
     dataset_root = Path(dataset_root).resolve()
     rendered_root = Path(rendered_root).resolve()
+    results_root = Path(results_root).resolve() if results_root is not None else rendered_root.parent
     output_json = Path(output_json).resolve()
     assets_dir = Path(assets_dir).resolve()
     public_root = Path(public_root).resolve()
@@ -130,11 +220,12 @@ def prepare(dataset_root, rendered_root, run_id, output_json, assets_dir, *, pub
     if not assets_dir.is_relative_to(public_root) or assets_dir == public_root:
         raise ValueError("assets-dir must be a subdirectory of the repository public directory")
     for destination in (assets_dir, output_json):
-        if any(destination.is_relative_to(source) for source in (dataset_root, rendered_root)):
-            raise ValueError("Outputs must not be written inside either source directory")
+        if any(destination.is_relative_to(source) for source in (dataset_root, rendered_root, results_root)):
+            raise ValueError("Outputs must not be written inside any source directory")
 
     sources, book_order = _read_sources(dataset_root)
     renders = _read_renders(rendered_root, sources)
+    results = _read_results(results_root, sources, renders)
     license_path = dataset_root / "LICENSE.md"
     if not license_path.is_file():
         raise ValueError(f"Dataset attribution license is missing: {license_path}")
@@ -156,6 +247,8 @@ def prepare(dataset_root, rendered_root, run_id, output_json, assets_dir, *, pub
         if key not in renders:
             missing.append(metadata)
             continue
+        metadata["agent_result_path"] = results[key]["path"]
+        metadata["translation_order"] = results[key]["translation_order"]
         books[title]["matched_pages"] += 1
         original_asset = Path("original") / title / source["path"].name
         translated_asset = Path("translated") / title / renders[key].name
@@ -165,6 +258,7 @@ def prepare(dataset_root, rendered_root, run_id, output_json, assets_dir, *, pub
             "translated_image": f"{base_url}/{translated_asset.as_posix()}",
             "reference_texts": source["references"],
             "reference_texts_ja": source["references_ja"],
+            "translation_regions": results[key]["regions"],
             "metadata": metadata,
             "edits": [],
             "fidelity_score": None,
@@ -182,6 +276,8 @@ def prepare(dataset_root, rendered_root, run_id, output_json, assets_dir, *, pub
             text == "" for task in tasks for text in task["reference_texts_ja"]
         ),
         "pages_without_reference_text": sum(not task["reference_texts"] for task in tasks),
+        "translated_region_count": sum(len(task["translation_regions"]) for task in tasks),
+        "pages_without_generated_text": sum(not task["translation_regions"] for task in tasks),
         "missing_render_count": len(missing),
         "missing_rendered_pages": missing,
         "books": books,
@@ -218,6 +314,7 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--dataset-root", type=Path, default=DEFAULT_DATASET_ROOT)
     parser.add_argument("--rendered-results-root", type=Path, default=DEFAULT_RENDERED_ROOT)
+    parser.add_argument("--results-root", type=Path, help="Agent results root (default: parent of --rendered-results-root)")
     parser.add_argument("--run-id", default="fst_try")
     parser.add_argument("--output-json", type=Path, default=PUBLIC_ROOT / "data/demo/manga_translation.json")
     parser.add_argument("--assets-dir", type=Path, default=PUBLIC_ROOT / "data/manga/fst_try")
@@ -226,6 +323,7 @@ def main():
         tasks, report = prepare(
             args.dataset_root, args.rendered_results_root, args.run_id,
             args.output_json, args.assets_dir,
+            results_root=args.results_root,
         )
     except (ValueError, OSError) as error:
         parser.error(str(error))

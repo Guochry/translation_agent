@@ -26,12 +26,14 @@ https://github.com/davidheineman/thresh/assets/9833172/6138408a-1650-42ec-8588-0
 
 ## Manga Translation Evaluation
 
-The [manga template](./public/templates/demo/manga_translation.yml) shows one matched original Japanese manga page and translated image per task, followed by numbered pairs of original Japanese `text_ja` and English `text_en` reference entries from OpenMantra. It provides two independent integer scores from **1 to 100**:
+The [manga template](./public/templates/demo/manga_translation.yml) shows one matched original Japanese manga page and translated image per task. A text sidebar beside the image pair contains human Japanese/English references from OpenMantra and separate cards for the agent's generated translation regions. Each page has two independent overall integer scores from **1 to 100**:
 
 - **Fidelity:** Preservation of dialogue meaning and tone, story, characters, and original artwork. Intended replacement of Japanese lettering is allowed; unintended visual changes reduce fidelity.
 - **Presentation:** Readability and visual polish, including typography, text placement, speech-balloon fit, and rendering artifacts.
 
-Scores start blank. Navigation retains ratings during the session, and the rated-page count requires both scores. Use the download button to save a JSON file at any point, including unfinished work, and upload that file to resume. Reset clears both ratings for the current page.
+Each generated-region card shows detected Japanese and the generated translation. Annotators can highlight errors in the generated translation, without severity labels, and assign that region a **text-quality score from 0 to 100 in steps of 5**. A score of **0** means meaning is lost or the translation is in the wrong language; **100** means fully accurate and natural English. Human references and generated regions are separate lists because region counts and boundaries can differ.
+
+Scores start blank. Navigation retains ratings and highlights during the session. A page counts as fully rated once both overall scores and every generated-region quality score are filled; **0** is a valid text score and error highlights are optional. Pages with no generated regions need only the two overall scores. Download JSON at any point to save partial work and upload that file to resume. Reset clears both overall ratings, every region's quality score, and all error highlights for the current page.
 
 After deploying this checkout with the existing GitHub Pages workflow, open:
 
@@ -53,20 +55,27 @@ The equivalent explicit command is:
 python data_tools/prepare_manga_evaluation.py \
   --dataset-root ../data/manga/open-mantra-dataset \
   --rendered-results-root ../agent/manga_tryout/manga_agent/runs/fst_try/rendered_results \
+  --results-root ../agent/manga_tryout/manga_agent/runs/fst_try \
   --run-id fst_try \
   --output-json public/data/demo/manga_translation.json \
   --assets-dir public/data/manga/fst_try
 ```
 
-The converter matches pages by book and image filename stem using `annotation.json`; source filenames are zero-based while annotation page numbers are one-based. It preserves book order, ascending page numbers, and the exact Japanese and English reference text paired in annotation order. Reference order is not guaranteed to be manga reading order. Empty Japanese annotations are preserved and shown as unavailable in the interface.
+The converter matches pages by book and image filename stem using `annotation.json`; source filenames are zero-based while annotation page numbers are one-based. It preserves book order, ascending page numbers, and the exact Japanese and English reference text paired in annotation order. Empty Japanese annotations are preserved and shown as unavailable in the interface.
 
-The current `fst_try` run produces **203 tasks across five manga**, with **1,501 English reference entries**. Eleven source pages have no rendered translation and are omitted; five matched pages have no text regions and display an empty-reference message. The conversion report is saved beside the task JSON as `manga_translation.report.json`.
+Generated text comes from the matched agent `result.json` files under `--results-root`, which defaults to the parent of `--rendered-results-root` when omitted. The converter validates matching page identities and rendered-image hashes before packaging the generated text. It uses valid agent reading-order information when present, otherwise the stored region order. Human references retain annotation order; neither list establishes independently verified manga reading order.
+
+The current `fst_try` run produces **203 tasks across five manga**, with **1,501 human reference pairs** and **2,361 generated translation regions**. Eleven source pages have no rendered translation and are omitted. Five matched pages have no human reference text; four have no generated regions. Each list has its own empty state. The conversion report is saved beside the task JSON as `manga_translation.report.json`.
 
 Matched originals and translated images are copied unchanged into `public/data/manga/fst_try/original/` and `translated/`, preserving their original image quality for evaluation. These public assets add approximately **204 MiB** and are bundled into the GitHub Pages build. Exported ratings retain page identity, image URLs, reference text, and metadata.
 
 Run the converter checks with `python -m unittest discover -s data_tools/tests -v`.
 
-The manga mode uses `manga_evaluation: true` and a `scores` list in the template. Task records contain `id`, `original_image`, `translated_image`, `reference_texts` (English), `reference_texts_ja` (Japanese, aligned by index), `metadata`, and the nullable `fidelity_score` and `presentation_score` fields. Uploaded older exports recover missing Japanese references from the currently loaded dataset when their IDs and English references match; saved scores and bookmarks are preserved. Unmatched records still display their English references. Dataset loads revalidate the browser cache so new deployments can supply updated references. Existing text annotation templates continue to use their current format and `overall_score` setting.
+The template enables `manga_evaluation: true` and `manga_text_evaluation: true`. Its root `scores` list defines only the two overall page scores. Task records contain `id`, `original_image`, `translated_image`, `reference_texts` (English), `reference_texts_ja` (Japanese, aligned by index), `metadata`, `fidelity_score`, `presentation_score`, and `translation_regions`.
+
+Each `translation_regions` entry contains `id`, `source` (detected Japanese), `target` (generated translation), `bbox`, `kind`, nullable `quality_score`, and `edits`. Error edits use the existing shape: `category: "error"`, a numeric `id`, `annotation: null`, and `output_idx` character ranges local to that region's `target`, measured in JavaScript UTF-16 offsets. The root `edits` list stays empty; text cards manage their own error lists.
+
+Uploaded older exports recover missing Japanese references and generated-region arrays from the currently loaded dataset while preserving saved page scores and bookmarks. Template and dataset loads revalidate the browser cache so new deployments can supply updated task settings and data. Existing text annotation templates retain their current format and `overall_score` setting.
 
 Original images and reference annotations come from [OpenMantra](https://github.com/mantra-inc/open-mantra-dataset), described in *Towards Fully Automated Manga Translation* by Ryota Hinami, Shonosuke Ishiwatari, Kazuhiko Yasuda, and Yusuke Matsui (AAAI 2021). The upstream **Creative Commons Attribution-NonCommercial 4.0 International** license is included with the copied assets as [LICENSE.md](./public/data/manga/fst_try/LICENSE.md). Translated pages are generated outputs from the `fst_try` manga-agent run.
 

@@ -3,6 +3,7 @@
   import MangaComparison from "./MangaComparison.vue";
   import _ from 'lodash';
   import { isValidScore, scoreConfigs, scoreField } from '../../assets/js/score-util.js';
+  import { isValidTranslationQuality } from '../../assets/js/manga-util.js';
   import { handle_file_download, handle_file_upload } from "../../assets/js/file-util.js";
   import VueMarkdown from 'vue-markdown-render'
   import { initializeApp } from 'firebase/app'
@@ -101,10 +102,20 @@ export default {
             return class_name
         },
         page_rated(hit) {
-            return Boolean(hit && this.score_definitions.length && this.score_definitions.every(score => {
+            const manga_rated = Boolean(hit && this.score_definitions.length && this.score_definitions.every(score => {
                 const value = hit[scoreField(score)]
                 return (!this.config.manga_evaluation || Number.isInteger(value)) && isValidScore(value, score)
             }))
+            return manga_rated && (!this.config.manga_text_evaluation
+                || (Array.isArray(hit.translation_regions)
+                    && hit.translation_regions.every(region => isValidTranslationQuality(region.quality_score))))
+        },
+        update_translation_region(index, region) {
+            const current = this.current_example?.translation_regions?.[index]
+            if (!current || current.id !== region.id || current.target !== region.target) return
+            const data = _.cloneDeep(this.hits_data)
+            data[this.current_hit - 1].translation_regions[index] = _.cloneDeep(region)
+            this.set_hits_data(data)
         },
         get_bookmark_class() {
             if (this.hits_data && "bookmark" in this.hits_data[this.current_hit - 1] && this.hits_data[this.current_hit - 1]["bookmark"]) {
@@ -159,6 +170,12 @@ export default {
                 const field = scoreField(score)
                 if (this.config.manga_evaluation) new_hits_data[this.current_hit - 1][field] = null
                 else delete new_hits_data[this.current_hit - 1][field]
+            }
+            if (this.config.manga_text_evaluation) {
+                for (const region of new_hits_data[this.current_hit - 1].translation_regions || []) {
+                    region.quality_score = null
+                    region.edits = []
+                }
             }
 
             // TODO: Adds a selectable edit for split sentences
@@ -351,7 +368,7 @@ export default {
         <div class="hit-text-score-row">
             <div class="hit-text-box ba b--black-80 br2 pa2">
                 <div v-if="config.manga_evaluation && current_example" class="manga-page-actions">
-                    <button type="button" @click="restart_hit" aria-label="Reset page ratings">Reset ratings</button>
+                    <button type="button" @click="restart_hit" :aria-label="config.manga_text_evaluation ? 'Reset page assessment' : 'Reset page ratings'">{{ config.manga_text_evaluation ? 'Reset page' : 'Reset ratings' }}</button>
                     <button type="button" @click="bookmark_hit" :aria-pressed="Boolean(current_example.bookmark)">{{ current_example.bookmark ? 'Remove bookmark' : 'Bookmark page' }}</button>
                 </div>
                 <div v-else class="fr">
@@ -359,7 +376,13 @@ export default {
                     <i @click="bookmark_hit" class="bookmark fa-regular fa-bookmark fa-lg pointer ml1" :class="get_bookmark_class()"></i>
                 </div>
 
-                <MangaComparison v-if="config.manga_evaluation && current_example" :key="current_hit" :hit="current_example" />
+                <MangaComparison
+                    v-if="config.manga_evaluation && current_example"
+                    :key="current_hit"
+                    :hit="current_example"
+                    :text_evaluation="config.manga_text_evaluation"
+                    :update_region="update_translation_region"
+                />
                 <template v-else-if="!config.manga_evaluation">
                 <p v-if="showConfigToggle()" @click="toggle_context" class="context_button pa2 br-pill-ns ba bw1 grow" :class="{'disabled': config.disable && Object.values(config.disable).includes('selection')}">
                     <div v-if="showContext">

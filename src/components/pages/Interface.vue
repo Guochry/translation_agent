@@ -10,6 +10,7 @@
   import _ from 'lodash';
   import { COLORS } from '../../assets/js/constants.js';
   import { isValidScore, scoreConfigs, scoreField } from '../../assets/js/score-util.js';
+  import { isValidTranslationQuality } from '../../assets/js/manga-util.js';
 </script>
 
 <script>
@@ -125,14 +126,33 @@
               }
               for (const hit of hit_data) {
                 const reference = references.get(hit.id)
-                if (!Array.isArray(hit.reference_texts_ja) && reference
+                const same_references = Boolean(reference
                     && Array.isArray(hit.reference_texts) && Array.isArray(reference.reference_texts)
                     && hit.reference_texts.length === reference.reference_texts.length
-                    && reference.reference_texts.every((text, index) => typeof text === 'string' && text === hit.reference_texts[index])
+                    && reference.reference_texts.every((text, index) => typeof text === 'string' && text === hit.reference_texts[index]))
+                if (!Array.isArray(hit.reference_texts_ja) && same_references
                     && Array.isArray(reference.reference_texts_ja)
                     && reference.reference_texts_ja.length === reference.reference_texts.length
                     && reference.reference_texts_ja.every(text => typeof text === 'string')) {
                   hit.reference_texts_ja = [...reference.reference_texts_ja]
+                }
+                if (this.config.manga_text_evaluation) {
+                  if (!Array.isArray(hit.translation_regions) && same_references
+                      && hit.original_image === reference.original_image
+                      && hit.translated_image === reference.translated_image
+                      && Array.isArray(reference.translation_regions)) {
+                    hit.translation_regions = _.cloneDeep(reference.translation_regions)
+                    hit.metadata = hit.metadata || {}
+                    for (const field of ['agent_result_path', 'translation_order']) {
+                      if (hit.metadata[field] == null && reference.metadata?.[field] != null) {
+                        hit.metadata[field] = reference.metadata[field]
+                      }
+                    }
+                  }
+                  for (const region of Array.isArray(hit.translation_regions) ? hit.translation_regions : []) {
+                    if (!isValidTranslationQuality(region.quality_score)) region.quality_score = null
+                    region.edits = region.edits || []
+                  }
                 }
                 for (const score of this.score_definitions) {
                   const field = scoreField(score)
@@ -367,7 +387,8 @@
           :handle_uploaded_data="handle_uploaded_data"
         >
           <template #score>
-            <div v-if="Array.isArray(config.scores) && score_definitions.length" class="manga-scores" aria-label="Page ratings">
+            <div v-if="Array.isArray(config.scores) && score_definitions.length" class="manga-scores" :aria-label="config.manga_text_evaluation ? 'Overall manga ratings' : 'Page ratings'">
+              <h3 v-if="config.manga_text_evaluation" class="manga-overall-heading">Overall manga assessment</h3>
               <OverallScore
                 v-for="score in score_definitions"
                 :key="scoreField(score)"

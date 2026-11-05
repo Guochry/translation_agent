@@ -3,6 +3,7 @@
 import importlib.util
 import json
 from pathlib import Path
+import shutil
 import tempfile
 import unittest
 from unittest.mock import patch
@@ -20,16 +21,18 @@ class PrepareMangaEvaluationTests(unittest.TestCase):
         self.addCleanup(self.temp.cleanup)
         self.root = Path(self.temp.name)
         self.dataset = self.root / "dataset"
-        self.rendered = self.root / "rendered"
+        self.results = self.root / "results"
+        self.rendered = self.results / "rendered_results"
         self.public = self.root / "public"
         self.output = self.public / "data/demo/manga_translation.json"
         self.assets = self.public / "data/manga/test_run"
         self.dataset.mkdir()
-        self.rendered.mkdir()
+        self.rendered.mkdir(parents=True)
         (self.dataset / "LICENSE.md").write_text("Dataset license\n", encoding="utf-8")
         self.books = [{"book_title": "example_book", "pages": []}]
 
-    def page(self, stem="009", page_index=10, references=None, rendered=True, japanese_references=None):
+    def page(self, stem="009", page_index=10, references=None, rendered=True, japanese_references=None,
+             translation_regions=None, reading_order=None):
         path = self.dataset / "images/example_book/ja" / f"{stem}.jpg"
         path.parent.mkdir(parents=True, exist_ok=True)
         path.write_bytes(b"original JPEG bytes\x00\xff" + stem.encode())
@@ -47,7 +50,37 @@ class PrepareMangaEvaluationTests(unittest.TestCase):
         })
         if rendered:
             self.render(stem)
+            self.result(stem, page_index, path, translation_regions, reading_order)
         return path
+
+    def result_path(self, page_index=10, subrun="run_001"):
+        return self.results / subrun / "pages/example_book" / str(page_index) / "result.json"
+
+    def result(self, stem, page_index, original, regions=None, reading_order=None):
+        path = self.result_path(page_index)
+        path.parent.mkdir(parents=True, exist_ok=True)
+        rendered_image = path.parent / "rendered.png"
+        rendered_image.write_bytes((self.rendered / "example_book" / f"{stem}.png").read_bytes())
+        if regions is None:
+            regions = [{
+                "id": f"example_book:{page_index}:d0001", "source_text": "検出した日本語",
+                "translation": "  Exact\ntranslation!  ", "bbox": [1, 2, 10, 20],
+                "class_name": "text", "layout": {"display_text": "EXACT TRANSLATION!"},
+            }]
+        path.write_text(json.dumps({
+            "status": "completed",
+            "page": {
+                "series": "example_book", "index": page_index, "image_path": str(original),
+                "rendered_image": str(rendered_image), "regions": regions, "reading_order": reading_order,
+            },
+        }), encoding="utf-8")
+        return path
+
+    def update_result(self, update, page_index=10):
+        path = self.result_path(page_index)
+        value = json.loads(path.read_text(encoding="utf-8"))
+        update(value)
+        path.write_text(json.dumps(value), encoding="utf-8")
 
     def render(self, stem, extension="png"):
         path = self.rendered / "example_book" / f"{stem}.{extension}"
@@ -74,6 +107,8 @@ class PrepareMangaEvaluationTests(unittest.TestCase):
         self.assertEqual(task["metadata"], {
             "book_title": "example_book", "page_index": 10,
             "run_id": "test_run", "filename_stem": "009",
+            "agent_result_path": "run_001/pages/example_book/10/result.json",
+            "translation_order": "region_order",
         })
         self.assertEqual(task["original_image"], "data/manga/test_run/original/example_book/009.jpg")
         self.assertEqual(task["translated_image"], "data/manga/test_run/translated/example_book/009.png")
@@ -85,6 +120,11 @@ class PrepareMangaEvaluationTests(unittest.TestCase):
         self.assertIsNone(task["fidelity_score"])
         self.assertIsNone(task["presentation_score"])
         self.assertEqual(task["edits"], [])
+        self.assertEqual(task["translation_regions"], [{
+            "id": "example_book:10:d0001", "source": "検出した日本語",
+            "target": "  Exact\ntranslation!  ", "bbox": [1, 2, 10, 20],
+            "kind": "text", "quality_score": None, "edits": [],
+        }])
         self.assertEqual(json.loads(self.output.read_text()), tasks)
         self.assertEqual(json.loads(self.output.with_suffix(".report.json").read_text()), report)
 
@@ -115,6 +155,84 @@ class PrepareMangaEvaluationTests(unittest.TestCase):
         self.prepare()
         with patch.object(manga.shutil, "copyfile", side_effect=AssertionError("Unchanged asset was copied")):
             self.prepare()
+
+    def test_preserves_generated_text_and_applies_explicit_reading_order(self):
+        first = {
+            "id": "example_book:10:d0001", "source_text": "一番\n最初", "translation": "First\nline",
+            "bbox": [10, 20, 30, 40], "class_name": "text", "layout": {"display_text": "FIRST LINE"},
+        }
+        second = {
+            "id": "example_book:10:d0002", "source_text": "二番目", "translation": "  <second> & next  ",
+            "bbox": [40, 50, 60, 70], "class_name": "onomatopoeia",
+        }
+        self.page(translation_regions=[first, second], reading_order=[second["id"], first["id"]])
+        tasks, report = self.prepare()
+        task = tasks[0]
+        self.assertEqual([region["id"] for region in task["translation_regions"]], [second["id"], first["id"]])
+        self.assertEqual([region["target"] for region in task["translation_regions"]], ["  <second> & next  ", "First\nline"])
+        self.assertEqual(task["metadata"]["translation_order"], "reading_order")
+        self.assertEqual(report["translated_region_count"], 2)
+        self.assertEqual(report["pages_without_generated_text"], 0)
+
+    def test_permits_empty_generated_regions_with_existing_human_reference(self):
+        self.page(translation_regions=[])
+        tasks, report = self.prepare()
+        self.assertEqual(tasks[0]["translation_regions"], [])
+        self.assertEqual(tasks[0]["reference_texts"], ["Hello!"])
+        self.assertEqual(report["translated_region_count"], 0)
+        self.assertEqual(report["pages_without_generated_text"], 1)
+
+    def test_rejects_missing_or_unfinished_result_for_published_image(self):
+        self.page()
+        self.update_result(lambda result: result.update(status="unfinished"))
+        with self.assertRaisesRegex(ValueError, "Missing completed result"):
+            self.prepare()
+        self.result_path().unlink()
+        with self.assertRaisesRegex(ValueError, "Missing completed result"):
+            self.prepare()
+        self.assertFalse(self.public.exists())
+
+    def test_rejects_duplicate_completed_result(self):
+        self.page()
+        duplicate = self.result_path(subrun="run_002")
+        duplicate.parent.mkdir(parents=True)
+        shutil.copyfile(self.result_path(), duplicate)
+        with self.assertRaisesRegex(ValueError, "Duplicate completed result identity"):
+            self.prepare()
+        self.assertFalse(self.public.exists())
+
+    def test_rejects_result_for_wrong_page_index(self):
+        self.page()
+        self.update_result(lambda result: result["page"].update(index=9))
+        with self.assertRaisesRegex(ValueError, "result page index"):
+            self.prepare()
+        self.assertFalse(self.public.exists())
+
+    def test_rejects_result_render_with_different_bytes(self):
+        self.page()
+        result = json.loads(self.result_path().read_text())
+        Path(result["page"]["rendered_image"]).write_bytes(b"different rendered image")
+        with self.assertRaisesRegex(ValueError, "rendered image mismatch"):
+            self.prepare()
+        self.assertFalse(self.public.exists())
+
+    def test_rejects_invalid_region_fields_and_reading_order(self):
+        self.page()
+        original = self.result_path().read_text()
+        updates = [
+            (lambda page: page["regions"].append(page["regions"][0].copy()), "duplicate generated region id"),
+            (lambda page: page["regions"][0].update(translation=None), "string translation"),
+            (lambda page: page["regions"][0].update(source_text=None), "string source_text"),
+            (lambda page: page["regions"][0].update(bbox=[10, 20, 1, 2]), "valid bbox"),
+            (lambda page: page.update(reading_order=["unknown-region"]), "reading_order"),
+        ]
+        for update, expected in updates:
+            with self.subTest(expected=expected):
+                self.result_path().write_text(original)
+                self.update_result(lambda result: update(result["page"]))
+                with self.assertRaisesRegex(ValueError, expected):
+                    self.prepare()
+                self.assertFalse(self.public.exists())
 
     def test_reports_missing_render_without_creating_task(self):
         self.page("000", 1)
@@ -173,7 +291,7 @@ class PrepareMangaEvaluationTests(unittest.TestCase):
     def test_rejects_source_directory_as_destination(self):
         self.page()
         self.output = self.dataset / "output.json"
-        with self.assertRaisesRegex(ValueError, "inside either source directory"):
+        with self.assertRaisesRegex(ValueError, "inside any source directory"):
             self.prepare()
         self.assertFalse(self.output.exists())
 
