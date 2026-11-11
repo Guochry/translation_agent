@@ -18,15 +18,13 @@ prepend_instructions: true
 instructions: |
   ## Manga Translation Evaluation
 
-  Compare the original Japanese manga page with the translated page. The text sidebar contains human Japanese/English reference pairs and separate cards for the generated translation regions.
+  Compare the original Japanese page with the translation. Use **0–100 in steps of 5** for all scores; higher is better. **0** is valid; leave unfinished scores blank.
 
-  - **Overall fidelity (0–100, steps of 5):** How well does the translated page preserve the dialogue's meaning and tone, the story, characters, and original artwork? Penalize omissions, additions, mistranslations, and unintended visual changes. Replacing Japanese lettering with English is an intended change.
-  - **Overall presentation (0–100, steps of 5):** How readable and visually polished is the translated page? Consider legibility, typography, text placement, fit within speech balloons, and rendering artifacts.
-  - For each overall page score, choose **0, 5, 10, …, 100**. Higher is better: **0** means very poor and **100** means excellent. Judge these two dimensions independently.
-  - **Generated text:** Each generated-region card shows detected Japanese and the generated translation. Highlight erroneous wording in the **generated translation** to mark an error; error highlights have no severity rating.
-  - **Text quality (0–100, steps of 5):** Score each generated region for meaning preservation and natural English. Choose 0, 5, 10, …, 100. **0** means meaning is lost or the translation is in the wrong language; **100** means fully accurate and natural.
-  - Human references and generated regions may split the page differently and have different counts. Their numbers identify separate lists; locate corresponding content using the text and images. Human references follow annotation order, and generated cards use the available agent order; reading order is not guaranteed. Some pages have no human reference text or generated regions.
-  - Leave a score blank while it is unfinished. A page is fully rated when both overall scores and every generated-region quality score are filled; **0** is valid for every score. **Download** JSON to save partial work and **upload** that file to resume. **Reset page** clears both overall scores, all generated-region scores, and error highlights for the current page.
+  - **Fidelity:** Preservation of meaning, tone, story, characters, and artwork. Replacing Japanese lettering with English is expected.
+  - **Presentation:** Readability, typography, text placement, and visual polish.
+  - **Text quality:** Accuracy and natural English for each generated region. Highlight errors in the generated translation.
+  - Match references and generated regions by content, not numbering.
+  - Rate both page scores and every generated region. **Download** to save; **upload** to resume. **Reset page** clears the current page's ratings and highlights.
 
 scores:
   - name: fidelity_score
