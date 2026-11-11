@@ -75,10 +75,10 @@ export default {
                     :value="current_score ?? ''"
                     placeholder="—"
                     :aria-label="`${score_config.label || 'Overall Translation Score'} (${minimum}–${maximum})`"
-                    :title="`Type a score from ${minimum} to ${maximum}; leave blank for not rated`"
+                    :title="`Type a score from ${minimum} to ${maximum} in steps of ${step}; leave blank for not rated`"
                     @input="update_score"
                     @change="update_score"
                 />
-                <span v-if="score_definition" class="score-range">{{ minimum }}–{{ maximum }}</span>
+                <span v-if="score_definition" class="score-range">{{ minimum }}–{{ maximum }} (steps of {{ step }})</span>
     </label>
 </template>

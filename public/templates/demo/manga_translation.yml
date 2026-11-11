@@ -20,24 +20,24 @@ instructions: |
 
   Compare the original Japanese manga page with the translated page. The text sidebar contains human Japanese/English reference pairs and separate cards for the generated translation regions.
 
-  - **Overall fidelity (1–100):** How well does the translated page preserve the dialogue's meaning and tone, the story, characters, and original artwork? Penalize omissions, additions, mistranslations, and unintended visual changes. Replacing Japanese lettering with English is an intended change.
-  - **Overall presentation (1–100):** How readable and visually polished is the translated page? Consider legibility, typography, text placement, fit within speech balloons, and rendering artifacts.
-  - Enter a **whole number from 1 to 100** for each overall page score. Higher is better: **1** means very poor and **100** means excellent. Judge these two dimensions independently.
+  - **Overall fidelity (0–100, steps of 5):** How well does the translated page preserve the dialogue's meaning and tone, the story, characters, and original artwork? Penalize omissions, additions, mistranslations, and unintended visual changes. Replacing Japanese lettering with English is an intended change.
+  - **Overall presentation (0–100, steps of 5):** How readable and visually polished is the translated page? Consider legibility, typography, text placement, fit within speech balloons, and rendering artifacts.
+  - For each overall page score, choose **0, 5, 10, …, 100**. Higher is better: **0** means very poor and **100** means excellent. Judge these two dimensions independently.
   - **Generated text:** Each generated-region card shows detected Japanese and the generated translation. Highlight erroneous wording in the **generated translation** to mark an error; error highlights have no severity rating.
   - **Text quality (0–100, steps of 5):** Score each generated region for meaning preservation and natural English. Choose 0, 5, 10, …, 100. **0** means meaning is lost or the translation is in the wrong language; **100** means fully accurate and natural.
   - Human references and generated regions may split the page differently and have different counts. Their numbers identify separate lists; locate corresponding content using the text and images. Human references follow annotation order, and generated cards use the available agent order; reading order is not guaranteed. Some pages have no human reference text or generated regions.
-  - Leave a score blank while it is unfinished. A page is fully rated when both overall scores and every generated-region quality score are filled; a text score of **0** is valid. **Download** JSON to save partial work and **upload** that file to resume. **Reset page** clears both overall scores, all generated-region scores, and error highlights for the current page.
+  - Leave a score blank while it is unfinished. A page is fully rated when both overall scores and every generated-region quality score are filled; **0** is valid for every score. **Download** JSON to save partial work and **upload** that file to resume. **Reset page** clears both overall scores, all generated-region scores, and error highlights for the current page.
 
 scores:
   - name: fidelity_score
     label: Fidelity
     question: "How well are meaning, tone, story, characters, and original artwork preserved?"
-    min: 1
+    min: 0
     max: 100
-    step: 1
+    step: 5
   - name: presentation_score
     label: Presentation
     question: "How readable and visually polished are the lettering, placement, and rendered image?"
-    min: 1
+    min: 0
     max: 100
-    step: 1
+    step: 5
