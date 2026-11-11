@@ -1,4 +1,5 @@
 <script setup>
+  import { normalizeComparison } from '../../assets/js/manga-comparison-util.js';
   import AnnotationEditor from "../editor/AnnotationEditor.vue";
   import AnnotationViewer from "../viewer/AnnotationViewer.vue";
   import CommentBox from "../common/CommentBox.vue";
@@ -125,6 +126,7 @@
                 references.set(reference.id, references.has(reference.id) ? null : reference)
               }
               for (const hit of hit_data) {
+                if (this.config.manga_comparison) normalizeComparison(hit, this.score_definitions)
                 const reference = references.get(hit.id)
                 const same_references = Boolean(reference
                     && Array.isArray(hit.reference_texts) && Array.isArray(reference.reference_texts)
@@ -154,7 +156,7 @@
                     region.edits = region.edits || []
                   }
                 }
-                for (const score of this.score_definitions) {
+                for (const score of this.config.manga_comparison ? [] : this.score_definitions) {
                   const field = scoreField(score)
                   if (!Number.isInteger(hit[field]) || !isValidScore(hit[field], score)) hit[field] = null
                 }
@@ -387,7 +389,7 @@
           :handle_uploaded_data="handle_uploaded_data"
         >
           <template #score>
-            <div v-if="Array.isArray(config.scores) && score_definitions.length" class="manga-scores" :aria-label="config.manga_text_evaluation ? 'Overall manga ratings' : 'Page ratings'">
+            <div v-if="!config.manga_comparison && Array.isArray(config.scores) && score_definitions.length" class="manga-scores" :aria-label="config.manga_text_evaluation ? 'Overall manga ratings' : 'Page ratings'">
               <h3 v-if="config.manga_text_evaluation" class="manga-overall-heading">Overall manga assessment</h3>
               <OverallScore
                 v-for="score in score_definitions"

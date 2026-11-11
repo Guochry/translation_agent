@@ -26,20 +26,32 @@ https://github.com/davidheineman/thresh/assets/9833172/6138408a-1650-42ec-8588-0
 
 ## Manga Translation Evaluation
 
-The [manga template](./public/templates/demo/manga_translation.yml) shows one matched original Japanese manga page and translated image per task. A text sidebar beside the image pair contains human Japanese/English references from OpenMantra and separate cards for the agent's generated translation regions. Each page has two independent overall integer scores from **1 to 100**:
+The [manga template](./public/templates/demo/manga_translation.yml) shows one matched original Japanese manga page and translated image per task. A text sidebar beside the image pair contains human Japanese/English references from OpenMantra and separate cards for the agent's generated translation regions. Each page has two independent overall scores from **0 to 100 in steps of 5**:
 
 - **Fidelity:** Preservation of dialogue meaning and tone, story, characters, and original artwork. Intended replacement of Japanese lettering is allowed; unintended visual changes reduce fidelity.
 - **Presentation:** Readability and visual polish, including typography, text placement, speech-balloon fit, and rendering artifacts.
 
 Each generated-region card shows detected Japanese and the generated translation. Annotators can highlight errors in the generated translation, without severity labels, and assign that region a **text-quality score from 0 to 100 in steps of 5**. A score of **0** means meaning is lost or the translation is in the wrong language; **100** means fully accurate and natural English. Human references and generated regions are separate lists because region counts and boundaries can differ.
 
-Scores start blank. Navigation retains ratings and highlights during the session. A page counts as fully rated once both overall scores and every generated-region quality score are filled; **0** is a valid text score and error highlights are optional. Pages with no generated regions need only the two overall scores. Download JSON at any point to save partial work and upload that file to resume. Reset clears both overall ratings, every region's quality score, and all error highlights for the current page.
+Scores start blank. Navigation retains ratings and highlights during the session. A page counts as fully rated once both overall scores and every generated-region quality score are filled; **0** is valid for every score and error highlights are optional. Pages with no generated regions need only the two overall scores. Download JSON at any point to save partial work and upload that file to resume. Reset clears both overall ratings, every region's quality score, and all error highlights for the current page.
 
 After deploying this checkout with the existing GitHub Pages workflow, open:
 
 [Manga Translation Evaluation](https://guochry.github.io/translation_agent/?i=templates/demo/manga_translation.yml&d=data/demo/manga_translation.json)
 
 For local use, run `npm run dev` and open [the local task](http://localhost:5173/?i=templates/demo/manga_translation.yml&d=data/demo/manga_translation.json). The template is also available in the interface builder as **Manga Translation**.
+
+### Compare two translations
+
+Run `python data_tools/prepare_manga_comparison.py` to package the intersection of the existing agent task and baseline images/text from `../agent/manga_tryout/manga_agent/baselines/rendered_results`. Override the source with `--baseline-root PATH`.
+
+Open [the local comparison](http://localhost:5173/?i=templates/demo/manga_comparison.yml&d=data/demo/manga_comparison.json) after `npm run dev`, or [the deployed comparison](https://guochry.github.io/translation_agent/?i=templates/demo/manga_comparison.yml&d=data/demo/manga_comparison.json) after deploying.
+
+The comparison contains 191 shared pages: one original and two translations, each with independent fidelity/presentation ratings and text-region quality scores/error highlights. A/B order is deterministically shuffled per page; exported `candidates[].id` identifies `agent` or `baseline`. Human references are shared, and the text tabs retain independent annotations. Completion requires all four overall ratings and all region scores in both tabs. Reset clears both candidates on the current page. Download/upload preserves both systems together; single-system exports cannot be imported into this task.
+
+Baseline text is image transcription, with no assumed Japanese-region or bounding-box alignment. Transcription uncertainty and notes are preserved in the JSON. Images are copied unchanged (about 464 MB additional assets). The packaging report lists 12 excluded agent pages and 11 unused baseline pages. The existing single-translation dataset and URL remain available.
+
+Validate packaging with `python -m unittest discover -s data_tools/tests -v`. Validate comparison completion, score normalization, and reset with `node --experimental-default-type=module --test data_tools/tests/test_manga_comparison.mjs` (Node 22).
 
 ### Prepare or refresh the manga data
 

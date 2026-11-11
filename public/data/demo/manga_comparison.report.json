@@ -1,0 +1,20 @@
+{
+  "pages": 191,
+  "excluded_agent_pages": [
+    "openmantra:fst_try:tojime_no_siora:006",
+    "openmantra:fst_try:tojime_no_siora:008",
+    "openmantra:fst_try:tojime_no_siora:009",
+    "openmantra:fst_try:tojime_no_siora:010",
+    "openmantra:fst_try:tojime_no_siora:011",
+    "openmantra:fst_try:tojime_no_siora:040",
+    "openmantra:fst_try:tojime_no_siora:044",
+    "openmantra:fst_try:tencho_isoro:007",
+    "openmantra:fst_try:rasetugari:016",
+    "openmantra:fst_try:rasetugari:027",
+    "openmantra:fst_try:rasetugari:037",
+    "openmantra:fst_try:rasetugari:039"
+  ],
+  "baseline_pages": 202,
+  "unused_baseline_pages": 11,
+  "candidate_order": "stable SHA-256 parity per page"
+}

@@ -1,5 +1,7 @@
 <script setup>
   import Sent from "./Sent.vue";
+  import MangaPairComparison from './MangaPairComparison.vue';
+  import { comparisonRated, resetComparison } from '../../assets/js/manga-comparison-util.js';
   import MangaComparison from "./MangaComparison.vue";
   import _ from 'lodash';
   import { isValidScore, scoreConfigs, scoreField } from '../../assets/js/score-util.js';
@@ -45,6 +47,7 @@ export default {
     data() {
         return {
             showContext: false,
+            upload_error: null,
             uid: this.$.uid
         }
     },
@@ -102,6 +105,7 @@ export default {
             return class_name
         },
         page_rated(hit) {
+            if (this.config.manga_comparison) return comparisonRated(hit, this.score_definitions)
             const manga_rated = Boolean(hit && this.score_definitions.length && this.score_definitions.every(score => {
                 const value = hit[scoreField(score)]
                 return (!this.config.manga_evaluation || Number.isInteger(value)) && isValidScore(value, score)
@@ -109,6 +113,13 @@ export default {
             return manga_rated && (!this.config.manga_text_evaluation
                 || (Array.isArray(hit.translation_regions)
                     && hit.translation_regions.every(region => isValidTranslationQuality(region.quality_score))))
+        },
+        update_candidate(index, candidate) {
+            const current = this.current_example?.candidates?.[index]
+            if (!current || current.id !== candidate.id) return
+            const data = _.cloneDeep(this.hits_data)
+            data[this.current_hit - 1].candidates[index] = _.cloneDeep(candidate)
+            this.set_hits_data(data)
         },
         update_translation_region(index, region) {
             const current = this.current_example?.translation_regions?.[index]
@@ -166,7 +177,8 @@ export default {
         restart_hit() {
             let new_hits_data = _.cloneDeep(this.hits_data);
             new_hits_data[this.current_hit - 1].edits = []
-            for (const score of this.score_definitions) {
+            if (this.config.manga_comparison) resetComparison(new_hits_data[this.current_hit - 1], this.score_definitions)
+            for (const score of this.config.manga_comparison ? [] : this.score_definitions) {
                 const field = scoreField(score)
                 if (this.config.manga_evaluation) new_hits_data[this.current_hit - 1][field] = null
                 else delete new_hits_data[this.current_hit - 1][field]
@@ -278,6 +290,29 @@ export default {
                 this.handle_uploaded_data(new_hits_data)
                 return
             }
+            if (this.config.manga_comparison) {
+                const pages = new Map(this.hits_data.map(hit => [hit.id, hit]))
+                const valid = Array.isArray(new_hits_data) && new_hits_data.length === pages.size
+                    && new Set(new_hits_data.map(hit => hit.id)).size === pages.size
+                    && new_hits_data.every(hit => {
+                        const current = pages.get(hit.id)
+                        return current && hit.original_image === current.original_image
+                            && Array.isArray(hit.candidates) && hit.candidates.length === 2
+                            && hit.candidates.every((candidate, index) => {
+                                const expected = current.candidates[index]
+                                return candidate.id === expected.id && candidate.translated_image === expected.translated_image
+                                    && Array.isArray(candidate.translation_regions)
+                                    && candidate.translation_regions.length === expected.translation_regions.length
+                                    && candidate.translation_regions.every((region, i) => region.id === expected.translation_regions[i].id
+                                        && region.target === expected.translation_regions[i].target)
+                            })
+                    })
+                if (!valid) {
+                    this.upload_error = 'Upload an export from this comparison task. Single-translation exports and other datasets cannot be used here.'
+                    return
+                }
+            }
+            this.upload_error = null
             this.set_hits_data(new_hits_data);
             this.set_hit(1);
             this.setup_hit_box();
@@ -363,6 +398,7 @@ export default {
                 </div>
             </div>            
         </div>
+        <p v-if="upload_error" role="alert">{{ upload_error }}</p>
         <p v-if="config.manga_evaluation" class="manga-rating-progress" role="status" aria-label="Rating progress">{{ rated_pages }} / {{ total_hits }} pages fully rated</p>
         <h2 v-if="candidate_label" class="candidate-heading f3 mt3 mb2">{{ candidate_label }}</h2>
         <div class="hit-text-score-row">
@@ -376,8 +412,15 @@ export default {
                     <i @click="bookmark_hit" class="bookmark fa-regular fa-bookmark fa-lg pointer ml1" :class="get_bookmark_class()"></i>
                 </div>
 
+                <MangaPairComparison
+                    v-if="config.manga_comparison && current_example"
+                    :key="`pair-${current_hit}`"
+                    :hit="current_example"
+                    :scores="score_definitions"
+                    :update_candidate="update_candidate"
+                />
                 <MangaComparison
-                    v-if="config.manga_evaluation && current_example"
+                    v-else-if="config.manga_evaluation && current_example"
                     :key="current_hit"
                     :hit="current_example"
                     :text_evaluation="config.manga_text_evaluation"

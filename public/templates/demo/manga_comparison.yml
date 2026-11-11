@@ -1,0 +1,42 @@
+template_name: demo_manga_comparison
+template_label: Manga Translation Comparison
+template_description: Compare manga pages, rate overall fidelity and presentation, and annotate generated translation text by region.
+default_data_link: data/demo/manga_comparison.json
+
+manga_comparison: true
+manga_evaluation: true
+manga_text_evaluation: true
+edits: []
+
+interface_text:
+  typology:
+    source_label: "Original Japanese Manga"
+    target_label: "Translated Manga"
+  hit_box:
+    hit_label: "Manga Page"
+
+prepend_instructions: true
+instructions: |
+  ## Manga Translation Comparison
+
+  Compare **Translation A and B** with the shared Japanese original. Rate each independently using **0–100 in steps of 5** (0 = very poor; 100 = excellent). Leave unfinished scores blank.
+
+  - **Fidelity:** Meaning, tone, story, characters, and artwork. Replacing Japanese lettering with English is expected.
+  - **Presentation:** Readability, typography, placement, and visual polish.
+  - **Text quality:** Accuracy and natural English for every region in both text tabs. Highlight translation errors.
+  - Match text by content, not numbering. Transcribed text may be imperfect; check the image.
+  - **Download** to save; **upload** to resume. **Reset page** clears both translations’ ratings and highlights.
+
+scores:
+  - name: fidelity_score
+    label: Fidelity
+    question: "How well are meaning, tone, story, characters, and original artwork preserved?"
+    min: 0
+    max: 100
+    step: 5
+  - name: presentation_score
+    label: Presentation
+    question: "How readable and visually polished are the lettering, placement, and rendered image?"
+    min: 0
+    max: 100
+    step: 5

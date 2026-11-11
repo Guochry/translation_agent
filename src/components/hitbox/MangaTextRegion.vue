@@ -88,10 +88,12 @@ export default {
 <template>
     <article class="manga-text-region" :aria-label="`Generated text region ${region_index + 1}`">
         <h4>Region {{ region_index + 1 }}</h4>
+        <template v-if="region.source !== undefined">
         <span class="region-text-label">Detected Japanese source</span>
         <p v-if="typeof region.source === 'string' && region.source.trim()" class="region-source" lang="ja">{{ region.source }}</p>
         <p v-else class="region-unavailable">Detected Japanese source text unavailable</p>
-        <span class="region-text-label">Generated translation</span>
+        </template>
+        <span class="region-text-label">{{ region.source === undefined ? 'Transcribed translation' : 'Generated translation' }}</span>
         <p :id="selection_hint_id" class="region-selection-hint">Highlight translation errors to mark them. No severity rating is needed.</p>
         <p v-if="target.length" class="region-target" lang="en" tabindex="0" :aria-describedby="selection_hint_id" aria-label="Generated translation text" @mouseup="mark_selection"><span v-for="segment in segments" :key="segment.start" :class="{ 'region-error-highlight': segment.marked }">{{ segment.text }}</span></p>
         <p v-else class="region-unavailable">No generated translation text for this region.</p>
