@@ -1,0 +1,53 @@
+template_name: demo_manga_multilingual
+template_label: Multilingual Manga Evaluation
+template_description: Rate 50 manga pages in seven target languages with independent scores and text annotations.
+default_data_link: data/demo/manga_multilingual.json
+
+manga_multilingual: true
+manga_evaluation: true
+default_language: en
+external_asset_prefix: evaluation_assets/
+external_asset_base: https://raw.githubusercontent.com/Guochry/translation_agent/main/evaluation_assets/
+languages:
+  - { code: ar, label: Arabic, native_label: العربية }
+  - { code: en, label: English, native_label: English }
+  - { code: hi, label: Hindi, native_label: हिन्दी }
+  - { code: ka, label: Georgian, native_label: ქართული }
+  - { code: ru, label: Russian, native_label: Русский }
+  - { code: vi, label: Vietnamese, native_label: Tiếng Việt }
+  - { code: zh, label: Simplified Chinese, native_label: 简体中文 }
+manga_text_evaluation: true
+edits: []
+
+interface_text:
+  typology:
+    source_label: "Original Japanese Manga"
+    target_label: "Translated Manga"
+  hit_box:
+    hit_label: "Manga Page"
+
+prepend_instructions: true
+instructions: |
+  ## Multilingual Manga Evaluation
+
+  Choose a language and compare its translation with the Japanese original. Use **0–100 in steps of 5** for all scores (0 = very poor; 100 = excellent).
+
+  - **Fidelity:** Meaning, tone, story, characters, and artwork. Replacing Japanese lettering is expected.
+  - **Presentation:** Readability, typography, placement, and visual polish.
+  - **Text quality:** Accuracy and natural wording in the selected language. Highlight translation errors; check transcribed wording against the image.
+  - Japanese source and English human references are shared across languages. Match text by content, not numbering.
+  - Leave unfinished scores blank. **Download** saves all languages; **upload** resumes. **Reset page** clears only the current language and page.
+
+scores:
+  - name: fidelity_score
+    label: Fidelity
+    question: "How well are meaning, tone, story, characters, and original artwork preserved?"
+    min: 0
+    max: 100
+    step: 5
+  - name: presentation_score
+    label: Presentation
+    question: "How readable and visually polished are the lettering, placement, and rendered image?"
+    min: 0
+    max: 100
+    step: 5

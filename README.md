@@ -53,6 +53,25 @@ Baseline text is image transcription, with no assumed Japanese-region or boundin
 
 Validate packaging with `python -m unittest discover -s data_tools/tests -v`. Validate comparison completion, score normalization, and reset with `node --experimental-default-type=module --test data_tools/tests/test_manga_comparison.mjs` (Node 22).
 
+### Multilingual 50-page evaluation
+
+The [multilingual template](./public/templates/demo/manga_multilingual.yml) reuses the original/translation layout with buttons for Arabic, English, Hindi, Georgian, Russian, Vietnamese, and Simplified Chinese. Each language has the same 50 originals and one translation. Scores and error highlights are independent per language. Switching languages keeps the current page number; Reset page affects only that page in the selected language. All scores use 0–100 in steps of 5, and text quality asks about natural wording in the target language. Arabic target text and marked errors use right-to-left layout. Shared human references are Japanese/English, not target-language references; expand the reference section to consult them. Bundled Noto fonts cover Japanese, Chinese, and Hindi without relying on installed fonts; font licenses are included in `public/fonts/manga/`.
+
+Package the data with:
+
+```bash
+python data_tools/prepare_manga_multilingual.py
+# Optional: --source-root PATH --references PATH_TO_OPENMANTRA_ANNOTATION_JSON
+```
+
+Open [the local multilingual task](http://localhost:5173/?i=templates/demo/manga_multilingual.yml&d=data/demo/manga_multilingual.json) after `npm run dev`. After pushing and deploying, use [the multilingual website](https://guochry.github.io/translation_agent/?i=templates/demo/manga_multilingual.yml&d=data/demo/manga_multilingual.json).
+
+The output is 350 records with stable IDs, `page_key`, `language`, `language_label`, image paths, original/translated SHA-256 hashes, human references, text-extraction provenance, and independent ratings/highlights. Download saves all seven languages in one JSON file. Upload merges saved annotations by ID and language, checks image hashes and exact text identity, and supports partial-language exports. Invalid scores are cleared. A Georgian extraction failure for `balloon_dream/ja/013.jpg` is preserved as unavailable text (`translation_regions: null`), so its image can be rated without falsely counting missing text as completed. The report lists unavailable extractions.
+
+The 400 original/translated images add approximately 851 MB, which would put this checkout beyond [GitHub Pages’ 1 GB published-site limit](https://docs.github.com/en/pages/getting-started-with-github-pages/github-pages-limits). They are copied byte-for-byte to `evaluation_assets/multilingual_50/`, outside `public/`, and must be committed and pushed along with the new JSON and template. Vite serves this directory locally; production loads it from `raw.githubusercontent.com/Guochry/translation_agent/main/evaluation_assets/`, configured by `external_asset_prefix` and `external_asset_base` in the template. These images are excluded from the Pages artifact. If deploying from another repository/branch or image host, update `external_asset_base`. The existing tasks and URLs continue to use their existing public images.
+
+Validate packaging with `python -m unittest discover -s data_tools/tests -v`, and multilingual state/import checks with `node --experimental-default-type=module --test data_tools/tests/test_manga_multilingual.mjs` (Node 22).
+
 ### Prepare or refresh the manga data
 
 From this repository, run the converter with its defaults:

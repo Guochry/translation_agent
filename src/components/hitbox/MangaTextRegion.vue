@@ -6,11 +6,15 @@ import { TRANSLATION_QUALITY_SCORE } from '../../assets/js/manga-util.js';
 
 <script>
 export default {
-    props: ['region', 'region_index', 'update_region'],
+    props: ['region', 'region_index', 'update_region', 'language', 'language_label'],
     data() {
         return { selection_hint_id: `manga-selection-hint-${this.$.uid}` }
     },
     computed: {
+        quality_definition() {
+            return this.language_label ? { ...TRANSLATION_QUALITY_SCORE,
+                question: `How accurate and natural is this ${this.language_label} translation?` } : TRANSLATION_QUALITY_SCORE
+        },
         target() {
             return typeof this.region.target === 'string' ? this.region.target : ''
         },
@@ -95,7 +99,7 @@ export default {
         </template>
         <span class="region-text-label">{{ region.source === undefined ? 'Transcribed translation' : 'Generated translation' }}</span>
         <p :id="selection_hint_id" class="region-selection-hint">Highlight translation errors to mark them. No severity rating is needed.</p>
-        <p v-if="target.length" class="region-target" lang="en" tabindex="0" :aria-describedby="selection_hint_id" aria-label="Generated translation text" @mouseup="mark_selection"><span v-for="segment in segments" :key="segment.start" :class="{ 'region-error-highlight': segment.marked }">{{ segment.text }}</span></p>
+        <p v-if="target.length" class="region-target" :lang="language || 'en'" :dir="language === 'ar' ? 'rtl' : 'auto'" tabindex="0" :aria-describedby="selection_hint_id" aria-label="Generated translation text" @mouseup="mark_selection"><span v-for="segment in segments" :key="segment.start" :class="{ 'region-error-highlight': segment.marked }">{{ segment.text }}</span></p>
         <p v-else class="region-unavailable">No generated translation text for this region.</p>
         <OverallScore
             class="region-quality-score"
@@ -103,14 +107,14 @@ export default {
             :current_hit="1"
             :set_hits_data="update_score_data"
             :config="{}"
-            :score_definition="TRANSLATION_QUALITY_SCORE"
+            :score_definition="quality_definition"
             caption="Translation quality"
         />
         <div class="region-errors" aria-label="Marked translation errors">
             <h5>Marked errors ({{ errors.length }})</h5>
             <ul v-if="errors.length">
                 <li v-for="error in errors" :key="error.id">
-                    <span class="region-error-text">{{ error_text(error) }}</span>
+                    <span class="region-error-text" :lang="language || 'en'" :dir="language === 'ar' ? 'rtl' : 'auto'">{{ error_text(error) }}</span>
                     <button type="button" @click="remove_error(error)" :aria-label="`Remove error ${error.id} from region ${region_index + 1}`">Remove</button>
                 </li>
             </ul>

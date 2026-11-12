@@ -423,6 +423,7 @@ export default {
                     v-else-if="config.manga_evaluation && current_example"
                     :key="current_hit"
                     :hit="current_example"
+                    :config="config"
                     :text_evaluation="config.manga_text_evaluation"
                     :update_region="update_translation_region"
                 />

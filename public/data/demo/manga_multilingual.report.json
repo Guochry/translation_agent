@@ -1,0 +1,31 @@
+{
+  "original_pages": 50,
+  "tasks": 350,
+  "languages": [
+    "ar",
+    "en",
+    "hi",
+    "ka",
+    "ru",
+    "vi",
+    "zh"
+  ],
+  "pages_per_language": {
+    "ar": 50,
+    "en": 50,
+    "hi": 50,
+    "ka": 50,
+    "ru": 50,
+    "vi": 50,
+    "zh": 50
+  },
+  "unavailable_text": [
+    {
+      "language": "ka",
+      "page": "balloon_dream/ja/013.jpg",
+      "error": "No complete Gemini response: []"
+    }
+  ],
+  "asset_bytes": 851329514,
+  "asset_directory": "evaluation_assets/multilingual_50"
+}

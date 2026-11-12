@@ -1,10 +1,11 @@
 <script setup>
+import { mangaImageUrl } from '../../assets/js/manga-multilingual-util.js';
 import MangaTextRegion from './MangaTextRegion.vue';
 </script>
 
 <script>
 export default {
-    props: ['hit', 'text_evaluation', 'update_region'],
+    props: ['hit', 'text_evaluation', 'update_region', 'config'],
     data() {
         return {
             image_errors: { original: false, translated: false },
@@ -24,7 +25,7 @@ export default {
         image_panels() {
             return [
                 { name: 'original', label: 'Original Japanese manga', url: this.original_url },
-                { name: 'translated', label: 'Translated manga', url: this.translated_url }
+                { name: 'translated', label: this.hit.language_label ? `${this.hit.language_label} translation` : 'Translated manga', url: this.translated_url }
             ]
         },
         reference_texts() {
@@ -43,10 +44,12 @@ export default {
     },
     methods: {
         image_url(path) {
-            if (typeof path !== 'string' || !path.trim()) return null
-            if (/^(https?:)?\/\//i.test(path)) return path
-            if (/^[a-z][a-z\d+.-]*:/i.test(path)) return null
-            return `${import.meta.env.BASE_URL}${path.replace(/^\/+/, '')}`
+            return mangaImageUrl(path, {
+                baseUrl: import.meta.env.BASE_URL,
+                externalPrefix: this.config?.external_asset_prefix,
+                externalBase: this.config?.external_asset_base,
+                useExternal: import.meta.env.PROD
+            })
         }
     }
 }
@@ -79,7 +82,7 @@ export default {
             </figure>
         </div>
         <aside class="manga-text-panel" :aria-label="text_evaluation ? 'Text translation evaluation' : 'Reference text'">
-        <component :is="text_evaluation ? 'details' : 'div'" class="manga-reference-disclosure" :open="text_evaluation ? true : undefined">
+        <component :is="text_evaluation ? 'details' : 'div'" class="manga-reference-disclosure" :open="text_evaluation ? !config?.manga_multilingual : undefined">
         <summary v-if="text_evaluation">Human reference text</summary>
         <section class="manga-references" :aria-labelledby="reference_heading_id">
             <h3 :id="reference_heading_id">{{ reference_texts_ja ? 'Japanese source and English reference' : 'English reference translation' }}</h3>
@@ -111,6 +114,8 @@ export default {
                 :region="region"
                 :region_index="index"
                 :update_region="update_region"
+                :language="hit.language"
+                :language_label="hit.language_label"
             />
         </section>
         </aside>
@@ -141,7 +146,7 @@ export default {
 .manga-image-panel figcaption { margin-bottom: 0.75rem; }
 .manga-image-panel h3 { font-size: 1.1rem; margin: 0 0 0.35rem; }
 .manga-image-panel a { color: #245ba0; }
-.manga-image-panel img { display: block; width: 100%; height: auto; border: 1px solid #ddd; }
+.manga-image-panel img { box-sizing: border-box; display: block; width: 100%; height: auto; border: 1px solid #ddd; }
 .manga-image-error { padding: 1.5rem; border: 1px solid #d5aaaa; background: #fff4f4; color: #782c2c; }
 .manga-references { margin-top: 1.5rem; border-top: 1px solid #ddd; padding-top: 1rem; }
 .manga-references h3 { margin: 0 0 0.75rem; font-size: 1.1rem; }

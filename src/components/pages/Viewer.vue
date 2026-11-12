@@ -1,4 +1,5 @@
 <script setup>
+    import MultilingualMangaInterface from "./MultilingualMangaInterface.vue";
     import Interface from "./Interface.vue";
     import MultiCandidateInterface from "./MultiCandidateInterface.vue";
     import Landing from "./Landing.vue";
@@ -185,6 +186,9 @@ export default {
                 :input_data="data[idx-1]"
                 :consumed_config={consumed_config}
             />
+        </div>
+        <div v-else-if="consumed_config.manga_multilingual" class="mh4">
+            <MultilingualMangaInterface :input_data="{ data }" :consumed_config="{ consumed_config }" />
         </div>
         <div v-else-if="consumed_config.multi_candidate" class="mh4">
             <MultiCandidateInterface
