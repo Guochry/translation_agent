@@ -32,9 +32,9 @@ instructions: |
 
   Choose a language and compare its translation with the Japanese original. All scores: **0–100, steps of 5** (0 = very poor; 60 = acceptable/pass; 100 = excellent). Leave unfinished scores blank.
 
+  - **Spans:** Choose a label, then highlight translated words: **Strength** = effective, meaning-preserving creative choices in the target language, such as idioms, wordplay, or cultural references; **Error** = inaccurate or unnatural wording. **Okay** = acceptable—leave it unmarked.
   - **Region fidelity:** Translation meaning, accuracy, completeness, style, tone, and naturalness compared with Japanese.
   - **Region presentation:** Visual readability in the image: font, size, text length, spacing, and balloon fit.
-  - **Spans:** Choose a label, then highlight translated words: **Strength** = effective, meaning-preserving creative choices in the target language, such as idioms, wordplay, or cultural references; **Error** = inaccurate or unnatural wording. **Okay** = acceptable—leave it unmarked.
   - **Page scores:** **Fidelity** = overall translation quality of the page’s text; **Presentation** = overall visual readability, lettering, layout, and style.
   - **Download** saves all languages; **upload** resumes. **Reset page** clears this page in the selected language.
 
