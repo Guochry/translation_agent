@@ -6,7 +6,8 @@ export default {
         'set_hits_data',
         'config',
         'score_definition',
-        'caption'
+        'caption',
+        'compact'
     ],
     computed: {
         score_config() {
@@ -63,7 +64,7 @@ export default {
 <template>
     <label class="candidate-score-box">
                 <span class="candidate-score-caption">{{ caption || 'Score' }}</span>
-                <span v-if="score_definition && score_config.question" class="score-question">{{ score_config.question }}</span>
+                <span v-if="!compact && score_definition && score_config.question" class="score-question">{{ score_config.question }}</span>
                 <input
                     :key="`${current_hit}-${field_name}`"
                     class="candidate-score-input"
@@ -79,6 +80,6 @@ export default {
                     @input="update_score"
                     @change="update_score"
                 />
-                <span v-if="score_definition" class="score-range">{{ minimum }}–{{ maximum }} (steps of {{ step }})</span>
+                <span v-if="!compact && score_definition" class="score-range">{{ minimum }}–{{ maximum }} (steps of {{ step }})</span>
     </label>
 </template>

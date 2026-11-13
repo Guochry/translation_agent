@@ -80,7 +80,7 @@ export default {
                 </div>
                 <div v-if="active_candidate" :key="active_candidate.id" role="tabpanel" :id="`pair-text-${uid}`" :aria-labelledby="`pair-tab-${uid}-${active}`">
                     <h3>{{ label(active) }} — text quality</h3>
-                    <p>Match regions by content, not numbering. Check transcribed wording against the image.</p>
+                    <p>Score accuracy and natural wording: <strong>0–100, steps of 5</strong>. Highlight errors to mark them.</p>
                     <p v-if="!active_candidate.translation_regions?.length">No translation text for this page.</p>
                     <MangaTextRegion v-for="(region, index) in active_candidate.translation_regions || []" :key="region.id"
                         :region="region" :region_index="index" :update_region="update_region" />

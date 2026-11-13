@@ -106,6 +106,7 @@ export default {
         </component>
         <section v-if="text_evaluation" class="manga-generated-regions" aria-label="Generated translations">
             <h3>Generated translations</h3>
+            <p class="manga-region-guide">Score accuracy and natural wording: <strong>0–100, steps of 5</strong>. Highlight errors to mark them.</p>
             <p v-if="translation_regions === null" class="manga-empty-reference">Generated text is unavailable for this page.</p>
             <p v-else-if="!translation_regions.length" class="manga-empty-reference">No generated text for this page.</p>
             <MangaTextRegion
@@ -115,7 +116,6 @@ export default {
                 :region_index="index"
                 :update_region="update_region"
                 :language="hit.language"
-                :language_label="hit.language_label"
             />
         </section>
         </aside>
@@ -138,6 +138,7 @@ export default {
 .has-text-evaluation .manga-text-panel { min-width: 0; max-height: 80vh; overflow: auto; padding: 1rem; border: 1px solid #ddd; border-radius: 4px; background: #fafafa; }
 .has-text-evaluation .manga-references { margin-top: 0; padding-top: 0; border-top: 0; }
 .has-text-evaluation .manga-reference-pair.has-source { grid-template-columns: minmax(0, 1fr); }
+.manga-region-guide { font-size: .85rem; line-height: 1.4; color: #555; }
 .manga-generated-regions { margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid #ddd; }
 .manga-generated-regions h3 { margin: 0 0 0.75rem; font-size: 1.1rem; }
 .manga-reference-disclosure summary { cursor: pointer; font-size: 0.9rem; font-weight: 600; margin-bottom: 0.85rem; }

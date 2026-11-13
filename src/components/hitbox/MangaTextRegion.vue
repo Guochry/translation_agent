@@ -6,15 +6,8 @@ import { TRANSLATION_QUALITY_SCORE } from '../../assets/js/manga-util.js';
 
 <script>
 export default {
-    props: ['region', 'region_index', 'update_region', 'language', 'language_label'],
-    data() {
-        return { selection_hint_id: `manga-selection-hint-${this.$.uid}` }
-    },
+    props: ['region', 'region_index', 'update_region', 'language'],
     computed: {
-        quality_definition() {
-            return this.language_label ? { ...TRANSLATION_QUALITY_SCORE,
-                question: `How accurate and natural is this ${this.language_label} translation?` } : TRANSLATION_QUALITY_SCORE
-        },
         target() {
             return typeof this.region.target === 'string' ? this.region.target : ''
         },
@@ -92,14 +85,11 @@ export default {
 <template>
     <article class="manga-text-region" :aria-label="`Generated text region ${region_index + 1}`">
         <h4>Region {{ region_index + 1 }}</h4>
-        <template v-if="region.source !== undefined">
-        <span class="region-text-label">Detected Japanese source</span>
-        <p v-if="typeof region.source === 'string' && region.source.trim()" class="region-source" lang="ja">{{ region.source }}</p>
-        <p v-else class="region-unavailable">Detected Japanese source text unavailable</p>
+        <template v-if="typeof region.source === 'string' && region.source.trim()">
+        <span class="region-text-label">Japanese source</span>
+        <p class="region-source" lang="ja">{{ region.source }}</p>
         </template>
-        <span class="region-text-label">{{ region.source === undefined ? 'Transcribed translation' : 'Generated translation' }}</span>
-        <p :id="selection_hint_id" class="region-selection-hint">Highlight translation errors to mark them. No severity rating is needed.</p>
-        <p v-if="target.length" class="region-target" :lang="language || 'en'" :dir="language === 'ar' ? 'rtl' : 'auto'" tabindex="0" :aria-describedby="selection_hint_id" aria-label="Generated translation text" @mouseup="mark_selection"><span v-for="segment in segments" :key="segment.start" :class="{ 'region-error-highlight': segment.marked }">{{ segment.text }}</span></p>
+        <p v-if="target.length" class="region-target" :lang="language || 'en'" :dir="language === 'ar' ? 'rtl' : 'auto'" tabindex="0" aria-label="Generated translation text" @mouseup="mark_selection"><span v-for="segment in segments" :key="segment.start" :class="{ 'region-error-highlight': segment.marked }">{{ segment.text }}</span></p>
         <p v-else class="region-unavailable">No generated translation text for this region.</p>
         <OverallScore
             class="region-quality-score"
@@ -107,18 +97,18 @@ export default {
             :current_hit="1"
             :set_hits_data="update_score_data"
             :config="{}"
-            :score_definition="quality_definition"
-            caption="Translation quality"
+            :score_definition="TRANSLATION_QUALITY_SCORE"
+            :compact="true"
+            caption="Quality"
         />
-        <div class="region-errors" aria-label="Marked translation errors">
-            <h5>Marked errors ({{ errors.length }})</h5>
-            <ul v-if="errors.length">
+        <div v-if="errors.length" class="region-errors" aria-label="Marked translation errors">
+            <h5>Errors ({{ errors.length }})</h5>
+            <ul>
                 <li v-for="error in errors" :key="error.id">
                     <span class="region-error-text" :lang="language || 'en'" :dir="language === 'ar' ? 'rtl' : 'auto'">{{ error_text(error) }}</span>
                     <button type="button" @click="remove_error(error)" :aria-label="`Remove error ${error.id} from region ${region_index + 1}`">Remove</button>
                 </li>
             </ul>
-            <p v-else class="region-no-errors">No translation errors marked.</p>
         </div>
     </article>
 </template>
@@ -130,17 +120,14 @@ export default {
 .region-source, .region-target { margin: 0.3rem 0 0.85rem; white-space: pre-wrap; overflow-wrap: anywhere; line-height: 1.5; }
 .region-target { padding: 0.6rem; background: #f7f7f7; border: 1px solid #ddd; border-radius: 3px; cursor: text; }
 .region-target:focus-visible { outline: 2px solid #245ba0; }
-.region-selection-hint { font-size: 0.8rem; line-height: 1.4; color: #555; margin: 0.3rem 0; }
 .region-error-highlight { background: #ffe0df; border-bottom: 2px solid #c33; }
 .region-unavailable { color: #666; font-style: italic; line-height: 1.4; margin: 0.3rem 0 0.85rem; }
 .region-quality-score { display: grid; grid-template-columns: minmax(0, 1fr) 4.5rem; gap: 0.35rem 0.75rem; margin: 0.75rem 0; text-align: left; }
 .region-quality-score :deep(.candidate-score-caption) { grid-column: 1; font-size: 0.85rem; font-weight: 600; color: #333; }
-.region-quality-score :deep(.score-question), .region-quality-score :deep(.score-range) { grid-column: 1; font-size: 0.8rem; line-height: 1.4; }
-.region-quality-score :deep(.candidate-score-input) { grid-column: 2; grid-row: 1 / span 3; align-self: center; padding: 0.5rem 0.2rem; }
+.region-quality-score :deep(.candidate-score-input) { grid-column: 2; grid-row: 1; align-self: center; padding: 0.5rem 0.2rem; }
 .region-errors h5 { margin: 0.75rem 0 0.4rem; font-size: 0.85rem; }
 .region-errors ul { list-style: none; padding: 0; margin: 0; }
 .region-errors li { display: flex; align-items: flex-start; justify-content: space-between; gap: 0.5rem; margin-bottom: 0.5rem; }
 .region-error-text { white-space: pre-wrap; overflow-wrap: anywhere; min-width: 0; font-size: 0.85rem; line-height: 1.4; }
 .region-errors button { flex-shrink: 0; border: 1px solid #aaa; background: #fff; border-radius: 3px; padding: 0.2rem 0.4rem; font-size: 0.75rem; cursor: pointer; }
-.region-no-errors { margin: 0; font-size: 0.8rem; color: #666; }
 </style>
