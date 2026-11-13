@@ -108,7 +108,7 @@ export default {
         </component>
         <section v-if="text_evaluation" class="manga-generated-regions" aria-label="Generated translations">
             <h3>Generated translations</h3>
-            <p class="manga-region-guide">Rate text quality and visual presentation separately: <strong>0–100, steps of 5</strong>.</p>
+            <p class="manga-region-guide">Rate translation fidelity and visual presentation: <strong>0–100, steps of 5</strong>.</p>
             <MangaSpanLegend v-model="span_category" />
             <p v-if="translation_regions === null" class="manga-empty-reference">Generated text is unavailable for this page.</p>
             <p v-else-if="!translation_regions.length" class="manga-empty-reference">No generated text for this page.</p>

@@ -30,24 +30,24 @@ prepend_instructions: true
 instructions: |
   ## Multilingual Manga Evaluation
 
-  Choose a language and compare its translation with the Japanese original. All scores: **0–100, steps of 5** (0 = very poor; 100 = excellent). Leave unfinished scores blank.
+  Choose a language and compare its translation with the Japanese original. All scores: **0–100, steps of 5** (0 = very poor; 60 = acceptable/pass; 100 = excellent). Leave unfinished scores blank.
 
-  - **Region quality:** Meaning, completeness, tone, grammar, and natural wording compared with Japanese. Ignore font and layout.
-  - **Region presentation:** Inspect the image: readable font and size, text length, spacing, balloon fit, clipping, and overlap. Ignore translation accuracy.
-  - **Spans:** Choose a label, then highlight translated words: **Strength** = especially good wording; **Error** = inaccurate or unnatural wording. **Okay** means acceptable wording—leave it unmarked. Labels describe text quality; highlighting is optional.
-  - **Page scores:** Fidelity covers meaning and artwork preservation; presentation covers the whole page’s visual readability.
+  - **Region fidelity:** Translation meaning, accuracy, completeness, style, tone, and naturalness compared with Japanese.
+  - **Region presentation:** Visual readability in the image: font, size, text length, spacing, and balloon fit.
+  - **Spans:** Choose a label, then highlight translated words: **Strength** = effective, meaning-preserving creative choices in the target language, such as idioms, wordplay, or cultural references; **Error** = inaccurate or unnatural wording. **Okay** = acceptable—leave it unmarked.
+  - **Page scores:** **Fidelity** = overall translation quality of the page’s text; **Presentation** = overall visual readability, lettering, layout, and style.
   - **Download** saves all languages; **upload** resumes. **Reset page** clears this page in the selected language.
 
 scores:
   - name: fidelity_score
     label: Fidelity
-    question: "How well are meaning, tone, story, characters, and original artwork preserved?"
+    question: "How well does the page's translated text preserve meaning, accuracy, style, and tone?"
     min: 0
     max: 100
     step: 5
   - name: presentation_score
     label: Presentation
-    question: "How readable and visually polished are the lettering, placement, and rendered image?"
+    question: "How readable and visually effective are the page's lettering, layout, and presentation style?"
     min: 0
     max: 100
     step: 5

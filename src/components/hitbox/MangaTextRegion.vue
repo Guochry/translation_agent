@@ -63,7 +63,7 @@ export default {
         <p v-if="selection_message" class="region-unavailable" role="status">{{ selection_message }}</p>
         <div class="region-score-row">
             <OverallScore class="region-quality-score" :hits_data="[region]" :current_hit="1" :set_hits_data="update_score_data"
-                :config="{}" :score_definition="TRANSLATION_QUALITY_SCORE" :compact="true" caption="Quality" />
+                :config="{}" :score_definition="TRANSLATION_QUALITY_SCORE" :compact="true" caption="Fidelity" />
             <OverallScore class="region-quality-score" :hits_data="[region]" :current_hit="1" :set_hits_data="update_score_data"
                 :config="{}" :score_definition="REGION_PRESENTATION_SCORE" :compact="true" caption="Presentation" />
         </div>

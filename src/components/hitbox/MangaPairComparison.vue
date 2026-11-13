@@ -81,8 +81,8 @@ export default {
                     </button>
                 </div>
                 <div v-if="active_candidate" :key="active_candidate.id" role="tabpanel" :id="`pair-text-${uid}`" :aria-labelledby="`pair-tab-${uid}-${active}`">
-                    <h3>{{ label(active) }} — text quality</h3>
-                    <p>Rate text quality and visual presentation separately: <strong>0–100, steps of 5</strong>.</p>
+                    <h3>{{ label(active) }} — region assessment</h3>
+                    <p>Rate translation fidelity and visual presentation: <strong>0–100, steps of 5</strong>.</p>
                     <MangaSpanLegend v-model="span_category" />
                     <p v-if="!active_candidate.translation_regions?.length">No translation text for this page.</p>
                     <MangaTextRegion v-for="(region, index) in active_candidate.translation_regions || []" :key="region.id"

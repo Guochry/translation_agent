@@ -1,7 +1,7 @@
 export const TRANSLATION_QUALITY_SCORE = Object.freeze({
     name: 'quality_score',
-    label: 'Translation quality',
-    question: 'How accurate and natural is this generated translation?',
+    label: 'Region fidelity',
+    question: 'How well does the translation preserve meaning, accuracy, style, and tone?',
     min: 0,
     max: 100,
     step: 5
