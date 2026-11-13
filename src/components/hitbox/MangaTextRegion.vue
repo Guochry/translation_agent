@@ -53,6 +53,7 @@ export default {
 <template>
     <article class="manga-text-region" :aria-label="`Generated text region ${region_index + 1}`">
         <h4>Region {{ region_index + 1 }}</h4>
+        <p v-if="region.render_status === 'skipped'" class="region-unavailable">Not rendered in the image.</p>
         <template v-if="(typeof region.source === 'string' && region.source.trim()) || region.source_alignment">
         <span class="region-text-label">Japanese source<span v-if="region.source_alignment === 'uncertain'" class="region-match-warning"> · Check match</span></span>
         <p v-if="region.source" class="region-source" lang="ja">{{ region.source }}</p>

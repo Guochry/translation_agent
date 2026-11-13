@@ -1,7 +1,7 @@
 <script setup>
   import Sent from "./Sent.vue";
   import MangaPairComparison from './MangaPairComparison.vue';
-  import { comparisonRated, resetComparison } from '../../assets/js/manga-comparison-util.js';
+  import { comparisonRated, resetComparison, comparisonContentMatches } from '../../assets/js/manga-comparison-util.js';
   import MangaComparison from "./MangaComparison.vue";
   import _ from 'lodash';
   import { isValidScore, scoreConfigs, scoreField } from '../../assets/js/score-util.js';
@@ -298,15 +298,7 @@ export default {
                     && new_hits_data.every(hit => {
                         const current = pages.get(hit.id)
                         return current && hit.original_image === current.original_image
-                            && Array.isArray(hit.candidates) && hit.candidates.length === 2
-                            && hit.candidates.every((candidate, index) => {
-                                const expected = current.candidates[index]
-                                return candidate.id === expected.id && candidate.translated_image === expected.translated_image
-                                    && Array.isArray(candidate.translation_regions)
-                                    && candidate.translation_regions.length === expected.translation_regions.length
-                                    && candidate.translation_regions.every((region, i) => region.id === expected.translation_regions[i].id
-                                        && region.target === expected.translation_regions[i].target)
-                            })
+                            && comparisonContentMatches(hit, current)
                     })
                 if (!valid) {
                     this.upload_error = 'Upload an export from this comparison task. Single-translation exports and other datasets cannot be used here.'
@@ -418,6 +410,7 @@ export default {
                     :key="`pair-${current_hit}`"
                     :hit="current_example"
                     :scores="score_definitions"
+                    :config="config"
                     :update_candidate="update_candidate"
                 />
                 <MangaComparison

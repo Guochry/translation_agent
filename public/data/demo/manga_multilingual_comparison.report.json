@@ -1,0 +1,166 @@
+{
+  "pages_per_language": {
+    "ar": 50,
+    "en": 50,
+    "hi": 50,
+    "ka": 50,
+    "ru": 50,
+    "vi": 50,
+    "zh": 50
+  },
+  "tasks": 350,
+  "candidate_ids": [
+    "baseline",
+    "qwen27b",
+    "gemma31b",
+    "cohere",
+    "gpt",
+    "translategemma27b"
+  ],
+  "completed_new_candidates": 1728,
+  "missing_new_candidates": 22,
+  "missing_by_language": {
+    "vi": 1,
+    "ar": 3,
+    "ka": 14,
+    "hi": 3,
+    "ru": 1
+  },
+  "skipped_regions": 11,
+  "source_image_bytes": 1634068134,
+  "packaged_image_bytes": 775990112,
+  "missing_outputs": [
+    {
+      "profile": "qwen27b",
+      "language": "vi",
+      "page_key": "balloon_dream/ja/019.jpg",
+      "reason": "select_fonts failed: No shared local dialogue font covers every translated character; add a covering font"
+    },
+    {
+      "profile": "qwen27b",
+      "language": "ar",
+      "page_key": "rasetugari/ja/018.jpg",
+      "reason": "select_fonts failed: No shared local dialogue font covers every translated character; add a covering font"
+    },
+    {
+      "profile": "gemma31b",
+      "language": "ka",
+      "page_key": "balloon_dream/ja/019.jpg",
+      "reason": "select_fonts failed: No shared local dialogue font covers every translated character; add a covering font"
+    },
+    {
+      "profile": "gemma31b",
+      "language": "ka",
+      "page_key": "boureisougi/ja/008.jpg",
+      "reason": "select_fonts failed: No shared local dialogue font covers every translated character; add a covering font"
+    },
+    {
+      "profile": "gemma31b",
+      "language": "ka",
+      "page_key": "rasetugari/ja/046.jpg",
+      "reason": "select_fonts failed: No shared local dialogue font covers every translated character; add a covering font"
+    },
+    {
+      "profile": "gemma31b",
+      "language": "ka",
+      "page_key": "tencho_isoro/ja/001.jpg",
+      "reason": "select_fonts failed: No shared local dialogue font covers every translated character; add a covering font"
+    },
+    {
+      "profile": "gemma31b",
+      "language": "ka",
+      "page_key": "tencho_isoro/ja/032.jpg",
+      "reason": "select_fonts failed: No shared local dialogue font covers every translated character; add a covering font"
+    },
+    {
+      "profile": "gemma31b",
+      "language": "ka",
+      "page_key": "tojime_no_siora/ja/006.jpg",
+      "reason": "select_fonts failed: No shared local dialogue font covers every translated character; add a covering font"
+    },
+    {
+      "profile": "gemma31b",
+      "language": "ka",
+      "page_key": "tojime_no_siora/ja/026.jpg",
+      "reason": "select_fonts failed: No shared local dialogue font covers every translated character; add a covering font"
+    },
+    {
+      "profile": "gemma31b",
+      "language": "hi",
+      "page_key": "boureisougi/ja/031.jpg",
+      "reason": "select_fonts failed: No shared local dialogue font covers every translated character; add a covering font"
+    },
+    {
+      "profile": "cohere",
+      "language": "ka",
+      "page_key": "tencho_isoro/ja/014.jpg",
+      "reason": "translate failed: Region tencho_isoro:15:a0001: Cohere returned Bengali characters for Georgian; request a fresh translation in Georgian letters"
+    },
+    {
+      "profile": "cohere",
+      "language": "ar",
+      "page_key": "tencho_isoro/ja/014.jpg",
+      "reason": "select_fonts failed: No shared local dialogue font covers every translated character; add a covering font"
+    },
+    {
+      "profile": "cohere",
+      "language": "hi",
+      "page_key": "balloon_dream/ja/019.jpg",
+      "reason": "select_fonts failed: No shared local dialogue font covers every translated character; add a covering font"
+    },
+    {
+      "profile": "cohere",
+      "language": "hi",
+      "page_key": "boureisougi/ja/004.jpg",
+      "reason": "translate failed: Inference failed (api): Cohere HTTP 500: {\"id\":\"6c965a05-785e-4eac-b8c9-5a4261195df1\",\"message\":\"internal server error, this has been reported to our developers. id e42d343395f9c99e329c5b42d90c03b2\"}"
+    },
+    {
+      "profile": "cohere",
+      "language": "ru",
+      "page_key": "boureisougi/ja/035.jpg",
+      "reason": "translate failed: Return every requested translation ID exactly once"
+    },
+    {
+      "profile": "translategemma27b",
+      "language": "ka",
+      "page_key": "balloon_dream/ja/019.jpg",
+      "reason": "select_fonts failed: No shared local dialogue font covers every translated character; add a covering font"
+    },
+    {
+      "profile": "translategemma27b",
+      "language": "ka",
+      "page_key": "boureisougi/ja/002.jpg",
+      "reason": "select_fonts failed: No shared local dialogue font covers every translated character; add a covering font"
+    },
+    {
+      "profile": "translategemma27b",
+      "language": "ka",
+      "page_key": "boureisougi/ja/031.jpg",
+      "reason": "select_fonts failed: No shared local dialogue font covers every translated character; add a covering font"
+    },
+    {
+      "profile": "translategemma27b",
+      "language": "ka",
+      "page_key": "boureisougi/ja/035.jpg",
+      "reason": "select_fonts failed: No shared local dialogue font covers every translated character; add a covering font"
+    },
+    {
+      "profile": "translategemma27b",
+      "language": "ka",
+      "page_key": "tencho_isoro/ja/034.jpg",
+      "reason": "select_fonts failed: No shared local dialogue font covers every translated character; add a covering font"
+    },
+    {
+      "profile": "translategemma27b",
+      "language": "ka",
+      "page_key": "tojime_no_siora/ja/018.jpg",
+      "reason": "translate failed: Translation recovery exhausted; missing regions: tojime_no_siora:19:a0002, tojime_no_siora:19:a0003, tojime_no_siora:19:a0004, tojime_no_siora:19:a0005. Recovered 2/6 entries are recorded in the trace; no translations from this stage were committed. Inspect the saved OCR and translation responses before retrying the page."
+    },
+    {
+      "profile": "translategemma27b",
+      "language": "ar",
+      "page_key": "tojime_no_siora/ja/006.jpg",
+      "reason": "select_fonts failed: No shared local dialogue font covers every translated character; add a covering font"
+    }
+  ]
+}

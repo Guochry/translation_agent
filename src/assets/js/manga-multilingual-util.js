@@ -1,14 +1,17 @@
+import { comparisonRated, normalizeComparison, comparisonContentMatches } from './manga-comparison-util.js';
 import { isValidScore, scoreConfigs, scoreField } from './score-util.js';
 import { isValidTranslationQuality, isRegionRated } from './manga-util.js';
 
 export function multilingualPageRated(hit, config) {
     const scores = scoreConfigs(config);
+    if (Array.isArray(hit.candidates)) return comparisonRated(hit, scores);
     return scores.length > 0 && scores.every(score => isValidScore(hit[scoreField(score)], score))
         && Array.isArray(hit.translation_regions)
         && hit.translation_regions.every(region => isRegionRated(region));
 }
 
 export function normalizeMultilingualScores(hit, config) {
+    if (Array.isArray(hit.candidates)) { normalizeComparison(hit, scoreConfigs(config)); return hit; }
     for (const score of scoreConfigs(config)) {
         const field = scoreField(score);
         if (!isValidScore(hit[field], score)) hit[field] = null;
@@ -35,6 +38,11 @@ export function validateMultilingualData(data, canonical, languages) {
             throw new Error('This file contains duplicate pages or pages from another task or language.');
         }
         seen.add(hit.id);
+        if (Array.isArray(original.candidates)) {
+            if (!comparisonContentMatches(hit, original)) throw new Error('This file contains different translation candidates or text.');
+            continue;
+        }
+        if (Array.isArray(hit.candidates)) throw new Error('This file belongs to a comparison task.');
         if (original.translation_regions === null) {
             if (hit.translation_regions !== null) throw new Error('This file changes unavailable translation text.');
         } else if (!Array.isArray(hit.translation_regions)

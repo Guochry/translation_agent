@@ -1,4 +1,6 @@
 <script setup>
+import { restoreComparisonAnnotations } from '../../assets/js/manga-comparison-util.js';
+import { scoreConfigs } from '../../assets/js/score-util.js';
 import Interface from './Interface.vue';
 import { multilingualPageRated, validateMultilingualData, normalizeMultilingualScores } from '../../assets/js/manga-multilingual-util.js';
 </script>
@@ -54,7 +56,9 @@ export default {
                     this.results[language.code] = this.results[language.code].map(current => {
                         const saved = imported.get(current.id);
                         if (!saved) return current;
-                        const result = this.clone(this.canonical.find(hit => hit.id === saved.id));
+                        const canonical = this.canonical.find(hit => hit.id === saved.id);
+                        if (Array.isArray(canonical.candidates)) return restoreComparisonAnnotations(canonical, saved, scoreConfigs(this.config));
+                        const result = this.clone(canonical);
                         for (const field of ['fidelity_score', 'presentation_score', 'bookmark', 'comment']) {
                             if (Object.hasOwn(saved, field)) result[field] = this.clone(saved[field]);
                         }

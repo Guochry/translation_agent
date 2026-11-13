@@ -86,6 +86,27 @@ The 400 original/translated images add approximately 851 MB, which would put thi
 
 Validate packaging with `python -m unittest discover -s data_tools/tests -v`, and multilingual state/import checks with `node --experimental-default-type=module --test data_tools/tests/test_manga_multilingual.mjs` (Node 22).
 
+### Six-system multilingual comparison
+
+Open [the deployed comparison](https://guochry.github.io/translation_agent/?i=templates/demo/manga_multilingual_comparison.yml&d=data/demo/manga_multilingual_comparison.json), or [the local comparison](http://localhost:5173/?i=templates/demo/manga_multilingual_comparison.yml&d=data/demo/manga_multilingual_comparison.json) after `npm run dev`.
+
+Choose a language, then switch Translation A–F. The Japanese original stays visible alongside the selected candidate and its text cards. Each candidate has independent page Fidelity/Presentation scores, region Fidelity/Presentation scores, and Strength/Error spans. The existing single-translation multilingual URL and the older two-system comparison remain available. The new task contains 50 source pages × seven languages, with the existing Nano Banana baseline and `qwen27b`, `gemma31b`, `cohere`, `gpt`, and `translategemma27b`. Candidate order is deterministically shuffled by source page and stays consistent across languages. System identity is retained in exported `candidates[].id` and metadata; UI labels remain A–F.
+
+The collected five-system results provide 1,728 completed outputs and 22 missing outputs. Missing candidates appear as **Unavailable**, have no score inputs, and are excluded from completion checks rather than given a zero. An available candidate whose text extraction is unavailable still remains unfinished. Eleven regions with skipped rendering show **Not rendered in the image**; their model translation and exact Japanese source remain available for separate text and presentation assessment.
+
+Download saves all candidates and languages. Upload merges annotations onto canonical candidate content and checks candidate order, IDs, image hashes, and exact target text. Reset page clears all candidates for the current source page and language. Other task formats are rejected to avoid mixing results. Pages count as complete only when all available candidates have both page scores and both scores on every region.
+
+Prepare the task with Pillow installed:
+
+```bash
+python data_tools/prepare_multilingual_comparison.py \
+  --source-root ../agent/manga_tryout/manga_agent/runs/multilingual_results
+```
+
+The packager validates the collection manifest, text/image hashes, original page identity, Japanese annotation IDs/text/bounding boxes, reading order when supplied, and completed/missing coverage. It takes exact Japanese/target pairs directly from the saved results: no inference or new alignment API calls. Saved model wording and rendered casing are retained separately as `target` and `rendered_text`. Baseline source matches are reused unchanged. New translations are encoded as **lossless WebP**, and every decoded RGBA pixel is compared with its source PNG before accepting the asset. The 1.63 GB PNG set becomes approximately 776 MB of pixel-identical images. Source PNG hashes, WebP hashes, and decoded pixel hashes are retained for audit.
+
+Assets live in `evaluation_assets/multilingual_comparison/`, outside the Pages artifact, and use the same local Vite/external production image routing as the single-system multilingual task. Commit that directory alongside the new JSON/template and UI code before deploying. Source runs are never modified. Re-running the packager reuses only cached conversions whose source and packaged hashes still match. The report beside the task JSON lists missing outputs, skipped regions, and asset sizes. Verify with `python -m unittest discover -s data_tools/tests -v` and `node --experimental-default-type=module --test data_tools/tests/test_multilingual_candidates.mjs` (Node 22).
+
 ### Prepare or refresh the manga data
 
 From this repository, run the converter with its defaults:
