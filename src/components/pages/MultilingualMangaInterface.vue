@@ -81,7 +81,6 @@ export default {
     <div v-if="data_error" role="alert" class="multilingual-error">{{ data_error }}</div>
     <div v-else class="multilingual-manga">
         <section class="language-selector container card-body" aria-label="Translation language">
-            <h2>Translation language</h2>
             <p>Choose your native language.</p>
             <div class="language-buttons">
                 <button v-for="language in languages" :key="language.code" type="button" :aria-pressed="active_language === language.code"
@@ -103,7 +102,6 @@ export default {
 .multilingual-manga :deep([lang="ja"]), .multilingual-manga :deep([lang="zh"]) { font-family: EvaluationCJK, sans-serif; }
 .multilingual-manga :deep([lang="hi"]) { font-family: EvaluationHindi, sans-serif; }
 .language-selector { width: 100%; max-width: 1600px; box-sizing: border-box; }
-h2 { margin: 0 0 .5rem; font-size: 1.2rem; }
 p { line-height: 1.4; }
 .language-buttons { display: flex; flex-wrap: wrap; gap: .5rem; }
 .language-buttons button { display: flex; flex-direction: column; gap: .25rem; background: white; border: 1px solid #aaa; border-radius: 4px; cursor: pointer; padding: .6rem .85rem; }
