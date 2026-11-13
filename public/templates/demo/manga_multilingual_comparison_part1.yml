@@ -1,0 +1,54 @@
+template_name: demo_manga_multilingual_comparison_part1
+template_label: Multilingual Manga Comparison — Part 1 (30 pages)
+template_description: Compare six translations of 30 manga pages in seven languages, with independent scores and text annotations.
+default_data_link: data/demo/manga_multilingual_comparison_part1.json
+
+manga_comparison: true
+manga_multilingual: true
+manga_evaluation: true
+default_language: en
+external_asset_prefix: evaluation_assets/
+external_asset_base: https://raw.githubusercontent.com/Guochry/translation_agent/main/evaluation_assets/
+languages:
+  - { code: ar, label: Arabic, native_label: العربية }
+  - { code: en, label: English, native_label: English }
+  - { code: hi, label: Hindi, native_label: हिन्दी }
+  - { code: ka, label: Georgian, native_label: ქართული }
+  - { code: ru, label: Russian, native_label: Русский }
+  - { code: vi, label: Vietnamese, native_label: Tiếng Việt }
+  - { code: zh, label: Simplified Chinese, native_label: 简体中文 }
+manga_text_evaluation: true
+edits: []
+
+interface_text:
+  typology:
+    source_label: "Original Japanese Manga"
+    target_label: "Translated Manga"
+  hit_box:
+    hit_label: "Manga Page"
+
+prepend_instructions: true
+instructions: |
+  ## Multilingual Manga Comparison — Part 1 (pages 1–30)
+
+  Compare each translation with the Japanese original. Switch A–F to rate each independently. All scores: **0–100, steps of 5** (0 = very poor; 60 = acceptable/pass; 100 = excellent). Leave unfinished scores blank.
+
+  - **Spans:** Choose a label, then highlight translated words: **Strength** = effective, meaning-preserving creative choices in the target language, such as idioms, wordplay, or cultural references; **Error** = inaccurate or unnatural wording. **Okay** = acceptable—leave it unmarked.
+  - **Region fidelity:** Translation meaning, accuracy, completeness, style, tone, and naturalness compared with Japanese.
+  - **Region presentation:** Visual readability in the image: font, size, text length, spacing, and balloon fit.
+  - **Page scores:** **Fidelity** = overall translation quality of the page’s text; **Presentation** = overall visual readability, lettering, layout, and style.
+  - Before closing the website, **download your annotations**. To resume next time, **upload that downloaded file**.
+
+scores:
+  - name: fidelity_score
+    label: Fidelity
+    question: "How well does the page's translated text preserve meaning, accuracy, style, and tone?"
+    min: 0
+    max: 100
+    step: 5
+  - name: presentation_score
+    label: Presentation
+    question: "How readable and visually effective are the page's lettering, layout, and presentation style?"
+    min: 0
+    max: 100
+    step: 5

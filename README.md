@@ -88,9 +88,16 @@ Validate packaging with `python -m unittest discover -s data_tools/tests -v`, an
 
 ### Six-system multilingual comparison
 
+The task is also split into two consecutive batches, using the same source-page order in every language:
+
+- [Part 1: first 30 pages per language](https://guochry.github.io/translation_agent/?i=templates/demo/manga_multilingual_comparison_part1.yml&d=data/demo/manga_multilingual_comparison_part1.json)
+- [Part 2: remaining 20 pages per language](https://guochry.github.io/translation_agent/?i=templates/demo/manga_multilingual_comparison_part2.yml&d=data/demo/manga_multilingual_comparison_part2.json)
+
+Regenerate both batches after refreshing the full dataset with `python data_tools/split_multilingual_comparison.py`. The split adds no image copies or inference calls. Task IDs, candidate IDs/order, scores, and spans are retained; metadata records `evaluation_batch` and `original_task_index` (one-based position in the original 50-page task). Part 1 contains 210 page/language records; Part 2 contains 140. Each site shows navigation and completion counts for its own batch.
+
 Open [the deployed comparison](https://guochry.github.io/translation_agent/?i=templates/demo/manga_multilingual_comparison.yml&d=data/demo/manga_multilingual_comparison.json), or [the local comparison](http://localhost:5173/?i=templates/demo/manga_multilingual_comparison.yml&d=data/demo/manga_multilingual_comparison.json) after `npm run dev`.
 
-Choose a language, then switch Translation A–F. The Japanese original stays visible alongside the selected candidate and its text cards. Each candidate has independent page Fidelity/Presentation scores, region Fidelity/Presentation scores, and Strength/Error spans. The existing single-translation multilingual URL and the older two-system comparison remain available. The new task contains 50 source pages × seven languages, with the existing Nano Banana baseline and `qwen27b`, `gemma31b`, `cohere`, `gpt`, and `translategemma27b`. Candidate order is deterministically shuffled by source page and stays consistent across languages. System identity is retained in exported `candidates[].id` and metadata; UI labels remain A–F.
+Choose a language, then switch Translation A–F. On desktop, human reference text appears in a left sidebar, followed by the Japanese original, selected translation, and region assessment. The references are expanded by default; narrow screens stack the sections. Each candidate has independent page Fidelity/Presentation scores, region Fidelity/Presentation scores, and Strength/Error spans. The existing single-translation multilingual URL and the older two-system comparison remain available. The new task contains 50 source pages × seven languages, with the existing Nano Banana baseline and `qwen27b`, `gemma31b`, `cohere`, `gpt`, and `translategemma27b`. Candidate order is deterministically shuffled by source page and stays consistent across languages. System identity is retained in exported `candidates[].id` and metadata; UI labels remain A–F.
 
 The collected five-system results provide 1,728 completed outputs and 22 missing outputs. Missing candidates appear as **Unavailable**, have no score inputs, and are excluded from completion checks rather than given a zero. An available candidate whose text extraction is unavailable still remains unfinished. Eleven regions with skipped rendering show **Not rendered in the image**; their model translation and exact Japanese source remain available for separate text and presentation assessment.
 

@@ -1,0 +1,45 @@
+{
+  "source": "manga_multilingual_comparison.json",
+  "total_pages_per_language": 50,
+  "parts": [
+    {
+      "part": 1,
+      "original_positions": [
+        1,
+        30
+      ],
+      "pages_per_language": 30,
+      "languages": [
+        "ar",
+        "en",
+        "hi",
+        "ka",
+        "ru",
+        "vi",
+        "zh"
+      ],
+      "task_records": 210,
+      "dataset": "public/data/demo/manga_multilingual_comparison_part1.json"
+    },
+    {
+      "part": 2,
+      "original_positions": [
+        31,
+        50
+      ],
+      "pages_per_language": 20,
+      "languages": [
+        "ar",
+        "en",
+        "hi",
+        "ka",
+        "ru",
+        "vi",
+        "zh"
+      ],
+      "task_records": 140,
+      "dataset": "public/data/demo/manga_multilingual_comparison_part2.json"
+    }
+  ],
+  "identity_note": "Page/candidate IDs and A\u2013F order are retained; original_task_index is one-based in the full task."
+}

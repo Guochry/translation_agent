@@ -48,6 +48,16 @@ export default {
         </header>
         <MangaCandidateTabs v-if="many_candidates" :candidates="candidates" :active="active" :uid="uid" @select="active = $event" />
         <div class="pair-workspace" :class="{ 'many-candidates': many_candidates }">
+            <details class="pair-references" :open="many_candidates || !config?.manga_multilingual">
+                <summary>Human reference text</summary>
+                <ol v-if="hit.reference_texts?.length">
+                    <li v-for="(text, index) in hit.reference_texts" :key="index">
+                        <p lang="ja">{{ hit.reference_texts_ja?.[index] || 'Japanese text unavailable' }}</p>
+                        <p lang="en">{{ text }}</p>
+                    </li>
+                </ol>
+                <p v-else>No reference text for this page.</p>
+            </details>
         <div class="pair-images">
             <figure v-for="panel in panels" :key="panel.candidate?.id || 'original'">
                 <figcaption><h3>{{ panel.label }}</h3>
@@ -64,17 +74,7 @@ export default {
                 </div>
             </figure>
         </div>
-        <div class="pair-text-layout">
-            <details class="pair-references" :open="!config?.manga_multilingual">
-                <summary>Human reference text</summary>
-                <ol v-if="hit.reference_texts?.length">
-                    <li v-for="(text, index) in hit.reference_texts" :key="index">
-                        <p lang="ja">{{ hit.reference_texts_ja?.[index] || 'Japanese text unavailable' }}</p>
-                        <p lang="en">{{ text }}</p>
-                    </li>
-                </ol>
-                <p v-else>No reference text for this page.</p>
-            </details>
+
             <aside class="pair-text" aria-label="Translation text assessment">
                 <MangaCandidateTabs v-if="!many_candidates" :candidates="candidates" :active="active" :uid="uid" @select="active = $event" />
                 <div v-if="active_candidate" :key="active_candidate.id" role="tabpanel" :id="`pair-text-${uid}`" :aria-labelledby="`pair-tab-${uid}-${active}`">
@@ -91,13 +91,13 @@ export default {
                 </div>
             </aside>
         </div>
-        </div>
     </section>
 </template>
 <style scoped>
 .pair-heading { display: flex; align-items: baseline; gap: 1rem; margin-bottom: 1rem; }
 .pair-heading h2 { margin: 0; font-size: 1.3rem; }
-.pair-images { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; align-items: start; }
+.pair-workspace { display: grid; grid-template-columns: minmax(240px, 1fr) minmax(0, 2fr); gap: 1rem; align-items: start; }
+.pair-images { grid-column: 1 / -1; grid-row: 1; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; align-items: start; }
 figure { margin: 0; min-width: 0; }
 figcaption { margin-bottom: .75rem; }
 h3 { font-size: 1.1rem; margin: 0 0 .5rem; }
@@ -106,16 +106,24 @@ img { box-sizing: border-box; display: block; width: 100%; height: auto; border:
 .pair-scores { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .5rem; margin: .75rem 0; }
 .pair-scores :deep(.candidate-score-box) { width: auto; min-width: 0; margin: 0; }
 .pair-scores :deep(.score-question) { font-size: .8rem; }
-.pair-text-layout { display: grid; grid-template-columns: minmax(240px, 1fr) minmax(0, 2fr); gap: 1rem; margin-top: 1.5rem; align-items: start; }
-.pair-references, .pair-text { border: 1px solid #ddd; padding: 1rem; border-radius: 4px; max-height: 80vh; overflow: auto; background: #fafafa; }
+.pair-references { grid-column: 1; grid-row: 2; }
+.pair-text { grid-column: 2; grid-row: 2; }
+.pair-references, .pair-text { min-width: 0; box-sizing: border-box; border: 1px solid #ddd; padding: 1rem; border-radius: 4px; max-height: 80vh; overflow: auto; background: #fafafa; }
 summary { cursor: pointer; font-weight: 600; }
 li { border-bottom: 1px solid #ddd; padding: .5rem 0; }
 li p { white-space: pre-wrap; overflow-wrap: anywhere; margin: .4rem 0; }
-.pair-workspace.many-candidates { display: grid; grid-template-columns: minmax(0, 2fr) minmax(340px, 1fr); gap: 1rem; align-items: start; }
-.many-candidates .pair-images { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-.many-candidates .pair-text-layout { display: flex; flex-direction: column; margin-top: 0; min-width: 0; }
-.many-candidates .pair-references, .many-candidates .pair-text { width: 100%; box-sizing: border-box; }
-@media (max-width: 1100px) { .pair-workspace.many-candidates { grid-template-columns: minmax(0, 1fr); } }
-@media (max-width: 900px) { .pair-text-layout { grid-template-columns: minmax(0, 1fr); } .pair-scores { grid-template-columns: minmax(0, 1fr); } }
+.pair-workspace.many-candidates { grid-template-columns: minmax(190px, .65fr) minmax(0, 2fr) minmax(300px, 1fr); }
+.many-candidates .pair-references { grid-column: 1; grid-row: 1; }
+.many-candidates .pair-images { grid-column: 2; grid-row: 1; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.many-candidates .pair-text { grid-column: 3; grid-row: 1; }
+@media (max-width: 1100px) {
+    .pair-workspace.many-candidates { grid-template-columns: minmax(0, 1fr); }
+    .many-candidates .pair-references, .many-candidates .pair-images, .many-candidates .pair-text { grid-column: 1; grid-row: auto; }
+}
+@media (max-width: 900px) {
+    .pair-workspace { grid-template-columns: minmax(0, 1fr); }
+    .pair-references, .pair-images, .pair-text { grid-column: 1; grid-row: auto; }
+    .pair-scores { grid-template-columns: minmax(0, 1fr); }
+}
 @media (max-width: 650px) { .pair-images, .many-candidates .pair-images { grid-template-columns: minmax(0, 1fr); } }
 </style>
