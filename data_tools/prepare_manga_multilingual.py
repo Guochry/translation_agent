@@ -2,9 +2,15 @@
 import argparse
 import collections
 import hashlib
+import filecmp
 import json
 import shutil
 from pathlib import Path
+
+try:
+    from data_tools.manga_source_alignment import apply_alignment
+except ModuleNotFoundError:
+    from manga_source_alignment import apply_alignment
 
 ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_SOURCE = ROOT.parent / 'agent/manga_tryout/manga_agent/baselines/multilingual_50'
@@ -24,8 +30,10 @@ def checked_image(root, relative, expected_hash=None):
     return path, digest
 
 
-def prepare(source=DEFAULT_SOURCE, references=DEFAULT_REFERENCES):
+def prepare(source=DEFAULT_SOURCE, references=DEFAULT_REFERENCES, alignments=None):
     source = Path(source).resolve()
+    alignment_path = Path(alignments) if alignments else ROOT / 'public/data/demo/manga_multilingual.alignments.json'
+    source_matches = json.loads(alignment_path.read_text()).get('pages', {}) if alignment_path.is_file() else {}
     manifest = json.loads((source / 'manifest.json').read_text())
     originals = {}
     for page in manifest['pages']:
@@ -77,14 +85,16 @@ def prepare(source=DEFAULT_SOURCE, references=DEFAULT_REFERENCES):
     for key, (original_path, original_hash) in originals.items():
         dest = asset_root / 'originals' / key
         dest.parent.mkdir(parents=True, exist_ok=True)
-        shutil.copyfile(original_path, dest)
+        if not dest.is_file() or not filecmp.cmp(original_path, dest, shallow=False):
+            shutil.copyfile(original_path, dest)
         total_bytes += dest.stat().st_size
     for code, label, native in LANGUAGES:
         for key, (original_path, original_hash) in originals.items():
             page, path, digest, complete, model = translations[code][key]
             dest = asset_root / code / key
             dest.parent.mkdir(parents=True, exist_ok=True)
-            shutil.copyfile(path, dest)
+            if not dest.is_file() or not filecmp.cmp(path, dest, shallow=False):
+                shutil.copyfile(path, dest)
             total_bytes += dest.stat().st_size
             regions = [dict(id=f'{code}:{i+1}', target=r['text'], kind=r.get('kind', 'other'),
                             uncertain=r.get('uncertain', False), quality_score=None, edits=[])
@@ -102,6 +112,8 @@ def prepare(source=DEFAULT_SOURCE, references=DEFAULT_REFERENCES):
                                       transcription_status='complete' if complete else 'unavailable',
                                       transcription_notes=page.get('notes', ''),
                                       transcription_error=page.get('error') if not complete else None))
+            if task['id'] in source_matches:
+                apply_alignment(task, source_matches[task['id']])
             tasks.append(task)
     license_path = ROOT / 'public/data/manga/fst_try/LICENSE.md'
     if license_path.is_file():
@@ -112,6 +124,8 @@ def prepare(source=DEFAULT_SOURCE, references=DEFAULT_REFERENCES):
     report = dict(original_pages=len(originals), tasks=len(tasks), languages=[l[0] for l in LANGUAGES],
                   pages_per_language=dict(collections.Counter(h['language'] for h in tasks)),
                   unavailable_text=unavailable, asset_bytes=total_bytes,
+                  source_alignment_counts=dict(collections.Counter(r.get('source_alignment', 'pending')
+                      for task in tasks for r in task.get('translation_regions') or [])),
                   asset_directory=asset_root.relative_to(ROOT).as_posix())
     output.with_suffix('.report.json').write_text(json.dumps(report, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
     print(json.dumps(report, ensure_ascii=False, indent=2))
@@ -121,6 +135,7 @@ def prepare(source=DEFAULT_SOURCE, references=DEFAULT_REFERENCES):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--source-root', type=Path, default=DEFAULT_SOURCE)
+    parser.add_argument('--alignments', type=Path, help='Japanese region mapping JSON (auto-detected beside task JSON)')
     parser.add_argument('--references', type=Path, default=DEFAULT_REFERENCES)
     args = parser.parse_args()
-    prepare(args.source_root, args.references)
+    prepare(args.source_root, args.references, args.alignments)

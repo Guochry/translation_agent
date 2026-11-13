@@ -27,5 +27,10 @@
     }
   ],
   "asset_bytes": 851329514,
+  "source_alignment_counts": {
+    "matched": 2414,
+    "unmatched": 604,
+    "uncertain": 11
+  },
   "asset_directory": "evaluation_assets/multilingual_50"
 }

@@ -85,9 +85,10 @@ export default {
 <template>
     <article class="manga-text-region" :aria-label="`Generated text region ${region_index + 1}`">
         <h4>Region {{ region_index + 1 }}</h4>
-        <template v-if="typeof region.source === 'string' && region.source.trim()">
-        <span class="region-text-label">Japanese source</span>
-        <p class="region-source" lang="ja">{{ region.source }}</p>
+        <template v-if="(typeof region.source === 'string' && region.source.trim()) || region.source_alignment">
+        <span class="region-text-label">Japanese source<span v-if="region.source_alignment === 'uncertain'" class="region-match-warning"> · Check match</span></span>
+        <p v-if="region.source" class="region-source" lang="ja">{{ region.source }}</p>
+        <p v-else class="region-unavailable">Source not matched</p>
         </template>
         <p v-if="target.length" class="region-target" :lang="language || 'en'" :dir="language === 'ar' ? 'rtl' : 'auto'" tabindex="0" aria-label="Generated translation text" @mouseup="mark_selection"><span v-for="segment in segments" :key="segment.start" :class="{ 'region-error-highlight': segment.marked }">{{ segment.text }}</span></p>
         <p v-else class="region-unavailable">No generated translation text for this region.</p>
@@ -116,6 +117,7 @@ export default {
 <style scoped>
 .manga-text-region { min-width: 0; margin-top: 1rem; padding: 0.85rem; background: #fff; border: 1px solid #ccc; border-radius: 4px; }
 .manga-text-region h4 { margin: 0 0 0.85rem; font-size: 1rem; }
+.region-match-warning { color: #865400; }
 .region-text-label { display: block; font-size: 0.8rem; font-weight: 600; color: #444; }
 .region-source, .region-target { margin: 0.3rem 0 0.85rem; white-space: pre-wrap; overflow-wrap: anywhere; line-height: 1.5; }
 .region-target { padding: 0.6rem; background: #f7f7f7; border: 1px solid #ddd; border-radius: 3px; cursor: text; }

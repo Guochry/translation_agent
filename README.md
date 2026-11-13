@@ -68,6 +68,18 @@ Open [the local multilingual task](http://localhost:5173/?i=templates/demo/manga
 
 The output is 350 records with stable IDs, `page_key`, `language`, `language_label`, image paths, original/translated SHA-256 hashes, human references, text-extraction provenance, and independent ratings/highlights. Download saves all seven languages in one JSON file. Upload merges saved annotations by ID and language, checks image hashes and exact text identity, and supports partial-language exports. Invalid scores are cleared. A Georgian extraction failure for `balloon_dream/ja/013.jpg` is preserved as unavailable text (`translation_regions: null`), so its image can be rated without falsely counting missing text as completed. The report lists unavailable extractions.
 
+Region cards show Japanese source above the translation. Source text is copied verbatim from the existing Japanese references after semantic matching with Gemini; reference and translation list order is never assumed to agree. `source_reference_indices` records zero-based reference indices and supports merged/split regions. `source_alignment` is `matched`, `uncertain` (shown as **Check match**), or `unmatched` (shown as **Source not matched**). Blank Japanese annotations cannot become confirmed matches. The page metadata records the alignment model and an input fingerprint. These matches are machine-generated, not human-verified alignments. Older rating exports remain importable; the current canonical source matches are retained when restoring ratings.
+
+To generate or resume source matching and rebuild the task:
+
+```bash
+python data_tools/align_manga_multilingual.py --key-file /path/to/gemini_key.txt
+python data_tools/prepare_manga_multilingual.py
+```
+
+Alternatively configure `GEMINI_API_KEY` or `GOOGLE_API_KEY`. The alignment step uses the existing Japanese/English references and target text; it does not regenerate images or translate new Japanese. Completed results are saved in `public/data/demo/manga_multilingual.alignments.json` and reused only when their input fingerprints match. The converter picks up that file automatically, or accepts `--alignments PATH`. Commit the alignment JSON alongside the rebuilt dataset and UI changes.
+
+
 The 400 original/translated images add approximately 851 MB, which would put this checkout beyond [GitHub Pages’ 1 GB published-site limit](https://docs.github.com/en/pages/getting-started-with-github-pages/github-pages-limits). They are copied byte-for-byte to `evaluation_assets/multilingual_50/`, outside `public/`, and must be committed and pushed along with the new JSON and template. Vite serves this directory locally; production loads it from `raw.githubusercontent.com/Guochry/translation_agent/main/evaluation_assets/`, configured by `external_asset_prefix` and `external_asset_base` in the template. These images are excluded from the Pages artifact. If deploying from another repository/branch or image host, update `external_asset_base`. The existing tasks and URLs continue to use their existing public images.
 
 Validate packaging with `python -m unittest discover -s data_tools/tests -v`, and multilingual state/import checks with `node --experimental-default-type=module --test data_tools/tests/test_manga_multilingual.mjs` (Node 22).

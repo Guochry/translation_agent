@@ -77,3 +77,15 @@ class MultilingualPackagingTests(unittest.TestCase):
         self.write(self.source / 'ar/translated_text.json', {'pages': []})
         with self.assertRaisesRegex(ValueError, 'coverage'):
             self.run_converter()
+
+    def test_converter_applies_saved_source_matches_on_regeneration(self):
+        from data_tools.manga_source_alignment import fingerprint
+        tasks = self.run_converter()
+        hit = tasks[0]
+        alignment = {'pages': {hit['id']: {'fingerprint': fingerprint(hit), 'model': 'alignment-test',
+            'regions': [{'region_id': hit['translation_regions'][0]['id'], 'source_indices': [0], 'status': 'matched'}]}}}
+        self.write(self.root / 'public/data/demo/manga_multilingual.alignments.json', alignment)
+        regenerated = self.run_converter()
+        self.assertEqual(regenerated[0]['translation_regions'][0]['source'], 'こんにちは')
+        self.assertEqual(regenerated[0]['translation_regions'][0]['source_reference_indices'], [0])
+        self.assertEqual(regenerated[0]['metadata']['source_alignment_model'], 'alignment-test')
