@@ -19,13 +19,13 @@ prepend_instructions: true
 instructions: |
   ## Manga Translation Comparison
 
-  Compare **Translation A and B** with the shared Japanese original. Rate each independently using **0–100 in steps of 5** (0 = very poor; 100 = excellent). Leave unfinished scores blank.
+  Compare A and B with the Japanese original; rate each independently. All scores: **0–100, steps of 5** (0 = very poor; 100 = excellent). Leave unfinished scores blank.
 
-  - **Fidelity:** Meaning, tone, story, characters, and artwork. Replacing Japanese lettering with English is expected.
-  - **Presentation:** Readability, typography, placement, and visual polish.
-  - **Text quality:** Accuracy and natural English for every region in both text tabs. Highlight translation errors.
-  - Match text by content, not numbering. Transcribed text may be imperfect; check the image.
-  - **Download** to save; **upload** to resume. **Reset page** clears both translations’ ratings and highlights.
+  - **Region quality:** Meaning, completeness, tone, grammar, and natural wording compared with Japanese. Ignore font and layout.
+  - **Region presentation:** Inspect the image: readable font and size, text length, spacing, balloon fit, clipping, and overlap. Ignore translation accuracy.
+  - **Spans:** Choose a label, then highlight translated words: **Strength** = especially good wording; **Okay** = acceptable; **Error** = inaccurate or unnatural wording. These labels describe text quality; highlighting is optional.
+  - **Page scores:** Fidelity covers meaning and artwork preservation; presentation covers the whole page’s visual readability.
+  - **Download** saves both translations; **upload** resumes. **Reset page** clears both on this page.
 
 scores:
   - name: fidelity_score

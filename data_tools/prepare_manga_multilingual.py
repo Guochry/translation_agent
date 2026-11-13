@@ -97,7 +97,7 @@ def prepare(source=DEFAULT_SOURCE, references=DEFAULT_REFERENCES, alignments=Non
                 shutil.copyfile(path, dest)
             total_bytes += dest.stat().st_size
             regions = [dict(id=f'{code}:{i+1}', target=r['text'], kind=r.get('kind', 'other'),
-                            uncertain=r.get('uncertain', False), quality_score=None, edits=[])
+                            uncertain=r.get('uncertain', False), quality_score=None, presentation_score=None, edits=[])
                        for i, r in enumerate(page['regions'])] if complete else None
             task = dict(id=f'multilingual50:{code}:{key}', page_key=key, language=code, language_label=label,
                         original_image=(asset_root / 'originals' / key).relative_to(ROOT).as_posix(),

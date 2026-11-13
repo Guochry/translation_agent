@@ -153,6 +153,7 @@
                   }
                   for (const region of Array.isArray(hit.translation_regions) ? hit.translation_regions : []) {
                     if (!isValidTranslationQuality(region.quality_score)) region.quality_score = null
+                    if (!isValidTranslationQuality(region.presentation_score)) region.presentation_score = null
                     region.edits = region.edits || []
                   }
                 }

@@ -123,7 +123,7 @@ class PrepareMangaEvaluationTests(unittest.TestCase):
         self.assertEqual(task["translation_regions"], [{
             "id": "example_book:10:d0001", "source": "検出した日本語",
             "target": "  Exact\ntranslation!  ", "bbox": [1, 2, 10, 20],
-            "kind": "text", "quality_score": None, "edits": [],
+            "kind": "text", "quality_score": None, "presentation_score": None, "edits": [],
         }])
         self.assertEqual(json.loads(self.output.read_text()), tasks)
         self.assertEqual(json.loads(self.output.with_suffix(".report.json").read_text()), report)

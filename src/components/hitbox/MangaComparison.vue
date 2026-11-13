@@ -1,4 +1,5 @@
 <script setup>
+import MangaSpanLegend from './MangaSpanLegend.vue';
 import { mangaImageUrl } from '../../assets/js/manga-multilingual-util.js';
 import MangaTextRegion from './MangaTextRegion.vue';
 </script>
@@ -8,6 +9,7 @@ export default {
     props: ['hit', 'text_evaluation', 'update_region', 'config'],
     data() {
         return {
+            span_category: 'error',
             image_errors: { original: false, translated: false },
             reference_heading_id: `manga-references-${this.$.uid}`
         }
@@ -106,7 +108,8 @@ export default {
         </component>
         <section v-if="text_evaluation" class="manga-generated-regions" aria-label="Generated translations">
             <h3>Generated translations</h3>
-            <p class="manga-region-guide">Score accuracy and natural wording: <strong>0–100, steps of 5</strong>. Highlight errors to mark them.</p>
+            <p class="manga-region-guide">Rate text quality and visual presentation separately: <strong>0–100, steps of 5</strong>.</p>
+            <MangaSpanLegend v-model="span_category" />
             <p v-if="translation_regions === null" class="manga-empty-reference">Generated text is unavailable for this page.</p>
             <p v-else-if="!translation_regions.length" class="manga-empty-reference">No generated text for this page.</p>
             <MangaTextRegion
@@ -114,6 +117,7 @@ export default {
                 :key="`${index}-${region.id}`"
                 :region="region"
                 :region_index="index"
+                :span_category="span_category"
                 :update_region="update_region"
                 :language="hit.language"
             />

@@ -39,12 +39,12 @@ def prepare(baseline_root=DEFAULT_BASELINE):
         agent = {k: copy.deepcopy(hit[k]) for k in ('translated_image', 'translation_regions', 'metadata')}
         agent.update(id='agent', fidelity_score=None, presentation_score=None)
         for region in agent['translation_regions']:
-            region.update(quality_score=None, edits=[])
+            region.update(quality_score=None, presentation_score=None, edits=[])
         other = dict(id='baseline', translated_image=destination.relative_to(ROOT / 'public').as_posix(),
                      fidelity_score=None, presentation_score=None,
                      metadata={'text_origin': 'image_transcription', 'transcription_notes': page.get('notes', '')},
                      translation_regions=[dict(id=f'baseline:{i+1}', target=r['text'], kind=r['kind'],
-                                               uncertain=r.get('uncertain', False), quality_score=None, edits=[])
+                                               uncertain=r.get('uncertain', False), quality_score=None, presentation_score=None, edits=[])
                                           for i, r in enumerate(page['regions'])])
         task = {k: copy.deepcopy(hit[k]) for k in ('original_image', 'reference_texts', 'reference_texts_ja', 'metadata')}
         # Stable, balanced A/B order; exported candidate IDs retain system identity.

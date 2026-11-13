@@ -1,85 +1,53 @@
 <script setup>
 import OverallScore from '../common/OverallScore.vue';
 import { get_selection_offsets } from '../../assets/js/selection-util.js';
-import { TRANSLATION_QUALITY_SCORE } from '../../assets/js/manga-util.js';
+import { regionSpans, labelRegionSpan } from '../../assets/js/manga-span-util.js';
+import { TRANSLATION_QUALITY_SCORE, REGION_PRESENTATION_SCORE } from '../../assets/js/manga-util.js';
 </script>
 
 <script>
 export default {
-    props: ['region', 'region_index', 'update_region', 'language'],
+    props: ['region', 'region_index', 'update_region', 'language', 'span_category'],
+    data() { return { selection_message: '' } },
     computed: {
-        target() {
-            return typeof this.region.target === 'string' ? this.region.target : ''
-        },
-        edits() {
-            return Array.isArray(this.region.edits) ? this.region.edits : []
-        },
-        error_spans() {
-            return this.edits.filter(edit => edit.category === 'error').flatMap(edit =>
-                (Array.isArray(edit.output_idx) ? edit.output_idx : [])
-                    .filter(span => Array.isArray(span) && span.length === 2
-                        && Number.isInteger(span[0]) && Number.isInteger(span[1])
-                        && span[0] >= 0 && span[1] > span[0] && span[1] <= this.target.length)
-                    .map(([start, end]) => ({ start, end, id: edit.id }))
-            )
-        },
-        errors() {
-            return this.edits.filter(edit => edit.category === 'error'
-                && this.error_spans.some(span => span.id === edit.id))
+        target() { return typeof this.region.target === 'string' ? this.region.target : '' },
+        spans() { return regionSpans(this.region) },
+        annotations() {
+            return (this.region.edits || []).filter(edit => this.spans.some(span => span.id === edit.id && span.category === edit.category))
         },
         segments() {
-            const boundaries = [...new Set([0, this.target.length,
-                ...this.error_spans.flatMap(span => [span.start, span.end])])].sort((a, b) => a - b)
+            const boundaries = [...new Set([0, this.target.length, ...this.spans.flatMap(span => [span.start, span.end])])].sort((a, b) => a - b)
             return boundaries.slice(0, -1).map((start, index) => {
                 const end = boundaries[index + 1]
-                return {
-                    start,
-                    text: this.target.slice(start, end),
-                    marked: this.error_spans.some(span => span.start < end && span.end > start)
-                }
+                const span = this.spans.find(span => span.start < end && span.end > start)
+                return { start, text: this.target.slice(start, end), category: span?.category }
             })
         }
     },
     methods: {
-        commit(region) {
-            if (typeof this.update_region === 'function') this.update_region(this.region_index, region)
-        },
-        update_score_data(data) {
-            this.commit(data[0])
-        },
+        commit(region) { if (typeof this.update_region === 'function') this.update_region(this.region_index, region) },
+        update_score_data(data) { this.commit(data[0]) },
         mark_selection(event) {
             if (event.button != null && event.button !== 0) return
             const selection = window.getSelection()
             if (!selection || selection.rangeCount !== 1) return
             const offsets = get_selection_offsets(event.currentTarget, selection.getRangeAt(0))
             if (!offsets) return
-            const [start, end] = offsets
-            if (start < 0 || end <= start || end > this.target.length || !this.target.slice(start, end).trim()) return
-            if (this.error_spans.some(span => span.start === start && span.end === end)) {
-                selection.removeAllRanges()
-                return
-            }
-            const existing_ids = this.edits.filter(edit => edit.category === 'error')
-                .map(edit => edit.id).filter(id => Number.isInteger(id) && id > 0)
-            const id = Math.max(0, ...existing_ids) + 1
-            this.commit({
-                ...this.region,
-                edits: [...this.edits, { category: 'error', id, annotation: null, output_idx: [[start, end]] }]
-            })
+            this.selection_message = ''
+            try { this.commit(labelRegionSpan(this.region, offsets[0], offsets[1], this.span_category || 'error')) }
+            catch (error) { this.selection_message = error.message }
             selection.removeAllRanges()
         },
-        remove_error(error) {
-            this.commit({
-                ...this.region,
-                edits: this.edits.filter(edit => !(edit.category === 'error' && edit.id === error.id))
-            })
+        remove_annotation(annotation) {
+            this.commit({ ...this.region, edits: this.region.edits.filter(edit => !(edit.id === annotation.id && edit.category === annotation.category)) })
         },
-        error_text(error) {
-            return this.error_spans.filter(span => span.id === error.id)
+        annotation_text(annotation) {
+            return this.spans.filter(span => span.id === annotation.id && span.category === annotation.category)
                 .map(span => this.target.slice(span.start, span.end)).join(' … ')
         }
     }
 }
+
 </script>
 
 <template>
@@ -90,24 +58,21 @@ export default {
         <p v-if="region.source" class="region-source" lang="ja">{{ region.source }}</p>
         <p v-else class="region-unavailable">Source not matched</p>
         </template>
-        <p v-if="target.length" class="region-target" :lang="language || 'en'" :dir="language === 'ar' ? 'rtl' : 'auto'" tabindex="0" aria-label="Generated translation text" @mouseup="mark_selection"><span v-for="segment in segments" :key="segment.start" :class="{ 'region-error-highlight': segment.marked }">{{ segment.text }}</span></p>
+        <p v-if="target.length" class="region-target" :lang="language || 'en'" :dir="language === 'ar' ? 'rtl' : 'auto'" tabindex="0" aria-label="Generated translation text" @mouseup="mark_selection"><span v-for="segment in segments" :key="segment.start" :class="segment.category ? `region-${segment.category}-highlight` : null">{{ segment.text }}</span></p>
         <p v-else class="region-unavailable">No generated translation text for this region.</p>
-        <OverallScore
-            class="region-quality-score"
-            :hits_data="[region]"
-            :current_hit="1"
-            :set_hits_data="update_score_data"
-            :config="{}"
-            :score_definition="TRANSLATION_QUALITY_SCORE"
-            :compact="true"
-            caption="Quality"
-        />
-        <div v-if="errors.length" class="region-errors" aria-label="Marked translation errors">
-            <h5>Errors ({{ errors.length }})</h5>
+        <p v-if="selection_message" class="region-unavailable" role="status">{{ selection_message }}</p>
+        <div class="region-score-row">
+            <OverallScore class="region-quality-score" :hits_data="[region]" :current_hit="1" :set_hits_data="update_score_data"
+                :config="{}" :score_definition="TRANSLATION_QUALITY_SCORE" :compact="true" caption="Quality" />
+            <OverallScore class="region-quality-score" :hits_data="[region]" :current_hit="1" :set_hits_data="update_score_data"
+                :config="{}" :score_definition="REGION_PRESENTATION_SCORE" :compact="true" caption="Presentation" />
+        </div>
+        <div v-if="annotations.length" class="region-errors" aria-label="Marked translation spans">
             <ul>
-                <li v-for="error in errors" :key="error.id">
-                    <span class="region-error-text" :lang="language || 'en'" :dir="language === 'ar' ? 'rtl' : 'auto'">{{ error_text(error) }}</span>
-                    <button type="button" @click="remove_error(error)" :aria-label="`Remove error ${error.id} from region ${region_index + 1}`">Remove</button>
+                <li v-for="annotation in annotations" :key="`${annotation.category}-${annotation.id}`">
+                    <span class="region-span-category" :class="`region-${annotation.category}-highlight`">{{ annotation.category }}</span>
+                    <span class="region-error-text" :lang="language || 'en'" :dir="language === 'ar' ? 'rtl' : 'auto'">{{ annotation_text(annotation) }}</span>
+                    <button type="button" @click="remove_annotation(annotation)" :aria-label="`Remove ${annotation.category} span ${annotation.id} from region ${region_index + 1}`">Remove</button>
                 </li>
             </ul>
         </div>
@@ -122,11 +87,15 @@ export default {
 .region-source, .region-target { margin: 0.3rem 0 0.85rem; white-space: pre-wrap; overflow-wrap: anywhere; line-height: 1.5; }
 .region-target { padding: 0.6rem; background: #f7f7f7; border: 1px solid #ddd; border-radius: 3px; cursor: text; }
 .region-target:focus-visible { outline: 2px solid #245ba0; }
+.region-strength-highlight { background: #d9f2df; border-bottom: 2px solid #27823e; }
+.region-okay-highlight { background: #fff1bd; border-bottom: 2px solid #b28a15; }
+.region-span-category { font-size: .7rem; padding: .15rem .25rem; text-transform: capitalize; flex-shrink: 0; }
 .region-error-highlight { background: #ffe0df; border-bottom: 2px solid #c33; }
 .region-unavailable { color: #666; font-style: italic; line-height: 1.4; margin: 0.3rem 0 0.85rem; }
-.region-quality-score { display: grid; grid-template-columns: minmax(0, 1fr) 4.5rem; gap: 0.35rem 0.75rem; margin: 0.75rem 0; text-align: left; }
-.region-quality-score :deep(.candidate-score-caption) { grid-column: 1; font-size: 0.85rem; font-weight: 600; color: #333; }
-.region-quality-score :deep(.candidate-score-input) { grid-column: 2; grid-row: 1; align-self: center; padding: 0.5rem 0.2rem; }
+.region-score-row { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .75rem; margin: .5rem 0; }
+.region-quality-score { min-width: 0; flex: none; margin: 0; text-align: left; }
+.region-quality-score :deep(.candidate-score-caption) { font-size: .8rem; font-weight: 600; color: #333; }
+.region-quality-score :deep(.candidate-score-input) { padding: .4rem; }
 .region-errors h5 { margin: 0.75rem 0 0.4rem; font-size: 0.85rem; }
 .region-errors ul { list-style: none; padding: 0; margin: 0; }
 .region-errors li { display: flex; align-items: flex-start; justify-content: space-between; gap: 0.5rem; margin-bottom: 0.5rem; }

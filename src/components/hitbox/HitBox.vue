@@ -5,7 +5,7 @@
   import MangaComparison from "./MangaComparison.vue";
   import _ from 'lodash';
   import { isValidScore, scoreConfigs, scoreField } from '../../assets/js/score-util.js';
-  import { isValidTranslationQuality } from '../../assets/js/manga-util.js';
+  import { isRegionRated } from '../../assets/js/manga-util.js';
   import { handle_file_download, handle_file_upload } from "../../assets/js/file-util.js";
   import VueMarkdown from 'vue-markdown-render'
   import { initializeApp } from 'firebase/app'
@@ -112,7 +112,7 @@ export default {
             }))
             return manga_rated && (!this.config.manga_text_evaluation
                 || (Array.isArray(hit.translation_regions)
-                    && hit.translation_regions.every(region => isValidTranslationQuality(region.quality_score))))
+                    && hit.translation_regions.every(region => isRegionRated(region))))
         },
         update_candidate(index, candidate) {
             const current = this.current_example?.candidates?.[index]
@@ -186,6 +186,7 @@ export default {
             if (this.config.manga_text_evaluation) {
                 for (const region of new_hits_data[this.current_hit - 1].translation_regions || []) {
                     region.quality_score = null
+                    region.presentation_score = null
                     region.edits = []
                 }
             }

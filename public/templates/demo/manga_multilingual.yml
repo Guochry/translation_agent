@@ -30,13 +30,13 @@ prepend_instructions: true
 instructions: |
   ## Multilingual Manga Evaluation
 
-  Choose a language and compare its translation with the Japanese original. Use **0–100 in steps of 5** for all scores (0 = very poor; 100 = excellent).
+  Choose a language and compare its translation with the Japanese original. All scores: **0–100, steps of 5** (0 = very poor; 100 = excellent). Leave unfinished scores blank.
 
-  - **Fidelity:** Meaning, tone, story, characters, and artwork. Replacing Japanese lettering is expected.
-  - **Presentation:** Readability, typography, placement, and visual polish.
-  - **Text quality:** Accuracy and natural wording in the selected language. Highlight translation errors; check transcribed wording against the image.
-  - Japanese source and English human references are shared across languages. Match text by content, not numbering.
-  - Leave unfinished scores blank. **Download** saves all languages; **upload** resumes. **Reset page** clears only the current language and page.
+  - **Region quality:** Meaning, completeness, tone, grammar, and natural wording compared with Japanese. Ignore font and layout.
+  - **Region presentation:** Inspect the image: readable font and size, text length, spacing, balloon fit, clipping, and overlap. Ignore translation accuracy.
+  - **Spans:** Choose a label, then highlight translated words: **Strength** = especially good wording; **Okay** = acceptable; **Error** = inaccurate or unnatural wording. These labels describe text quality; highlighting is optional.
+  - **Page scores:** Fidelity covers meaning and artwork preservation; presentation covers the whole page’s visual readability.
+  - **Download** saves all languages; **upload** resumes. **Reset page** clears this page in the selected language.
 
 scores:
   - name: fidelity_score

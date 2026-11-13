@@ -4,7 +4,7 @@ import { comparisonRated, normalizeComparison, resetComparison } from '../../src
 
 const scores = ['fidelity_score', 'presentation_score'].map(name => ({ name, min: 0, max: 100, step: 5 }));
 const makeHit = () => ({ candidates: ['agent', 'baseline'].map(id => ({ id, fidelity_score: 0, presentation_score: 100,
-    translation_regions: [{ id: `${id}:1`, target: 'Hello', quality_score: 0, edits: [{ category: 'error', id: 1, output_idx: [[0, 2]] }] }] })) });
+    translation_regions: [{ id: `${id}:1`, target: 'Hello', quality_score: 0, presentation_score: 0, edits: [{ category: 'error', id: 1, output_idx: [[0, 2]] }] }] })) });
 
 test('completion includes both candidates, accepts zero, rejects unfinished/off-step scores', () => {
     const hit = makeHit();
@@ -35,9 +35,20 @@ test('reset clears ratings and errors for both systems while preserving content 
         assert.equal(candidate.fidelity_score, null);
         assert.equal(candidate.presentation_score, null);
         assert.equal(candidate.translation_regions[0].quality_score, null);
+        assert.equal(candidate.translation_regions[0].presentation_score, null);
         assert.deepEqual(candidate.translation_regions[0].edits, []);
         assert.equal(candidate.translation_regions[0].target, 'Hello');
     }
     assert.deepEqual(hit.candidates.map(c => c.id), ['agent', 'baseline']);
+    assert.equal(comparisonRated(hit, scores), false);
+});
+
+
+test('old quality ratings survive migration while missing presentation remains unfinished', () => {
+    const hit = makeHit();
+    delete hit.candidates[0].translation_regions[0].presentation_score;
+    normalizeComparison(hit, scores);
+    assert.equal(hit.candidates[0].translation_regions[0].quality_score, 0);
+    assert.equal(hit.candidates[0].translation_regions[0].presentation_score, null);
     assert.equal(comparisonRated(hit, scores), false);
 });

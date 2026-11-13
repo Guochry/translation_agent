@@ -1,11 +1,11 @@
 import { isValidScore, scoreConfigs, scoreField } from './score-util.js';
-import { isValidTranslationQuality } from './manga-util.js';
+import { isValidTranslationQuality, isRegionRated } from './manga-util.js';
 
 export function multilingualPageRated(hit, config) {
     const scores = scoreConfigs(config);
     return scores.length > 0 && scores.every(score => isValidScore(hit[scoreField(score)], score))
         && Array.isArray(hit.translation_regions)
-        && hit.translation_regions.every(region => isValidTranslationQuality(region.quality_score));
+        && hit.translation_regions.every(region => isRegionRated(region));
 }
 
 export function normalizeMultilingualScores(hit, config) {
@@ -15,6 +15,7 @@ export function normalizeMultilingualScores(hit, config) {
     }
     for (const region of hit.translation_regions || []) {
         if (!isValidTranslationQuality(region.quality_score)) region.quality_score = null;
+        if (!isValidTranslationQuality(region.presentation_score)) region.presentation_score = null;
         region.edits = region.edits || [];
     }
     return hit;

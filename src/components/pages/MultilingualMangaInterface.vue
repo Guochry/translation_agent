@@ -60,6 +60,7 @@ export default {
                         }
                         for (let i = 0; i < (result.translation_regions || []).length; i++) {
                             result.translation_regions[i].quality_score = saved.translation_regions[i].quality_score;
+                            result.translation_regions[i].presentation_score = saved.translation_regions[i].presentation_score;
                             result.translation_regions[i].edits = this.clone(saved.translation_regions[i].edits || []);
                         }
                         return normalizeMultilingualScores(result, this.config);

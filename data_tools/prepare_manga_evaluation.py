@@ -147,6 +147,7 @@ def _translation_regions(page, label):
             "bbox": bbox,
             "kind": region["class_name"],
             "quality_score": None,
+            "presentation_score": None,
             "edits": [],
         }
     reading_order = page.get("reading_order")

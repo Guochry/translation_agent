@@ -1,12 +1,14 @@
 <script setup>
+import MangaSpanLegend from './MangaSpanLegend.vue';
 import OverallScore from '../common/OverallScore.vue';
+import { isRegionRated } from '../../assets/js/manga-util.js';
 import MangaTextRegion from './MangaTextRegion.vue';
 </script>
 <script>
 export default {
     props: ['hit', 'scores', 'update_candidate'],
     data() {
-        return { active: 0, image_errors: {}, uid: this.$.uid }
+        return { span_category: 'error', active: 0, image_errors: {}, uid: this.$.uid }
     },
     computed: {
         candidates() { return this.hit.candidates || [] },
@@ -32,7 +34,7 @@ export default {
             this.update_candidate(this.active, candidate)
         },
         rated_count(candidate) {
-            return (candidate.translation_regions || []).filter(region => region.quality_score != null).length
+            return (candidate.translation_regions || []).filter(region => isRegionRated(region)).length
         }
     }
 }
@@ -80,10 +82,11 @@ export default {
                 </div>
                 <div v-if="active_candidate" :key="active_candidate.id" role="tabpanel" :id="`pair-text-${uid}`" :aria-labelledby="`pair-tab-${uid}-${active}`">
                     <h3>{{ label(active) }} — text quality</h3>
-                    <p>Score accuracy and natural wording: <strong>0–100, steps of 5</strong>. Highlight errors to mark them.</p>
+                    <p>Rate text quality and visual presentation separately: <strong>0–100, steps of 5</strong>.</p>
+                    <MangaSpanLegend v-model="span_category" />
                     <p v-if="!active_candidate.translation_regions?.length">No translation text for this page.</p>
                     <MangaTextRegion v-for="(region, index) in active_candidate.translation_regions || []" :key="region.id"
-                        :region="region" :region_index="index" :update_region="update_region" />
+                        :region="region" :region_index="index" :span_category="span_category" :update_region="update_region" />
                 </div>
             </aside>
         </div>
