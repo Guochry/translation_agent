@@ -1,4 +1,5 @@
 <script setup>
+import MangaReferenceText from './MangaReferenceText.vue';
 import MangaCandidateTabs from './MangaCandidateTabs.vue';
 import { mangaImageUrl } from '../../assets/js/manga-multilingual-util.js';
 import MangaSpanLegend from './MangaSpanLegend.vue';
@@ -9,7 +10,7 @@ import MangaTextRegion from './MangaTextRegion.vue';
 export default {
     props: ['hit', 'scores', 'update_candidate', 'config'],
     data() {
-        return { span_category: 'error', active: 0, image_errors: {}, uid: this.$.uid }
+        return { reference_view: false, span_category: 'error', active: 0, image_errors: {}, uid: this.$.uid }
     },
     computed: {
         candidates() { return this.hit.candidates || [] },
@@ -48,7 +49,7 @@ export default {
         </header>
         <MangaCandidateTabs v-if="many_candidates" :candidates="candidates" :active="active" :uid="uid" @select="active = $event" />
         <div class="pair-workspace" :class="{ 'many-candidates': many_candidates }">
-            <details class="pair-references" :open="many_candidates || !config?.manga_multilingual">
+            <details v-if="!many_candidates" class="pair-references" :open="!config?.manga_multilingual">
                 <summary>Human reference text</summary>
                 <ol v-if="hit.reference_texts?.length">
                     <li v-for="(text, index) in hit.reference_texts" :key="index">
@@ -76,8 +77,13 @@ export default {
         </div>
 
             <aside class="pair-text" aria-label="Translation text assessment">
+                <div v-if="many_candidates" class="reference-view-switch" role="group" aria-label="Text panel view">
+                    <button type="button" :aria-pressed="!reference_view" @click="reference_view = false">Assessment</button>
+                    <button type="button" :aria-pressed="reference_view" aria-label="Human reference text" @click="reference_view = true">Reference text</button>
+                </div>
+                <MangaReferenceText v-if="many_candidates && reference_view" :references="hit.reference_texts" :japanese="hit.reference_texts_ja" />
                 <MangaCandidateTabs v-if="!many_candidates" :candidates="candidates" :active="active" :uid="uid" @select="active = $event" />
-                <div v-if="active_candidate" :key="active_candidate.id" role="tabpanel" :id="`pair-text-${uid}`" :aria-labelledby="`pair-tab-${uid}-${active}`">
+                <div v-if="active_candidate" v-show="!many_candidates || !reference_view" :key="active_candidate.id" role="tabpanel" :id="`pair-text-${uid}`" :aria-labelledby="`pair-tab-${uid}-${active}`">
                     <h3>{{ label(active) }} — region assessment</h3>
                     <p>Rate translation fidelity and visual presentation: <strong>0–100, steps of 5</strong>.</p>
                     <p v-if="active_candidate.available === false" role="status">This translation is unavailable for this page.</p>
@@ -109,13 +115,15 @@ img { box-sizing: border-box; display: block; width: 100%; height: auto; border:
 .pair-references { grid-column: 1; grid-row: 2; }
 .pair-text { grid-column: 2; grid-row: 2; }
 .pair-references, .pair-text { min-width: 0; box-sizing: border-box; border: 1px solid #ddd; padding: 1rem; border-radius: 4px; max-height: 80vh; overflow: auto; background: #fafafa; }
+.reference-view-switch { display: flex; gap: .4rem; margin-bottom: 1rem; }
+.reference-view-switch button { flex: 1; cursor: pointer; padding: .55rem .4rem; border: 1px solid #b9c5d4; border-radius: 5px; background: white; color: #34516e; font: inherit; font-size: .85rem; }
+.reference-view-switch [aria-pressed=true] { background: #e8f0fb; border-color: #245ba0; font-weight: 600; }
 summary { cursor: pointer; font-weight: 600; }
 li { border-bottom: 1px solid #ddd; padding: .5rem 0; }
 li p { white-space: pre-wrap; overflow-wrap: anywhere; margin: .4rem 0; }
-.pair-workspace.many-candidates { grid-template-columns: minmax(190px, .65fr) minmax(0, 2fr) minmax(300px, 1fr); }
-.many-candidates .pair-references { grid-column: 1; grid-row: 1; }
-.many-candidates .pair-images { grid-column: 2; grid-row: 1; grid-template-columns: repeat(2, minmax(0, 1fr)); }
-.many-candidates .pair-text { grid-column: 3; grid-row: 1; }
+.pair-workspace.many-candidates { grid-template-columns: minmax(0, 2fr) minmax(320px, 1fr); }
+.many-candidates .pair-images { grid-column: 1; grid-row: 1; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.many-candidates .pair-text { grid-column: 2; grid-row: 1; }
 @media (max-width: 1100px) {
     .pair-workspace.many-candidates { grid-template-columns: minmax(0, 1fr); }
     .many-candidates .pair-references, .many-candidates .pair-images, .many-candidates .pair-text { grid-column: 1; grid-row: auto; }
