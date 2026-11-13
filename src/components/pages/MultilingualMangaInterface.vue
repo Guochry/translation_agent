@@ -82,7 +82,7 @@ export default {
     <div v-else class="multilingual-manga">
         <section class="language-selector container card-body" aria-label="Translation language">
             <h2>Translation language</h2>
-            <p>Choose a language. Ratings stay separate; Download saves all languages.</p>
+            <p>Choose your native language.</p>
             <div class="language-buttons">
                 <button v-for="language in languages" :key="language.code" type="button" :aria-pressed="active_language === language.code"
                     @click="select_language(language.code)">
