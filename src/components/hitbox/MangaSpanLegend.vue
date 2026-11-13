@@ -4,9 +4,9 @@ export default { props: ['modelValue'], emits: ['update:modelValue'] }
 <template>
     <div class="span-legend" role="group" aria-label="Span label">
         <span>Highlight as:</span>
-        <button v-for="category in ['strength', 'okay', 'error']" :key="category" type="button"
+        <button v-for="category in ['strength', 'error']" :key="category" type="button"
             :class="`span-choice-${category}`" :aria-pressed="modelValue === category" @click="$emit('update:modelValue', category)">
-            {{ category === 'okay' ? 'Okay' : category === 'strength' ? 'Strength' : 'Error' }}
+            {{ category === 'strength' ? 'Strength' : 'Error' }}
         </button>
     </div>
 </template>
@@ -15,6 +15,5 @@ export default { props: ['modelValue'], emits: ['update:modelValue'] }
 button { padding: .3rem .5rem; border: 1px solid #aaa; border-radius: 4px; cursor: pointer; background: #fff; }
 button[aria-pressed=true] { outline: 2px solid #555; outline-offset: 1px; font-weight: 600; }
 .span-choice-strength { background: #d9f2df; }
-.span-choice-okay { background: #fff1bd; }
 .span-choice-error { background: #ffe0df; }
 </style>

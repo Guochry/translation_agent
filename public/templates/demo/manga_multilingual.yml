@@ -34,7 +34,7 @@ instructions: |
 
   - **Region quality:** Meaning, completeness, tone, grammar, and natural wording compared with Japanese. Ignore font and layout.
   - **Region presentation:** Inspect the image: readable font and size, text length, spacing, balloon fit, clipping, and overlap. Ignore translation accuracy.
-  - **Spans:** Choose a label, then highlight translated words: **Strength** = especially good wording; **Okay** = acceptable; **Error** = inaccurate or unnatural wording. These labels describe text quality; highlighting is optional.
+  - **Spans:** Choose a label, then highlight translated words: **Strength** = especially good wording; **Error** = inaccurate or unnatural wording. **Okay** means acceptable wording—leave it unmarked. Labels describe text quality; highlighting is optional.
   - **Page scores:** Fidelity covers meaning and artwork preservation; presentation covers the whole page’s visual readability.
   - **Download** saves all languages; **upload** resumes. **Reset page** clears this page in the selected language.
 
