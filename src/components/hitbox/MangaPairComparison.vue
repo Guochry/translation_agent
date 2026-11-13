@@ -10,7 +10,7 @@ import MangaTextRegion from './MangaTextRegion.vue';
 export default {
     props: ['hit', 'scores', 'update_candidate', 'config'],
     data() {
-        return { reference_view: false, span_category: 'error', active: 0, image_errors: {}, uid: this.$.uid }
+        return { reference_percent: 30, reference_resize_start: null, span_category: 'error', active: 0, image_errors: {}, uid: this.$.uid }
     },
     computed: {
         candidates() { return this.hit.candidates || [] },
@@ -25,6 +25,19 @@ export default {
     },
     watch: { active() { this.image_errors = {} } },
     methods: {
+        set_reference_size(value) { this.reference_percent = Math.min(50, Math.max(20, Math.round(value))) },
+        start_reference_resize(event) {
+            if (event.button !== 0) return
+            event.preventDefault()
+            this.reference_resize_start = { y: event.clientY, value: this.reference_percent }
+            event.currentTarget.setPointerCapture(event.pointerId)
+        },
+        resize_reference(event) {
+            if (!this.reference_resize_start) return
+            const height = this.$refs.text_panel?.clientHeight
+            if (height) this.set_reference_size(this.reference_resize_start.value + (event.clientY - this.reference_resize_start.y) / height * 100)
+        },
+        stop_reference_resize() { this.reference_resize_start = null },
         label(index) { return `Translation ${String.fromCharCode(65 + index)}` },
         image_url(path) {
             return mangaImageUrl(path, { baseUrl: import.meta.env.BASE_URL,
@@ -76,14 +89,20 @@ export default {
             </figure>
         </div>
 
-            <aside class="pair-text" aria-label="Translation text assessment">
-                <div v-if="many_candidates" class="reference-view-switch" role="group" aria-label="Text panel view">
-                    <button type="button" :aria-pressed="!reference_view" @click="reference_view = false">Assessment</button>
-                    <button type="button" :aria-pressed="reference_view" aria-label="Human reference text" @click="reference_view = true">Reference text</button>
+            <aside ref="text_panel" class="pair-text" :class="{ 'parallel-text': many_candidates }" aria-label="Reference text and translation assessment">
+                <div v-if="many_candidates" class="reference-pane" :style="{ height: `${reference_percent}%` }">
+                    <MangaReferenceText :references="hit.reference_texts" :japanese="hit.reference_texts_ja" />
                 </div>
-                <MangaReferenceText v-if="many_candidates && reference_view" :references="hit.reference_texts" :japanese="hit.reference_texts_ja" />
+                <div v-if="many_candidates" class="reference-resizer" role="separator" aria-orientation="horizontal"
+                    tabindex="0" aria-label="Resize reference section" aria-valuemin="20" aria-valuemax="50" :aria-valuenow="reference_percent"
+                    :aria-valuetext="`${reference_percent}% reference area`" title="Drag or use the up/down arrow keys to resize references"
+                    @pointerdown="start_reference_resize" @pointermove="resize_reference" @pointerup="stop_reference_resize"
+                    @pointercancel="stop_reference_resize" @lostpointercapture="stop_reference_resize"
+                    @keydown.up.prevent="set_reference_size(reference_percent - 5)" @keydown.down.prevent="set_reference_size(reference_percent + 5)"
+                    @keydown.home.prevent="set_reference_size(20)" @keydown.end.prevent="set_reference_size(50)"></div>
+                <div class="assessment-pane">
                 <MangaCandidateTabs v-if="!many_candidates" :candidates="candidates" :active="active" :uid="uid" @select="active = $event" />
-                <div v-if="active_candidate" v-show="!many_candidates || !reference_view" :key="active_candidate.id" role="tabpanel" :id="`pair-text-${uid}`" :aria-labelledby="`pair-tab-${uid}-${active}`">
+                <div v-if="active_candidate" :key="active_candidate.id" role="tabpanel" :id="`pair-text-${uid}`" :aria-labelledby="`pair-tab-${uid}-${active}`">
                     <h3>{{ label(active) }} — region assessment</h3>
                     <p>Rate translation fidelity and visual presentation: <strong>0–100, steps of 5</strong>.</p>
                     <p v-if="active_candidate.available === false" role="status">This translation is unavailable for this page.</p>
@@ -94,6 +113,7 @@ export default {
                     <MangaTextRegion v-for="(region, index) in active_candidate.translation_regions || []" :key="region.id"
                         :region="region" :region_index="index" :span_category="span_category" :language="hit.language" :update_region="update_region" />
                     </template>
+                </div>
                 </div>
             </aside>
         </div>
@@ -115,9 +135,12 @@ img { box-sizing: border-box; display: block; width: 100%; height: auto; border:
 .pair-references { grid-column: 1; grid-row: 2; }
 .pair-text { grid-column: 2; grid-row: 2; }
 .pair-references, .pair-text { min-width: 0; box-sizing: border-box; border: 1px solid #ddd; padding: 1rem; border-radius: 4px; max-height: 80vh; overflow: auto; background: #fafafa; }
-.reference-view-switch { display: flex; gap: .4rem; margin-bottom: 1rem; }
-.reference-view-switch button { flex: 1; cursor: pointer; padding: .55rem .4rem; border: 1px solid #b9c5d4; border-radius: 5px; background: white; color: #34516e; font: inherit; font-size: .85rem; }
-.reference-view-switch [aria-pressed=true] { background: #e8f0fb; border-color: #245ba0; font-weight: 600; }
+.parallel-text { display: flex; flex-direction: column; height: 80vh; min-height: 480px; max-height: 900px; padding: 0; overflow: hidden; }
+.reference-pane { flex: 0 0 auto; min-height: 0; overflow-y: auto; box-sizing: border-box; padding: 1rem; }
+.parallel-text .assessment-pane { flex: 1 1 0; min-height: 0; overflow-y: auto; padding: 1rem; }
+.reference-resizer { flex: 0 0 12px; display: flex; justify-content: center; align-items: center; cursor: row-resize; touch-action: none; background: #edf1f6; border-top: 1px solid #d6dfe9; border-bottom: 1px solid #d6dfe9; }
+.reference-resizer::before { content: ''; width: 40px; height: 3px; border-radius: 4px; background: #8297af; }
+.reference-resizer:hover, .reference-resizer:focus-visible { background: #dce8f7; outline: 2px solid #245ba0; outline-offset: -2px; }
 summary { cursor: pointer; font-weight: 600; }
 li { border-bottom: 1px solid #ddd; padding: .5rem 0; }
 li p { white-space: pre-wrap; overflow-wrap: anywhere; margin: .4rem 0; }
