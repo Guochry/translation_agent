@@ -23,7 +23,28 @@ export default {
         active_candidate() { return this.candidates[this.active] }
     },
     watch: { active() { this.image_errors = {} } },
+    mounted() {
+        window.addEventListener('keydown', this.switch_candidate_shortcut)
+    },
+    beforeUnmount() {
+        window.removeEventListener('keydown', this.switch_candidate_shortcut)
+    },
     methods: {
+        switch_candidate_shortcut(event) {
+            if (!this.config?.manga_multilingual || event.defaultPrevented || event.isComposing ||
+                event.repeat || event.ctrlKey || event.metaKey || event.altKey) return
+            const key = event.key.toLowerCase()
+            const count = this.candidates.length
+            if ((key !== 'a' && key !== 'd') || count < 2) return
+            const target = event.target instanceof Element ? event.target : document.activeElement
+            if (target?.closest('input, textarea, select') || target?.isContentEditable) return
+
+            event.preventDefault()
+            this.active = (this.active + (key === 'a' ? -1 : 1) + count) % count
+            if (target?.closest('.candidate-tabs')) {
+                document.getElementById(`pair-tab-${this.uid}-${this.active}`)?.focus()
+            }
+        },
         label(index) { return `Translation ${String.fromCharCode(65 + index)}` },
         image_url(path) {
             return mangaImageUrl(path, { baseUrl: import.meta.env.BASE_URL,
@@ -46,6 +67,7 @@ export default {
             <h2>{{ hit.metadata?.book_title || 'Manga comparison' }}</h2>
             <span>Page {{ hit.metadata?.page_index }}</span>
         </header>
+        <p v-if="config?.manga_multilingual" class="candidate-shortcuts">Switch translations: <kbd>A</kbd> previous · <kbd>D</kbd> next.</p>
         <MangaCandidateTabs v-if="many_candidates" :candidates="candidates" :active="active" :uid="uid" @select="active = $event" />
         <div class="pair-workspace" :class="{ 'many-candidates': many_candidates }">
             <details class="pair-references" :open="many_candidates || !config?.manga_multilingual">
@@ -94,6 +116,7 @@ export default {
     </section>
 </template>
 <style scoped>
+.candidate-shortcuts { font-size: .85rem; color: #555; margin: 0 0 .75rem; }
 .pair-heading { display: flex; align-items: baseline; gap: 1rem; margin-bottom: 1rem; }
 .pair-heading h2 { margin: 0; font-size: 1.3rem; }
 .pair-workspace { display: grid; grid-template-columns: minmax(240px, 1fr) minmax(0, 2fr); gap: 1rem; align-items: start; }
