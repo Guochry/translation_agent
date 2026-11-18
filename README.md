@@ -685,8 +685,10 @@ navigation shortcuts pause while typing in the helper. No translation API or
 credentials are required.
 
 **Fidelity** measures meaning, accuracy, completeness, linguistic style, tone, and
-naturalness. **Presentation** measures font, contrast, line breaks, length,
-placement, readable duration, and synchronization. Scores use 0–100 in steps of 5,
+naturalness, including how well the translation fits the dialogue, action, and
+situation in the video clip. **Presentation** measures comfortable reading during
+playback: text length, reading time, line breaks, and natural speech flow.
+Scores use 0–100 in steps of 5,
 with 60 acceptable/pass. Choose Strength or Error before highlighting translated
 words; acceptable wording stays unmarked. Cue times and text come directly from
 SRT outputs. The current runs contain one subtitle cue per clip.
