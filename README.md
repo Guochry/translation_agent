@@ -676,7 +676,7 @@ for the previous / next video, stopping at the first and last clip. Video
 navigation selects Translation A, matching the navigation buttons. Shortcuts
 pause while entering scores.
 
-A collapsible Google Translate helper stays fixed at the bottom right. Open it,
+A collapsible Google Translate helper stays fixed at the bottom left. Open it,
 paste text or choose **Use Chinese source**, then open Google Translate in a new
 tab. Source/target selectors support the task languages; the target defaults to
 the selected annotation language. The helper starts collapsed to keep scoring

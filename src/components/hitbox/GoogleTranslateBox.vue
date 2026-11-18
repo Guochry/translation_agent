@@ -41,7 +41,7 @@ const translateUrl = computed(() => {
     </aside>
 </template>
 <style scoped>
-.google-translate-box { position: fixed; right: 1rem; bottom: 1rem; width: 290px; max-width: calc(100vw - 2rem); z-index: 20; background: white; border: 1px solid #b7bec9; border-radius: 8px; box-shadow: 0 3px 16px #0002; color: #202735; font-size: .85rem; }
+.google-translate-box { position: fixed; left: 1rem; bottom: 1rem; width: 290px; max-width: calc(100vw - 2rem); z-index: 20; background: white; border: 1px solid #b7bec9; border-radius: 8px; box-shadow: 0 3px 16px #0002; color: #202735; font-size: .85rem; }
 .translate-toggle { width: 100%; display: flex; justify-content: space-between; align-items: center; gap: 1rem; padding: .7rem .85rem; background: #eaf1fc; border: 0; border-radius: 8px; font-weight: 600; color: inherit; cursor: pointer; }
 .translate-content { padding: .8rem; max-height: calc(100dvh - 6rem); overflow: auto; }
 .translate-languages { display: grid; grid-template-columns: 1fr 1fr; gap: .5rem; margin-bottom: .65rem; }
