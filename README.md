@@ -660,8 +660,9 @@ Open [Subtitle Evaluation](https://guochry.github.io/translation_agent/?i=templa
 For local preview, run `npm run dev -- --host 0.0.0.0`, then open
 `http://localhost:5173/?i=templates/demo/subtitle_multilingual.yml&d=data/demo/subtitle_multilingual.json`.
 
-The Human reference panel on the left shows the supplied English/Vietnamese
-references, followed by English dialogue context. Chinese source text appears in
+The Human reference panel on the left shows English references. Vietnamese tasks
+show both Vietnamese and English references, with Vietnamese first. English
+dialogue context follows the references. Chinese source text appears in
 each subtitle's annotation card. The selected rendered video occupies the center.
 The right panel contains Chinese source, its translation, Strength/Error
 highlighting, and one **Fidelity / Presentation** score pair. There are no separate

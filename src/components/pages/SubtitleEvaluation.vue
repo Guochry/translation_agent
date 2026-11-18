@@ -27,7 +27,9 @@ const hits = computed(() => rows.value.filter(hit => hit.language === language.v
 const hit = computed(() => hits.value[index.value]);
 const candidate = computed(() => hit.value?.candidates[activeCandidate.value]);
 const candidateLabel = computed(() => `Translation ${String.fromCharCode(65 + activeCandidate.value)}`);
-const orderedReferences = computed(() => [...(hit.value?.references || [])].sort((a, b) => Number(b.language === language.value) - Number(a.language === language.value)));
+const orderedReferences = computed(() => (hit.value?.references || [])
+    .filter(reference => reference.language === 'en' || (language.value === 'vi' && reference.language === 'vi'))
+    .sort((a, b) => Number(b.language === language.value) - Number(a.language === language.value)));
 const rated = code => rows.value.filter(row => row.language === code && subtitleClipRated(row)).length;
 const total = code => rows.value.filter(row => row.language === code).length;
 const languageName = code => props.config.languages.find(l => l.code === code)?.label || code;
