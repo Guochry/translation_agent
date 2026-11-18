@@ -115,8 +115,7 @@ def load_candidate(runs, model, language, record, media_dir, mode):
     folder = runs / model / ('' if language == 'en' else language) / rid
     state_path = folder / 'state.json'
     state = json.loads(state_path.read_text()) if state_path.exists() else {}
-    result = {'id': model, 'available': False, 'fidelity_score': None, 'presentation_score': None,
-              'translation_regions': [], 'metadata': {'system': model, 'model': state.get('model')}}
+    result = {'id': model, 'available': False, 'translation_regions': [], 'metadata': {'system': model, 'model': state.get('model')}}
     if state.get('status') != 'completed':
         result['unavailable_reason'] = 'Translation unavailable.'
         return result

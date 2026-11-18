@@ -662,29 +662,29 @@ For local preview, run `npm run dev -- --host 0.0.0.0`, then open
 
 The Human reference panel on the left shows the supplied English/Vietnamese
 references, followed by English dialogue context. Chinese source text appears in
-each subtitle's annotation card. The
-selected rendered video occupies the center; clip scores and timed subtitle
-cards appear on the right. Native controls support audio, seeking, and fullscreen;
-each subtitle card has a replay button. Press **A** / **D** to switch to the
-previous / next candidate (wrapping at the ends); shortcuts pause while typing
-in score, notes, or selection fields. Both clip and subtitle scores use
-**Fidelity** (meaning, accuracy, completeness, style, tone, naturalness) and
-**Presentation** (font, contrast, line breaks, length, placement, readable duration,
-and synchronization). All scores are 0–100 in steps of 5, with 60 acceptable/pass.
-Strength/Error text highlighting works as in the manga task; acceptable words stay
-unmarked. The current runs contain one subtitle cue per clip. Cue times and text
-come directly from each output SRT; source text is supplied at clip level, so any
-future multi-cue output retains that scope explicitly rather than inventing an
-alignment.
+each subtitle's annotation card. The selected rendered video occupies the center.
+The right panel contains Chinese source, its translation, Strength/Error
+highlighting, and one **Fidelity / Presentation** score pair. There are no separate
+clip scores or numbered heading for a single subtitle. A replay button and native
+video controls support playback, seeking, audio, and fullscreen. Press **A** / **D**
+for the previous / next candidate, wrapping at the ends; shortcuts pause while
+entering scores.
 
-Download saves all languages and candidates, including notes and bookmarks.
-Upload validates source text, candidate identities, media, cue timings, scores,
-and spans before restoring annotations; a partial export merges only its clips.
-Reset clip clears all candidate scores, notes, and highlights for the current
-clip/language. A clip counts as complete when all available candidates have both
-clip scores and both scores for every subtitle. Missing candidates require no
-ratings. A closing-page reminder protects unsaved work; download before closing
-and upload the file to resume.
+**Fidelity** measures meaning, accuracy, completeness, linguistic style, tone, and
+naturalness. **Presentation** measures font, contrast, line breaks, length,
+placement, readable duration, and synchronization. Scores use 0–100 in steps of 5,
+with 60 acceptable/pass. Choose Strength or Error before highlighting translated
+words; acceptable wording stays unmarked. Cue times and text come directly from
+SRT outputs. The current runs contain one subtitle cue per clip.
+
+Download saves all languages and candidates. Upload validates source, model IDs,
+video version, timing, scores, and spans, and restores annotations onto canonical
+content. Earlier exports from the same renders still restore subtitle ratings;
+obsolete clip scores are discarded. Reset clears the current clip/language's
+subtitle score pairs and highlights. A candidate is fully rated when both
+subtitle scores are filled; a clip is complete once every available candidate is
+rated. Missing candidates need no ratings. Download before closing and upload the
+file to resume.
 
 ### Prepare and host subtitle media
 

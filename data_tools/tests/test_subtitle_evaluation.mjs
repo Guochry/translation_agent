@@ -22,11 +22,10 @@ test('all 177 clips have consistent anonymous candidate order across six languag
     }
 });
 
-test('zero counts; both clip and subtitle scores required; missing candidates excluded', () => {
+test('zero counts; only the subtitle score pair is required; missing candidates excluded', () => {
     const hit = clone(data[0]);
     assert.equal(subtitleClipRated(hit), false);
     for (const c of hit.candidates) {
-        c.fidelity_score = 0; c.presentation_score = 100;
         for (const r of c.translation_regions) { r.quality_score = 60; r.presentation_score = 0; }
     }
     assert.equal(subtitleClipRated(hit), true);
@@ -41,21 +40,19 @@ test('zero counts; both clip and subtitle scores required; missing candidates ex
 test('upload restores scores, notes, bookmark and Unicode spans without crossing language/candidate', () => {
     const saved = clone(data.find(h => h.language === 'ar'));
     saved.bookmark = true;
-    saved.candidates[0].fidelity_score = 0;
-    saved.candidates[0].presentation_score = 65;
     saved.candidates[0].comment = 'font too small';
     const region = saved.candidates[0].translation_regions[0];
-    saved.candidates[0].translation_regions[0] = labelRegionSpan({ ...region, quality_score: 90, presentation_score: 60 }, 0, 3, 'strength');
+    saved.candidates[0].translation_regions[0] = labelRegionSpan({ ...region, quality_score: 0, presentation_score: 60 }, 0, 3, 'strength');
     const [restored] = restoreSubtitleAnnotations(data, [saved]);
     assert.equal(restored.bookmark, true);
-    assert.equal(restored.candidates[0].fidelity_score, 0);
+    assert.equal(restored.candidates[0].translation_regions[0].quality_score, 0);
     assert.equal(restored.candidates[0].comment, 'font too small');
     assert.equal(restored.candidates[0].translation_regions[0].edits[0].category, 'strength');
-    assert.equal(restored.candidates[1].fidelity_score, null);
-    assert.equal(data.find(h => h.id === saved.id).candidates[0].fidelity_score, null);
+    assert.equal(restored.candidates[1].translation_regions[0].quality_score, null);
+    assert.equal(data.find(h => h.id === saved.id).candidates[0].translation_regions[0].quality_score, null);
     const reset = resetSubtitleClip(restored);
     assert.equal(reset.candidates[0].translation_regions[0].edits.length, 0);
-    assert.equal(reset.candidates[0].presentation_score, null);
+    assert.equal(reset.candidates[0].translation_regions[0].presentation_score, null);
     assert.equal(reset.bookmark, true);
 });
 
@@ -69,7 +66,7 @@ test('uploads reject changed media, cue timing, language, model order, invalid s
         h => { h.candidates[0].translation_regions[0].source += 'x'; },
         h => { h.language = 'ar'; },
         h => { h.candidates.reverse(); },
-        h => { h.candidates[0].fidelity_score = 62; },
+        h => { h.candidates[0].translation_regions[0].quality_score = 62; },
         h => { h.candidates[0].translation_regions[0].edits = [{ category:'error', id:1, output_idx:[[0,99999]] }]; },
         h => { h.candidates[0].translation_regions[0].edits = [{ category:'error', id:1, output_idx:[[0,3]] }, { category:'strength', id:2, output_idx:[[1,4]] }]; },
     ]) {
@@ -98,9 +95,9 @@ test('English reference context is complete and older annotation exports retain 
     const saved = clone(data[0]);
     delete saved.context_before_en;
     delete saved.context_after_en;
-    saved.candidates[0].fidelity_score = 75;
+    saved.candidates[0].translation_regions[0].quality_score = 75;
     const [restored] = restoreSubtitleAnnotations(data, [saved]);
-    assert.equal(restored.candidates[0].fidelity_score, 75);
+    assert.equal(restored.candidates[0].translation_regions[0].quality_score, 75);
     assert.deepEqual(restored.context_before_en, data[0].context_before_en);
     assert.deepEqual(restored.context_after_en, data[0].context_after_en);
     saved.context_before_en = ['Changed text in upload'];
@@ -108,4 +105,20 @@ test('English reference context is complete and older annotation exports retain 
     const incomplete = clone(data);
     incomplete[0].context_before_en.pop();
     assert.throws(() => validateSubtitleDataset(incomplete, languages), /English dialogue context/);
+});
+
+test('legacy clip scores are discarded without replacing the subtitle score pair', () => {
+    const saved = clone(data[0]);
+    saved.candidates[0].fidelity_score = 100;
+    saved.candidates[0].presentation_score = 100;
+    saved.candidates[0].translation_regions[0].quality_score = 65;
+    saved.candidates[0].translation_regions[0].presentation_score = 0;
+    const [result] = restoreSubtitleAnnotations(data, [saved]);
+    assert.equal(Object.hasOwn(result.candidates[0], 'fidelity_score'), false);
+    assert.equal(Object.hasOwn(result.candidates[0], 'presentation_score'), false);
+    assert.equal(result.candidates[0].translation_regions[0].quality_score, 65);
+    assert.equal(result.candidates[0].translation_regions[0].presentation_score, 0);
+    assert.equal(subtitleCandidateRated(result.candidates[0]), true);
+    assert.equal(subtitleClipRated(result), false);
+    assert.equal(Object.hasOwn(resetSubtitleClip(saved).candidates[0], 'fidelity_score'), false);
 });

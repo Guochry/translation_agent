@@ -7,7 +7,7 @@ import { TRANSLATION_QUALITY_SCORE, REGION_PRESENTATION_SCORE } from '../../asse
 
 <script>
 export default {
-    props: ['region', 'region_index', 'update_region', 'language', 'span_category', 'source_label', 'source_language', 'region_label', 'fidelity_definition', 'presentation_definition'],
+    props: ['region', 'region_index', 'update_region', 'language', 'span_category', 'source_label', 'source_language', 'region_label', 'fidelity_definition', 'presentation_definition', 'hide_heading', 'target_label'],
     data() { return { selection_message: '' } },
     computed: {
         target() { return typeof this.region.target === 'string' ? this.region.target : '' },
@@ -51,14 +51,15 @@ export default {
 </script>
 
 <template>
-    <article class="manga-text-region" :aria-label="`Generated text region ${region_index + 1}`">
-        <h4>{{ region_label || 'Region' }} {{ region_index + 1 }}</h4>
+    <article class="manga-text-region" :aria-label="hide_heading ? 'Translation assessment' : `Generated text region ${region_index + 1}`">
+        <h4 v-if="!hide_heading">{{ region_label || 'Region' }} {{ region_index + 1 }}</h4>
         <p v-if="region.render_status === 'skipped'" class="region-unavailable">Not rendered in the image.</p>
         <template v-if="(typeof region.source === 'string' && region.source.trim()) || region.source_alignment">
         <span class="region-text-label">{{ source_label || 'Japanese source' }}<span v-if="region.source_alignment === 'uncertain'" class="region-match-warning"> · Check match</span></span>
         <p v-if="region.source" class="region-source" :lang="source_language || 'ja'">{{ region.source }}</p>
         <p v-else class="region-unavailable">Source not matched</p>
         </template>
+        <span v-if="target_label" class="region-text-label">{{ target_label }}</span>
         <p v-if="target.length" class="region-target" :lang="language || 'en'" :dir="language === 'ar' ? 'rtl' : 'auto'" tabindex="0" aria-label="Generated translation text" @mouseup="mark_selection"><span v-for="segment in segments" :key="segment.start" :class="segment.category ? `region-${segment.category}-highlight` : null">{{ segment.text }}</span></p>
         <p v-else class="region-unavailable">No generated translation text for this region.</p>
         <p v-if="selection_message" class="region-unavailable" role="status">{{ selection_message }}</p>

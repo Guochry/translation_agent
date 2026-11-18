@@ -1,13 +1,12 @@
 <script setup>
 import { computed, onBeforeUnmount, ref, shallowRef, watch } from 'vue';
 import VueMarkdown from 'vue-markdown-render';
-import OverallScore from '../common/OverallScore.vue';
 import MangaTextRegion from '../hitbox/MangaTextRegion.vue';
 import MangaSpanLegend from '../hitbox/MangaSpanLegend.vue';
 import SubtitleVideo from '../hitbox/SubtitleVideo.vue';
 import { cloneSubtitleData, validateSubtitleDataset, restoreSubtitleAnnotations, resetSubtitleClip,
     subtitleClipRated, subtitleCandidateRated, subtitleRegionRated, subtitleMediaUrl,
-    SUBTITLE_FIDELITY, SUBTITLE_PRESENTATION, CLIP_FIDELITY, CLIP_PRESENTATION } from '../../assets/js/subtitle-util.js';
+    SUBTITLE_FIDELITY, SUBTITLE_PRESENTATION } from '../../assets/js/subtitle-util.js';
 
 const props = defineProps({ input_data: Array, config: Object });
 const canonical = cloneSubtitleData(props.input_data);
@@ -60,6 +59,7 @@ function resetClip() { replaceHit(resetSubtitleClip(hit.value)); message.value =
 function candidateStatus(c) {
     if (!c.available) return 'Unavailable';
     if (subtitleCandidateRated(c)) return 'Fully rated';
+    if (c.translation_regions.length === 1) return 'Not rated';
     return `${c.translation_regions.filter(subtitleRegionRated).length}/${c.translation_regions.length} subtitles rated`;
 }
 function download() {
@@ -185,25 +185,16 @@ onBeforeUnmount(() => {
             </section>
             <aside class="annotation-column" :key="`${hit.id}-${candidate.id}`" aria-label="Subtitle annotations">
                 <template v-if="candidate.available">
-                    <h3>Clip scores</h3>
-                    <div class="clip-scores">
-                        <OverallScore :hits_data="[candidate]" :current_hit="1" :set_hits_data="data => replaceCandidate(data[0])"
-                            :config="{}" :score_definition="CLIP_FIDELITY" :compact="true" caption="Fidelity" />
-                        <OverallScore :hits_data="[candidate]" :current_hit="1" :set_hits_data="data => replaceCandidate(data[0])"
-                            :config="{}" :score_definition="CLIP_PRESENTATION" :compact="true" caption="Presentation" />
-                    </div>
                     <MangaSpanLegend v-model="spanCategory" />
                     <div v-for="(region, position) in candidate.translation_regions" :key="region.id" class="subtitle-cue">
                         <button class="replay-cue" @click="translatedPlayer?.playCue(region.start_seconds, region.end_seconds)">
-                            ▶ Replay {{ formatTime(region.start_seconds) }}–{{ formatTime(region.end_seconds) }}
+                            ▶ Replay<span v-if="candidate.translation_regions.length > 1"> {{ formatTime(region.start_seconds) }}–{{ formatTime(region.end_seconds) }}</span>
                         </button>
                         <MangaTextRegion :region="region" :region_index="position" :update_region="updateRegion" :language="language"
                             :span_category="spanCategory" source_label="Chinese source" source_language="zh" region_label="Subtitle"
+                            :hide_heading="candidate.translation_regions.length === 1" target_label="Translation"
                             :fidelity_definition="SUBTITLE_FIDELITY" :presentation_definition="SUBTITLE_PRESENTATION" />
                     </div>
-                    <label class="candidate-notes">Notes (optional)
-                        <textarea :value="candidate.comment || ''" @input="replaceCandidate({ ...candidate, comment: $event.target.value })" rows="2" />
-                    </label>
                 </template>
             </aside>
         </div>
@@ -243,16 +234,12 @@ small { color: #586270; font-weight: 400; font-size: .78rem; }
 .reference-card p { white-space: pre-wrap; overflow-wrap: anywhere; font-size: .9rem; margin: .4rem 0; }
 .reference-card summary { cursor: pointer; font-weight: 600; font-size: .85rem; }
 .annotation-column { background: #f6f8fb; border: 1px solid #dbe0e8; border-radius: 6px; padding: .8rem; }
-.clip-scores { display: grid; grid-template-columns: 1fr 1fr; gap: .7rem; }
-.clip-scores :deep(.candidate-score-box), .annotation-column :deep(.candidate-score-box) { display: flex; flex-direction: column; gap: .3rem; margin: 0; min-width: 0; }
-.clip-scores :deep(input), .annotation-column :deep(.candidate-score-input) { width: 100%; max-width: 130px; padding: .45rem; box-sizing: border-box; border: 1px solid #aaa; border-radius: 4px; font-size: 1rem; }
-.clip-scores :deep(.candidate-score-caption) { font-size: .8rem; font-weight: 600; }
+.annotation-column :deep(.candidate-score-box) { display: flex; flex-direction: column; gap: .3rem; margin: 0; min-width: 0; }
+.annotation-column :deep(.candidate-score-input) { width: 100%; max-width: 130px; padding: .45rem; box-sizing: border-box; border: 1px solid #aaa; border-radius: 4px; font-size: 1rem; }
 .subtitle-cue { margin: .8rem 0; }
 .subtitle-cue :deep(.manga-text-region) { margin-top: .4rem; }
 .replay-cue { font-size: .8rem; background: #fff; }
 .player-hint { color: #626b78; font-size: .8rem; }
-.candidate-notes { font-size: .8rem; display: flex; flex-direction: column; gap: .4rem; }
-textarea { resize: vertical; border: 1px solid #b7bec9; border-radius: 4px; padding: .5rem; }
 .hosting-notice, .unavailable { background: #fff3d5; padding: .8rem; border-radius: 4px; }
 .upload-error { color: #a11b1b; }
 @media (max-width: 1150px) { .subtitle-workspace { grid-template-columns: minmax(180px, .7fr) minmax(0, 1.5fr) minmax(265px, 1fr); gap: .7rem; } }

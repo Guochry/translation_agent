@@ -4,11 +4,9 @@ export const cloneSubtitleData = value => JSON.parse(JSON.stringify(value));
 export const validSubtitleScore = value => typeof value === 'number' && Number.isInteger(value) && value >= 0 && value <= 100 && value % 5 === 0;
 export const SUBTITLE_FIDELITY = { name: 'quality_score', label: 'Subtitle fidelity', min: 0, max: 100, step: 5 };
 export const SUBTITLE_PRESENTATION = { name: 'presentation_score', label: 'Subtitle presentation', min: 0, max: 100, step: 5 };
-export const CLIP_FIDELITY = { ...SUBTITLE_FIDELITY, name: 'fidelity_score', label: 'Clip fidelity' };
-export const CLIP_PRESENTATION = { ...SUBTITLE_PRESENTATION, label: 'Clip presentation' };
 export const subtitleRegionRated = region => validSubtitleScore(region.quality_score) && validSubtitleScore(region.presentation_score);
-export const subtitleCandidateRated = candidate => candidate.available !== false && validSubtitleScore(candidate.fidelity_score)
-    && validSubtitleScore(candidate.presentation_score) && candidate.translation_regions.length > 0 && candidate.translation_regions.every(subtitleRegionRated);
+export const subtitleCandidateRated = candidate => candidate.available !== false && candidate.translation_regions.length > 0
+    && candidate.translation_regions.every(subtitleRegionRated);
 export const subtitleClipRated = hit => hit.candidates.some(c => c.available !== false) && hit.candidates.filter(c => c.available !== false).every(subtitleCandidateRated);
 
 // Explicit immutable content signature; an upload restores annotations onto the
@@ -79,8 +77,9 @@ export function restoreSubtitleAnnotations(canonical, saved) {
         result.comment = typeof hit.comment === 'string' ? hit.comment : '';
         for (let i = 0; i < result.candidates.length; i++) {
             const target = result.candidates[i], source = hit.candidates[i];
-            target.fidelity_score = restoreScore(source.fidelity_score);
-            target.presentation_score = restoreScore(source.presentation_score);
+            // Clip-level scores from older exports are obsolete; keep subtitle ratings.
+            delete target.fidelity_score;
+            delete target.presentation_score;
             target.comment = typeof source.comment === 'string' ? source.comment : '';
             for (let j = 0; j < target.translation_regions.length; j++) {
                 const region = target.translation_regions[j], savedRegion = source.translation_regions[j];
@@ -106,8 +105,8 @@ export function restoreSubtitleAnnotations(canonical, saved) {
 export function resetSubtitleClip(hit) {
     const result = cloneSubtitleData(hit);
     for (const candidate of result.candidates) {
-        candidate.fidelity_score = null;
-        candidate.presentation_score = null;
+        delete candidate.fidelity_score;
+        delete candidate.presentation_score;
         candidate.comment = '';
         for (const region of candidate.translation_regions) {
             region.quality_score = null;

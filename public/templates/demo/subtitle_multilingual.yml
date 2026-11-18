@@ -18,7 +18,6 @@ instructions: |
   Compare each translation with the Chinese dialogue. Switch A–E to rate each independently. Scores: **0–100, steps of 5** (0 = very poor; 60 = acceptable/pass; 100 = excellent). Leave unfinished scores blank.
 
   - **Spans:** Choose a label, then highlight translated words. **Strength** = effective, meaning-preserving creative choices, such as idioms, wordplay, or cultural references. **Error** = inaccurate or unnatural wording. **Okay** = acceptable; leave it unmarked.
-  - **Subtitle fidelity:** Meaning, accuracy, completeness, style, tone, and naturalness compared with the Chinese source, using the dialogue context.
-  - **Subtitle presentation:** Readability in the video: font, size, contrast, line breaks, text length, placement, and enough time to read in sync with speech.
-  - **Clip scores:** **Fidelity** = overall translation quality of the clip's text. **Presentation** = overall subtitle readability, timing, and visual style.
+  - **Fidelity:** Meaning, accuracy, completeness, style, tone, and naturalness compared with the Chinese source, using the dialogue context.
+  - **Presentation:** Readability in the video: font, size, contrast, line breaks, text length, placement, and enough time to read in sync with speech.
   - Before closing, **download your annotations**. To resume, **upload that downloaded file**.
