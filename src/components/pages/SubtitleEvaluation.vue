@@ -4,6 +4,7 @@ import VueMarkdown from 'vue-markdown-render';
 import MangaTextRegion from '../hitbox/MangaTextRegion.vue';
 import MangaSpanLegend from '../hitbox/MangaSpanLegend.vue';
 import SubtitleVideo from '../hitbox/SubtitleVideo.vue';
+import GoogleTranslateBox from '../hitbox/GoogleTranslateBox.vue';
 import { cloneSubtitleData, validateSubtitleDataset, restoreSubtitleAnnotations, resetSubtitleClip,
     subtitleClipRated, subtitleCandidateRated, subtitleRegionRated, subtitleMediaUrl,
     SUBTITLE_FIDELITY, SUBTITLE_PRESENTATION } from '../../assets/js/subtitle-util.js';
@@ -170,6 +171,7 @@ onBeforeUnmount(() => {
                 Translation {{ String.fromCharCode(65 + position) }}<small>{{ candidateStatus(item) }}</small>
             </button>
         </div>
+        <GoogleTranslateBox :language="language" :languages="config.languages" :source="hit.source" />
         <div class="subtitle-workspace">
             <aside class="reference-column">
                 <section class="reference-card">
@@ -215,7 +217,7 @@ onBeforeUnmount(() => {
 <style scoped>
 @font-face { font-family: SubtitleCJK; src: url('/fonts/manga/NotoSansCJKjp-Regular.otf') format('opentype'); font-display: swap; }
 @font-face { font-family: SubtitleHindi; src: url('/fonts/manga/NotoSansDevanagari.ttf') format('truetype'); font-weight: 100 900; font-display: swap; }
-.subtitle-evaluation { max-width: 1800px; margin: 1.5rem auto 3rem; color: #202735; }
+.subtitle-evaluation { max-width: 1800px; margin: 1.5rem auto 5rem; color: #202735; }
 .subtitle-evaluation :deep([lang="zh"]) { font-family: SubtitleCJK, sans-serif; }
 .subtitle-evaluation :deep([lang="hi"]) { font-family: SubtitleHindi, sans-serif; }
 h1 { font-size: 1.6rem; margin: 1.8rem 0 .8rem; }

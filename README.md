@@ -676,6 +676,14 @@ for the previous / next video, stopping at the first and last clip. Video
 navigation selects Translation A, matching the navigation buttons. Shortcuts
 pause while entering scores.
 
+A collapsible Google Translate helper stays fixed at the bottom right. Open it,
+paste text or choose **Use Chinese source**, then open Google Translate in a new
+tab. Source/target selectors support the task languages; the target defaults to
+the selected annotation language. The helper starts collapsed to keep scoring
+controls clear. Its scratch text is separate from annotation exports, and
+navigation shortcuts pause while typing in the helper. No translation API or
+credentials are required.
+
 **Fidelity** measures meaning, accuracy, completeness, linguistic style, tone, and
 naturalness. **Presentation** measures font, contrast, line breaks, length,
 placement, readable duration, and synchronization. Scores use 0–100 in steps of 5,
