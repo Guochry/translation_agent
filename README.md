@@ -661,7 +661,7 @@ For local preview, run `npm run dev -- --host 0.0.0.0`, then open
 `http://localhost:5173/?i=templates/demo/subtitle_multilingual.yml&d=data/demo/subtitle_multilingual.json`.
 
 The Human reference panel on the left shows the supplied English/Vietnamese
-references, followed by the original video and Chinese dialogue context. The
+references, followed by the Chinese source text and dialogue context. The
 selected rendered video occupies the center; clip scores and timed subtitle
 cards appear on the right. Native controls support audio, seeking, and fullscreen;
 each subtitle card has a replay button. Press **A** / **D** to switch to the

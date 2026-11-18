@@ -22,7 +22,6 @@ const spanCategory = ref('error');
 const message = ref('');
 const uploadError = ref('');
 const dirty = ref(false);
-const originalPlayer = ref(null);
 const translatedPlayer = ref(null);
 const uploadInput = ref(null);
 const hits = computed(() => rows.value.filter(hit => hit.language === language.value));
@@ -36,7 +35,7 @@ const languageName = code => props.config.languages.find(l => l.code === code)?.
 const media = path => subtitleMediaUrl(path, { dev: import.meta.env.DEV, base: import.meta.env.BASE_URL,
     prefix: props.config.subtitle_media_prefix, mediaBase: props.config.subtitle_media_base });
 const formatTime = value => `${Math.floor(value / 60)}:${(value % 60).toFixed(2).padStart(5, '0')}`;
-function pausePlayers() { originalPlayer.value?.pause(); translatedPlayer.value?.pause(); }
+function pausePlayers() { translatedPlayer.value?.pause(); }
 watch([language, index, activeCandidate], pausePlayers, { flush: 'sync' });
 function selectLanguage(code) {
     language.value = code;
@@ -170,8 +169,7 @@ onBeforeUnmount(() => {
                     </div>
                 </section>
                 <section class="reference-card">
-                    <h3>Original Chinese video</h3>
-                    <SubtitleVideo ref="originalPlayer" :src="media(hit.original_video)" label="Original Chinese video" @play="translatedPlayer?.pause()" />
+                    <h3>Chinese source</h3>
                     <p lang="zh">{{ hit.source }}</p>
                 </section>
                 <details class="reference-card">
@@ -185,7 +183,7 @@ onBeforeUnmount(() => {
             <section class="translated-column" id="subtitle-candidate-panel" role="tabpanel" :aria-labelledby="`subtitle-tab-${activeCandidate}`">
                 <h3>{{ candidateLabel }} · {{ languageName(language) }}</h3>
                 <SubtitleVideo v-if="candidate.available" :key="`${hit.id}-${candidate.id}`" ref="translatedPlayer"
-                    :src="media(candidate.translated_video)" :label="`${candidateLabel} rendered video`" @play="originalPlayer?.pause()" />
+                    :src="media(candidate.translated_video)" :label="`${candidateLabel} rendered video`" />
                 <p v-else class="unavailable">This translation is unavailable for this clip. Continue with the other candidates.</p>
                 <p class="player-hint" v-if="candidate.available">Use fullscreen to inspect the subtitles. Replay a subtitle from its card.</p>
             </section>
@@ -200,7 +198,7 @@ onBeforeUnmount(() => {
                     </div>
                     <MangaSpanLegend v-model="spanCategory" />
                     <div v-for="(region, position) in candidate.translation_regions" :key="region.id" class="subtitle-cue">
-                        <button class="replay-cue" @click="originalPlayer?.pause(); translatedPlayer?.playCue(region.start_seconds, region.end_seconds)">
+                        <button class="replay-cue" @click="translatedPlayer?.playCue(region.start_seconds, region.end_seconds)">
                             ▶ Replay {{ formatTime(region.start_seconds) }}–{{ formatTime(region.end_seconds) }}
                         </button>
                         <MangaTextRegion :region="region" :region_index="position" :update_region="updateRegion" :language="language"
