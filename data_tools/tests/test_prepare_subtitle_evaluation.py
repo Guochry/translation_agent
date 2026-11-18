@@ -9,6 +9,30 @@ spec.loader.exec_module(module)
 
 
 class SubtitlePackagingTests(unittest.TestCase):
+    def test_english_context_uses_chronological_reference_records(self):
+        rows = [{'id': i, 'time_order': i, 'target_text': zh, 'source_text': en}
+                for i, zh, en in [(1, '你好', 'Hello.'), (2, '走吧', "Let's go."),
+                                   (3, '你好', 'Greetings!'), (4, '等等', 'Wait!')]]
+        record = {'source_record_id': 3, 'zh_CN': '你 好', 'context_before': ['你好', '走吧'], 'context_after': ['等等']}
+        result = module.english_context([record], list(reversed(rows)), window=2)['3']
+        self.assertEqual(result['context_before_en'], ['Hello.', "Let's go."])
+        self.assertEqual(result['context_after_en'], ['Wait!'])
+        first = {'source_record_id': 1, 'zh_CN': '你好', 'context_before': [], 'context_after': ['走吧', '你好']}
+        self.assertEqual(module.english_context([first], rows, window=2)['1']['context_before_en'], [])
+
+    def test_english_context_rejects_incorrect_or_missing_matches(self):
+        rows = [{'id': i, 'time_order': i, 'target_text': zh, 'source_text': en}
+                for i, zh, en in [(1, '你好', 'Hello.'), (2, '走吧', "Let's go.")]]
+        record = {'source_record_id': 1, 'zh_CN': '你好', 'context_before': [], 'context_after': ['走吧']}
+        for bad_record, bad_rows in [
+                ({**record, 'source_record_id': 99}, rows),
+                ({**record, 'zh_CN': '其他'}, rows),
+                ({**record, 'context_after': ['错了']}, rows),
+                (record, [rows[0], {**rows[1], 'source_text': ''}]),
+                (record, [rows[0], rows[0]])]:
+            with self.subTest(record=bad_record, rows=bad_rows), self.assertRaises(ValueError):
+                module.english_context([bad_record], bad_rows)
+
     def test_srt_unicode_multiline_and_boundaries(self):
         cues = module.parse_srt('\ufeff1\r\n00:00:00,125 --> 00:00:02,500\r\nمرحبا\r\nبالعالم\r\n\r\n2\r\n00:00:02,500 --> 00:00:05,590\r\nदुनिया\r\n')
         self.assertEqual(cues[0]['target'], 'مرحبا\nبالعالم')

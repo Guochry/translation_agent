@@ -13,6 +13,8 @@ export const subtitleClipRated = hit => hit.candidates.some(c => c.available !==
 
 // Explicit immutable content signature; an upload restores annotations onto the
 // current dataset, never replacing its source, media URLs, timing, or model IDs.
+// English context is supplementary reference data, restored from the current
+// dataset so annotation files downloaded before it was added still import.
 function content(hit) {
     return JSON.stringify([hit.task_type, hit.schema_version, hit.id, hit.language, hit.clip_id, hit.source_language, hit.source,
         hit.original_video, hit.duration_seconds, hit.references.map(r => [r.language, r.text]), hit.context_before, hit.context_after,
@@ -32,6 +34,11 @@ export function validateSubtitleDataset(data, languages) {
             || !Array.isArray(hit.references) || !Array.isArray(hit.context_before) || !Array.isArray(hit.context_after)
             || !Array.isArray(hit.candidates) || !hit.candidates.length) throw new Error('Invalid subtitle task or duplicate ID.');
         ids.add(hit.id);
+        for (const field of ['context_before', 'context_after']) {
+            if (!Array.isArray(hit[field + '_en']) || hit[field + '_en'].length !== hit[field].length
+                || hit[field + '_en'].some(line => typeof line !== 'string' || !line.trim()))
+                throw new Error('English dialogue context is missing or does not match the source context.');
+        }
         const candidates = new Set();
         for (const candidate of hit.candidates) {
             if (!candidate.id || candidates.has(candidate.id) || typeof candidate.available !== 'boolean' || !Array.isArray(candidate.translation_regions))

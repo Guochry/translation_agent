@@ -175,9 +175,9 @@ onBeforeUnmount(() => {
                 <details class="reference-card">
                     <summary>Dialogue context</summary>
                     <h4>Before this clip</h4>
-                    <p v-for="(line, position) in hit.context_before" :key="`before-${position}`" lang="zh">{{ line }}</p>
+                    <p v-for="(line, position) in hit.context_before_en" :key="`before-${position}`" lang="en">{{ line }}</p>
                     <h4>After this clip</h4>
-                    <p v-for="(line, position) in hit.context_after" :key="`after-${position}`" lang="zh">{{ line }}</p>
+                    <p v-for="(line, position) in hit.context_after_en" :key="`after-${position}`" lang="en">{{ line }}</p>
                 </details>
             </aside>
             <section class="translated-column" id="subtitle-candidate-panel" role="tabpanel" :aria-labelledby="`subtitle-tab-${activeCandidate}`">

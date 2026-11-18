@@ -84,3 +84,26 @@ test('video URLs use local media in dev and an external base in production', () 
     assert.equal(subtitleMediaUrl(path, { mediaBase: 'https://example.org/media' }), 'https://example.org/media/original/430711.mp4');
     assert.equal(subtitleMediaUrl('https://example.org/video.mp4'), 'https://example.org/video.mp4');
 });
+
+test('English reference context is complete and older annotation exports retain their ratings', () => {
+    const english = new Map(data.filter(h => h.language === 'en').map(h => [h.clip_id, h]));
+    for (const hit of data) {
+        for (const field of ['context_before_en', 'context_after_en']) {
+            assert.deepEqual(hit[field], english.get(hit.clip_id)[field]);
+            assert.equal(hit[field].length, hit[field.replace('_en', '')].length);
+        }
+    }
+    const saved = clone(data[0]);
+    delete saved.context_before_en;
+    delete saved.context_after_en;
+    saved.candidates[0].fidelity_score = 75;
+    const [restored] = restoreSubtitleAnnotations(data, [saved]);
+    assert.equal(restored.candidates[0].fidelity_score, 75);
+    assert.deepEqual(restored.context_before_en, data[0].context_before_en);
+    assert.deepEqual(restored.context_after_en, data[0].context_after_en);
+    saved.context_before_en = ['Changed text in upload'];
+    assert.deepEqual(restoreSubtitleAnnotations(data, [saved])[0].context_before_en, data[0].context_before_en);
+    const incomplete = clone(data);
+    incomplete[0].context_before_en.pop();
+    assert.throws(() => validateSubtitleDataset(incomplete, languages), /English dialogue context/);
+});

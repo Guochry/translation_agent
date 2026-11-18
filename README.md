@@ -661,7 +661,7 @@ For local preview, run `npm run dev -- --host 0.0.0.0`, then open
 `http://localhost:5173/?i=templates/demo/subtitle_multilingual.yml&d=data/demo/subtitle_multilingual.json`.
 
 The Human reference panel on the left shows the supplied English/Vietnamese
-references, followed by the Chinese source text and dialogue context. The
+references, followed by the Chinese source text and English dialogue context. The
 selected rendered video occupies the center; clip scores and timed subtitle
 cards appear on the right. Native controls support audio, seeking, and fullscreen;
 each subtitle card has a replay button. Press **A** / **D** to switch to the
@@ -700,6 +700,15 @@ Use `--media-mode copy --media-dir /path/to/staging` to prepare real files inste
 of symlinks for another machine or host. Use `--runs` and `--dataset` for a different
 input location. Defaults point to the subtitle agent's `runs` folder and
 `data/final/processed/monkey_king.json` in the shared project.
+
+Dialogue context uses the existing **English reference subtitles** from the original
+dataset's `data/monkey_king/subtitle_records.json`, not generated translations.
+The packager matches each clip by source record ID and chronological position,
+checks every neighboring Chinese context line, and attaches its paired English
+reference in `context_before_en` / `context_after_en`. Use `--context-source` for
+another subtitle-records file. Original Chinese context is retained in the JSON;
+older annotation downloads still import, with English context supplied by the
+current canonical dataset.
 
 Videos total approximately **8.65 GB**, including originals. They are excluded
 from Git and the Pages artifact, and hosted in the public

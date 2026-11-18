@@ -17,6 +17,39 @@ ROOT = Path('/coc/pskynet6/gguo37/agentic_translation')
 MODELS = ('qwen27b', 'gemma31b', 'cohere', 'gpt', 'translategemma27b')
 LANGUAGES = ('en', 'vi', 'ka', 'ar', 'hi', 'ru')
 MEDIA_PREFIX = 'evaluation_assets/subtitle_evaluation/'
+CONTEXT_SOURCE = ROOT / 'data/monkey_king/subtitle_records.json'
+
+
+def english_context(records, subtitle_records, window=5):
+    """Resolve English neighbors by record ID on the same chronological track.
+
+    Verify every neighbor against the existing Chinese context before attaching
+    its paired English subtitle. Repeated lines are never matched by text alone.
+    """
+    rows = sorted(subtitle_records, key=lambda row: row['time_order'])
+    positions = {str(row['id']): i for i, row in enumerate(rows)}
+    if len(positions) != len(rows) or len({row['time_order'] for row in rows}) != len(rows):
+        raise ValueError('Duplicate subtitle record IDs or chronological positions')
+    tracks = {(row.get('source_document'), row.get('target_document')) for row in rows}
+    if len(tracks) != 1:
+        raise ValueError('English context must come from one subtitle track')
+    result = {}
+    for record in records:
+        rid = str(record['source_record_id'])
+        if rid not in positions:
+            raise ValueError(f'No subtitle context record for {rid}')
+        index = positions[rid]
+        if re.sub(r'\s+', '', rows[index]['target_text']) != re.sub(r'\s+', '', record['zh_CN']):
+            raise ValueError(f'Source text does not match subtitle record {rid}')
+        result[rid] = {}
+        for key, neighbors in [('context_before', rows[max(0, index-window):index]),
+                               ('context_after', rows[index+1:index+1+window])]:
+            if [row['target_text'] for row in neighbors] != record.get(key, []):
+                raise ValueError(f'{key} does not match chronological subtitle records for {rid}')
+            if any(not isinstance(row.get('source_text'), str) or not row['source_text'].strip() for row in neighbors):
+                raise ValueError(f'Missing English {key} for {rid}')
+            result[rid][key + '_en'] = [row['source_text'] for row in neighbors]
+    return result
 
 
 def parse_srt(text):
@@ -103,10 +136,11 @@ def load_candidate(runs, model, language, record, media_dir, mode):
     return result
 
 
-def prepare(dataset, runs, output, media_dir, mode='link', workers=12):
+def prepare(dataset, runs, output, media_dir, mode='link', workers=12, context_source=CONTEXT_SOURCE):
     records = json.loads(dataset.read_text())
     if len({r['source_record_id'] for r in records}) != len(records):
         raise ValueError('Duplicate source record IDs')
+    contexts = english_context(records, json.loads(context_source.read_text()))
     # Source media location is declared by the run config, never guessed by name.
     config = json.loads((runs / 'gpt/config.json').read_text())
     clips_dir = Path(config['clips_dir'])
@@ -127,6 +161,7 @@ def prepare(dataset, runs, output, media_dir, mode='link', workers=12):
                 'source_language': 'zh', 'source': record['zh_CN'], 'original_video': url,
                 'duration_seconds': record['clip_duration_ms'] / 1000, 'references': refs,
                 'context_before': record.get('context_before', []), 'context_after': record.get('context_after', []),
+                **contexts[rid],
                 'bookmark': False, 'candidates': candidates,
                 'metadata': {'original_video_bytes': size, 'source_record_id': record['source_record_id'],
                              'source_dataset': dataset.name, 'source_interval_ms': record.get('subtitle_interval_ms'),
@@ -145,12 +180,13 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--runs', type=Path, default=ROOT / 'agent/subtitle_tryout/subtitle_agent/runs')
     parser.add_argument('--dataset', type=Path, default=ROOT / 'data/final/processed/monkey_king.json')
+    parser.add_argument('--context-source', type=Path, default=CONTEXT_SOURCE)
     parser.add_argument('--output', type=Path, default=REPO / 'public/data/demo/subtitle_multilingual.json')
     parser.add_argument('--media-dir', type=Path, default=REPO / MEDIA_PREFIX)
     parser.add_argument('--media-mode', choices=['link', 'copy'], default='link')
     parser.add_argument('--workers', type=int, default=12)
     args = parser.parse_args()
-    prepare(args.dataset, args.runs, args.output, args.media_dir, args.media_mode, args.workers)
+    prepare(args.dataset, args.runs, args.output, args.media_dir, args.media_mode, args.workers, args.context_source)
 
 
 if __name__ == '__main__':
