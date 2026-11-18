@@ -692,6 +692,9 @@ Scores use 0–100 in steps of 5,
 with 60 acceptable/pass. Choose Strength or Error before highlighting translated
 words; acceptable wording stays unmarked. Cue times and text come directly from
 SRT outputs. The current runs contain one subtitle cue per clip.
+Human references support understanding of the general meaning and may contain
+errors; the instructions point annotators to the Google Translate helper for
+another interpretation when something seems odd.
 
 Download saves all languages and candidates. Upload validates source, model IDs,
 video version, timing, scores, and spans, and restores annotations onto canonical

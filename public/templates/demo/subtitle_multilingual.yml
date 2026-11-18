@@ -20,4 +20,5 @@ instructions: |
   - **Spans:** Choose a label, then highlight translated words. **Strength** = effective, meaning-preserving creative choices, such as idioms, wordplay, or cultural references. **Error** = inaccurate or unnatural wording. **Okay** = acceptable; leave it unmarked.
   - **Fidelity:** Meaning, accuracy, completeness, style, tone, and naturalness compared with the Chinese source, and how well the translation fits the dialogue, action, and situation in the video clip.
   - **Presentation:** How comfortably can the subtitle be read during playback? Consider text length, reading time, line breaks, and how naturally it follows the speech.
+  - **Human reference:** Use it to understand the general meaning; it may contain errors. If something seems odd, use the Google Translate helper for another interpretation.
   - Before closing, **download your annotations**. To resume, **upload that downloaded file**.
