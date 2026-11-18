@@ -92,7 +92,23 @@ function warnBeforeClosing(event) {
     if (dirty.value) { event.preventDefault(); event.returnValue = ''; }
 }
 window.addEventListener('beforeunload', warnBeforeClosing);
-onBeforeUnmount(() => window.removeEventListener('beforeunload', warnBeforeClosing));
+function switchCandidateShortcut(event) {
+    if (event.defaultPrevented || event.isComposing || event.repeat || event.ctrlKey || event.metaKey || event.altKey || dataError.value) return;
+    const target = event.target instanceof Element ? event.target : document.activeElement;
+    if (target?.closest('input, textarea, select') || target?.isContentEditable) return;
+    const key = event.key.toLowerCase();
+    if (key !== 'a' && key !== 'd') return;
+    const count = hit.value?.candidates.length || 0;
+    if (count < 2) return;
+    event.preventDefault();
+    activeCandidate.value = (activeCandidate.value + (key === 'a' ? -1 : 1) + count) % count;
+    if (target?.closest('.subtitle-candidate-tabs')) document.getElementById(`subtitle-tab-${activeCandidate.value}`)?.focus();
+}
+window.addEventListener('keydown', switchCandidateShortcut);
+onBeforeUnmount(() => {
+    window.removeEventListener('beforeunload', warnBeforeClosing);
+    window.removeEventListener('keydown', switchCandidateShortcut);
+});
 </script>
 
 <template>
@@ -134,6 +150,7 @@ onBeforeUnmount(() => window.removeEventListener('beforeunload', warnBeforeClosi
                 <button @click="resetClip">Reset clip</button>
             </div>
         </div>
+        <p class="player-hint">Switch translations: <kbd>A</kbd> previous · <kbd>D</kbd> next.</p>
         <div class="subtitle-candidate-tabs" role="tablist" aria-label="Translation candidates">
             <button v-for="(item, position) in hit.candidates" :key="item.id" role="tab"
                 :id="`subtitle-tab-${position}`" :aria-selected="activeCandidate === position" aria-controls="subtitle-candidate-panel"

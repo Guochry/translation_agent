@@ -664,7 +664,9 @@ The Human reference panel on the left shows the supplied English/Vietnamese
 references, followed by the original video and Chinese dialogue context. The
 selected rendered video occupies the center; clip scores and timed subtitle
 cards appear on the right. Native controls support audio, seeking, and fullscreen;
-each subtitle card has a replay button. Both clip and subtitle scores use
+each subtitle card has a replay button. Press **A** / **D** to switch to the
+previous / next candidate (wrapping at the ends); shortcuts pause while typing
+in score, notes, or selection fields. Both clip and subtitle scores use
 **Fidelity** (meaning, accuracy, completeness, style, tone, naturalness) and
 **Presentation** (font, contrast, line breaks, length, placement, readable duration,
 and synchronization). All scores are 0–100 in steps of 5, with 60 acceptable/pass.
