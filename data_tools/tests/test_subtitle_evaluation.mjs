@@ -63,6 +63,8 @@ test('uploads reject changed media, cue timing, language, model order, invalid s
     for (const mutate of [
         h => { h.original_video += '-changed'; },
         h => { h.candidates[0].translated_video += '-changed'; },
+        h => { h.candidates[0].metadata.render_identity += '-old-render'; },
+        h => { h.candidates[0].metadata.video_bytes += 1; },
         h => { h.candidates[0].translation_regions[0].end_seconds += 1; },
         h => { h.candidates[0].translation_regions[0].source += 'x'; },
         h => { h.language = 'ar'; },

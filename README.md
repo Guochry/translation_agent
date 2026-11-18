@@ -711,7 +711,7 @@ another subtitle-records file. Original Chinese context is retained in the JSON;
 older annotation downloads still import, with English context supplied by the
 current canonical dataset.
 
-Videos total approximately **8.65 GB**, including originals. They are excluded
+Videos total approximately **8.66 GB**, including originals. They are excluded
 from Git and the Pages artifact, and hosted in the public
 [Hugging Face media dataset](https://huggingface.co/datasets/geyang627/subtitle-translation-evaluation).
 To upload or resume after preparing the media, with a configured Hugging Face login:

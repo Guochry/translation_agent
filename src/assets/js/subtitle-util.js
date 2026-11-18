@@ -73,7 +73,7 @@ export function restoreSubtitleAnnotations(canonical, saved) {
         seen.add(hit.id);
         let matches = false;
         try { matches = content(hit) === content(expected); } catch { /* incomplete upload */ }
-        if (!matches) throw new Error('The file belongs to different subtitle content or candidate order.');
+        if (!matches) throw new Error('The file belongs to different subtitle content, video version, or candidate order.');
         const result = cloneSubtitleData(expected);
         result.bookmark = hit.bookmark === true;
         result.comment = typeof hit.comment === 'string' ? hit.comment : '';

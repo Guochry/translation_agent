@@ -5,7 +5,7 @@ default_data_link: data/demo/subtitle_multilingual.json
 subtitle_evaluation: true
 default_language: en
 # Videos are hosted separately from GitHub Pages; local dev uses the prepared media links.
-subtitle_media_base: https://huggingface.co/datasets/geyang627/subtitle-translation-evaluation/resolve/487b71c955826388ea5aafc539ff0b82a7373a68/
+subtitle_media_base: https://huggingface.co/datasets/geyang627/subtitle-translation-evaluation/resolve/58c675c9e9a1740302e846efed92bdbd60f719ff/
 subtitle_media_prefix: evaluation_assets/subtitle_evaluation/
 languages:
   - { code: ar, label: Arabic, native_label: العربية }
