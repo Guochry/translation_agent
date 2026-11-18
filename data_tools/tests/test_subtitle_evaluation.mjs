@@ -10,13 +10,14 @@ const languages = ['en', 'vi', 'ka', 'ar', 'hi', 'ru'];
 test('all 177 clips have consistent anonymous candidate order across six languages', () => {
     validateSubtitleDataset(data, languages);
     assert.equal(data.length, 177 * 6);
-    assert.equal(data.flatMap(h => h.candidates).filter(c => c.available).length, 5306);
+    assert.equal(data.flatMap(h => h.candidates).filter(c => c.available).length, 5660);
     for (const language of languages) {
         const hits = data.filter(h => h.language === language);
         assert.equal(hits.length, 177);
         for (let i = 0; i < 177; i++) {
             assert.equal(hits[i].clip_id, data[i].clip_id);
-            assert.deepEqual(hits[i].candidates.map(c => c.id), data[i].candidates.map(c => c.id));
+            assert.deepEqual(hits[i].candidates.filter(c => c.id !== 'human_reference').map(c => c.id), data[i].candidates.filter(c => c.id !== 'human_reference').map(c => c.id));
+            assert.equal(hits[i].candidates.length, ['en', 'vi'].includes(language) ? 6 : 5);
             assert.equal(hits[i].source_language, 'zh');
         }
     }
@@ -121,4 +122,26 @@ test('legacy clip scores are discarded without replacing the subtitle score pair
     assert.equal(subtitleCandidateRated(result.candidates[0]), true);
     assert.equal(subtitleClipRated(result), false);
     assert.equal(Object.hasOwn(resetSubtitleClip(saved).candidates[0], 'fidelity_score'), false);
+});
+
+test('human-reference candidates match the original references only in English and Vietnamese', () => {
+    let count = 0;
+    for (const hit of data) {
+        const reference = hit.candidates.find(c => c.id === 'human_reference');
+        if (!['en', 'vi'].includes(hit.language)) { assert.equal(reference, undefined); continue; }
+        count++;
+        assert.equal(reference.available, true);
+        assert.equal(reference.metadata.translation_type, 'human_reference');
+        assert.equal(reference.metadata.reference_field, hit.language);
+        assert.equal(reference.metadata.model, null);
+        const expected = hit.references.find(r => r.language === hit.language).text;
+        assert.equal(reference.translation, expected);
+        assert.equal(reference.translation_regions[0].target.replace(/\s+/g, ' ').trim(), expected.replace(/\s+/g, ' ').trim());
+        assert.equal(reference.translation_regions[0].source, hit.source);
+        const counterpart = data.find(h => h.clip_id === hit.clip_id && h.language === (hit.language === 'en' ? 'vi' : 'en'));
+        assert.deepEqual(hit.candidates.map(c => c.id), counterpart.candidates.map(c => c.id));
+    }
+    assert.equal(count, 354);
+    const positions = new Set(data.filter(h => h.language === 'en').map(h => h.candidates.findIndex(c => c.id === 'human_reference')));
+    assert.equal(positions.size, 6);
 });

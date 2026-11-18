@@ -84,9 +84,10 @@ def parse_srt(text):
     return cues
 
 
-def candidate_order(record_id):
+def candidate_order(record_id, language=None):
     # Stable across languages; adding other clips does not change any labels.
-    return sorted(MODELS, key=lambda model: hashlib.sha256(f'subtitle-v1:{record_id}:{model}'.encode()).hexdigest())
+    models = (*MODELS, 'human_reference') if language in ('en', 'vi') else MODELS
+    return sorted(models, key=lambda model: hashlib.sha256(f'subtitle-v1:{record_id}:{model}'.encode()).hexdigest())
 
 
 def stage_media(source, relative, media_dir, mode):
@@ -112,11 +113,13 @@ def stage_media(source, relative, media_dir, mode):
 
 def load_candidate(runs, model, language, record, media_dir, mode):
     rid = str(record['source_record_id'])
-    folder = runs / model / ('' if language == 'en' else language) / rid
+    folder = runs / model / ('' if language == 'en' and model != 'human_reference' else language) / rid
     state_path = folder / 'state.json'
     state = json.loads(state_path.read_text()) if state_path.exists() else {}
     result = {'id': model, 'available': False, 'translation_regions': [], 'metadata': {'system': model, 'model': state.get('model')}}
     if state.get('status') != 'completed':
+        if model == 'human_reference':
+            raise ValueError(f'Human reference render is incomplete: {folder}')
         result['unavailable_reason'] = 'Translation unavailable.'
         return result
     video = folder / 'translated.mp4'
@@ -124,6 +127,13 @@ def load_candidate(runs, model, language, record, media_dir, mode):
     if not video.is_file() or not srt.is_file():
         raise ValueError(f'Completed output is missing media/text: {folder}')
     cues = parse_srt(srt.read_text(encoding='utf-8-sig'))
+    if model == 'human_reference':
+        reference = state.get('reference', {})
+        if reference.get('type') != 'human' or str(reference.get('record_id')) != rid or reference.get('field') != language:
+            raise ValueError(f'Human reference provenance does not match: {folder}')
+        if state.get('translation') != record.get(language) or re.sub(r'\s+', ' ', ' '.join(cue['target'] for cue in cues)).strip() != re.sub(r'\s+', ' ', record[language]).strip():
+            raise ValueError(f'Rendered human reference differs from dataset reference: {folder}')
+        result['metadata'].update(translation_type='human_reference', reference_field=language)
     for cue in cues:
         # These runs translate one source passage per clip. For multi-cue output,
         # source is clip-level context, not an invented word-level alignment.
@@ -153,7 +163,7 @@ def prepare(dataset, runs, output, media_dir, mode='link', workers=12, context_s
         language, index, record = pair
         rid = str(record['source_record_id'])
         url, size = source_media[rid]
-        candidates = [load_candidate(runs, model, language, record, media_dir, mode) for model in candidate_order(rid)]
+        candidates = [load_candidate(runs, model, language, record, media_dir, mode) for model in candidate_order(rid, language)]
         refs = [{'language': code, 'text': record[code]} for code in ('en', 'vi', 'ru') if record.get(code)]
         return {'id': f'subtitle-{language}-{rid}', 'task_type': 'subtitle_evaluation', 'schema_version': 1,
                 'language': language, 'clip_id': rid, 'clip_index': index + 1, 'title': record.get('title', ''),
@@ -171,7 +181,8 @@ def prepare(dataset, runs, output, media_dir, mode='link', workers=12, context_s
     output.parent.mkdir(parents=True, exist_ok=True)
     output.write_text(json.dumps(data, ensure_ascii=False, indent=2) + '\n')
     available = sum(c['available'] for hit in data for c in hit['candidates'])
-    print(f'Wrote {len(data)} tasks, {len(records)} clips/language, {available}/{len(data) * len(MODELS)} rendered candidates: {output}')
+    expected = sum(len(hit['candidates']) for hit in data)
+    print(f'Wrote {len(data)} tasks, {len(records)} clips/language, {available}/{expected} rendered candidates: {output}')
     return data
 
 

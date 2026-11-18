@@ -651,9 +651,12 @@ If you find our library helpful, please consider citing [**our work**](https://a
 The new task keeps all manga URLs available and compares **five subtitle systems**
 (`qwen27b`, `gemma31b`, `cohere`, `gpt`, `translategemma27b`) for **177 Chinese-source
 video clips** in Arabic, English, Hindi, Georgian, Russian, and Vietnamese.
-Candidate A–E order is deterministically shuffled per clip and shared across
-languages. Model identity remains in the exported JSON, while the interface uses
-anonymous labels. There are 5,306 available rendered translations out of 5,310;
+English and Vietnamese also include a rendered **human reference** as a sixth
+candidate. Those languages use A–F; the other four use A–E. Candidates are
+deterministically shuffled per clip, with the existing models retaining their
+relative order across languages. English and Vietnamese share the same six-way
+order. System identity and human-reference provenance remain in the exported JSON;
+the interface uses anonymous labels. There are 5,660 available videos out of 5,664;
 four failed outputs are shown as unavailable and excluded from completion counts.
 
 Open [Subtitle Evaluation](https://guochry.github.io/translation_agent/?i=templates/demo/subtitle_multilingual.yml&d=data/demo/subtitle_multilingual.json).
@@ -695,6 +698,10 @@ file to resume.
 python data_tools/prepare_subtitle_evaluation.py
 ```
 
+Human-reference videos come from `runs/human_reference/en/` and
+`runs/human_reference/vi/`. Their state provenance and rendered SRT text must match
+the original dataset's `en` / `vi` reference field. No new translations are generated.
+
 This reads the existing run states, translated SRTs, and source dataset without
 inference calls. It writes `public/data/demo/subtitle_multilingual.json` and makes
 ignored local video symlinks under `evaluation_assets/subtitle_evaluation/`.
@@ -714,7 +721,7 @@ another subtitle-records file. Original Chinese context is retained in the JSON;
 older annotation downloads still import, with English context supplied by the
 current canonical dataset.
 
-Videos total approximately **8.66 GB**, including originals. They are excluded
+Videos total approximately **9.21 GB**, including originals. They are excluded
 from Git and the Pages artifact, and hosted in the public
 [Hugging Face media dataset](https://huggingface.co/datasets/geyang627/subtitle-translation-evaluation).
 To upload or resume after preparing the media, with a configured Hugging Face login:

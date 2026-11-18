@@ -60,6 +60,33 @@ class SubtitlePackagingTests(unittest.TestCase):
             self.assertFalse(target.is_symlink())
             self.assertEqual(target.read_bytes(), source.read_bytes())
 
+    def test_human_reference_order_and_render_provenance(self):
+        import json
+        en = module.candidate_order('430711', 'en')
+        self.assertEqual(en, module.candidate_order('430711', 'vi'))
+        self.assertEqual([model for model in en if model != 'human_reference'], module.candidate_order('430711', 'ar'))
+        with tempfile.TemporaryDirectory() as temp:
+            root = Path(temp)
+            folder = root / 'runs/human_reference/en/1'
+            folder.mkdir(parents=True)
+            state = {'status': 'completed', 'translation': 'Hello.', 'translation_identity': 'text-hash',
+                     'render_identity': 'render-hash', 'reference': {'type': 'human', 'field': 'en', 'record_id': '1'}}
+            (folder / 'state.json').write_text(json.dumps(state))
+            (folder / 'translated.mp4').write_bytes(b'rendered-video')
+            (folder / 'translation.srt').write_text('1\n00:00:00,000 --> 00:00:02,000\nHello.\n')
+            record = {'source_record_id': 1, 'zh_CN': '你好', 'en': 'Hello.'}
+            candidate = module.load_candidate(root / 'runs', 'human_reference', 'en', record, root / 'media', 'link')
+            self.assertTrue(candidate['available'])
+            self.assertEqual(candidate['metadata']['reference_field'], 'en')
+            self.assertIsNone(candidate['metadata']['model'])
+            self.assertEqual(candidate['translated_video'], module.MEDIA_PREFIX + 'human_reference/en/1.mp4')
+            with self.assertRaises(ValueError):
+                module.load_candidate(root / 'runs', 'human_reference', 'en', {**record, 'en': 'Different.'}, root / 'media', 'link')
+            state['reference']['record_id'] = '2'
+            (folder / 'state.json').write_text(json.dumps(state))
+            with self.assertRaises(ValueError):
+                module.load_candidate(root / 'runs', 'human_reference', 'en', record, root / 'media', 'link')
+
     def test_candidate_order_deterministic(self):
         self.assertEqual(module.candidate_order('430711'), module.candidate_order('430711'))
         self.assertEqual(set(module.candidate_order('430711')), set(module.MODELS))
