@@ -667,8 +667,10 @@ The right panel contains Chinese source, its translation, Strength/Error
 highlighting, and one **Fidelity / Presentation** score pair. There are no separate
 clip scores or numbered heading for a single subtitle. A replay button and native
 video controls support playback, seeking, audio, and fullscreen. Press **A** / **D**
-for the previous / next candidate, wrapping at the ends; shortcuts pause while
-entering scores.
+for the previous / next candidate, wrapping at the ends. Press **Q** / **E**
+for the previous / next video, stopping at the first and last clip. Video
+navigation selects Translation A, matching the navigation buttons. Shortcuts
+pause while entering scores.
 
 **Fidelity** measures meaning, accuracy, completeness, linguistic style, tone, and
 naturalness. **Presentation** measures font, contrast, line breaks, length,

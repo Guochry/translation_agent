@@ -1,5 +1,5 @@
 <script setup>
-import { computed, onBeforeUnmount, ref, shallowRef, watch } from 'vue';
+import { computed, nextTick, onBeforeUnmount, ref, shallowRef, watch } from 'vue';
 import VueMarkdown from 'vue-markdown-render';
 import MangaTextRegion from '../hitbox/MangaTextRegion.vue';
 import MangaSpanLegend from '../hitbox/MangaSpanLegend.vue';
@@ -91,11 +91,20 @@ function warnBeforeClosing(event) {
     if (dirty.value) { event.preventDefault(); event.returnValue = ''; }
 }
 window.addEventListener('beforeunload', warnBeforeClosing);
-function switchCandidateShortcut(event) {
+function handleNavigationShortcut(event) {
     if (event.defaultPrevented || event.isComposing || event.repeat || event.ctrlKey || event.metaKey || event.altKey || dataError.value) return;
     const target = event.target instanceof Element ? event.target : document.activeElement;
     if (target?.closest('input, textarea, select') || target?.isContentEditable) return;
     const key = event.key.toLowerCase();
+    if (key === 'q' || key === 'e') {
+        event.preventDefault();
+        const next = Math.max(0, Math.min(hits.value.length - 1, index.value + (key === 'q' ? -1 : 1)));
+        if (next !== index.value) {
+            navigate(next);
+            if (target?.closest('.subtitle-candidate-tabs')) nextTick(() => document.getElementById('subtitle-tab-0')?.focus());
+        }
+        return;
+    }
     if (key !== 'a' && key !== 'd') return;
     const count = hit.value?.candidates.length || 0;
     if (count < 2) return;
@@ -103,10 +112,10 @@ function switchCandidateShortcut(event) {
     activeCandidate.value = (activeCandidate.value + (key === 'a' ? -1 : 1) + count) % count;
     if (target?.closest('.subtitle-candidate-tabs')) document.getElementById(`subtitle-tab-${activeCandidate.value}`)?.focus();
 }
-window.addEventListener('keydown', switchCandidateShortcut);
+window.addEventListener('keydown', handleNavigationShortcut);
 onBeforeUnmount(() => {
     window.removeEventListener('beforeunload', warnBeforeClosing);
-    window.removeEventListener('keydown', switchCandidateShortcut);
+    window.removeEventListener('keydown', handleNavigationShortcut);
 });
 </script>
 
@@ -149,7 +158,7 @@ onBeforeUnmount(() => {
                 <button @click="resetClip">Reset clip</button>
             </div>
         </div>
-        <p class="player-hint">Switch translations: <kbd>A</kbd> previous · <kbd>D</kbd> next.</p>
+        <p class="player-hint">Translations: <kbd>A</kbd> previous · <kbd>D</kbd> next. Videos: <kbd>Q</kbd> previous · <kbd>E</kbd> next.</p>
         <div class="subtitle-candidate-tabs" role="tablist" aria-label="Translation candidates">
             <button v-for="(item, position) in hit.candidates" :key="item.id" role="tab"
                 :id="`subtitle-tab-${position}`" :aria-selected="activeCandidate === position" aria-controls="subtitle-candidate-panel"
