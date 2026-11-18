@@ -168,10 +168,6 @@ onBeforeUnmount(() => {
                         <p :lang="reference.language" dir="auto">{{ reference.text }}</p>
                     </div>
                 </section>
-                <section class="reference-card">
-                    <h3>Chinese source</h3>
-                    <p lang="zh">{{ hit.source }}</p>
-                </section>
                 <details class="reference-card">
                     <summary>Dialogue context</summary>
                     <h4>Before this clip</h4>
