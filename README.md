@@ -645,3 +645,84 @@ If you find our library helpful, please consider citing [**our work**](https://a
   year={2023}
 }
 ```
+
+## Subtitle Translation Evaluation
+
+The new task keeps all manga URLs available and compares **five subtitle systems**
+(`qwen27b`, `gemma31b`, `cohere`, `gpt`, `translategemma27b`) for **177 Chinese-source
+video clips** in Arabic, English, Hindi, Georgian, Russian, and Vietnamese.
+Candidate A–E order is deterministically shuffled per clip and shared across
+languages. Model identity remains in the exported JSON, while the interface uses
+anonymous labels. There are 5,306 available rendered translations out of 5,310;
+four failed outputs are shown as unavailable and excluded from completion counts.
+
+Open [Subtitle Evaluation](https://guochry.github.io/translation_agent/?i=templates/demo/subtitle_multilingual.yml&d=data/demo/subtitle_multilingual.json).
+For local preview, run `npm run dev -- --host 0.0.0.0`, then open
+`http://localhost:5173/?i=templates/demo/subtitle_multilingual.yml&d=data/demo/subtitle_multilingual.json`.
+
+The Human reference panel on the left shows the supplied English/Vietnamese
+references, followed by the original video and Chinese dialogue context. The
+selected rendered video occupies the center; clip scores and timed subtitle
+cards appear on the right. Native controls support audio, seeking, and fullscreen;
+each subtitle card has a replay button. Both clip and subtitle scores use
+**Fidelity** (meaning, accuracy, completeness, style, tone, naturalness) and
+**Presentation** (font, contrast, line breaks, length, placement, readable duration,
+and synchronization). All scores are 0–100 in steps of 5, with 60 acceptable/pass.
+Strength/Error text highlighting works as in the manga task; acceptable words stay
+unmarked. The current runs contain one subtitle cue per clip. Cue times and text
+come directly from each output SRT; source text is supplied at clip level, so any
+future multi-cue output retains that scope explicitly rather than inventing an
+alignment.
+
+Download saves all languages and candidates, including notes and bookmarks.
+Upload validates source text, candidate identities, media, cue timings, scores,
+and spans before restoring annotations; a partial export merges only its clips.
+Reset clip clears all candidate scores, notes, and highlights for the current
+clip/language. A clip counts as complete when all available candidates have both
+clip scores and both scores for every subtitle. Missing candidates require no
+ratings. A closing-page reminder protects unsaved work; download before closing
+and upload the file to resume.
+
+### Prepare and host subtitle media
+
+```bash
+python data_tools/prepare_subtitle_evaluation.py
+```
+
+This reads the existing run states, translated SRTs, and source dataset without
+inference calls. It writes `public/data/demo/subtitle_multilingual.json` and makes
+ignored local video symlinks under `evaluation_assets/subtitle_evaluation/`.
+Rendered videos are unchanged; no re-encoding or extra copies are needed for local
+use. Vite serves videos with HTTP byte-range support for playback and seeking.
+Use `--media-mode copy --media-dir /path/to/staging` to prepare real files instead
+of symlinks for another machine or host. Use `--runs` and `--dataset` for a different
+input location. Defaults point to the subtitle agent's `runs` folder and
+`data/final/processed/monkey_king.json` in the shared project.
+
+Videos total approximately **8.65 GB**, including originals. They are excluded
+from Git and the Pages artifact, and hosted in the public
+[Hugging Face media dataset](https://huggingface.co/datasets/geyang627/subtitle-translation-evaluation).
+To upload or resume after preparing the media, with a configured Hugging Face login:
+
+```bash
+python data_tools/upload_subtitle_media.py --repo-id geyang627/subtitle-translation-evaluation
+```
+
+The uploader verifies remote file hashes and resumes in batches of 250 videos to
+reduce API requests; temporary rate limits are retried automatically. Add
+`--verify-only` to check all public video hashes without uploading. Configure `subtitle_media_base`
+in `public/templates/demo/subtitle_multilingual.yml` to the dataset's
+`https://huggingface.co/datasets/OWNER/REPO/resolve/REVISION/` URL; the relative
+`original/` and model/language paths are retained. The current template pins a media
+revision so subsequent uploads cannot change videos during annotation. The app does not need a token
+for public playback. Never put Hugging Face credentials in the template or JSON.
+Push app/config/data changes to the `deploy` remote's `main` branch to trigger the
+existing GitHub Pages workflow.
+
+Validation:
+
+```bash
+python -m unittest discover -s data_tools/tests -v
+node --experimental-default-type=module --test data_tools/tests/test_subtitle_evaluation.mjs
+npm run build
+```

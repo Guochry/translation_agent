@@ -1,0 +1,24 @@
+template_name: demo_subtitle_multilingual
+template_label: Multilingual Subtitle Evaluation
+template_description: Compare five rendered subtitle translations in six languages.
+default_data_link: data/demo/subtitle_multilingual.json
+subtitle_evaluation: true
+default_language: en
+# Videos are hosted separately from GitHub Pages; local dev uses the prepared media links.
+subtitle_media_base: https://huggingface.co/datasets/geyang627/subtitle-translation-evaluation/resolve/487b71c955826388ea5aafc539ff0b82a7373a68/
+subtitle_media_prefix: evaluation_assets/subtitle_evaluation/
+languages:
+  - { code: ar, label: Arabic, native_label: العربية }
+  - { code: en, label: English, native_label: English }
+  - { code: hi, label: Hindi, native_label: हिन्दी }
+  - { code: ka, label: Georgian, native_label: ქართული }
+  - { code: ru, label: Russian, native_label: Русский }
+  - { code: vi, label: Vietnamese, native_label: Tiếng Việt }
+instructions: |
+  Compare each translation with the Chinese dialogue. Switch A–E to rate each independently. Scores: **0–100, steps of 5** (0 = very poor; 60 = acceptable/pass; 100 = excellent). Leave unfinished scores blank.
+
+  - **Spans:** Choose a label, then highlight translated words. **Strength** = effective, meaning-preserving creative choices, such as idioms, wordplay, or cultural references. **Error** = inaccurate or unnatural wording. **Okay** = acceptable; leave it unmarked.
+  - **Subtitle fidelity:** Meaning, accuracy, completeness, style, tone, and naturalness compared with the Chinese source, using the dialogue context.
+  - **Subtitle presentation:** Readability in the video: font, size, contrast, line breaks, text length, placement, and enough time to read in sync with speech.
+  - **Clip scores:** **Fidelity** = overall translation quality of the clip's text. **Presentation** = overall subtitle readability, timing, and visual style.
+  - Before closing, **download your annotations**. To resume, **upload that downloaded file**.
