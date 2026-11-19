@@ -5,13 +5,18 @@ import copy
 import json
 import random
 import re
+import unicodedata
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 POOL = ROOT / 'data_tools/datasets/subtitle_multilingual_pool.json'
 
 
-def sample_tasks(tasks, count=80, seed=20261119):
+def chinese_character_count(text):
+    return sum(unicodedata.name(character, '').startswith(('CJK UNIFIED IDEOGRAPH', 'CJK COMPATIBILITY IDEOGRAPH')) for character in text)
+
+
+def sample_tasks(tasks, count=80, seed=20261119, minimum_chinese_characters=8):
     groups, ids = {}, set()
     if not isinstance(tasks, list) or not tasks:
         raise ValueError('Expected a nonempty task pool')
@@ -22,8 +27,9 @@ def sample_tasks(tasks, count=80, seed=20261119):
         groups.setdefault(task['language'], []).append(task)
     reference = next(iter(groups.values()))
     by_clip = {task['clip_id']: task for task in reference}
-    if not isinstance(count, int) or isinstance(count, bool) or count < 3 or count > len(by_clip):
-        raise ValueError('Sample count must be between three and the number of clips')
+    pool_count = len(by_clip)
+    if not isinstance(minimum_chinese_characters, int) or isinstance(minimum_chinese_characters, bool) or minimum_chinese_characters < 0:
+        raise ValueError('Minimum Chinese character count must be a nonnegative integer')
     for language, rows in groups.items():
         if len(rows) != len(by_clip) or {row['clip_id'] for row in rows} != set(by_clip):
             raise ValueError(f'Clip coverage differs or duplicates exist for {language}')
@@ -32,7 +38,10 @@ def sample_tasks(tasks, count=80, seed=20261119):
             if row['source'] != expected['source'] or row['metadata']['movie_interval_ms'] != expected['metadata']['movie_interval_ms']:
                 raise ValueError('Source or movie timestamp differs across languages')
     length = lambda clip_id: len(re.sub(r'\s+', '', by_clip[clip_id]['source']))
-    ranked = sorted(by_clip, key=lambda clip_id: (length(clip_id), clip_id))
+    eligible = [clip_id for clip_id in by_clip if chinese_character_count(by_clip[clip_id]['source']) >= minimum_chinese_characters]
+    if not isinstance(count, int) or isinstance(count, bool) or count < 3 or count > len(eligible):
+        raise ValueError('Sample count must be between three and the number of eligible clips')
+    ranked = sorted(eligible, key=lambda clip_id: (length(clip_id), clip_id))
     n = len(ranked)
     strata = [ranked[:n//3], ranked[n//3:2*n//3], ranked[2*n//3:]]
     quotas = [min(len(stratum), max(1, int(count * weight))) for stratum, weight in zip(strata, [.2, .3, .5])]
@@ -61,8 +70,10 @@ def sample_tasks(tasks, count=80, seed=20261119):
             for field in ['evaluation_batch', 'batch_clip_index']:
                 row['metadata'].pop(field, None)
             row['metadata'].update(selection_index=index, sampling_seed=seed, sampling_method='source_length_stratified_random')
+            row['metadata'].update(source_chinese_characters=chinese_character_count(row['source']), minimum_chinese_characters=minimum_chinese_characters)
             output.append(row)
-    report = {'selection_count_per_language': count, 'pool_clips_per_language': n, 'seed': seed,
+    report = {'selection_count_per_language': count, 'pool_clips_per_language': pool_count, 'eligible_clips_per_language': n,
+              'minimum_chinese_characters': minimum_chinese_characters, 'minimum_length_measure': 'Chinese ideographs, excluding spaces and punctuation', 'seed': seed,
               'sampling_method': 'Random sampling within source-length strata, favoring longer text (20% short, 30% medium, 50% long)' ,
               'length_measure': 'Chinese source characters excluding whitespace',
               'order_basis': 'Original movie video_interval_ms.start', 'strata': reports,
@@ -70,9 +81,9 @@ def sample_tasks(tasks, count=80, seed=20261119):
     return output, report
 
 
-def prepare(pool=POOL, count=80, seed=20261119, root=ROOT):
+def prepare(pool=POOL, count=80, seed=20261119, root=ROOT, minimum_chinese_characters=8):
     root = Path(root)
-    data, report = sample_tasks(json.loads(Path(pool).read_text()), count, seed)
+    data, report = sample_tasks(json.loads(Path(pool).read_text()), count, seed, minimum_chinese_characters)
     (root / 'public/data/demo/subtitle_multilingual.json').write_text(json.dumps(data, ensure_ascii=False, indent=2) + '\n')
     (root / 'public/data/demo/subtitle_multilingual_sample.report.json').write_text(json.dumps(report, ensure_ascii=False, indent=2) + '\n')
     print(json.dumps(report, ensure_ascii=False, indent=2))
@@ -84,5 +95,6 @@ if __name__ == '__main__':
     parser.add_argument('--pool', type=Path, default=POOL)
     parser.add_argument('--count', type=int, default=80)
     parser.add_argument('--seed', type=int, default=20261119)
+    parser.add_argument('--minimum-chinese-characters', type=int, default=8)
     args = parser.parse_args()
-    prepare(args.pool, args.count, args.seed)
+    prepare(args.pool, args.count, args.seed, minimum_chinese_characters=args.minimum_chinese_characters)

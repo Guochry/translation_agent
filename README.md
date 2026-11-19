@@ -659,9 +659,10 @@ Open [the 80-clip subtitle evaluation](https://guochry.github.io/translation_age
 For local preview, run `npm run dev -- --host 0.0.0.0`, then open
 `http://localhost:5173/?i=templates/demo/subtitle_multilingual.yml&d=data/demo/subtitle_multilingual.json`.
 
-The former three-batch task is replaced by this single selection. Sampling uses
-Chinese source character counts (excluding whitespace) to divide the 177-clip
-pool into three equal-size ranked groups. With seed `20261119`, it randomly picks
+The former three-batch task is replaced by this single selection.
+A minimum of **8 Chinese ideographs** per source is required (spaces and punctuation
+do not count). The eligible clips are ranked by source text length, excluding
+whitespace, and divided into three groups. With seed `20261119`, it randomly picks
 16 short, 24 medium, and 40 long clips, then sorts the selected IDs by their actual
 movie clip timestamps. The same 80 clips and order apply to every language; all
 candidates for each selected clip are retained. The seed, length ranges, and
