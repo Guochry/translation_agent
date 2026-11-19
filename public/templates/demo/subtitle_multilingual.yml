@@ -1,6 +1,6 @@
 template_name: demo_subtitle_multilingual
 template_label: Multilingual Subtitle Evaluation
-template_description: Compare five subtitle systems, plus human-reference renders for English and Vietnamese.
+template_description: Evaluate 80 selected clips in movie order, with longer subtitles included.
 default_data_link: data/demo/subtitle_multilingual.json
 subtitle_evaluation: true
 default_language: en
@@ -23,3 +23,5 @@ instructions: |
   - **Human reference:** Use it to understand the general meaning; it may contain errors. If something seems odd, use the Google Translate helper for another interpretation.
   - **Post-edit (optional):** After reviewing all translations, combine strengths and fix errors to write a better translation below. Keep it faithful to the clip and readable as a subtitle.
   - Before closing, **download your annotations**. To resume, **upload that downloaded file**.
+
+evaluation_title: "Multilingual Subtitle Evaluation — 80 clips"

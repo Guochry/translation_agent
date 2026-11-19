@@ -648,47 +648,39 @@ If you find our library helpful, please consider citing [**our work**](https://a
 
 ## Subtitle Translation Evaluation
 
-The new task keeps all manga URLs available and compares **five subtitle systems**
-(`qwen27b`, `gemma31b`, `cohere`, `gpt`, `translategemma27b`) for **177 Chinese-source
-video clips** in Arabic, English, Hindi, Georgian, Russian, and Vietnamese.
-English and Vietnamese also include a rendered **human reference** as a sixth
-candidate. Those languages use A–F; the other four use A–E. Candidates are
-deterministically shuffled per clip, with the existing models retaining their
-relative order across languages. English and Vietnamese share the same six-way
-order. System identity and human-reference provenance remain in the exported JSON;
-the interface uses anonymous labels. There are 5,660 available videos out of 5,664;
-four failed outputs are shown as unavailable and excluded from completion counts.
+The task compares five subtitle systems (`qwen27b`, `gemma31b`, `cohere`, `gpt`,
+`translategemma27b`) on **80 selected Chinese-source clips per language**, in Arabic,
+English, Hindi, Georgian, Russian, and Vietnamese. English and Vietnamese also
+include a human-reference candidate (A–F); other languages use A–E. Candidate order
+is anonymous and deterministic per clip. The selected task contains 480
+clip/language records and 2,559 available candidate videos out of 2,560.
 
-Open [Subtitle Evaluation](https://guochry.github.io/translation_agent/?i=templates/demo/subtitle_multilingual.yml&d=data/demo/subtitle_multilingual.json).
+Open [the 80-clip subtitle evaluation](https://guochry.github.io/translation_agent/?i=templates/demo/subtitle_multilingual.yml&d=data/demo/subtitle_multilingual.json).
 For local preview, run `npm run dev -- --host 0.0.0.0`, then open
 `http://localhost:5173/?i=templates/demo/subtitle_multilingual.yml&d=data/demo/subtitle_multilingual.json`.
 
-The annotation task is split into three chronological batches per language:
+The former three-batch task is replaced by this single selection. Sampling uses
+Chinese source character counts (excluding whitespace) to divide the 177-clip
+pool into three equal-size ranked groups. With seed `20261119`, it randomly picks
+16 short, 24 medium, and 40 long clips, then sorts the selected IDs by their actual
+movie clip timestamps. The same 80 clips and order apply to every language; all
+candidates for each selected clip are retained. The seed, length ranges, and
+selected IDs are recorded in `public/data/demo/subtitle_multilingual_sample.report.json`.
 
-- [Part 1 — 60 clips (positions 1–60)](https://guochry.github.io/translation_agent/?i=templates/demo/subtitle_multilingual_part1.yml&d=data/demo/subtitle_multilingual_part1.json)
-- [Part 2 — 60 clips (positions 61–120)](https://guochry.github.io/translation_agent/?i=templates/demo/subtitle_multilingual_part2.yml&d=data/demo/subtitle_multilingual_part2.json)
-- [Part 3 — 57 clips (positions 121–177)](https://guochry.github.io/translation_agent/?i=templates/demo/subtitle_multilingual_part3.yml&d=data/demo/subtitle_multilingual_part3.json)
-
-Order follows each extracted clip's `video_interval_ms.start` in the original
-movie, not the curated dataset order or subtitle numbering. The full task is also
-chronological. Each batch uses the same clip sequence in all six languages;
-Q/E navigation and progress counts stay within that batch. Candidate IDs/order,
-ratings, highlights, and post-edit provenance are retained. Downloads include the
-part number in the filename. Per-record metadata stores `movie_interval_ms`,
-`movie_order_index`, `original_task_index`, and batch identity for later analysis.
-The first two batches each contain 360 clip/language records; the last has 342.
-
-After refreshing the full dataset or template, regenerate the batches:
+The complete 177-clip pool is kept outside the published website at
+`data_tools/datasets/subtitle_multilingual_pool.json`. To refresh and resample:
 
 ```bash
-python data_tools/split_subtitle_evaluation.py
+python data_tools/prepare_subtitle_evaluation.py
+python data_tools/sample_subtitle_evaluation.py --count 80 --seed 20261119
 ```
 
-This copies JSON/config only; all parts share the same hosted videos. Once movie
-timestamps are present in the packaged data, splitting needs no source dataset.
-For older exports, `--source-records` supplies the original dataset containing
-`video_interval_ms`. The full preparation script now generates chronological data
-and records these movie timestamps directly.
+Preparation refreshes the pool, not the published selection; sampling writes the
+80-clip annotation JSON. Resampling uses no inference calls or video copies.
+The selection retains source IDs, candidate assignments, movie timestamps,
+annotations, and post-edit provenance. `clip_index` is the position in the
+80-clip selection; `metadata.movie_order_index` retains its position in the full
+177-clip timeline. Q/E stops at the selection boundaries.
 
 The Human reference panel on the left shows English references. Vietnamese tasks
 show both Vietnamese and English references, with Vietnamese first. English
@@ -765,7 +757,7 @@ Human-reference videos come from `runs/human_reference/en/` and
 the original dataset's `en` / `vi` reference field. No new translations are generated.
 
 This reads the existing run states, translated SRTs, and source dataset without
-inference calls. It writes `public/data/demo/subtitle_multilingual.json` and makes
+inference calls. It writes `data_tools/datasets/subtitle_multilingual_pool.json` and makes
 ignored local video symlinks under `evaluation_assets/subtitle_evaluation/`.
 Rendered videos are unchanged; no re-encoding or extra copies are needed for local
 use. Vite serves videos with HTTP byte-range support for playback and seeking.

@@ -195,7 +195,7 @@ def main():
     parser.add_argument('--runs', type=Path, default=ROOT / 'agent/subtitle_tryout/subtitle_agent/runs')
     parser.add_argument('--dataset', type=Path, default=ROOT / 'data/final/processed/monkey_king.json')
     parser.add_argument('--context-source', type=Path, default=CONTEXT_SOURCE)
-    parser.add_argument('--output', type=Path, default=REPO / 'public/data/demo/subtitle_multilingual.json')
+    parser.add_argument('--output', type=Path, default=REPO / 'data_tools/datasets/subtitle_multilingual_pool.json')
     parser.add_argument('--media-dir', type=Path, default=REPO / MEDIA_PREFIX)
     parser.add_argument('--media-mode', choices=['link', 'copy'], default='link')
     parser.add_argument('--workers', type=int, default=12)
