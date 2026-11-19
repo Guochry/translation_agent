@@ -32,6 +32,7 @@ export function validateSubtitleDataset(data, languages) {
             || !Array.isArray(hit.references) || !Array.isArray(hit.context_before) || !Array.isArray(hit.context_after)
             || !Array.isArray(hit.candidates) || !hit.candidates.length) throw new Error('Invalid subtitle task or duplicate ID.');
         ids.add(hit.id);
+        if (Object.hasOwn(hit, 'post_edit') && typeof hit.post_edit !== 'string') throw new Error('Post-edit must be text.');
         for (const field of ['context_before', 'context_after']) {
             if (!Array.isArray(hit[field + '_en']) || hit[field + '_en'].length !== hit[field].length
                 || hit[field + '_en'].some(line => typeof line !== 'string' || !line.trim()))
@@ -73,6 +74,8 @@ export function restoreSubtitleAnnotations(canonical, saved) {
         try { matches = content(hit) === content(expected); } catch { /* incomplete upload */ }
         if (!matches) throw new Error('The file belongs to different subtitle content, video version, or candidate order.');
         const result = cloneSubtitleData(expected);
+        if (Object.hasOwn(hit, 'post_edit') && typeof hit.post_edit !== 'string') throw new Error('Post-edit must be text.');
+        result.post_edit = hit.post_edit ?? '';
         result.bookmark = hit.bookmark === true;
         result.comment = typeof hit.comment === 'string' ? hit.comment : '';
         for (let i = 0; i < result.candidates.length; i++) {
@@ -104,6 +107,7 @@ export function restoreSubtitleAnnotations(canonical, saved) {
 
 export function resetSubtitleClip(hit) {
     const result = cloneSubtitleData(hit);
+    result.post_edit = '';
     for (const candidate of result.candidates) {
         delete candidate.fidelity_score;
         delete candidate.presentation_score;

@@ -5,6 +5,7 @@ import MangaTextRegion from '../hitbox/MangaTextRegion.vue';
 import MangaSpanLegend from '../hitbox/MangaSpanLegend.vue';
 import SubtitleVideo from '../hitbox/SubtitleVideo.vue';
 import GoogleTranslateBox from '../hitbox/GoogleTranslateBox.vue';
+import SubtitlePostEdit from '../hitbox/SubtitlePostEdit.vue';
 import { cloneSubtitleData, validateSubtitleDataset, restoreSubtitleAnnotations, resetSubtitleClip,
     subtitleClipRated, subtitleCandidateRated, subtitleRegionRated, subtitleMediaUrl,
     SUBTITLE_FIDELITY, SUBTITLE_PRESENTATION } from '../../assets/js/subtitle-util.js';
@@ -60,7 +61,7 @@ function replaceCandidate(next) {
 function updateRegion(regionIndex, region) {
     replaceCandidate({ ...candidate.value, translation_regions: candidate.value.translation_regions.map((r, i) => i === regionIndex ? region : r) });
 }
-function resetClip() { replaceHit(resetSubtitleClip(hit.value)); message.value = 'Scores and spans reset for this clip in the selected language.'; }
+function resetClip() { replaceHit(resetSubtitleClip(hit.value)); message.value = 'Scores, spans, and post-edit reset for this clip in the selected language.'; }
 function candidateStatus(c) {
     if (!c.available) return 'Unavailable';
     if (subtitleCandidateRated(c)) return 'Fully rated';
@@ -214,6 +215,8 @@ onBeforeUnmount(() => {
                 </template>
             </aside>
         </div>
+        <SubtitlePostEdit :key="hit.id" :model-value="hit.post_edit || ''" :language="language" :language-label="languageName(language)"
+            :source="hit.source" :candidates="hit.candidates" @update:model-value="text => replaceHit({ ...hit, post_edit: text })" />
     </div>
 </template>
 

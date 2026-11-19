@@ -171,7 +171,7 @@ def prepare(dataset, runs, output, media_dir, mode='link', workers=12, context_s
                 'duration_seconds': record['clip_duration_ms'] / 1000, 'references': refs,
                 'context_before': record.get('context_before', []), 'context_after': record.get('context_after', []),
                 **contexts[rid],
-                'bookmark': False, 'candidates': candidates,
+                'bookmark': False, 'post_edit': '', 'candidates': candidates,
                 'metadata': {'original_video_bytes': size, 'source_record_id': record['source_record_id'],
                              'source_dataset': dataset.name, 'source_interval_ms': record.get('subtitle_interval_ms'),
                              'candidate_order_seed': 'subtitle-v1', 'source_sha256': hashlib.sha256(record['zh_CN'].encode()).hexdigest()}}

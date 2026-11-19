@@ -145,3 +145,27 @@ test('human-reference candidates match the original references only in English a
     const positions = new Set(data.filter(h => h.language === 'en').map(h => h.candidates.findIndex(c => c.id === 'human_reference')));
     assert.equal(positions.size, 6);
 });
+
+test('post-edits are shared per clip/language, optional, restored independently, and reset with the clip', () => {
+    const saved = clone(data.find(h => h.language === 'ar'));
+    saved.post_edit = 'ترجمة محسنة\nبصياغة طبيعية 🎬';
+    const [restored] = restoreSubtitleAnnotations(data, [saved]);
+    assert.equal(restored.post_edit, saved.post_edit);
+    assert.equal(data.find(h => h.id === saved.id).post_edit, '');
+    assert.equal(data.find(h => h.language === 'en').post_edit, '');
+    assert.equal(restored.candidates.some(c => Object.hasOwn(c, 'post_edit')), false);
+    assert.equal(resetSubtitleClip(restored).post_edit, '');
+    const older = clone(saved); delete older.post_edit;
+    assert.equal(restoreSubtitleAnnotations(data, [older])[0].post_edit, '');
+    const bad = clone(saved); bad.post_edit = { text: 'wrong shape' };
+    assert.throws(() => restoreSubtitleAnnotations(data, [bad]), /Post-edit must be text/);
+    assert.throws(() => validateSubtitleDataset([bad], ['ar']), /Post-edit must be text/);
+    const rated = clone(data[0]);
+    for (const c of rated.candidates.filter(c => c.available)) {
+        for (const region of c.translation_regions) { region.quality_score = 80; region.presentation_score = 75; }
+    }
+    assert.equal(rated.post_edit, '');
+    assert.equal(subtitleClipRated(rated), true);
+    rated.post_edit = 'Improved wording';
+    assert.equal(subtitleClipRated(rated), true);
+});

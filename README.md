@@ -681,6 +681,16 @@ for the previous / next video, stopping at the first and last clip. Video
 navigation selects Translation A, matching the navigation buttons. Shortcuts
 pause while entering scores.
 
+Each clip/language has one optional **Post-edit** section below the video and
+rating workspace, shared across all candidates. Annotators can combine strengths
+and fix errors to write an improved reference translation. An expandable comparison
+shows all candidate texts; **Use as starting draft** copies a candidate only while
+the draft is empty, protecting an existing edit from replacement. Post-edits are
+stored in the record's `post_edit` string, retained across navigation and language
+switches, and included in download/upload. Empty drafts in older exports are
+supported. Post-editing does not affect rating completion counts. **Reset clip**
+clears its draft along with its scores and highlights.
+
 A collapsible Google Translate helper stays fixed at the bottom left. Open it,
 paste text or choose **Use Chinese source**, then open Google Translate in a new
 tab. Source/target selectors support the task languages; the target defaults to
