@@ -22,7 +22,6 @@ function startFrom(candidate) {
         <p v-if="modelValue.trim()" class="post-edit-save-note" aria-label="Post-edit starting point">Starting point:
             {{ origin?.type === 'candidate' ? origin.candidate_label : origin?.type === 'manual' ? 'manual entry' : 'not recorded' }}.
         </p>
-        <p class="post-edit-save-note">Included when you download annotations. Shared across this clip’s translation candidates.</p>
         <details class="post-edit-comparison">
             <summary>Compare all translations</summary>
             <div class="post-edit-candidates">
