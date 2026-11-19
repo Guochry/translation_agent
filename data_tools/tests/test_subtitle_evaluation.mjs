@@ -2,7 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import { cloneSubtitleData as clone, validateSubtitleDataset, restoreSubtitleAnnotations, resetSubtitleClip,
-    subtitleClipRated, subtitleCandidateRated, subtitleMediaUrl } from '../../src/assets/js/subtitle-util.js';
+    subtitleClipRated, subtitleCandidateRated, subtitleMediaUrl, updateSubtitlePostEdit, startSubtitlePostEdit } from '../../src/assets/js/subtitle-util.js';
 import { labelRegionSpan } from '../../src/assets/js/manga-span-util.js';
 const data = JSON.parse(fs.readFileSync(new URL('../../public/data/demo/subtitle_multilingual.json', import.meta.url)));
 const languages = ['en', 'vi', 'ka', 'ar', 'hi', 'ru'];
@@ -168,4 +168,37 @@ test('post-edits are shared per clip/language, optional, restored independently,
     assert.equal(subtitleClipRated(rated), true);
     rated.post_edit = 'Improved wording';
     assert.equal(subtitleClipRated(rated), true);
+});
+
+test('post-edit starting points track candidate ID/label or manual entry, survive edits/imports, and clear on reset', () => {
+    const original = clone(data.find(h => h.language === 'en'));
+    const index = original.candidates.findIndex(c => c.id === 'human_reference');
+    const label = `Translation ${String.fromCharCode(65 + index)}`;
+    const started = startSubtitlePostEdit(original, 'human_reference');
+    assert.deepEqual(started.post_edit_origin, { type: 'candidate', candidate_id: 'human_reference', candidate_label: label });
+    assert.equal(started.post_edit, original.candidates[index].translation_regions[0].target);
+    assert.equal(original.post_edit, '');
+    assert.equal(original.post_edit_origin, null);
+    const edited = updateSubtitlePostEdit(started, started.post_edit + ' Improved.');
+    assert.deepEqual(edited.post_edit_origin, started.post_edit_origin);
+    assert.equal(startSubtitlePostEdit(edited, 'gpt'), edited);
+    const [restored] = restoreSubtitleAnnotations(data, [edited]);
+    assert.deepEqual(restored.post_edit_origin, started.post_edit_origin);
+    assert.equal(updateSubtitlePostEdit(edited, '').post_edit_origin, null);
+    assert.equal(resetSubtitleClip(edited).post_edit_origin, null);
+    const manual = updateSubtitlePostEdit(original, 'Written or pasted directly');
+    assert.deepEqual(manual.post_edit_origin, { type: 'manual' });
+    assert.deepEqual(restoreSubtitleAnnotations(data, [manual])[0].post_edit_origin, { type: 'manual' });
+    const legacy = clone(edited); delete legacy.post_edit_origin;
+    assert.deepEqual(restoreSubtitleAnnotations(data, [legacy])[0].post_edit_origin, { type: 'unknown' });
+    assert.deepEqual(updateSubtitlePostEdit(legacy, 'Updated legacy draft').post_edit_origin, { type: 'unknown' });
+    for (const origin of [
+        { type: 'candidate', candidate_id: 'missing', candidate_label: label },
+        { type: 'candidate', candidate_id: 'human_reference', candidate_label: 'wrong label' },
+        { type: 'unsupported' },
+    ]) {
+        const bad = { ...edited, post_edit_origin: origin };
+        assert.throws(() => restoreSubtitleAnnotations(data, [bad]), /starting point/);
+        assert.throws(() => validateSubtitleDataset([bad], ['en']), /starting point/);
+    }
 });

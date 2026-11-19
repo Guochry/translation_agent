@@ -1,12 +1,12 @@
 <script setup>
 import { nextTick, ref } from 'vue';
-const props = defineProps({ modelValue: { type: String, default: '' }, language: String, languageLabel: String, candidates: Array });
-const emit = defineEmits(['update:modelValue']);
+const props = defineProps({ modelValue: { type: String, default: '' }, origin: Object, language: String, languageLabel: String, candidates: Array });
+const emit = defineEmits(['update:modelValue', 'start-from']);
 const editor = ref(null);
 const candidateText = candidate => (candidate.translation_regions || []).map(region => region.target).join('\n');
 function startFrom(candidate) {
     if (props.modelValue.trim() || candidate.available === false) return;
-    emit('update:modelValue', candidateText(candidate));
+    emit('start-from', candidate.id);
     nextTick(() => { editor.value?.focus(); const end = editor.value?.value.length || 0; editor.value?.setSelectionRange(end, end); });
 }
 </script>
@@ -19,6 +19,9 @@ function startFrom(candidate) {
                 aria-label="Post-edited translation" placeholder="Write your improved translation here…"
                 @input="emit('update:modelValue', $event.target.value)" />
         </label>
+        <p v-if="modelValue.trim()" class="post-edit-save-note" aria-label="Post-edit starting point">Starting point:
+            {{ origin?.type === 'candidate' ? origin.candidate_label : origin?.type === 'manual' ? 'manual entry' : 'not recorded' }}.
+        </p>
         <p class="post-edit-save-note">Included when you download annotations. Shared across this clip’s translation candidates.</p>
         <details class="post-edit-comparison">
             <summary>Compare all translations</summary>

@@ -687,7 +687,14 @@ and fix errors to write an improved reference translation. An expandable compari
 shows all candidate texts; **Use as starting draft** copies a candidate only while
 the draft is empty, protecting an existing edit from replacement. Post-edits are
 stored in the record's `post_edit` string, retained across navigation and language
-switches, and included in download/upload. Empty drafts in older exports are
+switches, and included in download/upload. `post_edit_origin` records the starting
+candidate as `{type: "candidate", candidate_id: "…", candidate_label: "Translation C"}`.
+Direct typing/pasting into an empty draft records `{type: "manual"}` (no tracked
+candidate start). Editing a candidate-based draft retains its original starting
+point; clearing or resetting the draft clears the origin. Legacy nonempty drafts
+without provenance are marked `{type: "unknown"}`, rather than guessing their
+source. Candidate IDs/labels are validated on upload, and model identities stay
+out of the annotation interface. Empty drafts in older exports are
 supported. Post-editing does not affect rating completion counts. **Reset clip**
 clears its draft along with its scores and highlights.
 

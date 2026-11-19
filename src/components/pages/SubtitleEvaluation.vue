@@ -7,7 +7,7 @@ import SubtitleVideo from '../hitbox/SubtitleVideo.vue';
 import GoogleTranslateBox from '../hitbox/GoogleTranslateBox.vue';
 import SubtitlePostEdit from '../hitbox/SubtitlePostEdit.vue';
 import { cloneSubtitleData, validateSubtitleDataset, restoreSubtitleAnnotations, resetSubtitleClip,
-    subtitleClipRated, subtitleCandidateRated, subtitleRegionRated, subtitleMediaUrl,
+    subtitleClipRated, subtitleCandidateRated, subtitleRegionRated, subtitleMediaUrl, updateSubtitlePostEdit, startSubtitlePostEdit,
     SUBTITLE_FIDELITY, SUBTITLE_PRESENTATION } from '../../assets/js/subtitle-util.js';
 
 const props = defineProps({ input_data: Array, config: Object });
@@ -215,8 +215,9 @@ onBeforeUnmount(() => {
                 </template>
             </aside>
         </div>
-        <SubtitlePostEdit :key="hit.id" :model-value="hit.post_edit || ''" :language="language" :language-label="languageName(language)"
-            :candidates="hit.candidates" @update:model-value="text => replaceHit({ ...hit, post_edit: text })" />
+        <SubtitlePostEdit :key="hit.id" :model-value="hit.post_edit || ''" :origin="hit.post_edit_origin" :language="language" :language-label="languageName(language)"
+            :candidates="hit.candidates" @update:model-value="text => replaceHit(updateSubtitlePostEdit(hit, text))"
+            @start-from="id => replaceHit(startSubtitlePostEdit(hit, id))" />
     </div>
 </template>
 

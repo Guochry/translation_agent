@@ -9,6 +9,34 @@ export const subtitleCandidateRated = candidate => candidate.available !== false
     && candidate.translation_regions.every(subtitleRegionRated);
 export const subtitleClipRated = hit => hit.candidates.some(c => c.available !== false) && hit.candidates.filter(c => c.available !== false).every(subtitleCandidateRated);
 
+function postEditOrigin(hit, text, origin) {
+    if (!text.trim()) return null;
+    // An older draft has no reliable starting-point information.
+    if (origin == null) return { type: 'unknown' };
+    if (origin.type === 'manual' || origin.type === 'unknown') return { type: origin.type };
+    if (origin.type === 'candidate') {
+        const index = hit.candidates.findIndex(candidate => candidate.id === origin.candidate_id && candidate.available !== false);
+        const label = `Translation ${String.fromCharCode(65 + index)}`;
+        if (index >= 0 && origin.candidate_label === label) return { type: 'candidate', candidate_id: origin.candidate_id, candidate_label: label };
+    }
+    throw new Error('Post-edit starting point does not match a translation candidate.');
+}
+
+export function updateSubtitlePostEdit(hit, text) {
+    if (typeof text !== 'string') throw new Error('Post-edit must be text.');
+    const origin = !(hit.post_edit || '').trim() ? { type: 'manual' } : hit.post_edit_origin;
+    return { ...hit, post_edit: text, post_edit_origin: postEditOrigin(hit, text, origin) };
+}
+
+export function startSubtitlePostEdit(hit, candidateId) {
+    if ((hit.post_edit || '').trim()) return hit;
+    const index = hit.candidates.findIndex(candidate => candidate.id === candidateId && candidate.available !== false);
+    if (index < 0) throw new Error('Translation candidate is unavailable.');
+    const text = hit.candidates[index].translation_regions.map(region => region.target).join('\n');
+    return { ...hit, post_edit: text, post_edit_origin: postEditOrigin(hit, text,
+        { type: 'candidate', candidate_id: candidateId, candidate_label: `Translation ${String.fromCharCode(65 + index)}` }) };
+}
+
 // Explicit immutable content signature; an upload restores annotations onto the
 // current dataset, never replacing its source, media URLs, timing, or model IDs.
 // English context is supplementary reference data, restored from the current
@@ -33,6 +61,7 @@ export function validateSubtitleDataset(data, languages) {
             || !Array.isArray(hit.candidates) || !hit.candidates.length) throw new Error('Invalid subtitle task or duplicate ID.');
         ids.add(hit.id);
         if (Object.hasOwn(hit, 'post_edit') && typeof hit.post_edit !== 'string') throw new Error('Post-edit must be text.');
+        if (Object.hasOwn(hit, 'post_edit_origin')) postEditOrigin(hit, hit.post_edit || '', hit.post_edit_origin);
         for (const field of ['context_before', 'context_after']) {
             if (!Array.isArray(hit[field + '_en']) || hit[field + '_en'].length !== hit[field].length
                 || hit[field + '_en'].some(line => typeof line !== 'string' || !line.trim()))
@@ -76,6 +105,7 @@ export function restoreSubtitleAnnotations(canonical, saved) {
         const result = cloneSubtitleData(expected);
         if (Object.hasOwn(hit, 'post_edit') && typeof hit.post_edit !== 'string') throw new Error('Post-edit must be text.');
         result.post_edit = hit.post_edit ?? '';
+        result.post_edit_origin = postEditOrigin(expected, result.post_edit, hit.post_edit_origin);
         result.bookmark = hit.bookmark === true;
         result.comment = typeof hit.comment === 'string' ? hit.comment : '';
         for (let i = 0; i < result.candidates.length; i++) {
@@ -108,6 +138,7 @@ export function restoreSubtitleAnnotations(canonical, saved) {
 export function resetSubtitleClip(hit) {
     const result = cloneSubtitleData(hit);
     result.post_edit = '';
+    result.post_edit_origin = null;
     for (const candidate of result.candidates) {
         delete candidate.fidelity_score;
         delete candidate.presentation_score;
