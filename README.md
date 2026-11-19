@@ -663,6 +663,33 @@ Open [Subtitle Evaluation](https://guochry.github.io/translation_agent/?i=templa
 For local preview, run `npm run dev -- --host 0.0.0.0`, then open
 `http://localhost:5173/?i=templates/demo/subtitle_multilingual.yml&d=data/demo/subtitle_multilingual.json`.
 
+The annotation task is split into three chronological batches per language:
+
+- [Part 1 — 60 clips (positions 1–60)](https://guochry.github.io/translation_agent/?i=templates/demo/subtitle_multilingual_part1.yml&d=data/demo/subtitle_multilingual_part1.json)
+- [Part 2 — 60 clips (positions 61–120)](https://guochry.github.io/translation_agent/?i=templates/demo/subtitle_multilingual_part2.yml&d=data/demo/subtitle_multilingual_part2.json)
+- [Part 3 — 57 clips (positions 121–177)](https://guochry.github.io/translation_agent/?i=templates/demo/subtitle_multilingual_part3.yml&d=data/demo/subtitle_multilingual_part3.json)
+
+Order follows each extracted clip's `video_interval_ms.start` in the original
+movie, not the curated dataset order or subtitle numbering. The full task is also
+chronological. Each batch uses the same clip sequence in all six languages;
+Q/E navigation and progress counts stay within that batch. Candidate IDs/order,
+ratings, highlights, and post-edit provenance are retained. Downloads include the
+part number in the filename. Per-record metadata stores `movie_interval_ms`,
+`movie_order_index`, `original_task_index`, and batch identity for later analysis.
+The first two batches each contain 360 clip/language records; the last has 342.
+
+After refreshing the full dataset or template, regenerate the batches:
+
+```bash
+python data_tools/split_subtitle_evaluation.py
+```
+
+This copies JSON/config only; all parts share the same hosted videos. Once movie
+timestamps are present in the packaged data, splitting needs no source dataset.
+For older exports, `--source-records` supplies the original dataset containing
+`video_interval_ms`. The full preparation script now generates chronological data
+and records these movie timestamps directly.
+
 The Human reference panel on the left shows English references. Vietnamese tasks
 show both Vietnamese and English references, with Vietnamese first. English
 dialogue context follows the references. Chinese source text appears in

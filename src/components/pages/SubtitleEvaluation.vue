@@ -73,7 +73,7 @@ function download() {
     const url = URL.createObjectURL(blob);
     const anchor = document.createElement('a');
     anchor.href = url;
-    anchor.download = `subtitle-annotations-${new Date().toISOString().replace(/[:.]/g, '-')}.json`;
+    anchor.download = `subtitle-annotations${props.config.evaluation_batch ? '-' + props.config.evaluation_batch : ''}-${new Date().toISOString().replace(/[:.]/g, '-')}.json`;
     anchor.click();
     setTimeout(() => URL.revokeObjectURL(url), 1000);
     dirty.value = false;
@@ -137,7 +137,7 @@ onBeforeUnmount(() => {
                 </button>
             </div>
         </section>
-        <h1>Multilingual Subtitle Evaluation</h1>
+        <h1>{{ config.evaluation_title || 'Multilingual Subtitle Evaluation' }}</h1>
         <VueMarkdown class="subtitle-instructions" :source="config.instructions || ''" />
         <p v-if="!media(hit.original_video)" class="hosting-notice" role="status">Video hosting is pending. Use the local preview to watch and rate the videos.</p>
         <nav class="subtitle-navigation" aria-label="Clip navigation">

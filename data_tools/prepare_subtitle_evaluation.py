@@ -149,6 +149,8 @@ def prepare(dataset, runs, output, media_dir, mode='link', workers=12, context_s
     records = json.loads(dataset.read_text())
     if len({r['source_record_id'] for r in records}) != len(records):
         raise ValueError('Duplicate source record IDs')
+    original_order = {str(record['source_record_id']): index + 1 for index, record in enumerate(records)}
+    records.sort(key=lambda record: (record['video_interval_ms']['start'], record['video_interval_ms']['end'], str(record['source_record_id'])))
     contexts = english_context(records, json.loads(context_source.read_text()))
     # Source media location is declared by the run config, never guessed by name.
     config = json.loads((runs / 'gpt/config.json').read_text())
@@ -174,6 +176,8 @@ def prepare(dataset, runs, output, media_dir, mode='link', workers=12, context_s
                 'bookmark': False, 'post_edit': '', 'post_edit_origin': None, 'candidates': candidates,
                 'metadata': {'original_video_bytes': size, 'source_record_id': record['source_record_id'],
                              'source_dataset': dataset.name, 'source_interval_ms': record.get('subtitle_interval_ms'),
+                             'movie_interval_ms': record['video_interval_ms'], 'movie_order_index': index + 1,
+                             'original_task_index': original_order[rid],
                              'candidate_order_seed': 'subtitle-v1', 'source_sha256': hashlib.sha256(record['zh_CN'].encode()).hexdigest()}}
     pairs = [(language, index, record) for language in LANGUAGES for index, record in enumerate(records)]
     with ThreadPoolExecutor(max_workers=workers) as pool:

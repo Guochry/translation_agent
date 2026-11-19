@@ -81,7 +81,7 @@ test('video URLs use local media in dev and an external base in production', () 
     const path = data[0].original_video;
     assert.equal(subtitleMediaUrl(path, { dev: true }), '/' + path);
     assert.equal(subtitleMediaUrl(path), '');
-    assert.equal(subtitleMediaUrl(path, { mediaBase: 'https://example.org/media' }), 'https://example.org/media/original/430711.mp4');
+    assert.equal(subtitleMediaUrl(path, { mediaBase: 'https://example.org/media' }), `https://example.org/media/original/${data[0].clip_id}.mp4`);
     assert.equal(subtitleMediaUrl('https://example.org/video.mp4'), 'https://example.org/video.mp4');
 });
 
@@ -104,7 +104,7 @@ test('English reference context is complete and older annotation exports retain 
     saved.context_before_en = ['Changed text in upload'];
     assert.deepEqual(restoreSubtitleAnnotations(data, [saved])[0].context_before_en, data[0].context_before_en);
     const incomplete = clone(data);
-    incomplete[0].context_before_en.pop();
+    incomplete[0].context_before_en.push('unexpected context');
     assert.throws(() => validateSubtitleDataset(incomplete, languages), /English dialogue context/);
 });
 

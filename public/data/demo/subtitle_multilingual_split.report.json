@@ -1,0 +1,53 @@
+{
+  "order_basis": "video_interval_ms.start in the original movie",
+  "clips_per_language": 177,
+  "languages": [
+    "en",
+    "vi",
+    "ka",
+    "ar",
+    "hi",
+    "ru"
+  ],
+  "parts": [
+    {
+      "part": 1,
+      "clips_per_language": 60,
+      "movie_order_range": [
+        1,
+        60
+      ],
+      "first_clip_id": "430544",
+      "last_clip_id": "430689",
+      "movie_start_ms": 63377.0,
+      "movie_end_ms": 1380245.644,
+      "task_records": 360
+    },
+    {
+      "part": 2,
+      "clips_per_language": 60,
+      "movie_order_range": [
+        61,
+        120
+      ],
+      "first_clip_id": "430690",
+      "last_clip_id": "430793",
+      "movie_start_ms": 1380453.804,
+      "movie_end_ms": 2723324.028,
+      "task_records": 360
+    },
+    {
+      "part": 3,
+      "clips_per_language": 57,
+      "movie_order_range": [
+        121,
+        177
+      ],
+      "first_clip_id": "430799",
+      "last_clip_id": "430933",
+      "movie_start_ms": 2755296.971,
+      "movie_end_ms": 5033359.902,
+      "task_records": 342
+    }
+  ]
+}

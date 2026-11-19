@@ -1,0 +1,28 @@
+template_name: demo_subtitle_multilingual_part1
+template_label: Multilingual Subtitle Evaluation — Part 1 (clips 1–60)
+template_description: Compare five subtitle systems, plus human-reference renders for English and Vietnamese.
+default_data_link: data/demo/subtitle_multilingual_part1.json
+subtitle_evaluation: true
+default_language: en
+# Videos are hosted separately from GitHub Pages; local dev uses the prepared media links.
+subtitle_media_base: https://huggingface.co/datasets/geyang627/subtitle-translation-evaluation/resolve/e0731a937af24b26173a59636d3786b6253f32a6/
+subtitle_media_prefix: evaluation_assets/subtitle_evaluation/
+languages:
+  - { code: ar, label: Arabic, native_label: العربية }
+  - { code: en, label: English, native_label: English }
+  - { code: hi, label: Hindi, native_label: हिन्दी }
+  - { code: ka, label: Georgian, native_label: ქართული }
+  - { code: ru, label: Russian, native_label: Русский }
+  - { code: vi, label: Vietnamese, native_label: Tiếng Việt }
+instructions: |
+  Compare each translation with the Chinese dialogue. Switch translation tabs to rate each independently. Scores: **0–100, steps of 5** (0 = very poor; 60 = acceptable/pass; 100 = excellent). Leave unfinished scores blank.
+
+  - **Spans:** Choose a label, then highlight translated words. **Strength** = effective, meaning-preserving creative choices, such as idioms, wordplay, or cultural references. **Error** = inaccurate or unnatural wording. **Okay** = acceptable; leave it unmarked.
+  - **Fidelity:** Meaning, accuracy, completeness, style, tone, and naturalness compared with the Chinese source, and how well the translation fits the dialogue, action, and situation in the video clip.
+  - **Presentation:** How comfortably can the subtitle be read during playback? Consider text length, reading time, line breaks, and how naturally it follows the speech.
+  - **Human reference:** Use it to understand the general meaning; it may contain errors. If something seems odd, use the Google Translate helper for another interpretation.
+  - **Post-edit (optional):** After reviewing all translations, combine strengths and fix errors to write a better translation below. Keep it faithful to the clip and readable as a subtitle.
+  - Before closing, **download your annotations**. To resume, **upload that downloaded file**.
+
+evaluation_title: "Multilingual Subtitle Evaluation — Part 1 (clips 1–60)"
+evaluation_batch: part1
