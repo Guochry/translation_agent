@@ -1,6 +1,6 @@
 <script setup>
 import { nextTick, ref } from 'vue';
-const props = defineProps({ modelValue: { type: String, default: '' }, language: String, languageLabel: String, source: String, candidates: Array });
+const props = defineProps({ modelValue: { type: String, default: '' }, language: String, languageLabel: String, candidates: Array });
 const emit = defineEmits(['update:modelValue']);
 const editor = ref(null);
 const candidateText = candidate => (candidate.translation_regions || []).map(region => region.target).join('\n');
@@ -22,7 +22,6 @@ function startFrom(candidate) {
         <p class="post-edit-save-note">Included when you download annotations. Shared across this clip’s translation candidates.</p>
         <details class="post-edit-comparison">
             <summary>Compare all translations</summary>
-            <div class="post-edit-source"><strong>Chinese source</strong><p lang="zh">{{ source }}</p></div>
             <div class="post-edit-candidates">
                 <article v-for="(candidate, index) in candidates || []" :key="candidate.id">
                     <h3>Translation {{ String.fromCharCode(65 + index) }}</h3>
@@ -46,7 +45,6 @@ p { line-height: 1.5; margin: .5rem 0 .8rem; }
 textarea { width: 100%; box-sizing: border-box; resize: vertical; min-height: 105px; padding: .75rem; border: 1px solid #b7bec9; border-radius: 4px; font: inherit; font-weight: normal; line-height: 1.5; color: inherit; background: white; }
 .post-edit-save-note { font-size: .8rem; color: #626b78; }
 summary { cursor: pointer; font-size: .9rem; font-weight: 600; padding: .25rem 0; }
-.post-edit-source { margin-top: .75rem; font-size: .85rem; }
 .post-edit-candidates { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(220px, 100%), 1fr)); gap: .75rem; max-height: 350px; overflow: auto; }
 article { min-width: 0; padding: .8rem; border: 1px solid #dbe0e8; border-radius: 4px; background: white; }
 h3 { margin: 0 0 .5rem; font-size: .9rem; }

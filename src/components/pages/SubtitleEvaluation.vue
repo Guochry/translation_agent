@@ -216,7 +216,7 @@ onBeforeUnmount(() => {
             </aside>
         </div>
         <SubtitlePostEdit :key="hit.id" :model-value="hit.post_edit || ''" :language="language" :language-label="languageName(language)"
-            :source="hit.source" :candidates="hit.candidates" @update:model-value="text => replaceHit({ ...hit, post_edit: text })" />
+            :candidates="hit.candidates" @update:model-value="text => replaceHit({ ...hit, post_edit: text })" />
     </div>
 </template>
 
