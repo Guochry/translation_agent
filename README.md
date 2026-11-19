@@ -669,8 +669,13 @@ dialogue context follows the references. Chinese source text appears in
 each subtitle's annotation card. The selected rendered video occupies the center.
 The right panel contains Chinese source, its translation, Strength/Error
 highlighting, and one **Fidelity / Presentation** score pair. There are no separate
-clip scores or numbered heading for a single subtitle. A replay button and native
-video controls support playback, seeking, audio, and fullscreen. Press **A** / **D**
+clip scores or numbered heading for a single subtitle. A separate playback bar below the video
+provides play/pause, replay, seeking, time, volume, mute, and fullscreen. Fullscreen
+also keeps the controls beneath the video, leaving the image and subtitles clear.
+Each selected video automatically plays once, with no looping; scoring edits do
+not restart it. If the browser blocks autoplay with sound, playback starts muted
+and offers Unmute. Audio preferences carry across clips and candidates during the
+session. Press **A** / **D**
 for the previous / next candidate, wrapping at the ends. Press **Q** / **E**
 for the previous / next video, stopping at the first and last clip. Video
 navigation selects Translation A, matching the navigation buttons. Shortcuts

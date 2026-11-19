@@ -23,6 +23,8 @@ const message = ref('');
 const uploadError = ref('');
 const dirty = ref(false);
 const translatedPlayer = ref(null);
+const videoMuted = ref(false);
+const videoVolume = ref(1);
 const uploadInput = ref(null);
 const hits = computed(() => rows.value.filter(hit => hit.language === language.value));
 const hit = computed(() => hits.value[index.value]);
@@ -192,9 +194,10 @@ onBeforeUnmount(() => {
             <section class="translated-column" id="subtitle-candidate-panel" role="tabpanel" :aria-labelledby="`subtitle-tab-${activeCandidate}`">
                 <h3>{{ candidateLabel }} · {{ languageName(language) }}</h3>
                 <SubtitleVideo v-if="candidate.available" :key="`${hit.id}-${candidate.id}`" ref="translatedPlayer"
-                    :src="media(candidate.translated_video)" :label="`${candidateLabel} rendered video`" />
+                    :src="media(candidate.translated_video)" :label="`${candidateLabel} rendered video`"
+                    v-model:muted="videoMuted" v-model:volume="videoVolume" />
                 <p v-else class="unavailable">This translation is unavailable for this clip. Continue with the other candidates.</p>
-                <p class="player-hint" v-if="candidate.available">Use fullscreen to inspect the subtitles. Replay a subtitle from its card.</p>
+                <p class="player-hint" v-if="candidate.available">Plays once automatically. Playback controls stay below the video.</p>
             </section>
             <aside class="annotation-column" :key="`${hit.id}-${candidate.id}`" aria-label="Subtitle annotations">
                 <template v-if="candidate.available">
