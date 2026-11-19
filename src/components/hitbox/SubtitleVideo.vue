@@ -44,15 +44,9 @@ async function autoplayOnce() {
     autoplayAttempted = true;
     const player = video.value;
     try { await player.play(); }
-    catch (error) {
+    catch {
         if (!currentPlayer(player)) return;
-        if (error.name === 'NotAllowedError' && !player.muted) {
-            player.muted = true;
-            syncAudio();
-            try { await player.play(); status.value = 'Autoplay started muted. Use Unmute for sound.'; return; }
-            catch { /* A Play button remains available if the browser blocks autoplay. */ }
-        }
-        if (currentPlayer(player)) status.value = 'Press Play to start the video.';
+        status.value = player.muted ? 'Press Play to start the video.' : 'Press Play to start the video with sound.';
     }
 }
 function metadataLoaded() { syncTime(); syncAudio(); autoplayOnce(); }
