@@ -67,7 +67,7 @@ export default {
             <h2>{{ hit.metadata?.book_title || 'Manga comparison' }}</h2>
             <span>Page {{ hit.metadata?.page_index }}</span>
         </header>
-        <p v-if="config?.manga_multilingual" class="candidate-shortcuts">Switch translations: <kbd>A</kbd> previous · <kbd>D</kbd> next.</p>
+        <p v-if="config?.manga_multilingual" class="candidate-shortcuts">Translations: <kbd>A</kbd> previous · <kbd>D</kbd> next. Pages: <kbd>Q</kbd> previous · <kbd>E</kbd> next.</p>
         <MangaCandidateTabs v-if="many_candidates" :candidates="candidates" :active="active" :uid="uid" @select="active = $event" />
         <div class="pair-workspace" :class="{ 'many-candidates': many_candidates }">
             <details class="pair-references" :open="many_candidates || !config?.manga_multilingual">

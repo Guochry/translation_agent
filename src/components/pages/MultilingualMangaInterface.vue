@@ -16,7 +16,26 @@ export default {
         languages() { return this.config.languages || [] }
     },
     watch: { input_data() { this.consume_data() } },
+    mounted() { window.addEventListener('keydown', this.switch_page_shortcut) },
+    beforeUnmount() { window.removeEventListener('keydown', this.switch_page_shortcut) },
     methods: {
+        switch_page_shortcut(event) {
+            if (!this.config.manga_comparison || this.data_error || event.defaultPrevented || event.isComposing ||
+                event.repeat || event.ctrlKey || event.metaKey || event.altKey) return;
+            const key = event.key.toLowerCase();
+            if (key !== 'q' && key !== 'e') return;
+            const target = event.target instanceof Element ? event.target : document.activeElement;
+            if (target?.closest('input, textarea, select') || target?.isContentEditable) return;
+            const count = this.results[this.active_language]?.length || 0;
+            if (!count) return;
+            event.preventDefault();
+            const next = Math.max(1, Math.min(count, this.current_hit + (key === 'q' ? -1 : 1)));
+            if (next !== this.current_hit) {
+                const tabFocused = !!target?.closest('.candidate-tabs');
+                this.set_hit(next);
+                if (tabFocused) this.$nextTick(() => this.$el.querySelector('.candidate-tabs [aria-selected="true"]')?.focus());
+            }
+        },
         clone(value) { return JSON.parse(JSON.stringify(value)) },
         consume_data() {
             try {
