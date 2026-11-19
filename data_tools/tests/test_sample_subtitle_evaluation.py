@@ -23,7 +23,7 @@ class SubtitleSamplingTests(unittest.TestCase):
         self.assertNotEqual(report['selected_clip_ids_in_movie_order'], module.sample_tasks(self.pool, seed=1)[1]['selected_clip_ids_in_movie_order'])
         self.assertEqual([s['selected_count'] for s in report['strata']], [16, 24, 40])
         self.assertEqual(len(selected), 480)
-        self.assertTrue(all(module.chinese_character_count(row['source']) >= 8 for row in selected))
+        self.assertTrue(all(module.chinese_character_count(row['source']) >= 10 for row in selected))
         reference_ids = report['selected_clip_ids_in_movie_order']
         self.assertEqual(len(set(reference_ids)), 80)
         pool_by_id = {row['id']: row for row in self.pool}
@@ -52,7 +52,7 @@ class SubtitleSamplingTests(unittest.TestCase):
     def test_minimum_counts_chinese_letters_not_spaces_or_punctuation(self):
         self.assertEqual(module.chinese_character_count('你好世界欢迎大家， hello 123！'), 8)
         self.assertEqual(module.chinese_character_count('七个汉字示例呀！！！ abc 123'), 7)
-        sources = ['七个汉字示例呀！！！ abc 123', '你好世界欢迎大家', '一' * 9, '一' * 10, '一' * 11, '一' * 12]
+        sources = ['一' * 9 + '！！！ abc 123', '一' * 10, '一' * 11, '一' * 12, '一' * 13, '一' * 14]
         tasks = [{'id': f'{lang}-{i}', 'language': lang, 'clip_id': str(i), 'source': source,
                   'metadata': {'movie_interval_ms': {'start': i*100, 'end': i*100+50}}}
                  for lang in ['en', 'vi'] for i, source in enumerate(sources)]
@@ -60,7 +60,7 @@ class SubtitleSamplingTests(unittest.TestCase):
         self.assertEqual(report['eligible_clips_per_language'], 5)
         self.assertNotIn('0', report['selected_clip_ids_in_movie_order'])
         self.assertIn('1', report['selected_clip_ids_in_movie_order'])
-        self.assertTrue(all(row['metadata']['source_chinese_characters'] >= 8 for row in selected))
+        self.assertTrue(all(row['metadata']['source_chinese_characters'] >= 10 for row in selected))
 
     def test_published_selection_matches_seeded_sampler(self):
         expected, report = module.sample_tasks(self.pool)

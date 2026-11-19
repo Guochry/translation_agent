@@ -16,7 +16,7 @@ def chinese_character_count(text):
     return sum(unicodedata.name(character, '').startswith(('CJK UNIFIED IDEOGRAPH', 'CJK COMPATIBILITY IDEOGRAPH')) for character in text)
 
 
-def sample_tasks(tasks, count=80, seed=20261119, minimum_chinese_characters=8):
+def sample_tasks(tasks, count=80, seed=20261119, minimum_chinese_characters=10):
     groups, ids = {}, set()
     if not isinstance(tasks, list) or not tasks:
         raise ValueError('Expected a nonempty task pool')
@@ -81,7 +81,7 @@ def sample_tasks(tasks, count=80, seed=20261119, minimum_chinese_characters=8):
     return output, report
 
 
-def prepare(pool=POOL, count=80, seed=20261119, root=ROOT, minimum_chinese_characters=8):
+def prepare(pool=POOL, count=80, seed=20261119, root=ROOT, minimum_chinese_characters=10):
     root = Path(root)
     data, report = sample_tasks(json.loads(Path(pool).read_text()), count, seed, minimum_chinese_characters)
     (root / 'public/data/demo/subtitle_multilingual.json').write_text(json.dumps(data, ensure_ascii=False, indent=2) + '\n')
@@ -95,6 +95,6 @@ if __name__ == '__main__':
     parser.add_argument('--pool', type=Path, default=POOL)
     parser.add_argument('--count', type=int, default=80)
     parser.add_argument('--seed', type=int, default=20261119)
-    parser.add_argument('--minimum-chinese-characters', type=int, default=8)
+    parser.add_argument('--minimum-chinese-characters', type=int, default=10)
     args = parser.parse_args()
     prepare(args.pool, args.count, args.seed, minimum_chinese_characters=args.minimum_chinese_characters)
