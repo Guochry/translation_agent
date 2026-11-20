@@ -19,7 +19,16 @@ instructions: |
 
   - **Spans.** Mark the smallest useful phrase. **Strength** rewards creative wording such as idioms, wordplay, or cultural references that preserve meaning in context. **Error** marks inaccurate or materially unnatural wording. Leave acceptable text unmarked.
   - **Fidelity.** Judge meaning, accuracy, completeness, style, tone, and fit with the scene. Check who does what, negation, and idioms. Concise wording and other plausible readings can earn full credit.
-  - **Fidelity scores.** **0** = no usable meaning. **5–25** = fragments survive. **30–55** = some meaning survives and needs correction. **60–75** = usable with room to improve. **80–95** = accurate with at most minor issues. **100** = fully accurate and natural in context.
+
+    | Fidelity score | Meaning |
+    | --- | --- |
+    | 0 | No usable meaning |
+    | 5–25 | Only fragments survive |
+    | 30–55 | Some meaning survives and needs correction |
+    | 60–75 | Usable with room to improve |
+    | 80–95 | Accurate with at most minor issues |
+    | 100 | Fully accurate and natural in context |
+
   - **Presentation.** Judge length, reading time, line breaks, and sync with speech during normal playback. **60** = readable without a necessary fix.
   - **References and issues.** Use the human reference and Google Translate as cross-checks. Use **Issue or uncertainty** for missing meaning, unresolved source meaning, or text that differs from the video. Score the subtitle viewers see when you can assess it. Leave any score you cannot assess blank.
   - **Post-edit (optional).** Finish your candidate ratings first. Then combine strengths and fix errors to write a faithful, readable subtitle.
