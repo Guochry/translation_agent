@@ -23,8 +23,8 @@ instructions: |
     | Fidelity score | Meaning |
     | --- | --- |
     | 0 | No usable meaning |
-    | 5–25 | Only fragments survive |
-    | 30–55 | Some meaning survives and needs correction |
+    | 5–25 | Some words or the topic are recognizable. The main message is lost. |
+    | 30–55 | The main message is recognizable. A key detail is wrong or missing. |
     | 60–75 | Usable with room to improve |
     | 80–95 | Accurate with at most minor issues |
     | 100 | Fully accurate and natural in context |
