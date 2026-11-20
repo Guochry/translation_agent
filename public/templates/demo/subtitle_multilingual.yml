@@ -24,9 +24,9 @@ instructions: |
     | --- | --- |
     | 0 | No usable meaning |
     | 5–25 | Some words or the topic are recognizable. The main message is lost. |
-    | 30–55 | The main message is recognizable. A key detail is wrong or missing. |
-    | 60–75 | Usable with room to improve |
-    | 80–95 | Accurate with at most minor issues |
+    | 30–55 | The main message is recognizable. A meaning or tone error needs fixing. |
+    | 60–75 | Meaning and tone come through. The wording is noticeably stiff or clumsy. |
+    | 80–95 | Accurate and natural. Only small wording or style tweaks would help. |
     | 100 | Fully accurate and natural in context |
 
   - **Presentation.** Judge length, reading time, line breaks, and sync with speech during normal playback. **60** = readable without a necessary fix.
