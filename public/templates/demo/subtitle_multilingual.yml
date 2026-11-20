@@ -20,24 +20,15 @@ instructions: |
   - **Spans.** Mark the smallest useful phrase. **Strength** rewards creative wording such as idioms, wordplay, or cultural references that preserve meaning in context. **Error** marks inaccurate or materially unnatural wording. Leave acceptable text unmarked.
   - **Fidelity.** Judge meaning, accuracy, completeness, style, tone, and fit with the scene. Check who does what, negation, and idioms. Concise wording and other plausible readings can earn full credit.
 
-    | Fidelity score | Meaning |
-    | --- | --- |
-    | 0 | No usable meaning |
-    | 5–25 | Topic or details survive, main message lost |
-    | 30–55 | Main message clear, meaning or tone needs correction |
-    | 60–75 | Faithful and usable, noticeably awkward |
-    | 80–95 | Accurate and natural, minor polish needed |
-    | 100 | Fully accurate and natural in context |
+    | 0 | 5–25 | 30–55 | 60–75 | 80–95 | 100 |
+    | --- | --- | --- | --- | --- | --- |
+    | No usable meaning | Topic or details survive, main message lost | Main message clear, meaning or tone needs correction | Faithful and usable, noticeably awkward | Accurate and natural, minor polish needed | Fully accurate and natural in context |
 
   - **Presentation.** At normal playback speed, judge length, reading time, line breaks, and sync with speech.
 
-    | Presentation score | Readability |
-    | --- | --- |
-    | 0 | Unreadable during playback |
-    | 5–55 | A reading or timing problem needs fixing |
-    | 60–75 | Readable at normal speed, takes some effort |
-    | 80–95 | Easy to read, minor polish needed |
-    | 100 | Effortless to read and well timed |
+    | 0 | 5–55 | 60–75 | 80–95 | 100 |
+    | --- | --- | --- | --- | --- |
+    | Unreadable during playback | A reading or timing problem needs fixing | Readable at normal speed, takes some effort | Easy to read, minor polish needed | Effortless to read and well timed |
 
   - **Human reference.** Use it to understand the dialogue. It can contain errors, and a candidate may be better. Use Google Translate for another interpretation if something seems off.
   - **Post-edit (optional).** Finish your candidate ratings first. Then combine strengths and fix errors to write a faithful, readable subtitle.

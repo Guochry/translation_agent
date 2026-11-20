@@ -261,11 +261,11 @@ small { color: #586270; font-weight: 400; font-size: .78rem; }
 .subtitle-instructions { line-height: 1.5; font-size: .92rem; }
 .subtitle-instructions :deep(ul) { padding-left: 1.3rem; }
 .subtitle-instructions :deep(li) { margin: .25rem 0; }
-.subtitle-instructions :deep(table) { border-collapse: collapse; margin: .4rem 0; }
+.subtitle-instructions :deep(table) { display: block; overflow-x: auto; border-collapse: collapse; margin: .4rem 0; }
 .subtitle-instructions :deep(th),
-.subtitle-instructions :deep(td) { border-bottom: 1px solid #dbe0e8; padding: .15rem .5rem; text-align: left; }
-.subtitle-instructions :deep(th:first-child),
-.subtitle-instructions :deep(td:first-child) { white-space: nowrap; }
+.subtitle-instructions :deep(td) { border-bottom: 1px solid #dbe0e8; padding: .15rem .5rem; text-align: left; vertical-align: top; }
+.subtitle-instructions :deep(th) { white-space: nowrap; }
+.subtitle-instructions :deep(td) { min-width: 7rem; }
 .subtitle-navigation { justify-content: space-between; padding: 1rem 0; border-top: 1px solid #d8dde4; margin-top: 1.4rem; }
 .progress-count { color: #586270; font-size: .8rem; margin-left: .5rem; }
 .clip-heading { justify-content: space-between; margin: .8rem 0 1rem; }
