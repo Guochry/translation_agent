@@ -85,6 +85,9 @@ test('issue flags stay with the candidate on upload, accept older exports, and c
     assert.deepEqual(restored.candidates[1].annotation_issue, issue);
     assert.equal(restored.candidates[0].annotation_issue, null);
     assert.equal(resetSubtitleClip(restored).candidates[1].annotation_issue, null);
+    saved.candidates[1].annotation_issue = { category: 'render_mismatch', note: 'The last line is different.' };
+    assert.deepEqual(restoreSubtitleAnnotations(data, [saved])[0].candidates[1].annotation_issue,
+        { category: 'other', note: 'Text differs from video. The last line is different.' });
     saved.candidates[1].annotation_issue = { ...issue, category: 'unknown' };
     assert.throws(() => restoreSubtitleAnnotations(data, [saved]), /Invalid subtitle issue flag/);
 });

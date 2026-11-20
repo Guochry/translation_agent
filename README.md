@@ -711,7 +711,7 @@ The right panel contains Chinese source, its translation, Strength/Error
 highlighting, and one **Fidelity / Presentation** score pair.
 The optional **Flag a problem** control saves a category and short note per
 candidate in `annotation_issue` in the annotation JSON. It supports omissions,
-unclear source meaning, text/video mismatches, and other issues.
+unclear source meaning, and other issues.
 There are no separate clip scores or numbered heading for a single subtitle.
 A separate playback bar below the video
 provides play/pause, replay, seeking, time, volume, mute, and fullscreen. Fullscreen

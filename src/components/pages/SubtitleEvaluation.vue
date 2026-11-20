@@ -217,7 +217,7 @@ onBeforeUnmount(() => {
                     </div>
                     <details class="subtitle-issue" :open="candidate.annotation_issue ? true : undefined">
                         <summary>Flag a problem <span v-if="candidate.annotation_issue">· Flagged</span><span v-else> (optional)</span></summary>
-                        <p>Use this for problems a highlight can’t show, such as missing meaning, unclear dialogue, or a mismatch between the text and video.</p>
+                        <p>Use this for problems a highlight can’t show, such as missing meaning or unclear dialogue.</p>
                         <label>
                             Issue type
                             <select :value="candidate.annotation_issue?.category || ''" @change="updateIssue($event.target.value)">

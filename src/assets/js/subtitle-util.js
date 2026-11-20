@@ -7,7 +7,6 @@ export const SUBTITLE_PRESENTATION = { name: 'presentation_score', label: 'Subti
 export const SUBTITLE_ISSUES = {
     omission: 'Missing meaning',
     uncertain_source: 'Unclear source meaning',
-    render_mismatch: 'Text differs from video',
     other: 'Other',
 };
 export const subtitleRegionRated = region => validSubtitleScore(region.quality_score) && validSubtitleScore(region.presentation_score);
@@ -120,7 +119,10 @@ export function restoreSubtitleAnnotations(canonical, saved) {
             delete target.fidelity_score;
             delete target.presentation_score;
             target.comment = typeof source.comment === 'string' ? source.comment : '';
-            const issue = source.annotation_issue;
+            const savedIssue = source.annotation_issue;
+            const issue = savedIssue?.category === 'render_mismatch' && typeof savedIssue.note === 'string'
+                ? { category: 'other', note: ['Text differs from video.', savedIssue.note].filter(Boolean).join(' ') }
+                : savedIssue;
             if (issue != null && (!Object.hasOwn(SUBTITLE_ISSUES, issue.category) || typeof issue.note !== 'string'))
                 throw new Error('Invalid subtitle issue flag.');
             target.annotation_issue = issue == null ? null : { category: issue.category, note: issue.note };
