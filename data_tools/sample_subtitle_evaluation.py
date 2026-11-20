@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Randomly select 80 clips favoring longer source text, then order by movie time."""
+"""Draw 80 clips favoring longer source text; retain the first 50 in movie order."""
 import argparse
 import copy
 import json
@@ -81,9 +81,25 @@ def sample_tasks(tasks, count=80, seed=20261119, minimum_chinese_characters=10):
     return output, report
 
 
-def prepare(pool=POOL, count=80, seed=20261119, root=ROOT, minimum_chinese_characters=10):
+def retain_first_tasks(data, report, count=50):
+    if not isinstance(count, int) or isinstance(count, bool) or not 1 <= count <= report['selection_count_per_language']:
+        raise ValueError('Retained count must be within the sampled clip count')
+    result = copy.deepcopy(report)
+    result['initial_sample_count_per_language'] = report['selection_count_per_language']
+    result['initial_sample_clip_ids_in_movie_order'] = list(report['selected_clip_ids_in_movie_order'])
+    result['selection_count_per_language'] = count
+    result['selected_clip_ids_in_movie_order'] = report['selected_clip_ids_in_movie_order'][:count]
+    result['retention_rule'] = 'Keep the first clips in movie order from the initial random sample'
+    selected = set(result['selected_clip_ids_in_movie_order'])
+    tasks = [copy.deepcopy(task) for task in data if task['clip_id'] in selected]
+    result['task_records'] = len(tasks)
+    return tasks, result
+
+
+def prepare(pool=POOL, count=80, seed=20261119, root=ROOT, minimum_chinese_characters=10, retain_first=50):
     root = Path(root)
     data, report = sample_tasks(json.loads(Path(pool).read_text()), count, seed, minimum_chinese_characters)
+    data, report = retain_first_tasks(data, report, retain_first)
     (root / 'public/data/demo/subtitle_multilingual.json').write_text(json.dumps(data, ensure_ascii=False, indent=2) + '\n')
     (root / 'public/data/demo/subtitle_multilingual_sample.report.json').write_text(json.dumps(report, ensure_ascii=False, indent=2) + '\n')
     print(json.dumps(report, ensure_ascii=False, indent=2))
@@ -96,5 +112,6 @@ if __name__ == '__main__':
     parser.add_argument('--count', type=int, default=80)
     parser.add_argument('--seed', type=int, default=20261119)
     parser.add_argument('--minimum-chinese-characters', type=int, default=10)
+    parser.add_argument('--retain-first', type=int, default=50)
     args = parser.parse_args()
-    prepare(args.pool, args.count, args.seed, minimum_chinese_characters=args.minimum_chinese_characters)
+    prepare(args.pool, args.count, args.seed, minimum_chinese_characters=args.minimum_chinese_characters, retain_first=args.retain_first)

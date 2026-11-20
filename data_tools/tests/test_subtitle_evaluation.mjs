@@ -7,14 +7,14 @@ import { labelRegionSpan } from '../../src/assets/js/manga-span-util.js';
 const data = JSON.parse(fs.readFileSync(new URL('../../public/data/demo/subtitle_multilingual.json', import.meta.url)));
 const languages = ['en', 'vi', 'ka', 'ar', 'hi', 'ru'];
 
-test('all 80 selected clips have consistent anonymous candidate order across six languages', () => {
+test('all 50 selected clips have consistent anonymous candidate order across six languages', () => {
     validateSubtitleDataset(data, languages);
-    assert.equal(data.length, 80 * 6);
-    assert.equal(data.flatMap(h => h.candidates).filter(c => c.available).length, 2559);
+    assert.equal(data.length, 50 * 6);
+    assert.equal(data.flatMap(h => h.candidates).filter(c => c.available).length, 1599);
     for (const language of languages) {
         const hits = data.filter(h => h.language === language);
-        assert.equal(hits.length, 80);
-        for (let i = 0; i < 80; i++) {
+        assert.equal(hits.length, 50);
+        for (let i = 0; i < 50; i++) {
             assert.equal(hits[i].clip_id, data[i].clip_id);
             assert.deepEqual(hits[i].candidates.filter(c => c.id !== 'human_reference').map(c => c.id), data[i].candidates.filter(c => c.id !== 'human_reference').map(c => c.id));
             assert.equal(hits[i].candidates.length, ['en', 'vi'].includes(language) ? 6 : 5);
@@ -141,7 +141,7 @@ test('human-reference candidates match the original references only in English a
         const counterpart = data.find(h => h.clip_id === hit.clip_id && h.language === (hit.language === 'en' ? 'vi' : 'en'));
         assert.deepEqual(hit.candidates.map(c => c.id), counterpart.candidates.map(c => c.id));
     }
-    assert.equal(count, 160);
+    assert.equal(count, 100);
     const positions = new Set(data.filter(h => h.language === 'en').map(h => h.candidates.findIndex(c => c.id === 'human_reference')));
     assert.equal(positions.size, 6);
 });

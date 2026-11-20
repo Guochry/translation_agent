@@ -1,6 +1,6 @@
 template_name: demo_subtitle_multilingual
 template_label: Multilingual Subtitle Evaluation
-template_description: Evaluate 80 selected clips in movie order, with longer subtitles included.
+template_description: Evaluate selected clips in movie order, favoring longer subtitles.
 default_data_link: data/demo/subtitle_multilingual.json
 subtitle_evaluation: true
 default_language: en

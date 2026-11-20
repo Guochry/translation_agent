@@ -63,7 +63,14 @@ class SubtitleSamplingTests(unittest.TestCase):
         self.assertTrue(all(row['metadata']['source_chinese_characters'] >= 10 for row in selected))
 
     def test_published_selection_matches_seeded_sampler(self):
-        expected, report = module.sample_tasks(self.pool)
+        initial, initial_report = module.sample_tasks(self.pool)
+        expected, report = module.retain_first_tasks(initial, initial_report)
+        self.assertEqual(expected, [row for row in initial if row['clip_index'] <= 50])
+        self.assertEqual(len(expected), 300)
+        self.assertEqual(report['initial_sample_count_per_language'], 80)
+        self.assertEqual(report['selected_clip_ids_in_movie_order'], initial_report['selected_clip_ids_in_movie_order'][:50])
+        for count in [0, 81, True]:
+            with self.assertRaises(ValueError): module.retain_first_tasks(initial, initial_report, count)
         actual = json.loads((ROOT / 'public/data/demo/subtitle_multilingual.json').read_text())
         saved_report = json.loads((ROOT / 'public/data/demo/subtitle_multilingual_sample.report.json').read_text())
         self.assertEqual(actual, expected)

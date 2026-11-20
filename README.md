@@ -649,13 +649,13 @@ If you find our library helpful, please consider citing [**our work**](https://a
 ## Subtitle Translation Evaluation
 
 The task compares five subtitle systems (`qwen27b`, `gemma31b`, `cohere`, `gpt`,
-`translategemma27b`) on **80 selected Chinese-source clips per language**, in Arabic,
+`translategemma27b`) on **50 selected Chinese-source clips per language**, in Arabic,
 English, Hindi, Georgian, Russian, and Vietnamese. English and Vietnamese also
 include a human-reference candidate (A–F); other languages use A–E. Candidate order
-is anonymous and deterministic per clip. The selected task contains 480
-clip/language records and 2,559 available candidate videos out of 2,560.
+is anonymous and deterministic per clip. The selected task contains 300
+clip/language records and 1,599 available candidate videos out of 1,600.
 
-Open [the 80-clip subtitle evaluation](https://guochry.github.io/translation_agent/?i=templates/demo/subtitle_multilingual.yml&d=data/demo/subtitle_multilingual.json).
+Open [the subtitle evaluation](https://guochry.github.io/translation_agent/?i=templates/demo/subtitle_multilingual.yml&d=data/demo/subtitle_multilingual.json).
 For local preview, run `npm run dev -- --host 0.0.0.0`, then open
 `http://localhost:5173/?i=templates/demo/subtitle_multilingual.yml&d=data/demo/subtitle_multilingual.json`.
 
@@ -664,7 +664,9 @@ A minimum of **10 Chinese ideographs** per source is required (spaces and punctu
 do not count). The eligible clips are ranked by source text length, excluding
 whitespace, and divided into three groups. With seed `20261119`, it randomly picks
 16 short, 24 medium, and 40 long clips, then sorts the selected IDs by their actual
-movie clip timestamps. The same 80 clips and order apply to every language; all
+movie clip timestamps. Only the **first 50 clips in that ordered 80-clip sample**
+are retained for annotation; this does not redraw a new random sample. The same
+50 clips and order apply to every language; all
 candidates for each selected clip are retained. The seed, length ranges, and
 selected IDs are recorded in `public/data/demo/subtitle_multilingual_sample.report.json`.
 
@@ -673,14 +675,14 @@ The complete 177-clip pool is kept outside the published website at
 
 ```bash
 python data_tools/prepare_subtitle_evaluation.py
-python data_tools/sample_subtitle_evaluation.py --count 80 --seed 20261119
+python data_tools/sample_subtitle_evaluation.py --count 80 --seed 20261119 --retain-first 50
 ```
 
 Preparation refreshes the pool, not the published selection; sampling writes the
-80-clip annotation JSON. Resampling uses no inference calls or video copies.
+50-clip annotation JSON. Resampling uses no inference calls or video copies.
 The selection retains source IDs, candidate assignments, movie timestamps,
 annotations, and post-edit provenance. `clip_index` is the position in the
-80-clip selection; `metadata.movie_order_index` retains its position in the full
+50-clip selection; `metadata.movie_order_index` retains its position in the full
 177-clip timeline. Q/E stops at the selection boundaries.
 
 The Human reference panel on the left shows English references. Vietnamese tasks
