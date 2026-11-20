@@ -4,6 +4,12 @@ export const cloneSubtitleData = value => JSON.parse(JSON.stringify(value));
 export const validSubtitleScore = value => typeof value === 'number' && Number.isInteger(value) && value >= 0 && value <= 100 && value % 5 === 0;
 export const SUBTITLE_FIDELITY = { name: 'quality_score', label: 'Subtitle fidelity', min: 0, max: 100, step: 5 };
 export const SUBTITLE_PRESENTATION = { name: 'presentation_score', label: 'Subtitle presentation', min: 0, max: 100, step: 5 };
+export const SUBTITLE_ISSUES = {
+    omission: 'Missing meaning',
+    uncertain_source: 'Unclear source meaning',
+    render_mismatch: 'Text differs from video',
+    other: 'Other',
+};
 export const subtitleRegionRated = region => validSubtitleScore(region.quality_score) && validSubtitleScore(region.presentation_score);
 export const subtitleCandidateRated = candidate => candidate.available !== false && candidate.translation_regions.length > 0
     && candidate.translation_regions.every(subtitleRegionRated);
@@ -114,6 +120,10 @@ export function restoreSubtitleAnnotations(canonical, saved) {
             delete target.fidelity_score;
             delete target.presentation_score;
             target.comment = typeof source.comment === 'string' ? source.comment : '';
+            const issue = source.annotation_issue;
+            if (issue != null && (!Object.hasOwn(SUBTITLE_ISSUES, issue.category) || typeof issue.note !== 'string'))
+                throw new Error('Invalid subtitle issue flag.');
+            target.annotation_issue = issue == null ? null : { category: issue.category, note: issue.note };
             for (let j = 0; j < target.translation_regions.length; j++) {
                 const region = target.translation_regions[j], savedRegion = source.translation_regions[j];
                 region.quality_score = restoreScore(savedRegion.quality_score);
@@ -143,6 +153,7 @@ export function resetSubtitleClip(hit) {
         delete candidate.fidelity_score;
         delete candidate.presentation_score;
         candidate.comment = '';
+        candidate.annotation_issue = null;
         for (const region of candidate.translation_regions) {
             region.quality_score = null;
             region.presentation_score = null;

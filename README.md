@@ -659,6 +659,24 @@ Open [the subtitle evaluation](https://guochry.github.io/translation_agent/?i=te
 For local preview, run `npm run dev -- --host 0.0.0.0`, then open
 `http://localhost:5173/?i=templates/demo/subtitle_multilingual.yml&d=data/demo/subtitle_multilingual.json`.
 
+For a 15–20 minute calibration, have each language group independently rate
+3–5 shared clips before comparing their scores and span marks. Use these examples
+to discuss the rubric:
+
+| Example | Expected judgment |
+| --- | --- |
+| The source says “I helped her,” but the subtitle says “She helped me.” | Fidelity below 60. Mark the reversed roles and give partial credit for meaning that survives. |
+| An idiom meaning “be very careful” is translated as literally tapping a bridge. | Mark the lost idiomatic meaning. Reward a creative equivalent when it works in the full sentence. |
+| A greeting is slightly formal but conveys the intended meaning in the scene. | Fidelity can pass at 60 or higher. Discuss whether the register needs correction or is a preference. |
+| An accurate subtitle disappears before viewers can comfortably finish reading it. | Fidelity can be high while presentation falls below 60. |
+
+Discuss any pass/fail split, opposing span labels, or candidate preference reversal.
+Check the scene and dialogue before settling on a judgment. Then rate a fresh
+shared set independently to check whether agreement improves. Finish candidate
+ratings before writing optional post-edits. To measure whether post-edits improve
+on the original candidates, render them and have another annotator compare them
+under the same rubric with their origin hidden.
+
 The former three-batch task is replaced by this single selection.
 A minimum of **10 Chinese ideographs** per source is required (spaces and punctuation
 do not count). The eligible clips are ranked by source text length, excluding
@@ -690,8 +708,12 @@ show both Vietnamese and English references, with Vietnamese first. English
 dialogue context follows the references. Chinese source text appears in
 each subtitle's annotation card. The selected rendered video occupies the center.
 The right panel contains Chinese source, its translation, Strength/Error
-highlighting, and one **Fidelity / Presentation** score pair. There are no separate
-clip scores or numbered heading for a single subtitle. A separate playback bar below the video
+highlighting, and one **Fidelity / Presentation** score pair.
+The optional **Issue or uncertainty** control saves a category and short note per
+candidate in `annotation_issue` in the annotation JSON. It supports omissions,
+unclear source meaning, text/video mismatches, and other issues.
+There are no separate clip scores or numbered heading for a single subtitle.
+A separate playback bar below the video
 provides play/pause, replay, seeking, time, volume, mute, and fullscreen. Fullscreen
 also keeps the controls beneath the video, leaving the image and subtitles clear.
 Each selected video automatically plays once, with no looping; scoring edits do

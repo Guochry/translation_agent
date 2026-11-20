@@ -15,13 +15,14 @@ languages:
   - { code: ru, label: Russian, native_label: Русский }
   - { code: vi, label: Vietnamese, native_label: Tiếng Việt }
 instructions: |
-  Compare each translation with the Chinese dialogue. Switch translation tabs to rate each independently. Scores: **0–100, steps of 5** (0 = very poor; 60 = acceptable/pass; 100 = excellent). Leave unfinished scores blank.
+  Watch the clip and check dialogue context. Rate each translation independently on a **0–100 scale in steps of 5**. Give equal scores for equal quality. Leave unfinished scores blank.
 
-  - **Spans:** Choose a label, then highlight translated words. **Strength** = effective, meaning-preserving creative choices, such as idioms, wordplay, or cultural references. **Error** = inaccurate or unnatural wording. **Okay** = acceptable; leave it unmarked.
-  - **Fidelity:** Meaning, accuracy, completeness, style, tone, and naturalness compared with the Chinese source, and how well the translation fits the dialogue, action, and situation in the video clip.
-  - **Presentation:** How comfortably can the subtitle be read during playback? Consider text length, reading time, line breaks, and how naturally it follows the speech.
-  - **Human reference:** Use it to understand the general meaning; it may contain errors. If something seems odd, use the Google Translate helper for another interpretation.
-  - **Post-edit (optional):** After reviewing all translations, combine strengths and fix errors to write a better translation below. Keep it faithful to the clip and readable as a subtitle.
+  - **Spans.** Mark the smallest useful phrase. **Strength** rewards creative wording such as idioms, wordplay, or cultural references that preserve meaning in context. **Error** marks inaccurate or materially unnatural wording. Leave acceptable text unmarked.
+  - **Fidelity.** Judge meaning, accuracy, completeness, style, tone, and fit with the scene. Check who does what, negation, and idioms. Concise wording and other plausible readings can earn full credit.
+  - **Fidelity scores.** **0** = no usable meaning. **5–25** = fragments survive. **30–55** = some meaning survives and needs correction. **60–75** = usable with room to improve. **80–95** = accurate with at most minor issues. **100** = fully accurate and natural in context.
+  - **Presentation.** Judge length, reading time, line breaks, and sync with speech during normal playback. **60** = readable without a necessary fix.
+  - **References and issues.** Use the human reference and Google Translate as cross-checks. Use **Issue or uncertainty** for missing meaning, unresolved source meaning, or text that differs from the video. Score the subtitle viewers see when you can assess it. Leave any score you cannot assess blank.
+  - **Post-edit (optional).** Finish your candidate ratings first. Then combine strengths and fix errors to write a faithful, readable subtitle.
   - Before closing, **download your annotations**. To resume, **upload that downloaded file**.
 
 evaluation_title: "Multilingual Subtitle Evaluation"

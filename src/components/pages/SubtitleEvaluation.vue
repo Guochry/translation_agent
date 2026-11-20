@@ -8,7 +8,7 @@ import GoogleTranslateBox from '../hitbox/GoogleTranslateBox.vue';
 import SubtitlePostEdit from '../hitbox/SubtitlePostEdit.vue';
 import { cloneSubtitleData, validateSubtitleDataset, restoreSubtitleAnnotations, resetSubtitleClip,
     subtitleClipRated, subtitleCandidateRated, subtitleRegionRated, subtitleMediaUrl, updateSubtitlePostEdit, startSubtitlePostEdit,
-    SUBTITLE_FIDELITY, SUBTITLE_PRESENTATION } from '../../assets/js/subtitle-util.js';
+    SUBTITLE_FIDELITY, SUBTITLE_PRESENTATION, SUBTITLE_ISSUES } from '../../assets/js/subtitle-util.js';
 
 const props = defineProps({ input_data: Array, config: Object });
 const canonical = cloneSubtitleData(props.input_data);
@@ -61,7 +61,10 @@ function replaceCandidate(next) {
 function updateRegion(regionIndex, region) {
     replaceCandidate({ ...candidate.value, translation_regions: candidate.value.translation_regions.map((r, i) => i === regionIndex ? region : r) });
 }
-function resetClip() { replaceHit(resetSubtitleClip(hit.value)); message.value = 'Scores, spans, and post-edit reset for this clip in the selected language.'; }
+function updateIssue(category, note = candidate.value.annotation_issue?.note || '') {
+    replaceCandidate({ ...candidate.value, annotation_issue: category ? { category, note } : null });
+}
+function resetClip() { replaceHit(resetSubtitleClip(hit.value)); message.value = 'Scores, spans, issue flags, and post-edit reset for this clip in the selected language.'; }
 function candidateStatus(c) {
     if (!c.available) return 'Unavailable';
     if (subtitleCandidateRated(c)) return 'Fully rated';
@@ -212,6 +215,21 @@ onBeforeUnmount(() => {
                             :hide_heading="candidate.translation_regions.length === 1" target_label="Translation"
                             :fidelity_definition="SUBTITLE_FIDELITY" :presentation_definition="SUBTITLE_PRESENTATION" />
                     </div>
+                    <details class="subtitle-issue" :open="candidate.annotation_issue ? true : undefined">
+                        <summary>Issue or uncertainty <span v-if="candidate.annotation_issue">· Flagged</span></summary>
+                        <label>
+                            Issue type
+                            <select :value="candidate.annotation_issue?.category || ''" @change="updateIssue($event.target.value)">
+                                <option value="">None</option>
+                                <option v-for="(label, code) in SUBTITLE_ISSUES" :key="code" :value="code">{{ label }}</option>
+                            </select>
+                        </label>
+                        <label v-if="candidate.annotation_issue">
+                            Short note (optional)
+                            <textarea rows="2" dir="auto" :value="candidate.annotation_issue.note"
+                                @input="updateIssue(candidate.annotation_issue.category, $event.target.value)" />
+                        </label>
+                    </details>
                 </template>
             </aside>
         </div>
@@ -259,6 +277,9 @@ small { color: #586270; font-weight: 400; font-size: .78rem; }
 .subtitle-cue { margin: .8rem 0; }
 .subtitle-cue :deep(.manga-text-region) { margin-top: .4rem; }
 .replay-cue { font-size: .8rem; background: #fff; }
+.subtitle-issue summary { cursor: pointer; font-size: .9rem; }
+.subtitle-issue label { display: grid; gap: .25rem; margin-top: .5rem; font-size: .85rem; }
+.subtitle-issue textarea { resize: vertical; }
 .player-hint { color: #626b78; font-size: .8rem; }
 .hosting-notice, .unavailable { background: #fff3d5; padding: .8rem; border-radius: 4px; }
 .upload-error { color: #a11b1b; }

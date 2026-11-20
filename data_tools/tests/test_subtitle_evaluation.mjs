@@ -77,6 +77,18 @@ test('uploads reject changed media, cue timing, language, model order, invalid s
     assert.throws(() => restoreSubtitleAnnotations(data, [data[0], data[0]]));
 });
 
+test('issue flags stay with the candidate on upload, accept older exports, and clear on reset', () => {
+    const saved = clone(data[0]);
+    const issue = { category: 'omission', note: 'The line leaves out who spoke.' };
+    saved.candidates[1].annotation_issue = issue;
+    const [restored] = restoreSubtitleAnnotations(data, [saved]);
+    assert.deepEqual(restored.candidates[1].annotation_issue, issue);
+    assert.equal(restored.candidates[0].annotation_issue, null);
+    assert.equal(resetSubtitleClip(restored).candidates[1].annotation_issue, null);
+    saved.candidates[1].annotation_issue = { ...issue, category: 'unknown' };
+    assert.throws(() => restoreSubtitleAnnotations(data, [saved]), /Invalid subtitle issue flag/);
+});
+
 test('video URLs use local media in dev and an external base in production', () => {
     const path = data[0].original_video;
     assert.equal(subtitleMediaUrl(path, { dev: true }), '/' + path);
