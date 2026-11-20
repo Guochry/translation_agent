@@ -15,7 +15,7 @@ languages:
   - { code: ru, label: Russian, native_label: Русский }
   - { code: vi, label: Vietnamese, native_label: Tiếng Việt }
 instructions: |
-  Watch the clip and check dialogue context. Rate each translation independently on a **0–100 scale in steps of 5**. Give equal scores for equal quality. Leave unfinished scores blank.
+  Watch the clip and check the dialogue context. Use **0–100 in steps of 5**. For each clip, make your **fidelity and presentation scores reflect how the systems rank on each measure**. Give higher scores to better translations on that measure and equal scores for ties.
 
   - **Spans.** Mark the smallest useful phrase. **Strength** rewards creative wording such as idioms, wordplay, or cultural references that preserve meaning in context. **Error** marks inaccurate or materially unnatural wording. Leave acceptable text unmarked.
   - **Fidelity.** Judge meaning, accuracy, completeness, style, tone, and fit with the scene. Check who does what, negation, and idioms. Concise wording and other plausible readings can earn full credit.
@@ -23,14 +23,23 @@ instructions: |
     | Fidelity score | Meaning |
     | --- | --- |
     | 0 | No usable meaning |
-    | 5–25 | Some words or the topic are recognizable. The main message is lost. |
-    | 30–55 | The main message is recognizable. A meaning or tone error needs fixing. |
-    | 60–75 | Meaning and tone come through. The wording is noticeably stiff or clumsy. |
-    | 80–95 | Accurate and natural. Only small wording or style tweaks would help. |
+    | 5–25 | Topic or details survive, main message lost |
+    | 30–55 | Main message clear, meaning or tone needs correction |
+    | 60–75 | Faithful and usable, noticeably awkward |
+    | 80–95 | Accurate and natural, minor polish needed |
     | 100 | Fully accurate and natural in context |
 
-  - **Presentation.** Judge length, reading time, line breaks, and sync with speech during normal playback. **60** = readable without a necessary fix.
-  - **References and issues.** Use the human reference and Google Translate as cross-checks. Use **Issue or uncertainty** for missing meaning, unresolved source meaning, or text that differs from the video. Score the subtitle viewers see when you can assess it. Leave any score you cannot assess blank.
+  - **Presentation.** At normal playback speed, judge length, reading time, line breaks, and sync with speech.
+
+    | Presentation score | Readability |
+    | --- | --- |
+    | 0 | Unreadable during playback |
+    | 5–55 | A reading or timing problem needs fixing |
+    | 60–75 | Readable at normal speed, takes some effort |
+    | 80–95 | Easy to read, minor polish needed |
+    | 100 | Effortless to read and well timed |
+
+  - **Human reference.** Use it to understand the dialogue. It can contain errors, and a candidate may be better. Use Google Translate for another interpretation if something seems off.
   - **Post-edit (optional).** Finish your candidate ratings first. Then combine strengths and fix errors to write a faithful, readable subtitle.
   - Before closing, **download your annotations**. To resume, **upload that downloaded file**.
 

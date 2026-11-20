@@ -216,7 +216,8 @@ onBeforeUnmount(() => {
                             :fidelity_definition="SUBTITLE_FIDELITY" :presentation_definition="SUBTITLE_PRESENTATION" />
                     </div>
                     <details class="subtitle-issue" :open="candidate.annotation_issue ? true : undefined">
-                        <summary>Issue or uncertainty <span v-if="candidate.annotation_issue">· Flagged</span></summary>
+                        <summary>Flag a problem <span v-if="candidate.annotation_issue">· Flagged</span><span v-else> (optional)</span></summary>
+                        <p>Use this for problems a highlight can’t show, such as missing meaning, unclear dialogue, or a mismatch between the text and video.</p>
                         <label>
                             Issue type
                             <select :value="candidate.annotation_issue?.category || ''" @change="updateIssue($event.target.value)">
@@ -283,6 +284,7 @@ small { color: #586270; font-weight: 400; font-size: .78rem; }
 .subtitle-cue :deep(.manga-text-region) { margin-top: .4rem; }
 .replay-cue { font-size: .8rem; background: #fff; }
 .subtitle-issue summary { cursor: pointer; font-size: .9rem; }
+.subtitle-issue p { font-size: .85rem; margin: .5rem 0; }
 .subtitle-issue label { display: grid; gap: .25rem; margin-top: .5rem; font-size: .85rem; }
 .subtitle-issue textarea { resize: vertical; }
 .player-hint { color: #626b78; font-size: .8rem; }
