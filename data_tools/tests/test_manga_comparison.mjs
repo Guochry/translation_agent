@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { comparisonRated, normalizeComparison, resetComparison } from '../../src/assets/js/manga-comparison-util.js';
+import { comparisonRated, normalizeComparison, resetComparison, restoreComparisonAnnotations } from '../../src/assets/js/manga-comparison-util.js';
 
 const scores = ['fidelity_score', 'presentation_score'].map(name => ({ name, min: 0, max: 100, step: 5 }));
 const makeHit = () => ({ candidates: ['agent', 'baseline'].map(id => ({ id, fidelity_score: 0, presentation_score: 100,
@@ -51,4 +51,17 @@ test('old quality ratings survive migration while missing presentation remains u
     assert.equal(hit.candidates[0].translation_regions[0].quality_score, 0);
     assert.equal(hit.candidates[0].translation_regions[0].presentation_score, null);
     assert.equal(comparisonRated(hit, scores), false);
+});
+
+test('optional issue flags restore on the matching translation and clear on page reset', () => {
+    const expected = makeHit();
+    const saved = makeHit();
+    const issue = { category: 'omission', note: 'The warning is missing.' };
+    saved.candidates[1].annotation_issue = issue;
+    const restored = restoreComparisonAnnotations(expected, saved, scores);
+    assert.equal(restored.candidates[0].annotation_issue, undefined);
+    assert.deepEqual(restored.candidates[1].annotation_issue, issue);
+    assert.equal(comparisonRated(restored, scores), true);
+    resetComparison(restored, scores);
+    assert.equal(restored.candidates[1].annotation_issue, undefined);
 });

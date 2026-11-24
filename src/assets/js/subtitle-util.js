@@ -1,14 +1,10 @@
 import { regionSpans } from './manga-span-util.js';
+import { validAnnotationIssue } from './annotation-issue-util.js';
 
 export const cloneSubtitleData = value => JSON.parse(JSON.stringify(value));
 export const validSubtitleScore = value => typeof value === 'number' && Number.isInteger(value) && value >= 0 && value <= 100 && value % 5 === 0;
 export const SUBTITLE_FIDELITY = { name: 'quality_score', label: 'Subtitle fidelity', min: 0, max: 100, step: 5 };
 export const SUBTITLE_PRESENTATION = { name: 'presentation_score', label: 'Subtitle presentation', min: 0, max: 100, step: 5 };
-export const SUBTITLE_ISSUES = {
-    omission: 'Missing meaning',
-    uncertain_source: 'Unclear source meaning',
-    other: 'Other',
-};
 export const subtitleRegionRated = region => validSubtitleScore(region.quality_score) && validSubtitleScore(region.presentation_score);
 export const subtitleCandidateRated = candidate => candidate.available !== false && candidate.translation_regions.length > 0
     && candidate.translation_regions.every(subtitleRegionRated);
@@ -123,7 +119,7 @@ export function restoreSubtitleAnnotations(canonical, saved) {
             const issue = savedIssue?.category === 'render_mismatch' && typeof savedIssue.note === 'string'
                 ? { category: 'other', note: ['Text differs from video.', savedIssue.note].filter(Boolean).join(' ') }
                 : savedIssue;
-            if (issue != null && (!Object.hasOwn(SUBTITLE_ISSUES, issue.category) || typeof issue.note !== 'string'))
+            if (issue != null && !validAnnotationIssue(issue))
                 throw new Error('Invalid subtitle issue flag.');
             target.annotation_issue = issue == null ? null : { category: issue.category, note: issue.note };
             for (let j = 0; j < target.translation_regions.length; j++) {

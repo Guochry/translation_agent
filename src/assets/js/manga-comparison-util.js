@@ -1,5 +1,6 @@
 import { isValidScore, scoreField } from './score-util.js';
 import { isValidTranslationQuality, isRegionRated } from './manga-util.js';
+import { validAnnotationIssue } from './annotation-issue-util.js';
 
 export function comparisonRated(hit, scores) {
     if (!Array.isArray(hit?.candidates)) return false;
@@ -26,6 +27,7 @@ export function normalizeComparison(hit, scores) {
 
 export function resetComparison(hit, scores) {
     for (const candidate of hit.candidates || []) {
+        delete candidate.annotation_issue;
         for (const score of scores) candidate[scoreField(score)] = null;
         for (const region of candidate.translation_regions || []) {
             region.quality_score = null;
@@ -60,6 +62,8 @@ export function restoreComparisonAnnotations(expected, saved, scores) {
     }
     for (let i = 0; i < result.candidates.length; i++) {
         const candidate = result.candidates[i], imported = saved.candidates[i];
+        const issue = imported.annotation_issue;
+        if (validAnnotationIssue(issue)) candidate.annotation_issue = { category: issue.category, note: issue.note };
         for (const score of scores) candidate[scoreField(score)] = imported[scoreField(score)];
         for (let r = 0; r < (candidate.translation_regions || []).length; r++) {
             candidate.translation_regions[r].quality_score = imported.translation_regions[r].quality_score;

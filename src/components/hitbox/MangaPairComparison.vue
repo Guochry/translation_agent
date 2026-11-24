@@ -4,6 +4,7 @@ import { mangaImageUrl } from '../../assets/js/manga-multilingual-util.js';
 import MangaSpanLegend from './MangaSpanLegend.vue';
 import OverallScore from '../common/OverallScore.vue';
 import MangaTextRegion from './MangaTextRegion.vue';
+import AnnotationIssue from './AnnotationIssue.vue';
 </script>
 <script>
 export default {
@@ -102,6 +103,9 @@ export default {
                 <div v-if="active_candidate" :key="active_candidate.id" role="tabpanel" :id="`pair-text-${uid}`" :aria-labelledby="`pair-tab-${uid}-${active}`">
                     <h3>{{ label(active) }} — region assessment</h3>
                     <p>Rate translation fidelity and visual presentation: <strong>0–100, steps of 5</strong>.</p>
+                    <AnnotationIssue v-if="config?.manga_multilingual && active_candidate.available !== false"
+                        :model-value="active_candidate.annotation_issue"
+                        @update:model-value="issue => update_candidate(active, { ...active_candidate, annotation_issue: issue })" />
                     <p v-if="active_candidate.available === false" role="status">This translation is unavailable for this page.</p>
                     <p v-else-if="active_candidate.translation_regions === null" role="status">Translation text is unavailable for this page.</p>
                     <template v-else>
