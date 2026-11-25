@@ -1,4 +1,4 @@
-import { restoreTranslationAnnotations } from './subtitle-util.js';
+import { cloneSubtitleData, restoreTranslationAnnotations } from './subtitle-util.js';
 
 export const BOOK_FIDELITY = { name: 'quality_score', label: 'Fidelity to the English fable', min: 0, max: 100, step: 5 };
 export const BOOK_PROSE = { name: 'presentation_score', label: 'Prose quality in the target language', min: 0, max: 100, step: 5 };
@@ -12,20 +12,24 @@ function bookContent(hit) {
 
 export function restoreBookAnnotations(canonical, saved) {
     const savedById = new Map(Array.isArray(saved) ? saved.map(hit => [hit?.id, hit]) : []);
-    const legacy = new Map();
+    const canonicalById = new Map(canonical.map(hit => [hit.id, hit]));
     const compatible = canonical.map(hit => {
         const oldCandidates = savedById.get(hit.id)?.candidates;
-        const referenceIndex = hit.language === 'zh-CN' ? hit.candidates.findIndex(c => c.id === 'human_reference') : -1;
-        if (referenceIndex < 0 || !Array.isArray(oldCandidates) || oldCandidates.length !== hit.candidates.length - 1)
-            return hit;
-        legacy.set(hit.id, { referenceIndex, reference: hit.candidates[referenceIndex] });
-        return { ...hit, candidates: hit.candidates.filter((_, index) => index !== referenceIndex) };
+        if (!Array.isArray(oldCandidates)) return hit;
+        const beforeReference = hit.language === 'zh-CN' && oldCandidates.length === hit.candidates.length - 1;
+        const candidates = beforeReference ? hit.candidates.filter(c => c.id !== 'human_reference') : hit.candidates;
+        // Validate the export against the old empty slots before adding newly published text.
+        return { ...hit, candidates: candidates.map((candidate, index) => candidate.available && oldCandidates[index]?.available === false
+            ? { ...candidate, available: false, translation_regions: [] }
+            : candidate) };
     });
     return restoreTranslationAnnotations(compatible, saved, bookContent, 'book').map(hit => {
-        const upgrade = legacy.get(hit.id);
-        if (!upgrade) return hit;
-        const reference = JSON.parse(JSON.stringify(upgrade.reference));
-        hit.candidates.splice(upgrade.referenceIndex, 0, { ...reference, comment: '', annotation_issue: null });
+        const restoredById = new Map(hit.candidates.map(candidate => [candidate.id, candidate]));
+        hit.candidates = canonicalById.get(hit.id).candidates.map(candidate => {
+            const restored = restoredById.get(candidate.id);
+            if (restored?.available === candidate.available) return restored;
+            return { ...cloneSubtitleData(candidate), comment: '', annotation_issue: null };
+        });
         const origin = hit.post_edit_origin;
         if (origin?.type === 'candidate') {
             const index = hit.candidates.findIndex(candidate => candidate.id === origin.candidate_id);

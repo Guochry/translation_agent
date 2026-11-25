@@ -73,3 +73,20 @@ test('book import restores scores, optional flags and draft origin on canonical 
     changed.source += ' changed';
     assert.throws(() => restoreBookAnnotations(data, [changed]), /different book content/);
 });
+
+test('old book exports keep ratings and leave newly available outputs unrated', () => {
+    const original = data.find(hit => hit.language === 'vi');
+    const saved = clone(original);
+    const missing = saved.candidates.find(c => c.id === 'cohere');
+    missing.available = false;
+    missing.translation_regions = [];
+    const rated = saved.candidates.find(c => c.available);
+    rated.translation_regions[0].quality_score = 85;
+    const [restored] = restoreBookAnnotations(data, [saved]);
+    const added = restored.candidates.find(c => c.id === 'cohere');
+    assert.equal(added.available, true);
+    assert.equal(added.translation_regions[0].quality_score, null);
+    assert.equal(restored.candidates.find(c => c.id === rated.id).translation_regions[0].quality_score, 85);
+    missing.translation_regions = [{ id: 'wrong', target: 'Unexpected output' }];
+    assert.throws(() => restoreBookAnnotations(data, [saved]), /different book content/);
+});
