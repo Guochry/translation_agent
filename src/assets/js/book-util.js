@@ -3,6 +3,16 @@ import { cloneSubtitleData, restoreTranslationAnnotations } from './subtitle-uti
 export const BOOK_FIDELITY = { name: 'quality_score', label: 'Fidelity to the English fable', min: 0, max: 100, step: 5 };
 export const BOOK_PROSE = { name: 'presentation_score', label: 'Prose quality in the target language', min: 0, max: 100, step: 5 };
 
+const SMALL_TITLE_WORDS = new Set(['a', 'an', 'and', 'as', 'at', 'but', 'by', 'for', 'from', 'in', 'nor', 'of', 'on', 'or', 'the', 'to', 'with']);
+
+export function bookDisplayTitle(title) {
+    if (title !== title.toUpperCase()) return title;
+    return title.toLowerCase().replace(/[a-z]+(?:['’][a-z]+)*/g, (word, offset, text) => {
+        if (offset > 0 && offset + word.length < text.length && SMALL_TITLE_WORDS.has(word)) return word;
+        return word[0].toUpperCase() + word.slice(1);
+    });
+}
+
 export function bookCandidateDisplayText(candidate) {
     const text = candidate.translation_regions[0]?.target ?? '';
     if (candidate.id !== 'human_reference') return text;

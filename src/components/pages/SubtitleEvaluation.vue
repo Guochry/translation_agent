@@ -7,7 +7,7 @@ import SubtitleVideo from '../hitbox/SubtitleVideo.vue';
 import GoogleTranslateBox from '../hitbox/GoogleTranslateBox.vue';
 import AnnotationIssue from '../hitbox/AnnotationIssue.vue';
 import SubtitlePostEdit from '../hitbox/SubtitlePostEdit.vue';
-import { BOOK_FIDELITY, BOOK_PROSE, bookCandidateDisplayText, restoreBookAnnotations, validateBookDataset } from '../../assets/js/book-util.js';
+import { BOOK_FIDELITY, BOOK_PROSE, bookCandidateDisplayText, bookDisplayTitle, restoreBookAnnotations, validateBookDataset } from '../../assets/js/book-util.js';
 import { cloneSubtitleData, validateSubtitleDataset, restoreSubtitleAnnotations, resetSubtitleClip,
     subtitleClipRated, subtitleCandidateRated, subtitleRegionRated, subtitleMediaUrl, updateSubtitlePostEdit, startSubtitlePostEdit,
     SUBTITLE_FIDELITY, SUBTITLE_PRESENTATION } from '../../assets/js/subtitle-util.js';
@@ -36,6 +36,7 @@ const videoVolume = ref(1);
 const uploadInput = ref(null);
 const hits = computed(() => rows.value.filter(hit => hit.language === language.value));
 const hit = computed(() => hits.value[index.value]);
+const displayTitle = computed(() => isBook && hit.value ? bookDisplayTitle(hit.value.title) : hit.value?.title);
 const sourceParagraphs = computed(() => hit.value?.source.split(/\n\s*\n/).map(paragraph => paragraph.replace(/\s+/g, ' ').trim()) || []);
 const candidate = computed(() => hit.value?.candidates[activeCandidate.value]);
 const candidateLabel = computed(() => `Translation ${String.fromCharCode(65 + activeCandidate.value)}`);
@@ -169,7 +170,7 @@ onBeforeUnmount(() => {
         <p v-if="uploadError" role="alert" class="upload-error">{{ uploadError }}</p>
         <p v-if="message" role="status">{{ message }}</p>
         <div class="clip-heading">
-            <h2>{{ hit.title }} <small>· {{ navigationLabel }} {{ index + 1 }}</small></h2>
+            <h2>{{ displayTitle }} <small>· {{ navigationLabel }} {{ index + 1 }}</small></h2>
             <div>
                 <button :aria-pressed="hit.bookmark" @click="replaceHit({ ...hit, bookmark: !hit.bookmark })">{{ hit.bookmark ? 'Bookmarked ★' : 'Bookmark ' + itemLabel }}</button>
                 <button @click="resetClip">Reset {{ itemLabel }}</button>
@@ -189,7 +190,7 @@ onBeforeUnmount(() => {
         <div v-if="isBook" class="book-workspace">
             <section class="book-source" aria-label="English source" lang="en">
                 <h3>English source</h3>
-                <h4 class="book-source-title">{{ hit.title }}</h4>
+                <h4 class="book-source-title">{{ displayTitle }}</h4>
                 <p v-for="(paragraph, position) in sourceParagraphs" :key="position">{{ paragraph }}</p>
             </section>
             <section class="annotation-column book-translation" :key="`${hit.id}-${candidate.id}`"
