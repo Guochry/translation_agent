@@ -16,9 +16,12 @@ export function bookDisplayTitle(title) {
 export function bookCandidateDisplayText(candidate) {
     const text = candidate.translation_regions[0]?.target ?? '';
     if (candidate.id !== 'human_reference') return text;
-    // A zero-width break opportunity lets Chinese text reflow without shifting span offsets.
-    return text.split(/(\n(?:[ \t]*\n)+)/).map((part, index) =>
-        index % 2 === 0 ? part.replaceAll('\n', '\u200b') : part).join('');
+    // References join the title and body with a blank line. The body can contain
+    // blank lines in the middle of words, so reflow every break after the title.
+    const titleEnd = text.indexOf('\n\n');
+    const bodyStart = titleEnd < 0 ? 0 : titleEnd + 2;
+    // Keep the original character offsets for saved and newly marked spans.
+    return text.slice(0, bodyStart) + text.slice(bodyStart).replace(/[\n\r\u2028\u2029]/g, '\u200b');
 }
 
 function bookContent(hit) {
