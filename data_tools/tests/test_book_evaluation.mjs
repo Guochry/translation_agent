@@ -17,10 +17,37 @@ test('published fables align by source and candidate order across languages', ()
         for (const [i, hit] of rows.entries()) {
             assert.equal(hit.source_index, i);
             assert.equal(hit.source, originals[i].source);
-            assert.deepEqual(hit.candidates.map(c => c.id), originals[i].candidates.map(c => c.id));
+            const reference = hit.candidates.find(c => c.id === 'human_reference');
+            assert.deepEqual(hit.candidates.filter(c => c !== reference).map(c => c.id), originals[i].candidates.map(c => c.id));
+            if (language === 'zh-CN') {
+                assert.equal(reference.available, true);
+                assert.equal(reference.model, null);
+                assert.equal(reference.metadata.translation_type, 'human_reference');
+            } else {
+                assert.equal(reference, undefined);
+            }
         }
     }
     assert(data.some(hit => hit.language === 'ka' && hit.candidates.some(c => !c.available)));
+});
+
+test('old Chinese exports restore by candidate ID and update post-edit labels after adding the reference', () => {
+    const canonical = data.find(hit => hit.language === 'zh-CN' && hit.candidates[0].id === 'human_reference');
+    const saved = clone(canonical);
+    saved.candidates.shift();
+    const candidate = saved.candidates[0];
+    candidate.translation_regions[0].quality_score = 75;
+    const draft = startSubtitlePostEdit(saved, candidate.id);
+    assert.equal(draft.post_edit_origin.candidate_label, 'Translation A');
+    const [restored] = restoreBookAnnotations(data, [draft]);
+    assert.equal(restored.candidates[0].id, 'human_reference');
+    assert.equal(restored.candidates[0].translation_regions[0].quality_score, null);
+    assert.equal(restored.candidates[1].translation_regions[0].quality_score, 75);
+    assert.equal(restored.post_edit_origin.candidate_id, candidate.id);
+    assert.equal(restored.post_edit_origin.candidate_label, 'Translation B');
+    assert.deepEqual(restoreBookAnnotations(data, [restored]), [restored]);
+    draft.candidates.reverse();
+    assert.throws(() => restoreBookAnnotations(data, [draft]), /different book content/);
 });
 
 test('book import restores scores, optional flags and draft origin on canonical content', () => {

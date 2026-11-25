@@ -11,7 +11,28 @@ function bookContent(hit) {
 }
 
 export function restoreBookAnnotations(canonical, saved) {
-    return restoreTranslationAnnotations(canonical, saved, bookContent, 'book');
+    const savedById = new Map(Array.isArray(saved) ? saved.map(hit => [hit?.id, hit]) : []);
+    const legacy = new Map();
+    const compatible = canonical.map(hit => {
+        const oldCandidates = savedById.get(hit.id)?.candidates;
+        const referenceIndex = hit.language === 'zh-CN' ? hit.candidates.findIndex(c => c.id === 'human_reference') : -1;
+        if (referenceIndex < 0 || !Array.isArray(oldCandidates) || oldCandidates.length !== hit.candidates.length - 1)
+            return hit;
+        legacy.set(hit.id, { referenceIndex, reference: hit.candidates[referenceIndex] });
+        return { ...hit, candidates: hit.candidates.filter((_, index) => index !== referenceIndex) };
+    });
+    return restoreTranslationAnnotations(compatible, saved, bookContent, 'book').map(hit => {
+        const upgrade = legacy.get(hit.id);
+        if (!upgrade) return hit;
+        const reference = JSON.parse(JSON.stringify(upgrade.reference));
+        hit.candidates.splice(upgrade.referenceIndex, 0, { ...reference, comment: '', annotation_issue: null });
+        const origin = hit.post_edit_origin;
+        if (origin?.type === 'candidate') {
+            const index = hit.candidates.findIndex(candidate => candidate.id === origin.candidate_id);
+            origin.candidate_label = `Translation ${String.fromCharCode(65 + index)}`;
+        }
+        return hit;
+    });
 }
 
 export function validateBookDataset(data, languages) {

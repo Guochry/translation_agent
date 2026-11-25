@@ -9,6 +9,7 @@ REPO = Path(__file__).resolve().parents[1]
 PROJECT = REPO.parent
 PROFILES = ("cohere", "gemma31b", "gpt", "qwen27b", "translategemma27b")
 LANGUAGES = ("ar", "hi", "ka", "ru", "vi", "zh-CN")
+REFERENCE = "human_reference"
 
 
 def build(runs, source):
@@ -33,9 +34,17 @@ def build(runs, source):
                     raise ValueError(f"Invalid or duplicate story index {index}: {path}")
                 translations[index] = row["translation"]
             outputs[profile] = (meta["model"], translations)
+        if language == "zh-CN":
+            references = {}
+            for index, story in enumerate(stories):
+                title, text = story.get("title_cn"), story.get("text_cn")
+                if not all(isinstance(value, str) and value.strip() for value in (title, text)):
+                    raise ValueError(f"Missing Chinese reference for story {index}")
+                references[index] = f"{title.strip()}\n\n{text.strip()}"
+            outputs[REFERENCE] = (None, references)
         for index, story in enumerate(stories):
-            # Use the same anonymous order for a story across languages.
-            order = sorted(PROFILES, key=lambda profile: hashlib.sha256(
+            # Keep model order consistent, with the Chinese reference inserted by the same hash.
+            order = sorted(outputs, key=lambda profile: hashlib.sha256(
                 f"book:{index}:{profile}".encode()).digest())
             candidates = []
             for profile in order:
@@ -44,6 +53,8 @@ def build(runs, source):
                 available = isinstance(text, str) and bool(text.strip())
                 candidates.append({
                     "id": profile, "model": model, "available": available,
+                    **({"metadata": {"translation_type": REFERENCE, "reference_fields": ["title_cn", "text_cn"]}}
+                       if profile == REFERENCE else {}),
                     "translation_regions": [{
                         "id": f"fable-{index}", "target": text,
                         "quality_score": None, "presentation_score": None, "edits": [],

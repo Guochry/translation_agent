@@ -76648,6 +76648,27 @@
     "post_edit_origin": null,
     "candidates": [
       {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-0",
+            "target": "财神和工人\n\n一个工人在河边砍木头，他的斧头，偶然落到河里去了。他失去了吃饭的工具，便坐在河岸上，悲哭他的不幸。财神出现了，问他为什么哭。他就将他的不幸告诉他财神便没入河中，拿出一把金斧头来，问他这可是失掉的那一把。在他说着这不是他的时候，财神第二次又没入水底下去，手中拿了一把银斧头回来，再问工人这把可是他的。工人也说这把不是他的。他第三次又潜到水里去，带上他失掉的那把斧头。工人承认牠，表示失而复得的快乐。财神欢喜他的诚实，在他自己的那把之外，将金的和银的两把都给他。工人回家来，将所遭遇的一切情形都告诉他的同伴。其中有一个，立刻决定试试，他自己能不能够也求得同样的好运。他跑到河边，故意把他的斧头丢到河里的老地方，坐在河岸上哭了。财神竟如他所想望地出现了。知道他伤悲的原因后，便没入河中，带了一把金斧头上来。问他是否失掉这一把。财神恨他的不诚实，不但将金斧头拿走，并且还拒绝替他去找回他丢到水中去的那一把。",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
+      },
+      {
         "id": "qwen27b",
         "model": "Qwen/Qwen3.5-27B",
         "available": true,
@@ -76774,6 +76795,27 @@
         ]
       },
       {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-1",
+            "target": "城里老鼠和乡下老鼠\n\n一只乡下老鼠，邀请他一个知己的朋友，一只城里老鼠，来看看他，啧啧他的乡村食物。当他们在荒凉的耕地上，吃着麦秆和篱笆底下挖起来的树根时，城里老鼠对他的朋友道：「你住在这里，过着蚂蚁的生活，而我的家却是一个丰富的地方。我的四周全是奢侈品；如果你肯和我同来，我很希望你答应，你就可大吃一顿。」我的好东西，一乡下老鼠立刻答应了他的话，便和他的朋友，同到城里去。他一到城里，城里老鼠就将面包、蕃麦、豆、无花果干、蜜、葡萄干，都摆在他面前，最后又从一只篮里，拿出一块很好吃的牛奶饼来。乡下老鼠见了这样的珍物，喜出望外，以热烈的话来表示他的满意，又自怨命苦。正当他们要动手吃的时候，有人推门进来，他们想第二次去动手，他们吓得吱吱直叫，赶快逃到一个洞里去，那个洞非常狭小，他们只能紧挤着站在里面。他们想起来。最后，乡下老鼠吓得半死，连忙逃开去躲起来。我宁愿到我荒凉的耕地上去，吃着篱笆底下的树根，那样我倒能够安全过活，不用担心。」我几乎饿死了，只好对他的朋友说：「虽然你为我预备了这样好吃的东西，但是我只好留给你自己去享受。」",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
+      },
+      {
         "id": "qwen27b",
         "model": "Qwen/Qwen3.5-27B",
         "available": true,
@@ -76884,6 +76926,27 @@
             "edits": []
           }
         ]
+      },
+      {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-2",
+            "target": "驴与骡\n\n一个驿夫在出发时，赶着一只驴子和一只骡子，在他的前面走着，这两只牲口都背着重负。驴子在平坦地方走着的时候，载着重负，还没有什么；但是当他开始走到山间峻峭的路上时，他觉得自己力不胜任，便请求他的同伴，替他分载一小部分，使他可以把其余的载到家；但是骡子丝毫不睬。不久之后，驴子不胜困苦，倒毙在路上。驴夫在这样一个荒野的地方，无法可想，只好在骡子所载的东西之外，把驴子所载的东西，也一起加在骡子背上；他剥下驴子的皮，拿牠盖在骡子所载的上面。骡子在他的重负之下呻吟着，自己叫苦说：「我应该受到这样的待遇！要是我在驴子需要时，稍微帮助他一下，现在也不会载着他的负担和他的本身啦。」",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
       }
     ]
   },
@@ -76942,6 +77005,27 @@
         ]
       },
       {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-3",
+            "target": "贼和旅馆主人\n\n一个贼到一家旅店中，租了一间房间，住了几天，希望偷得一点东西，可以使他能够付房饭钱。当他空等了几天之后，他看见旅馆主人，穿着一件漂亮的新衣，坐在门前。贼便坐到他的身旁去，和他闲谈。他们的谈话谈得疲倦了，贼打了一个呵欠，同时叫了一声，像狼似的。旅馆主人说：「你怎么号叫得这么怕人呢？」贼说：「你听我说，但我得先请你捏住我的衣服，因为我愿牠们放在你的手中，先生，我自己也不知道我到底在什么时候得到这种习惯，也不明白这种号叫传染到我身上来，还是为罚我的罪孽呢？还是有别的什么原因？可是这件事我是知道的：我到第三次打呵欠的时候，我真的会变成一只狼，去扑人的。」他所说的话非常害怕，站起身来，想要逃走。贼却扯住他的衣服，请他站住，说：「先生，请等一下，捏住我的衣服而且相信我，我自己也不知道我到底在什么时候得到这种习惯。」他便再打第二个呵欠，并且和第一次一样，狼似的号叫起来。旅馆主人听了，很恐怕，自己想到将要变成狼时，会暴怒地撕掉他的衣服。旅馆主人便将他的新外衣留下在贼的手中，赶快地跑进旅馆去避难。同时他打第三次的呵欠，像一只狼似的号叫起来。贼就带了他的新外衣逃走，不再回到旅馆里来。\n\n每个故事，都是谎语。",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
+      },
+      {
         "id": "gemma31b",
         "model": "google/gemma-4-31B-it",
         "available": true,
@@ -76983,6 +77067,27 @@
     "post_edit": "",
     "post_edit_origin": null,
     "candidates": [
+      {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-4",
+            "target": "老鹰和穴鸟\n\n一只老鹰从他高岩上的窑里飞下来，攫住一只羔羊，提在爪中带往空中去。一只穴鸟看见那羔羊的被攫，心中很是妒忌，决定要赛过老鹰的力气，和飞翔的本领。他用力拍着翼膀，飞了几转，便停到一只大牡羊的身上，想将这牡羊带开去，但是他的爪缠在羊毛里了。虽则他用翼尽力拍着，他却不能释放他自己。牧羊人一见这情形，跑上去把他捉住。他即刻剪掉他的翼膀，晚上带回家去，给予他的孩子们。他们说：「父亲，这是那一种鸟」他回答说：「依我的知识说来，他是一只鸟，但是他却自以为是老鹰。」",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
+      },
       {
         "id": "gpt",
         "model": "gpt-6-luna",
@@ -77067,6 +77172,27 @@
     "post_edit": "",
     "post_edit_origin": null,
     "candidates": [
+      {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-5",
+            "target": "老鹰猫和野猪\n\n一只老鹰，筑巢在一棵高大的橡树上。一只猫找到一个方便的树洞，便在树干的中段，生产小猫；还有一双雌野猪，带着她的小猪，住在这树根的洞里，那只猫想要破坏这殖民地，她要实行她的诡计，先爬到老鹰的树连根掘起，树一倒下，她就可以把我的家小摊去，做她孩子的食粮了。一猫既吓得老鹰惊惶失措，想把这棵树去——猫把这些恐惧灌到野猪的心中去后，就走了假装着自己也躲到树洞中去。天夜了，她放轻脚步，走出来，静地坐在枝头，野猪也给老鹰恐吓着，不敢走出她的洞来，因此她们自己和她们的家小，全饿死了。只使那猫和她的小猫，吃着他们作食粮。",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
+      },
       {
         "id": "translategemma27b",
         "model": "google/translategemma-27b-it",
@@ -77173,6 +77299,27 @@
           {
             "id": "fable-6",
             "target": "猎户、野鸡和公鸡\n\n一天，猎户正要享用一顿由香草和面包组成的简陋晚餐，\n一位朋友突然来访。储藏室里空无一物，于是他出去捉了一只\n家养的野鸡，打算用它作为诱饵，正要扭断它的脖子时，野鸡\n喊道：“你难道真的要杀了我吗？下次你去打鸟时没有了我，\n你怎么能让鸟儿飞进你的网里呢？”猎户听后放了野鸡，来到\n鸡舍，那里有一只肥壮的年轻公鸡。公鸡看到猎户的意图后，\n也为自己的生命求情，说道：“如果你杀了我，你怎么知道夜\n晚的时间？谁会在早晨起床时提醒你该去工作了？”然而，猎\n户回答说：“我知道你能报时，但尽管如此，我不能让我朋友\n饿着肚子睡觉。”说完，他捉住公鸡，扭断了它的脖子。",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
+      },
+      {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-6",
+            "target": "捉鸟的人鹧鸪及雄鸡\n\n一个捉鸟的人正要坐下吃简单的膳食忽然来了一个朋友那时捕鸟机完全空着不曾捉到什么鸟他\n将要动手去杀一只鹧鸪这鹧鸪是他驯养起来做诱鸟的鹧鸪便哀求他说如果没有我你下次张起鸟网\n来时你又将怎样呢谁来唱歌引你睡去呢谁来给你呼唤蟇群的鸟儿呢捉鸟的人就饶了鹧鸪的性命决\n定选出一只恰巧长成的雄鸡来雄鸡从他的墙里以哀怜的声调这样请求说如果我有谁向你报\n告天明了呢早上谁来叫醒你去做日常的工作呢或者告诉你去看捕鸟机呢捉鸟的人回答说你说的\n话不错在报告一天中的时间这一点上你是只最重要的鸟儿但是我和我方才进来的朋友一定要有午餐\n吃的啊\n需要不顾法律",
             "quality_score": null,
             "presentation_score": null,
             "edits": []
@@ -77292,6 +77439,27 @@
         ]
       },
       {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-7",
+            "target": "虚荣的乌鸦\n\n大神周彼得决定立一个君主，来统治鸟类，出了一个通告，规定某一天，一切鸟类，都得到他的面前来听候他亲自在鸟类中，选择一个最美的做王。乌鸦自惭形秽，搜遍了森林和田野，收集他的同伴翼膀上掉下来的羽毛，得到许多满满地插在他的身上，希望有了这个，他自己便可成为众鸟中最美的。一只乌鸦，到了规定的那一天，鸟类齐集在周彼得的面前，乌鸦也穿着杂羽凑成的华服出现了。周彼得瞧见他的羽毛美丽，想要叫他做王。众鸟们愤恨地抗议，大家都从他的身上，啄下他们自己的羽毛，于是乌鸦原形毕现了。",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
+      },
+      {
         "id": "cohere",
         "model": "cohere/command-a-plus",
         "available": true,
@@ -77341,6 +77509,27 @@
           {
             "id": "fable-8",
             "target": "人、马、牛与狗\n\n一个冬日，正值一场猛烈的风暴，一匹马、一头牛和一只狗来到一个人的屋前，恳求收留。那人欣然接纳了它们。由于它们又冷又湿，他便生起火来让它们取暖，给马喂了燕麦，给牛喂了干草，而用自己晚餐的剩菜喂了狗。当风暴平息，它们准备离开时，决定以如下方式表达感激之情。它们将人的生命周期在彼此之间分配，并各自将自己特有的品质赋予其中一个阶段。马选择了青年时期，因此年轻人气血旺盛，不耐约束；牛选择了中年时期，因此中年人稳重且勤勉；而狗选择了老年时期，这就是为什么老人经常脾气暴躁、易怒，且像狗一样，主要依恋那些照顾他们起居的人，而倾向于对陌生或令他们反感的人龇牙咧嘴。",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
+      },
+      {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-8",
+            "target": "人马牛和狗\n\n马、牛和狗，因为寒冷，很觉痛苦，向人来求庇荫和保护。人亲切地接待他们，生起火来，使他们温暖。他让那\n\n马随便吃他的燕麦，又给牛吃许多的干草，还拿他自己桌上的肉饲狗。他们感激得很，决定尽他们的力报答他。因此，他们三个将他的一生分作一期，每一个都用他自己主要的使他们特异的美质赠与人一生中的一部分。马择最早的几年，以他自己的特质送给他们，所以每个人在他的青春时代，总是躁急和倔强，并且固执他自己的意见。那在人保护之下的牛，取定第二个时期，因此人在中年时代，是埋头工作，用尽劳力来积聚资产，节省他的财源。最后的一段剩给狗，于是老年人常常容易生气不容易欢乐，自私自利，宽容自己的家人而嫌恶生客，贪图舒服。",
             "quality_score": null,
             "presentation_score": null,
             "edits": []
@@ -77472,6 +77661,27 @@
             "edits": []
           }
         ]
+      },
+      {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-9",
+            "target": "狮子狼和狐狸\n\n一只狮子，年老生病，躺在洞里。一切野兽们，除了狐狸，全来探望他们的王。狼以为他现在机会很好，向狮子控诉狐狸，对统治他们大家的人竟毫不尊敬，也不来探望他。正在这时候，狐狸走进来，听到狼最后的几句话。狮子向他生气怒吼，狐狸便找一个机会来自卫。说：「所有来探望你，谁能和我一样对你有益呢？我求循了各处，好容易从医生那里，问到医治你的方法。」狮子命他立刻说出疗治的药来，狐狸便回答说：「你得活剥一只狼，将他的皮乘热裹在你的身上。」狼立刻被拿出去剥了。这时狐狸转身向狼笑着说：「你该使王不生坏意，只生好念啊。」",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
       }
     ]
   },
@@ -77509,6 +77719,27 @@
           {
             "id": "fable-10",
             "target": "驴、狐狸和狮子\n\n一只驴和一只狐狸结伴同行，一起外出寻找食物。它们刚走没多远，就看到一只狮子朝它们走来，这让它们都吓坏了。但狐狸认为自己找到了一个自保的方法，于是它大胆地走到狮子面前，悄悄地对它说：“如果您答应放我走，我就想办法让您轻松地抓住这只驴，而不用费力地跟踪它。”狮子同意了，于是狐狸又回到同伴身边，不久后，它设法将驴引到了一处隐蔽的陷阱里。这个陷阱是一位猎人挖的，用来捕捉野生动物，驴掉进了陷阱。当狮子看到驴被安全地困住，无法逃脱时，它首先将注意力转向了狐狸，很快就将其制服，然后悠闲地开始享用驴肉。\n\n背叛朋友，往往会自食其果。",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
+      },
+      {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-10",
+            "target": "驴子狐狸和狮子\n\n驴子和狐狸结成联合战线，出去到林中找食。走不多远，遇见一只狮子。狐狸见危机当前，便走到狮子面前，答应替他想法捉住驴子，只要狮子肯不伤害自己。狮子答应了，狐狸就引驴子往一个深坑去，使他落下陷阱。狮子见驴子已经稳到手了，立刻先捉住狐狸，再去扑杀驴子。",
             "quality_score": null,
             "presentation_score": null,
             "edits": []
@@ -77579,6 +77810,27 @@
           {
             "id": "fable-11",
             "target": "弓箭手和狮子\n\n一个弓箭手上山去，用他的弓箭玩一玩。\n所有动物见了他都跑了，只有狮子例外，它留了下来，\n向他挑战，要跟他打。弓箭手向狮子射了一箭，射中了它，\n说：“瞧瞧我的使者有什么能耐。等一等，我自己来对付你。”\n可是，狮子中箭后，拔腿就跑。狐狸目睹了这一切，\n对狮子说：“来呀，别胆小！你为什么不留下，跟他打呢？”\n狮子回答说：“你休想让我留下，不是因为你。他派出的使者\n都如此厉害，可见他本人一定更令人害怕。”\n\n要躲开那些远距离就能造成伤害的人。",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
+      },
+      {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-11",
+            "target": "弓箭手和狮子\n\n一个善射的弓箭手，到山里去寻找猎物。林中的一切野兽，看见他来到，全逃走了。只有狮子独自向他挑战。弓箭手立刻射出一箭，对狮子说：「我给你一个消息，从他那里，你可以知道我本人来攻打你时的光景。」狮子因此受了伤，大怕而逃。那时狐狸来劝他勇敢些，别一交手便逃走。狮子回答说：「你劝我是没用的，因为他既派了这样可怕的信使来，我怎么受得住这人本身的攻击呢？」",
             "quality_score": null,
             "presentation_score": null,
             "edits": []
@@ -77677,6 +77929,27 @@
           {
             "id": "fable-12",
             "target": "挤奶女工与她的奶桶\n\n一位农夫的女儿刚挤完牛奶，正头顶奶桶返回奶房。她边走边遐想：“这桶牛奶可以提炼出奶油，我将把它制成黄油拿到市场去卖。用卖得的钱，我可以买许多鸡蛋；等鸡蛋孵出小鸡，不久我就能拥有一大片鸡舍。那时，我卖掉一些鸡，用所得的钱为自己买一件新裙子，穿上它去赶集。所有的年轻小伙子都会羡慕这件裙子，纷纷前来向我求爱，可我定要扬起头，对他们不理不睬。”她完全忘了头上的奶桶，一边说着，一边配合着动作扬起了头。奶桶顿时跌落，牛奶洒了一地，她那些美好的空中楼阁顷刻间化为乌有！\n\n莫在鸡蛋孵出小鸡前就数鸡。",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
+      },
+      {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-12",
+            "target": "榨牛奶的女子和她的牛奶桶\n\n一个农家的姑娘正顶着一桶牛奶，从田野里回到田庄上去，她忽然想入非非了。「这桶牛奶卖得的钱，至少可以购买三百个鸡蛋。这些鸡蛋就是除去意外的损失，总可孵得二百五十只小鸡，到家禽价格涨得最髙时，这些小鸡便可去应市了。那末一到年底，我便有应该分给我的赏金，这些钱足够买一件新长袍了。我穿着这件新衣，到圣诞夜宴中去，那时一切的青年人，都要来跟我求婚，但是我却要摇摇头，全拒绝他们。」她在这时候，随着她的心思，真的摇起头来了，同时头上的牛奶桶落到地上，而她那在幻想中的计划，在那时也完全消灭了。",
             "quality_score": null,
             "presentation_score": null,
             "edits": []
@@ -77796,6 +78069,27 @@
         ]
       },
       {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-13",
+            "target": "老妇人和医生\n\n一个瞎眼的老妇人，请一位医生来医治；又在证人之前，订定一个合同：如果他医好她的瞎眼，他可以得到一笔钱作报酬。但如果她的病不能医好，她一点东西也不给他。条件既已订好，医生时时用药膏敷到她眼上，每一次来看她时，总顺手带走一点东西，渐渐地将她的一切财产都偷走了，当他已经偷得谷了，他也将她医好，问她要那笔允许过的报酬，那老妇人恢复她的视觉时，见她屋子里的东西，已经空空如也，就什么也不给他。医生坚持着他的合同，她仍旧拒绝，因此，就将她传到法官的面前。老妇人在法庭上说：「这人在这里说的话，都是实在的，因为我也答应过给他一笔钱，只要他医好了我的眼睛。可是我在屋子里，反不能够看见一件东西。」我屋里的各种的产业和值钱的东西，现在他虽然说我的瞎眼已经医好，可是我瞎了眼睛的时候，我还看见什么也不给他的现在他说我「已医好了」，而我正好相反，承认我「仍旧瞎着」；因为如果我仍旧瞎眼，我是在这里说。",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
+      },
+      {
         "id": "translategemma27b",
         "model": "google/translategemma-27b-it",
         "available": true,
@@ -77866,6 +78160,27 @@
         ]
       },
       {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-14",
+            "target": "狐狸和山羊\n\n一只狐狸落在一口深井里，好似囚犯下监，一无逃出的方法，恰巧有一只山羊，渴得要命，也到井边来饮水。他看见狐狸，就问他井里水味如何。狐狸用欢愉的态度，掩过他的窘状，极口称赞井里的水，说是异常甜美。并且鼓励他下去：山羊只愿口渴，不加思索，便跳下去。等他喝彀了后，狐狸便把他们所处的困难告诉了他，又提出一个大家同逃的计划：「你将前脚放在墙上，俯下头来，我就爬到你的背上逃出去，再帮助你出去。」山羊果然很赞成。狐狸跳到他的背上，靠了山羊的两角，站稳自己的身体，到了井上，飞奔逃走。山羊骂他破约，狐狸便回身喊道：「老呆虫！要是你脑子灵敏，你一定不会不先看清出路，便跳下去的，也不致陷入自己无法可想的危险中去了。」看清楚了再跳。",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
+      },
+      {
         "id": "qwen27b",
         "model": "Qwen/Qwen3.5-27B",
         "available": true,
@@ -77915,6 +78230,27 @@
           {
             "id": "fable-15",
             "target": "驴子与它的负担\n\n一个拥有驴子的行商有一天买了一批盐，将驴能承受的最大重量全部加载在它背上。在回家的路上，驴子在过溪流时绊了一跤，掉进了水里。盐被彻底打湿了，其中很大一部分溶解并流走了，因此当驴子重新站起来时，发现背上的负担减轻了许多。然而，主人把它赶回镇上，又买了一些盐，加在篮子里剩下的盐之上，再次出发。他们刚到溪流边，驴子就躺进了水里，然后像之前一样，带着轻得多的负担站了起来。但主人识破了这个诡计，于是再次折返，买了一大批海绵，堆在驴子的背上。当他们来到溪流边时，驴子再次躺了下去；但这一次，由于海绵吸收了大量的水，当它站起来时，发现自己背负的负担比以往任何时候都要沉重。\n\n好牌打多了，也可能出问题。",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
+      },
+      {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-15",
+            "target": "盐贩和他的驴子\n\n一个盐贩，赶他的驴子到海边去买盐。他回家的路，经过一条小河，过这条小河的时候，他的驴子踏空了一步，不留心跌到水里去，等爬起来时，他所载的担子，因为水把盐溶解了，减轻了许多。盐贩折回原路，在他的駄篮里，重新装上比上次更多的盐，当他再回到小河那里，驴子故意在老地方跌下去，再起来时，他的担子又减轻了，不觉自鸣得意。庆祝他又达到了愿望。盐贩明白他的诡计，第三次又赶他到海滨去，并不去买盐，买了一大包海绵。驴子到小河时，老脾气重新发作，故意跌下去，那时海绵吸饱了水，他的担子，大大地加重起来。这样他的诡计，反使他自己得到双倍的重担。",
             "quality_score": null,
             "presentation_score": null,
             "edits": []
@@ -78060,6 +78396,27 @@
             "edits": []
           }
         ]
+      },
+      {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-16",
+            "target": "牧山羊的人和野山羊\n\n傍晚时,一个牧山羊的人赶着他的羊群,打牧场上回来,看见几只野山羊,混在他的山羊群里,那一晚他就将他们和他自己的山羊,关在一起。次日天下大雪,因此他不能将他的羊群,带到平日牧养的地方去吃草,只好仍旧将他们关在羊栏里。他给他自己的山羊,只有仅足果腹的食料,而给那几只新来的野山羊,吃得很多。他希望笼络那些野山羊,和他一起,将他们变成自己的羊。雪消溶了,他把他所有的羊,再带到外面去吃草,那几只野山羊,立刻如飞地逃到山上去。牧羊的人便痛骂他们,说在大雪中,他待他们多好,比待自己的羊还要小心，现在他们却忘恩负义地逃走了。你待我们比待长久和你在一起的山羊还要好；那末很明白的，以后别的山羊来了，你也要将同样地厚待他们，而薄遇我们了。老朋友不能为了新朋友，而无故牺牲掉的。",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
       }
     ]
   },
@@ -78075,6 +78432,27 @@
     "post_edit": "",
     "post_edit_origin": null,
     "candidates": [
+      {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-17",
+            "target": "驮偶像的驴子\n\n有一次一只驴子驮着一个著名的木偶，经过城里的街上，要放到一个庙里去。当他沿路走过去的时候，大群的人都低头俯伏在那偶像的前面。驴子看见那些人磕头，是对他表示敬意的，骄傲地抬起头来，搭起架子，不肯再走动一步了。赶驴子的人看见他这样，就拿鞭在他的前腿上尽力抽打，并且说：「啊，你这坏东西，人会向驴子崇拜，现在还不曾到这个地步呢。」将应归于别人的光荣当作是自己的，这是呆想。",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
+      },
       {
         "id": "qwen27b",
         "model": "Qwen/Qwen3.5-27B",
@@ -78188,6 +78566,27 @@
         ]
       },
       {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-18",
+            "target": "猫和老鼠\n\n有一座房子，被老鼠们所盘踞。一只猫发见了这事情，走进这座房子，动手捉捕，尽量地吞吃。许多老鼠们怕被吞噬，只静静的躲在洞里。猫再不能捉到，知道她一定得用诡计引诱他们出来。因此他跳到一个木钉上，使自己从钉上挂下来，假装死了。有一个老鼠偷偷地向外偷视，看见了她，便说：「唉，我的好奶奶，即使你变成了一袋粉，我们也不会来亲近你的。」",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
+      },
+      {
         "id": "gemma31b",
         "model": "google/gemma-4-31B-it",
         "available": true,
@@ -78265,6 +78664,27 @@
           {
             "id": "fable-19",
             "target": "跳蚤与公牛\n\n一只跳蚤曾对一只公牛说：“像你这样强壮高大的家伙，怎么能心甘情愿地为人类服务，替他们干所有的苦活？而我，虽然小得几乎看不见，却住在他们身上，喝饱他们的血，而且从来不用干一点活。”公牛回答道：“人们对我非常友善，所以我很感激他们：他们给我充足的食物和住所，而且时不时地拍拍我的头和脖子，表达对我的喜爱。”“如果我允许的话，他们也会拍我的，”跳蚤说，“但我得小心地避开，否则我就被拍得没影了。”",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
+      },
+      {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-19",
+            "target": "蚤和牛\n\n一个蚤这样对牛说：「你多么苦恼啊，你既这么巨大强壮，却愿受人们的虐待，并且天天给他们做苦工；而我虽是这么小的一个生物，却无怜惜地吃他们的肉，喝他们的血，毫无拘束。」牛回答说：「我不愿忘恩负义；因为人们对待我非常好，他们常常拍拍我的头和肩膀哩。」蚤说道：「呵！就是你所欢喜的这种轻拍，无论什么时候，一临到我身上，我便死在他们的手中。」",
             "quality_score": null,
             "presentation_score": null,
             "edits": []
@@ -78370,6 +78790,27 @@
         ]
       },
       {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-20",
+            "target": "百灵和她的小鸟们\n\n一只百灵鸟，在早春的时候，在一块嫩绿的麦田里做窑。她的小雏们，力气渐次长足，他们的翼膀和丰满的羽毛，都已用得到了。那时那块田的主人，看到他现在已十分成熟的收成，便说：「时候到了，我一定要去请所有的邻人来帮助我收获。」有一只小百灵鸟听到他的话，便讲给他的母亲听，问她他们该搬到那里去居住。她说：「现在还不是搬的时候呢。我的儿啊，那人只要请他的朋友来帮助他收获，不是真很急切的。」几天之后，田主又来，看见麦因过熟，麦实也落下来了，说道：「明天我自己带我的工人和我所能雇到的割麦的\n\n人，来动手收获了。」百灵鸟听到这些话，向她的小鸟们说：「现在我们应该离开了，因为那人这一次已急切起来，他不再信托他的朋友，而要亲自来动手了。」\n自助是最好的帮手。",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
+      },
+      {
         "id": "cohere",
         "model": "cohere/command-a-plus",
         "available": true,
@@ -78419,6 +78860,27 @@
           {
             "id": "fable-21",
             "target": "兄妹\n\n有个人有两个孩子，一男一女。男孩生得俊俏，女孩却相貌平平。一天，他们在母亲的房间里一起玩耍，偶然发现了一面镜子，第一次看见了自己的模样。男孩看见自己长得多么英俊，便开始向妹妹夸耀自己的容貌；而妹妹发现自己相貌平平，气得几乎哭了出来，觉得哥哥的话是在羞辱自己。她跑去找父亲，告诉他哥哥有多么自负，还指责哥哥乱动母亲的东西。父亲笑着亲了亲两个孩子，说：“孩子们，从今往后，要学会善用镜子。你，我的儿子，要努力做个像镜子映照出的容貌那样出色的人；你，我的女儿，则要下定决心，用你温柔的性情弥补容貌上的平凡。”",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
+      },
+      {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-21",
+            "target": "兄和妹\n\n一个父亲，有子女各一；儿子以他的美貌著名，而女儿却以奇丑著名。有一天，他们正和孩子们一样在玩\n时，偶然在他们母亲椅子上的镜子里，看见自己儿子自庆他的美貌，女儿便很生气，忍不住她哥哥的自赞；\n听他说的一切话，都好像以为对她而发；（除此以外，她还有什么方法呢？）她跑到她父亲的跟前去，对她\n的哥哥报复怨恨地诉说他是男孩子，却用只属于女子的东西。父亲把他们两个都拥抱起来，无偏无私地给\n他们每人以他的亲吻和抚爱，说道：「我愿你们俩每天都去对对镜子；你，我的儿子啊，你不可被恶行来污损\n你的美貌；你，我的女儿啊，你可以用你的美德来补足你美貌上的缺陷。」",
             "quality_score": null,
             "presentation_score": null,
             "edits": []
@@ -78510,6 +78972,27 @@
         ]
       },
       {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-22",
+            "target": "猿猴和两个旅行人\n\n两个人，一个总说实话，一个只说谎话，他们一起在旅行，偶然来到猿猴国里。有一只猿猴，他已是自称为王了，吩咐捉住这两个人，带到他的面前来，他要讯问人们对他的意见。同时他又命令所有的猿猴，在他的左右排成长行，中间给他放着一个王位，好像人们的仪式。这些东西预备妥当了，他发出他的命令，将两个人带到他面前来，他用一句话简单说：「啊，客人们，你们看来，我是一种怎样的国王呢？」那说谎话的旅行人回答说：「在我看来，你好像是个很有权力的国王。」那没你对于在我周围的这些，又觉怎样呢？」他回答说：「他\n\n们是你自己很有价值的同伴，至少配做大使和将领。那猴猴和他的廷臣听了这翻谎话，很觉满意，吩咐将美好的礼物送给这诏媚的人。那诚实的旅客看见这个情形，心中自想：「一翻谎话可以得到这样好报酬。那末要是我依照我的习惯说了真话，我又将得到多么大的报酬呢？」那猴猴立刻转过来问他：「请问你觉得我和我的这些朋友怎样呢？」他说道：「你是一只很卓绝的猿猴，而你那一切的同伴，依你类推，也都是些卓绝的猿猴啊。」猴猴王听到这些真话，老羞成怒，将他丢给他同伴们的爪牙中去。",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
+      },
+      {
         "id": "gpt",
         "model": "gpt-6-luna",
         "available": true,
@@ -78579,6 +79062,27 @@
     "post_edit": "",
     "post_edit_origin": null,
     "candidates": [
+      {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-23",
+            "target": "吹笛的渔人\n\n一个擅长音乐的渔夫，带了笛和鱼网来到海滨，站在石砖上，吹了几曲歌，希望以唱声引诱鱼儿自动投\n\n入他撒在下面的网中来。可是等了许久，却是徒然，他就丢开了笛，抛网入海，打到满满一网的鱼。当他提起网\n\n来，看见鱼儿在网中跳跃时，他说：「啊！你们这些倔强的家伙！我吹笛时，你们不肯跳跃，现在我不吹了，你们却\n\n雀跃起来！」",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
+      },
       {
         "id": "qwen27b",
         "model": "Qwen/Qwen3.5-27B",
@@ -78664,6 +79168,27 @@
     "post_edit_origin": null,
     "candidates": [
       {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-24",
+            "target": "树和斧头\n\n一个人走进树林，向树请求给他一个斧头的柄。树便答应他的请求，给他一株小的榛树。那人便用他做成一个新的斧头柄，配到斧头上去，开始运用，迅速地砍了几下，砍倒林里最高贵的大树一棵老橡树，悲泣着。他同伴的毁灭，可是来不及了，他对邻近的一棵柏树道：「这样先将我们葬送了。假使我们不放弃那株小榛树，我们到如今也许还保住我们自己，永久地直立在这里。」",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
+      },
+      {
         "id": "qwen27b",
         "model": "Qwen/Qwen3.5-27B",
         "available": true,
@@ -78747,6 +79272,27 @@
     "post_edit": "",
     "post_edit_origin": null,
     "candidates": [
+      {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-25",
+            "target": "孔雀和朱娜\n\n孔雀对朱娜诉苦，说夜莺以她的甜歌，使得大家爱听，而他每一开口，便让听到他声音的人，作为笑柄。这位天后安慰他说：「但是你在形状和大小的方面，是出类拔萃的。绿宝石的光辉，照耀在你的头上，你又用你羽毛华美的尾巴来开屏。」孔雀说：「但是我既在歌唱上给人超越过了，这种哑口的美丽，在我有什么用处呢？」朱娜回答说：「每样东西的命运，已经由命运之神的意志注定了的——注定了你是美丽的，老鹰的是力量；夜莺的是歌唱；渡鸟的是吉兆；乌鸦的是凶征。这些鸟类，对于赋与他们的东西，大家全很满意呢。」",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
+      },
       {
         "id": "translategemma27b",
         "model": "google/translategemma-27b-it",
@@ -78874,6 +79420,27 @@
         ]
       },
       {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-26",
+            "target": "狮子和兔子\n\n一只狮子，走过一只兔子的面前，那兔子正在她的洼里睡觉。狮子正要去捉她的时候，一只可爱的小牝鹿，在旁边跑过，他就抛下兔子，去追牝鹿。那时兔子给他的声音惊醒了，便飞奔开去。狮子追了好久，还捉不到，牝鹿便回来吃兔子。在他发现兔子也逃走了时，他说：「我为了找得更多的机会，反将已经到手的食物丢掉，真是应该的。」",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
+      },
+      {
         "id": "gemma31b",
         "model": "google/gemma-4-31B-it",
         "available": true,
@@ -78972,6 +79539,27 @@
         ]
       },
       {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-27",
+            "target": "两个兵和强盗\n\n两个兵一起旅行为一个强盗所劫。一个兵逃开去；另一个毅然站住，以他坚强有力的右手来自卫，杀死了强盗那胆小的同伴跑上来，抽出他的剑，然后将旅行外套抛开，说：「我要对付他，我要使他知道，他所抢劫的是什么人！」这时那个和强盗打过的人回答道：「我只愿你方才来帮助我，纵使只说这些话也好的，因为我会相信这些话是真的，更会鼓起勇气来，但是现在请你将剑放进鞘里去，绞住你的勇气是不可靠的了。」\n\n能欺骗那些不知道你的人啦，我，真已经验到过你逃走的速度，很明白你的勇气是一无用处的舌头吧，你只能",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
+      },
+      {
         "id": "translategemma27b",
         "model": "google/translategemma-27b-it",
         "available": true,
@@ -79021,6 +79609,27 @@
           {
             "id": "fable-28",
             "target": "驴和狼\n\n一头驴正在草地上吃草，远远望见了它的仇敌狼，便假装瘸得厉害，痛苦地一瘸一拐地走着。狼走近后，问驴怎么瘸了。驴回答说，它穿过篱笆时踩到了一根刺，恳求狼用牙把刺拔出来。“要不然，”它说，“等你吃我的时候，刺卡在你喉咙里，会让你疼得厉害。”狼答应了，让驴抬起脚来，然后全神贯注地拔刺。可驴突然抬起后蹄，狠狠踢中狼的嘴，打断了它的牙齿，接着便飞快地逃走了。狼好不容易能开口后，便自言自语地咆哮道：“我活该！父亲教我的是杀戮，我本该守着这行当，而不是妄想给别人治病。”",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
+      },
+      {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-28",
+            "target": "驴子和狼\n\n一只驴子，正在草场上吃草，看见走近一只狼来，要想攫他，便立刻假装跛足。驴子说他在经过篱笆的时候，脚上踏了一根尖刺，请狼给他拔出来，免得吃他的时候，卡在他的咽喉里。狼答应了，举起驴子的脚，用他全副的精神去找寻那根尖刺。驴子便用他的脚，踢伤狼嘴里的牙齿，逃走了。那狼因此受了重伤，说道：「我真自作自受，我的父亲只教我做屠户的生意，我为什么要去试当医生呢？」",
             "quality_score": null,
             "presentation_score": null,
             "edits": []
@@ -79083,6 +79692,27 @@
     "post_edit": "",
     "post_edit_origin": null,
     "candidates": [
+      {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-29",
+            "target": "补鞋匠改做医生\n\n一个补鞋匠，不能靠他的工作度日，穷得绝望，便到一个没人知道他的城里去行医。他卖一种药，假说是\n可以治好百病，靠他的吹牛和广告，博到了盛名。他偶然自己生了重病，这时那城里的官，想要试验他的本领。\n因此，他叫拿一只杯来，放满一杯水，假说用那补鞋匠的解毒药和毒汁，和起来，叫他喝下，允许他一笔酬金。\n补鞋匠怕死，便招出他毫无医药常识，只是被人们的睛赞而成名的。那官便召集市民大会，告诉市民说：「你\n们笨得真可以啊！你们竟毫不迟疑，将你们的头，托付一个连脚上穿的鞋都没人履他做的人啊！」",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
+      },
       {
         "id": "cohere",
         "model": "cohere/command-a-plus",
@@ -79224,6 +79854,27 @@
         ]
       },
       {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-30",
+            "target": "雄鸡和宝玉\n\n一只雄鸡给自己和他的母鸡们在抓食物，找到一块宝玉。他对那块宝玉说：「假使不是我，而是主人找到了你，他要把你检起来，珍贵异常。但是我找到了你，一无用处。我与其得到世间一切的宝石，倒不如一颗谷粒好。」",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
+      },
+      {
         "id": "gpt",
         "model": "gpt-6-luna",
         "available": true,
@@ -79251,6 +79902,27 @@
     "post_edit": "",
     "post_edit_origin": null,
     "candidates": [
+      {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-31",
+            "target": "狐狸和猴子\n\n一个猴子，有一次在百兽大会中跳舞，他的表演，使野兽们全觉很有趣，使大家推举他做王。一只狐狸妒忌他的荣誉，发见在一个捕兽机里，有一块肉放着。他领猴子到捕兽机的地方，说：「她寻到一宗贮藏，不敢先自动用，给他保存着，当作找到的国库，请他接收。」猴子卤莽地走近去，便被关在捕兽机里了。他痛骂狐狸存心不良，将他引到罗网中来。狐狸回答说：「哦，猴子，像你这样没有知识的东西，也配做百兽之王吗？」",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
+      },
       {
         "id": "cohere",
         "model": "cohere/command-a-plus",
@@ -79364,6 +80036,27 @@
         ]
       },
       {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-32",
+            "target": "马和骑兵\n\n一个骑兵和他的战马，在沙场上百战余生。战事持久的时候，他重视他的马，当作一切危难中的救星，用稻草和谷物，小心地饲养他。等到战事一平静，他只准他吃粗糠，使他载木材的重负，叫他做许多苦工服役。受些虐待，然而战事又发生了，军号召他归队，骑兵将他的战马，放好鞍辔；自己也穿起笨重的盔甲，骑到马上去。那战马再也不经重负，立刻压得跌倒在地，对他主人说：「如今你只好步行去打仗吧，因为你已经使我从一匹马变成一只驴子了；现在你怎么能够在顷刻之间，叫我从一只驴子再变成一只马呢？」",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
+      },
+      {
         "id": "gemma31b",
         "model": "google/gemma-4-31B-it",
         "available": true,
@@ -79441,6 +80134,27 @@
           {
             "id": "fable-33",
             "target": "猎犬与野兔\n\n一只年轻的猎犬追赶一只野兔，追上她时，一会儿用牙齿咬她，仿佛要把她杀死；一会儿又松开嘴，在她身边蹦蹦跳跳，像是在和另一只狗玩耍。最后，野兔说道：“我真希望你能露出真面目！如果你是我的朋友，为什么咬我？如果你是我的敌人，又为什么和我玩耍？”\n\n两面三刀的，算不上朋友。",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
+      },
+      {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-33",
+            "target": "狗和兔子\n\n一只猎狗，在山边赶出一只兔子，追了好久；有时用他的牙齿去咬她，佛佛他要她的性命一样；有时却向\n她嬉皮笑脸，在和别的狗玩耍一样。兔子对他说：「我愿你老实对付我，显出你自己的真意来。如果你是朋\n友，你为什么凶狠地咬我？如果你是仇敌，你为什么又向我开玩笑？」\n凡是你不知道这人是否可信，不可以和他做朋友。",
             "quality_score": null,
             "presentation_score": null,
             "edits": []
@@ -79532,6 +80246,27 @@
         ]
       },
       {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-34",
+            "target": "狮子和狐狸\n\n一只狐狸和一只狮子合伙，冒充狮子的仆役。他们根据自己的天性和能力，各自担负相当的责任。狐狸发现食物，指出它来，由狮子去扑和攫。不久狐狸见狮子带去他所分到的一份，妒忌起来，说他不再愿搜寻食物。只愿自己去攫取一点了。第二天他到羊栏里去试抓一只羔羊，但是把他自己变成猎人和猎狗的食物。",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
+      },
+      {
         "id": "cohere",
         "model": "cohere/command-a-plus",
         "available": true,
@@ -79587,6 +80322,27 @@
     "post_edit": "",
     "post_edit_origin": null,
     "candidates": [
+      {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-35",
+            "target": "马和马夫\n\n一个马夫常常一天到晚，给他的马洗刷。但同时却将马吃的燕麦，偷去卖掉，当作自己额外的收入。马说：\n\n一唉!假使你真心要我壮健,请你该少给我洗刷,多饲我吃些才行。——诚实是最好的方法。",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
+      },
       {
         "id": "gpt",
         "model": "gpt-6-luna",
@@ -79686,6 +80442,27 @@
         ]
       },
       {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-36",
+            "target": "驴子和他的影子\n\n一个旅客，雇一只驴子，载他到远处去。那天气候很热，太阳炙晒着，旅客便停下来休息，在驴子的影子下，求个庇荫，躲避骄阳。因为这影子只够遮蔽一个人，而旅客和驴子的主人，两个都要遮蔽，他们之中便起了一场剧烈的争论。争论他们中那一个有这个权利。驴子的主人坚持着他只出租驴子本身，不曾出租驴子的影子。那旅客说，他一起雇着驴子的影子和驴子的本身的争论不停。从说话而至互殴，当他们在打架时，驴子却逃走了。\n\n我们在争论影子的当儿，往往失去了原物。",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
+      },
+      {
         "id": "gemma31b",
         "model": "google/gemma-4-31B-it",
         "available": true,
@@ -79763,6 +80540,27 @@
           {
             "id": "fable-37",
             "target": "战马与磨坊主\n\n有一匹战马，习惯于载着骑手冲锋陷阵，后来觉得自己老了，于是选择在一家磨坊工作。现在，他不再能随着鼓声骄傲地迈步，而是不得不整日辛苦地磨谷物。\n\n有一天，他哀叹自己的艰辛，对磨坊主说：“唉！我曾经是一匹出色的战马，披着华丽的马衣，身边还有一名专门照顾我起居的马夫。现在的处境竟如此不同！我真希望自己从未离开战场而来到这座磨坊。”\n\n磨坊主严厉地回答道：“后悔过去是没有用的。命运起伏不定，你只能顺其自然。”",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
+      },
+      {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-37",
+            "target": "战马和磨坊主人\n\n一匹老迈的战马，离开战场，投身到一个磨坊里去。但是当他不服军役，而被迫推磨的时候，他却悲哭他变坏的命运，回想起从前的情形就说：「唉，磨坊主人啊！我以前固然一定要上战场，但我从头到尾，都有人给我洗刷，又有人跟着饲养我；如今我真不知道，我为什么要离开战场，而取磨坊呢！」磨坊主人回答：「不准恋恋不舍过去的事情，因为乐往哀来，是人世间一切东西共同的命运。」",
             "quality_score": null,
             "presentation_score": null,
             "edits": []
@@ -79908,6 +80706,27 @@
             "edits": []
           }
         ]
+      },
+      {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-38",
+            "target": "老鹰和狐狸\n\n一只老鹰和一只狐狸成为好友，决定做邻居。老鹰在一株大树的桠枝上做她的窝，而狐狸就爬到矮树丛中去，在那里生产她的小小狐狸。她们对于这个计划全实行了，狐狸去徘徊寻食时，老鹰因为缺乏她小鸟的食物，便突然飞下，攫去一只小狐狸，饲养她自己和她的小鸟们。狐狸回来时发见了这不幸的事，对于小狐狸的死，倒不怎样伤心，只痛恨没有报仇的能力。然而，一个公平的报答迅速地降临到老鹰头上了。她正飞近一个祭坛，坛上的村民正在祭献一只山羊，她就突然攫取一块肉，连这块肉一起带一点在烧着的火烬，跌了下来，死在树底下。狐狸就当着老鹰的面将他们吞咽下去。",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
       }
     ]
   },
@@ -79945,6 +80764,27 @@
           {
             "id": "fable-39",
             "target": "狐狸和刺猬\n\n一只狐狸在横渡湍急的河流时，被水流冲走，尽管他\n拼命挣扎，还是被冲得很远，最后，他筋疲力尽，满身伤痕，\n终于从回流中爬上岸，躺在那里动弹不得。这时，一群\n马蝇落在他的身上，吸他的血，他却无力抖动身体把它们\n甩掉。刺猬看见了，就问他是否要赶走那些折磨他的苍蝇；\n但狐狸回答说：“哦，千万别这样，这些苍蝇已经吸饱了\n血，现在从我身上吸取的很少；可是，如果你把它们赶走，\n另一群饥饿的苍蝇会来，把我剩下的血都吸干，让我血管里\n一滴血都没有。”",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
+      },
+      {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-39",
+            "target": "狐狸和刺猬\n\n一只狐狸经过一条急流的河水流冲他到一个很深的谷中去，他在那里，躺了许久，创伤很重，并且害病，不能走动。一群饥饿的吸血蝇，停集他身上。一个刺猬走过，可怜他的苦痛，问他要不要赶走扰害他的苍蝇。狐狸回答说：「不用，请你不要扰他们。」刺猬说：「为什么？你不要赶开他们吗？」狐狸回答说：「不要，因为你所看到的这些苍蝇，是吸满血不大叮我的。如果你替我赶走这些已经吃饱了血的苍蝇，那末另外一些更饥饿的苍蝇就要来补缺，将我所剩下的血，完全吸去了。」",
             "quality_score": null,
             "presentation_score": null,
             "edits": []
@@ -80050,6 +80890,27 @@
         ]
       },
       {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-40",
+            "target": "狮子狐狸和驴子\n\n狮子、狐狸、驴子，约定互相帮助去找食。已经获得大宗的猎物了，他们回到林里来，狮子先请驴子，分配盟约中三个伙伴各自应得的份子。驴子小心将获得物分成平均的三份，客气地请狮子和狐狸先拿。狮子突然大怒，将驴子吞吃掉。然后他请狐狸给他分配。狐狸将他们所猎得的一切，积成一大堆，只剩最小的一点，剩给自己。狮子说：「我聪明的朋友，谁教你这样分配的方法呀？你真精明极了。」狐狸答道：「我见了驴子的命运，便从他那里学会了这个分法。」将别人的不幸当作般凿，是最聪明的。",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
+      },
+      {
         "id": "translategemma27b",
         "model": "google/translategemma-27b-it",
         "available": true,
@@ -80127,6 +80988,27 @@
           {
             "id": "fable-41",
             "target": "兔子与猎犬\n\n一只猎犬从兔子洞里追赶出一只兔子，并追逐了它一段距离；但随着兔子逐渐拉开距离，猎犬放弃了追逐。一位目睹了这场追逐的乡下人，在猎犬返回时与它相遇，并嘲笑它失败了。“那只小兔子让你吃尽了苦头，”他说。“嗯，好吧，”猎犬说，“别忘了，为了填饱肚子而奔跑和为了保命而奔跑是完全不同的两回事。”",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
+      },
+      {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-41",
+            "target": "兔子和猎狗\n\n一只猎狗，将一只兔子赶出了洼，追了好久，便不赶了。一个牧羊人看见他停住，讥笑他说：「你们两个跑起来，反而小的那个快得多了。」猎狗回答说：「你不知道我们的跑是不同的啊！我只为一餐饭而跑，而他的跑，却是为了他的性命。」",
             "quality_score": null,
             "presentation_score": null,
             "edits": []
@@ -80244,6 +81126,27 @@
             "edits": []
           }
         ]
+      },
+      {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-42",
+            "target": "驴子雄鸡和狮子\n\n时候，一只驴子和一只雄鸡，同住在一个草场里，那时有一只狮子，饥火中烧，走近那里。他正想要扑向驴子的\n雄鸡只啼了一声，狮子便害怕，就鼓勇去扑击他，在他的后面追赶上去。驴子不曾追得多少路，狮子回头一看，\n抓住驴子，撕碎吞吃了。\n错误的自信，是引人到危险的路。",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
       }
     ]
   },
@@ -80316,6 +81219,27 @@
         ]
       },
       {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-43",
+            "target": "贼和雄鸡\n\n有几个贼，偷进一座房子里去，找不到什么东西，只见一只雄鸡，他们就偷了雄鸡，赶快逃走。他们到了家\n\n中，正要将雄鸡杀死，雄鸡却哀求饶命：「请饶我吧；我对于人们是很有用的。我在早晨，叫起人们来工作。」他\n\n们回答说：「我们因此要杀你，因为你一叫醒你的邻人时，便完全破坏我们的工作了。」\n\n保障道德的人，是为恶徒所痛恨的。",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
+      },
+      {
         "id": "gemma31b",
         "model": "google/gemma-4-31B-it",
         "available": true,
@@ -80379,6 +81303,27 @@
           {
             "id": "fable-44",
             "target": "狮子与公牛\n\n一只狮子看到一群牛中有一头肥壮的公牛，便想方设法地将其抓到手。于是，狮子传话给公牛，说自己要宰羊祭祀，问公牛是否愿意赏光共进晚餐。公牛接受了邀请，但当他到达狮子的洞穴时，只见那里摆满了锅碗瓢盆和烤肉叉，却不见半只羊的影子。于是，公牛立刻转身，悄悄地离开了。狮子用受伤的语气在后面大声询问原因，公牛回头说道：“我的理由足够充分。当我看到你准备的这一切时，我立刻意识到，祭品将是一头公牛，而不是一只羊。”\n\n鸟儿在眼前，网布也徒劳。",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
+      },
+      {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-44",
+            "target": "狮子和公牛\n\n一只狮子，很想去捉一只公牛，可是又不敢扑他，因为怕他那庞大的躯干，便回头去想诡计来吃他。他走近前去，说：「我杀了一只很好的羊，如果你肯光临我的家里，去和我分享，那我多么快乐呵！」狮子说这句话，希望在公牛低头去吃时，乘机去扑杀他，将他拿来一饱饥腹。然而那公牛一到狮子的洞里，看见那巨大的尖铁棒和很大的铲子，不曾瞧到羊在那里，就一声不响，悄然地走开去。狮子问他为什么不向主人道谢，这么立刻走开去，而且主人并不曾得罪他。公牛说道：「我很由你杀了一只羊的事情，我一点也看不出形迹，同时很清楚地看到你要杀公牛吃的种种预备。」",
             "quality_score": null,
             "presentation_score": null,
             "edits": []
@@ -80484,6 +81429,27 @@
         ]
       },
       {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-45",
+            "target": "铜匠和他的狗\n\n一个铜匠有一只小狗，牠很博得主人的心爱，差不多左右不离。当铜匠在工作的时候，狗却睡着；但是到他去开始吃饭的时候，狗便醒来，摇头摆尾，仿佛要求他给一份膳食。有一天他的主人，装出生气的模样，向他摇动他的棒，说：「你这小坏蛋，我该怎样对付你？我在砧上打铜的时候，你倒在床上睡觉；我工作之后，动手吃饭的时候，你却醒来，摇尾向我求食，你不知道有工作才有一切幸福，除开作工的人外，谁都没有饭吃的。」",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
+      },
+      {
         "id": "cohere",
         "model": "cohere/command-a-plus",
         "available": true,
@@ -80580,6 +81546,27 @@
             "edits": []
           }
         ]
+      },
+      {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-46",
+            "target": "马和驴\n\n一匹马夸耀他精美的马饰，在路上遇见一只驴子。那驴子因为载着重负，慢慢地让开路。马说：「我恨得要用脚踢你了。」驴子毫不计较，只是默默地祈求神佑。不久，那匹马患气喘，被他的主人送到田庄上来。驴子看见他拖着粪车，便讥笑他说：「啊，吹牛的东西，你那华丽的马饰，现在到那里去了？你自已现在成了你从前不愿看的家伙了！」",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
       }
     ]
   },
@@ -80664,6 +81651,27 @@
             "edits": []
           }
         ]
+      },
+      {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-47",
+            "target": "寡妇和她的小丫头\n\n一个欢喜清洁的寡妇，有两个小丫头服侍她。她在每天早晨鸡啼时，便唤醒她们。两个丫头苦于这样过\n\n度的工作，决定杀死这只雄鸡，免得那么早便叫起她们的主妇。当她们做好这件事时，她们才发见自讨苦吃，\n\n因为她们的主妇不能再从雄鸡那里知道时候，便在半夜里，就叫她们起来工作。",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
       }
     ]
   },
@@ -80679,6 +81687,27 @@
     "post_edit": "",
     "post_edit_origin": null,
     "candidates": [
+      {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-48",
+            "target": "猫和雄鸡\n\n一只猫捉到一只雄鸡，在想找出一个吃他合理的口实。他骂他是人类的妨碍物，为的是他夜里啼起来，使人不能安睡。雄鸡自辩说，他为人类的利益而啼的，那样使他们可以及时起来工作。猫回答说：「虽然你有许多似是而非的辩解，但我总不能不吃晚餐。」于是，他便把他当晚餐了。",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
+      },
       {
         "id": "gpt",
         "model": "gpt-6-luna",
@@ -80763,6 +81792,27 @@
     "post_edit": "",
     "post_edit_origin": null,
     "candidates": [
+      {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-49",
+            "target": "狼和鹤雀\n\n一只狼喉中梗了骨头，便花钱雇一只鹤雀来，将头伸进他的喉中，把那块骨头取出来。当鹤雀拔出了那块骨头，问他要允许过的报酬，狼却露牙磨齿说：「怎么允许你的头，从一只狼的口和牙床中安全地伸出来，已有莫大的报酬了。」为恶人効劳，不要希望报酬；要是能避免伤害，已经万幸了。",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
+      },
       {
         "id": "cohere",
         "model": "cohere/command-a-plus",
@@ -80916,6 +81966,27 @@
             "edits": []
           }
         ]
+      },
+      {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-50",
+            "target": "鹿和葡萄藤\n\n一只鹿，被猎人追逐得很急，躲到一株葡萄藤的大叶下。猎人们在忽促中，冲过他藏匿的地方；那时鹿以为一切危险都已过去，就开始去嚼葡萄藤的嫩须。有一个猎人，听得叶子的沙沙声，回过头来一看，瞧见那只鹿，便射出一支箭，将他射死。那只鹿在快死的时候，这样呻吟着：「我真是应该的！因为我实不该虐待待救我性命的葡萄藤呀。」",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
       }
     ]
   },
@@ -80974,6 +82045,27 @@
         ]
       },
       {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-51",
+            "target": "瞎子和小兽\n\n一个瞎子，惯于用他的手触摸各种动物，便能分别出来。有人带来一只狼的小兽，请他一摸，说出牠是什么东西。他摸了牠有点疑心，便说：「这是一只狐狸，还是一只狼子，我不大知道。不过这件事情我却很明白的。」\n\n让这动物进羊栏去，总是不安全的。一\n恶劣的倾向，在幼年时便可看到。",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
+      },
+      {
         "id": "translategemma27b",
         "model": "google/translategemma-27b-it",
         "available": true,
@@ -81015,6 +82107,27 @@
     "post_edit": "",
     "post_edit_origin": null,
     "candidates": [
+      {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-52",
+            "target": "蝙蝠和鼠狼\n\n一只蝙蝠落到地上来，被一只鼠狼捉住了。蝙蝠哀求饥命。鼠狼不允许，说他自己最爱和鸟类作仇敌。蝙蝠证明自己并不是鸟，只是老鼠，因此鼠狼放了他。不久这蝙蝠又跌到地上来，被另一只鼠狼捉住，他同样地哀求饥命。那鼠狼说他自己最恨老鼠。蝙蝠证明自己并不是老鼠，是一只蝙蝠；因此，他第二次又逃出危险了。",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
+      },
       {
         "id": "gemma31b",
         "model": "google/gemma-4-31B-it",
@@ -81099,6 +82212,27 @@
     "post_edit": "",
     "post_edit_origin": null,
     "candidates": [
+      {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-53",
+            "target": "小羊和狼\n\n一只小羊，从牧场回来时，被一只狼所追赶，没有保护。他回转身来，对狼说：「狼朋友，我想我一定是你的俘虏了，可是在我未死之前，我要请你大开天恩，给我吹一个曲。我可依曲跳舞。」狼答应了，当他在吹箫，小羊在跳舞的时候，猎狗们听到这声音，便上来了，向前面去追赶着狼。狼回头对小羊说：「这正是我自作自受，因为我本来是一个屠夫，不应做一个吹箫的乐师，来给你娱乐。」",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
+      },
       {
         "id": "translategemma27b",
         "model": "google/translategemma-27b-it",
@@ -81212,6 +82346,27 @@
         ]
       },
       {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-54",
+            "target": "富翁和硝皮匠\n\n一个富翁住得和一个硝皮匠很近，他受不住硝皮场上的臭气，逼著他的邻人移开去。硝皮匠时时迁延他的行期，说着他不久就要搬。但是他仍旧继续住在那里，过了些时候，这件事情发生了：富翁已开惯了这臭气，觉得没有什么不方便，也就不再出怨言。",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
+      },
+      {
         "id": "gpt",
         "model": "gpt-6-luna",
         "available": true,
@@ -81303,6 +82458,27 @@
           {
             "id": "fable-55",
             "target": "鹿、羊与狼\n\n从前，一只鹿向一只羊借一斗小麦，说他的朋友狼会做担保。然而，羊担心他们要骗她，便婉言谢绝道：“狼向来是看中了什么就抢走，拿了就跑，从不还钱；而你跑得也比我快得多。等到还债的日子到了，我怎么能追得上你们中的任何一个呢？”\n\n两个黑加在一起，也变不成一个白。",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
+      },
+      {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-55",
+            "target": "鹿狼和羊\n\n鹿向羊借一斗麦。说：「狼可以给他做保证。羊疑心他存心欺诈，请他原谅。」狼常是攫了他所要的东西而逃，而你却跑得比我快。那末到了偿还的时候我怎能找到你们呢？」",
             "quality_score": null,
             "presentation_score": null,
             "edits": []
@@ -81408,6 +82584,27 @@
         ]
       },
       {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-56",
+            "target": "蚊子和狮子\n\n一个蚊子对狮子说：「我用不到怕你，你也不见得比我高明。你的力量有什么利害呢？你会用你的脚爪来抓用你的牙齿来咬，——一个女人在和人争闹时，她也会这样做呢。我再告诉你，我简直比你强得多啊；如果你不相信，让我们来打一场，看看究竟谁利害。」蚊子夸口之后，便紧紧地叮住狮子的鼻尖和他脸上没有毛的地方。狮子想压死他，用脚爪抓他，结果他却将自己伤得很利害。蚊子因此战胜了狮子，嗡嗡唱着他的凯歌，飞了开去。可是不多一会，他却缠到蜘蛛网的网眼里，给一只蜘蛛吃掉。他那时很觉不幸，说道：「我真可怜啊，能够向那最巨大的野兽宣战而得胜的我，竟会将自己葬送给这只蜘蛛！这只不足一顾的虫豸——」",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
+      },
+      {
         "id": "gpt",
         "model": "gpt-6-luna",
         "available": true,
@@ -81443,6 +82640,27 @@
           {
             "id": "fable-57",
             "target": "独眼的雄鹿\n\n一头独眼的雄鹿在海边吃草，总是把完好的那只眼睛转向陆地，好留意猎犬是否逼近；而瞎掉的那只眼睛则朝着大海，丝毫没有想到危险会从那边袭来。谁知几个沿岸航行的水手发现了它，便向它射出一支箭，令它身受重伤，命不久矣。它临死前对自己说：“我真可怜！我提防着陆地上的危险，却没有人从那里来袭击我；我不曾担心海上的祸患，毁灭却偏偏从那里降临了。”\n\n不幸往往会从意想不到的地方袭来。",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
+      },
+      {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-57",
+            "target": "独眼的牝鹿\n\n一只瞎了一眼的牝鹿，常常想法靠近，山边吃草，希望可以安全。她将健全的眼睛，看着岸上，那样她可以望见猎人或者猎狗走近来的行动。他那瞎了的眼睛，却向着海，她想海中毫无危险的。有几个摇船的人，坐着船经过，看见了她，瞄得准确，将她射得致命伤。她在临死的时候，喘息着说：「哦，我多么不幸啊。对于岸上那样小心，结果找到这海边，我希望海中会安全一点，谁知更是危险呢。",
             "quality_score": null,
             "presentation_score": null,
             "edits": []
@@ -81576,6 +82794,27 @@
         ]
       },
       {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-58",
+            "target": "野驴和狮子\n\n一只野驴，和一只狮子结成联盟，这样他们们捉捕树林中的野兽，可以更加容易。狮子同意以他的力量帮助野驴，而野驴则给狮子以跑路迅速的益处。当他们已得到他们所需要的野兽时，狮子分配获得的东西，他将所获分成三份。他说：「我拿第一份，因为我是兽王，再拿这第二份，因为追捕时是你的帮手，第三份呢？（请你相信我）对于你非常不利，除非你愿意把牠让给我，你还是赶快滚开去。」强权造成公理。",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
+      },
+      {
         "id": "translategemma27b",
         "model": "google/translategemma-27b-it",
         "available": true,
@@ -81646,6 +82885,27 @@
         ]
       },
       {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-59",
+            "target": "狗和厨子\n\n一个富人，举行一个大宴席，邀请了许多朋友和熟人来赴宴。他的狗利用这个机会，也去邀请一只狗来，这是他的朋友，说道：「我的主人举行一个大宴席，你可以来大吃一顿，晚上请来和我一起享受吧。」那只狗，一见预备着那样大的欢宴，满心欢喜说：「我来得真是高兴啊！像这样的机会，我真难得遇到的。我要是尽量饱吃一顿，今天和明天都不饿。」当他暗自庆幸的时候，摇摇他的尾巴，好像他要向他的朋友表示他满心的快乐，厨子看见这狗往来于宴席间，便攫住他的前后脚，凶狠地把\n\n他摔到窗外。他重重地跌到地上，跛着脚走开去，恨恨地咆哮着。他的号叫声，不久引动了街头别的狗，向他走\n\n来询问，他的晚餐享受得怎样。他回答说：「啊，老实告诉你吧，我酒吃得太多了，以致什么也忘记了。连我怎样\n\n走出这座房子，都不知道！」不速之客，总不受人欢迎的。",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
+      },
+      {
         "id": "translategemma27b",
         "model": "google/translategemma-27b-it",
         "available": true,
@@ -81695,6 +82955,27 @@
           {
             "id": "fable-60",
             "target": "天文学家\n\n从前，有个天文学家，他有在夜间外出观察星星的习惯。有一天晚上，他在城外漫步，抬头凝视着天空，全神贯注，忘了自己身在何处，结果掉进了一口干枯的井里。他躺在井里呻吟，路过的人听见了，走到井边往下看，了解了情况后，说：“如果你真的说你盯着天空看，连自己的脚走在地上都没注意到，那看来你受这样的苦是活该的。”",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
+      },
+      {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-60",
+            "target": "天文家\n\n一个天文家,常常在晚上到外面去观察星象。有一晚,他走到城外,只顾望著天空,不觉跌落入一个深井中。他受了伤,哭泣得很悲哀,便大声呼救,邻近的人跑到井边来,问明原由,便说:「老头儿,你得明白,你怎么只留神观察天上的东西,反而不顾地上的东西呢?」",
             "quality_score": null,
             "presentation_score": null,
             "edits": []
@@ -81814,6 +83095,27 @@
         ]
       },
       {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-61",
+            "target": "鸟兽和蝙蝠\n\n鸟兽宣战，两方互有胜负。一只蝙蝠，老是使自己依在强的一面。和平宣告的时候，他欺骗的行为被交战的两方都明白了，因此，被两方都以他奸诈定罪，他就赶出了日光之外。从此以后，自己只藏身在黑暗的地方，总在晚上独自地飞出来。",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
+      },
+      {
         "id": "qwen27b",
         "model": "Qwen/Qwen3.5-27B",
         "available": true,
@@ -81855,6 +83157,27 @@
     "post_edit": "",
     "post_edit_origin": null,
     "candidates": [
+      {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-62",
+            "target": "熊和两个旅行人\n\n两个人一起在旅行，在路上碰到一只熊。一个人迅速地爬到树上，躲在树枝里。另外一个不及逃走，只好直挺挺地躺在地上；熊走上来，用鼻子嗅他，嗅遍他的全身，他屏住呼吸，尽他所能地装出死人的样子。熊不吃死尸，便离开他了。熊去远了，那个人从树上爬下来，笑嘻嘻地问他的朋友：「熊在你耳边低声说些什么话？」他回答说：「他给我一个忠告：别再和临难相弃的朋友一同出去。」\n\n患难中可见真诚的朋友。",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
+      },
       {
         "id": "gpt",
         "model": "gpt-6-luna",
@@ -82008,6 +83331,27 @@
             "edits": []
           }
         ]
+      },
+      {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-63",
+            "target": "钟情的狮子\n\n一只狮子，向一个樵夫的女儿求婚。她父亲不答应，可是又不敢拒绝。忽然想出一个法子，来避免他的强\n\n求。他表示愿意将他的女儿许婚，只要答应一个条件：要他把牙齿拔掉，脚爪砍去，因为他的女儿，见这两样东\n\n西很害怕。狮子高兴地答应了。然而他实行了再来求婚时，樵夫不再怕他了，用棍打他，将他赶到林子里去。",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
       }
     ]
   },
@@ -82059,6 +83403,27 @@
           {
             "id": "fable-64",
             "target": "老牛与小鼠\n\n一只老牛追逐着一只咬了它鼻子的老鼠。但老鼠动作太快，轻巧地钻进了一个墙洞里。老牛愤怒地一次又一次地撞向墙壁，直到精疲力竭，瘫在地上大口喘气。待四周安静下来，老鼠突然窜出来，又咬了它一口。老牛气急败坏，猛地跳了起来，但此时老鼠已经回到了洞里。老牛除了在无助的愤怒中低吼咆哮，什么也做不了。这时，它听到墙洞里传来一个尖细的小声音说：“你看，你们这些大个子并不总是能随心所欲，有时候，我们这些小个子反而能占上风。”\n\n强力并不总能赢得战斗。",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
+      },
+      {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-64",
+            "target": "老鼠和雄牛\n\n一只雄牛，被老鼠咬了一口，感到很痛，想捉住老鼠。老鼠却早平安地逃到洞里去了，雄牛便用他的角，撞\n\n那座墙，直到后来精疲力尽，就躺倒去，在洞旁睡着了。老鼠向外面偷偷看一下，轻轻地爬到他的胁部，再咬他一口，\n\n又逃回洞里去。雄牛醒来，无法可想，烦乱地很忧闷。老鼠对外面喃喃地说：「大人物不是一定胜利的。有的时\n\n候，微小低贱的东西，却更利害啊！」",
             "quality_score": null,
             "presentation_score": null,
             "edits": []
@@ -82136,6 +83501,27 @@
         ]
       },
       {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-65",
+            "target": "狮和鼠\n\n一只狮子给一只老鼠在脸上跑过，从睡中吵醒。狮子很生气，捉住老鼠，要弄死他。老鼠哀求说：「肯饶了我的微命，我将来一定要报答大恩。」狮子便笑释了他。他后来狮子被几个猎人捉住，用粗绳捆住在地上。老鼠听出狮子的吼声，走来用牙齿咬断绳索，释放了他。说：「你当时笑我，想帮你忙，而且不指望我有什么报答。但是你现在知道了，就是小老鼠，也会向狮子效力的。」",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
+      },
+      {
         "id": "gemma31b",
         "model": "google/gemma-4-31B-it",
         "available": true,
@@ -82199,6 +83585,27 @@
           {
             "id": "fable-66",
             "target": "狮子与野猪\n\n盛夏酷暑，烈日当空，一只狮子与一头野猪同时来到一处小泉边饮水。转瞬之间，二者便为谁先饮水而争执起来。争执很快演变为搏斗，双方怒不可遏，殊死相搏。片刻后，它们稍作停歇以喘口气，忽见几只秃鹫栖于上方岩石之上，显然正伺机等待其中一方毙命，以便俯冲而下啄食尸骸。此景令它们顿时清醒，遂言归于好，道：“与其争斗而沦为秃鹫腹中之食，不如化敌为友。”",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
+      },
+      {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-66",
+            "target": "狮子和野猪\n\n夏天的炎热，使得大家干渴，一只狮子和一只野猪，同时到一口小井边来喝水。他们凶狠地要抢先喝，不一会便开始了恶鬪。忽然他们们停止下来，舒一口气，预备恢复精神再打，这时他们看见一只狗头鹰，等在远处，想吃那打败者的肉。他们即刻和解说：「我们还是做朋友吧，比去做乌鸦或狗头鹰的食物，总是好些呢。」",
             "quality_score": null,
             "presentation_score": null,
             "edits": []
@@ -82332,6 +83739,27 @@
         ]
       },
       {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-67",
+            "target": "财神偶像和木匠\n\n一个很穷苦的木匠，供养着一个木雕的财神偶像，请求这偶像使他发财；但是他尽是请求，却愈来愈穷。最后他很是生气，将神像从座上拿下来，向墙头摔去；神像的头跌断下来，有一道金泉在那里涌出，木匠便连忙收起说：「好，我想你简直是盾矛无理，因为我尊敬你，却得不到好处；而现在我待你不好，到使我得了横财。」",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
+      },
+      {
         "id": "qwen27b",
         "model": "Qwen/Qwen3.5-27B",
         "available": true,
@@ -82416,6 +83844,27 @@
         ]
       },
       {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-68",
+            "target": "猫头鹰和鸟\n\n一只猫头鹰用她的聪明，劝告鸟儿们，在橡实方萌芽的时候，就要用各种方法，将它拔除，别让牠长大。因为牠会生产寄生树的那种不可解救的毒计捉鸟胶，便从这种寄生树里提出来的；而他们会给捉鸟胶捉去。猫头鹰后来又劝告他们，拔出那些人们种下去的芝蔴子，因为那是一种于他们不利的植物。最后，猫头鹰看见一个射手走近来，就预告说：「这些人们行着的人，想法做用鸟羽饰尾的箭，这种箭比鸟的翼膀本身还飞得快些。」鸟儿们不听他的警告，只当猫头鹰神经不健全，还说她发疯呢。他们都向她求助，有如她知道一切似的；可是她却不再给他们忠告了，只是孤另另地悲哭他们过去的愚笨。",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
+      },
+      {
         "id": "qwen27b",
         "model": "Qwen/Qwen3.5-27B",
         "available": true,
@@ -82479,6 +83928,27 @@
           {
             "id": "fable-69",
             "target": "苍蝇和拖拉骡\n\n一只苍蝇落在车辕上，对拉车的骡子说：“你走得真慢！快加快速度，否则我只好用我的刺来刺激你。”骡子一点也不在意。“在我身后，车上坐着我的主人。”骡子说，“他握着缰绳，用鞭子抽打我，我服从他，但我不需要你的无礼。我知道什么时候可以慢下来，什么时候不可以。”",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
+      },
+      {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-69",
+            "target": "苍蝇和拉车的骡子\n\n一个苍蝇坐在一辆四轮车的车轴上，对那拉车的骡子说：「你怎么走得这样慢！干吗不走快一点？看我来用刺叮你的项颈了。」拉车的骡子说：「我不管你。你的恐吓，我只留心坐在你上面的那个人，他用鞭子使我加快脚步。用缰绳拉转我的头。所以你滚开吧，别再无礼。我很知道什么时候该快，什么时候该慢的。」",
             "quality_score": null,
             "presentation_score": null,
             "edits": []
@@ -82570,6 +84040,27 @@
         ]
       },
       {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-70",
+            "target": "小孩子和茅栗\n\n一个孩子，伸手到一个满盛栗子的瓶中去。他尽其所能地抓到了许多，但是他想伸出手来时，他的手被瓶子的颈部阻住了。他又不愿放下栗子，但又不能使手拿出。只好流泪痛哭，非常伤心。一个旁人对他说：「你知足些吧，只拿一半，你的手可以容易地伸出来了。」一次勿求太多。",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
+      },
+      {
         "id": "gpt",
         "model": "gpt-6-luna",
         "available": true,
@@ -82611,6 +84102,27 @@
     "post_edit": "",
     "post_edit_origin": null,
     "candidates": [
+      {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-71",
+            "target": "守财奴\n\n一个守财奴卖去他所有的一切，换了一块金子来，去窖藏在一个洞里，这洞挖在旧墙脚旁的地下，每天去看牠。有一个工人，看见他常往那里去，便注意他的行动，发见了窖金的秘密；于是，他去挖起了那块金子，偷了去。守财奴再去看的时候，看见地洞已空，就抱头大哭。一个邻人，见他悲痛异常，知道了原故，便说：「别这样悲痛啊！只消去拿一块石头，把牠放在洞里，仍旧当那块金子在那里吧。因为这对于你完全是一样的。」那里的时候，你既不使牠有丝毫用处，和没有是一样的。」",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
+      },
       {
         "id": "gpt",
         "model": "gpt-6-luna",
@@ -82710,6 +84222,27 @@
         ]
       },
       {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-72",
+            "target": "老鹰纸鹞和鸽子\n\n鸽子们见了纸鹞的外貌很怕，请求老鹰给他们防卫。老鹰立刻答应。当他们让老鹰进了棚，他们才知道\n\n老鹰为祸更烈，一天之中杀死他们的数目，比纸鹞在一年里攫去他们的数目更多。",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
+      },
+      {
         "id": "cohere",
         "model": "cohere/command-a-plus",
         "available": true,
@@ -82787,6 +84320,27 @@
           {
             "id": "fable-73",
             "target": "鹧鸪与捕鸟人\n\n捕鸟人用网捉住了一只鹧鸪，正要拧断它的脖子。鹧鸪可怜巴巴地恳求他饶命，说：“别杀我，让我活下去吧，我会用引诱其他鹧鸪落网的方式报答你的恩情。”\n\n“不了，”捕鸟人说，“我不会饶你。我本来就打算杀你，而你刚才那番背信弃义的话，更说明你罪有应得。”",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
+      },
+      {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-73",
+            "target": "鹧鸪和捉鸟的人\n\n一个捉鸟的人捉到一只鹧鸪，正要把他杀死。鹧鸪急切地求他饶命，说：「请求你，先生，准我活着吧，我愿以卖掉你的朋友亲戚做代价，来救你的性命。」捉鸟的人回答说：「我现在决意要取你的命了，因为你愿引诱许多鹧鸪到你这里来，报答你对我的慈悲。」鹧鸪说：「我亲爱的先生，请你饶了我的命吧，不要弄死我啊，因为我实在不能有大害于你的。」人笑着说道：「现在你一定死在我自己的手上啦，因为恶害，不管是大是小，都不应该宽恕的。」",
             "quality_score": null,
             "presentation_score": null,
             "edits": []
@@ -82878,6 +84432,27 @@
         ]
       },
       {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-74",
+            "target": "狼狐狸和猿猴\n\n一只狼说一只狐狸，偷窃他的东西，但是狐狸完全不肯承认。一个猴子来担任判断他们的纠纷。当他们两方完全陈说了案情之后，猿猴判决说：「狼，我不以为你曾失去你所要求的失物；狐狸，我相信你已偷过你坚不承认偷过的东西。」不诚实的人，即使做了真事，也得不到别人的信任。",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
+      },
+      {
         "id": "cohere",
         "model": "cohere/command-a-plus",
         "available": true,
@@ -82955,6 +84530,27 @@
           {
             "id": "fable-75",
             "target": "牧人和走失的公牛\n\n一位牧人正在照看他的牛群，突然发现一只年轻的公牛不见了，这只公牛是牛群中最优秀的一头。他立刻开始寻找，但找了很久也没有找到，于是他发誓，如果能找到偷牛的人，就向朱庇特献祭一头小牛。他继续寻找，进入一片茂密的树林，很快就看到一头狮子正在吞食那只走失的公牛。他吓得举起双手，向天空祈祷：“伟大的朱庇特，我发誓，如果我能找到偷牛的人，就向您献祭一头小牛。但现在，我保证，如果我能安全地逃脱，就向您献祭一头成年公牛。”",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
+      },
+      {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-75",
+            "target": "牧人和失去的牛\n\n一个牧人在林中牧牛，失去了一只离群的小犊。寻找也不见。他立誓，只要能够发见那偷小犊的贼，他愿献一只羊，供奉树林的守护神。不久之后，他走上一个小山丘，忽然看见山丘脚下有一只狮子，正在吞吃着他。的小猎。他大吃一惊，举起两眼和双手，向天祈求说：「方才我曾立誓，如果捉到贼，愿意献一只羊供奉树林的守护神，但是现在我已发见这贼人了，我愿意于失去的那只小猎之外，再添上一只长大了的牛，只要我自己可以脱离狮口。」",
             "quality_score": null,
             "presentation_score": null,
             "edits": []
@@ -83088,6 +84684,27 @@
         ]
       },
       {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-76",
+            "target": "狮子老鼠和狐狸\n\n冤冤相报，决不能解开的。\n\n一只狮子，受不住暑气，弄得很疲倦，在洞中酣睡。一只老鼠跑过他的颈毛和耳朵，将他从梦中扰醒。狮子爬起来，非常生气，摇摆着他的身体，想寻找老鼠，到处搜遍。一只狐狸看见了他说：「你是一只雄赳赳的狮子，也给老鼠吓怕了。」狮子说：「我并不是怕老鼠啊，我恨他亲暱无礼呢。」小小的自由是大大的冒犯。",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
+      },
+      {
         "id": "qwen27b",
         "model": "Qwen/Qwen3.5-27B",
         "available": true,
@@ -83158,6 +84775,27 @@
         ]
       },
       {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-77",
+            "target": "蚤和人\n\n一个人被一个蚤扰得非常烦厌，终于把他捉住，说道：「你是什么东西，竟敢吃我的肢体，而且还使我费了许多精神来捉你！」蚤回答说：「哦，我亲爱的先生，请你饶了我的命吧，不要弄死我啊，因为我实在不能有大害于你的。」人笑着说道：「现在你一定死在我自己的手上啦，因为恶害，不管是大是小，都不应该宽恕的。」",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
+      },
+      {
         "id": "cohere",
         "model": "cohere/command-a-plus",
         "available": true,
@@ -83207,6 +84845,27 @@
           {
             "id": "fable-78",
             "target": "牧童与狼\n\n有个牧童在村庄附近放羊，心想若是假装狼来袭击羊群，戏弄村民一番，定是妙趣横生。于是他大声呼喊：“狼来了！狼来了！”村民们闻声赶来，他却嘲笑他们白跑一趟。他不止一次地这样干，每次村民都发现自己上了当，因为根本就没有狼。\n\n终于，狼真的来了。牧童拼尽全力高喊：“狼来了！狼来了！”但村民们早已听惯了他的呼救，不再理会。于是狼为所欲为，从容不迫地一只接一只地咬死了羊。\n\n说谎的人，即使说了真话，也没人相信。",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
+      },
+      {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-78",
+            "target": "牧童和狼\n\n一个牧羊的孩子，在村庄附近，看守一群羊。他嚷着：「狼来了！」使村里的人，奔出来了多次；等他的邻人们来帮助他的时候，他却笑他们上当。后来真的狼来了。牧羊的孩子，害怕得很，他在恐怖中，叫喊起来：「大狼没有什么顾惧，便安安稳稳地吃着，吃完了整个的羊群。」说谎的人，即使他在说老实话，也没有人相信他的。",
             "quality_score": null,
             "presentation_score": null,
             "edits": []
@@ -83352,6 +85011,27 @@
             "edits": []
           }
         ]
+      },
+      {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-79",
+            "target": "狐狸和荆棘\n\n一只狐狸爬上一个篱笆，正要跌下去时，他握住了一棵荆棘，戳得他脚底板也破了，痛得很，他就诉说荆棘，因为他只向她求助，而她待他却比篱笆本身还不好。棘荆阻止他说：「我自己总是惯于附握别人的你来附握着我，你也实在发昏了。」",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
       }
     ]
   },
@@ -83436,6 +85116,27 @@
             "edits": []
           }
         ]
+      },
+      {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-80",
+            "target": "狐狸和乌鸦\n\n一只乌鸦偷得一块肉，高栖树上，她的嘴里衔着肉。一只狐狸看见她，很想将那块肉骗来，使用一个诡计，果然达到目的。他这样喊道：「这只乌鸦，形状又美丽，面貌又可爱！哦，只要她的声音，也相称她的美貌，她真配得上做鸟中的皇后了！」他说这话，好像在自言自语。但那乌鸦却急于要表示自己声音的美妙，便大叫一声，将肉掉下。狐狸很快地拾起牠向乌鸦这样说：「亲爱的乌鸦，你的声音很不错，可是你的聪明却不彀呢。」",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
       }
     ]
   },
@@ -83451,6 +85152,27 @@
     "post_edit": "",
     "post_edit_origin": null,
     "candidates": [
+      {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-81",
+            "target": "狮子和象\n\n狮子常常诉苦，使周彼得厌倦了。他说：「不错！周彼得，我确实力气巨大，形状美观，争鬪起来也很有劲。我有牙床，配著好好的牙齿，又生著爪，而且我又统治林中一切野兽；可是这是多大的一种耻辱哪，既然像我这样，还要被雄鸡的啼声所惊吓。」周彼得回答说：「你为什么毫无理由地责备我呢？我已经把我自己所有的一切特质给你了，而你的胆量除了这一点以外，也从未使你失败过。」听了这话，狮子呻吟起来，悲泣得很厉害，责备自己胆怯，恨不得就死去。当这些思想经过他心上时，他碰到一只象，就走近去和他谈话。过了一会，他看出象时时在摇动他的耳朵，他便问他那是怎么一回事，为什么他的耳朵常常这战栗地摇动。正在这时，一个蚊子停在象的头上，他回答说：「你可看见那嗡嗡的小虫儿吗？如果牠钻进我的耳朵，我的命就完了。我即刻要死哩！」狮子就说道：「好啦！这么大的一只野兽，既然还怕一个小小的蚊子，我也不要再诉苦了，也不\n\n愿自己死啦。我已发觉我自己，即使如现在这样，比象要好得多，在同样程度中，一只雄鸡总比一个蚊子大些啊。——",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
+      },
       {
         "id": "gpt",
         "model": "gpt-6-luna",
@@ -83604,6 +85326,27 @@
             "edits": []
           }
         ]
+      },
+      {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-82",
+            "target": "乡下人和苹果树\n\n一个乡下人，他园里有株不结果子的苹果树。只让麻雀和蚱蜢做窠，他决定砍牠下来，手中拿着斧头，在牠根上重重地砍了一下。蚱蜢和麻雀请求他，不要把这庇荫他们的树砍掉，只饶了牠，他们就会唱歌给他听。一蜂窠的蜜，尝了尝，便丢下他的斧头，将那株树看作神圣一般，非常宝爱了。只有私利，才能感动人。",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
       }
     ]
   },
@@ -83676,6 +85419,27 @@
         ]
       },
       {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-83",
+            "target": "哲学家蚂蚁和天神\n\n一个哲学家，在海滨看见一只难船，船上的水手和乘客，完全淹死。他便怨恨上帝不生眼睛，为了一个有罪恶的人，偶尔趁著这只船，竟让全船无辜的人伴着死。当他正在这样深切地沉思时，他觉到自己给一大群蚂蚁围住了，原来他站在牠们窑的近旁。那时有一只蚂蚁爬上来，叮了他一口，他立刻用脚去将牠们完全踏死。于是天神出现了，用他的棍子，敲着哲学家说：「你自己也和上帝一样，来待遇这些可怜的蚂蚁，难道能够做判断天道的人吗？」",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
+      },
+      {
         "id": "translategemma27b",
         "model": "google/translategemma-27b-it",
         "available": true,
@@ -83725,6 +85489,27 @@
           {
             "id": "fable-84",
             "target": "卖神像的人\n\n有个人制作了一尊木雕墨丘利神像，拿到集市上出售。可是没人愿意买，他便想试着宣扬神像的好处，好吸引买主。于是，他在集市里来回叫卖：“神像出售！神像出售！能给你带来好运，还能让好运常伴左右！”这时，一个旁观者拦住他，说：“要是你的神真像你说的那么灵，你为什么不把他留着，自己好好利用呢？”“我告诉你为什么，”他回答道，“他确实能带来收益，只不过要等上一阵子；而我现在就需要钱。”",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
+      },
+      {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-84",
+            "target": "卖偶像的人\n\n有一个人，做了一个财神的木偶，拿去出卖。可是没有一个人要来买牠，他想要招引买客，就喊出来说，他有一个恩主的雕像出卖，他会给予财产，又能帮助人积集金钱。有一个旁观者对他说：「我的好人，那末你为什么要将牠出卖呢，他既是一个如你所说的雕像，你正可以享受他要给你的东西呀！」他回答说：「是的，可是我现在急于要钱，而他送礼物给人，总是很缓慢的。」",
             "quality_score": null,
             "presentation_score": null,
             "edits": []
@@ -83856,6 +85641,27 @@
             "edits": []
           }
         ]
+      },
+      {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-85",
+            "target": "牛和车轴\n\n一辆载重的货车，由一队牛拖着沿一条乡间的小路前进。车轴轧轧地呻吟起来，响得很厉害；那些牛就转身对车轮说：「一切劳苦，全由我们负担着，应该呼喊的是我们，不是你啊！」\n\n最受苦的人，呼喊最少。",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
       }
     ]
   },
@@ -83871,6 +85677,27 @@
     "post_edit": "",
     "post_edit_origin": null,
     "candidates": [
+      {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-86",
+            "target": "骡子\n\n一只骡子吃饱了，没有事做，快乐得好玩起来了，肆无忌惮地乱跳，自言自语说：「我的父亲一定是个很雄壮的骏马，而我在速度上和精神上，真是将门之后。」第二天，他走了一阵长路，觉得很疲乏，颓丧地喊道：「我一定错了我的父亲，毕竟只是一只驴子。」",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
+      },
       {
         "id": "gemma31b",
         "model": "google/gemma-4-31B-it",
@@ -83970,6 +85797,27 @@
         ]
       },
       {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-87",
+            "target": "败子和燕子\n\n一个青年人，是一个败家子，花尽了他的遗产，还剩下一件一口钟。他偶然看见一只燕子，这燕子是未及时而先到的，在池边蹑蹑地飞着，快乐地唱着。他便当作夏天已来了，就卖掉他的一口钟。不幸的鸟儿啊！你怎么了？你这样未到春天便先出现，不但弄死了你自己，并且你还弄糟了我呢！——",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
+      },
+      {
         "id": "gpt",
         "model": "gpt-6-luna",
         "available": true,
@@ -84047,6 +85895,27 @@
           {
             "id": "fable-88",
             "target": "老鼠与黄鼠狼\n\n老鼠和黄鼠狼之间爆发了一场战争，而老鼠总是处于劣势，许多老鼠被黄鼠狼杀死并吃掉。于是，老鼠们召开了一次军事会议。一只老鼠站起来说：“我们总是被打败并不奇怪，因为我们没有将军来规划战斗和指挥战场上的行动。”在听从了他的建议后，老鼠们选出了体型最大的几只担任领导者。为了与普通士兵区分开来，这些领导者为自己准备了顶顶戴着巨大稻草羽饰的头盔。随后，他们信心满满地率领老鼠大军出征，结果却像往常一样惨败，很快便拼命地向自己的洞穴逃窜。除了那些领导者，所有老鼠都顺利地逃到了安全地带。而领导者们因为佩戴着代表职位的标志，行动受阻，无法钻进洞穴，最终轻易地成为了追击者的猎物。\n\n地位越高，代价越大。",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
+      },
+      {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-88",
+            "target": "老鼠和鼠狼\n\n鼠狼和老鼠，总是打仗不息，战时非常激烈。鼠狼老是得到胜利的。老鼠想他们屡次战败的原因，是他们没有将领列在通常的行伍之外来指挥他们。又因不曾经过训练，所以遇到危险。因此他们叫那些老鼠，具有家世有名，力气强大，主意狡猾，战时勇敢，挑出这些老鼠来，叫他们在战阵中率领他们，将他们组成小队，联队，和大队。一切都好了。军队训练完毕，传令的老鼠，便及时宣战，向鼠狼挑畔，新选的将领，用稻草扎在头上，使得他们的队伍注目，战争方才发动。老鼠又是大吃败仗。他们拚命地逃到洞里去。那些将领，因为头上装饰着高冠，不能走进去，完全给鼠狼俘虏过去当食品。愈荣耀愈危险。",
             "quality_score": null,
             "presentation_score": null,
             "edits": []
@@ -84138,6 +86007,27 @@
         ]
       },
       {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-89",
+            "target": "夸口的旅行人\n\n一个曾经游历外国的人，回到祖国时，夸口说他在所到过的各处，做了许多奇特英勇的事迹，在许多事情中有一件，便是他在罗兹地方的时候，曾经跳得很远。当时的人，谁也比不上。还说这件事情，罗兹地方的人不少目睹，不妨叫他们来做见证。一个旁人插嘴说：「那末，我的好汉，如果这是真话，不必要什么见证，且把这里当作罗兹地方，你来跳跳看。」",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
+      },
+      {
         "id": "gemma31b",
         "model": "google/gemma-4-31B-it",
         "available": true,
@@ -84215,6 +86105,27 @@
           {
             "id": "fable-90",
             "target": "披着羊皮的狼\n\n一只狼决心乔装改扮，以便在无人察觉的情况下袭击羊群。于是，他披上一张羊皮，趁羊群外出放牧时混入其中。他完全骗过了牧羊人，当羊群夜间被赶进圈栏时，他也随众被关了进去。然而就在那天夜里，牧羊人需要取些羊肉做晚餐，误将这只狼当作绵羊，当场挥刀将其杀死。",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
+      },
+      {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-90",
+            "target": "蒙羊皮的狼\n\n有一次，一只狼决定用他的老法，掩饰自己的本来面目，可以自由自在地找到食物吃。他蒙上了羊皮，混入羊群中去吃草，靠了这说计瞒过了牧羊人。晚上他被牧羊人关入羊栏里，关上栏门，不能逃出。到了夜里，牧羊人到羊栏里来，要预备明天的食物，捉错了狼，代替了一只羊，在羊栏里用刀把狼杀死。",
             "quality_score": null,
             "presentation_score": null,
             "edits": []
@@ -84320,6 +86231,27 @@
         ]
       },
       {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-91",
+            "target": "龟兔赛跑\n\n有一天，一只兔子嘲笑乌龟的脚短，走路迟慢。乌龟笑着说：「虽然你走路很快，假若我和你赛跑一次，我会赢你呢！」兔子当他在夸口胡说，便依了他的提议，议定请狐狸选择跑道，指定终点。到了赛跑的那一天，他们一同出发。乌龟一步也不停的，总是用慢而稳的步伐，直向那跑道的终点前进。兔子自信他跑得很快，一点也不将赛跑的事放在心上，在中途躺了下去，酣睡起来。后来醒了，尽力向前跑去。乌龟却早已到了终点，辛苦之后，正安适地在那里休息。",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
+      },
+      {
         "id": "translategemma27b",
         "model": "google/translategemma-27b-it",
         "available": true,
@@ -84411,6 +86343,27 @@
           {
             "id": "fable-92",
             "target": "狗、雄鸡和狐狸\n\n一只狗和一只雄鸡成了好朋友，约定结伴旅行。天黑时，雄鸡飞上树枝栖息，狗则蜷缩在树干中间——树干是空心的。天一亮，雄鸡便像往常一样醒来打鸣。狐狸听见了，想把他当作早餐，便来到树下，请他下来。\n\n“我真想认识一下嗓音这么动听的朋友。”狐狸说道。\n\n雄鸡回答：“请你叫醒睡在树脚下的看门人，好吗？他会开门让你进来。”\n\n于是狐狸敲了敲树干，狗立刻冲了出来，把狐狸撕成了碎片。",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
+      },
+      {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-92",
+            "target": "狗雄鸡和狐狸\n\n一只狗和一只雄鸡，很是耍好，约好一起去旅行。到了晚上，他们就住宿在一个深林里。雄鸡飞了上去，高栖在树枝上，狗便在底下树干的空洞里找到他安睡的地方。天色渐明，雄鸡照平时一样，高声地啼了几次。一只狐狸听见这声音，就想去将他拿来当早餐，他走来站在树枝底下，说他很是愿意，和这雄伟声音的主人结成朋友。雄鸡看他太客气，说道：「先生，我很希望你赏光，绕到我底下的空树干那里，叫醒我的门房，那样他便开门，让你进来。」那只狐狸走近树去，狗跳了出来，将他捉住，撕成碎片。",
             "quality_score": null,
             "presentation_score": null,
             "edits": []
@@ -84528,6 +86481,27 @@
             "edits": []
           }
         ]
+      },
+      {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-93",
+            "target": "猴子和海豚\n\n一个水手某次出洋远行，带一只猴子在身边，在船上时可以解闷。当他离开希腊的海岸时，起了狂风大浪，他的船就在这大风中翻没，他和他的猴子另外一切的船夫，都不得不游水逃生。一只海豚看见猴子在波浪中挣扎，还当是一个人（据说海豚常常帮助人的）便游过来，将自己的身子垫到他底下去，载他在他背上，安全地运上岸去。当海豚背上载着猴子，到了望得见雅典的时候，他问猴子：「可是雅典人，猴子回答他说是，并且还说他是那城中一家世族的后代。于是海豚又问他，知道派雷亚斯（雅典的著名海港）猴子以为，那是一个人，便回答说，他很熟识他，并且他还和自己是好朋友。海豚听见这些谎语，愤怒得很，就将猴子沉到水底下去，淹死了他。",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
       }
     ]
   },
@@ -84586,6 +86560,27 @@
         ]
       },
       {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-94",
+            "target": "肚皮和肢体\n\n身上的肢体，对着肚皮抗议说：「我们总是从事于满足你的欲望，而你为什么不做一点事情，只是安息着，享受你的奢华和纵欲的生活呢？」肢体于是决定了，拒绝帮助肚皮。整个身体立刻变成衰弱了，那时手脚，口眼，才悔恨他们的愚鲁，但是已经来不及了。",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
+      },
+      {
         "id": "qwen27b",
         "model": "Qwen/Qwen3.5-27B",
         "available": true,
@@ -84627,6 +86622,27 @@
     "post_edit": "",
     "post_edit_origin": null,
     "candidates": [
+      {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-95",
+            "target": "小孩和苎麻\n\n一个小孩为苎麻所刺。他跑到家里，告诉他的母亲说：「我只轻轻地碰了牠一下，牠刺得我很痛呢。」他母亲说：「正因这样，才叫牠把你刺了。下次如果你再去和苎麻接触，勇敢地将牠一把握住，牠就会柔软得和丝一样，在你手中，决不会伤害你的。」无论你做什么，都得尽力地去做。",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
+      },
       {
         "id": "gemma31b",
         "model": "google/gemma-4-31B-it",
@@ -84719,6 +86735,27 @@
           {
             "id": "fable-96",
             "target": "狐狸和鹤\n\n狐狸邀请鹤来家里吃饭，餐桌上只有一碗\n汤。狐狸用舌头舔着汤，吃得津津有味，然而鹤长着\n长嘴巴，根本无法享用这美味的汤。鹤的困境让狡猾\n的狐狸感到非常好笑。没过多久，鹤也邀请狐狸到她\n家做客，并端上来一个长颈窄口的瓶子，鹤可以很\n轻松地把嘴伸进瓶子里。鹤享用着自己的晚餐，而狐\n狸却饿着肚子无助地坐在一旁，因为他根本无法吃到\n瓶子里诱人的食物。",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
+      },
+      {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-96",
+            "target": "狐狸和鹤\n\n一只狐狸，请一只鹤吃晚饭，并不曾备办什么东西来待客，只有豆做的羹，而且还是倒在一只平扁的石盘中。鹤每吃一口汤，便从他的长嘴中流出来，鹤因为不能吃到，非常气恼，狐狸却十分开心。后来鹤就请狐狸来和他吃晚饭，在狐狸的面前，摆着一只长颈小口的瓶，于是他能很容易地插进他的头颈，从容地吃到瓶里的东西；同时狐狸却绝对尝不到一口，受到照他款待客人模样的回礼了。",
             "quality_score": null,
             "presentation_score": null,
             "edits": []
@@ -84864,6 +86901,27 @@
             "edits": []
           }
         ]
+      },
+      {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-97",
+            "target": "池边的鹿\n\n一只鹿又热又渴，跑到一个泉水旁来喝水。看见他自己映在水里的影子，他很赞美他的角的巨大和参差有致，但是为了自己有这么细长柔弱的脚儿，非常生气。当他正在这么沉思的时候，一只狮子来到池边蹲着要向他扑来。鹿立刻逃走，用他最最快的速度跑去，在平原宽阔平坦的时候，他很容易地保持着和狮子相离的安全的距离。但是一进树林，他便被他的角缠住了；我偏轻视，而将这些置我于死地的角，引以为荣。真正最有价值的东西常遭贱视。",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
       }
     ]
   },
@@ -84901,6 +86959,27 @@
           {
             "id": "fable-98",
             "target": "牛与屠夫\n\n从前，牛群决定向屠夫们报仇，因为屠夫们在牛群中造成了巨大的伤亡。于是，它们密谋在某一天将屠夫们全部杀死。牛群聚集在一起，讨论如何才能最有效地执行这个计划，其中一些性情暴躁的牛正忙着磨尖自己的角，准备大干一场。这时，一只老牛站了起来，说道：“我的兄弟们，我知道你们有充分的理由憎恨这些屠夫。但无论如何，他们精通自己的行当，在执行任务时不会造成不必要的痛苦。如果我们杀了他们，那些没有经验的人就会被派来宰杀我们，他们笨手笨脚，会让我们遭受巨大的痛苦。因为你们可以肯定，即便所有的屠夫都死光了，人类也绝不会停止食用牛肉。”",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
+      },
+      {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-98",
+            "target": "牛和宰牛匠\n\n有一次，许多牛想杀尽宰牛匠，因为宰牛匠做着灭绝他们种族的职业。他们聚集一起，想贯澈他们的主意。张，磨砺他们的角，预备战鬪。他们里面有一只年老的牛，他曾耕过许多的田地，他这样说：「这些宰牛匠，确是屠杀我们，但是他们用精巧的手段来杀我们，使我们少受些痛苦。假使我们没有宰牛匠，而叫手段不精的屠户来杀我们，那样便要多受痛苦而死了。你们要知道：虽然一切宰牛匠都可以死完，但是人们总是要吃牛肉的。」",
             "quality_score": null,
             "presentation_score": null,
             "edits": []
@@ -85020,6 +87099,27 @@
         ]
       },
       {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-99",
+            "target": "狗和狐狸\n\n几只狗找见一张狮子皮，便用他们的牙齿，将牠撕成碎片。一只狐狸看见他们，便说：「假使这只狮子还\n是活的，你们便可知道他的脚爪还比你们的牙齿强有力呢。」\n去踢已经倒下的人是容易的。",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
+      },
+      {
         "id": "gemma31b",
         "model": "google/gemma-4-31B-it",
         "available": true,
@@ -85047,6 +87147,27 @@
     "post_edit": "",
     "post_edit_origin": null,
     "candidates": [
+      {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-100",
+            "target": "狼和狮\n\n一只狼徘徊在山脚下，瞧见他自己的影子，那时太阳正下山，他的影子放得特别长大，他对自己说：「我既有这样巨大的身体，几乎长到一亩田的样子；我为什么怕狮子？难道我不该被称为所有的野兽王吗？」当他正沉溺于这些夸念中时，一只狮子向他扑来，将他杀死。他悔恨已来不及，喊道：「我不幸啊！这次的妄自尊大便是我毁灭的原因啊！」——",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
+      },
       {
         "id": "cohere",
         "model": "cohere/command-a-plus",
@@ -85200,6 +87321,27 @@
             "edits": []
           }
         ]
+      },
+      {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-101",
+            "target": "农夫和蛇\n\n一个农夫在冬季，看见一条冻得僵硬的蛇，他很可怜他，就将他拾起，放在自己的怀中。那条蛇受了热气的温暖，不久便苏醒转来，当他一恢复本性，就咬他的恩人，给他一个致命伤。那农夫临终时说：「我去可怜忘恩负义之徒，应该受这样的惨报！」恩惠虽大，终于束缚不住忘恩负义的人。",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
       }
     ]
   },
@@ -85223,6 +87365,27 @@
           {
             "id": "fable-102",
             "target": "墨丘利和雕塑家\n\n墨丘利很想知道人们究竟如何看待自己，于是便乔装成人，走进一位雕塑家的工作室。那里摆着许多已经雕刻完成、准备出售的雕像。他看到其中有一尊朱庇特的雕像，便问价钱。“一个克朗。”雕塑家说。“就这么点儿？”他笑着说，又指着一尊朱诺的雕像问：“那尊呢，多少钱？”“半个克朗。”雕塑家回答。“那边那尊，你打算卖多少钱？”他接着问，指着一尊自己的雕像。“那尊？”雕塑家说，“哦，只要你买下另外两尊，我就把他白送给你。”",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
+      },
+      {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-102",
+            "target": "财神和雕刻师\n\n有一次，财神想要知道，他在凡人之中，被尊敬到怎样。因此他假装成一个人，就在这乔装之下，到一个雕刻师的工作室去。他先看过各种雕像，再问周彼得和朱娜两个雕像的价钱。雕刻师告诉了牠们价格的时候，他就指着一个自己的雕像问雕刻师：「这个雕像，你讨价一定要更多了，因为这是神的使者，而且又是给你一切进益者的雕像。」雕刻师回答说：「好的，要是你买了那两个，我做了这笔交易，就将牠送给你。」",
             "quality_score": null,
             "presentation_score": null,
             "edits": []
@@ -85356,6 +87519,27 @@
         ]
       },
       {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-103",
+            "target": "主人和他的狗\n\n有一个人被暴风雨阻在他乡间的屋里，先杀了他的羊，后来又杀了他的山羊，借以养活他的家人。暴风雨仍旧不停，他不得不宰杀他的耕牛来果腹。他的几只狗，看见这种情形，齐集起来商量说：「现在已是我们跑开的时候了。因为主人对于替他挣谷的牛，还不饶恕，我们还怎能希望他饶恕我们呢？」薄待自己家族的人，是不可以做朋友的。",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
+      },
+      {
         "id": "translategemma27b",
         "model": "google/translategemma-27b-it",
         "available": true,
@@ -85405,6 +87589,27 @@
           {
             "id": "fable-104",
             "target": "老狮子\n\n有一头狮子，因年老体衰，再也无法靠武力为自己捕食，于是决定用诡计来获取食物。它找了一个洞穴住进去，躺在里面装病；每当有其他动物进来探望时，它就猛扑上去将它们吃掉。许多动物就这样丧了命。直到有一天，一只狐狸来到洞穴前，它察觉到了异样，于是没有进去，而是在洞外向狮子问候身体状况。狮子回答说自己病得很重，接着说：“但你为什么站在外面？请进来吧。”狐狸回答道：“如果我没注意到所有的脚印都指向洞穴，而没有一个脚印向外走，我早就进去了。”",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
+      },
+      {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-104",
+            "target": "生病的狮子\n\n一只狮子因年老力弱，不能找食，决定用诡计去求得。他来到他窟里，躺了下来，假装生病，叫大家知道他。狮子就吃掉他们。许多来的野兽都失踪了。\n\n狐狸看破他的诡计，他自己也到狮子那里，远远地立在窗外，探问病况。狮子回答他说：「我倒没有什么，但不见走回来的足迹。」狐狸答说：「不，谢谢，我只看到有许多走进你窝里的足印，却前车之覆，后车之鉴。",
             "quality_score": null,
             "presentation_score": null,
             "edits": []
@@ -85536,6 +87741,27 @@
             "edits": []
           }
         ]
+      },
+      {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-105",
+            "target": "马和鹿\n\n有一匹马，自己占据着一片草原。一只鹿闯入他的领域，分享他的牧地。马想对这陌生的鹿报复，向人请\n\n门去到夜晚归，也是全厌恶你。那末那些整天和你一起过日子的人，对你要觉得怎样了呢？——\n\n从草偃可看出风的方向。\n\n憎厌。所以他托辞送她回家，去望望她的父亲。不久她回来了。丈夫想知道她对她父亲家里的人是否一样的被憎厌。——牧牛的和牧羊的人，都对我摆出憎厌的脸色。——他说：「唉，妻呀，如果那些人他们一早带了畜群出\n\n求，问他可愿帮助他去惩罚这只鹿。人回答说，如果马肯承受一块马口铁，含在他的嘴里，又答应载他，他就去想出很有效的武器，给他去抵抗鹿。马同意了，允许人骑到他身上。从此以后，马才知道，对于鹿还不曾报复，自己已经给人们做奴隶了。",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
       }
     ]
   },
@@ -85559,6 +87785,27 @@
           {
             "id": "fable-106",
             "target": "槽中的狗\n\n一只狗躺在马槽里，槽中堆着本为牲畜准备的干草。当牲畜们前来试图进食时，它便龇牙咧嘴、狂吠不止，不让它们靠近食物。其中一头牲畜对同伴说道：“多么自私的畜生啊！它自己吃不了，却也不让能吃的去吃。”",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
+      },
+      {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-106",
+            "target": "秣槽中的狗\n\n一只狗躺在干草槽里，不断地咆哮和咬嚼着，阻止牛去吃干草。那是放在那里应该给他们吃的一只牛向他的同伴说：「这牛多自私！他自己不会吃干草，可是又不让会吃的去吃。」",
             "quality_score": null,
             "presentation_score": null,
             "edits": []
@@ -85635,6 +87882,27 @@
     "post_edit": "",
     "post_edit_origin": null,
     "candidates": [
+      {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-107",
+            "target": "狗和牛皮\n\n几只狗饿得半死，看见一些牛皮浸在一条河里。因为吃不到，他们就想将河水喝尽。但事情却这样地发\n生：他们还没有挨近牛皮，自己到先喝水太多，肚皮也涨破了。\n别希求不可能的事情。",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
+      },
       {
         "id": "translategemma27b",
         "model": "google/translategemma-27b-it",
@@ -85719,6 +87987,27 @@
     "post_edit": "",
     "post_edit_origin": null,
     "candidates": [
+      {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-108",
+            "target": "秃头的武士\n\n一个秃头的武士，戴了一缕假发，出去打猎。忽然吹来一阵风，将他的帽子和假发，全吹掉了，他的同伴不\n觉大笑。武士勒住他的马，很快乐地打趣说：「这些头发本来不是我的，应该从我的头上飞去，有什么奇怪呢？」\n和牠们一起出世的人，早已抛弃牠们了。",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
+      },
       {
         "id": "translategemma27b",
         "model": "google/translategemma-27b-it",
@@ -85818,6 +88107,27 @@
         ]
       },
       {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-109",
+            "target": "老鹰和夜莺\n\n一只夜莺，高高地坐在一棵橡树上，照常地在歌唱，给一只老鹰看见了，这老鹰因为没有食物吃，突然下来，将他攫去。夜莺知道他性命不保，急切地请求老鹰让他去，说他太小，不足一只老鹰吃一顿饱，如果他要食物，应该去追寻大些的鸟儿。老鹰阻止他说：「如果我去追求看也看不到的鸟儿，反而让已经到手的食物逃走，我真是发昏了。」",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
+      },
+      {
         "id": "cohere",
         "model": "cohere/command-a-plus",
         "available": true,
@@ -85902,6 +88212,27 @@
         ]
       },
       {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-110",
+            "target": "老鼠蛙和老鹰\n\n一只居住陆地上的老鼠，不幸得很，和一只生平大半居在水中的蛙，结成了知己的朋友。有一天，那蛙存心不良，将老鼠的脚紧紧地缚在他自己的脚上。两种动物便联在一起了，蛙最先引他那老鼠朋友，到他们惯常寻食的草场上去。此后他便渐渐地引他到自己所住的池中去，直到后来，他到了池边上，蛙忽然跳将进去，将老鼠也一同拖下了。那蛙得水，非常快乐，往来游泳，一面阔阔地叫着，仿佛他得了极大的胜利。那不幸的老鼠，不一会就溺死在水里，他的身体仍旧缚在蛙的脚上，浮荡水面，也给老鹰带去当俘虏，饱了鹰腹。牠搂起，带到半空中去。那蛙因为仍旧紧缚在老鼠的腿上，也给老鹰带去当俘虏，饱了鹰腹。祸得祸。",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
+      },
+      {
         "id": "translategemma27b",
         "model": "google/translategemma-27b-it",
         "available": true,
@@ -85971,6 +88302,27 @@
     "post_edit": "",
     "post_edit_origin": null,
     "candidates": [
+      {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-111",
+            "target": "狗和影子\n\n一只狗，嘴里衔着一块肉，走过一条河面的桥上，看见他自己在水里的影子。当是另一只狗，那狗啣着的肉，比他自己的也要大一倍。因此，他扔掉自己的一块，恶狠狠地扑向那只狗去，想从他那里夺到那块大些的肉。结果他两头都落空，他所争扰的那块在水中，因为那只是个影子；原来的那块，被水流漂去了。",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
+      },
       {
         "id": "qwen27b",
         "model": "Qwen/Qwen3.5-27B",
@@ -86098,6 +88450,27 @@
         ]
       },
       {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-112",
+            "target": "渔夫和小鱼\n\n一个渔夫，是靠他的网捕鱼为生的，有一天，他捉到一条小鱼，算是他那天工作的所得。小鱼做出抽咽的模样，哀求饶他的命：「哦，先生，我对于你有什么用处呢？我是毫无价值呀！现在我还没长足啊，请饶了我的命罢！吧，放我回到海中去吧，不久我就长成一条大鱼，配做富人的菜，那时你可以再捉住我，将我去卖许多钱了。」渔夫回答说：「如果我为了一个大而无望的机会，竟抛掉目前稳定的利益，那我不是这样的呆子！」",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
+      },
+      {
         "id": "cohere",
         "model": "cohere/command-a-plus",
         "available": true,
@@ -86189,6 +88562,27 @@
           {
             "id": "fable-113",
             "target": "蛇与鹰\n\n一只鹰俯冲而下，用爪子抓住一条蛇，打算把它叼走并吞食。但是，这条蛇非常敏捷，瞬间就缠住了鹰，于是，两者之间展开了一场生死搏斗。一位农夫目睹了这场搏斗，他上前帮助鹰，成功地将鹰从蛇的束缚中解救出来，并帮助它逃脱。为了报复，蛇向农夫的饮酒角里喷了一些毒液。农夫因刚才的努力而感到疲惫，正准备用饮酒角里的水解渴，这时，鹰用翅膀将饮酒角打落在地，里面的水洒了一地。\n\n善有善报。",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
+      },
+      {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-113",
+            "target": "蛇和老鹰\n\n一条蛇和一只老鹰，在拚命奋鬪，互相挣扎著。蛇得胜了，正要将那鸟儿缠死，一个乡下人看见他们，跑上前来，解开了蛇的环绕，让老鹰自由飞走。蛇因为他的捕获物逃走，非常生气，便吐出他的毒涎，滴入那乡下人盛水喝的角里去。这乡下人不知道有危险，正想喝水，这时那老鹰用他的翼膀，打他的手，又攫住那盛水喝的角，抓到他的爪中，带到半空中去了。",
             "quality_score": null,
             "presentation_score": null,
             "edits": []
@@ -86292,6 +88686,27 @@
             "edits": []
           }
         ]
+      },
+      {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-114",
+            "target": "蚂蚁和蚱蜢\n\n蚂蚁们乘着晴美的冬日，在晒他们夏令收集的谷粒。一只饿得快死的蚱蜢，走过那里，哀求一点食物。蚂\n\n蚁们问他道：「你在夏天，为什么不积蓄一点食物呢？」他回答说：「我整天唱歌，没有空闲呢。」他们便讥笑\n\n地说：「你既然这样蠢，整个夏天都唱歌逍遥，那你到了冬天，就可不吃饭，到床上去跳舞好了。」",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
       }
     ]
   },
@@ -86329,6 +88744,27 @@
           {
             "id": "fable-115",
             "target": "旅人与命运女神\n\n一位旅人长途跋涉，疲惫不堪，便在一口深井的边沿坐倒下来，不一会儿就睡着了。他险些跌进井里，这时命运女神出现在他面前，拍了拍他的肩膀，提醒他往远处挪一挪。“好心的先生，请醒一醒吧，”她说，“要是你掉进井里，人们怪罪的就不会是你自己的愚蠢，而会是我——命运女神。”",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
+      },
+      {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-115",
+            "target": "旅行人和命运之神\n\n一个旅客，倦于漫长的旅途，疲乏得很，在一口深井的旁边躺了下去。他只差一吋，便要跌到井里去了，那时命运之神，出现在他的面前，将他从小睡中唤醒，对他这样说：「好先生，请你醒来。如果你跌到井里去，又有祸事，都是因他们自己的拙笨，所以招临到的。」\n每个人常是他自己命运的主宰。",
             "quality_score": null,
             "presentation_score": null,
             "edits": []
@@ -86413,6 +88849,27 @@
           {
             "id": "fable-116",
             "target": "小母牛和大牛\n\n一只小母牛走到一头正在努力拉犁的大牛面前，\n带着一种居高临下的姿态，对大牛不得不如此辛苦地工作表示同情。\n不久之后，村里举行了一场节日，每个人都放假休息：但是，\n大牛被允许在牧场里自由活动，而小母牛却被抓住，带走献祭。\n大牛带着一丝苦涩的微笑说道：“啊，现在我明白了，为什么你们可以有这么悠闲的时光：\n因为你们从一开始就被注定要献祭在祭坛上。”",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
+      },
+      {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-116",
+            "target": "小牛和大牛\n\n一只小牛，看见一只大牛驾着耕犁，辛勤工作；想到那大牛不幸的命运，要被逼工作，非常代她可怜。不久之后，秋收的时候到了，主人解下大牛负着的耕犁，但是用粗绳捆起小牛，带他到祭坛上去，杀了他祭神。大牛看见这件事，笑向小牛说：「为了这样才让你饱食不做事，因为你不久就做牺牲的啊！」",
             "quality_score": null,
             "presentation_score": null,
             "edits": []
@@ -86532,6 +88989,27 @@
         ]
       },
       {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-117",
+            "target": "狐狸和猴子\n\n一只狐狸，和一只猴子，同在一条路上走，他们走着的时候，经过一个墓地，里面有许多墓碑。猴子说：「这些墓碑，都是造起来致敬我的祖先的。他们生时都是公民，又全是名满天下的。」狐狸回答说：「你倒择到一个最适当的慌语了，因为我知道，你的祖宗，已没有一个会来反驳你的。」安语不攻自破。",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
+      },
+      {
         "id": "cohere",
         "model": "cohere/command-a-plus",
         "available": true,
@@ -86567,6 +89045,27 @@
           {
             "id": "fable-118",
             "target": "狼和狗\n\n从前，狼对狗说：“我们为什么还要继续做敌人呢？在大多数方面，你们和我们非常相似：我们之间唯一的区别只是训练不同。我们过着自由的生活；但你们被人类奴役，他们打你们，在你们脖子上套上沉重的项圈，强迫你们为他们看守羊群和牛群，最糟糕的是，他们只给你们骨头吃。别再忍受了，把羊群交给我们，我们一起享用这片土地的肥美，共进盛宴。”狗被这些话劝说，跟着狼进了洞穴。但他们刚进去，狼就扑向他们，把他们撕成了碎片。\n\n叛徒完全应得这样的命运。",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
+      },
+      {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-118",
+            "target": "狼和守羊的狗\n\n许多狼对守羊的狗说：「你们和我们有很多的地方相像，为什么不跟我们同心合意，相亲相爱地住在一起呢？我们和你们，只有一点地方不同。我们在自由中生活，而你们屈服在人们的底下，为他们工作。他们用鞭来抽打你们，在你们的颈间套上项箍，来报答你们的服务。他们又使你们看守他们的羊群，而他们吃羊肉，只给你们吃些骨头；如果你们肯听我们的劝告，那末将羊群给我们。大家共享所得，大家可以吃个畅快。那些狗很赞同这些话，便走进狼的洞中去，终于给狼扑杀，撕成碎片。",
             "quality_score": null,
             "presentation_score": null,
             "edits": []
@@ -86700,6 +89199,27 @@
         ]
       },
       {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-119",
+            "target": "膨胀了的狐狸\n\n一只非常饥饿的狐狸，看见一棵橡树洞里有着面包和肉，是牧人留着的。他爬进洞里去，尽量饱吃一顿。\n\n当他吃完之后，他的肚皮胀得很饱满，甚至于他不能走出来，他于是悲痛地叫苦和哭泣。有别的一只狐狸经\n\n过，听见他的呻吟，走上前来，问他为什么缘故。他明白了这些事，便对他说：「唉，我的朋友，你将不得不留在那\n\n里了。要一直等到你变成和你进去时那样的大小，那末你就容易出来了。」",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
+      },
+      {
         "id": "gpt",
         "model": "gpt-6-luna",
         "available": true,
@@ -86796,6 +89316,27 @@
             "edits": []
           }
         ]
+      },
+      {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-120",
+            "target": "工人和蛇\n\n一条蛇住在茅屋的门口，将住在茅屋中的婴儿，厉害地咬了一口，那婴儿受伤而死，他的父母伤心得很。\n\n父亲决定要杀死这条蛇；第二天在蛇出洞找食的时候，他拿起斧头；乘蛇在蜿蜒过去，他向他砍下去。砍得太\n\n快，没有砍下蛇的头，只砍下尾巴尖。不久，这住茅屋的人，怕蛇要来报仇，极力求和，将面包和盐放到蛇洞里去。\n\n蛇微微地斥责着说：「我们之间休想再有和平！我一看见你，便记起了我失去的尾巴；你一瞧到我，你便记起\n\n你死了的儿子。」",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
       }
     ]
   },
@@ -86847,6 +89388,27 @@
           {
             "id": "fable-121",
             "target": "屋顶上的小山羊\n\n一只小山羊被茅草屋顶上的草和其他植物所吸引，爬上了屋顶。\n当它站在那里吃草时，看见一只狼从下面路过，便嘲笑狼无法抓到它。\n狼抬头看着，说道：“我听见了，年轻人，但嘲笑我的人不是你，而是你站立的屋顶。”",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
+      },
+      {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-121",
+            "target": "小羊和狼\n\n见了；一只小羊站在屋顶，自以为毫无危险，看见一只狼走过，便开口向他辱骂。狼向上一望说：「哼！我已经听见了，但这并不是你在辱骂我，只是你站着的屋顶在骂我啊！」时间和地位，常常使弱者占强者的便宜。",
             "quality_score": null,
             "presentation_score": null,
             "edits": []
@@ -86917,6 +89479,27 @@
           {
             "id": "fable-122",
             "target": "人和半人马\n\n一个人和一只半人马成为了朋友，并决定一起生活。起初一切都很顺利，直到有一天，在寒冷的冬天，半人马看到那个人对着自己的双手哈气。“你为什么要这样做？”它问道。“为了让我的手暖和起来，”那人回答。同一天，当他们一起坐下来吃晚饭时，每个人都端着一碗热气腾腾的粥，那人举起碗，对着碗吹气。“你为什么要这样做？”半人马问道。“为了让我的粥凉一些，”那人回答。半人马从桌子旁站了起来。“再见，”它说，“我要走了：我不能和一个一会儿吹热气，一会儿又吹冷气的人做朋友。”",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
+      },
+      {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-122",
+            "target": "人和半人半羊的神\n\n有一次，一个人和一个半人半羊的神，一同浇酒作盟。一个很冷的冬天，他们在一起谈话；人把手指放到口前去吹牠们。半人半羊的神问他做什么；他告诉他说他这样吹一下可以暖暖手手指是那么冷啊。后来他们在白天坐下来同吃东西，食物都弄得很热。人稍稍举起一只碟向他口边去，将牠吹着。半人半羊的神说道：「你简直是不忠实的朋友了。」他为什么理由，人就说他这样吹，使肉稍冷，肉是那么热啊。半人半羊的神说道：「你这人用同一口气竟会吹热，又吹冷的。」",
             "quality_score": null,
             "presentation_score": null,
             "edits": []
@@ -87048,6 +89631,27 @@
             "edits": []
           }
         ]
+      },
+      {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-123",
+            "target": "父亲和孩子们\n\n一个父亲有许多孩子，这些孩子时常自相口角。他毫无方法劝阻他们，只好给他们看一个不合群之害的实例；因此，有一天他叫他们替他拿一捆细柴来。他们替他带一捆柴来时，他先后地将那捆柴放在每一个孩子的手中，吩咐他们弄断这捆柴。他们一个个地尽力去试，总是不能。然后父亲解散那捆柴，一根根地分散，互相帮助，你们好似这捆柴一样，不能被你们的敌人折断；但如果你们自相分裂，你们就将和这些散柴一般，不经一折了。",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
       }
     ]
   },
@@ -87099,6 +89703,27 @@
           {
             "id": "fable-124",
             "target": "山羊与葡萄藤\n\n一只山羊在葡萄园里游荡，开始啃食一株结着几串美果的葡萄藤的嫩芽。葡萄藤说道：“我究竟对你做了什么，竟让你如此伤害我？难道没有足够的青草供你食用吗？即便如此，就算你吃光我所有的叶子，将我剥得精光，我仍会酿出足够的酒，在你被牵往祭坛献祭时，倾洒在你身上。”",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
+      },
+      {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-124",
+            "target": "葡萄和山羊\n\n一株葡萄树，在葡葡的收获期中，果叶全茂盛得很。一只山羊打那里经过，嚼他的嫩卷须和叶子。葡萄树对他说：「你为什么无故地伤害我，来咬我的叶子呢？难道你找不到嫩草吗？但是不久之后，我也有好的报复。」\n\n方法，如果你现在咬我的叶子，弄断我的根部，那末当你被牵去做祭品的时候，我就供给葡萄酒来浇你哩。——",
             "quality_score": null,
             "presentation_score": null,
             "edits": []
@@ -87190,6 +89815,27 @@
         ]
       },
       {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-125",
+            "target": "野兔和蛙\n\n野兔们感到自己太没有勇气了又厌苦着他们们常常受到恐惧大家同心同意决定从高危的绝壁上跳\n入下面的深湖中去自杀免得天天抱着杞忧当他们们成了长长的一队急速地走去要实行他们的决心时那\n些躺在湖滨的蛙听到他们的脚声惊惶混乱地纷跳到水中去逃避有一只野兔看见这事便向他的同伴们\n叫道我的朋友们且慢现在你们不用实行方才的决心吧因为你们现在看见别的东西比我们自己的同伴们\n胆小也在生活着呢",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
+      },
+      {
         "id": "gpt",
         "model": "gpt-6-luna",
         "available": true,
@@ -87231,6 +89877,27 @@
     "post_edit": "",
     "post_edit_origin": null,
     "candidates": [
+      {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-126",
+            "target": "旅行人和槐树\n\n两个旅行人被夏天的骄阳弄得非常疲乏，正午时躺在一株槐树张开得很广大的桠枝底下。当他们在他的庇阴之下休息的时候，一个旅行人向另外那个说道：「槐树是一种多么孤独而无用的树木哪！牠不生果子，又于人一点用处也没有。」槐树阻止他说：「你这不知感恩的家伙！一面在受着我的好处，在我荫影下休息着，你一面竟敢说我无用而又无益吗？」\n\n有些人贬视他们最大的幸福。",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
+      },
       {
         "id": "gpt",
         "model": "gpt-6-luna",
@@ -87316,6 +89983,27 @@
     "post_edit_origin": null,
     "candidates": [
       {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-127",
+            "target": "烧炭夫和漂布夫\n\n一个烧炭夫在他自己屋中做着生意。一天遇到一个朋友，是一个漂布夫，就请他来和他同住，说道：「我你在我们同居是很好的，而且我们的家用，也可减省些。」漂布夫回答说：「这计划对于我，却不行，因为我所漂白的东西，你会立刻用你的炭将牠弄黑。」",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
+      },
+      {
         "id": "cohere",
         "model": "cohere/command-a-plus",
         "available": true,
@@ -87399,6 +90087,27 @@
     "post_edit": "",
     "post_edit_origin": null,
     "candidates": [
+      {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-128",
+            "target": "猪绵羊和山羊\n\n一只小猪，一只山羊，一只绵羊，全关在一个畜圈里。有一次牧人捉住小猪，他呶呶地叫号着，猛烈地抗拒。\n\n绵羊和山羊埋怨他讨厌的号叫，说：「他常常捉我们，我们并不呼号的。」一猪听了这句话，便回答说：「捉你们\n\n和捉我，这是两样的。他捉住你们，只为要你们的毛或乳汁；但是他捉我，是要我的性命呢。」",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
+      },
       {
         "id": "cohere",
         "model": "cohere/command-a-plus",
@@ -87552,6 +90261,27 @@
             "edits": []
           }
         ]
+      },
+      {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-129",
+            "target": "狼和山羊\n\n一只狼看见一只山羊，在一块峻峭的石壁顶上吃草，在那里他不能走近她，他便叫住她，恳切地请求她：「走下来些，否则偶一不幸，她会跌得粉身碎骨。他又加上去说，他自己所站的地方是草场，草又很嫩。她回答说：「不，我的朋友，你请的并不是我，只是你自己正没有东西吃吧了。」",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
       }
     ]
   },
@@ -87567,6 +90297,27 @@
     "post_edit": "",
     "post_edit_origin": null,
     "candidates": [
+      {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-130",
+            "target": "孔雀和鹤\n\n一只孔雀，张开他美丽的尾巴，又嘲笑一只经过的鹤，说他的羽毛灰暗，并且说：「我穿得和国王一样，金碧辉煌；而你的翼膀上，却一点颜色也没有！」鹤回答说：「是的，可是我高高地飞到天顶，提高我的声音，飞往星中去；而你却在底下走，像鸡一样，在粪堆中的鸟群里。」美好的羽毛，不足成为美好的鸟。",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
+      },
       {
         "id": "gpt",
         "model": "gpt-6-luna",
@@ -87720,6 +90471,27 @@
             "edits": []
           }
         ]
+      },
+      {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-131",
+            "target": "狼和羊\n\n一只狼给狗咬伤，很是沉重，病得残废地躺在他的洞中。因为没有食物，他便喊住在牠面前经过的羊，请牠就在他近旁流着的小溪中汲一点水给他。他说：「如果你将喝的水带给我，我自己有方法替自己预备一点肉。」那羊说：「不错，要是我带给你饮料，你将一定使我再供给肉了。」虚伪的说话，容易给人看破。",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
       }
     ]
   },
@@ -87757,6 +90529,27 @@
           {
             "id": "fable-132",
             "target": "猴子与骆驼\n\n在一次百兽集会上，猴子表演了一段舞蹈，给在场的所有动物带来了极大的乐趣。表演结束时，现场响起了热烈的掌声，这引起了骆驼的嫉妒，使他也想通过同样的方式赢得大家的青睐。于是，骆驼从座位上站起来开始跳舞，但由于他笨拙地跳来跳去，那副样子显得极其滑稽，其笨拙的身姿呈现出一种怪诞的景象，结果所有的动物都对他嘲笑不已，并将他赶走了。",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
+      },
+      {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-132",
+            "target": "猴子和骆驼\n\n林里的野兽们开了一个盛宴，猴子在会中，站起来跳舞。他使得全场大家快乐，在大家的喝采声中坐了\n下来。骆驼妒羡大家赞美猴子，想叫宾客们的称赞，移向自己的身上，轮到他时，也就立起来跳舞，想博他们的\n欢心。他动作的样子那么可笑，以致野兽们大生其气，用棍打他，将他赶出会去。\n做傲上位的人是荒谬的。",
             "quality_score": null,
             "presentation_score": null,
             "edits": []
@@ -87827,6 +90620,27 @@
           {
             "id": "fable-133",
             "target": "乌鸦和天鹅\n\n一只乌鸦看见天鹅美丽洁白的羽毛，心中十分嫉妒，便以为那是因为天鹅常常在水里洗澡、游泳。于是，它离开了祭坛附近——它原本靠捡拾祭祀时供奉的肉屑为生——来到池塘和溪流之间生活。可是，尽管它一天洗上好几次羽毛，羽毛却丝毫没有变白，最后还饿死了。\n\n习惯可以改变，本性却无法改变。",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
+      },
+      {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-133",
+            "target": "乌鸦和天鹅\n\n一只乌鸦看见一只天鹅，便希望自己也有一样好看的羽毛。他当那天鹅漂亮的白色，是从他游泳的水\n\n中漂洗出来的，乌鸦便离开他就近能取得食物的祭坛，也住到湖和池中去。但是他尽管常洗着他的羽毛，他\n\n总不能够变换牠们的颜色。同时他因缺少食物而饿死。",
             "quality_score": null,
             "presentation_score": null,
             "edits": []
@@ -87972,6 +90786,27 @@
             "edits": []
           }
         ]
+      },
+      {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-134",
+            "target": "老猎狗\n\n一只猎狗，在从前年壮力强的时候，从没有受过林中任何野兽的欺侮。等到他老年时，在狩猎中遇到一只野猪，他勇敢地咬住野猪的耳朵，但是他的牙齿已坏，不能咬牢，野猪便逃走了。他的主人很快的赶上来，很是失望，痛骂这只狗。猎狗擡头望着主人，说：「主人，这不是我的不行啊！我的精神是和从前一样的，但是我不能阻止我的衰迈呀。我既因从前的情形而受称赞，不应因现在的状况而受到责罚啊！」",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
       }
     ]
   },
@@ -88044,6 +90879,27 @@
         ]
       },
       {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-135",
+            "target": "旅客和他的狗\n\n一个旅客预备出发，看见他的狗站在门口打呵欠。他就厉声地问狗：「你为什么站在那里打呵欠？一切事情已准备定当，只等你了。赶快跟我走！」狗摇尾回答说：「呀！主人！我早预备好了，我反而在等候你呢！」",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
+      },
+      {
         "id": "gpt",
         "model": "gpt-6-luna",
         "available": true,
@@ -88107,6 +90963,27 @@
           {
             "id": "fable-136",
             "target": "猎人和樵夫\n\n一个猎人在森林里寻找狮子的足迹。\n他很快就发现了一个正在砍树的樵夫，就走上前去问他是否在附近见过狮子的足迹，或者知道狮子的洞穴在哪里。樵夫回答说：“如果你愿意跟我来，我可以带你去看狮子本人。”猎人吓得脸色发白，牙齿直打颤，他回答说：“哦，我不是在找狮子，谢谢，我只是想找它的足迹。”",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
+      },
+      {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-136",
+            "target": "猎人和樵夫\n\n一个猎人，胆子很小，他在寻找一只狮子的脚迹。他问一个在林中砍橡树的人，可曾看见狮子的脚印，或\n\n者他知道狮子的洞在那里。那人说道：「我可以立刻指示你那狮子自己在那里。」猎人吓得脸无人色，牙\n\n齿震抖，回答说：「不，谢谢你。我并不问那个啊，我只是在找寻他的脚迹，不是狮子自身啊。」\n\n英雄的话，要言行相符。",
             "quality_score": null,
             "presentation_score": null,
             "edits": []
@@ -88224,6 +91101,27 @@
             "edits": []
           }
         ]
+      },
+      {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-137",
+            "target": "乌鸦和瓮\n\n一只乌鸦，快渴死了，看见一个瓮，因为想要找到一点水，很乐观地向牠飞过去。他飞到的时候，很是悲伤，\n发见瓮里的水很少，他竟不能够喝到。他用尽各样方法，去尝试过，总是徒劳无益。最后，他尽力收集了许多的\n石子，用他的嘴，将牠们一块块地放到瓮中去，直到后来，他使水深到他喝得到的地方，才解救了自己的口渴。\n\n有需要才有发明。",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
       }
     ]
   },
@@ -88275,6 +91173,27 @@
           {
             "id": "fable-138",
             "target": "鹰和他的俘虏\n\n从前，有个人抓到了一只鹰，剪掉了它的翅膀，\n把它放进鸡舍和家禽们一起。在那里，鹰郁郁寡欢，\n垂头丧气。一段时间后，俘虏者很高兴能把它卖给\n邻居。邻居把它带回家，让它的翅膀重新长出来。\n鹰一恢复飞行能力，就飞出去抓了一只野兔，\n带回家献给他的恩人。狐狸看到了这一切，对鹰说：\n“别把你的天赋浪费在他身上！去找抓你的人，把\n你的天赋送给他，把他当朋友，这样他或许就不会\n再抓你，再次剪掉你的翅膀。”",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
+      },
+      {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-138",
+            "target": "老鹰和他的捕获者\n\n有一次，一只老鹰被一个人捉住，他就剪去他的翼膀，将他放到禽场里，和别的鸟儿同住。老鹰对这个待遇，非常悲伤。另外一个邻人把他买去之后，任他的羽毛重新生长好。老鹰就飞走，并且立刻扑了一只兔子，献给他的恩主。一只狐狸看见了，喊道：「别报惩这个人的恩泽，只是谢你先前那个主人吧，否则他会再捉住你。」第二次又剪去你的翼膀哩。——",
             "quality_score": null,
             "presentation_score": null,
             "edits": []
@@ -88366,6 +91285,27 @@
         ]
       },
       {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-139",
+            "target": "河流与海\n\n河流并在一起，埋怨海说：「我们流到你的潮中时，本是甘美可饮的，你却使我们加上了杂质，将我们弄\n得咸而不可喝，这为什么缘故呢？」海知道他们有意来责难他，便说：「请你们别再流到海里面来吧，那末你\n们就可以不会成功咸味了。」\n有些人向对于他们有益的东西，却要吹毛求疵。",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
+      },
+      {
         "id": "cohere",
         "model": "cohere/command-a-plus",
         "available": true,
@@ -88436,6 +91376,27 @@
         ]
       },
       {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-140",
+            "target": "农夫和鹤\n\n一个农夫在他新播种的耕地上，张着罗网，许多来吃他种子的鹤雀，都捉到了，而且一起捉到一只鹤鹤的腿被网折断了，哀求农夫饶命说：「主人啊，求你饶我吧，这一次放了我吧。我折断了的腿，也该叫你可怜我了。而且我又并不是鹤雀，我是一只鹤啊，一只性情优美的鸟儿啊；你瞧，我多么爱我的父母，怎样地为他们劳役啊。再看看我的羽毛和鹤雀也很两样呢。」农夫大笑说：「你说的话也许不错；可是我只知道你和这些强盗的鹤雀一起捉到的那末，你就得和他们一起死。」\n切莫与恶人做伴。",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
+      },
+      {
         "id": "gemma31b",
         "model": "google/gemma-4-31B-it",
         "available": true,
@@ -88499,6 +91460,27 @@
           {
             "id": "fable-141",
             "target": "北风和太阳\n\n北风和太阳争论起来，双方都声称自己比对方更强。最后，他们决定在一位旅人身上较量一番，看看谁能最快让他脱下斗篷。北风先来。他聚起全身的力量，猛烈地向那人扑去，卷起斗篷，仿佛只需一击便能把它从那人身上扯下来；可是他吹得越猛，那人就把斗篷裹得越紧。接着轮到太阳。起初，太阳温和地照着旅人，没过多久，旅人便解开斗篷，继续赶路，只让斗篷松松地搭在肩上。随后，太阳放出全部光热。旅人还没走出几步，就高高兴兴地脱下斗篷，轻装上路。\n\n劝说胜于强迫。",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
+      },
+      {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-141",
+            "target": "北风和太阳\n\n北风和太阳争辩，谁最有力量，他们决定，谁能先剥下走路人的衣服，便算是胜利者。北风先试他的力量，尽力吹起来；但是风吹愈大，那走路人将他的一口钟，裹得愈紧；直到最后，大风终于无效，请太阳出来，要看看他的本领。太阳突然将他所有的热力，照耀出来。那旅行人立即觉到他和暖的光线，便将衣服一件一件地脱下，到了最后，热得受不住，就脱光了衣服，在路旁的一条河里洗沐。\n\n劝导好于威迫。",
             "quality_score": null,
             "presentation_score": null,
             "edits": []
@@ -88604,6 +91586,27 @@
         ]
       },
       {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-142",
+            "target": "母狮\n\n田野间的野兽在争论着，比较那一种动物生一胎小兽最多，应该受最大的光荣。他们喧闹地奔到母狮前面，请她来排难解纷。他们又问：「那末你一胎生几个呢？」母狮对他们笑着说：「哼！我一胎只有一个。但是这一个便是一只优良的狮子。」\n\n贵在质而不在数。",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
+      },
+      {
         "id": "qwen27b",
         "model": "Qwen/Qwen3.5-27B",
         "available": true,
@@ -88681,6 +91684,27 @@
           {
             "id": "fable-143",
             "target": "猫鼠会议\n\n从前，所有的老鼠召开了一次大会，商讨如何防范猫的袭击。在讨论了几项建议之后，一只德高望重、经验丰富的老鼠站起身来说道：“我想出了一个能确保我们今后安全的妙计，只要大家赞同并付诸实施。那就是在我们的敌人——猫的脖子上系上一只铃铛，铃铛的叮当声将提醒我们它的靠近。”这一提议赢得了热烈的喝彩，大家已决定采纳，这时一只老老鼠站了起来，说道：“我完全同意各位，眼前的这个计划确实高明；但请问，究竟由谁去给猫系上铃铛呢？”",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
+      },
+      {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-143",
+            "target": "老鼠会议\n\n老鼠们正开着大会，商量他们怎样想出一个最好的方法，来得知他们的大敌猫儿到来。在许多想出来的方法中，有一个最好的方法，便是缚一个铃儿到猫儿的头颈上去。如果那样做，老鼠们一听得铃铃铃的时候，却没有一只老鼠，答应去做这件事情。\n声音就可以就近趋避，躲到洞里去。但是老鼠们更进一步，讨论他们中叫谁去给猫系铃的。",
             "quality_score": null,
             "presentation_score": null,
             "edits": []
@@ -88812,6 +91836,27 @@
             "edits": []
           }
         ]
+      },
+      {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-144",
+            "target": "周彼得和猴子\n\n周彼得通告一切林中的野兽，允许一种钦赐的奖品，给许判起来有最漂亮子女的野兽。猴子也跟着其\n\n他的野兽来了，她以慈爱的母爱，带着一只扁鼻无毛，相貌丑陋的小猴子，来做一个得奖的候选者。在她呈献\n\n出她的儿子来时，大家发生一阵哄堂大笑。她毅然地说：「周彼得会不会将奖品给我的儿子，我可不知道；但\n\n是至少在我，在他母亲的眼里，这小猴子总是一切中最亲爱，最漂亮，最美丽的，这一点我是明白的。——",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
       }
     ]
   },
@@ -88827,6 +91872,27 @@
     "post_edit": "",
     "post_edit_origin": null,
     "candidates": [
+      {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-145",
+            "target": "橡树和芦苇\n\n一棵很大的橡树，给风连根拔起，卷过一条小河，落在芦苇的中央，它对芦苇说：「我不知道，你们这样的轻巧柔弱，怎么反而不被狂风摧折呢？」他们回答说：「你和狂风抗鬪着，结果你是失败了；我们正好相反，在轻微的风前，也都低头的，所以逃过摧折的危险。」",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
+      },
       {
         "id": "translategemma27b",
         "model": "google/translategemma-27b-it",
@@ -88919,6 +91985,27 @@
           {
             "id": "fable-146",
             "target": "狼和牧羊人\n\n一头狼在一群羊附近徘徊了很久，却始终没有伤害它们的意思。牧羊人起初一直警惕地盯着它，因为他理所当然地以为它不怀好意；但日子一天天过去，狼始终没有要侵犯羊群的迹象，牧羊人便开始把它看作保护者，而不是敌人。有一天，他有事要进城，竟放心地把羊群留给了狼看管。可他刚一转身，狼就扑向羊群，杀死了大半的羊。牧羊人回来后，看到狼造成的惨状，叫道：“我把羊群托付给一头狼，落得这个下场，真是活该。”",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
+      },
+      {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-146",
+            "target": "狼和牧羊人\n\n一只狼跟着一群羊，跟了好久，并没有意思想去伤害其中的一只。牧羊人起初还留心防御他，好像防备仇敌一样，紧紧地注意那羊的行动。但是一天一天地过去，狼仍跟那些羊在一起，并不露出一点意思想去攫他们。牧羊人便开始将他看守羊群的心思放松了。有一天他偶然有事进城去，便将羊完全留给狼保管，狼现\n\n在得了机会，便扑杀那些羊，这羊群几乎完全毁灭。牧羊人回来时，看见他的羊群被杀，喊道：「我真应该啊我，为什么要将羊群信托给狼保管呢？」",
             "quality_score": null,
             "presentation_score": null,
             "edits": []
@@ -89038,6 +92125,27 @@
         ]
       },
       {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-147",
+            "target": "山羊和牧羊人\n\n一个牧羊人，想法呼回一只迷路的山羊。他吹着他的号角，没有效力；那失路者并不注意他的呼唤。后来牧羊人摔过一块石头去，打断了那山羊的角，便求山羊不要去告诉他的主人。山羊回答说：「呀，你这傻瓜，我虽然不响我的角，自然会说出来呀。」\n\n不要设法瞒藏不可隐讳的事。",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
+      },
+      {
         "id": "cohere",
         "model": "cohere/command-a-plus",
         "available": true,
@@ -89108,6 +92216,27 @@
         ]
       },
       {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-148",
+            "target": "狮子熊和狐狸\n\n一只狮子和一只熊，同时攫到了一只羔羊，大家都要这羔羊，便凶狠地打起来。结果全受了重伤，经过了\n\n一场苦鬪疲乏之后，他们一无气力，只好躺下来。一只狐狸，早已在远处虎视眈眈着。一见他们两个都直挺\n\n挺地躺在地上，那只羔羊，躺在他们中间，不曾动过，他就跑近去，攫得了羔羊，赶快逃走。狮子和熊虽然看见他，\n\n可是不能够起来，只好说：「我们错了，我们将自己狠鬪重殿，只是为了狐狸的好处啊！」",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
+      },
+      {
         "id": "cohere",
         "model": "cohere/command-a-plus",
         "available": true,
@@ -89163,6 +92292,27 @@
     "post_edit": "",
     "post_edit_origin": null,
     "candidates": [
+      {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-149",
+            "target": "两只罐\n\n一条河流中，淌浮着两只罐，一只是泥烧的，另一只是铜打的。泥罐对铜罐说：「请离开远一些，别淌近我身旁；因为要是你轻微地碰我一下，我就被碰碎的，而且，我也并不想和你亲近。」",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
+      },
       {
         "id": "gemma31b",
         "model": "google/gemma-4-31B-it",
@@ -89269,6 +92419,27 @@
           {
             "id": "fable-150",
             "target": "蚋与公牛\n\n一只蚋落在公牛的一只角上，在那里坐了好一阵子。歇够了，正要飞走时，它对公牛说：“我现在走了，你介意吗？”公牛只是抬了抬眼皮，漫不经心地说：“对我来说都一样；你什么时候来的我都没注意，你什么时候走我也不会知道。”\n\n在自己眼里，我们往往比在旁人眼里重要得多。",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
+      },
+      {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-150",
+            "target": "蚊子和牛\n\n一只蚊子停在一匹牛的角上，在那里坐了好久。恰在他正要飞开去的时候，他作出嗡嗡声问牛说可欢\n\n喜他走牛回答说：「我不知道你来，所以你去时，我也不会恋恋不舍的。」\n\n有些人，在他们自己的眼中看来，比在他们的邻人眼中看来，更重要些。",
             "quality_score": null,
             "presentation_score": null,
             "edits": []
@@ -89400,6 +92571,27 @@
             "edits": []
           }
         ]
+      },
+      {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-151",
+            "target": "狮子和三只公牛\n\n三只公牛在一起吃草，已经吃了好久。一只狮子躲在隐处，希望将他们拿来吞吃。但是他们在一起时，他又自怕不敌，最后用狡诈的话，间离他们分开来，当他们各自独个儿吃草时，他就毫不害怕，去杀扑他们，不费力地将他们完全吃掉。联合便是力量。",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
       }
     ]
   },
@@ -89472,6 +92664,27 @@
         ]
       },
       {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-152",
+            "target": "农夫和他的儿子们\n\n一个农夫在临终时,希望他的儿子们,和他自己一样,勤耕他的田地。他叫他们来到床前说:「孩子们,我的葡萄园里,有一块地方,藏著一大宗的财宝。」他的儿子们,在他的死后,都拿了耕具,小心地在田地的各处翻掘著。他们找不到什么财宝,但是葡萄因此生长繁茂,做他们劳力的报酬。",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
+      },
+      {
         "id": "translategemma27b",
         "model": "google/translategemma-27b-it",
         "available": true,
@@ -89521,6 +92734,27 @@
           {
             "id": "fable-153",
             "target": "两只青蛙\n\n有两只青蛙是邻居。一只住在沼泽里，那里有青蛙最喜欢的大量水源；另一只住在一段距离外的巷子里，那里唯一能找到的水，就是雨后留在车辙里的积水。沼泽青蛙警告他的朋友，并极力劝他搬到沼泽里一起生活，因为那里的环境会舒适得多，而且——更重要的一点是——更安全。但另一只青蛙拒绝了，说他无法让自己离开已经习惯了的地方。几天后，一辆沉重的货车驶过巷子，他被车轮碾死了。",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
+      },
+      {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-153",
+            "target": "两只蛙\n\n两只邻居的蛙。一只住在一个深水池中，不大容易被人瞧见；另外的一只，住在一个沟里，这沟的水很少，\n并且旁边有一条路经过。那住在池里的一只，警告他的朋友，请他更变他的住居，来和他同住，说他那里比较\n安全，也容易找到丰富的食物。另外那一只拒绝说要从一个他住惯了的地方，搬到别处去。他觉得很困难，不\n上几天之后，一辆笨重的货车经过那沟，将他在轮下压死。",
             "quality_score": null,
             "presentation_score": null,
             "edits": []
@@ -89605,6 +92839,27 @@
           {
             "id": "fable-154",
             "target": "乌鸦和渡鸦\n\n一只乌鸦十分嫉妒一只渡鸦，因为人们认为渡鸦是预示未来的吉兆之鸟，因此对它十分敬重。她也很想享有同样的名声。一天，她看见几个旅人走来，便飞到路边一棵树的树枝上，尽可能大声地呱呱叫起来。旅人们听见这声音，颇为惊慌，担心这可能是不祥之兆。直到其中一人看见了乌鸦，才对同伴们说：“没事，朋友们，咱们可以放心往前走，因为那不过是一只乌鸦，它叫并不意味着什么。”\n\n那些冒充自己并非之人的人，只会让自己显得可笑。",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
+      },
+      {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-154",
+            "target": "乌鸦和渡鸦\n\n一只乌鸦很嫉忌渡鸦，因为渡鸦常被人当作吉庆的预兆，总引起人们的注意，看他的飞翔，可以指出未来事件的凶吉。乌鸦看见了几个旅客走近来了，便飞上树去，住在树枝上面，尽力地叫喊起来。那几个旅客，对那发声的方向看着，不知道这声音有什么预兆，这时他们中有一个人对同伴们说：「让我们继续赶我们的路吧，我的朋友，因为这只是乌鸦的声音，你们知道乌鸦的啼声是没有什么预兆的。」那些以不属于自己美质来冒充的人，总是遗笑大方。",
             "quality_score": null,
             "presentation_score": null,
             "edits": []
@@ -89710,6 +92965,27 @@
         ]
       },
       {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-155",
+            "target": "驴子和驴夫\n\n一只驴子在一条大路上被赶着在走，忽然间奔开去，奔到一块壁立的危崖边上，当他正快投身下去时，他的主人拉住他的尾巴，用力拖他回来。驴子尽力坚持，那人只得让他去了。说道：「胜利！但只是以你自己的代价来胜利的啊！」",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
+      },
+      {
         "id": "qwen27b",
         "model": "Qwen/Qwen3.5-27B",
         "available": true,
@@ -89787,6 +93063,27 @@
           {
             "id": "fable-156",
             "target": "青蛙与井\n\n两只青蛙住在沼泽里。 但在一个炎热的夏天，沼泽干涸了，\n它们离开了那里，去寻找另一个居住地：因为青蛙喜欢潮湿的地方，如果它们能找到的话。 过了一会儿，\n它们来到了一口深井，一只青蛙往下看，对另一只说：“这看起来是一个凉爽的好地方：让我们跳进去\n住在这里吧。” 但另一只青蛙头脑更聪明，回答说：“别着急，朋友：假设这口井像沼泽一样干涸了，\n我们该如何再出来呢？”\n\n三思而后行。",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
+      },
+      {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-156",
+            "target": "两只蛙\n\n两只蛙同住在一个水池里。水池给夏天的骄阳晒干了，他们就离开那里，一起动身，去找另外的居处。他们沿路走去时，偶然经过一口充满着水的深井，有一只蛙见了牠，就对别一只蛙说：「让我们下去，住到这口井里去吧。牠可以供给我们居住和吃食呢。」别的一只蛙小心地回答说：「但是假使这水不够供给我们，我们在这样深的地方，怎么能够再出来呢？」",
             "quality_score": null,
             "presentation_score": null,
             "edits": []
@@ -89892,6 +93189,27 @@
         ]
       },
       {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-157",
+            "target": "母鸡和金蛋\n\n一个住在茅屋的人和他的妻养着一只母鸡，这鸡每天生一个金蛋。他们便杀死母鸡，那时，他们知道那只鸡和别的鸡，一点没有什么两样，才觉惊异——这对愚笨的夫妇，为要想发横财，竟将他们每天稳得的进益也丧失掉了。",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
+      },
+      {
         "id": "gemma31b",
         "model": "google/gemma-4-31B-it",
         "available": true,
@@ -89919,6 +93237,27 @@
     "post_edit": "",
     "post_edit_origin": null,
     "candidates": [
+      {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-158",
+            "target": "蒙狮皮的驴子\n\n一只驴子，蒙上狮子的皮，在林里走来走去，恐吓那些在他游行时遇见的笨兽，借以自娱。最后碰见一只狐狸，他想也去吓他一下，但是狐狸一听到他的声音，便喊道：「要不是我听到你的叫声，我真会使自己吓了一跳呢。」",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
+      },
       {
         "id": "gemma31b",
         "model": "google/gemma-4-31B-it",
@@ -90060,6 +93399,27 @@
         ]
       },
       {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-159",
+            "target": "小鹿和他的母亲\n\n有一次，一只小鹿对他的母亲说：「你比狗长大，跑得又快，又有角做护卫；妈呀！那末你怎么老是那样害怕猎狗呢？」母鹿微笑地说：「孩子，我明白你说的都是真话。我确有这些优点，可是我只要听得一声狗叫，便觉无力了，只好拚命逃走。」\n\n任何证论，都不足鼓起懦夫的勇气。",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
+      },
+      {
         "id": "gemma31b",
         "model": "google/gemma-4-31B-it",
         "available": true,
@@ -90144,6 +93504,27 @@
         ]
       },
       {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-160",
+            "target": "失掉尾巴的狐狸\n\n一只狐狸从陷阱里逃了出来，失掉了他的尾巴。从此以后，他给同伴嘲笑，很觉难受，他便想法，要使一切另外的狐狸，全和他自己一样，如果大家都没有尾巴，他也不致因为缺陷而难受了。他聚集了许多狐狸，假装诚恳劝告他们，去掉尾巴，说：「没有尾巴，非但好看许多，而且方便了许多呢。」那些狐狸中，有一只打断他的话插嘴说：「我的朋友，假使你自己不曾失去你的尾巴，你也不会这样劝告我们吧。」",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
+      },
+      {
         "id": "qwen27b",
         "model": "Qwen/Qwen3.5-27B",
         "available": true,
@@ -90193,6 +93574,27 @@
           {
             "id": "fable-161",
             "target": "病鹿\n\n一只鹿病倒了，躺在森林的一片空地上，虚弱得连挪动一下也做不到。他生病的消息传开后，许多别的野兽都来看望他，打听他的病情。它们一个个都顺手啃了几口病鹿周围的青草，直到最后，他伸手可及之处一根草也不剩。几天后，他开始好转，但仍虚弱得站不起来，无法外出寻找食物。就这样，他因朋友们的粗心大意，悲惨地饿死了。",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
+      },
+      {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-161",
+            "target": "病鹿\n\n一只害病的鹿躺在草场上冷静的地方。他的同伴们，一队一队地来探望他的起居，每一只鹿，都是老实不客气，将放在那里给他吃的食物吃去一部份，结果他死了，但是并不是死于他的病，而死于饥饿。",
             "quality_score": null,
             "presentation_score": null,
             "edits": []
@@ -90312,6 +93714,27 @@
         ]
       },
       {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-162",
+            "target": "农夫和狐狸\n\n一个农夫，对于一只狐狸，有著深仇，因为狐狸要到他养家禽的院子来抢劫，他终于捉住了狐狸。因为要给狐狸吃痛苦，他用浸透了油的苏缚在他尾巴上，燃烧起来。农夫真不幸，那只狐狸竟冲到这农夫的田里去。那时恰好收割小麦的时候，因此农夫这一年毫无收获，只好自怨自艾地回家。",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
+      },
+      {
         "id": "translategemma27b",
         "model": "google/translategemma-27b-it",
         "available": true,
@@ -90339,6 +93762,27 @@
     "post_edit": "",
     "post_edit_origin": null,
     "candidates": [
+      {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-163",
+            "target": "老人和死神\n\n一个老人被雇到林里去砍柴，有一天挑着柴，到城里去出卖，因为路长，走得很困倦，他在路旁坐下，丢下他的担子，请求死神到来。死神立刻应命出现了，问叫他有什么事情。老人回答说：「那是请你举起这副担子，再将牠放到我的肩膀上来。」",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
+      },
       {
         "id": "qwen27b",
         "model": "Qwen/Qwen3.5-27B",
@@ -90423,6 +93867,27 @@
     "post_edit": "",
     "post_edit_origin": null,
     "candidates": [
+      {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-164",
+            "target": "斗鸡和老鹰\n\n两只鬭公鸡在争农场的霸权，鬪得很猛烈。后来有一只赶走了另外的一只。那只打败的公鸡逃开去，躲在冷静的暗处。那胜利的一只，飞上一座高墙，鼓翼欢鸣。正巧有一只老鹰，在空中盘旋，突然飞来，将他攫住，在他的爪中带走了。失败的那只公鸡，立刻从暗处出来，从此他的霸权，没有谁来抗争了。满招损，谦受益。",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
+      },
       {
         "id": "gemma31b",
         "model": "google/gemma-4-31B-it",
@@ -90536,6 +94001,27 @@
         ]
       },
       {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-165",
+            "target": "猫和爱人\n\n一只猫和一个漂亮的青年发生了恋爱，请求爱神将她变成一个女人的模样。爱神允许她的请求，将她\n变成一个美丽的少女，因此那青年看见她，就爱上她，带她回家去做新娘。当他们在卧室里休息时，爱神想看\n看猫改变了形状之后，可曾把她的习惯也改掉没有，就在房间中央放下一只老鼠。猫完全忘却目前的情形，\n从睡椅中突然起来，去追老鼠，想要吃牠。爱神很失望，使她重新变回原形。",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
+      },
+      {
         "id": "qwen27b",
         "model": "Qwen/Qwen3.5-27B",
         "available": true,
@@ -90613,6 +94099,27 @@
           {
             "id": "fable-166",
             "target": "石榴树、苹果树与荆棘\n\n一棵石榴树和一棵苹果树正争论着各自果实的优劣，双方都坚称自己的果实更胜一筹。言辞渐趋激烈，一场激烈的争吵眼看就要爆发。这时，邻近篱笆中的一丛荆棘厚颜无耻地探出头来，说道：“好了，朋友们，到此为止吧，别再争吵了。”",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
+      },
+      {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-166",
+            "target": "榴树苹果树和荆棘\n\n榴树和苹果树，争论谁最美丽。在争论得热闹的时候，在邻近篱笆上的一棵荆棘高声地，带着骄傲的口气说：「我亲爱的朋友，请你们在我的面前停止这种无聊的争论吧。」",
             "quality_score": null,
             "presentation_score": null,
             "edits": []
@@ -90744,6 +94251,27 @@
             "edits": []
           }
         ]
+      },
+      {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-167",
+            "target": "野猪和狐狸\n\n一只野猪站在树下，向着树干磨砺他的牙齿。一只狐狸走过，问他在没有猎人或猎狗来恐吓时，为什么要磨砺他的獠牙？他回答说：「我已经仔细想过，才这样做的。因为等到我要用到我的兵器时，再临时去磨砺牠们，那是来不及的。」先备好武力才可以去求和平。",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
       }
     ]
   },
@@ -90767,6 +94295,27 @@
           {
             "id": "fable-168",
             "target": "老妇人和酒坛\n\n一位老妇人捡起一个空酒坛，这个坛子曾经盛放过一种珍稀而昂贵的葡萄酒，坛子上还残留着一些葡萄酒那令人愉悦的香气。她将坛子举到鼻子前，一次又一次地闻着。“啊，”她惊叹道，“曾经盛在其中的液体，一定非常美味，才能留下如此迷人的香味。”",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
+      },
+      {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-168",
+            "target": "老妇人和酒瓶\n\n一个老妇人，找得一个空瓶，这瓶在不久之前，曾盛满过最好的陈酒的，所以还带着从前的酒香。她很馋嘴，将牠放到她鼻尖上去，好几次又把牠摇荡了几下，说道：「啊，好甜美啊！这酒本身真不知多么味美，连盛牠过的器皿里，都留下这样甘美的香味呢。」",
             "quality_score": null,
             "presentation_score": null,
             "edits": []
@@ -90886,6 +94435,27 @@
         ]
       },
       {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-169",
+            "target": "恶狗\n\n一只狗遇到什么人，总轻轻地去跑到他的脚跟后，乘人不备便咬他们。他的主人在他的颈上，挂上一个铃，因此他无论走到那里都会将他的行踪通知人们。这狗对于这个铃也渐觉得意，叮铃叮铃地满街去跑。一只老猎狗对他说：「你为什么这么炫耀自己呢？请你相信我，你戴着那个铃，并不是什么功劳的奖章，正好相反，这是一个不体面的记号，告诉一切人，叫他们避开你这没礼貌的狗吧！」恶名时常被当作美誉的。",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
+      },
+      {
         "id": "gemma31b",
         "model": "google/gemma-4-31B-it",
         "available": true,
@@ -90927,6 +94497,27 @@
     "post_edit": "",
     "post_edit_origin": null,
     "candidates": [
+      {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-170",
+            "target": "大力士神和车夫\n\n一个车夫赶着一辆货车，沿着一条乡间的小路走。这时车轮深陷入一个车辙的坑中。这愚蠢的车夫呆靠住了，木立在那里，凝视着货车，无法可想，只是高声叫喊大力士神来援助他。于是大力士神就出现了，对他说：「朋友，你用肩膀推起车轮来吧。再抽打你的牛呀，在你自己不曾尽力自助之后，别想求我来援助你。祈求我，这是徒然的。——天助自助者。",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
+      },
       {
         "id": "cohere",
         "model": "cohere/command-a-plus",
@@ -91054,6 +94645,27 @@
         ]
       },
       {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-171",
+            "target": "被俘虏的喇叭手\n\n一个喇叭手，勇敢地带著军队前进时，为敌人所俘虏。他向捉他的人叫道：「请饶我吧，不要无端或是没有理由的，就要我的命啊！我没有杀死过你们军队里的一个人。我又没有兵器，只带这一支铜喇叭呀！」他们回答说：「这就是我们要杀你的原因啊！因为你自己虽然不打仗，可是你用喇叭来激动其余的人来打呢！」",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
+      },
+      {
         "id": "gpt",
         "model": "gpt-6-luna",
         "available": true,
@@ -91095,6 +94707,27 @@
     "post_edit": "",
     "post_edit_origin": null,
     "candidates": [
+      {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-172",
+            "target": "一个男子和他的两个情人\n\n一个中年男子，虽然头发渐现花白，他还恋爱着两个女人。她们之中，有一个是年轻的，另外的一个，年龄也很大了。年长的那个女人，觉得她被一个比她年轻的男子恋爱，很觉惭愧，便下了一个决心，每当她的爱人来看她的时候，总要给他在头上拔掉几根黑头发。那年轻的女子，恰巧相反，她不愿意做个老头儿的妻子，也同样地热心，给他拔去在他头上所能找到的白头发。而结果呢？他在她们两人之间，发见他自己的头上，一根头发也不剩了。",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
+      },
       {
         "id": "qwen27b",
         "model": "Qwen/Qwen3.5-27B",
@@ -91236,6 +94869,27 @@
         ]
       },
       {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-173",
+            "target": "黄蜂和蛇\n\n一只黄蜂，坐在一条蛇的头上，不住地用他的刺去叮他，几乎害了他的性命。那蛇在很大的苦痛中，不知道怎样避免他的仇敌，叫他吓走，他看见一辆货车，笨重地装着木材，就去有意地将头放到车轮底下，说：「让我去和我的仇敌同归于尽。」",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
+      },
+      {
         "id": "qwen27b",
         "model": "Qwen/Qwen3.5-27B",
         "available": true,
@@ -91320,6 +94974,27 @@
         ]
       },
       {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-174",
+            "target": "公牛和犊\n\n一只公牛，用他所有的力气挣扎着，要挤过一条小路，到他的栏里去。一只小犊走上来，自请先走，并且指\n示他能设法通过这条小路。公牛说：「不用你劳驾，在你没有出世，我都早已知道那法子了。」",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
+      },
+      {
         "id": "translategemma27b",
         "model": "google/translategemma-27b-it",
         "available": true,
@@ -91390,6 +95065,27 @@
         ]
       },
       {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-175",
+            "target": "蜜蜂和周彼得\n\n一只从海密德斯山下来的蜜蜂，是蜂房里的皇后，飞上夏令比斯山，将她蜂房里新取出来的蜜送些给周彼得。周彼得对于蜜蜂的贡献很是欢喜，答应给她所要的无论什么东西。因此，她就请求他说：「我求你给我一根刺，那样，如果有谁走近来取我的蜜，我便可以刺死他。」周彼得很是不高兴，因为他很爱人类，但以应诺了不可反悔，所以他回答蜜蜂说：「你可以得到你所请求的东西；可是牠会危及你自己的生命的。因为你如用你的刺刺就留在你所刺出来的伤处，而你就将因失去刺而死。」木匠做枷，自做自戴。",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
+      },
+      {
         "id": "gpt",
         "model": "gpt-6-luna",
         "available": true,
@@ -91431,6 +95127,27 @@
     "post_edit": "",
     "post_edit_origin": null,
     "candidates": [
+      {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-176",
+            "target": "熊和狐狸\n\n一只熊在夸耀自己的仁慈，说道：「一切动物中，只有熊对人最仁爱，他很敬重人，连人的尸体，也不去碰。」一只狐狸听到这些话，微笑地向熊说：「请你就吃吃死人吧，别再吃活人了。」",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
+      },
       {
         "id": "gemma31b",
         "model": "google/gemma-4-31B-it",
@@ -91544,6 +95261,27 @@
         ]
       },
       {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-177",
+            "target": "蟹和狐狸\n\n一只蟹，离开海滨，拣了一块邻近的青草地，做他的食场。一只狐狸走过他面前，因为非常饥饿，就吃掉他。他正被狐狸吞吃的时候，自己说：「我是自作自受，因为在我的天性和习惯上，我是适宜住在海里的，我为什么要跑到岸上来呢？」安分守己则常乐。",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
+      },
+      {
         "id": "cohere",
         "model": "cohere/command-a-plus",
         "available": true,
@@ -91607,6 +95345,27 @@
           {
             "id": "fable-178",
             "target": "三位工匠\n\n某个城市的居民正在讨论，在即将建造的城墙中，使用哪种材料才能更好地保护城市安全。一位木匠站起来，建议使用木材，他说木材容易获得，而且易于加工。一位石匠反对使用木材，理由是木材易燃，并建议使用石头。接着，一位皮革匠站起来说：“我认为，没有什么能比皮革更好了。”\n\n每个人都为自己着想。",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
+      },
+      {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-178",
+            "target": "三个手艺匠\n\n一座大城受了围困，城中的居民集在一起，商议护城抗敌的妙策。一个砌砖匠，立刻挺身而起，推举用砖\n头，来做最有效力的抵御材料。一个木匠也毅然提议，说用木头来抗敌，是最可取的方法。这时，一个制皮匠站\n起来说：「先生们，我和你们两样，没有一样抵御的材料，比皮革更好。」\n各人都从自己打算。",
             "quality_score": null,
             "presentation_score": null,
             "edits": []
@@ -91712,6 +95471,27 @@
         ]
       },
       {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-179",
+            "target": "松树和荆棘\n\n一棵松树骄傲地对荆棘说：「你是完全没有用处的，不比我，到处都拿去做屋顶，和造房子。」荆棘回答说：「你这可怜的家伙，只要你想到斧头和锯子临身的痛苦，你应该很愿意你长成一株荆棘，不希望长成一棵松树了。」\n\n穷而无虑，胜于富而多忧。",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
+      },
+      {
         "id": "cohere",
         "model": "cohere/command-a-plus",
         "available": true,
@@ -91775,6 +95555,27 @@
           {
             "id": "fable-180",
             "target": "狐狸和豹子\n\n狐狸和豹子争论起谁的外表更漂亮，双方都声称自己比对方更英俊。豹子说：“看看我这身漂亮的皮毛；你可没有什么能与之相比。”狐狸却回答说：“你的皮毛或许漂亮，但我的才智更加出众。”",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
+      },
+      {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-180",
+            "target": "狐狸和豹\n\n狐狸和豹，在比较他们中谁最美丽。豹一一指出装饰在他皮上的各色斑点。狐狸阻止他说：「我不装饰在身上，只装饰在心上的，比你不知道要好看多少呢。」",
             "quality_score": null,
             "presentation_score": null,
             "edits": []
@@ -91859,6 +95660,27 @@
           {
             "id": "fable-181",
             "target": "两个口袋\n\n每个人身上都背着两个口袋，一个在前，一个在后，里面都装满了过错。前面的口袋装着邻人的过错，后面的口袋装着自己的过错。因此，人们看不见自己的过错，却总能看见别人的过错。",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
+      },
+      {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-181",
+            "target": "两只袋\n\n据古代的传说，每个人生到世上，额间都挂着两只袋。一只小袋在面前，全是邻人们的过失，而一只大袋在背后，装着自己的错处。因此，人们都容易看到别人的过失，而对于自己的过失，常常茫然。",
             "quality_score": null,
             "presentation_score": null,
             "edits": []
@@ -92004,6 +95826,27 @@
             "edits": []
           }
         ]
+      },
+      {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-182",
+            "target": "牝鹿和狮子\n\n一只牝鹿，被猎人紧追着，逃进一个洞中去躲避，恰巧那是狮窟。狮子见她到来时，藏匿自己，不让她瞧见。但是当他安稳地在洞中的时候，他出来向她扑去，将她撕成碎片。牝鹿喊道：「我真不幸啊！自己逃出了猎人。」的手中，又投入一只野兽的口里！在逃避恶害时，一定要小心不要落进另外的一个恶害里去。",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
       }
     ]
   },
@@ -92069,6 +95912,27 @@
           {
             "id": "fable-183",
             "target": "先知\n\n一位先知坐在集市上，为所有愿意请他算卦的人占卜。\n突然，有人跑来告诉他，他的房子被小偷破门而入，\n小偷们拿走了所有能拿走的东西。\n他立即起身，冲了出去，撕扯着头发，咒骂着那些恶棍。\n围观的人们感到非常好笑，其中一人说：“我们的朋友声称能预知其他人的命运，\n但似乎他自己却不够聪明，无法预见自己将面临什么。”",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
+      },
+      {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-183",
+            "target": "预言家\n\n一个预言家坐在市上，给过路的人算命。有一个人十分急促地跑上来，向他说，他家的门已破开了，他的一切东西都偷走了。他长叹一下，赶快跑回家去。一个邻人看见他跑来，便说：「哦，你这家伙！你说你能够预言别人的命运，怎么你偏不会料到你自己的呢？」",
             "quality_score": null,
             "presentation_score": null,
             "edits": []
@@ -92160,6 +96024,27 @@
         ]
       },
       {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-184",
+            "target": "狼和狮子\n\n一只狼，在羔羊栏里，偷得了一只羊，带着逃到他的洞里去。在路上遇到一只狮子，夺下他的羔羊，冲了便走。狼站在平安的远处，喊道：「你将我的东西，从我这里抢去，多么卑鄙哪！」狮子讥笑地说：「只有我是卑鄙\n\n吗喂这羊是朋友送给你的礼物吗",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
+      },
+      {
         "id": "translategemma27b",
         "model": "google/translategemma-27b-it",
         "available": true,
@@ -92187,6 +96072,27 @@
     "post_edit": "",
     "post_edit_origin": null,
     "candidates": [
+      {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-185",
+            "target": "冒充医生的蛙\n\n有一只蛙，从他湿地里的家中出来，对一切野兽通告，说他是个有学问的医生，善于用药，又能疗治百病。一只狐狸问他说：「你不能医治你自己跛足的姿势和起皱的皮，怎可以假说能给别人开方呢？」",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
+      },
       {
         "id": "qwen27b",
         "model": "Qwen/Qwen3.5-27B",
@@ -92314,6 +96220,27 @@
         ]
       },
       {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-186",
+            "target": "玫瑰和不谢的花\n\n一棵不谢的花，种在花园中，靠近一株玫瑰花树，对他说：「玫瑰真是可爱的花儿啊，是神们的宠儿，同样\n\n又是人们的恩物我妒嫉你的美丽和芳香哪。一玫瑰回答说：「我亲爱的不谢之花，我实在只盛开短短的一季呀！如果没有残酷的手把我从茎上摘去，我也仍是短命而死的。但你却是永存的，也永远不会褪色，只是总是返老还青的。」",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
+      },
+      {
         "id": "cohere",
         "model": "cohere/command-a-plus",
         "available": true,
@@ -92424,6 +96351,27 @@
             "edits": []
           }
         ]
+      },
+      {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-187",
+            "target": "人和狮子\n\n一个人和一只狮子一同旅行，穿过树林。他们各自夸口，自己的力量和勇猛，比对方超越。他们正在争辩的时候，经过一个刻在石上的雕像前，这是一只狮子被一个人勒死的雕像。旅行的人就指着雕像说：「瞧呀！我们多强啊，我们可以征服百兽之王呢！」狮子回答说：「这个雕像是你们人做的呀。如果我们狮子也知道怎样建立雕像，你便会看见人放在狮子的脚爪底下了。」——一个故事是好的，可是说出另一个故事来时，那便不好了。",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
       }
     ]
   },
@@ -92489,6 +96437,27 @@
           {
             "id": "fable-188",
             "target": "狼、羊和公羊\n\n狼派代表向羊提议双方达成永久和平协议，条件是羊立即杀死牧羊犬。\n愚蠢的羊同意了这些条件；但一只年长的公羊因年长而变得睿智，他干预并说：“我们怎么能指望与你们和平共处呢？即使有狗在身边保护我们，我们也从未摆脱过你们的致命攻击！”\n\nBuilding on this first attempt, I will now refine the translation for fluency, ensuring it reads smoothly and naturally in Chinese. I will also correct any remaining issues and write this improved translation directly in my response.狼、羊和公羊\n\n狼派代表向羊群提议，要与它们达成永久和平协议，但条件是羊群必须立即处死牧羊犬。\n愚蠢的羊群同意了这些条件，但一只年长的公羊因年长而变得睿智，他站出来反对说：“我们怎么能指望与你们和平共处呢？即使有狗在身边保护我们，我们也从未摆脱过你们的致命攻击！”",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
+      },
+      {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-188",
+            "target": "狼和羊\n\n羊对狼说:「我们为什么总是互相残杀,闹得难解难分呢?」狼对羊说:「这全是那些狠心的狗不好。每当我们一走近你们,他们便狂叫起来,我们并不想来伤害你们,他们却向我们扑杀过来了,只要你们叫他们走开,不再紧跟你们,我们大家立可订定公约,永远和好。」可怜的蠢羊,是很容易受骗的,便将狗全遣开。狼就称心如意地将没有保卫的羊群,完全吃掉了。",
             "quality_score": null,
             "presentation_score": null,
             "edits": []
@@ -92580,6 +96549,27 @@
         ]
       },
       {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-189",
+            "target": "洗澡的小孩\n\n一个小孩在河里洗澡，几乎要陷溺下去，他对旁边一个经过的行人呼救。那行人并不伸手援救，却毫不关心地站在旁边，骂这小孩不小心。那孩子叫道：「先生，请先救了我的命，然后再骂不迟呀！」",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
+      },
+      {
         "id": "gpt",
         "model": "gpt-6-luna",
         "available": true,
@@ -92629,6 +96619,27 @@
           {
             "id": "fable-190",
             "target": "狼追逐小羊\n\n一只狼正在追逐一只小羊，小羊逃到寺庙里寻求庇护。狼催促它离开寺庙，并说：“如果你不出来，神父肯定会抓住你，把你献祭在祭坛上。”小羊回答说：“谢谢，我想我还是待在这里吧：我宁愿被献祭，也不愿被狼吃掉。”",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
+      },
+      {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-190",
+            "target": "羔羊和狼\n\n一只狼追一只羔羊，羔羊逃到一座庙中去躲避。狼向他叫喊说：「和尚如把你捉住，他会杀死你拿去祭神哩。」羔羊回答说：「我在庙中拿去祭神，比让你吃掉总好些。」",
             "quality_score": null,
             "presentation_score": null,
             "edits": []
@@ -92760,6 +96771,27 @@
             "edits": []
           }
         ]
+      },
+      {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-191",
+            "target": "猫和鸟\n\n有一只猫，听得某处鸟房里的鸟儿们，全在害病，便扮作医生，带着他的手杖，和医生应用的器具，来到鸟房前，敲了敲门，问住在里面的鸟儿，大家身体怎样，说：如果他们有点不舒服，他情愿替他们开方医治的鸟儿们回答说:「我们大家全很康健,只要你立刻走开,让我们照样安居在这里,我们将永远很好的。」",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
       }
     ]
   },
@@ -92844,6 +96876,27 @@
             "edits": []
           }
         ]
+      },
+      {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-192",
+            "target": "孩子和虾蟆\n\n几个孩子在水池旁边玩，看见水里有许多虾蟆，便动手用石头去打他们。他们打死了几只的时候，有\n\n一只虾蟆从水中探出头来，叫道：「我的孩子们，请你们停止吧。这在你们固然是游戏，对于我们却有性命之忧呢。」",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
       }
     ]
   },
@@ -92916,6 +96969,27 @@
         ]
       },
       {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-193",
+            "target": "胡桃树\n\n一棵胡桃树，站在路旁，果子很丰盛。过路的人为胡桃的缘故，用石头和棍棒，打断了他的枝桠。胡桃树哀惫地喊道：「哦！我真不幸啊！我用果实来讨人们的欢喜，而他们用这些惨痛的答谢酬报我！」",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
+      },
+      {
         "id": "qwen27b",
         "model": "Qwen/Qwen3.5-27B",
         "available": true,
@@ -92979,6 +97053,27 @@
           {
             "id": "fable-194",
             "target": "狐狸与狮子\n\n一只从未见过狮子的狐狸有一天遇到了狮子，它被狮子的威严吓得魂飞魄散，几乎吓死了。\n过了一段时间，它又一次遇到了狮子，虽然仍然有些害怕，但比第一次见到时要镇定得多。但当它第三次见到狮子时，它已经完全不再害怕，反而走上前去，开始和狮子交谈，就好像它们认识很久一样。",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
+      },
+      {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-194",
+            "target": "狐狸和狮子\n\n一个狐狸，从来不曾遇见过狮子，偶然有一次，在林里碰到了，他吓得半死。当他第二次遇到他的时候，他仍旧很害怕，可是程度比第一次要好得多。第三次看见他时，他竟胆大得很，便走上前去，和他开始很亲密的谈话。\n\n熟习软化了偏见。",
             "quality_score": null,
             "presentation_score": null,
             "edits": []
@@ -93096,6 +97191,27 @@
             "edits": []
           }
         ]
+      },
+      {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-195",
+            "target": "狮子的王国\n\n一只狮子做着众兽之王。他不是暴燥残忍和专横的，正像一个好国王。他在位时，下了一道圣旨，召集一切鸟兽，来开大会，订立一个大家遵守的公约。公约中规定狼和绵羊，豹和山羊，老虎和鹿，狗和兔，都该绝对和睦亲爱，住在一起。兔子说：「这样的日子，我渴望已久。在这样的日子里，弱者在强者的身旁，也可以高枕无忧了。」",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
       }
     ]
   },
@@ -93175,6 +97291,27 @@
           {
             "id": "fable-196",
             "target": "螃蟹和它的母亲\n\n一只老螃蟹对它的儿子说：“孩子，你为什么总是横着走？你应该笔直地走。”小螃蟹回答说：“亲爱的母亲，请您示范一下，我就会照着您的样子做。”老螃蟹试着示范，但结果却徒劳无功，这时她才意识到，自己之前指责孩子是多么愚蠢。\n\n身教胜于言传。",
+            "quality_score": null,
+            "presentation_score": null,
+            "edits": []
+          }
+        ]
+      },
+      {
+        "id": "human_reference",
+        "model": null,
+        "available": true,
+        "metadata": {
+          "translation_type": "human_reference",
+          "reference_fields": [
+            "title_cn",
+            "text_cn"
+          ]
+        },
+        "translation_regions": [
+          {
+            "id": "fable-196",
+            "target": "蟹和他的母亲\n\n一只蟹对她的儿子说：「我的孩子，你为什么要这样横行呢？向前直走，要便当得多了。」小蟹回答说：\n\n「亲爱的母亲，你的话很不错，假使你给我直走的样子来看，我一定照你的样走。」母亲试了几次总是徒然。\n\n对于她儿子的责备，只好无言地屈伏了。\n\n模范比教训更有力量。",
             "quality_score": null,
             "presentation_score": null,
             "edits": []

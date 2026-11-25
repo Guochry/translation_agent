@@ -832,8 +832,9 @@ npm run build
 
 [Open the book evaluation](https://guochry.github.io/translation_agent/?i=templates/demo/book_multilingual.yml&d=data/demo/book_multilingual.json).
 The task compares five baseline systems on 197 English Aesop fables in Arabic,
-Hindi, Georgian, Russian, Vietnamese, and Simplified Chinese. The English source
-stays beside the selected translation. Rate fidelity and prose quality, mark
+Hindi, Georgian, Russian, Vietnamese, and Simplified Chinese. Simplified Chinese
+also includes the dataset's existing reference as a sixth anonymous candidate.
+The English source stays beside the selected translation. Rate fidelity and prose quality, mark
 strengths and errors, flag issues, and optionally write a post-edit. A/D switch
 translations and Q/E switch fables.
 
