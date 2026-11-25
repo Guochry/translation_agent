@@ -7,7 +7,7 @@ import SubtitleVideo from '../hitbox/SubtitleVideo.vue';
 import GoogleTranslateBox from '../hitbox/GoogleTranslateBox.vue';
 import AnnotationIssue from '../hitbox/AnnotationIssue.vue';
 import SubtitlePostEdit from '../hitbox/SubtitlePostEdit.vue';
-import { BOOK_FIDELITY, BOOK_PROSE, restoreBookAnnotations, validateBookDataset } from '../../assets/js/book-util.js';
+import { BOOK_FIDELITY, BOOK_PROSE, bookCandidateDisplayText, restoreBookAnnotations, validateBookDataset } from '../../assets/js/book-util.js';
 import { cloneSubtitleData, validateSubtitleDataset, restoreSubtitleAnnotations, resetSubtitleClip,
     subtitleClipRated, subtitleCandidateRated, subtitleRegionRated, subtitleMediaUrl, updateSubtitlePostEdit, startSubtitlePostEdit,
     SUBTITLE_FIDELITY, SUBTITLE_PRESENTATION } from '../../assets/js/subtitle-util.js';
@@ -198,6 +198,7 @@ onBeforeUnmount(() => {
                     <MangaSpanLegend v-model="spanCategory" />
                     <MangaTextRegion :region="candidate.translation_regions[0]" :region_index="0" :update_region="updateRegion"
                         :language="language" :span_category="spanCategory" hide_heading
+                        :display_target="bookCandidateDisplayText(candidate)"
                         :fidelity_definition="BOOK_FIDELITY" :presentation_definition="BOOK_PROSE" presentation_caption="Prose quality" />
                     <AnnotationIssue :model-value="candidate.annotation_issue"
                         @update:model-value="issue => replaceCandidate({ ...candidate, annotation_issue: issue })" />
@@ -248,7 +249,8 @@ onBeforeUnmount(() => {
             </aside>
         </div>
         <SubtitlePostEdit :key="hit.id" :model-value="hit.post_edit || ''" :origin="hit.post_edit_origin" :language="language" :language-label="languageName(language)"
-            :candidates="hit.candidates" :text-type="isBook ? 'version of the fable' : 'subtitle'" @update:model-value="text => replaceHit(updateSubtitlePostEdit(hit, text))"
+            :candidates="hit.candidates" :text-type="isBook ? 'version of the fable' : 'subtitle'"
+            :display-candidate-text="isBook ? bookCandidateDisplayText : undefined" @update:model-value="text => replaceHit(updateSubtitlePostEdit(hit, text))"
             @start-from="id => replaceHit(startSubtitlePostEdit(hit, id))" />
     </div>
 </template>

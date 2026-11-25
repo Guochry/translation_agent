@@ -7,10 +7,11 @@ import { TRANSLATION_QUALITY_SCORE, REGION_PRESENTATION_SCORE } from '../../asse
 
 <script>
 export default {
-    props: ['region', 'region_index', 'update_region', 'language', 'span_category', 'source_label', 'source_language', 'region_label', 'fidelity_definition', 'presentation_definition', 'presentation_caption', 'hide_heading', 'target_label'],
+    props: ['region', 'region_index', 'update_region', 'language', 'span_category', 'source_label', 'source_language', 'region_label', 'fidelity_definition', 'presentation_definition', 'presentation_caption', 'hide_heading', 'target_label', 'display_target'],
     data() { return { selection_message: '' } },
     computed: {
         target() { return typeof this.region.target === 'string' ? this.region.target : '' },
+        displayed_target() { return this.display_target ?? this.target },
         spans() { return regionSpans(this.region) },
         annotations() {
             return (this.region.edits || []).filter(edit => this.spans.some(span => span.id === edit.id && span.category === edit.category))
@@ -20,7 +21,7 @@ export default {
             return boundaries.slice(0, -1).map((start, index) => {
                 const end = boundaries[index + 1]
                 const span = this.spans.find(span => span.start < end && span.end > start)
-                return { start, text: this.target.slice(start, end), category: span?.category }
+                return { start, text: this.displayed_target.slice(start, end), category: span?.category }
             })
         }
     },
@@ -43,7 +44,7 @@ export default {
         },
         annotation_text(annotation) {
             return this.spans.filter(span => span.id === annotation.id && span.category === annotation.category)
-                .map(span => this.target.slice(span.start, span.end)).join(' … ')
+                .map(span => this.displayed_target.slice(span.start, span.end)).join(' … ')
         }
     }
 }

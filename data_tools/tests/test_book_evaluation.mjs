@@ -1,11 +1,21 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
-import { restoreBookAnnotations, validateBookDataset } from '../../src/assets/js/book-util.js';
+import { bookCandidateDisplayText, restoreBookAnnotations, validateBookDataset } from '../../src/assets/js/book-util.js';
 import { cloneSubtitleData as clone, resetSubtitleClip, startSubtitlePostEdit, subtitleClipRated } from '../../src/assets/js/subtitle-util.js';
 
 const data = JSON.parse(fs.readFileSync(new URL('../../public/data/demo/book_multilingual.json', import.meta.url)));
 const languages = ['ar', 'hi', 'ka', 'ru', 'vi', 'zh-CN'];
+
+test('Chinese reference hard wraps reflow without changing paragraphs or annotation offsets', () => {
+    const raw = '标题\n\n第一段换\n行继续。\n  \n第二段。';
+    const candidate = { id: 'human_reference', translation_regions: [{ target: raw }] };
+    const displayed = bookCandidateDisplayText(candidate);
+    assert.equal(displayed, '标题\n\n第一段换\u200b行继续。\n  \n第二段。');
+    assert.equal(displayed.length, raw.length);
+    assert.equal(candidate.translation_regions[0].target, raw);
+    assert.equal(bookCandidateDisplayText({ ...candidate, id: 'cohere' }), raw);
+});
 
 test('published fables align by source and candidate order across languages', () => {
     validateBookDataset(data, languages);

@@ -1,7 +1,7 @@
 <script setup>
 import { nextTick, ref } from 'vue';
 const props = defineProps({ modelValue: { type: String, default: '' }, origin: Object, language: String, languageLabel: String, candidates: Array,
-    textType: { type: String, default: 'subtitle' } });
+    textType: { type: String, default: 'subtitle' }, displayCandidateText: Function });
 const emit = defineEmits(['update:modelValue', 'start-from']);
 const editor = ref(null);
 const candidateText = candidate => (candidate.translation_regions || []).map(region => region.target).join('\n');
@@ -28,7 +28,7 @@ function startFrom(candidate) {
             <div class="post-edit-candidates">
                 <article v-for="(candidate, index) in candidates || []" :key="candidate.id">
                     <h3>Translation {{ String.fromCharCode(65 + index) }}</h3>
-                    <p v-if="candidate.available !== false" :lang="language" :dir="language === 'ar' ? 'rtl' : 'auto'">{{ candidateText(candidate) }}</p>
+                    <p v-if="candidate.available !== false" :lang="language" :dir="language === 'ar' ? 'rtl' : 'auto'">{{ displayCandidateText ? displayCandidateText(candidate) : candidateText(candidate) }}</p>
                     <p v-else class="post-edit-unavailable">Unavailable</p>
                     <button v-if="candidate.available !== false" type="button" :disabled="!!modelValue.trim() || !candidateText(candidate)"
                         :aria-label="`Start draft from Translation ${String.fromCharCode(65 + index)}`"

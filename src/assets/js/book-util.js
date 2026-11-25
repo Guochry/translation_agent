@@ -3,6 +3,14 @@ import { cloneSubtitleData, restoreTranslationAnnotations } from './subtitle-uti
 export const BOOK_FIDELITY = { name: 'quality_score', label: 'Fidelity to the English fable', min: 0, max: 100, step: 5 };
 export const BOOK_PROSE = { name: 'presentation_score', label: 'Prose quality in the target language', min: 0, max: 100, step: 5 };
 
+export function bookCandidateDisplayText(candidate) {
+    const text = candidate.translation_regions[0]?.target ?? '';
+    if (candidate.id !== 'human_reference') return text;
+    // A zero-width break opportunity lets Chinese text reflow without shifting span offsets.
+    return text.split(/(\n(?:[ \t]*\n)+)/).map((part, index) =>
+        index % 2 === 0 ? part.replaceAll('\n', '\u200b') : part).join('');
+}
+
 function bookContent(hit) {
     return JSON.stringify([hit.task_type, hit.schema_version, hit.id, hit.language, hit.source_index,
         hit.source_language, hit.title, hit.source, hit.candidates.map(candidate =>
