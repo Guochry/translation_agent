@@ -3,6 +3,7 @@
 import argparse
 import hashlib
 import json
+import random
 from pathlib import Path
 
 REPO = Path(__file__).resolve().parents[1]
@@ -10,12 +11,15 @@ PROJECT = REPO.parent
 PROFILES = ("cohere", "gemma31b", "gpt", "qwen27b", "translategemma27b")
 LANGUAGES = ("ar", "hi", "ka", "ru", "vi", "zh-CN")
 REFERENCE = "human_reference"
+SAMPLE_SIZE = 20
+SAMPLE_SEED = 20261125
 
 
 def build(runs, source):
     source_bytes = source.read_bytes()
     stories = json.loads(source_bytes)
     digest = hashlib.sha256(source_bytes).hexdigest()
+    selected = sorted(random.Random(SAMPLE_SEED).sample(range(len(stories)), SAMPLE_SIZE))
     records = []
     for language in LANGUAGES:
         outputs = {}
@@ -42,7 +46,8 @@ def build(runs, source):
                     raise ValueError(f"Missing Chinese reference for story {index}")
                 references[index] = f"{title.strip()}\n\n{text.strip()}"
             outputs[REFERENCE] = (None, references)
-        for index, story in enumerate(stories):
+        for index in selected:
+            story = stories[index]
             # Keep model order consistent, with the Chinese reference inserted by the same hash.
             order = sorted(outputs, key=lambda profile: hashlib.sha256(
                 f"book:{index}:{profile}".encode()).digest())
@@ -57,7 +62,7 @@ def build(runs, source):
                        if profile == REFERENCE else {}),
                     "translation_regions": [{
                         "id": f"fable-{index}", "target": text,
-                        "quality_score": None, "presentation_score": None, "edits": [],
+                        "quality_score": None, "edits": [],
                     }] if available else [],
                 })
             records.append({

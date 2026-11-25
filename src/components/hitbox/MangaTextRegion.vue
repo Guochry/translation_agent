@@ -7,7 +7,7 @@ import { TRANSLATION_QUALITY_SCORE, REGION_PRESENTATION_SCORE } from '../../asse
 
 <script>
 export default {
-    props: ['region', 'region_index', 'update_region', 'language', 'span_category', 'source_label', 'source_language', 'region_label', 'fidelity_definition', 'presentation_definition', 'presentation_caption', 'hide_heading', 'target_label', 'display_target'],
+    props: ['region', 'region_index', 'update_region', 'language', 'span_category', 'source_label', 'source_language', 'region_label', 'fidelity_definition', 'presentation_definition', 'hide_presentation', 'hide_heading', 'target_label', 'display_target'],
     data() { return { selection_message: '' } },
     computed: {
         target() { return typeof this.region.target === 'string' ? this.region.target : '' },
@@ -67,8 +67,8 @@ export default {
         <div class="region-score-row">
             <OverallScore class="region-quality-score" :hits_data="[region]" :current_hit="1" :set_hits_data="update_score_data"
                 :config="{}" :score_definition="fidelity_definition || TRANSLATION_QUALITY_SCORE" :compact="true" caption="Fidelity" />
-            <OverallScore class="region-quality-score" :hits_data="[region]" :current_hit="1" :set_hits_data="update_score_data"
-                :config="{}" :score_definition="presentation_definition || REGION_PRESENTATION_SCORE" :compact="true" :caption="presentation_caption || 'Presentation'" />
+            <OverallScore v-if="!hide_presentation" class="region-quality-score" :hits_data="[region]" :current_hit="1" :set_hits_data="update_score_data"
+                :config="{}" :score_definition="presentation_definition || REGION_PRESENTATION_SCORE" :compact="true" caption="Presentation" />
         </div>
         <div v-if="annotations.length" class="region-errors" aria-label="Marked translation spans">
             <ul>

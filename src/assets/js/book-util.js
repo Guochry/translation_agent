@@ -1,7 +1,13 @@
-import { cloneSubtitleData, restoreTranslationAnnotations } from './subtitle-util.js';
+import { cloneSubtitleData, restoreTranslationAnnotations, validSubtitleScore } from './subtitle-util.js';
 
 export const BOOK_FIDELITY = { name: 'quality_score', label: 'Fidelity to the English fable', min: 0, max: 100, step: 5 };
-export const BOOK_PROSE = { name: 'presentation_score', label: 'Prose quality in the target language', min: 0, max: 100, step: 5 };
+export const bookCandidateRated = candidate =>
+    candidate.available && validSubtitleScore(candidate.translation_regions[0]?.quality_score);
+
+export function bookFableRated(hit) {
+    const available = hit.candidates.filter(candidate => candidate.available);
+    return available.length > 0 && available.every(bookCandidateRated);
+}
 
 const SMALL_TITLE_WORDS = new Set(['a', 'an', 'and', 'as', 'at', 'but', 'by', 'for', 'from', 'in', 'nor', 'of', 'on', 'or', 'the', 'to', 'with']);
 
@@ -32,8 +38,14 @@ function bookContent(hit) {
 }
 
 export function restoreBookAnnotations(canonical, saved) {
-    const savedById = new Map(Array.isArray(saved) ? saved.map(hit => [hit?.id, hit]) : []);
     const canonicalById = new Map(canonical.map(hit => [hit.id, hit]));
+    const languages = new Set(canonical.map(hit => hit.language));
+    // Older exports may contain fables outside the current sample.
+    const selected = Array.isArray(saved) ? saved.filter(hit =>
+        canonicalById.has(hit?.id) || hit?.task_type !== 'book_evaluation' || hit.schema_version !== 1
+        || !languages.has(hit.language) || !Number.isInteger(hit.source_index)
+        || hit.id !== `book-${hit.language}-${hit.source_index}`) : saved;
+    const savedById = new Map(Array.isArray(selected) ? selected.map(hit => [hit?.id, hit]) : []);
     const compatible = canonical.map(hit => {
         const oldCandidates = savedById.get(hit.id)?.candidates;
         if (!Array.isArray(oldCandidates)) return hit;
@@ -44,7 +56,7 @@ export function restoreBookAnnotations(canonical, saved) {
             ? { ...candidate, available: false, translation_regions: [] }
             : candidate) };
     });
-    return restoreTranslationAnnotations(compatible, saved, bookContent, 'book').map(hit => {
+    return restoreTranslationAnnotations(compatible, selected, bookContent, 'book').map(hit => {
         const restoredById = new Map(hit.candidates.map(candidate => [candidate.id, candidate]));
         hit.candidates = canonicalById.get(hit.id).candidates.map(candidate => {
             const restored = restoredById.get(candidate.id);

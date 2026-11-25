@@ -131,7 +131,7 @@ export function restoreTranslationAnnotations(canonical, saved, fingerprint, tas
             for (let j = 0; j < target.translation_regions.length; j++) {
                 const region = target.translation_regions[j], savedRegion = source.translation_regions[j];
                 region.quality_score = restoreScore(savedRegion.quality_score);
-                region.presentation_score = restoreScore(savedRegion.presentation_score);
+                if (task === 'subtitle') region.presentation_score = restoreScore(savedRegion.presentation_score);
                 const edits = savedRegion.edits ?? [];
                 if (!Array.isArray(edits)) throw new Error('Invalid span annotations.');
                 const spans = regionSpans({ target: region.target, edits });
@@ -160,7 +160,7 @@ export function resetSubtitleClip(hit) {
         candidate.annotation_issue = null;
         for (const region of candidate.translation_regions) {
             region.quality_score = null;
-            region.presentation_score = null;
+            if (hit.task_type !== 'book_evaluation') region.presentation_score = null;
             region.edits = [];
         }
     }

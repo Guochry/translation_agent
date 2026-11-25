@@ -13,11 +13,15 @@ languages:
   - { code: vi, label: Vietnamese, native_label: Tiếng Việt }
   - { code: zh-CN, label: Simplified Chinese, native_label: 简体中文 }
 instructions: |
-  Read the English fable and compare the available translations. Use **0–100 in steps of 5** for each score. **60** is acceptable. Rank translations separately for fidelity and prose quality, with equal scores for ties.
+  Read the English fable and compare its translations. Score **Fidelity from 0–100 in steps of 5**. **60** is acceptable. Give higher scores to better translations and equal scores for ties.
 
-  - **Spans.** Mark **Strength** for effective creative wording that preserves meaning. Mark **Error** for inaccurate or materially unnatural wording. Leave ordinary wording unmarked.
-  - **Fidelity.** Check events, characters, tone, and the moral against the English fable. Below 60 means a material correction is needed.
-  - **Prose quality.** Judge how naturally the fable reads in your language. Consider sentence flow, dialogue, and consistency of voice.
+  - **Spans.** Mark **Strength** when a metaphor, idiom, wordplay, or other creative choice carries the fable’s meaning or effect naturally into your language. Mark **Error** for wording that distorts meaning or feels materially unnatural. Leave ordinary wording unmarked.
+  - **Fidelity.** Judge how naturally the translation tells the same story and conveys its lesson. Check the characters’ actions and motives, the tone, and how the ending makes the moral land. Natural rephrasing can earn full credit.
+
+    | 0 | 5–25 | 30–55 | 60–75 | 80–95 | 100 |
+    | --- | --- | --- | --- | --- | --- |
+    | No usable meaning | Details survive, story or lesson lost | Story recognizable, a key event or lesson needs fixing | Story and lesson intact, noticeably stiff | Faithful and natural, minor polish | Story, voice, and lesson come through naturally |
+
   - **Flag a problem** if a highlight cannot capture it, such as a missing passage.
   - **Post-edit (optional).** Finish rating the translations, then combine strengths and fix errors to write a better version.
   - **Download** before closing and **upload** the file to resume.

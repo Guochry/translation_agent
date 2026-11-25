@@ -1,8 +1,8 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
-import { bookCandidateDisplayText, restoreBookAnnotations, validateBookDataset } from '../../src/assets/js/book-util.js';
-import { cloneSubtitleData as clone, resetSubtitleClip, startSubtitlePostEdit, subtitleClipRated } from '../../src/assets/js/subtitle-util.js';
+import { bookCandidateDisplayText, bookFableRated, restoreBookAnnotations, validateBookDataset } from '../../src/assets/js/book-util.js';
+import { cloneSubtitleData as clone, resetSubtitleClip, startSubtitlePostEdit } from '../../src/assets/js/subtitle-util.js';
 
 const data = JSON.parse(fs.readFileSync(new URL('../../public/data/demo/book_multilingual.json', import.meta.url)));
 const languages = ['ar', 'hi', 'ka', 'ru', 'vi', 'zh-CN'];
@@ -20,12 +20,13 @@ test('Chinese reference reflows single and double body breaks without shifting s
 test('published fables align by source and candidate order across languages', () => {
     validateBookDataset(data, languages);
     const originals = data.filter(hit => hit.language === 'ar');
-    assert.equal(originals.length, 197);
+    assert.equal(originals.length, 20);
+    assert.equal(new Set(originals.map(hit => hit.source_index)).size, 20);
     for (const language of languages) {
         const rows = data.filter(hit => hit.language === language);
         assert.equal(rows.length, originals.length);
         for (const [i, hit] of rows.entries()) {
-            assert.equal(hit.source_index, i);
+            assert.equal(hit.source_index, originals[i].source_index);
             assert.equal(hit.source, originals[i].source);
             const reference = hit.candidates.find(c => c.id === 'human_reference');
             assert.deepEqual(hit.candidates.filter(c => c !== reference).map(c => c.id), originals[i].candidates.map(c => c.id));
@@ -70,12 +71,17 @@ test('book import restores scores, optional flags and draft origin on canonical 
     const selected = saved.candidates.find(c => c.available);
     selected.annotation_issue = { category: 'omission', note: 'Missing the moral.' };
     const edited = startSubtitlePostEdit(saved, selected.id);
-    const [restored] = restoreBookAnnotations(data, [edited]);
-    assert.equal(subtitleClipRated(restored), true);
+    const outsideSample = { ...saved, id: 'book-ka-0', source_index: 0 };
+    const restoredRows = restoreBookAnnotations(data, [outsideSample, edited]);
+    assert.equal(restoredRows.length, 1);
+    const [restored] = restoredRows;
+    assert.equal(bookFableRated(restored), true);
+    assert.equal(Object.hasOwn(restored.candidates[0].translation_regions[0], 'presentation_score'), false);
     assert.deepEqual(restored.post_edit_origin, edited.post_edit_origin);
     assert.deepEqual(restored.candidates.find(c => c.id === selected.id).annotation_issue, selected.annotation_issue);
     const reset = resetSubtitleClip(restored);
-    assert.equal(subtitleClipRated(reset), false);
+    assert.equal(bookFableRated(reset), false);
+    assert.equal(Object.hasOwn(reset.candidates[0].translation_regions[0], 'presentation_score'), false);
     assert.equal(reset.post_edit, '');
     selected.translation_regions[0].target += ' changed';
     assert.throws(() => restoreBookAnnotations(data, [saved]), /different book content/);

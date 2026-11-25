@@ -7,7 +7,7 @@ import SubtitleVideo from '../hitbox/SubtitleVideo.vue';
 import GoogleTranslateBox from '../hitbox/GoogleTranslateBox.vue';
 import AnnotationIssue from '../hitbox/AnnotationIssue.vue';
 import SubtitlePostEdit from '../hitbox/SubtitlePostEdit.vue';
-import { BOOK_FIDELITY, BOOK_PROSE, bookCandidateDisplayText, bookDisplayTitle, restoreBookAnnotations, validateBookDataset } from '../../assets/js/book-util.js';
+import { BOOK_FIDELITY, bookCandidateDisplayText, bookCandidateRated, bookDisplayTitle, bookFableRated, restoreBookAnnotations, validateBookDataset } from '../../assets/js/book-util.js';
 import { cloneSubtitleData, validateSubtitleDataset, restoreSubtitleAnnotations, resetSubtitleClip,
     subtitleClipRated, subtitleCandidateRated, subtitleRegionRated, subtitleMediaUrl, updateSubtitlePostEdit, startSubtitlePostEdit,
     SUBTITLE_FIDELITY, SUBTITLE_PRESENTATION } from '../../assets/js/subtitle-util.js';
@@ -18,6 +18,7 @@ const itemLabel = isBook ? 'fable' : 'clip';
 const navigationLabel = isBook ? 'Fable' : 'Clip';
 const validateDataset = isBook ? validateBookDataset : validateSubtitleDataset;
 const restoreAnnotations = isBook ? restoreBookAnnotations : restoreSubtitleAnnotations;
+const itemRated = isBook ? bookFableRated : subtitleClipRated;
 const canonical = cloneSubtitleData(props.input_data);
 const rows = shallowRef(cloneSubtitleData(props.input_data));
 const dataError = ref('');
@@ -43,7 +44,7 @@ const candidateLabel = computed(() => `Translation ${String.fromCharCode(65 + ac
 const orderedReferences = computed(() => (hit.value?.references || [])
     .filter(reference => reference.language === 'en' || (language.value === 'vi' && reference.language === 'vi'))
     .sort((a, b) => Number(b.language === language.value) - Number(a.language === language.value)));
-const rated = code => rows.value.filter(row => row.language === code && subtitleClipRated(row)).length;
+const rated = code => rows.value.filter(row => row.language === code && itemRated(row)).length;
 const total = code => rows.value.filter(row => row.language === code).length;
 const languageName = code => props.config.languages.find(l => l.code === code)?.label || code;
 const media = path => subtitleMediaUrl(path, { dev: import.meta.env.DEV, base: import.meta.env.BASE_URL,
@@ -76,7 +77,7 @@ function resetClip() {
 }
 function candidateStatus(c) {
     if (!c.available) return 'Unavailable';
-    if (subtitleCandidateRated(c)) return 'Fully rated';
+    if (isBook ? bookCandidateRated(c) : subtitleCandidateRated(c)) return 'Fully rated';
     if (c.translation_regions.length === 1) return 'Not rated';
     return `${c.translation_regions.filter(subtitleRegionRated).length}/${c.translation_regions.length} subtitles rated`;
 }
@@ -156,7 +157,7 @@ onBeforeUnmount(() => {
             <div>
                 <button :disabled="index === 0" :aria-label="`Previous ${itemLabel}`" @click="navigate(index - 1)">←</button>
                 <label>{{ navigationLabel }} <select :value="index" :aria-label="`Choose ${itemLabel}`" @change="navigate($event.target.value)">
-                    <option v-for="(row, position) in hits" :key="row.id" :value="position">{{ position + 1 }}{{ subtitleClipRated(row) ? ' ✓' : '' }}{{ row.bookmark ? ' ★' : '' }}</option>
+                    <option v-for="(row, position) in hits" :key="row.id" :value="position">{{ position + 1 }}{{ itemRated(row) ? ' ✓' : '' }}{{ row.bookmark ? ' ★' : '' }}</option>
                 </select> / {{ hits.length }}</label>
                 <button :disabled="index === hits.length - 1" :aria-label="`Next ${itemLabel}`" @click="navigate(index + 1)">→</button>
                 <span class="progress-count">{{ rated(language) }}/{{ hits.length }} {{ itemLabel }}s fully rated</span>
@@ -201,7 +202,7 @@ onBeforeUnmount(() => {
                     <MangaTextRegion :region="candidate.translation_regions[0]" :region_index="0" :update_region="updateRegion"
                         :language="language" :span_category="spanCategory" hide_heading
                         :display_target="bookCandidateDisplayText(candidate)"
-                        :fidelity_definition="BOOK_FIDELITY" :presentation_definition="BOOK_PROSE" presentation_caption="Prose quality" />
+                        :fidelity_definition="BOOK_FIDELITY" :hide_presentation="true" />
                     <AnnotationIssue :model-value="candidate.annotation_issue"
                         @update:model-value="issue => replaceCandidate({ ...candidate, annotation_issue: issue })" />
                 </template>
