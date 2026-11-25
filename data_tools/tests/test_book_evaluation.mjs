@@ -38,7 +38,7 @@ test('published fables align by source and candidate order across languages', ()
             }
         }
     }
-    assert(data.some(hit => hit.language === 'ka' && hit.candidates.some(c => !c.available)));
+    assert(data.every(hit => hit.candidates.every(c => c.available)));
 });
 
 test('old Chinese exports restore by candidate ID and update post-edit labels after adding the reference', () => {
@@ -61,7 +61,7 @@ test('old Chinese exports restore by candidate ID and update post-edit labels af
 });
 
 test('book import restores scores, optional flags and draft origin on canonical content', () => {
-    const original = data.find(hit => hit.language === 'ka' && hit.candidates.some(c => !c.available));
+    const original = data.find(hit => hit.language === 'ka');
     const saved = clone(original);
     for (const c of saved.candidates.filter(c => c.available)) {
         c.translation_regions[0].quality_score = 0;

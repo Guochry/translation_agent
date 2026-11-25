@@ -72,7 +72,7 @@ def build(runs, source):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--runs", type=Path, default=PROJECT / "agent/book_tryout/baseline_infer/runs")
+    parser.add_argument("--runs", type=Path, default=PROJECT / "agent/book_tryout/baseline_infer/runs/unwrapped")
     parser.add_argument("--source", type=Path, default=PROJECT / "data/final/processed/aesop_en_zh_clean_with_difficulty.json")
     parser.add_argument("--output", type=Path, default=REPO / "public/data/demo/book_multilingual.json")
     args = parser.parse_args()
