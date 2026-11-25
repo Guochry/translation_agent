@@ -188,7 +188,7 @@ export default {
                 :consumed_config={consumed_config}
             />
         </div>
-        <div v-else-if="consumed_config.subtitle_evaluation" class="mh4">
+        <div v-else-if="consumed_config.subtitle_evaluation || consumed_config.book_evaluation" class="mh4">
             <SubtitleEvaluation :input_data="data" :config="consumed_config" />
         </div>
         <div v-else-if="consumed_config.manga_multilingual" class="mh4">

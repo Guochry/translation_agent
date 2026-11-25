@@ -93,7 +93,11 @@ function restoreScore(value) {
 }
 
 export function restoreSubtitleAnnotations(canonical, saved) {
-    if (!Array.isArray(saved) || !saved.length) throw new Error('Upload an annotation JSON file from this subtitle task.');
+    return restoreTranslationAnnotations(canonical, saved, content, 'subtitle');
+}
+
+export function restoreTranslationAnnotations(canonical, saved, fingerprint, task) {
+    if (!Array.isArray(saved) || !saved.length) throw new Error(`Upload an annotation JSON file from this ${task} task.`);
     const byId = new Map(canonical.map(hit => [hit.id, hit]));
     const seen = new Set();
     return saved.map(hit => {
@@ -101,8 +105,10 @@ export function restoreSubtitleAnnotations(canonical, saved) {
         if (!expected || seen.has(hit.id)) throw new Error('The file contains unknown or duplicate clips.');
         seen.add(hit.id);
         let matches = false;
-        try { matches = content(hit) === content(expected); } catch { /* incomplete upload */ }
-        if (!matches) throw new Error('The file belongs to different subtitle content, video version, or candidate order.');
+        try { matches = fingerprint(hit) === fingerprint(expected); } catch { /* incomplete upload */ }
+        if (!matches) throw new Error(task === 'subtitle'
+            ? 'The file belongs to different subtitle content, video version, or candidate order.'
+            : 'The file belongs to different book content or candidate order.');
         const result = cloneSubtitleData(expected);
         if (Object.hasOwn(hit, 'post_edit') && typeof hit.post_edit !== 'string') throw new Error('Post-edit must be text.');
         result.post_edit = hit.post_edit ?? '';

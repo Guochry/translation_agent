@@ -7,15 +7,21 @@ import SubtitleVideo from '../hitbox/SubtitleVideo.vue';
 import GoogleTranslateBox from '../hitbox/GoogleTranslateBox.vue';
 import AnnotationIssue from '../hitbox/AnnotationIssue.vue';
 import SubtitlePostEdit from '../hitbox/SubtitlePostEdit.vue';
+import { BOOK_FIDELITY, BOOK_PROSE, restoreBookAnnotations, validateBookDataset } from '../../assets/js/book-util.js';
 import { cloneSubtitleData, validateSubtitleDataset, restoreSubtitleAnnotations, resetSubtitleClip,
     subtitleClipRated, subtitleCandidateRated, subtitleRegionRated, subtitleMediaUrl, updateSubtitlePostEdit, startSubtitlePostEdit,
     SUBTITLE_FIDELITY, SUBTITLE_PRESENTATION } from '../../assets/js/subtitle-util.js';
 
 const props = defineProps({ input_data: Array, config: Object });
+const isBook = Boolean(props.config.book_evaluation);
+const itemLabel = isBook ? 'fable' : 'clip';
+const navigationLabel = isBook ? 'Fable' : 'Clip';
+const validateDataset = isBook ? validateBookDataset : validateSubtitleDataset;
+const restoreAnnotations = isBook ? restoreBookAnnotations : restoreSubtitleAnnotations;
 const canonical = cloneSubtitleData(props.input_data);
 const rows = shallowRef(cloneSubtitleData(props.input_data));
 const dataError = ref('');
-try { validateSubtitleDataset(canonical, props.config.languages.map(l => l.code)); }
+try { validateDataset(canonical, props.config.languages.map(l => l.code)); }
 catch (error) { dataError.value = error.message; }
 const language = ref(props.config.default_language || props.config.languages[0].code);
 const index = ref(0);
@@ -30,6 +36,7 @@ const videoVolume = ref(1);
 const uploadInput = ref(null);
 const hits = computed(() => rows.value.filter(hit => hit.language === language.value));
 const hit = computed(() => hits.value[index.value]);
+const sourceParagraphs = computed(() => hit.value?.source.split(/\n\s*\n/).map(paragraph => paragraph.replace(/\s+/g, ' ').trim()) || []);
 const candidate = computed(() => hit.value?.candidates[activeCandidate.value]);
 const candidateLabel = computed(() => `Translation ${String.fromCharCode(65 + activeCandidate.value)}`);
 const orderedReferences = computed(() => (hit.value?.references || [])
@@ -62,7 +69,10 @@ function replaceCandidate(next) {
 function updateRegion(regionIndex, region) {
     replaceCandidate({ ...candidate.value, translation_regions: candidate.value.translation_regions.map((r, i) => i === regionIndex ? region : r) });
 }
-function resetClip() { replaceHit(resetSubtitleClip(hit.value)); message.value = 'Scores, spans, issue flags, and post-edit reset for this clip in the selected language.'; }
+function resetClip() {
+    replaceHit(resetSubtitleClip(hit.value));
+    message.value = `Scores, spans, issue flags, and post-edit reset for this ${itemLabel} in the selected language.`;
+}
 function candidateStatus(c) {
     if (!c.available) return 'Unavailable';
     if (subtitleCandidateRated(c)) return 'Fully rated';
@@ -74,7 +84,7 @@ function download() {
     const url = URL.createObjectURL(blob);
     const anchor = document.createElement('a');
     anchor.href = url;
-    anchor.download = `subtitle-annotations${props.config.evaluation_batch ? '-' + props.config.evaluation_batch : ''}-${new Date().toISOString().replace(/[:.]/g, '-')}.json`;
+    anchor.download = `${isBook ? 'book' : 'subtitle'}-annotations${props.config.evaluation_batch ? '-' + props.config.evaluation_batch : ''}-${new Date().toISOString().replace(/[:.]/g, '-')}.json`;
     anchor.click();
     setTimeout(() => URL.revokeObjectURL(url), 1000);
     dirty.value = false;
@@ -84,7 +94,7 @@ async function upload(event) {
     const file = event.target.files?.[0];
     if (!file) return;
     try {
-        const imported = restoreSubtitleAnnotations(canonical, JSON.parse(await file.text()));
+        const imported = restoreAnnotations(canonical, JSON.parse(await file.text()));
         const byId = new Map(imported.map(row => [row.id, row]));
         rows.value = rows.value.map(row => byId.get(row.id) || row);
         if (!imported.some(row => row.language === language.value)) selectLanguage(imported[0].language);
@@ -140,15 +150,15 @@ onBeforeUnmount(() => {
         </section>
         <h1>{{ config.evaluation_title || 'Multilingual Subtitle Evaluation' }}</h1>
         <VueMarkdown class="subtitle-instructions" :source="config.instructions || ''" />
-        <p v-if="!media(hit.original_video)" class="hosting-notice" role="status">Video hosting is pending. Use the local preview to watch and rate the videos.</p>
-        <nav class="subtitle-navigation" aria-label="Clip navigation">
+        <p v-if="!isBook && !media(hit.original_video)" class="hosting-notice" role="status">Video hosting is pending. Use the local preview to watch and rate the videos.</p>
+        <nav class="subtitle-navigation" :aria-label="`${navigationLabel} navigation`">
             <div>
-                <button :disabled="index === 0" aria-label="Previous clip" @click="navigate(index - 1)">←</button>
-                <label>Clip <select :value="index" aria-label="Choose clip" @change="navigate($event.target.value)">
+                <button :disabled="index === 0" :aria-label="`Previous ${itemLabel}`" @click="navigate(index - 1)">←</button>
+                <label>{{ navigationLabel }} <select :value="index" :aria-label="`Choose ${itemLabel}`" @change="navigate($event.target.value)">
                     <option v-for="(row, position) in hits" :key="row.id" :value="position">{{ position + 1 }}{{ subtitleClipRated(row) ? ' ✓' : '' }}{{ row.bookmark ? ' ★' : '' }}</option>
                 </select> / {{ hits.length }}</label>
-                <button :disabled="index === hits.length - 1" aria-label="Next clip" @click="navigate(index + 1)">→</button>
-                <span class="progress-count">{{ rated(language) }}/{{ hits.length }} clips fully rated</span>
+                <button :disabled="index === hits.length - 1" :aria-label="`Next ${itemLabel}`" @click="navigate(index + 1)">→</button>
+                <span class="progress-count">{{ rated(language) }}/{{ hits.length }} {{ itemLabel }}s fully rated</span>
             </div>
             <div class="file-buttons">
                 <button @click="download">Download annotations</button>
@@ -159,13 +169,13 @@ onBeforeUnmount(() => {
         <p v-if="uploadError" role="alert" class="upload-error">{{ uploadError }}</p>
         <p v-if="message" role="status">{{ message }}</p>
         <div class="clip-heading">
-            <h2>{{ hit.title }} <small>· Clip {{ index + 1 }}</small></h2>
+            <h2>{{ hit.title }} <small>· {{ navigationLabel }} {{ index + 1 }}</small></h2>
             <div>
-                <button :aria-pressed="hit.bookmark" @click="replaceHit({ ...hit, bookmark: !hit.bookmark })">{{ hit.bookmark ? 'Bookmarked ★' : 'Bookmark clip' }}</button>
-                <button @click="resetClip">Reset clip</button>
+                <button :aria-pressed="hit.bookmark" @click="replaceHit({ ...hit, bookmark: !hit.bookmark })">{{ hit.bookmark ? 'Bookmarked ★' : 'Bookmark ' + itemLabel }}</button>
+                <button @click="resetClip">Reset {{ itemLabel }}</button>
             </div>
         </div>
-        <p class="player-hint">Translations: <kbd>A</kbd> previous · <kbd>D</kbd> next. Videos: <kbd>Q</kbd> previous · <kbd>E</kbd> next.</p>
+        <p class="player-hint">Translations: <kbd>A</kbd> previous · <kbd>D</kbd> next. {{ isBook ? 'Fables' : 'Videos' }}: <kbd>Q</kbd> previous · <kbd>E</kbd> next.</p>
         <div class="subtitle-candidate-tabs" role="tablist" aria-label="Translation candidates">
             <button v-for="(item, position) in hit.candidates" :key="item.id" role="tab"
                 :id="`subtitle-tab-${position}`" :aria-selected="activeCandidate === position" aria-controls="subtitle-candidate-panel"
@@ -175,8 +185,27 @@ onBeforeUnmount(() => {
                 Translation {{ String.fromCharCode(65 + position) }}<small>{{ candidateStatus(item) }}</small>
             </button>
         </div>
-        <GoogleTranslateBox :language="language" :languages="config.languages" :source="hit.source" />
-        <div class="subtitle-workspace">
+        <GoogleTranslateBox v-if="!isBook" :language="language" :languages="config.languages" :source="hit.source" />
+        <div v-if="isBook" class="book-workspace">
+            <section class="book-source" aria-label="English source" lang="en">
+                <h3>English source</h3>
+                <p v-for="(paragraph, position) in sourceParagraphs" :key="position">{{ paragraph }}</p>
+            </section>
+            <section class="annotation-column book-translation" :key="`${hit.id}-${candidate.id}`"
+                id="subtitle-candidate-panel" role="tabpanel" :aria-labelledby="`subtitle-tab-${activeCandidate}`">
+                <h3>{{ candidateLabel }} · {{ languageName(language) }}</h3>
+                <template v-if="candidate.available">
+                    <MangaSpanLegend v-model="spanCategory" />
+                    <MangaTextRegion :region="candidate.translation_regions[0]" :region_index="0" :update_region="updateRegion"
+                        :language="language" :span_category="spanCategory" hide_heading
+                        :fidelity_definition="BOOK_FIDELITY" :presentation_definition="BOOK_PROSE" presentation_caption="Prose quality" />
+                    <AnnotationIssue :model-value="candidate.annotation_issue"
+                        @update:model-value="issue => replaceCandidate({ ...candidate, annotation_issue: issue })" />
+                </template>
+                <p v-else class="unavailable">This system has no output for this fable in this language.</p>
+            </section>
+        </div>
+        <div v-else class="subtitle-workspace">
             <aside class="reference-column">
                 <section class="reference-card">
                     <h3>Human reference</h3>
@@ -219,7 +248,7 @@ onBeforeUnmount(() => {
             </aside>
         </div>
         <SubtitlePostEdit :key="hit.id" :model-value="hit.post_edit || ''" :origin="hit.post_edit_origin" :language="language" :language-label="languageName(language)"
-            :candidates="hit.candidates" @update:model-value="text => replaceHit(updateSubtitlePostEdit(hit, text))"
+            :candidates="hit.candidates" :text-type="isBook ? 'version of the fable' : 'subtitle'" @update:model-value="text => replaceHit(updateSubtitlePostEdit(hit, text))"
             @start-from="id => replaceHit(startSubtitlePostEdit(hit, id))" />
     </div>
 </template>
@@ -228,7 +257,7 @@ onBeforeUnmount(() => {
 @font-face { font-family: SubtitleCJK; src: url('/fonts/manga/NotoSansCJKjp-Regular.otf') format('opentype'); font-display: swap; }
 @font-face { font-family: SubtitleHindi; src: url('/fonts/manga/NotoSansDevanagari.ttf') format('truetype'); font-weight: 100 900; font-display: swap; }
 .subtitle-evaluation { max-width: 1800px; margin: 1.5rem auto 5rem; color: #202735; }
-.subtitle-evaluation :deep([lang="zh"]) { font-family: SubtitleCJK, sans-serif; }
+.subtitle-evaluation :deep([lang="zh"]), .subtitle-evaluation :deep([lang="zh-CN"]) { font-family: SubtitleCJK, sans-serif; }
 .subtitle-evaluation :deep([lang="hi"]) { font-family: SubtitleHindi, sans-serif; }
 h1 { font-size: 1.6rem; margin: 1.8rem 0 .8rem; }
 h2 { font-size: 1.15rem; margin: 0; }
@@ -256,6 +285,10 @@ small { color: #586270; font-weight: 400; font-size: .78rem; }
 .subtitle-candidate-tabs { display: flex; gap: .5rem; margin-bottom: 1rem; flex-wrap: wrap; }
 .subtitle-candidate-tabs button { flex: 1 1 100px; }
 .subtitle-workspace { display: grid; grid-template-columns: minmax(210px, .8fr) minmax(0, 2.3fr) minmax(290px, 1.1fr); gap: 1rem; align-items: start; }
+.book-workspace { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; align-items: start; }
+.book-source { position: sticky; top: 1rem; max-height: calc(100vh - 2rem); overflow: auto; border: 1px solid #dbe0e8; border-radius: 6px; padding: 1rem; }
+.book-source p { margin: .6rem 0; overflow-wrap: anywhere; }
+.book-translation :deep(.annotation-issue) { margin-top: .75rem; }
 .reference-column, .translated-column, .annotation-column { min-width: 0; position: sticky; top: 1rem; }
 .reference-column, .annotation-column { max-height: calc(100vh - 2rem); overflow: auto; scrollbar-gutter: stable; }
 .reference-card { padding: .85rem; background: #f6f8fb; border: 1px solid #dbe0e8; border-radius: 6px; margin-bottom: .75rem; }
@@ -273,6 +306,8 @@ small { color: #586270; font-weight: 400; font-size: .78rem; }
 @media (max-width: 1150px) { .subtitle-workspace { grid-template-columns: minmax(180px, .7fr) minmax(0, 1.5fr) minmax(265px, 1fr); gap: .7rem; } }
 @media (max-width: 850px) {
     .subtitle-workspace { grid-template-columns: 1fr; }
+    .book-workspace { grid-template-columns: minmax(0, 1fr); }
+    .book-source { position: static; max-height: none; }
     .reference-column, .translated-column, .annotation-column { position: static; max-height: none; overflow: visible; }
     .translated-column { grid-row: 1; }
     .reference-column { grid-row: 2; }

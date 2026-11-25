@@ -1,6 +1,7 @@
 <script setup>
 import { nextTick, ref } from 'vue';
-const props = defineProps({ modelValue: { type: String, default: '' }, origin: Object, language: String, languageLabel: String, candidates: Array });
+const props = defineProps({ modelValue: { type: String, default: '' }, origin: Object, language: String, languageLabel: String, candidates: Array,
+    textType: { type: String, default: 'subtitle' } });
 const emit = defineEmits(['update:modelValue', 'start-from']);
 const editor = ref(null);
 const candidateText = candidate => (candidate.translation_regions || []).map(region => region.target).join('\n');
@@ -13,7 +14,7 @@ function startFrom(candidate) {
 <template>
     <section class="subtitle-post-edit" aria-label="Post-edit translation">
         <h2>Post-edit <small>(optional)</small></h2>
-        <p>Combine strengths and fix errors across the translations to write an improved {{ languageLabel }} subtitle.</p>
+        <p>Combine strengths and fix errors across the translations to write an improved {{ languageLabel }} {{ textType }}.</p>
         <label class="post-edit-label">Your improved translation
             <textarea ref="editor" :value="modelValue" :lang="language" :dir="language === 'ar' ? 'rtl' : 'auto'" rows="4"
                 aria-label="Post-edited translation" placeholder="Write your improved translation here…"
