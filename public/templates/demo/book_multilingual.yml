@@ -16,7 +16,7 @@ instructions: |
   Read the English fable and compare its translations. Score **Fidelity from 0–100 in steps of 5**. **60** is acceptable. Give higher scores to better translations and equal scores for ties.
 
   - **Spans**
-    - **Strength.** Highlight wording that carries the fable’s meaning and effect especially well, such as an apt metaphor, idiom, wordplay, a cultural reference that resonates, vivid dialogue, or a memorable rendering of the moral.
+    - **Strength.** Highlight wording that captures the fable’s meaning and effect especially well, such as apt idioms, metaphors, or cultural references, effective wordplay or irony, distinctive character dialogue, or a memorable moral that echoes the story.
     - **Error.** Highlight wording that distorts meaning or sounds noticeably unnatural.
     - **Unlabeled.** Leave acceptable, ordinary wording unmarked.
   - **Fidelity.** Judge how naturally the translation tells the same story and conveys its lesson. Check the characters’ actions and motives, the tone, and how the ending makes the moral land. Natural rephrasing can earn full credit.
