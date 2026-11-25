@@ -189,6 +189,7 @@ onBeforeUnmount(() => {
         <div v-if="isBook" class="book-workspace">
             <section class="book-source" aria-label="English source" lang="en">
                 <h3>English source</h3>
+                <h4 class="book-source-title">{{ hit.title }}</h4>
                 <p v-for="(paragraph, position) in sourceParagraphs" :key="position">{{ paragraph }}</p>
             </section>
             <section class="annotation-column book-translation" :key="`${hit.id}-${candidate.id}`"
@@ -289,6 +290,7 @@ small { color: #586270; font-weight: 400; font-size: .78rem; }
 .subtitle-workspace { display: grid; grid-template-columns: minmax(210px, .8fr) minmax(0, 2.3fr) minmax(290px, 1.1fr); gap: 1rem; align-items: start; }
 .book-workspace { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; align-items: start; }
 .book-source { position: sticky; top: 1rem; max-height: calc(100vh - 2rem); overflow: auto; border: 1px solid #dbe0e8; border-radius: 6px; padding: 1rem; }
+.book-source-title { margin: 0 0 .6rem; font-size: 1.05rem; color: inherit; overflow-wrap: anywhere; }
 .book-source p { margin: .6rem 0; overflow-wrap: anywhere; }
 .book-translation :deep(.annotation-issue) { margin-top: .75rem; }
 .reference-column, .translated-column, .annotation-column { min-width: 0; position: sticky; top: 1rem; }
